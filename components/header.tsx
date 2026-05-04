@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { MessageCircle, Mail, Star } from "lucide-react"
 import { Navigation } from "./navigation"
-import { LanguageSwitcher } from "./language-switcher"
 
 export function Header() {
   return (
@@ -24,16 +23,13 @@ export function Header() {
               ))}
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <a
-              href="mailto:hello@jumbosafaris.com"
-              className="hidden sm:flex items-center gap-2 hover:text-orange transition-colors"
-            >
-              <Mail className="w-4 h-4" />
-              <span className="hidden md:inline">hello@jumbosafaris.com</span>
-            </a>
-            <LanguageSwitcher />
-          </div>
+          <a
+            href="mailto:hello@jumbosafaris.com"
+            className="flex items-center gap-2 hover:text-orange transition-colors"
+          >
+            <Mail className="w-4 h-4" />
+            <span className="hidden sm:inline">hello@jumbosafaris.com</span>
+          </a>
         </div>
       </div>
 
