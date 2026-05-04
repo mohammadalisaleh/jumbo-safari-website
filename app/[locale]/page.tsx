@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import {
   Shield,
@@ -199,11 +200,14 @@ export default async function HomePage({ params }: PageProps) {
                 </Link>
               </div>
             </div>
-            <div className="relative aspect-[4/3] bg-forest-dark flex items-center justify-center">
-              <div className="text-center text-cream/50">
-                <p className="font-montserrat text-sm">Hero photography</p>
-                <p className="font-inter text-xs">Serengeti at dawn</p>
-              </div>
+            <div className="relative aspect-[4/3]">
+              <Image
+                src="/serengeti-plains-golden-hour-tanzania-safari-hero.jpg"
+                alt="Serengeti plains at golden hour, Tanzania — private guided safari with Jumbo Safaris"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
