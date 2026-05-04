@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Safari Tanzania | Prywatne Safari z Przewodnikiem | Jumbo Safaris",
+      "description": "Jumbo Safaris oferuje prywatne safari z przewodnikiem po Tanzanii z Aruszy. Serengeti, Krater Ngorongoro, Tarangire i nie tylko."
+    },
+    "tanzaniaSafari": {
+      "title": "Safari Tanzania | Prywatne Wycieczki Safari z Przewodnikiem",
+      "description": "Zaplanuj swoje safari w Tanzanii z Jumbo Safaris. Prywatne wycieczki z przewodnikiem do Serengeti, Krateru Ngorongoro i Tarangire z Aruszy. Itineraria szyte na miarę dla każdego budżetu."
+    },
+    "about": {
+      "title": "O Jumbo Safaris | Operator Safari z Aruszy",
+      "description": "Jumbo Safaris to firma organizująca prywatne safari z przewodnikiem w Tanzanii z siedzibą w Aruszy. Poznaj nasz zespół, naszą historię i dowiedz się, dlaczego podróżnicy nas wybierają."
+    },
+    "contact": {
+      "title": "Zaplanuj Swoje Safari w Tanzanii",
+      "description": "Skontaktuj się z Jumbo Safaris, aby zaplanować safari w Tanzanii. WhatsApp, e-mail lub formularz zapytania. Siedziba w Aruszy, Tanzania."
+    }
+  },
+  "nav": {
+    "tanzaniaSafari": "Safari Tanzania",
+    "nationalParks": "Parki Narodowe",
+    "itineraries": "Itineraria",
+    "about": "O Nas",
+    "planYourTrip": "Zaplanuj Podróż",
+    "serengeti": "Serengeti",
+    "ngorongoro": "Krater Ngorongoro",
+    "tarangire": "Tarangire",
+    "lakeManyara": "Jezioro Manyara",
+    "classicSafari": "8-Dniowe Klasyczne Safari",
+    "calvingSeason": "Safari w Sezonie Ocierzeń",
+    "honeymoon": "Podróż Poślubna Tanzania i Zanzibar",
+    "greatMigration": "Safari Wielka Migracja"
+  },
+  "hero": {
+    "headline": "Safari Tanzania. Na Nowo.",
+    "subheadline": "Prywatne safari z przewodnikiem stworzone wokół Ciebie — nie grupy turystycznej. Zaprojektowane w Aruszy. Dostarczane na łonie dzikiej przyrody.",
+    "viewItineraries": "Zobacz Itineraria",
+    "planYourSafari": "Zaplanuj Safari"
+  },
+  "trust": {
+    "tatoLicensed": "Licencjonowany Operator TATO",
+    "privateGuides": "Wyłącznie Prywatni Przewodnicy",
+    "fiveStarRated": "5 Gwiazdek na TripAdvisor",
+    "tailorMade": "Itineraria Szyte na Miarę",
+    "arushaBased": "Zespół z Aruszy"
+  },
+  "sections": {
+    "ourSafaris": "NASZE SAFARI",
+    "popularPackages": "Popularne Pakiety Safari Tanzania",
+    "explore": "ODKRYJ",
+    "greatestParks": "Najwspanialsze Parki Narodowe Tanzanii",
+    "whyTravelWithUs": "DLACZEGO Z NAMI",
+    "jumboDifference": "Różnica Jumbo",
+    "planYourTrip": "ZAPLANUJ PODRÓŻ",
+    "bestTime": "Najlepszy Czas na Safari w Tanzanii"
+  },
+  "buttons": {
+    "viewItinerary": "Zobacz Itinerarium",
+    "explore": "Odkryj",
+    "startPlanning": "Rozpocznij Planowanie",
+    "sendEnquiry": "Wyślij Zapytanie",
+    "chatOnWhatsApp": "Napisz na WhatsApp",
+    "getQuote": "Uzyskaj Bezpłatną Wycenę"
+  },
+  "whyJumbo": {
+    "privateGuides": {
+      "title": "Wyłącznie Prywatni Przewodnicy",
+      "description": "Żadnych wycieczek grupowych, żadnych zatłoczonych pojazdów. Twój dedykowany przewodnik zna każdą ścieżkę, każde wodopój, każde sekretne miejsce w buszu."
+    },
+    "tailorMade": {
+      "title": "Itineraria Szyte na Miarę",
+      "description": "Szablonowe safari nie są dla każdego. Projektujemy każdą podróż wokół Twoich zainteresowań, tempa i marzeń."
+    },
+    "bornInArusha": {
+      "title": "Urodzeni w Aruszy",
+      "description": "Żyjemy tam, gdzie zaczyna się Twoje safari. Lokalna wiedza, lokalne kontakty, lokalna ekspertyza, której po prostu nie można powielić."
+    }
+  },
+  "cta": {
+    "readyToplan": "Gotowy Zaplanować Swoje Safari w Tanzanii?",
+    "tellUsAbout": "Powiedz nam o swoich datach, budżecie i wymarzonej podróży. Przygotujemy Twoje itinerarium w ciągu 24 godzin.",
+    "whatsappUs": "Lub napisz do nas na WhatsApp: +255 742 789 292"
+  },
+  "contact": {
+    "planYourSafari": "Zaplanuj Swoje Safari w Tanzanii",
+    "tellUsAbout": "Opowiedz nam o swoim wymarzonym safari. Odpowiadamy w ciągu 24 godzin ze spersonalizowaną rekomendacją itinerarium.",
+    "getInTouch": "Skontaktuj się z Nami",
+    "whatsapp": "WhatsApp",
+    "email": "E-mail",
+    "location": "Lokalizacja",
+    "responseTime": "Czas Odpowiedzi",
+    "weRespond": "Odpowiadamy na wszystkie zapytania w ciągu",
+    "24hours": "24 godzin",
+    "whyBookWithUs": "Dlaczego Rezerwować u Nas",
+    "formLabels": {
+      "fullName": "Imię i Nazwisko",
+      "email": "Adres E-mail",
+      "phone": "Numer Telefonu",
+      "travelDates": "Preferowane Daty Podróży",
+      "groupSize": "Wielkość Grupy",
+      "budget": "Zakres Budżetu",
+      "interests": "Zainteresowania Safari",
+      "message": "Opowiedz nam o swoim wymarzonym safari"
+    },
+    "formPlaceholders": {
+      "fullName": "Twoje pełne imię i nazwisko",
+      "email": "twoj@email.com",
+      "phone": "+48 123 456 789",
+      "travelDates": "np. czerwiec 2026",
+      "groupSize": "Wybierz wielkość grupy",
+      "budget": "Wybierz zakres budżetu",
+      "interests": "np. Wielka Migracja, Wielka Piątka, fotografia...",
+      "message": "Daty, zainteresowania, specjalne życzenia..."
+    }
+  },
+  "footer": {
+    "tagline": "Prywatne safari z przewodnikiem w Tanzanii z Aruszy. Doświadczenie. Na Nowo.",
+    "company": "Firma",
+    "safaris": "Safari",
+    "parks": "Parki",
+    "contact": "Kontakt",
+    "copyright": "© {year} Jumbo Safaris. Wszelkie prawa zastrzeżone."
+  },
+  "languageSwitcher": {
+    "english": "English",
+    "polish": "Polski",
+    "czech": "Čeština"
+  }
+}

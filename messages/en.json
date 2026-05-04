@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Tanzania Safari | Private Guided Safaris | Jumbo Safaris",
+      "description": "Jumbo Safaris offers private guided Tanzania safaris from Arusha. Serengeti, Ngorongoro Crater, Tarangire and beyond. Enquire for a custom itinerary."
+    },
+    "tanzaniaSafari": {
+      "title": "Tanzania Safari | Private Guided Safari Tours",
+      "description": "Plan your Tanzania safari with Jumbo Safaris. Private guided tours to the Serengeti, Ngorongoro Crater, and Tarangire from Arusha. Tailor-made itineraries for every budget."
+    },
+    "about": {
+      "title": "About Jumbo Safaris | Arusha-Based Tanzania Safari Operator",
+      "description": "Jumbo Safaris is a private guided Tanzania safari company based in Arusha. Meet our team, learn our story, and discover why travellers choose us."
+    },
+    "contact": {
+      "title": "Plan Your Tanzania Safari",
+      "description": "Contact Jumbo Safaris to plan your Tanzania safari. WhatsApp, email, or fill in our enquiry form. Based in Arusha, Tanzania."
+    }
+  },
+  "nav": {
+    "tanzaniaSafari": "Tanzania Safari",
+    "nationalParks": "National Parks",
+    "itineraries": "Itineraries",
+    "about": "About",
+    "planYourTrip": "Plan Your Trip",
+    "serengeti": "Serengeti",
+    "ngorongoro": "Ngorongoro Crater",
+    "tarangire": "Tarangire",
+    "lakeManyara": "Lake Manyara",
+    "classicSafari": "8-Day Classic Safari",
+    "calvingSeason": "Calving Season Safari",
+    "honeymoon": "Honeymoon Tanzania & Zanzibar",
+    "greatMigration": "Great Migration Safari"
+  },
+  "hero": {
+    "headline": "Tanzania Safari, Reimagined.",
+    "subheadline": "Private guided safaris built around you — not a tour group. Designed in Arusha. Delivered in the wild.",
+    "viewItineraries": "View Itineraries",
+    "planYourSafari": "Plan Your Safari"
+  },
+  "trust": {
+    "tatoLicensed": "TATO Licensed Operator",
+    "privateGuides": "Private Guides Only",
+    "fiveStarRated": "5-Star TripAdvisor Rated",
+    "tailorMade": "Tailor-Made Itineraries",
+    "arushaBased": "Arusha-Based Team"
+  },
+  "sections": {
+    "ourSafaris": "OUR SAFARIS",
+    "popularPackages": "Popular Tanzania Safari Packages",
+    "explore": "EXPLORE",
+    "greatestParks": "Tanzania's Greatest National Parks",
+    "whyTravelWithUs": "WHY TRAVEL WITH US",
+    "jumboDifference": "The Jumbo Difference",
+    "planYourTrip": "PLAN YOUR TRIP",
+    "bestTime": "Best Time for a Tanzania Safari"
+  },
+  "buttons": {
+    "viewItinerary": "View Itinerary",
+    "explore": "Explore",
+    "startPlanning": "Start Planning",
+    "sendEnquiry": "Send Enquiry",
+    "chatOnWhatsApp": "Chat on WhatsApp",
+    "getQuote": "Get a Free Quote"
+  },
+  "whyJumbo": {
+    "privateGuides": {
+      "title": "Private Guides Only",
+      "description": "No group tours, no crowded vehicles. Your dedicated guide knows every trail, every waterhole, every secret spot in the bush."
+    },
+    "tailorMade": {
+      "title": "Tailor-Made Itineraries",
+      "description": "Cookie-cutter safaris are not for everyone. We design each trip around your interests, pace, and dreams."
+    },
+    "bornInArusha": {
+      "title": "Born in Arusha",
+      "description": "We live where your safari begins. Local knowledge, local connections, local expertise you simply cannot replicate."
+    }
+  },
+  "cta": {
+    "readyToplan": "Ready to Plan Your Tanzania Safari?",
+    "tellUsAbout": "Tell us your dates, budget, and dream experience. We'll build your itinerary within 24 hours.",
+    "whatsappUs": "Or WhatsApp us directly: +255 742 789 292"
+  },
+  "contact": {
+    "planYourSafari": "Plan Your Tanzania Safari",
+    "tellUsAbout": "Tell us about your dream safari. We respond within 24 hours with a personalized itinerary recommendation.",
+    "getInTouch": "Get in Touch",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "location": "Location",
+    "responseTime": "Response Time",
+    "weRespond": "We respond to all enquiries within",
+    "24hours": "24 hours",
+    "whyBookWithUs": "Why Book With Us",
+    "formLabels": {
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "travelDates": "Preferred Travel Dates",
+      "groupSize": "Group Size",
+      "budget": "Budget Range",
+      "interests": "Safari Interests",
+      "message": "Tell us about your dream safari"
+    },
+    "formPlaceholders": {
+      "fullName": "Your full name",
+      "email": "your@email.com",
+      "phone": "+1 234 567 890",
+      "travelDates": "e.g., June 2026",
+      "groupSize": "Select group size",
+      "budget": "Select budget range",
+      "interests": "e.g., Great Migration, Big Five, photography...",
+      "message": "Dates, interests, special requests..."
+    }
+  },
+  "footer": {
+    "tagline": "Private guided Tanzania safaris from Arusha. Experience. Reimagined.",
+    "company": "Company",
+    "safaris": "Safaris",
+    "parks": "Parks",
+    "contact": "Contact",
+    "copyright": "© {year} Jumbo Safaris. All rights reserved."
+  },
+  "languageSwitcher": {
+    "english": "English",
+    "polish": "Polski",
+    "czech": "Čeština"
+  }
+}

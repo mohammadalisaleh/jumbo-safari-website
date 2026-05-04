@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Safari Tanzanie | Soukromé Safari s Průvodcem | Jumbo Safaris",
+      "description": "Jumbo Safaris nabízí soukromá safari s průvodcem v Tanzanii z Aruše. Serengeti, Ngorongorský kráter, Tarangire a další."
+    },
+    "tanzaniaSafari": {
+      "title": "Safari Tanzanie | Soukromé Safari Zájezdy s Průvodcem",
+      "description": "Naplánujte si safari v Tanzanii s Jumbo Safaris. Soukromé zájezdy s průvodcem do Serengeti, Ngorongorského kráteru a Tarangire z Aruše. Itineráře na míru pro každý rozpočet."
+    },
+    "about": {
+      "title": "O Jumbo Safaris | Tanzánský Safari Operátor z Aruše",
+      "description": "Jumbo Safaris je společnost poskytující soukromá safari s průvodcem v Tanzanii se sídlem v Aruši. Poznejte náš tým, náš příběh a zjistěte, proč si nás cestovatelé vybírají."
+    },
+    "contact": {
+      "title": "Naplánujte si Safari v Tanzanii",
+      "description": "Kontaktujte Jumbo Safaris a naplánujte si safari v Tanzanii. WhatsApp, e-mail nebo vyplňte náš dotazníkový formulář. Se sídlem v Aruši, Tanzanie."
+    }
+  },
+  "nav": {
+    "tanzaniaSafari": "Safari Tanzanie",
+    "nationalParks": "Národní Parky",
+    "itineraries": "Itineráře",
+    "about": "O Nás",
+    "planYourTrip": "Naplánujte Cestu",
+    "serengeti": "Serengeti",
+    "ngorongoro": "Ngorongorský Kráter",
+    "tarangire": "Tarangire",
+    "lakeManyara": "Jezero Manyara",
+    "classicSafari": "8denní Klasické Safari",
+    "calvingSeason": "Safari v Období Telení",
+    "honeymoon": "Svatební Cesta Tanzanie a Zanzibar",
+    "greatMigration": "Safari Velká Migrace"
+  },
+  "hero": {
+    "headline": "Safari Tanzanie. Znovu.",
+    "subheadline": "Soukromá safari s průvodcem postavená kolem vás — ne turistické skupiny. Navrženo v Aruši. Dodáno v divočině.",
+    "viewItineraries": "Zobrazit Itineráře",
+    "planYourSafari": "Naplánovat Safari"
+  },
+  "trust": {
+    "tatoLicensed": "Licencovaný Operátor TATO",
+    "privateGuides": "Pouze Soukromí Průvodci",
+    "fiveStarRated": "5 Hvězdiček na TripAdvisoru",
+    "tailorMade": "Itineráře na Míru",
+    "arushaBased": "Tým z Aruše"
+  },
+  "sections": {
+    "ourSafaris": "NAŠE SAFARI",
+    "popularPackages": "Populární Safari Balíčky Tanzanie",
+    "explore": "PROZKOUMEJTE",
+    "greatestParks": "Nejvýznamnější Národní Parky Tanzanie",
+    "whyTravelWithUs": "PROČ S NÁMI",
+    "jumboDifference": "Rozdíl Jumbo",
+    "planYourTrip": "NAPLÁNUJTE CESTU",
+    "bestTime": "Nejlepší Čas na Safari v Tanzanii"
+  },
+  "buttons": {
+    "viewItinerary": "Zobrazit Itinerář",
+    "explore": "Prozkoumat",
+    "startPlanning": "Začít Plánovat",
+    "sendEnquiry": "Odeslat Dotaz",
+    "chatOnWhatsApp": "Chatovat na WhatsAppu",
+    "getQuote": "Získat Bezplatnou Nabídku"
+  },
+  "whyJumbo": {
+    "privateGuides": {
+      "title": "Pouze Soukromí Průvodci",
+      "description": "Žádné skupinové zájezdy, žádná přeplněná vozidla. Váš osobní průvodce zná každou stezku, každé napajedlo, každé tajné místo v buši."
+    },
+    "tailorMade": {
+      "title": "Itineráře na Míru",
+      "description": "Šablonovitá safari nejsou pro každého. Navrhujeme každý výlet podle vašich zájmů, tempa a snů."
+    },
+    "bornInArusha": {
+      "title": "Zrozeni v Aruši",
+      "description": "Žijeme tam, kde začíná vaše safari. Místní znalosti, místní kontakty, místní odbornost, kterou prostě nelze napodobit."
+    }
+  },
+  "cta": {
+    "readyToplan": "Připraveni Naplánovat Své Safari v Tanzanii?",
+    "tellUsAbout": "Řekněte nám své termíny, rozpočet a vysněný zážitek. Připravíme váš itinerář do 24 hodin.",
+    "whatsappUs": "Nebo nám napište na WhatsApp: +255 742 789 292"
+  },
+  "contact": {
+    "planYourSafari": "Naplánujte si Safari v Tanzanii",
+    "tellUsAbout": "Řekněte nám o svém vysněném safari. Odpovídáme do 24 hodin s personalizovaným doporučením itineráře.",
+    "getInTouch": "Kontaktujte Nás",
+    "whatsapp": "WhatsApp",
+    "email": "E-mail",
+    "location": "Lokalita",
+    "responseTime": "Doba Odezvy",
+    "weRespond": "Na všechny dotazy odpovídáme do",
+    "24hours": "24 hodin",
+    "whyBookWithUs": "Proč Rezervovat u Nás",
+    "formLabels": {
+      "fullName": "Celé Jméno",
+      "email": "E-mailová Adresa",
+      "phone": "Telefonní Číslo",
+      "travelDates": "Preferované Termíny Cesty",
+      "groupSize": "Velikost Skupiny",
+      "budget": "Rozpočtové Rozmezí",
+      "interests": "Safari Zájmy",
+      "message": "Řekněte nám o svém vysněném safari"
+    },
+    "formPlaceholders": {
+      "fullName": "Vaše celé jméno",
+      "email": "vas@email.com",
+      "phone": "+420 123 456 789",
+      "travelDates": "např. červen 2026",
+      "groupSize": "Vyberte velikost skupiny",
+      "budget": "Vyberte rozpočtové rozmezí",
+      "interests": "např. Velká Migrace, Velká Pětka, fotografie...",
+      "message": "Termíny, zájmy, speciální požadavky..."
+    }
+  },
+  "footer": {
+    "tagline": "Soukromá safari s průvodcem v Tanzanii z Aruše. Zážitek. Znovu.",
+    "company": "Společnost",
+    "safaris": "Safari",
+    "parks": "Parky",
+    "contact": "Kontakt",
+    "copyright": "© {year} Jumbo Safaris. Všechna práva vyhrazena."
+  },
+  "languageSwitcher": {
+    "english": "English",
+    "polish": "Polski",
+    "czech": "Čeština"
+  }
+}
