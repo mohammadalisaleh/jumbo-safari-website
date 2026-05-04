@@ -1,6 +1,5 @@
 import { Metadata } from "next"
 import Link from "next/link"
-import { useTranslations } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import {
   Shield,
@@ -48,36 +47,27 @@ const featuredItineraries = [
     titleKey: "classicSafari",
     slug: "8-day-classic-tanzania-safari",
     duration: "8 Days",
-    descriptionEn:
-      "Experience the best of the Northern Circuit with game drives in Tarangire, Serengeti, and Ngorongoro Crater.",
-    descriptionPl:
-      "Poznaj najlepsze miejsca Północnego Szlaku z safari w Tarangire, Serengeti i Kraterze Ngorongoro.",
-    descriptionCs:
-      "Zažijte to nejlepší ze Severního okruhu s game drive v Tarangire, Serengeti a Ngorongorovém kráteru.",
+    descriptionEn: "Experience the best of the Northern Circuit with game drives in Tarangire, Serengeti, and Ngorongoro Crater.",
+    descriptionPl: "Poznaj najlepsze miejsca Północnego Szlaku z safari w Tarangire, Serengeti i Kraterze Ngorongoro.",
+    descriptionCs: "Zažijte to nejlepší ze Severního okruhu s game drive v Tarangire, Serengeti a Ngorongorovém kráteru.",
     price: "$3,200",
   },
   {
     titleKey: "calvingSeason",
     slug: "calving-season-safari",
     duration: "7 Days",
-    descriptionEn:
-      "Witness the miracle of birth on the Serengeti plains during the annual wildebeest calving season.",
-    descriptionPl:
-      "Bądź świadkiem cudu narodzin na równinach Serengeti podczas corocznego sezonu cielenia się gnu.",
-    descriptionCs:
-      "Buďte svědkem zázraku narození na pláních Serengeti během každoročního období telení pakoňů.",
+    descriptionEn: "Witness the miracle of birth on the Serengeti plains during the annual wildebeest calving season.",
+    descriptionPl: "Bądź świadkiem cudu narodzin na równinach Serengeti podczas corocznego sezonu cielenia się gnu.",
+    descriptionCs: "Buďte svědkem zázraku narození na pláních Serengeti během každoročního období telení pakoňů.",
     price: "$2,800",
   },
   {
     titleKey: "honeymoon",
     slug: "honeymoon-tanzania-zanzibar",
     duration: "11 Days",
-    descriptionEn:
-      "Romance meets adventure with safari game drives followed by pristine beaches in Zanzibar.",
-    descriptionPl:
-      "Romans spotyka się z przygodą — safari, a potem dziewicze plaże Zanzibaru.",
-    descriptionCs:
-      "Romantika se setkává s dobrodružstvím — safari a poté nedotčené pláže Zanzibaru.",
+    descriptionEn: "Romance meets adventure with safari game drives followed by pristine beaches in Zanzibar.",
+    descriptionPl: "Romans spotyka się z przygodą — safari, a potem dziewicze plaże Zanzibaru.",
+    descriptionCs: "Romantika se setkává s dobrodružstvím — safari a poté nedotčené pláže Zanzibaru.",
     price: "$5,500",
   },
 ]
@@ -132,14 +122,13 @@ export default async function HomePage({ params }: PageProps) {
   const { locale } = await params
   setRequestLocale(locale)
 
-  const t = useTranslations()
-  const tNav = useTranslations("nav")
-  const tHero = useTranslations("hero")
-  const tTrust = useTranslations("trust")
-  const tSections = useTranslations("sections")
-  const tButtons = useTranslations("buttons")
-  const tWhyJumbo = useTranslations("whyJumbo")
-  const tCta = useTranslations("cta")
+  const tNav = await getTranslations("nav")
+  const tHero = await getTranslations("hero")
+  const tTrust = await getTranslations("trust")
+  const tSections = await getTranslations("sections")
+  const tButtons = await getTranslations("buttons")
+  const tWhyJumbo = await getTranslations("whyJumbo")
+  const tCta = await getTranslations("cta")
 
   const trustSignals = [
     { icon: Shield, text: tTrust("tatoLicensed") },
@@ -179,6 +168,9 @@ export default async function HomePage({ params }: PageProps) {
     return month.noteEn
   }
 
+  const localePath = (path: string) =>
+    locale === "en" ? `/${path}` : `/${locale}/${path}`
+
   return (
     <>
       {/* Hero Section */}
@@ -194,13 +186,13 @@ export default async function HomePage({ params }: PageProps) {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  href={`/${locale === "en" ? "" : locale + "/"}itineraries/8-day-classic-tanzania-safari`}
+                  href={localePath("itineraries/8-day-classic-tanzania-safari")}
                   className="bg-cream text-forest font-montserrat font-semibold px-7 py-4 hover:bg-cream/90 transition-colors inline-block"
                 >
                   {tHero("viewItineraries")}
                 </Link>
                 <Link
-                  href={`/${locale === "en" ? "" : locale + "/"}contact`}
+                  href={localePath("contact")}
                   className="bg-transparent text-cream font-montserrat font-semibold px-7 py-4 border-[1.5px] border-cream hover:bg-cream/10 transition-colors inline-block"
                 >
                   {tHero("planYourSafari")}
@@ -242,7 +234,6 @@ export default async function HomePage({ params }: PageProps) {
               {tSections("popularPackages")}
             </h2>
           </div>
-
           <div className="grid md:grid-cols-3 gap-8">
             {featuredItineraries.map((itinerary) => (
               <article key={itinerary.slug} className="border border-border-soft bg-cream">
@@ -261,7 +252,7 @@ export default async function HomePage({ params }: PageProps) {
                   </p>
                   <p className="text-caption text-muted mb-4">From {itinerary.price} pp</p>
                   <Link
-                    href={`/${locale === "en" ? "" : locale + "/"}itineraries/${itinerary.slug}`}
+                    href={localePath(`itineraries/${itinerary.slug}`)}
                     className="inline-flex items-center text-forest font-semibold hover:text-orange transition-colors group"
                   >
                     {tButtons("viewItinerary")}
@@ -283,12 +274,11 @@ export default async function HomePage({ params }: PageProps) {
               {tSections("greatestParks")}
             </h2>
           </div>
-
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {nationalParks.map((park) => (
               <Link
                 key={park.slug}
-                href={`/${locale === "en" ? "" : locale + "/"}national-parks/${park.slug}`}
+                href={localePath(`national-parks/${park.slug}`)}
                 className="group block"
               >
                 <div className="aspect-[4/3] bg-forest-dark mb-4 flex items-center justify-center">
@@ -317,7 +307,6 @@ export default async function HomePage({ params }: PageProps) {
               {tSections("jumboDifference")}
             </h2>
           </div>
-
           <div className="grid md:grid-cols-3 gap-8">
             {whyJumbo.map((item) => (
               <div key={item.title} className="text-center">
@@ -345,7 +334,6 @@ export default async function HomePage({ params }: PageProps) {
               {tSections("bestTime")}
             </h2>
           </div>
-
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {months.map((month) => (
               <div
@@ -363,6 +351,15 @@ export default async function HomePage({ params }: PageProps) {
               </div>
             ))}
           </div>
+          <div className="text-center">
+            <Link
+              href={localePath("guides/best-time-to-visit-tanzania")}
+              className="inline-flex items-center text-forest font-semibold hover:text-orange transition-colors"
+            >
+              Full best time to visit guide
+              <ArrowRight className="w-4 h-4 ml-1" />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -377,7 +374,7 @@ export default async function HomePage({ params }: PageProps) {
           </p>
           <div className="flex flex-col items-center gap-4">
             <Link
-              href={`/${locale === "en" ? "" : locale + "/"}contact`}
+              href={localePath("contact")}
               className="bg-cream text-forest font-montserrat font-semibold px-8 py-4 hover:bg-cream/90 transition-colors inline-block"
             >
               {tButtons("startPlanning")}
