@@ -13,6 +13,7 @@ import {
   Map,
   MessageCircle,
 } from "lucide-react"
+import HeroForm from "@/components/HeroForm"
 
 interface PageProps {
   params: Promise<{ locale: string }>
@@ -174,40 +175,42 @@ export default async function HomePage({ params }: PageProps) {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-forest text-cream py-16 md:py-24">
-        <div className="max-w-content mx-auto px-6">
+      {/* Hero Section — full bleed with form overlay */}
+      <section className="relative min-h-[90vh] flex items-center">
+        {/* Background image */}
+        <Image
+          src="/serengeti-plains-golden-hour-tanzania-safari-hero.jpg"
+          alt="Serengeti plains at golden hour, Tanzania — private guided safari with Jumbo Safaris"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-forest/72" />
+
+        {/* Content */}
+        <div className="relative z-10 w-full max-w-content mx-auto px-6 py-16 md:py-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="font-montserrat font-extrabold text-hero-mobile md:text-hero-desktop text-balance mb-6">
+            {/* Left: headline + subtext */}
+            <div className="text-cream">
+              <h1 className="font-montserrat font-extrabold text-hero-mobile md:text-hero-desktop text-balance mb-6 leading-tight">
                 {tHero("headline")}
               </h1>
               <p className="text-lead-mobile md:text-lead-desktop text-cream/90 mb-8 max-w-prose">
                 {tHero("subheadline")}
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href={localePath("itineraries/8-day-classic-tanzania-safari")}
-                  className="bg-cream text-forest font-montserrat font-semibold px-7 py-4 hover:bg-cream/90 transition-colors inline-block"
-                >
-                  {tHero("viewItineraries")}
-                </Link>
-                <Link
-                  href={localePath("contact")}
-                  className="bg-transparent text-cream font-montserrat font-semibold px-7 py-4 border-[1.5px] border-cream hover:bg-cream/10 transition-colors inline-block"
-                >
-                  {tHero("planYourSafari")}
-                </Link>
-              </div>
+              <Link
+                href={localePath("itineraries/8-day-classic-tanzania-safari")}
+                className="inline-flex items-center gap-2 text-cream/80 hover:text-orange transition-colors font-montserrat font-semibold text-sm"
+              >
+                Browse itineraries
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
-            <div className="relative aspect-[4/3]">
-              <Image
-                src="/serengeti-plains-golden-hour-tanzania-safari-hero.jpg"
-                alt="Serengeti plains at golden hour, Tanzania — private guided safari with Jumbo Safaris"
-                fill
-                className="object-cover"
-                priority
-              />
+
+            {/* Right: hero form card */}
+            <div className="flex lg:justify-end">
+              <HeroForm locale={locale} />
             </div>
           </div>
         </div>
@@ -378,7 +381,7 @@ export default async function HomePage({ params }: PageProps) {
           </p>
           <div className="flex flex-col items-center gap-4">
             <Link
-              href={localePath("contact")}
+              href={localePath("plan-your-safari")}
               className="bg-cream text-forest font-montserrat font-semibold px-8 py-4 hover:bg-cream/90 transition-colors inline-block"
             >
               {tButtons("startPlanning")}
