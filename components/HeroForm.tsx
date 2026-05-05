@@ -135,7 +135,7 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
           type="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
-          className={inp + " [color-scheme:dark]"}
+          className={inp + " [color-scheme:dark] appearance-none box-border max-w-full"}
         />
       </div>
 
