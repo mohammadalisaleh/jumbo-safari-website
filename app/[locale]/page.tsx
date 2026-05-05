@@ -126,6 +126,9 @@ export default async function HomePage({ params }: PageProps) {
   const { locale } = await params
   setRequestLocale(locale)
 
+  // Read Web3Forms key server-side (no NEXT_PUBLIC_ needed)
+  const accessKey = process.env.WEB3FORMS_ACCESS_KEY ?? ""
+
   const tNav = await getTranslations("nav")
   const tHero = await getTranslations("hero")
   const tTrust = await getTranslations("trust")
@@ -209,7 +212,8 @@ export default async function HomePage({ params }: PageProps) {
       </div>
 
       {/* ── HERO SECTION ── */}
-      <section className="relative min-h-[90vh] flex items-center">
+      {/* min-h uses calc to subtract nav + trust bar height so it fits on 13" MBP */}
+      <section className="relative flex items-center" style={{ minHeight: "calc(100vh - 108px)" }}>
         {/* Background image */}
         <Image
           src="/serengeti-plains-golden-hour-tanzania-safari-hero.jpg"
@@ -218,64 +222,55 @@ export default async function HomePage({ params }: PageProps) {
           className="object-cover"
           priority
         />
-        {/* Overlay — stronger on left for desktop readability */}
-        <div className="absolute inset-0 bg-forest/75 lg:bg-gradient-to-r lg:from-forest/85 lg:via-forest/65 lg:to-forest/30" />
+        {/* Gradient overlay — strong on left for text, lighter on right so form card reads */}
+        <div className="absolute inset-0 bg-forest/80 lg:bg-gradient-to-r lg:from-forest/90 lg:via-forest/70 lg:to-forest/40" />
 
-        {/* Content */}
-        <div className="relative z-10 w-full max-w-content mx-auto px-6 py-16 md:py-24 pb-24 md:pb-24">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 w-full max-w-content mx-auto px-6 py-10 md:py-16">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
 
-            {/* Left: headline + subtext + WhatsApp CTA */}
+            {/* ── LEFT: Hero copy ── */}
             <div className="text-cream">
               {/* Eyebrow */}
-              <p className="font-montserrat font-semibold text-[12px] uppercase tracking-[0.08em] text-orange mb-4">
-                Arusha-Based Safari Experts
+              <p className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.1em] text-orange mb-4">
+                Private Guided Safaris · Arusha, Tanzania
               </p>
 
-              <h1 className="font-montserrat font-extrabold text-hero-mobile md:text-hero-desktop text-balance mb-6 leading-tight">
+              {/* H1 — large and weighted */}
+              <h1 className="font-montserrat font-extrabold text-[clamp(2.4rem,5vw,3.5rem)] leading-[1.05] text-balance mb-5">
                 {tHero("headline")}
               </h1>
 
-              <p className="text-lead-mobile md:text-lead-desktop text-cream/90 mb-8 max-w-prose">
+              {/* Hook line — specific, sensory */}
+              <p className="text-[1.1rem] text-cream/85 mb-6 max-w-[480px] leading-relaxed">
                 {tHero("subheadline")}
               </p>
 
-              {/* Trust signals — quick inline list */}
-              <ul className="flex flex-col gap-2 mb-8">
+              {/* Three specific proof points */}
+              <ul className="space-y-2 mb-0">
                 {[
-                  "Private guides. No group tours.",
-                  "Designed in Arusha. Delivered in the wild.",
-                  "Free custom quote within 24 hours.",
+                  "One vehicle. One guide. Just your group.",
+                  "We know where the calving plains are in February.",
+                  "Free custom itinerary — reply within 24 hours.",
                 ].map((point) => (
-                  <li key={point} className="flex items-center gap-2 text-cream/85 text-sm font-inter">
-                    <span className="text-orange font-bold">✓</span>
+                  <li key={point} className="flex items-start gap-2.5 text-cream/80 text-[15px] font-inter">
+                    <span className="text-orange font-bold mt-0.5 shrink-0">✓</span>
                     {point}
                   </li>
                 ))}
               </ul>
-
-              {/* WhatsApp CTA */}
-              <a
-                href="https://wa.me/255742789292"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border border-cream/40 text-cream hover:border-orange hover:text-orange transition-colors font-montserrat font-semibold text-sm px-5 py-3"
-              >
-                <MessageCircle className="w-4 h-4" />
-                Chat on WhatsApp
-              </a>
+              {/* No WhatsApp button here — sticky bar handles mobile, trust bar handles desktop */}
             </div>
 
-            {/* Right: hero form card */}
+            {/* ── RIGHT: Form card ── */}
             <div className="flex lg:justify-end">
-              <HeroForm locale={locale} />
+              <HeroForm locale={locale} accessKey={accessKey} />
             </div>
           </div>
         </div>
       </section>
 
       {/* ── TRUST STRIP ── */}
-      <section className="bg-cream border-y border-border-soft py-6">
+      <section className="bg-cream border-y border-border-soft py-5">
         <div className="max-w-content mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-6 md:gap-12">
             {trustSignals.map((signal) => (
@@ -455,8 +450,7 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* ── MOBILE STICKY WHATSAPP ── */}
-      {/* Adds bottom padding so content isn't hidden behind the sticky bar on mobile */}
+      {/* Spacer so sticky bar doesn't obscure last section on mobile */}
       <div className="h-16 md:hidden" aria-hidden="true" />
       <StickyWhatsApp />
     </>
