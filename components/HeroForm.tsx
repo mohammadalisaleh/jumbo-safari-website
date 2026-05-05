@@ -1,9 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { useRouter } from "next/navigation"
-import { Minus, Plus, ArrowRight } from "lucide-react"
-import Image from "next/image"
+import { Plus, Minus } from "lucide-react"
 
 interface HeroFormProps {
   locale: string
@@ -12,130 +10,150 @@ interface HeroFormProps {
 export default function HeroForm({ locale }: HeroFormProps) {
   const [adults, setAdults] = useState(2)
   const [children, setChildren] = useState(0)
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [whatsapp, setWhatsapp] = useState("")
   const [date, setDate] = useState("")
-  const router = useRouter()
-
-  const localePath = (path: string) =>
-    locale === "en" ? `/${path}` : `/${locale}/${path}`
 
   const handleSubmit = () => {
-    const params = new URLSearchParams({
-      adults: adults.toString(),
-      children: children.toString(),
-      ...(date && { date }),
-    })
-    router.push(`${localePath("plan-your-safari")}?${params.toString()}`)
+    const dateText = date ? new Date(date).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) : "Flexible"
+    const message = encodeURIComponent(
+      `Hi Jumbo Safaris! I'd like to plan a Tanzania safari.\n\nName: ${name}\nEmail: ${email}\nWhatsApp: ${whatsapp}\nArrival Date: ${dateText}\nAdults: ${adults}\nChildren: ${children}\n\nPlease send me a free custom quote.`
+    )
+    window.open(`https://wa.me/255742789292?text=${message}`, "_blank")
   }
 
+  const labelClass = "block font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-orange mb-1.5"
+  const inputClass = "w-full bg-cream text-ink border border-cream/30 px-3.5 py-3 text-base font-inter placeholder:text-ink/40 focus:outline-none focus:border-orange transition-colors"
+
   return (
-    <div className="bg-cream w-full max-w-sm p-8">
-      {/* Photo + intro */}
-      <div className="flex items-center gap-4 mb-6">
-        <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0 bg-forest">
-          <Image
-            src="/team-photo.jpg"
-            alt="Jumbo Safaris team"
-            fill
-            className="object-cover"
-            onError={() => {}}
-          />
-        </div>
-        <div>
-          <p className="font-montserrat font-bold text-forest text-sm leading-snug">
-            Let&apos;s plan your dream trip together!
-          </p>
-          <p className="text-xs text-muted mt-0.5">No cost. No commitment.</p>
-        </div>
-      </div>
-
-      {/* Adults */}
-      <div className="mb-4">
-        <label className="font-montserrat font-semibold text-xs uppercase tracking-widest text-forest mb-2 block">
-          Adults
-        </label>
-        <div className="flex items-center border border-border-soft">
-          <button
-            onClick={() => setAdults(Math.max(1, adults - 1))}
-            className="px-4 py-3 text-forest hover:text-orange transition-colors"
-            aria-label="Decrease adults"
-          >
-            <Minus className="w-4 h-4" />
-          </button>
-          <span className="flex-1 text-center font-montserrat font-bold text-forest text-lg">
-            {adults}
-          </span>
-          <button
-            onClick={() => setAdults(adults + 1)}
-            className="px-4 py-3 text-forest hover:text-orange transition-colors"
-            aria-label="Increase adults"
-          >
-            <Plus className="w-4 h-4" />
-          </button>
-        </div>
-      </div>
-
-      {/* Children */}
-      <div className="mb-4">
-        <label className="font-montserrat font-semibold text-xs uppercase tracking-widest text-forest mb-2 block">
-          Children
-        </label>
-        <div className="flex items-center border border-border-soft">
-          <button
-            onClick={() => setChildren(Math.max(0, children - 1))}
-            className="px-4 py-3 text-forest hover:text-orange transition-colors"
-            aria-label="Decrease children"
-          >
-            <Minus className="w-4 h-4" />
-          </button>
-          <span className="flex-1 text-center font-montserrat font-bold text-forest text-lg">
-            {children}
-          </span>
-          <button
-            onClick={() => setChildren(children + 1)}
-            className="px-4 py-3 text-forest hover:text-orange transition-colors"
-            aria-label="Increase children"
-          >
-            <Plus className="w-4 h-4" />
-          </button>
-        </div>
-      </div>
-
-      {/* Date */}
+    <div className="w-full max-w-md bg-forest border border-cream/10 p-8">
+      {/* Form header */}
       <div className="mb-6">
-        <label className="font-montserrat font-semibold text-xs uppercase tracking-widest text-forest mb-2 block">
-          Estimated Arrival Date
-        </label>
+        <h2 className="font-montserrat font-bold text-[22px] text-cream leading-tight mb-1">
+          Plan Your Safari
+        </h2>
+        <p className="text-cream/50 text-[13px] font-inter">
+          Free quote · No commitment · Reply within 24h
+        </p>
+      </div>
+
+      {/* Name */}
+      <div className="mb-4">
+        <label className={labelClass}>Full Name</label>
+        <input
+          type="text"
+          placeholder="Your name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className={inputClass}
+        />
+      </div>
+
+      {/* Email */}
+      <div className="mb-4">
+        <label className={labelClass}>Email Address</label>
+        <input
+          type="email"
+          placeholder="your@email.com"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className={inputClass}
+        />
+      </div>
+
+      {/* WhatsApp */}
+      <div className="mb-4">
+        <label className={labelClass}>WhatsApp Number</label>
+        <input
+          type="tel"
+          placeholder="+1 234 567 8900"
+          value={whatsapp}
+          onChange={(e) => setWhatsapp(e.target.value)}
+          className={inputClass}
+        />
+      </div>
+
+      {/* Arrival Date */}
+      <div className="mb-4">
+        <label className={labelClass}>Estimated Arrival Date</label>
         <input
           type="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
           min={new Date().toISOString().split("T")[0]}
-          className="w-full border border-border-soft p-3 bg-transparent text-forest font-inter text-sm focus:outline-none focus:border-forest"
+          className={`${inputClass} text-ink/70`}
         />
       </div>
 
-      {/* Submit */}
+      {/* Adults + Children counters */}
+      <div className="grid grid-cols-2 gap-4 mb-6">
+        {/* Adults */}
+        <div>
+          <label className={labelClass}>Adults</label>
+          <div className="flex items-center border border-cream/30 bg-cream">
+            <button
+              type="button"
+              onClick={() => setAdults(Math.max(1, adults - 1))}
+              className="w-10 h-11 flex items-center justify-center text-forest hover:bg-orange hover:text-cream transition-colors"
+              aria-label="Decrease adults"
+            >
+              <Minus className="w-3.5 h-3.5" />
+            </button>
+            <span className="flex-1 text-center font-montserrat font-bold text-forest text-lg">
+              {adults}
+            </span>
+            <button
+              type="button"
+              onClick={() => setAdults(Math.min(20, adults + 1))}
+              className="w-10 h-11 flex items-center justify-center text-forest hover:bg-orange hover:text-cream transition-colors"
+              aria-label="Increase adults"
+            >
+              <Plus className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        </div>
+
+        {/* Children */}
+        <div>
+          <label className={labelClass}>Children</label>
+          <div className="flex items-center border border-cream/30 bg-cream">
+            <button
+              type="button"
+              onClick={() => setChildren(Math.max(0, children - 1))}
+              className="w-10 h-11 flex items-center justify-center text-forest hover:bg-orange hover:text-cream transition-colors"
+              aria-label="Decrease children"
+            >
+              <Minus className="w-3.5 h-3.5" />
+            </button>
+            <span className="flex-1 text-center font-montserrat font-bold text-forest text-lg">
+              {children}
+            </span>
+            <button
+              type="button"
+              onClick={() => setChildren(Math.min(10, children + 1))}
+              className="w-10 h-11 flex items-center justify-center text-forest hover:bg-orange hover:text-cream transition-colors"
+              aria-label="Increase children"
+            >
+              <Plus className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* CTA */}
       <button
+        type="button"
         onClick={handleSubmit}
-        className="w-full bg-forest text-cream font-montserrat font-semibold py-4 hover:bg-forest/90 transition-colors flex items-center justify-center gap-2"
+        className="w-full bg-orange text-cream font-montserrat font-semibold text-[15px] py-4 hover:bg-orange/90 transition-colors"
       >
-        Plan My Safari
-        <ArrowRight className="w-4 h-4" />
+        GET MY FREE QUOTE →
       </button>
 
-      {/* USPs */}
-      <ul className="mt-5 space-y-2">
-        {[
-          "100% tailor-made itineraries",
-          "Private guides, private vehicles",
-          "Response within 24 hours",
-        ].map((usp) => (
-          <li key={usp} className="flex items-center gap-2 text-xs text-muted">
-            <span className="w-1.5 h-1.5 rounded-full bg-orange flex-shrink-0" />
-            {usp}
-          </li>
-        ))}
-      </ul>
+      {/* Microcopy */}
+      <p className="text-center text-cream/40 text-[12px] font-inter mt-3">
+        No strings attached. We'll design your trip at no cost.
+      </p>
     </div>
   )
 }
