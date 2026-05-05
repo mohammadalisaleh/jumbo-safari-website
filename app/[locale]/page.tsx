@@ -310,10 +310,10 @@ export default async function HomePage({ params }: PageProps) {
       {/* ── TRUST STRIP ── */}
       <section className="bg-cream border-y border-border-soft py-5">
         <div className="max-w-content mx-auto px-6">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-12">
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-4 sm:gap-12">
             {trustSignals.map((signal) => (
               <div key={signal.text} className="flex items-center gap-2">
-                <signal.icon className="w-4 h-4 text-forest" />
+                <signal.icon className="w-4 h-4 text-forest shrink-0" />
                 <span className="font-montserrat font-semibold text-caption text-forest">
                   {signal.text}
                 </span>
