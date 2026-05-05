@@ -196,23 +196,25 @@ export default async function HomePage({ params }: PageProps) {
               </span>
             </a>
 
-            {/* Centre — Platform badges — hidden on mobile, shown sm and up */}
+            {/* Centre — Rating badges — hidden on mobile, shown sm and up */}
             <div className="hidden sm:flex items-center gap-5">
               {/* Google badge */}
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5">
                 <div
                   className="w-5 h-5 rounded-full bg-white flex-shrink-0 flex items-center justify-center font-bold text-[11px]"
                   style={{ color: "#4285F4" }}
                 >
                   G
                 </div>
-                <span className="font-montserrat font-semibold text-[11px] text-cream/70">Google</span>
+                <div className="flex text-[11px] text-yellow-400 leading-none">★★★★★</div>
+                <span className="font-montserrat font-semibold text-[11px] text-cream">4.9</span>
+                <span className="text-cream/35 text-[10px]">Google</span>
               </div>
 
               <span className="text-cream/20 text-xs">|</span>
 
               {/* TripAdvisor badge */}
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5">
                 <div
                   className="w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center"
                   style={{ backgroundColor: "#34E0A1" }}
@@ -223,7 +225,9 @@ export default async function HomePage({ params }: PageProps) {
                     <path d="M3 9h4.5M16.5 9H21M12 5v3" stroke="white" strokeWidth="2" strokeLinecap="round" fill="none"/>
                   </svg>
                 </div>
-                <span className="font-montserrat font-semibold text-[11px] text-cream/70">TripAdvisor</span>
+                <div className="flex text-[11px] text-yellow-400 leading-none">★★★★★</div>
+                <span className="font-montserrat font-semibold text-[11px] text-cream">4.9</span>
+                <span className="text-cream/35 text-[10px]">TripAdvisor</span>
               </div>
             </div>
 
