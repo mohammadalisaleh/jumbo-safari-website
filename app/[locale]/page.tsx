@@ -183,7 +183,7 @@ export default async function HomePage({ params }: PageProps) {
       {/* ── TOP TRUST BAR ── */}
       <div className="bg-forest border-b border-cream/10">
         <div className="max-w-content mx-auto px-6 py-2">
-          <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center justify-center sm:justify-between gap-8 sm:gap-2">
 
             {/* Left — WhatsApp */}
             <a
@@ -292,13 +292,20 @@ export default async function HomePage({ params }: PageProps) {
               </ul>
             </div>
 
-            {/* ── RIGHT: Form card ── */}
-            <div className="flex lg:justify-end">
+            {/* ── RIGHT: Form card — desktop only inside hero ── */}
+            <div className="hidden lg:flex lg:justify-end">
               <HeroForm locale={locale} accessKey={accessKey} />
             </div>
           </div>
         </div>
       </section>
+
+      {/* ── MOBILE FORM — shown below hero on mobile only ── */}
+      <div className="lg:hidden bg-forest">
+        <div className="max-w-content mx-auto px-4 py-6">
+          <HeroForm locale={locale} accessKey={accessKey} />
+        </div>
+      </div>
 
       {/* ── TRUST STRIP ── */}
       <section className="bg-cream border-y border-border-soft py-5">
