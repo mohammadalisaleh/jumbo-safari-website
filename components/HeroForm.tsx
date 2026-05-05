@@ -97,8 +97,8 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
     )
   }
 
-  const lbl = "block font-montserrat font-semibold text-[10px] uppercase tracking-[0.1em] text-orange mb-1.5"
-  const inp = "w-full bg-white/10 text-cream border border-cream/20 px-3 py-2.5 text-[14px] placeholder:text-cream/35 focus:outline-none focus:border-orange transition-colors"
+  const lbl = "block font-montserrat font-semibold text-[11px] uppercase tracking-[0.1em] text-orange mb-1.5"
+  const inp = "w-full bg-white/10 text-cream border border-cream/20 px-3 py-3 text-[16px] placeholder:text-cream/35 focus:outline-none focus:border-orange transition-colors"
 
   return (
     <div className="w-full bg-forest p-5 md:p-6">
@@ -119,10 +119,10 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
           />
         </div>
         <div>
-          <p className="font-montserrat font-bold text-cream text-[14px] leading-snug">
+          <p className="font-montserrat font-bold text-cream text-[22px] leading-snug">
             Plan Your Dream Safari
           </p>
-          <p className="text-cream/45 text-[11px] font-inter">
+          <p className="text-cream/55 text-[13px] font-inter">
             Free quote · No commitment · Reply within 24h
           </p>
         </div>
@@ -224,12 +224,12 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
       <button
         onClick={handleSubmit}
         disabled={loading}
-        className="w-full bg-orange text-cream font-montserrat font-bold text-[13px] uppercase tracking-[0.08em] py-3.5 hover:bg-orange/90 transition-colors disabled:opacity-60"
+        className="w-full bg-orange text-cream font-montserrat font-bold text-[15px] uppercase tracking-[0.08em] py-4 hover:bg-orange/90 transition-colors disabled:opacity-60"
       >
         {loading ? "Sending…" : "Get My Free Itinerary"}
       </button>
 
-      <p className="text-center text-cream/30 text-[10px] mt-2.5 font-inter">
+      <p className="text-center text-cream/30 text-[12px] mt-3 font-inter">
         No payment. No obligation. Just a plan.
       </p>
     </div>
