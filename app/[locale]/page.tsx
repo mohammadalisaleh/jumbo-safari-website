@@ -13,6 +13,7 @@ import {
   Map,
   MessageCircle,
   Phone,
+  Mail,
 } from "lucide-react"
 import HeroForm from "@/components/HeroForm"
 import StickyWhatsApp from "@/components/StickyWhatsApp"
@@ -126,7 +127,6 @@ export default async function HomePage({ params }: PageProps) {
   const { locale } = await params
   setRequestLocale(locale)
 
-  // Read Web3Forms key server-side (no NEXT_PUBLIC_ needed)
   const accessKey = process.env.WEB3FORMS_ACCESS_KEY ?? ""
 
   const tNav = await getTranslations("nav")
@@ -182,70 +182,106 @@ export default async function HomePage({ params }: PageProps) {
     <>
       {/* ── TOP TRUST BAR ── */}
       <div className="bg-forest border-b border-cream/10">
-        <div className="max-w-content mx-auto px-6 py-2.5">
-          <div className="flex items-center justify-center gap-4 sm:gap-8 flex-wrap">
-            <span className="flex items-center gap-1.5">
-              <span className="text-orange font-bold text-sm">✓</span>
-              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream">
-                Arusha-Based Experts
-              </span>
-            </span>
-            <span className="text-cream/20 hidden sm:inline text-xs">|</span>
+        <div className="max-w-content mx-auto px-6 py-2">
+          <div className="flex items-center justify-between gap-2">
+
+            {/* Left — WhatsApp */}
             <a
               href="https://wa.me/255742789292"
-              className="flex items-center gap-1.5 hover:text-orange transition-colors group"
+              className="flex items-center gap-1.5 hover:text-orange transition-colors group flex-shrink-0"
             >
               <Phone className="w-3 h-3 text-orange" />
-              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream group-hover:text-orange transition-colors">
+              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream group-hover:text-orange transition-colors hidden sm:inline">
                 +255 742 789 292
               </span>
-            </a>
-            <span className="text-cream/20 hidden sm:inline text-xs">|</span>
-            <span className="flex items-center gap-1.5">
-              <span className="text-orange font-bold text-sm">✓</span>
-              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream">
-                Free Quote · No Commitment
+              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream group-hover:text-orange transition-colors sm:hidden">
+                WhatsApp
               </span>
-            </span>
+            </a>
+
+            {/* Centre — Rating badges */}
+            <div className="flex items-center gap-3 sm:gap-6">
+              {/* Google badge — update the number once your Google Business reviews are live */}
+              <div className="flex items-center gap-1.5">
+                <div
+                  className="w-5 h-5 rounded-full bg-white flex-shrink-0 flex items-center justify-center font-bold text-[11px]"
+                  style={{ color: "#4285F4" }}
+                >
+                  G
+                </div>
+                <div className="flex text-[11px] text-yellow-400 leading-none">★★★★★</div>
+                <span className="font-montserrat font-semibold text-[11px] text-cream">5.0</span>
+                <span className="text-cream/35 text-[10px] hidden sm:inline">Google</span>
+              </div>
+
+              <span className="text-cream/20 text-xs hidden sm:inline">|</span>
+
+              {/* TripAdvisor badge — update once you have reviews */}
+              <div className="flex items-center gap-1.5">
+                <div
+                  className="w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center"
+                  style={{ backgroundColor: "#34E0A1" }}
+                >
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="white" aria-label="TripAdvisor">
+                    <circle cx="6.5" cy="13" r="4" />
+                    <circle cx="17.5" cy="13" r="4" />
+                    <path d="M3 9h4.5M16.5 9H21M12 5v3" stroke="white" strokeWidth="2" strokeLinecap="round" fill="none"/>
+                  </svg>
+                </div>
+                <div className="flex text-[11px] text-yellow-400 leading-none">★★★★★</div>
+                <span className="font-montserrat font-semibold text-[11px] text-cream">5.0</span>
+                <span className="text-cream/35 text-[10px] hidden sm:inline">TripAdvisor</span>
+              </div>
+            </div>
+
+            {/* Right — Email */}
+            <a
+              href="mailto:hello@jumbosafaris.com"
+              className="flex items-center gap-1.5 hover:text-orange transition-colors group flex-shrink-0"
+            >
+              <Mail className="w-3 h-3 text-orange" />
+              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream group-hover:text-orange transition-colors hidden md:inline">
+                hello@jumbosafaris.com
+              </span>
+              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream group-hover:text-orange transition-colors md:hidden">
+                Email
+              </span>
+            </a>
+
           </div>
         </div>
       </div>
 
       {/* ── HERO SECTION ── */}
-      {/* min-h uses calc to subtract nav + trust bar height so it fits on 13" MBP */}
       <section className="relative flex items-center" style={{ minHeight: "calc(100vh - 108px)" }}>
         {/* Background image */}
         <Image
           src="/serengeti-plains-golden-hour-tanzania-safari-hero.jpg"
           alt="Serengeti plains at golden hour, Tanzania — private guided safari with Jumbo Safaris"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           priority
         />
-        {/* Gradient overlay — strong on left for text, lighter on right so form card reads */}
-        <div className="absolute inset-0 bg-forest/80 lg:bg-gradient-to-r lg:from-forest/90 lg:via-forest/70 lg:to-forest/40" />
+        {/* Light overlay — lets the Serengeti photo breathe, darker on left for text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/38 to-black/15" />
 
         <div className="relative z-10 w-full max-w-content mx-auto px-6 py-10 md:py-16">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-start lg:items-center">
 
             {/* ── LEFT: Hero copy ── */}
             <div className="text-cream">
-              {/* Eyebrow */}
               <p className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.1em] text-orange mb-4">
                 Private Guided Safaris · Arusha, Tanzania
               </p>
 
-              {/* H1 — large and weighted */}
               <h1 className="font-montserrat font-extrabold text-[clamp(2.4rem,5vw,3.5rem)] leading-[1.05] text-balance mb-5">
                 {tHero("headline")}
               </h1>
 
-              {/* Hook line — specific, sensory */}
               <p className="text-[1.1rem] text-cream/85 mb-6 max-w-[480px] leading-relaxed">
                 {tHero("subheadline")}
               </p>
 
-              {/* Three specific proof points */}
               <ul className="space-y-2 mb-0">
                 {[
                   "One vehicle. One guide. Just your group.",
@@ -258,7 +294,6 @@ export default async function HomePage({ params }: PageProps) {
                   </li>
                 ))}
               </ul>
-              {/* No WhatsApp button here — sticky bar handles mobile, trust bar handles desktop */}
             </div>
 
             {/* ── RIGHT: Form card ── */}
