@@ -196,8 +196,8 @@ export default async function HomePage({ params }: PageProps) {
               </span>
             </a>
 
-            {/* Centre — Rating badges */}
-            <div className="flex items-center gap-3 sm:gap-6">
+            {/* Centre — Rating badges — hidden on mobile, shown sm and up */}
+            <div className="hidden sm:flex items-center gap-3 sm:gap-6">
               {/* Google badge — update the number once your Google Business reviews are live */}
               <div className="flex items-center gap-1.5">
                 <div
@@ -250,7 +250,7 @@ export default async function HomePage({ params }: PageProps) {
       </div>
 
       {/* ── HERO SECTION ── */}
-      <section className="relative flex items-center" style={{ minHeight: "calc(100vh - 108px)" }}>
+      <section className="relative flex items-start lg:items-center lg:min-h-[calc(100vh-80px)]">
         {/* Background image */}
         <Image
           src="/serengeti-plains-golden-hour-tanzania-safari-hero.jpg"
