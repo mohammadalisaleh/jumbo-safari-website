@@ -191,11 +191,8 @@ export default async function HomePage({ params }: PageProps) {
               className="flex items-center gap-1.5 hover:text-orange transition-colors group flex-shrink-0"
             >
               <Phone className="w-3 h-3 text-orange" />
-              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream group-hover:text-orange transition-colors hidden sm:inline">
-                +255 742 789 292
-              </span>
-              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream group-hover:text-orange transition-colors sm:hidden">
-                WhatsApp
+              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream group-hover:text-orange transition-colors">
+                Chat on WhatsApp
               </span>
             </a>
 
@@ -285,7 +282,6 @@ export default async function HomePage({ params }: PageProps) {
               <ul className="space-y-2 mb-0">
                 {[
                   "One vehicle. One guide. Just your group.",
-                  "We know where the calving plains are in February.",
                   "Free custom itinerary — reply within 24 hours.",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-2.5 text-cream/80 text-[15px] font-inter">
