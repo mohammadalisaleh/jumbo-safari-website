@@ -12,8 +12,10 @@ import {
   UserCheck,
   Map,
   MessageCircle,
+  Phone,
 } from "lucide-react"
 import HeroForm from "@/components/HeroForm"
+import StickyWhatsApp from "@/components/StickyWhatsApp"
 
 interface PageProps {
   params: Promise<{ locale: string }>
@@ -175,7 +177,38 @@ export default async function HomePage({ params }: PageProps) {
 
   return (
     <>
-      {/* Hero Section — full bleed with form overlay */}
+      {/* ── TOP TRUST BAR ── */}
+      <div className="bg-forest border-b border-cream/10">
+        <div className="max-w-content mx-auto px-6 py-2.5">
+          <div className="flex items-center justify-center gap-4 sm:gap-8 flex-wrap">
+            <span className="flex items-center gap-1.5">
+              <span className="text-orange font-bold text-sm">✓</span>
+              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream">
+                Arusha-Based Experts
+              </span>
+            </span>
+            <span className="text-cream/20 hidden sm:inline text-xs">|</span>
+            <a
+              href="https://wa.me/255742789292"
+              className="flex items-center gap-1.5 hover:text-orange transition-colors group"
+            >
+              <Phone className="w-3 h-3 text-orange" />
+              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream group-hover:text-orange transition-colors">
+                +255 742 789 292
+              </span>
+            </a>
+            <span className="text-cream/20 hidden sm:inline text-xs">|</span>
+            <span className="flex items-center gap-1.5">
+              <span className="text-orange font-bold text-sm">✓</span>
+              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream">
+                Free Quote · No Commitment
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* ── HERO SECTION ── */}
       <section className="relative min-h-[90vh] flex items-center">
         {/* Background image */}
         <Image
@@ -185,27 +218,52 @@ export default async function HomePage({ params }: PageProps) {
           className="object-cover"
           priority
         />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-forest/72" />
+        {/* Overlay — stronger on left for desktop readability */}
+        <div className="absolute inset-0 bg-forest/75 lg:bg-gradient-to-r lg:from-forest/85 lg:via-forest/65 lg:to-forest/30" />
 
         {/* Content */}
-        <div className="relative z-10 w-full max-w-content mx-auto px-6 py-16 md:py-24">
+        <div className="relative z-10 w-full max-w-content mx-auto px-6 py-16 md:py-24 pb-24 md:pb-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: headline + subtext */}
+
+            {/* Left: headline + subtext + WhatsApp CTA */}
             <div className="text-cream">
+              {/* Eyebrow */}
+              <p className="font-montserrat font-semibold text-[12px] uppercase tracking-[0.08em] text-orange mb-4">
+                Arusha-Based Safari Experts
+              </p>
+
               <h1 className="font-montserrat font-extrabold text-hero-mobile md:text-hero-desktop text-balance mb-6 leading-tight">
                 {tHero("headline")}
               </h1>
+
               <p className="text-lead-mobile md:text-lead-desktop text-cream/90 mb-8 max-w-prose">
                 {tHero("subheadline")}
               </p>
-              <Link
-                href={localePath("itineraries/8-day-classic-tanzania-safari")}
-                className="inline-flex items-center gap-2 text-cream/80 hover:text-orange transition-colors font-montserrat font-semibold text-sm"
+
+              {/* Trust signals — quick inline list */}
+              <ul className="flex flex-col gap-2 mb-8">
+                {[
+                  "Private guides. No group tours.",
+                  "Designed in Arusha. Delivered in the wild.",
+                  "Free custom quote within 24 hours.",
+                ].map((point) => (
+                  <li key={point} className="flex items-center gap-2 text-cream/85 text-sm font-inter">
+                    <span className="text-orange font-bold">✓</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+
+              {/* WhatsApp CTA */}
+              <a
+                href="https://wa.me/255742789292"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-cream/40 text-cream hover:border-orange hover:text-orange transition-colors font-montserrat font-semibold text-sm px-5 py-3"
               >
-                Browse itineraries
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <MessageCircle className="w-4 h-4" />
+                Chat on WhatsApp
+              </a>
             </div>
 
             {/* Right: hero form card */}
@@ -216,7 +274,7 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Trust Strip */}
+      {/* ── TRUST STRIP ── */}
       <section className="bg-cream border-y border-border-soft py-6">
         <div className="max-w-content mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-6 md:gap-12">
@@ -232,7 +290,7 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Featured Itineraries */}
+      {/* ── FEATURED ITINERARIES ── */}
       <section className="bg-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6">
           <div className="text-center mb-12">
@@ -272,7 +330,7 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* National Parks Strip */}
+      {/* ── NATIONAL PARKS ── */}
       <section className="bg-forest text-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6">
           <div className="text-center mb-12">
@@ -305,7 +363,7 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Why Jumbo */}
+      {/* ── WHY JUMBO ── */}
       <section className="bg-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6">
           <div className="text-center mb-12">
@@ -332,7 +390,7 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Best Time Strip */}
+      {/* ── BEST TIME STRIP ── */}
       <section className="bg-cream border-t border-border-soft py-16 md:py-24">
         <div className="max-w-content mx-auto px-6">
           <div className="text-center mb-12">
@@ -370,7 +428,7 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Inquiry CTA */}
+      {/* ── INQUIRY CTA ── */}
       <section className="bg-forest text-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6 text-center">
           <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop mb-4">
@@ -396,6 +454,11 @@ export default async function HomePage({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {/* ── MOBILE STICKY WHATSAPP ── */}
+      {/* Adds bottom padding so content isn't hidden behind the sticky bar on mobile */}
+      <div className="h-16 md:hidden" aria-hidden="true" />
+      <StickyWhatsApp />
     </>
   )
 }
