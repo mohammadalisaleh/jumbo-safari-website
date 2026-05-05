@@ -1,7 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { CheckCircle } from "lucide-react"
+import { CheckCircle, Plus, Minus } from "lucide-react"
+import Image from "next/image"
 
 interface HeroFormProps {
   locale: string
@@ -9,19 +10,23 @@ interface HeroFormProps {
 }
 
 export default function HeroForm({ locale, accessKey }: HeroFormProps) {
-  const [adults, setAdults] = useState(2)
+  const [adults, setAdults]     = useState(2)
   const [children, setChildren] = useState(0)
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
+  const [name, setName]         = useState("")
+  const [email, setEmail]       = useState("")
   const [whatsapp, setWhatsapp] = useState("")
-  const [date, setDate] = useState("")
-  const [loading, setLoading] = useState(false)
+  const [date, setDate]         = useState("")
+  const [loading, setLoading]   = useState(false)
   const [submitted, setSubmitted] = useState(false)
-  const [error, setError] = useState("")
+  const [error, setError]       = useState("")
 
   const handleSubmit = async () => {
-    if (!name || !email) {
-      setError("Please enter your name and email.")
+    if (!name.trim()) {
+      setError("Please enter your name.")
+      return
+    }
+    if (!email.trim() && !whatsapp.trim()) {
+      setError("Please provide at least an email or WhatsApp number so we can reach you.")
       return
     }
     setError("")
@@ -33,7 +38,7 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
           month: "long",
           year: "numeric",
         })
-      : "Flexible"
+      : "Flexible / not yet decided"
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -41,11 +46,18 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: accessKey,
-          subject: `New Safari Inquiry — ${name}`,
-          name,
-          email,
-          message: `WhatsApp: ${whatsapp || "Not provided"}\nArrival Date: ${dateText}\nAdults: ${adults}\nChildren: ${children}`,
+          subject: `Safari Enquiry — ${name} | ${adults} adult${adults !== 1 ? "s" : ""}${children > 0 ? ` + ${children} child${children !== 1 ? "ren" : ""}` : ""} | ${dateText}`,
           from_name: "Jumbo Safaris Website",
+          email: email || "hello@jumbosafaris.com",
+          replyto: email || undefined,
+          message: [
+            `Name:      ${name}`,
+            `Email:     ${email || "Not provided"}`,
+            `WhatsApp:  ${whatsapp || "Not provided"}`,
+            `Arrival:   ${dateText}`,
+            `Adults:    ${adults}`,
+            `Children:  ${children}`,
+          ].join("\n"),
         }),
       })
 
@@ -62,20 +74,16 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
     }
   }
 
-  const label =
-    "block font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-orange mb-1"
-  const input =
-    "w-full bg-cream text-ink border border-cream/20 px-3 py-2.5 text-[15px] font-inter placeholder:text-ink/40 focus:outline-none focus:border-orange transition-colors"
-
+  /* ── Submitted state ── */
   if (submitted) {
     return (
-      <div className="w-full max-w-md bg-forest border border-cream/10 p-8 flex flex-col items-center justify-center text-center min-h-[300px]">
-        <CheckCircle className="w-10 h-10 text-orange mb-3" />
+      <div className="w-full bg-forest p-8 flex flex-col items-center justify-center text-center min-h-[320px]">
+        <CheckCircle className="w-10 h-10 text-orange mb-4" />
         <h2 className="font-montserrat font-bold text-xl text-cream mb-2">
-          We'll be in touch!
+          We&apos;ll be in touch!
         </h2>
-        <p className="text-cream/60 text-sm font-inter mb-5">
-          Expect a reply within 24 hours. For faster response, message us on WhatsApp.
+        <p className="text-cream/60 text-sm font-inter mb-6 max-w-xs leading-relaxed">
+          Expect a reply within 24 hours with a personalised itinerary proposal.
         </p>
         <a
           href="https://wa.me/255742789292"
@@ -83,141 +91,146 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
           rel="noopener noreferrer"
           className="bg-orange text-cream font-montserrat font-semibold text-sm px-6 py-3 hover:bg-orange/90 transition-colors"
         >
-          Open WhatsApp →
+          WhatsApp us now →
         </a>
       </div>
     )
   }
 
+  const lbl = "block font-montserrat font-semibold text-[10px] uppercase tracking-[0.1em] text-orange mb-1.5"
+  const inp = "w-full bg-white/10 text-cream border border-cream/20 px-3 py-2.5 text-[14px] placeholder:text-cream/35 focus:outline-none focus:border-orange transition-colors"
+
   return (
-    <div className="w-full max-w-md bg-forest border border-cream/10 p-6">
-      {/* Header */}
+    <div className="w-full bg-forest p-5 md:p-6">
+
+      {/* ── Expert header ── */}
+      <div className="flex items-center gap-3 mb-5 pb-4 border-b border-cream/10">
+        {/* 
+          Upload your headshot to the GitHub repo at:
+          public/guide-photo.jpg
+          Any decent portrait works — square crop recommended.
+        */}
+        <div className="relative w-12 h-12 flex-shrink-0 rounded-full overflow-hidden ring-2 ring-orange/60">
+          <Image
+            src="/guide-photo.jpg"
+            alt="Mohammadali — Your Safari Expert at Jumbo Safaris"
+            fill
+            className="object-cover object-top"
+          />
+        </div>
+        <div>
+          <p className="font-montserrat font-bold text-cream text-[14px] leading-snug">
+            Plan Your Dream Safari
+          </p>
+          <p className="text-cream/45 text-[11px] font-inter">
+            Free quote · No commitment · Reply within 24h
+          </p>
+        </div>
+      </div>
+
+      {/* ── 1. Arrival date ── */}
+      <div className="mb-3">
+        <label className={lbl}>Estimated Arrival Date</label>
+        <input
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          className={inp + " [color-scheme:dark]"}
+        />
+      </div>
+
+      {/* ── 2. Adults + Children ── */}
+      <div className="grid grid-cols-2 gap-3 mb-3">
+        {(
+          [
+            { label: "Adults",   value: adults,   set: setAdults,   min: 1 },
+            { label: "Children", value: children, set: setChildren, min: 0 },
+          ] as const
+        ).map(({ label, value, set, min }) => (
+          <div key={label}>
+            <span className={lbl}>{label}</span>
+            <div className="flex items-center bg-white/10 border border-cream/20 px-2 py-2.5">
+              <button
+                type="button"
+                onClick={() => set(Math.max(min, value - 1))}
+                aria-label={`Decrease ${label}`}
+                className="w-7 h-7 flex items-center justify-center text-cream hover:text-orange transition-colors"
+              >
+                <Minus className="w-3.5 h-3.5" />
+              </button>
+              <span className="flex-1 text-center text-cream font-semibold text-[15px]">
+                {value}
+              </span>
+              <button
+                type="button"
+                onClick={() => set(value + 1)}
+                aria-label={`Increase ${label}`}
+                className="w-7 h-7 flex items-center justify-center text-cream hover:text-orange transition-colors"
+              >
+                <Plus className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* ── 3. Name ── */}
+      <div className="mb-3">
+        <label className={lbl}>Your Name</label>
+        <input
+          type="text"
+          placeholder="First name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className={inp}
+        />
+      </div>
+
+      {/* ── 4. Email ── */}
+      <div className="mb-3">
+        <label className={lbl}>Email</label>
+        <input
+          type="email"
+          placeholder="you@email.com"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className={inp}
+        />
+      </div>
+
+      {/* ── 5. WhatsApp (either/or) ── */}
       <div className="mb-4">
-        <h2 className="font-montserrat font-bold text-xl text-cream leading-tight mb-0.5">
-          Plan Your Safari
-        </h2>
-        <p className="text-cream/45 text-[12px] font-inter">
-          Free quote · No commitment · Reply within 24h
-        </p>
+        <label className={lbl}>
+          WhatsApp
+          <span className="ml-1 normal-case tracking-normal font-inter font-normal text-cream/40 text-[10px]">
+            — or use email above
+          </span>
+        </label>
+        <input
+          type="tel"
+          placeholder="+1 234 567 8900"
+          value={whatsapp}
+          onChange={(e) => setWhatsapp(e.target.value)}
+          className={inp}
+        />
       </div>
 
-      {/* Row 1: Name + Email */}
-      <div className="grid grid-cols-2 gap-3 mb-3">
-        <div>
-          <label className={label}>Full Name</label>
-          <input
-            type="text"
-            placeholder="Your name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className={input}
-          />
-        </div>
-        <div>
-          <label className={label}>Email</label>
-          <input
-            type="email"
-            placeholder="you@email.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className={input}
-          />
-        </div>
-      </div>
-
-      {/* Row 2: WhatsApp + Date */}
-      <div className="grid grid-cols-2 gap-3 mb-3">
-        <div>
-          <label className={label}>WhatsApp</label>
-          <input
-            type="tel"
-            placeholder="+1 234 567 890"
-            value={whatsapp}
-            onChange={(e) => setWhatsapp(e.target.value)}
-            className={input}
-          />
-        </div>
-        <div>
-          <label className={label}>Arrival Date</label>
-          <input
-            type="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            min={new Date().toISOString().split("T")[0]}
-            className={`${input} text-ink/60`}
-          />
-        </div>
-      </div>
-
-      {/* Row 3: Adults + Children counters */}
-      <div className="grid grid-cols-2 gap-3 mb-4">
-        <div>
-          <label className={label}>Adults</label>
-          <div className="flex items-center border border-cream/20 bg-cream h-10">
-            <button
-              type="button"
-              onClick={() => setAdults(Math.max(1, adults - 1))}
-              className="w-9 h-full flex items-center justify-center text-forest hover:bg-orange hover:text-cream transition-colors text-lg"
-              aria-label="Decrease adults"
-            >
-              −
-            </button>
-            <span className="flex-1 text-center font-montserrat font-bold text-forest text-base">
-              {adults}
-            </span>
-            <button
-              type="button"
-              onClick={() => setAdults(Math.min(20, adults + 1))}
-              className="w-9 h-full flex items-center justify-center text-forest hover:bg-orange hover:text-cream transition-colors text-lg"
-              aria-label="Increase adults"
-            >
-              +
-            </button>
-          </div>
-        </div>
-        <div>
-          <label className={label}>Children</label>
-          <div className="flex items-center border border-cream/20 bg-cream h-10">
-            <button
-              type="button"
-              onClick={() => setChildren(Math.max(0, children - 1))}
-              className="w-9 h-full flex items-center justify-center text-forest hover:bg-orange hover:text-cream transition-colors text-lg"
-              aria-label="Decrease children"
-            >
-              −
-            </button>
-            <span className="flex-1 text-center font-montserrat font-bold text-forest text-base">
-              {children}
-            </span>
-            <button
-              type="button"
-              onClick={() => setChildren(Math.min(10, children + 1))}
-              className="w-9 h-full flex items-center justify-center text-forest hover:bg-orange hover:text-cream transition-colors text-lg"
-              aria-label="Increase children"
-            >
-              +
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Error */}
+      {/* ── Error ── */}
       {error && (
-        <p className="text-orange text-[12px] font-inter mb-3">{error}</p>
+        <p className="text-orange text-[12px] mb-3 font-inter leading-snug">{error}</p>
       )}
 
-      {/* Submit */}
+      {/* ── CTA ── */}
       <button
-        type="button"
         onClick={handleSubmit}
         disabled={loading}
-        className="w-full bg-orange text-cream font-montserrat font-semibold text-sm py-3.5 hover:bg-orange/90 transition-colors disabled:opacity-60"
+        className="w-full bg-orange text-cream font-montserrat font-bold text-[13px] uppercase tracking-[0.08em] py-3.5 hover:bg-orange/90 transition-colors disabled:opacity-60"
       >
-        {loading ? "Sending..." : "GET MY FREE QUOTE →"}
+        {loading ? "Sending…" : "Get My Free Itinerary"}
       </button>
 
-      <p className="text-center text-cream/30 text-[11px] font-inter mt-2">
-        No strings attached. We design your trip at no cost.
+      <p className="text-center text-cream/30 text-[10px] mt-2.5 font-inter">
+        No payment. No obligation. Just a plan.
       </p>
     </div>
   )
