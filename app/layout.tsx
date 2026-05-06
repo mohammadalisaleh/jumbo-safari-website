@@ -18,7 +18,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jumbosafaris.com"),
+  metadataBase: new URL("https://www.jumbosafaris.com"),
   title: {
     default: "Jumbo Safaris | Private Tanzania Safari Operator",
     template: "%s | Jumbo Safaris",
@@ -44,8 +44,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "TravelAgency",
     name: "Jumbo Safaris",
-    url: "https://jumbosafaris.com",
-    logo: "https://jumbosafaris.com/logo-horizontal.png",
+    url: "https://www.jumbosafaris.com",
+    logo: "https://www.jumbosafaris.com/logo-horizontal.png",
     telephone: "+255742789292",
     email: "hello@jumbosafaris.com",
     address: {
