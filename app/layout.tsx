@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import { Montserrat, Inter } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -73,7 +72,6 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
-        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   )
