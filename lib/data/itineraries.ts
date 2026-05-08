@@ -179,117 +179,136 @@ export const itineraries: Record<string, Itinerary> = {
   },
   "calving-season-safari": {
     slug: "calving-season-safari",
-    title: "Calving Season Safari",
+    title: "Calving Season Safari — Ndutu & Ngorongoro",
     duration: "7 Days",
-    parks: "Ndutu · Serengeti · Ngorongoro",
+    parks: "Ndutu · Ngorongoro · Southern Serengeti",
     price: "From $2,800 pp",
     season: "January - March",
     description:
-      "Witness the miracle of birth during the Great Migration calving season in Tanzania's southern Serengeti and Ndutu plains.",
+      "7-day Tanzania calving season safari based at Ndutu. Roughly 8,000 wildebeest calves born per day at peak, off-road driving permitted, every predator in the ecosystem converging on one area. January through March.",
     heroImage: {
       src: "/wildebeest-calf-ndutu-calving-season-tanzania.jpg",
       alt: "Newborn wildebeest calf running alongside its mother through Lake Ndutu during calving season, Tanzania",
     },
     leadParagraph:
-      "Every year between January and March, over half a million wildebeest calves are born on the short-grass plains of Ndutu and the southern Serengeti. This calving season safari puts you in the heart of the action—watching newborns take their first steps, witnessing dramatic predator encounters, and experiencing one of nature's greatest spectacles.",
+      "Most people chase the Mara River crossings in August. Serious wildlife travellers come in February. Calving season at Ndutu puts roughly 8,000 wildebeest calves on the ground per day at peak, draws every lion, cheetah, hyena, and jackal in the ecosystem onto open short-grass plains with ankle-height visibility, and costs significantly less than peak-season Serengeti rates. It is, by most measures, the best predator viewing in Africa. And almost nobody knows about it.",
     overview:
-      "The Calving Season Safari is perfectly timed to coincide with the Great Migration's birthing season. Based in the Ndutu area and southern Serengeti plains, you'll witness thousands of wildebeest and zebra giving birth daily. This abundance of vulnerable young attracts predators, making for incredible wildlife viewing and photography opportunities.",
+      "Ndutu sits in the northwestern corner of the Ngorongoro Conservation Area (NCA), not inside Serengeti National Park, and that jurisdictional detail is the most important practical fact about this safari. Because the NCA governs this land, off-road driving is permitted. Your guide can leave the track to hold a position on a cheetah hunt, frame a lion kill from the right angle, or stay with a birth for as long as it takes. Cross the boundary east into Serengeti NP through Naabi Hill Gate and every vehicle returns to the designated track regardless of what is happening 30 metres away. This is why Ndutu is the preferred location for photographers and serious wildlife travellers during calving, not just the southern Serengeti generically. The timing is driven by rainfall, not calendar. The November-December short rains green the volcanic short-grass plains around Lake Ndutu and Lake Masek with phosphorus- and calcium-rich grass, exactly what lactating cows and developing calves need. The herds arrive by late December and births begin. Peak is the first two weeks of February. By March births taper and the herds begin moving northwest. The scale is hard to process: 500,000 calves over six weeks, all delivered onto flat open plains with no cover, watched by the highest predator concentration in the ecosystem.",
     quickFacts: {
       duration: "7 Days / 6 Nights",
-      parksVisited: "Ndutu, Southern Serengeti, Ngorongoro",
-      accommodation: "Tented camps in prime calving areas",
+      parksVisited: "Ndutu (NCA), Southern Serengeti, Ngorongoro Crater",
+      accommodation: "Tented lodge or mobile camp at Ndutu",
       groupSize: "Private (2-6 guests)",
       departsFrom: "Arusha, Tanzania",
-      bestSeason: "January - March only",
+      bestSeason: "Mid-January through late February (peak)",
     },
     days: [
       {
         day: 1,
-        title: "Arusha to Ngorongoro Conservation Area",
-        activities: "Morning pickup and drive to the Ngorongoro highlands. Afternoon at leisure or optional crater rim walk.",
-        accommodation: "Ngorongoro Farm House or similar",
+        title: "Arusha to Karatu",
+        activities:
+          "Depart Arusha by 7:00am. The drive to Karatu takes about three hours, passing through Mto wa Mbu at the base of the Rift Valley escarpment and climbing into the Ngorongoro highlands. Karatu sits at 1,450 metres in farming country just 14 km from Loduare Gate, the main NCA entry from the Arusha side. Afternoon at the lodge. This overnight is a staging stop, not a game-drive day.",
+        accommodation: "Ngorongoro Farm House or similar (Karatu)",
         meals: "Lunch, Dinner",
       },
       {
         day: 2,
-        title: "Ngorongoro to Ndutu",
-        activities: "Drive to Ndutu, arriving in the heart of calving country. Afternoon game drive on the plains.",
+        title: "Karatu to Ndutu via Ngorongoro Crater",
+        activities:
+          "Early breakfast then enter the NCA through Loduare Gate. Descend into the Ngorongoro Crater for a half-day game drive on the floor: 120 lions, 50 black rhino, 15,000 wildebeest. Ascend the western wall by early afternoon and continue southwest along the NCA tracks toward Ndutu, arriving by late afternoon. Total driving inside the NCA today is about 90 km. Afternoon game drive on the calving plains before dark.",
         accommodation: "Ndutu Safari Lodge or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 3,
-        title: "Full Day Ndutu Calving Plains",
-        activities: "Full day exploring the calving areas. Witness newborn wildebeest and zebra with predators on the hunt.",
+        title: "Full Day Ndutu — Lake Ndutu Plains",
+        activities:
+          "Depart at first light, around 6:00am. The short-grass plains around Lake Ndutu are ankle-height in January and February, which means unobstructed sightlines across flat terrain to the horizon. The herds are dense and moving slowly. Calves are born continuously through the morning. A newborn wildebeest stands within 3-5 minutes of birth, walks within 15, and runs with the herd within hours. What follows each birth is immediate: lions move in from the kopjes, spotted hyenas trail the herd edges, black-backed jackals work the newborns directly. Cheetahs are especially active here during calving because open short grass suits their sprint hunting. Kill success for cheetahs runs about 50% during calving, compared to 30% at other times. Full day in the field, picnic lunch in the vehicle.",
         accommodation: "Ndutu Safari Lodge or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 4,
-        title: "Ndutu to Southern Serengeti",
-        activities: "Game drive into the southern Serengeti plains following the herds.",
-        accommodation: "Serengeti Under Canvas or similar",
+        title: "Full Day Ndutu — Lake Masek and the Kopjes",
+        activities:
+          "Lake Masek sits about 6 km from Lake Ndutu and is a separate zone most operators ignore. The acacia woodland fringing its eastern shore is leopard territory. The open plains between the two lakes are where the herds spread at maximum density during peak calving. Twin Kopjes and Gol Kopjes are granite outcrops rising from the plains, big-cat strongholds where lions den and cubs are often visible. Big Marsh, a permanent shallow reed marsh, draws buffalo and hippo regardless of season. The off-road rule applies across all of this. Your guide can position the vehicle wherever the action is. Full day in the field.",
+        accommodation: "Ndutu Safari Lodge or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 5,
-        title: "Full Day Southern Serengeti",
-        activities: "Full day of game drives in the southern Serengeti. Big cat sightings are exceptional during calving.",
-        accommodation: "Serengeti Under Canvas or similar",
+        title: "Full Day Ndutu — Southern Plains",
+        activities:
+          "Third full day. By this point you understand the terrain and the rhythm. Morning drives from 6:00am target lions returning from night hunts. The predator hierarchy plays out continuously: lions displace hyenas, hyenas challenge lions in large clans, cheetahs eat fast before being displaced. A Ndutu hyena clan has been documented at over 80 members. The southern NCA plains connect seamlessly with the Serengeti NP boundary to the east. If conditions warrant, your guide can drive to Naabi Hill Gate and spend part of the day on the Serengeti side, returning to Ndutu for the night.",
+        accommodation: "Ndutu Safari Lodge or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 6,
-        title: "Serengeti to Ngorongoro Crater",
-        activities: "Drive to Ngorongoro. Afternoon descent into the crater for game driving.",
-        accommodation: "Ngorongoro Serena Lodge or similar",
+        title: "Ndutu to Ngorongoro Crater Rim",
+        activities:
+          "Final morning game drive on the Ndutu plains before departing northeast. The drive back through the NCA to the crater rim takes about two hours. Check in to a rim lodge with views straight down into the caldera. Afternoon at leisure. The crater looks different in the green season: the floor is lush, the rim forest thick, and the light softer than the dry-season months.",
+        accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 7,
         title: "Ngorongoro to Arusha",
-        activities: "Morning departure to Arusha. Arrive by midday for onward travel.",
+        activities:
+          "Breakfast on the crater rim then drive back to Arusha, about three hours via Karatu and Mto wa Mbu. Drop-off at your Arusha hotel or Kilimanjaro International Airport.",
         accommodation: "End of safari",
         meals: "Breakfast",
       },
     ],
     included: [
-      "All park and conservation fees",
-      "Private 4x4 safari vehicle",
-      "Professional safari guide",
-      "6 nights accommodation",
-      "All meals as indicated",
-      "Bottled water",
-      "Airport transfers",
+      "All NCA conservation fees ($71-83 per person per day) and Ngorongoro crater vehicle fee",
+      "Private 4x4 Toyota Land Cruiser with high clearance and pop-up roof",
+      "Professional English-speaking guide, Arusha-based",
+      "6 nights accommodation as specified",
+      "All meals full-board",
+      "Bottled water and soft drinks on game drives",
+      "Airport and hotel transfers in Arusha",
+      "AMREF Flying Doctors emergency evacuation insurance",
     ],
     excluded: [
-      "Flights",
-      "Visa fees",
+      "International flights",
+      "Tanzania e-visa ($50 for most nationalities)",
       "Travel insurance",
-      "Tips and gratuities",
+      "Guide gratuity (suggested $25 per day)",
+      "Lodge staff gratuity (suggested $5-7 per day)",
       "Alcoholic beverages",
       "Personal expenses",
     ],
     faqs: [
       {
-        question: "When exactly is calving season?",
-        answer: "Calving typically peaks in late January through February, though it can extend from late December through March depending on rainfall patterns.",
+        question: "When exactly is calving season and when should I book?",
+        answer:
+          "The meaningful window is mid-January through late February. Peak is the first two weeks of February. The timing shifts by up to two weeks in either direction depending on the previous year's short rains, which govern when the herds arrive and when births begin. December is a genuine shoulder option: births have started, crowds are minimal, and lodge rates are lower. March still has calving but the pace slows as herds begin moving northwest. For peak intensity, target the first three weeks of February.",
       },
       {
-        question: "Will I definitely see calving?",
-        answer: "During peak season (late January-February), yes—thousands of calves are born daily. We position you in the best areas based on current herd locations.",
+        question: "Why is Ndutu better than the Serengeti for calving?",
+        answer:
+          "Ndutu sits inside the Ngorongoro Conservation Area (NCA), not Serengeti National Park. The NCA permits off-road driving. Your guide can leave the track to hold a position on a birth, follow a predator hunt, or get the right angle on a kill. Cross east into Serengeti NP through Naabi Hill Gate and all vehicles stay on designated tracks. During calving, when the action is happening in real time across open plains, off-road access is the difference between watching from 200 metres and being in the middle of it.",
       },
       {
-        question: "Is this safari good for photography?",
-        answer: "Excellent! The calving season offers dramatic wildlife action and golden savanna light. We recommend bringing a telephoto lens.",
+        question: "Is calving season better than the Mara River crossings?",
+        answer:
+          "For predator viewing, yes. The Mara crossings (July-October) are more theatrical but less reliable: herds mass on the bank for days before committing, and crossings can fail to happen at all on any given day. Calving is the most predictable phase of the entire migration. The herds are drawn to a specific area by grass chemistry that barely varies year to year. 8,000 calves per day at peak means continuous predator activity across open short-grass plains with full visibility. Most serious wildlife photographers argue February Ndutu beats August Mara for predator encounters. At lower prices.",
       },
       {
-        question: "What predators might we see?",
-        answer: "Lions, cheetahs, leopards, hyenas, and jackals all follow the herds during calving. Predator action is frequent and dramatic.",
+        question: "What are the road conditions in January and February?",
+        answer:
+          "January and February tracks are generally firm. Calving sits in the dry interlude between the November-December short rains and the April-May long rains. Afternoon showers produce soft patches near Lake Ndutu and Big Marsh on the volcanic black-cotton clay soil, but drainage between events is reasonable. A Land Cruiser 4x4 with high clearance handles conditions without issue. March is the transition month: long-rain moisture begins and low-lying areas can become difficult. Mobile camps close in early April for exactly this reason.",
       },
       {
-        question: "Can this trip be customized?",
-        answer: "Absolutely. We can extend your time in the calving areas, add the northern Serengeti, or include a Zanzibar extension.",
+        question: "What is the photography like compared to the dry season?",
+        answer:
+          "Different, not worse. Grass is ankle-height through calving season, which gives unobstructed sightlines across flat terrain. Morning light from 6:00-7:30am is warm and low-angle with mist over the lake. Afternoon from 4:30pm backlights herd dust and storm cells building south of the plains. The green season gives sky drama the dry-season months do not have. The off-road rule is the biggest photography advantage: no fixed track means you position for the light, not the road.",
+      },
+      {
+        question: "Can I fly to Ndutu instead of driving?",
+        answer:
+          "Yes. Air Excel operates a daily flight from Arusha (08:00) to Ndutu Airstrip (arriving 09:25), roughly one hour and five minutes, around $345 one-way. The airstrip operates primarily during calving season when demand justifies it. Flying adds cost but removes the six-to-seven-hour drive from Arusha and puts you on the plains by mid-morning on Day 1. Ask us about fly-in packages.",
       },
     ],
   },
