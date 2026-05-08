@@ -56,6 +56,7 @@ const featuredItineraries = [
     descriptionPl: "Poznaj najlepsze miejsca Północnego Szlaku z safari w Tarangire, Serengeti i Kraterze Ngorongoro.",
     descriptionCs: "Zažijte to nejlepší ze Severního okruhu s game drive v Tarangire, Serengeti a Ngorongorovém kráteru.",
     price: "$3,200",
+    image: { src: "/tarangire-elephants-baobab-tanzania-safari.jpg", alt: "Elephant herd passing a giant baobab tree in Tarangire National Park, Tanzania" },
   },
   {
     titleKey: "calvingSeason",
@@ -335,8 +336,20 @@ export default async function HomePage({ params }: PageProps) {
           <div className="grid md:grid-cols-3 gap-8">
             {featuredItineraries.map((itinerary) => (
               <article key={itinerary.slug} className="border border-border-soft bg-cream">
-                <div className="aspect-[4/3] bg-forest flex items-center justify-center">
-                  <p className="text-cream/50 text-sm">Safari imagery</p>
+                <div className="aspect-[4/3] bg-forest overflow-hidden">
+                  {"image" in itinerary && itinerary.image ? (
+                    <Image
+                      src={(itinerary.image as { src: string; alt: string }).src}
+                      alt={(itinerary.image as { src: string; alt: string }).alt}
+                      width={600}
+                      height={450}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <p className="text-cream/50 text-sm">Safari imagery</p>
+                    </div>
+                  )}
                 </div>
                 <div className="p-6">
                   <span className="inline-block bg-orange text-cream text-xs font-montserrat font-semibold px-3 py-1 rounded-full mb-3">
