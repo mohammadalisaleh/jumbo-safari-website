@@ -186,6 +186,10 @@ export const itineraries: Record<string, Itinerary> = {
     season: "January - March",
     description:
       "Witness the miracle of birth during the Great Migration calving season in Tanzania's southern Serengeti and Ndutu plains.",
+    heroImage: {
+      src: "/wildebeest-calf-ndutu-calving-season-tanzania.jpg",
+      alt: "Newborn wildebeest calf running alongside its mother through Lake Ndutu during calving season, Tanzania",
+    },
     leadParagraph:
       "Every year between January and March, over half a million wildebeest calves are born on the short-grass plains of Ndutu and the southern Serengeti. This calving season safari puts you in the heart of the action—watching newborns take their first steps, witnessing dramatic predator encounters, and experiencing one of nature's greatest spectacles.",
     overview:
