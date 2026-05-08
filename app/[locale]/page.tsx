@@ -66,6 +66,7 @@ const featuredItineraries = [
     descriptionPl: "Bądź świadkiem cudu narodzin na równinach Serengeti podczas corocznego sezonu cielenia się gnu.",
     descriptionCs: "Buďte svědkem zázraku narození na pláních Serengeti během každoročního období telení pakoňů.",
     price: "$2,800",
+    image: { src: "/wildebeest-calf-ndutu-calving-season-tanzania.jpg", alt: "Newborn wildebeest calf running alongside its mother through Lake Ndutu during calving season, Tanzania" },
   },
   {
     titleKey: "honeymoon",
