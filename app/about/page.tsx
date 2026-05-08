@@ -34,17 +34,7 @@ export default function AboutPage() {
       {/* Founder Story */}
       <section className="bg-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6">
-          <div className="grid md:grid-cols-[1fr_1fr] gap-12 items-start">
-            <div>
-              <Image
-                src="/mohammadali-saleh-jumbo-safaris-founder.jpg"
-                alt="Mohammadali Saleh, founder of Jumbo Safaris, in the Serengeti"
-                width={700}
-                height={875}
-                className="w-full object-cover"
-                priority
-              />
-            </div>
+          <div className="grid md:grid-cols-[1fr_400px] gap-12 items-start">
             <div>
               <p className="text-eyebrow uppercase text-orange mb-3">THE FOUNDER</p>
               <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-8">
@@ -67,6 +57,16 @@ export default function AboutPage() {
                   The name Jumbo is a nod to the elephant. Patient, unhurried, deeply connected to the land. That is the approach.
                 </p>
               </div>
+            </div>
+            <div>
+              <Image
+                src="/mohammadali-saleh-jumbo-safaris-founder.jpg"
+                alt="Mohammadali Saleh, founder of Jumbo Safaris, in the Serengeti"
+                width={500}
+                height={625}
+                className="w-full object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
