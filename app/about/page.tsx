@@ -50,7 +50,7 @@ export default function AboutPage() {
                 The idea behind Jumbo Safaris is simple: private guided safaris, built by someone who actually knows this place. Not because I read about it, but because I grew up in the shadow of Kilimanjaro and drove past the Arusha National Park gates on the way to school.
               </p>
               <p>
-                I started with zero reviews and zero bookings. That is still where things stand. I am telling you that directly because I think you deserve to know who you are talking to. What I can offer instead is full attention to your trip, local contacts built over a lifetime, and the kind of care for getting it right that only comes from someone building something they intend to keep.
+                What I can offer is something the big operators cannot: the person who designs your itinerary is the same person you message at 9pm with a question, the same person who briefs your guide the morning you depart, and the same person who follows up when you get home. No handoffs, no call centres, no account managers. When you book with Jumbo Safaris, you are working directly with someone who has a personal reason to get every detail right.
               </p>
               <p>
                 The name Jumbo is a nod to the elephant. Patient, unhurried, deeply connected to the land. That is the approach.
