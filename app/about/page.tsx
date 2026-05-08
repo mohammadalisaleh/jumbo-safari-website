@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { MapPin, Users, UserCheck } from "lucide-react"
 
@@ -38,6 +39,17 @@ export default function AboutPage() {
             <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-8">
               Mohammadali Saleh
             </h2>
+
+            <div className="mb-8">
+              <Image
+                src="/mohammadali-saleh-jumbo-safaris-founder.jpg"
+                alt="Mohammadali Saleh, founder of Jumbo Safaris, in the Serengeti"
+                width={700}
+                height={875}
+                className="w-full max-w-sm object-cover"
+                priority
+              />
+            </div>
 
             <div className="space-y-6 text-body-mobile md:text-body-desktop text-ink">
               <p>
