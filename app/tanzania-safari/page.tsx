@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Tanzania Safari | Private Guided Safari Tours",
   description:
     "Plan your Tanzania safari with Jumbo Safaris. Private guided tours to the Serengeti, Ngorongoro Crater, and Tarangire from Arusha. Tailor-made itineraries for every budget.",
-  alternates: { canonical: "https://jumbosafaris.com/tanzania-safari" },
+  alternates: { canonical: "https://www.jumbosafaris.com/tanzania-safari" },
   openGraph: {
     title: "Tanzania Safari | Private Guided Safari Tours | Jumbo Safaris",
     description:
       "Plan your Tanzania safari with Jumbo Safaris. Private guided tours to the Serengeti, Ngorongoro Crater, and Tarangire from Arusha.",
-    url: "https://jumbosafaris.com/tanzania-safari",
+    url: "https://www.jumbosafaris.com/tanzania-safari",
   },
 }
 

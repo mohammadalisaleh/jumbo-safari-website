@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: guide.title,
     description: guide.description,
-    alternates: { canonical: `https://jumbosafaris.com/guides/${slug}` },
+    alternates: { canonical: `https://www.jumbosafaris.com/guides/${slug}` },
     openGraph: {
       title: guide.title,
       description: guide.description,
-      url: `https://jumbosafaris.com/guides/${slug}`,
+      url: `https://www.jumbosafaris.com/guides/${slug}`,
     },
   }
 }

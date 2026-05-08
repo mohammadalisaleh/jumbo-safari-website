@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${park.name} Safari`,
     description: park.description,
-    alternates: { canonical: `https://jumbosafaris.com/national-parks/${slug}` },
+    alternates: { canonical: `https://www.jumbosafaris.com/national-parks/${slug}` },
     openGraph: {
       title: `${park.name} Safari | Jumbo Safaris`,
       description: park.description,
-      url: `https://jumbosafaris.com/national-parks/${slug}`,
+      url: `https://www.jumbosafaris.com/national-parks/${slug}`,
     },
   }
 }

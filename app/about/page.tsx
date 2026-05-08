@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "About Jumbo Safaris | Arusha-Based Tanzania Safari Operator",
   description:
     "Jumbo Safaris is a private guided Tanzania safari company based in Arusha. Meet our team, learn our story, and discover why travellers choose us.",
-  alternates: { canonical: "https://jumbosafaris.com/about" },
+  alternates: { canonical: "https://www.jumbosafaris.com/about" },
   openGraph: {
     title: "About Jumbo Safaris | Arusha-Based Tanzania Safari Operator",
     description:
       "Jumbo Safaris is a private guided Tanzania safari company based in Arusha. Meet our team, learn our story, and discover why travellers choose us.",
-    url: "https://jumbosafaris.com/about",
+    url: "https://www.jumbosafaris.com/about",
   },
 }
 

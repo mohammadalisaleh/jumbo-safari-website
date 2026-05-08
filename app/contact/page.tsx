@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "Plan Your Tanzania Safari",
   description:
     "Contact Jumbo Safaris to plan your Tanzania safari. WhatsApp, email, or fill in our enquiry form. Based in Arusha, Tanzania.",
-  alternates: { canonical: "https://jumbosafaris.com/contact" },
+  alternates: { canonical: "https://www.jumbosafaris.com/contact" },
   openGraph: {
     title: "Plan Your Tanzania Safari | Jumbo Safaris",
     description: "Contact Jumbo Safaris to plan your Tanzania safari.",
-    url: "https://jumbosafaris.com/contact",
+    url: "https://www.jumbosafaris.com/contact",
   },
 }
 

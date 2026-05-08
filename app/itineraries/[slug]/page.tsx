@@ -23,11 +23,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: itinerary.title,
     description: itinerary.description,
-    alternates: { canonical: `https://jumbosafaris.com/itineraries/${slug}` },
+    alternates: { canonical: `https://www.jumbosafaris.com/itineraries/${slug}` },
     openGraph: {
       title: itinerary.title,
       description: itinerary.description,
-      url: `https://jumbosafaris.com/itineraries/${slug}`,
+      url: `https://www.jumbosafaris.com/itineraries/${slug}`,
     },
   }
 }
@@ -72,7 +72,7 @@ export default async function ItineraryPage({ params }: PageProps) {
     provider: {
       "@type": "TravelAgency",
       name: "Jumbo Safaris",
-      url: "https://jumbosafaris.com",
+      url: "https://www.jumbosafaris.com",
       telephone: "+255742789292",
       email: "hello@jumbosafaris.com",
       address: {

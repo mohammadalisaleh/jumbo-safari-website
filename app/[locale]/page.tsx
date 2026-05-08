@@ -30,17 +30,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: t("title"),
     description: t("description"),
     alternates: {
-      canonical: locale === "en" ? "https://jumbosafaris.com" : `https://jumbosafaris.com/${locale}`,
+      canonical: locale === "en" ? "https://www.jumbosafaris.com" : `https://www.jumbosafaris.com/${locale}`,
       languages: {
-        en: "https://jumbosafaris.com",
-        pl: "https://jumbosafaris.com/pl",
-        cs: "https://jumbosafaris.com/cs",
+        en: "https://www.jumbosafaris.com",
+        pl: "https://www.jumbosafaris.com/pl",
+        cs: "https://www.jumbosafaris.com/cs",
       },
     },
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: locale === "en" ? "https://jumbosafaris.com" : `https://jumbosafaris.com/${locale}`,
+      url: locale === "en" ? "https://www.jumbosafaris.com" : `https://www.jumbosafaris.com/${locale}`,
       siteName: "Jumbo Safaris",
       type: "website",
     },

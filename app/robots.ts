@@ -32,6 +32,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://jumbosafaris.com/sitemap.xml",
+    sitemap: "https://www.jumbosafaris.com/sitemap.xml",
   }
 }

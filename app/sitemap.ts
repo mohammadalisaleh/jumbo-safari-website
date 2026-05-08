@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://jumbosafaris.com"
+  const baseUrl = "https://www.jumbosafaris.com"
   const locales = ["pl", "cs"]
 
   const englishPages = [
