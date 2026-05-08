@@ -34,39 +34,39 @@ export default function AboutPage() {
       {/* Founder Story */}
       <section className="bg-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6">
-          <div className="max-w-prose">
-            <p className="text-eyebrow uppercase text-orange mb-3">THE FOUNDER</p>
-            <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-8">
-              Mohammadali Saleh
-            </h2>
-
-            <div className="mb-8">
+          <div className="grid md:grid-cols-[1fr_1fr] gap-12 items-start">
+            <div>
               <Image
                 src="/mohammadali-saleh-jumbo-safaris-founder.jpg"
                 alt="Mohammadali Saleh, founder of Jumbo Safaris, in the Serengeti"
                 width={700}
                 height={875}
-                className="w-full max-w-sm object-cover"
+                className="w-full object-cover"
                 priority
               />
             </div>
-
-            <div className="space-y-6 text-body-mobile md:text-body-desktop text-ink">
-              <p>
-                I grew up in Arusha. Eighteen years here before I left for university in Canada, where I studied Economics and spent several years working in software. Good work, wrong country.
-              </p>
-              <p>
-                I came back in 2023. My parents are here. This city is home. And I had been watching the Tanzania safari industry from a distance long enough to know that most of the operators people book through are either foreign-owned, running group tours, or treating guests as transactions to be processed.
-              </p>
-              <p>
-                The idea behind Jumbo Safaris is simple: private guided safaris, built by someone who actually knows this place. Not because I read about it, but because I grew up in the shadow of Kilimanjaro and drove past the Arusha National Park gates on the way to school.
-              </p>
-              <p>
-                What I can offer is something the big operators cannot: the person who designs your itinerary is the same person you message at 9pm with a question, the same person who briefs your guide the morning you depart, and the same person who follows up when you get home. No handoffs, no call centres, no account managers. When you book with Jumbo Safaris, you are working directly with someone who has a personal reason to get every detail right.
-              </p>
-              <p>
-                The name Jumbo is a nod to the elephant. Patient, unhurried, deeply connected to the land. That is the approach.
-              </p>
+            <div>
+              <p className="text-eyebrow uppercase text-orange mb-3">THE FOUNDER</p>
+              <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-8">
+                Mohammadali Saleh
+              </h2>
+              <div className="space-y-6 text-body-mobile md:text-body-desktop text-ink">
+                <p>
+                  I grew up in Arusha. Eighteen years here before I left for university in Canada, where I studied Economics and spent several years working in software. Good work, wrong country.
+                </p>
+                <p>
+                  I came back in 2023. My parents are here. This city is home. And I had been watching the Tanzania safari industry from a distance long enough to know that most of the operators people book through are either foreign-owned, running group tours, or treating guests as transactions to be processed.
+                </p>
+                <p>
+                  The idea behind Jumbo Safaris is simple: private guided safaris, built by someone who actually knows this place. Not because I read about it, but because I grew up in the shadow of Kilimanjaro and drove past the Arusha National Park gates on the way to school.
+                </p>
+                <p>
+                  What I can offer is something the big operators cannot: the person who designs your itinerary is the same person you message at 9pm with a question, the same person who briefs your guide the morning you depart, and the same person who follows up when you get home. No handoffs, no call centres, no account managers. When you book with Jumbo Safaris, you are working directly with someone who has a personal reason to get every detail right.
+                </p>
+                <p>
+                  The name Jumbo is a nod to the elephant. Patient, unhurried, deeply connected to the land. That is the approach.
+                </p>
+              </div>
             </div>
           </div>
         </div>
