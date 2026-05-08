@@ -6,6 +6,7 @@ export interface Itinerary {
   price: string
   season: string
   description: string
+  heroImage?: { src: string; alt: string }
   leadParagraph: string
   overview: string
   quickFacts: {
@@ -41,6 +42,10 @@ export const itineraries: Record<string, Itinerary> = {
     season: "Year-round",
     description:
       "8-day private Tanzania safari covering Tarangire, the Serengeti, and Ngorongoro Crater. Three nights in the Serengeti, private 4x4, full-board lodges. From $3,200 per person.",
+    heroImage: {
+      src: "/tarangire-elephants-baobab-tanzania-safari.jpg",
+      alt: "Elephant herd passing a giant baobab tree in Tarangire National Park, Tanzania",
+    },
     leadParagraph:
       "Eight days is the right number for the Northern Circuit. Long enough for three nights in the Serengeti (which is what separates a real safari from a rushed loop) and a full day on the crater floor. Tarangire for the elephants and the baobabs. Serengeti for scale and predators. Ngorongoro Crater because nothing else puts you inside a collapsed volcano alongside 120 lions and 50 black rhino. Private vehicle, private guide, full-board lodges. This is the one.",
     overview:

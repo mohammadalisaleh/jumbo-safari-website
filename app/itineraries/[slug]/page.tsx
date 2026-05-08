@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { Check, X, ArrowRight, ChevronRight } from "lucide-react"
@@ -150,9 +151,22 @@ export default async function ItineraryPage({ params }: PageProps) {
                   </span>
                 </div>
 
-                {/* Hero Image Placeholder */}
-                <div className="aspect-[16/9] bg-forest flex items-center justify-center mb-6">
-                  <p className="text-cream/50">Safari imagery</p>
+                {/* Hero Image */}
+                <div className="aspect-[16/9] bg-forest mb-6 overflow-hidden">
+                  {itinerary.heroImage ? (
+                    <Image
+                      src={itinerary.heroImage.src}
+                      alt={itinerary.heroImage.alt}
+                      width={1400}
+                      height={788}
+                      className="w-full h-full object-cover"
+                      priority
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <p className="text-cream/50">Safari imagery</p>
+                    </div>
+                  )}
                 </div>
 
                 {/* Lead Paragraph */}
