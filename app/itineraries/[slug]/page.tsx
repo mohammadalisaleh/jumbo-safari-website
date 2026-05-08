@@ -271,8 +271,20 @@ export default async function ItineraryPage({ params }: PageProps) {
             <div className="grid md:grid-cols-3 gap-8">
               {allItineraries.map((item) => (
                 <article key={item.slug} className="border border-border-soft bg-cream">
-                  <div className="aspect-[4/3] bg-forest flex items-center justify-center">
-                    <p className="text-cream/50 text-sm">Safari imagery</p>
+                  <div className="aspect-[4/3] bg-forest overflow-hidden">
+                    {item.heroImage ? (
+                      <Image
+                        src={item.heroImage.src}
+                        alt={item.heroImage.alt}
+                        width={600}
+                        height={450}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center">
+                        <p className="text-cream/50 text-sm">Safari imagery</p>
+                      </div>
+                    )}
                   </div>
                   <div className="p-6">
                     <span className="inline-block bg-orange text-cream text-xs font-montserrat font-semibold px-3 py-1 rounded-full mb-3">
