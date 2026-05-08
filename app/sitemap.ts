@@ -19,11 +19,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/itineraries/calving-season-safari`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/itineraries/honeymoon-tanzania-zanzibar`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/itineraries/great-migration-safari`, priority: 0.9, changeFrequency: "weekly" as const },
+    // Itineraries index
+    { url: `${baseUrl}/itineraries`, priority: 0.8, changeFrequency: "weekly" as const },
     // Guides
     { url: `${baseUrl}/guides/best-time-to-visit-tanzania`, priority: 0.7, changeFrequency: "monthly" as const },
-    { url: `${baseUrl}/guides/tanzania-safari-cost`, priority: 0.7, changeFrequency: "monthly" as const },
-    { url: `${baseUrl}/guides/what-to-pack-safari`, priority: 0.6, changeFrequency: "monthly" as const },
-    { url: `${baseUrl}/guides/tanzania-visa-requirements`, priority: 0.6, changeFrequency: "monthly" as const },
   ]
 
   // Add Polish and Czech homepage versions
