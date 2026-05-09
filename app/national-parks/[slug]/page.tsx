@@ -51,6 +51,14 @@ export default async function NationalParkPage({ params }: PageProps) {
     .filter(Boolean)
     .slice(0, 3)
 
+  const geoCoords: Record<string, { lat: number; lng: number }> = {
+    serengeti: { lat: -2.3333, lng: 34.8333 },
+    "ngorongoro-crater": { lat: -3.1833, lng: 35.5833 },
+    tarangire: { lat: -3.8500, lng: 36.0167 },
+    "lake-manyara": { lat: -3.5500, lng: 35.8333 },
+  }
+  const geo = geoCoords[park.slug] ?? { lat: -3.1833, lng: 35.5833 }
+
   const touristAttractionSchema = {
     "@context": "https://schema.org",
     "@type": "TouristAttraction",
@@ -58,8 +66,8 @@ export default async function NationalParkPage({ params }: PageProps) {
     description: park.description,
     geo: {
       "@type": "GeoCoordinates",
-      latitude: park.slug === "serengeti" ? -2.3333 : -3.1833,
-      longitude: park.slug === "serengeti" ? 34.8333 : 35.5833,
+      latitude: geo.lat,
+      longitude: geo.lng,
     },
     containedInPlace: {
       "@type": "Country",
@@ -67,12 +75,33 @@ export default async function NationalParkPage({ params }: PageProps) {
     },
   }
 
+  const faqSchema = park.faqs
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: park.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      }
+    : null
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(touristAttractionSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       <article className="bg-cream">
         {/* Breadcrumb */}
@@ -209,8 +238,52 @@ export default async function NationalParkPage({ params }: PageProps) {
                 </section>
               )}
 
+              {/* Additional Sections */}
+              {park.additionalSections && park.additionalSections.map((section, index) => (
+                <section key={index} className="mb-12">
+                  <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-4">
+                    {section.heading}
+                  </h2>
+                  {section.body.split("\n\n").map((paragraph, pIndex) => (
+                    <p key={pIndex} className="text-body-mobile md:text-body-desktop text-ink mb-4 last:mb-0">
+                      {paragraph}
+                    </p>
+                  ))}
+                </section>
+              ))}
+
+              {/* Entry Fees */}
+              {park.fees && (
+                <section className="mb-12">
+                  <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-4">
+                    Entry Fees (2026)
+                  </h2>
+                  <div className="overflow-x-auto">
+                    <table className="w-full bg-white border border-border-soft">
+                      <thead>
+                        <tr className="bg-forest text-cream">
+                          <th className="px-4 py-3 text-left font-montserrat font-semibold">Fee Item</th>
+                          <th className="px-4 py-3 text-left font-montserrat font-semibold">Amount</th>
+                          <th className="px-4 py-3 text-left font-montserrat font-semibold">Notes</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {park.fees.map((fee, index) => (
+                          <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-cream"}>
+                            <td className="px-4 py-3 text-ink font-medium">{fee.item}</td>
+                            <td className="px-4 py-3 font-semibold text-forest">{fee.amount}</td>
+                            <td className="px-4 py-3 text-muted text-sm">{fee.notes}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  <p className="text-sm text-muted mt-3">Verify current rates at ncaa.go.tz before travel. All fees are included in Jumbo Safaris package prices.</p>
+                </section>
+              )}
+
               {/* Best Time to Visit */}
-              <section>
+              <section className="mb-12">
                 <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-6">
                   Best Time to Visit {park.name.replace(" National Park", "").replace(" Crater", "")}
                 </h2>
@@ -250,6 +323,25 @@ export default async function NationalParkPage({ params }: PageProps) {
                   </table>
                 </div>
               </section>
+
+              {/* FAQ */}
+              {park.faqs && (
+                <section>
+                  <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-6">
+                    Common Questions
+                  </h2>
+                  <div className="space-y-6">
+                    {park.faqs.map((faq, index) => (
+                      <div key={index} className="border-b border-border-soft pb-6 last:border-0">
+                        <h3 className="font-montserrat font-semibold text-forest mb-2">
+                          {faq.question}
+                        </h3>
+                        <p className="text-ink text-body-mobile md:text-body-desktop">{faq.answer}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
             </div>
 
             {/* Right Column - Sidebar */}
