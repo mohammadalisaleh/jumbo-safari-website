@@ -30,6 +30,10 @@ export interface Itinerary {
     question: string
     answer: string
   }[]
+  additionalSections?: {
+    heading: string
+    body: string
+  }[]
 }
 
 export const itineraries: Record<string, Itinerary> = {
@@ -451,136 +455,225 @@ export const itineraries: Record<string, Itinerary> = {
     price: "From $5,500 pp",
     season: "Year-round",
     description:
-      "The perfect honeymoon combining Tanzania's greatest wildlife destinations with romantic beach time on Zanzibar's pristine shores.",
+      "11-day Tanzania honeymoon safari combining private game drives in Tarangire, Serengeti, and Ngorongoro with 4 nights on Zanzibar's Indian Ocean coast. From $5,500 per person.",
     leadParagraph:
-      "Begin your married life with the ultimate African adventure. This honeymoon safari weaves together the magic of Tanzania's wildlife-rich national parks with the romance of Zanzibar's powder-white beaches. From sunset game drives in the Serengeti to candlelit dinners on the Indian Ocean—this is honeymoon perfection.",
+      "Seven days in the bush, four days at the coast. No two environments could be more different, and that contrast is exactly the point. You get Tanzania's full range: elephants in the Tarangire dust, lions on Serengeti kopjes, black rhino on the Ngorongoro crater floor, then white coral sand and an Indian Ocean the colour of a swimming pool. Private vehicle, private guide, just the two of you. From $5,500 per person for the full eleven days.",
     overview:
-      "The Honeymoon Tanzania & Zanzibar itinerary is designed for romance. Spend your first week on private safari through Tarangire, the Serengeti, and Ngorongoro Crater, staying in intimate lodges with special touches for newlyweds. Then fly to Zanzibar for four days of beach bliss at a luxury resort.",
+      "The route runs north to south through Tanzania's northern circuit before turning east to the coast. Arusha is your starting point. Day two takes you into Tarangire, where elephant density during the dry season is the highest of any park on the northern circuit, and the baobab trees are old enough that some predate the Roman Empire. Two nights there, then the six-hour drive west to the Serengeti through the Ngorongoro highlands, stopping at Olduvai Gorge on the way. Two nights in central Serengeti, tracking big cats across the Seronera Valley. Then east to the Ngorongoro Crater rim for two nights, with a full day on the crater floor: roughly 120 lions, 50 black rhino, and 15,000 wildebeest inside a 260-square-kilometre caldera they rarely leave. Day eight: drive to Arusha, then a Coastal Aviation flight to Zanzibar (about one hour forty-five minutes, included). Three nights at a beach property. The north coast has consistent swimming conditions year-round. The east coast (Paje, Bwejuu) is better for October through March when the Indian Ocean lies flat and snorkeling is clearest. We book whichever suits your travel dates.\n\nAt each safari property, we arrange a honeymoon setup: champagne on arrival, private sundowner location, rose petals at turndown. At Ngorongoro, a private picnic lunch on the crater floor. On Zanzibar, a sunset dhow cruise from Stone Town harbour. None of this costs extra. What does: the hot air balloon over the Serengeti ($590 per person) and spa treatments in Zanzibar. The balloon, in particular, is worth it.",
     quickFacts: {
       duration: "11 Days / 10 Nights",
       parksVisited: "Tarangire, Serengeti, Ngorongoro, Zanzibar",
       accommodation: "Luxury lodges and beach resort",
       groupSize: "Private (2 guests)",
       departsFrom: "Arusha, Tanzania",
-      bestSeason: "Year-round",
+      bestSeason: "June-October or January-March (see FAQ)",
     },
     days: [
       {
         day: 1,
         title: "Arrival in Arusha",
-        activities: "Welcome to Tanzania! Transfer to your boutique hotel. Evening briefing and welcome dinner.",
-        accommodation: "Arusha Coffee Lodge",
+        activities:
+          "Pickup from Kilimanjaro International Airport or your connecting flight. The drive to central Arusha takes about 45 minutes on a clear day. Check in, rest, early dinner. We run through the route, confirm tomorrow's pickup time, and answer any last questions. The first game drive is in the morning.",
+        accommodation: "Arusha Coffee Lodge or similar",
         meals: "Dinner",
       },
       {
         day: 2,
         title: "Arusha to Tarangire",
-        activities: "Morning drive to Tarangire. Afternoon game drive with sundowners.",
-        accommodation: "Tarangire Treetops Lodge",
-        meals: "Breakfast, Lunch, Dinner",
+        activities:
+          "Pickup at 7:00am. The drive to Tarangire's main gate is about two hours, heading southeast through Maasai country before the acacia scrub thickens and the first baobabs appear. Tarangire holds the highest elephant density of any park on the northern circuit during the dry season, with herds of 150 or more common along the river. Enter through the main gate and head south toward the Silale area. Three to four hours of game driving before sunset check-in. Champagne on arrival at the lodge.",
+        accommodation: "Tarangire Treetops Lodge or similar",
+        meals: "Lunch, Dinner",
       },
       {
         day: 3,
-        title: "Tarangire to Serengeti",
-        activities: "Scenic drive to the Serengeti. Game driving en route. Arrive for sunset.",
-        accommodation: "Four Seasons Safari Lodge Serengeti",
+        title: "Full Day Tarangire",
+        activities:
+          "Full day inside the park. Early start before 7:00am while the air is cool. The Silale Swamp in the south draws species you will not find elsewhere on this route: fringe-eared oryx, the gerenuk (a long-necked antelope that browses standing upright on its hind legs), and tree-climbing pythons in the riverside fig trees. The park covers nearly 3,000 square kilometres. One full day covers the core areas properly. Private sundowners in the park in the late afternoon.",
+        accommodation: "Tarangire Treetops Lodge or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 4,
-        title: "Full Day Serengeti",
-        activities: "Private game drives. Optional bush breakfast or sundowner experience.",
-        accommodation: "Four Seasons Safari Lodge Serengeti",
+        title: "Tarangire to Central Serengeti via Olduvai Gorge",
+        activities:
+          "Depart after breakfast. The drive to the Serengeti takes about six hours with stops. You climb through the Ngorongoro highlands, pass through the Conservation Area, and stop at Olduvai Gorge before Naabi Hill Gate. Olduvai is where Mary Leakey found the skull of Paranthropus boisei in 1959, a hominid who walked these plains 1.8 million years ago. The resident guide at the gorge does a 20-minute talk at the excavation site. Worth every minute. Arrive at Seronera by late afternoon for a first drive on the plains.",
+        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 5,
         title: "Full Day Serengeti",
-        activities: "Continue exploring. Optional hot air balloon safari at dawn.",
-        accommodation: "Four Seasons Safari Lodge Serengeti",
+        activities:
+          "The Seronera Valley is the most consistent area for big cats year-round. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops roughly 600 million years old, visible for kilometres across the plains. Cheetahs work the open short-grass south of the valley. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $590 per person, booked in advance. For honeymoon couples, it is the single best add-on on this route. Nothing else comes close.",
+        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 6,
-        title: "Serengeti to Ngorongoro",
-        activities: "Drive to Ngorongoro Crater rim. Afternoon at leisure with crater views.",
-        accommodation: "andBeyond Ngorongoro Crater Lodge",
+        title: "Serengeti to Ngorongoro Crater Rim",
+        activities:
+          "Final morning game drive in the Serengeti, then depart through Naabi Hill Gate. The drive to the crater rim takes about three and a half hours, climbing the outer caldera slopes through montane forest thick with olive trees and giant heather. Arrive at the rim in time for lunch. The crater floor is 600 metres below. On a clear afternoon, you can see the wildebeest herds from the lodge terrace. The crater descent starts at 6:00am tomorrow.",
+        accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 7,
-        title: "Ngorongoro Crater",
-        activities: "Full day crater game drive. Private picnic lunch arranged.",
-        accommodation: "andBeyond Ngorongoro Crater Lodge",
+        title: "Ngorongoro Crater — Full Day on the Floor",
+        activities:
+          "The descent begins at 6:00am before the tourist vehicles. The track drops 600 metres over 30 minutes of steep switchbacks through cloud forest. On the crater floor: approximately 120 lions, 50 black rhino, 15,000 wildebeest, 9,000 zebra, 400 hyenas. The black rhino population here is the densest in Africa. Lake Magadi on the western floor draws flamingos and hippos. Private picnic lunch arranged on the crater floor today. All vehicles must ascend by 6:00pm. You have the full day.",
+        accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 8,
-        title: "Fly to Zanzibar",
-        activities: "Morning flight to Zanzibar. Transfer to your beach resort. Afternoon at leisure.",
-        accommodation: "Baraza Resort & Spa",
+        title: "Ngorongoro to Arusha, then Fly to Zanzibar",
+        activities:
+          "Breakfast on the rim, then drive to Arusha (about three hours). Coastal Aviation flight from Arusha to Zanzibar departs midday, arriving approximately one hour forty-five minutes later. Transfer directly to your beach property. The afternoon is yours. This is the day the trip changes gear completely. The Indian Ocean is warm, the schedule disappears, and the next three days have no agenda.",
+        accommodation: "Beach resort, north or east coast Zanzibar",
         meals: "Breakfast, Dinner",
       },
       {
         day: 9,
-        title: "Zanzibar Beach Day",
-        activities: "Relax on the beach. Optional spa treatments, snorkeling, or Stone Town tour.",
-        accommodation: "Baraza Resort & Spa",
+        title: "Zanzibar — Stone Town and Sunset Dhow",
+        activities:
+          "Morning on the beach. Optional Stone Town in the afternoon, a 20-minute drive from most properties. Stone Town is a UNESCO World Heritage site, a compact Arab trading city with carved wooden doors, winding alleyways, and a spice market that has been operating for 200 years. Freddie Mercury was born here in 1946. Sunset dhow cruise from the harbour: 90 minutes on the water, local food and drinks included. This is the honeymoon dinner.",
+        accommodation: "Beach resort, north or east coast Zanzibar",
         meals: "Breakfast, Dinner",
       },
       {
         day: 10,
-        title: "Zanzibar Beach Day",
-        activities: "Another day of beach bliss. Optional sunset dhow cruise.",
-        accommodation: "Baraza Resort & Spa",
+        title: "Zanzibar — Last Full Day",
+        activities:
+          "No fixed agenda. Snorkeling at Mnemba Atoll is a half-day boat trip: turtles, reef fish, and dolphins if the timing is right ($80-100 per person). A spice tour is a three-hour walk through a working plantation ($30 per person, bookable through the resort). Spa treatments can be arranged at your property. Or just the beach. Last evening in Tanzania.",
+        accommodation: "Beach resort, north or east coast Zanzibar",
         meals: "Breakfast, Dinner",
       },
       {
         day: 11,
         title: "Departure",
-        activities: "Transfer to Zanzibar airport for your departure flight.",
+        activities:
+          "Breakfast, checkout, transfer to Zanzibar International Airport. Most international connections route through Nairobi, Doha, Dubai, or Addis Ababa. Check with your airline on connection times before booking your international flights.",
         accommodation: "End of trip",
         meals: "Breakfast",
       },
     ],
     included: [
-      "All park fees and permits",
-      "Private 4x4 safari vehicle and guide",
-      "10 nights luxury accommodation",
-      "All meals as specified",
-      "Domestic flight Arusha-Zanzibar",
-      "All transfers",
-      "Honeymoon amenities and surprises",
+      "All Tarangire, Serengeti, and Ngorongoro park and conservation fees",
+      "Ngorongoro crater vehicle descent fee ($295 per vehicle)",
+      "Private 4x4 Toyota Land Cruiser with pop-up roof for the safari leg",
+      "Professional English-speaking guide, Arusha-based",
+      "7 nights safari accommodation (2 Tarangire, 2 Serengeti, 2 Ngorongoro) + 3 nights Zanzibar beach property",
+      "Full-board on safari (all meals Days 1-8), half-board in Zanzibar (breakfast and dinner)",
+      "Bottled water and soft drinks on game drives",
+      "All road transfers on the safari circuit",
+      "Coastal Aviation flight Arusha to Zanzibar (one-way per person)",
+      "Sunset dhow cruise on Zanzibar (Day 9)",
+      "Honeymoon setup at each property: champagne on arrival, private sundowners, private crater-floor picnic (Ngorongoro), rose petals at turndown",
+      "AMREF Flying Doctors emergency evacuation insurance",
     ],
     excluded: [
-      "International flights",
-      "Visa fees",
-      "Travel insurance",
-      "Tips and gratuities",
-      "Spa treatments",
-      "Optional activities",
-      "Alcoholic beverages (except where included)",
+      "International flights to and from Tanzania",
+      "Tanzania e-visa ($50 for most nationalities)",
+      "Travel insurance (required)",
+      "Guide gratuity (suggested $25 per day for 7 safari days)",
+      "Lodge staff gratuity (suggested $5-7 per day via tip box)",
+      "Hot air balloon safari ($590 per person, optional, booked in advance)",
+      "Spa treatments in Zanzibar",
+      "Snorkeling excursions and optional activities in Zanzibar",
+      "Alcoholic beverages beyond welcome champagne",
     ],
     faqs: [
       {
-        question: "Can this itinerary be customized?",
-        answer: "Absolutely! We can adjust the safari/beach balance, upgrade accommodations, or add special experiences like private dinners or spa packages.",
+        question: "When is the best time for this trip?",
+        answer:
+          "June through October is the cleanest window. Tanzania's dry season means short grass, animals concentrated around water, and easy spotting. Zanzibar's north coast swims well year-round regardless of season. January through March is the second-best option: calving season on the southern Serengeti plains, and Zanzibar's Indian Ocean is at its calmest and clearest. April and May are the months to avoid. The long rains make some safari roads genuinely difficult and many Zanzibar east-coast properties close for the season.",
       },
       {
-        question: "What honeymoon extras are included?",
-        answer: "We include romantic room setups, a bottle of champagne, honeymoon cake, and special touches at each property. Additional surprises can be arranged.",
+        question: "What makes this different from a regular Tanzania safari?",
+        answer:
+          "Everything runs privately. One vehicle, one guide, just the two of you. No shared departures, no waiting for other guests. You decide how long to stay at a sighting, when to return for lunch, and when the afternoon drive ends. Lodge selection for couples is also different: we prioritise rooms with a direct view, properties with plunge pools or open-air tubs, and intimate dining rather than communal tables. At each property, we pre-arrange champagne on arrival, a private sundowner location, and rose petals at turndown. These are confirmed in advance, not requested at check-in.",
       },
       {
-        question: "Is this trip suitable all year?",
-        answer: "Yes, though we recommend avoiding April-May heavy rains. The dry season (June-October) offers excellent wildlife viewing with reliable weather.",
+        question: "How many days should we spend on safari vs. Zanzibar?",
+        answer:
+          "Seven days on safari and four days at the coast is the standard, and it works. Tarangire, the Serengeti, and Ngorongoro are different enough ecosystems that seven days without repetition is realistic. Three full days in Zanzibar is enough to rest but not quite enough to feel the place. If the beach matters, extend to five or six nights. The most common extension is two additional Zanzibar nights. If wildlife is the priority, one or two extra nights in the Serengeti makes more difference than a longer beach leg.",
       },
       {
-        question: "What about malaria on Zanzibar?",
-        answer: "Zanzibar is in a malaria zone. We recommend consulting your doctor about prophylaxis before travel.",
+        question: "Is the hot air balloon worth adding?",
+        answer:
+          "For a honeymoon, yes. The balloon operates out of the central Serengeti on Day 5. Departure is at 5:30am, the flight is about one hour over the plains, followed by a champagne bush breakfast on landing. Cost is $590 per person, paid directly to the balloon operator, booked in advance. It is the one add-on that genuinely changes what you see and how you remember the trip. I recommend it to every couple on this route.",
       },
       {
-        question: "Can we extend our Zanzibar stay?",
-        answer: "Of course! Many couples extend to a full week on Zanzibar. We can arrange additional nights at your resort or a different property.",
+        question: "How do we get from the safari circuit to Zanzibar?",
+        answer:
+          "Coastal Aviation operates a daily flight from Arusha to Zanzibar. It departs around midday and arrives roughly one hour and forty-five minutes later. The fare is approximately $250-300 per person one-way and is included in this package. There is no connection through Dar es Salaam. It is a direct route. We handle all booking and airport transfers on both ends.",
+      },
+      {
+        question: "Which part of Zanzibar is right for a honeymoon?",
+        answer:
+          "It depends on when you travel. The north coast (Nungwi, Kendwa) has consistent swimming conditions all year. The water does not drop shallow at low tide the way the east coast lagoons do. The east coast (Paje, Bwejuu, Jambiani) is quieter and more atmospheric, genuinely better for November through March when the Indian Ocean lies flat and clear. June through October, southeast trade winds turn the east coast into a kitesurf beach. We book the right coast based on your dates.",
+      },
+      {
+        question: "Are international flights included?",
+        answer:
+          "No. International flights are excluded from the package price. The $5,500 per person starting price covers everything from your arrival at Kilimanjaro International Airport (JRO) through to your departure from Zanzibar (ZNZ), including the domestic Coastal Aviation flight between the two. The most common international connections are via Doha (Qatar Airways), Amsterdam (KLM), Dubai (Emirates), or Istanbul (Turkish Airlines). Most nationalities also need a Tanzania eVisa before arrival, currently $50 per person ($100 for US citizens).",
+      },
+      {
+        question: "Do we need a visa for Tanzania and Zanzibar?",
+        answer:
+          "Tanzania requires an eVisa for most nationalities, applied online at evisa.go.tz. The fee is $50 for most passports; US citizens pay $100. Apply at least two weeks before departure and print the approval. Zanzibar is part of Tanzania — your mainland visa covers the island, though you fill in a short second immigration form on the domestic flight. Yellow fever vaccination is required if you are arriving from a country on Tanzania's risk list. If you have recently changed your surname after getting married, book all flights in the passport-name version to avoid mismatched document problems at check-in.",
+      },
+      {
+        question: "What are the best honeymoon lodges for each park?",
+        answer:
+          "In Tarangire, Tarangire Treetops puts your room inside a 1,000-year-old baobab with a private plunge pool. In the Serengeti, the Four Seasons Safari Lodge has the most consistent infrastructure for couples (pool overlooking a waterhole, room-service game drives). For a tented camp experience, Asilia's Olakira or Nomad's Lamai Serengeti are better positioned for big cat sightings. At Ngorongoro, &Beyond Crater Lodge is the most iconic — butler service, 600m above the floor. In Zanzibar, Baraza Resort on the south coast and Kilindi on the northwest are the strongest at the top end. We build the right lodge combination for your budget.",
+      },
+      {
+        question: "Do we need malaria medication?",
+        answer:
+          "Yes. Zanzibar is a malaria zone, as are all of Tanzania's national parks. Consult a travel medicine doctor before you leave home. Antimalarial prophylaxis is standard advice for this trip regardless of nationality. The risk varies by season and location — lower in dry months, higher near the coast. Start your medication before you arrive in Tanzania. This applies to both legs of the trip.",
+      },
+      {
+        question: "Are tips included or extra?",
+        answer:
+          "Tips are excluded and handled separately. The standard in Tanzania is $20-25 per day for your driver-guide, paid directly on the last day of safari, and $5-7 per night for lodge staff via the envelope at reception. For this itinerary with one guide and seven safari nights, the total tipping budget is typically $150-175 for the guide and $35-50 for lodge staff — roughly $200-250 for a couple across the full safari leg. On Zanzibar, tipping is less formalised but the same courtesy applies.",
+      },
+      {
+        question: "What should we pack?",
+        answer:
+          "For the safari: neutral colours — khaki, olive, tan, grey. Bright colours disturb animals and attract insects. Mornings on the Serengeti are cold at 6:00am (bring a fleece); afternoons reach 28-32°C. A wide-brim hat, polarised sunglasses, SPF 50 sunscreen, and binoculars (8x42 or 10x42 recommended). For Zanzibar: light summer clothes. In Stone Town, covered shoulders and knees are respectful away from the beach. Reef-safe sunscreen for snorkelling at Mnemba Atoll. Tanzania uses Type G plugs (UK standard) — bring a universal adapter. Take antimalarial medication as prescribed. Smart-casual evening wear for lodge dinners; no need for formal clothes.",
+      },
+      {
+        question: "Can we extend the beach stay or adjust the itinerary?",
+        answer:
+          "Both. Most couples who extend add two or three nights in Zanzibar, making the beach leg a full week. On the safari side, accommodation upgrades are available at all three parks, including intimate tented camps that suit honeymoon travel better than large lodge properties. If you want fewer driving days or a different park combination, contact us with your dates and we will work out what fits.",
+      },
+    ],
+    additionalSections: [
+      {
+        heading: "What Makes a Honeymoon Safari Different",
+        body: "A private vehicle means the schedule is yours. No shared departures, no waiting for strangers to finish photographing. You tell the guide when to stop, how long to stay, and when to head back. Lodge selection for couples is different from lodge selection for groups. The things that matter: room orientation (east-facing for morning light, west-facing for sunset), whether the property has plunge pools or open-air tubs, how private the dining is, and whether the lodge arranges setups without being asked. We book accordingly.\n\nAt each property on this route, we pre-arrange a honeymoon setup: champagne on arrival, a private sundowner location rather than the communal deck, rose petals at turndown. At Ngorongoro, a private picnic lunch on the crater floor. On Zanzibar, a sunset dhow cruise. If you want a private photographer for the balloon flight, the crater descent, or the Stone Town afternoon, we can arrange that at additional cost. Several couples have done this. The results are worth it.",
+      },
+      {
+        heading: "Which Zanzibar Coast Is Right for You",
+        body: "Most itineraries say 'Zanzibar' without explaining that the island has five distinct coastlines with very different characters.\n\nThe northwest coast (Nungwi and Kendwa) is the most reliable for swimming. Deep water right off the beach means no tidal flats at low tide, and conditions are consistent whether you travel in July or January. Nungwi is livelier, with beach restaurants and a working fishing village at one end. Kendwa is quieter, with the same water conditions. Both face west for sunsets.\n\nThe northeast coast (Matemwe) is remote and adjacent to Mnemba Atoll, the best snorkelling on the island. The reef creates a shallow lagoon at low tide, however, so swimming conditions change significantly by the hour. Best for October through March.\n\nThe east coast (Paje, Jambiani, Bwejuu) is beautiful in the right months. October through March the Indian Ocean is calm and snorkelling is clearest. June through October, southeast trade winds turn Paje into a kitesurf beach. Most honeymoon couples prefer the northwest for June to October travel.\n\nWe book the right coast based on your dates. We do not default to one location regardless of timing.",
+      },
+      {
+        heading: "Visas and Entry",
+        body: "Tanzania requires an eVisa for most nationalities, applied online at evisa.go.tz before departure. The fee is $50 for most passports; US citizens pay $100. Apply at least two weeks before you travel and print the approval letter to carry alongside your passport.\n\nYellow fever vaccination is required if you are arriving from a country on Tanzania's risk list, which includes most of sub-Saharan Africa and parts of South America. If you are transiting through Nairobi or Addis Ababa, confirm whether your specific layover duration triggers the requirement.\n\nZanzibar is part of Tanzania, so your mainland visa covers the island. You will fill in a short second immigration form on the Coastal Aviation flight. It takes about three minutes.\n\nOne practical note for newlyweds: if you have recently changed your surname and your passport still shows your maiden name, book all flights and accommodation in the maiden-name version. Mismatched passport and ticket names cause problems at check-in. If your passport is already in your married name, make sure your flight tickets match it exactly before you travel.",
+      },
+      {
+        heading: "Getting Here — Flight Routing",
+        body: "There is no direct flight to Tanzania from North America, the UK, or most of Europe. Every routing involves one connection.\n\nFrom the US East Coast: Qatar Airways (JFK or IAD via Doha) and KLM (JFK via Amsterdam) both serve Kilimanjaro International Airport with one stop. Turkish Airlines via Istanbul is frequently the cheapest option but adds flying time. Total travel time from New York is typically 18-22 hours.\n\nFrom the UK: KLM via Amsterdam and Qatar via Doha are the most reliable. Emirates via Dubai is a popular premium option. British Airways connects via Nairobi with a domestic leg to Kilimanjaro.\n\nFrom Australia: Singapore Airlines via Singapore and Emirates via Dubai both work. Expect 20-24 hours total.\n\nKilimanjaro International Airport (JRO) is the correct arrival airport for this itinerary. Do not fly into Dar es Salaam (DAR) — it adds a full day of domestic travel to reach Arusha.\n\nFor the return, you depart from Zanzibar International (ZNZ). Most international connections route through Nairobi (NBO), Doha (DOH), or Dubai (DXB). Allow at least three hours for a connection in Nairobi, where the domestic-to-international transfer can be slow.",
+      },
+      {
+        heading: "Wildlife by Month — When to Travel",
+        body: "January and February: Calving season. The wildebeest herds are on the short-grass plains south of the Serengeti near Lake Ndutu, where roughly 8,000 calves are born per day at peak in early February. Every predator in the ecosystem converges on one area. Some wildlife photographers consider February Ndutu better for predator viewing than August Mara.\n\nMarch: Calving winds down, herds begin moving northwest. Long rains approaching. A genuine shoulder option if you travel before mid-March.\n\nApril and May: Long rains. Lush landscapes, very few tourists, lower rates. Some roads become difficult and several Ndutu camps close. Not recommended.\n\nJune and July: Dry season begins. Animals concentrate around shrinking water sources. Western Corridor Serengeti, Grumeti River crossings from late June. Short grass, easy spotting.\n\nAugust through October: Peak season. Northern Serengeti, Mara River crossings at Kogatende. Highest prices and most dramatic crossings if you position correctly. Ngorongoro Crater is excellent year-round regardless of season.\n\nNovember and December: Short rains, typically four to six weeks. Parks turn dramatically green, crowds thin, and rates drop. A genuine undervalued window that most operators overlook.",
+      },
+      {
+        heading: "What to Pack",
+        body: "For the safari leg: neutral-coloured clothing in khaki, olive, tan, or grey. Bright colours disturb animals and attract insects. Mornings on the Serengeti are cold at 6:00am — bring a fleece or light jacket. Afternoons reach 28-32°C. A wide-brim hat, polarised sunglasses, and SPF 50 sunscreen for open game drives. Binoculars make a real difference; 8x42 or 10x42 is the standard guide recommendation.\n\nFor Zanzibar: lightweight summer clothes. In Stone Town, modest dress is respectful away from the beach — covered shoulders and knees when walking through the market or along the seafront. Reef-safe sunscreen if you plan to snorkel at Mnemba Atoll, which has a coral protection policy. A waterproof bag for boat excursions.\n\nPractical items: Tanzania uses Type G plugs (same as the UK). Bring a universal adapter if you are from North America, Europe, or Australia. A portable power bank is useful on long game-drive days. Take your antimalarial medication as prescribed and carry a small first-aid kit with antihistamine and rehydration sachets. Smart-casual evening wear for lodge dinners — no formal clothes required.",
       },
     ],
   },

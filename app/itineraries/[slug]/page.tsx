@@ -205,6 +205,20 @@ export default async function ItineraryPage({ params }: PageProps) {
                 <ItineraryAccordion days={itinerary.days} />
               </section>
 
+              {/* Additional Sections */}
+              {itinerary.additionalSections && itinerary.additionalSections.map((section, index) => (
+                <section key={index} className="mb-12">
+                  <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-4">
+                    {section.heading}
+                  </h2>
+                  {section.body.split("\n\n").map((paragraph, pIndex) => (
+                    <p key={pIndex} className="text-body-mobile md:text-body-desktop text-ink mb-4 last:mb-0">
+                      {paragraph}
+                    </p>
+                  ))}
+                </section>
+              ))}
+
               {/* Included / Excluded */}
               <section className="mb-12">
                 <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-4">
