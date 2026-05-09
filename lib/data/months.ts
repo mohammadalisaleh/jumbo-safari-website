@@ -48,6 +48,10 @@ export const monthPages: Record<string, MonthPage> = {
     title: "Tanzania Safari in July",
     description:
       "July is Tanzania's peak safari month: dry season, short grass, high wildlife density, and the Mara River crossings underway in the northern Serengeti. Complete guide to July conditions by park, booking lead times, and prices from an Arusha-based operator.",
+    heroImage: {
+      src: "/lion-pride-serengeti-tanzania-july-safari.jpg",
+      alt: "Pride of lions resting on a fallen tree trunk in the green Serengeti bush, Tanzania — a typical July safari encounter",
+    },
     intro:
       "July is the beginning of the best three months for safari in Tanzania. The long rains ended in May. The grass is short. Animals concentrate around shrinking water sources and are easy to spot. In the northern Serengeti, the wildebeest herds are pushing toward the Mara River for the first crossings of the season. In Ngorongoro, the crater floor is cold at dawn and clear all day. In Tarangire, elephants are gathering in numbers that peak in August and September but are already exceptional. This is the month most experienced safari travellers choose. It is also the month that needs the most advance planning.",
     highlights: [
