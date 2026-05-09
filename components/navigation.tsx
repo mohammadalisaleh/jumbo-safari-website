@@ -16,7 +16,6 @@ const navItems = [
     },
     links: [
       { label: "Private Safari Tours", href: "/tanzania-safari/private-tours" },
-      { label: "Group Safari Tours", href: "/tanzania-safari/group-tours" },
       { label: "Safari with Kids", href: "/tanzania-safari/family" },
       { label: "National Parks Overview", href: "/national-parks" },
       { label: "Best Time to Visit", href: "/guides/best-time-to-visit-tanzania" },

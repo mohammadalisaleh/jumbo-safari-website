@@ -473,6 +473,220 @@ export const nationalParks: Record<string, NationalPark> = {
     ],
     relatedItineraries: ["8-day-classic-tanzania-safari"],
   },
+  ndutu: {
+    slug: "ndutu",
+    name: "Ndutu",
+    tagline: "The calving grounds. 500,000 wildebeest calves in six weeks.",
+    description:
+      "Ndutu sits in the southwestern corner of the Ngorongoro Conservation Area, bordering the Serengeti. From January through March, it holds the largest wildebeest calving event on Earth. Off-road driving is permitted here. That is the difference.",
+    quickFacts: {
+      area: "Approx. 400 km² (part of the 8,292 km² Ngorongoro Conservation Area)",
+      unescoStatus: "Part of Ngorongoro Conservation Area — UNESCO World Heritage Site",
+      bestTime: "Mid-January through late February (calving season)",
+      famousFor: "Wildebeest calving season, off-road driving, predator density",
+      nearestAirport: "Ndutu Airstrip (seasonal), Kilimanjaro International (JRO)",
+    },
+    about: [
+      "Ndutu is not a national park. It sits inside the Ngorongoro Conservation Area (NCA), in the southwestern corner where the NCA meets Serengeti National Park. Most visitors have never heard of it. The ones who have are usually photographers or wildlife professionals who have been to the Serengeti in August and want to understand why Ndutu in February is considered better.",
+      "The answer is simple: off-road driving. The NCA permits vehicles to leave the track. Serengeti National Park does not. During calving season, when a wildebeest is giving birth 20 metres from the vehicle, or a cheetah is accelerating toward a newborn calf through ankle-height grass, the difference between being on track and being off it is not aesthetic. It determines what you witness.",
+      "The calving is driven by chemistry. The November-December short rains deposit phosphorus and calcium into the volcanic short-grass plains around Lake Ndutu and Lake Masek. These are exactly the nutrients that lactating cows and developing calves require. The herds arrive by late December, births begin by early January, and peak intensity runs through the first two weeks of February. At the absolute peak, around 8,000 calves are born per day across an area you can cover in an hour's drive.",
+      "The predator response to this is total. Every lion pride in the surrounding ecosystem pulls toward the calving grounds. Spotted hyena clans here reach 80-plus members. Cheetahs work the open plains because the ankle-height grass gives them their sprint hunting conditions and a kill success rate that runs roughly 50 percent during calving, compared to 30 percent at other times. Black-backed jackals operate on the calves directly, often a dozen jackals around a single birth. It is not a comfortable spectacle in the way a sunset photograph is comfortable. It is the real mechanism of the ecosystem, running at full speed.",
+      "Outside calving season, Ndutu is quieter. The lodges around Lake Ndutu operate November through March when conditions suit, with most closing from April onward as the long rains arrive and the volcanic black-cotton clay soil becomes difficult. If your dates fall in calving season, this is the best safari location in East Africa for predator viewing. If they don't, the central Serengeti will serve you better.",
+    ],
+    wildlife: [
+      {
+        name: "Wildebeest",
+        description: "Over 1.5 million in the Serengeti-Mara ecosystem. 500,000 calves born at Ndutu between January and March.",
+      },
+      {
+        name: "Cheetah",
+        description: "Open short-grass plains are ideal sprint-hunting ground. Kill success runs near 50% during calving season.",
+      },
+      {
+        name: "Lion",
+        description: "Multiple resident prides pull onto the calving plains during January-March. Pride territories are concentrated around the kopjes and lake edges.",
+      },
+      {
+        name: "Spotted Hyena",
+        description: "Clan sizes here reach 80+ members. Active hunters, not scavengers. Responsible for a significant share of kills across the calving plains.",
+      },
+      {
+        name: "Leopard",
+        description: "Acacia woodland fringing Lake Masek is leopard territory. Less visible than in the Serengeti valley, but resident.",
+      },
+      {
+        name: "Zebra",
+        description: "200,000 zebra migrate alongside the wildebeest, arriving on the Ndutu plains from December. Calves are born slightly earlier than wildebeest.",
+      },
+    ],
+    bestTimeToVisit: [
+      {
+        month: "Nov-Dec",
+        weather: "Short rains, green plains, tracks generally firm",
+        wildlife: "Herds arriving, early births beginning",
+        crowds: "Low",
+      },
+      {
+        month: "Jan",
+        weather: "Dry interlude. Warm days, cool mornings",
+        wildlife: "Calving underway, predator density rising fast",
+        crowds: "Moderate",
+      },
+      {
+        month: "Feb",
+        weather: "Warm and dry. Peak calving conditions",
+        wildlife: "Peak. 8,000 calves per day at maximum. All predators active.",
+        crowds: "High (but far below Serengeti peak-season levels)",
+      },
+      {
+        month: "Mar",
+        weather: "Long rains approaching. Tracks soften late March.",
+        wildlife: "Calving winding down, herds beginning to move northwest",
+        crowds: "Moderate-Low",
+      },
+      {
+        month: "Apr-Oct",
+        weather: "Long rains (Apr-May), then dry season",
+        wildlife: "Most camps closed. Serengeti is the right destination.",
+        crowds: "Very low / closed",
+      },
+    ],
+    relatedItineraries: ["calving-season-safari", "8-day-classic-tanzania-safari"],
+    faqs: [
+      {
+        question: "Is Ndutu a national park?",
+        answer:
+          "No. Ndutu is part of the Ngorongoro Conservation Area (NCA), not a national park. The NCA is a different category of protected land. The key practical difference for visitors: off-road driving is permitted in the NCA, including at Ndutu. National parks require vehicles to stay on designated tracks. During calving season, off-road access changes what you can do and where you can position.",
+      },
+      {
+        question: "When exactly is calving season at Ndutu?",
+        answer:
+          "The meaningful window is mid-January through late February. Peak is the first two weeks of February, when roughly 8,000 calves are born per day across the Ndutu plains. The timing shifts by up to two weeks depending on the previous year's short rains. December is a genuine shoulder option: births have started, camps are quiet, and rates are lower. March sees the calving slow and herds beginning to move northwest toward the Western Corridor.",
+      },
+      {
+        question: "How do you get to Ndutu?",
+        answer:
+          "Two options. By road from Arusha: approximately six to seven hours via Karatu and the Ngorongoro Conservation Area. The route passes through the NCA highlands and descends southwest toward the Ndutu plains. The drive is long but passes good scenery through the Ngorongoro rim. By air: Air Excel operates seasonal flights from Arusha to Ndutu Airstrip during calving season, roughly one hour and five minutes, around $345 one-way. Flying saves half a day each way and is worth it if the budget allows.",
+      },
+      {
+        question: "What lodges are near Ndutu?",
+        answer:
+          "Ndutu Safari Lodge is the original property, a permanent tented camp on the shores of Lake Ndutu with a waterhole that attracts animals at night. Lemala Ndutu is a more recently built tented camp with better facilities. Several mobile camps operate during calving season only and provide closer access to the calving grounds. All properties close from April onward when the long rains make the roads impassable.",
+      },
+      {
+        question: "Can you combine Ndutu with the Ngorongoro Crater?",
+        answer:
+          "Yes, and the combination works well. Ndutu sits inside the NCA, so the crater is about two hours away by road through the conservation area. The standard route on our Calving Season Safari includes two nights at Ndutu, then a half-day crater descent before returning to Arusha. The crater wildlife (25,000 animals, year-round) does not change with calving season, making it a reliable second destination regardless of timing.",
+      },
+    ],
+  },
+  ruaha: {
+    slug: "ruaha",
+    name: "Ruaha National Park",
+    tagline: "Tanzania's largest park. Almost no one goes there.",
+    description:
+      "Ruaha is Tanzania's largest national park at 20,226 km², located in the south-central highlands. It holds some of the highest lion and African wild dog densities on the continent, large elephant herds, and receives a fraction of the visitors that the northern circuit parks see.",
+    quickFacts: {
+      area: "20,226 km² (Tanzania's largest national park)",
+      unescoStatus: "National Park since 1964",
+      bestTime: "June - October (dry season)",
+      famousFor: "African wild dog, lion, elephant, greater and lesser kudu, sable antelope",
+      nearestAirport: "Msembe Airstrip (in park), Iringa Airport",
+    },
+    about: [
+      "Ruaha is Tanzania's largest national park and one of the least visited. That combination is unusual and worth understanding. The northern circuit (Serengeti, Ngorongoro, Tarangire, Manyara) draws the overwhelming share of Tanzania's safari visitors because it is accessible by road from Arusha and the infrastructure is well-developed. Ruaha requires a flight. It sits six hours south of Dar es Salaam in the south-central highlands, and the nearest town of any size is Iringa, 112 kilometres from the park boundary. This is not incidental. The distance is the product.",
+      "The Great Ruaha River defines the park's northern boundary and is the ecological spine of the dry-season experience. From June through October, as smaller water sources fail, every animal in the park's 20,226 square kilometres contracts toward the river. Elephant herds of 200 or more are documented here during peak dry season. Buffalo congregate in herds that can exceed 1,000. Lion prides have ranges that cover the full riverine strip, and predator-prey interactions along the bank during the dry season are as concentrated as anything the northern circuit produces.",
+      "Ruaha holds one of Africa's most significant wild dog populations. The African wild dog is the continent's most endangered large predator, with a total population estimated at under 7,000. Ruaha's packs are well-documented and tracked by researchers from the Ruaha Carnivore Project, which has operated in the park since 2009. A wild dog hunt on open ground is among the most efficient predator events in Africa: pack success rates run around 80 percent compared to the lion's 25-30 percent. Sightings at Ruaha are not guaranteed but are significantly more likely here than in any northern circuit park.",
+      "The landscape differs from the north in ways that affect the safari experience. Ruaha sits at 900-1,000 metres elevation in mixed woodland, miombo forest, and open grassland, a very different palette from the Serengeti's short-grass plains. Greater and lesser kudu, sable antelope, and roan antelope appear here in numbers that do not exist in northern Tanzania. The bird list exceeds 570 species. Puku, a medium-sized antelope absent from the north, is found along the river.",
+      "The visitor numbers tell you what to expect. In a park seven times the size of the Serengeti, you will often drive for an hour without seeing another vehicle. There are no hot-air balloons, no rush for position at a river crossing, no convoy of Land Cruisers around a lion kill. If that is what you are looking for, Ruaha delivers it. If you want the drama of the Mara River crossings and the certainty of seeing the Great Migration, the northern circuit is the right choice. Ruaha and the northern circuit are not alternatives; they are different experiences.",
+    ],
+    wildlife: [
+      {
+        name: "African Wild Dog",
+        description: "One of Africa's highest densities. Packs tracked by the Ruaha Carnivore Project. Hunt success rate around 80%.",
+      },
+      {
+        name: "Lion",
+        description: "Large prides with established territories along the Great Ruaha River. Among the highest lion density in East Africa.",
+      },
+      {
+        name: "Elephant",
+        description: "Herds of 200+ congregate along the river in dry season. Ruaha holds Tanzania's second-largest elephant population after the Selous.",
+      },
+      {
+        name: "Greater Kudu",
+        description: "Absent from northern Tanzania. Male greater kudu have the most impressive horns of any African antelope, spiraling to over a metre in length.",
+      },
+      {
+        name: "Leopard",
+        description: "Good density in the riverine woodland. Ruaha's leopards are less habituated to vehicles than those in the Serengeti, making sightings feel wilder.",
+      },
+      {
+        name: "Sable Antelope",
+        description: "One of Africa's most striking animals, with curved scimitar horns and jet-black coats on the males. Ruaha is one of the few places in Tanzania where sable are reliably seen.",
+      },
+    ],
+    bestTimeToVisit: [
+      {
+        month: "Jun-Aug",
+        weather: "Dry, warm days, cold nights (can drop to 10°C)",
+        wildlife: "Excellent. Animals concentrated at the river. Wild dog denning season.",
+        crowds: "Low",
+      },
+      {
+        month: "Sep-Oct",
+        weather: "Dry, hot (30-35°C midday)",
+        wildlife: "Peak dry-season concentration. Elephant herds largest. Predator activity highest.",
+        crowds: "Low-Moderate",
+      },
+      {
+        month: "Nov-Dec",
+        weather: "Short rains, green landscape",
+        wildlife: "Wildlife disperses. Wild dog pups emerging. Bird list peaks.",
+        crowds: "Very low",
+      },
+      {
+        month: "Jan-Mar",
+        weather: "Wet season. Some roads impassable.",
+        wildlife: "Difficult game viewing. Green and lush.",
+        crowds: "Very low / some camps closed",
+      },
+      {
+        month: "Apr-May",
+        weather: "Long rains. Many camps close.",
+        wildlife: "Most camps closed. Not recommended.",
+        crowds: "Closed season for most operators",
+      },
+    ],
+    relatedItineraries: ["8-day-classic-tanzania-safari"],
+    faqs: [
+      {
+        question: "How do you get to Ruaha National Park?",
+        answer:
+          "The standard route is a flight from Dar es Salaam or Arusha to Msembe Airstrip inside the park. Coastal Aviation and Safari Air Link both operate scheduled services. Flying time from Dar es Salaam is approximately 1.5 hours; from Arusha, around 2 hours with a stop in Dodoma. Self-drive is possible from Iringa (112 km, about 3 hours on rough roads) but requires a 4WD and is not recommended as a solo route without prior experience of the road conditions.",
+      },
+      {
+        question: "Can you combine Ruaha with the northern circuit?",
+        answer:
+          "Yes, and it works well for longer trips (12 days or more). The standard combination is Arusha, then northern circuit (Serengeti, Ngorongoro), then a flight south to Ruaha, finishing with a final flight to Dar es Salaam or Zanzibar. A Ruaha and Zanzibar combination is also logical: Zanzibar for 3-4 nights, then a Coastal Aviation flight to Ruaha for 4 nights in the park, then home. Contact us to build the right route for your dates.",
+      },
+      {
+        question: "Is Ruaha good for first-time safari visitors?",
+        answer:
+          "It depends what you want. For first-timers who want guaranteed big numbers and the Great Migration, the northern circuit is the right starting point. Ruaha rewards patience and the willingness to spend more time looking for animals across a larger, less-trafficked landscape. The payoff when you find them (particularly wild dog) is harder to replicate anywhere else. Many repeat safari visitors consider Ruaha the park that made every previous trip feel crowded.",
+      },
+      {
+        question: "What are the best lodges in Ruaha?",
+        answer:
+          "Jongomero Camp is one of the best in Tanzania, full stop. Eight tents, permanent camp, river location, exceptional guiding. Asilia's Kwihala Camp is strong for value and guide quality. Ruaha River Lodge is the oldest property in the park, well-positioned on the Great Ruaha River and a good mid-range option. The camp choice matters here more than in the north because the distances are greater and your guide is the primary factor in what you see.",
+      },
+      {
+        question: "Are wild dogs guaranteed in Ruaha?",
+        answer:
+          "No. Wild dog sightings are never guaranteed. The packs cover large territories and are tracked by researchers who share locations with guides daily during the dry season. June through August is the denning period, when packs are more predictable in their movements. September and October are good for sightings as packs expand their range. Your guide will work the radio network. Multiple-day stays (minimum 3 full days) improve the odds significantly.",
+      },
+    ],
+  },
 }
 
 export function getNationalPark(slug: string): NationalPark | undefined {

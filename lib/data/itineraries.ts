@@ -681,6 +681,420 @@ export const itineraries: Record<string, Itinerary> = {
       },
     ],
   },
+  "5-day-northern-circuit": {
+    slug: "5-day-northern-circuit",
+    title: "5-Day Northern Circuit Safari",
+    duration: "5 Days",
+    parks: "Tarangire · Serengeti · Ngorongoro",
+    price: "From $1,900 pp",
+    season: "Year-round",
+    description:
+      "5-day private Tanzania safari covering Tarangire, the central Serengeti, and Ngorongoro Crater. Four nights, private 4x4, full-board lodges. The shortest route that covers the core three parks properly. From $1,900 per person.",
+    leadParagraph:
+      "Five days is tight for three parks. It works if you accept one thing: you are here to see the parks, not to become familiar with them. Two hours in Tarangire is enough for the baobabs and the elephant herds. Two days in the Serengeti is enough for big cats and the sense of scale. One full day in the crater is exactly right. What you lose is the slow morning, the late afternoon when the light goes orange, the second chance at something you missed. If that is an acceptable trade for your schedule and budget, this is the route.",
+    overview:
+      "The 5-day northern circuit is the shortest version of the classic route that still covers all three core parks: Tarangire, the central Serengeti, and Ngorongoro Crater. The tradeoff is time. Tarangire gets one afternoon game drive rather than a full day. The Serengeti gets two nights with one full day in between. Ngorongoro gets the crater descent and then you are driving back to Arusha. None of these are wasted days. But if you can add even two more nights, the 8-day version is a better trip. The 5-day is for people who have limited time and want the honest version of Tanzania rather than the highlights video.",
+    quickFacts: {
+      duration: "5 Days / 4 Nights",
+      parksVisited: "Tarangire, Serengeti, Ngorongoro",
+      accommodation: "Mid-range lodges and tented camps",
+      groupSize: "Private (2-6 guests)",
+      departsFrom: "Arusha, Tanzania",
+      bestSeason: "Year-round (dry season June-October is easiest)",
+    },
+    days: [
+      {
+        day: 1,
+        title: "Arusha to Tarangire",
+        activities:
+          "Pickup from Arusha at 7:00am. The drive to Tarangire's main gate takes about two hours, heading southeast through Maasai village country before the acacia scrub thickens and the first baobabs appear. Enter through the main gate and go directly to the Tarangire River, where elephant concentrations in the dry season are the highest of any park on the northern circuit. Three hours of game driving before sunset check-in. One afternoon is not enough for Tarangire, but it shows you what is here.",
+        accommodation: "Tarangire Safari Lodge or similar",
+        meals: "Lunch, Dinner",
+      },
+      {
+        day: 2,
+        title: "Tarangire to Central Serengeti via Ngorongoro Highlands",
+        activities:
+          "Early breakfast, then depart for the Serengeti. The drive takes about six hours with stops. You climb through the Ngorongoro highlands, pass through the Conservation Area, and stop at Olduvai Gorge before Naabi Hill Gate: Mary Leakey found the skull of Paranthropus boisei here in 1959, a hominid who walked these plains 1.8 million years ago. Arrive in the Seronera area in the late afternoon for a first drive on the plains.",
+        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 3,
+        title: "Full Day Serengeti",
+        activities:
+          "Full day in the park. The Seronera Valley runs through the centre of the Serengeti and is the most consistent area for big cats year-round. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops 600 million years old, visible for kilometres across the plains. Cheetahs work the open short-grass south of the valley. Out of everything on this route, this is the day with the most room to breathe. Use it.",
+        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 4,
+        title: "Serengeti to Ngorongoro Crater Rim",
+        activities:
+          "Morning game drive before departing through Naabi Hill Gate. The drive to the crater rim takes about three and a half hours, climbing the outer caldera slopes through montane forest. Arrive at the rim in time for lunch and check in to a rim lodge. The crater floor is 600 metres below. Early dinner and sleep. The descent starts at 6:00am.",
+        accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 5,
+        title: "Ngorongoro Crater to Arusha",
+        activities:
+          "Descent onto the crater floor at 6:00am. Six hours on the floor: approximately 120 lions with established territories, 25,000 animals inside 260 square kilometres, black rhino at Gorigor Swamp if you are early enough. Picnic lunch at Ngoitokitok Springs. Begin ascent mid-afternoon. Drive back to Arusha, arriving early evening. Drop-off at your hotel or Kilimanjaro International Airport.",
+        accommodation: "End of safari",
+        meals: "Breakfast, Lunch",
+      },
+    ],
+    included: [
+      "All park entrance fees and Ngorongoro crater vehicle fee ($295 per vehicle)",
+      "Private 4x4 Toyota Land Cruiser with pop-up roof",
+      "Professional English-speaking guide, Arusha-based",
+      "4 nights accommodation as specified",
+      "All meals full-board (lunch on Day 1 through lunch on Day 5)",
+      "Bottled water and soft drinks on game drives",
+      "Airport and hotel transfers in Arusha",
+      "AMREF Flying Doctors emergency evacuation insurance",
+    ],
+    excluded: [
+      "International flights",
+      "Tanzania e-visa ($50 for most nationalities)",
+      "Travel insurance",
+      "Guide gratuity (suggested $25 per day)",
+      "Lodge staff gratuity (suggested $5-7 per day via lodge tip box)",
+      "Hot air balloon safari (optional, $590 per person)",
+      "Alcoholic beverages",
+      "Personal expenses and souvenirs",
+    ],
+    faqs: [
+      {
+        question: "Is 5 days enough for the northern circuit?",
+        answer:
+          "Enough to see all three parks and come away with a real safari experience, yes. Enough to feel unhurried and have time for second chances on missed sightings, no. The 5-day route is honest about that tradeoff. If you can extend to 8 days, the extra three nights (one more in Tarangire, two more in the Serengeti) change the quality of the trip significantly. If 5 days is what your schedule allows, this itinerary covers the essential Tanzania properly.",
+      },
+      {
+        question: "Which is better: 5-day or 8-day safari?",
+        answer:
+          "The 8-day is a better trip. Three nights in the Serengeti versus one is the biggest difference. You stop rushing on day three of the Serengeti, and that is when the real watching begins. The 5-day makes sense for people with a genuinely fixed timeline who still want to cover all three core parks. It is not a compromise version. It is a shorter version.",
+      },
+      {
+        question: "What part of the Serengeti does this route visit?",
+        answer:
+          "The central Serengeti, based in the Seronera area. Seronera is the most consistent zone for resident big cat sightings year-round, regardless of where the migration herds are. With only one full day in the Serengeti, Seronera is the right base. Chasing the migration in the north or west requires more time to justify the positioning.",
+      },
+      {
+        question: "What is the Ngorongoro crater vehicle fee?",
+        answer:
+          "The crater charges a separate $295 per-vehicle descent fee, on top of the standard NCA conservation fees. This covers one full day on the crater floor. All vehicles must exit by 6:00pm. The fee is included in your Jumbo Safaris package price.",
+      },
+      {
+        question: "Can the 5-day route be extended?",
+        answer:
+          "Yes. The most common extension is adding two nights in the Serengeti, turning this into a 7-day route. A single extra night in Tarangire is also worthwhile if elephants are a priority. Contact us with your dates and we will adjust the route and quote accordingly.",
+      },
+    ],
+  },
+  "11-day-tanzania-zanzibar": {
+    slug: "11-day-tanzania-zanzibar",
+    title: "11-Day Tanzania & Zanzibar",
+    duration: "11 Days",
+    parks: "Tarangire · Serengeti · Ngorongoro · Zanzibar",
+    price: "From $3,800 pp",
+    season: "Year-round",
+    description:
+      "11-day Tanzania safari and Zanzibar beach trip. Six nights on the northern circuit covering Tarangire, Serengeti, and Ngorongoro, then a flight to Zanzibar for four nights on the Indian Ocean coast. From $3,800 per person.",
+    leadParagraph:
+      "Six nights on safari, four nights at the coast. The northern circuit first, then a flight east to Zanzibar. The combination works because the two halves are genuinely different: bush versus beach, cold mornings and elephant dust versus warm water and coral sand. Most people who do one want the other. This route gives you both without feeling rushed in either.",
+    overview:
+      "The route covers Tarangire (one night), the central Serengeti (two nights), and Ngorongoro Crater (one night) before flying from Arusha to Zanzibar on Day 7. Four nights on the island, with the choice of north coast (consistent swimming year-round) or east coast (better October through March). We book the coast that suits your travel dates. The safari leg is tighter than the 8-day classic, but every park is properly included: an afternoon drive in Tarangire for the baobabs and elephants, two full Serengeti days for big cats, a full crater day on the floor. Zanzibar adds Stone Town, the coast, and the transition that most Tanzania trips skip entirely.",
+    quickFacts: {
+      duration: "11 Days / 10 Nights",
+      parksVisited: "Tarangire, Serengeti, Ngorongoro, Zanzibar",
+      accommodation: "Mid-range lodges and beach property",
+      groupSize: "Private (2-6 guests)",
+      departsFrom: "Arusha, Tanzania",
+      bestSeason: "Year-round (see FAQ for seasonal notes)",
+    },
+    days: [
+      {
+        day: 1,
+        title: "Arrival in Arusha",
+        activities:
+          "Transfer from Kilimanjaro International Airport to your Arusha hotel. The drive takes about 45 minutes. Rest, early dinner, briefing on the route for tomorrow. First game drive is in the morning.",
+        accommodation: "Arusha Coffee Lodge or similar",
+        meals: "Dinner",
+      },
+      {
+        day: 2,
+        title: "Arusha to Tarangire",
+        activities:
+          "Pickup at 7:00am. Two-hour drive southeast to Tarangire's main gate. The Tarangire River is the dry-season lifeline for every animal in the ecosystem. Enter and head straight for it. Elephant herds of 150 or more are common in the dry months. The ancient baobabs here are a different scale from anything in the Serengeti, some of them over a thousand years old. Afternoon game drive along the river before sunset check-in.",
+        accommodation: "Tarangire Safari Lodge or similar",
+        meals: "Lunch, Dinner",
+      },
+      {
+        day: 3,
+        title: "Tarangire to Central Serengeti via Olduvai Gorge",
+        activities:
+          "Early breakfast, then depart for the Serengeti. About six hours of driving with stops. You pass through the Ngorongoro highlands, descend into the Conservation Area, and stop at Olduvai Gorge: the excavation site where Mary Leakey found the skull of Paranthropus boisei in 1959. The resident guide does a 20-minute talk at the site. Worth it. Arrive Seronera area late afternoon for a first drive on the plains.",
+        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 4,
+        title: "Full Day Serengeti",
+        activities:
+          "Full day in the Seronera Valley, the most consistent big-cat zone in the Serengeti year-round. Leopards in the sausage trees above the river. Lions on the kopjes. Cheetahs on the short-grass plains to the south. The valley also holds the highest density of prey species in the central park, which is why predators concentrate here regardless of where the migration herds are.",
+        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 5,
+        title: "Full Day Serengeti",
+        activities:
+          "Second full day. Your guide tracks current sightings from the field network and positions accordingly. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne breakfast on landing. $590 per person, booked in advance. For a second Serengeti day, the afternoon is best spent somewhere different from the morning. Your guide will suggest where based on what is active.",
+        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 6,
+        title: "Serengeti to Ngorongoro Crater Rim",
+        activities:
+          "Final morning game drive in the Serengeti, then depart through Naabi Hill Gate. Three-and-a-half-hour drive to the crater rim, climbing through montane forest. Arrive at the rim in time for lunch. Views down into the 260-square-kilometre caldera from the lodge terrace. Early dinner. The descent begins at 6:00am.",
+        accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 7,
+        title: "Ngorongoro Crater, then Fly to Zanzibar",
+        activities:
+          "Descent at 6:00am. The crater holds approximately 25,000 large mammals year-round, roughly 120 lions, 50 black rhino at last count, 15,000 wildebeest. Picnic lunch at Ngoitokitok Springs. Ascend mid-afternoon, drive to Arusha (three hours). Coastal Aviation flight from Arusha to Zanzibar, departing mid-evening, arriving about 1 hour 45 minutes later. Transfer to your beach property.",
+        accommodation: "Beach property, north or east coast Zanzibar",
+        meals: "Breakfast, Lunch",
+      },
+      {
+        day: 8,
+        title: "Zanzibar — Beach Day",
+        activities:
+          "First full day on the island. The pace change from safari is abrupt and that is the point. The Indian Ocean is warm, the agenda disappears. Morning swim. Afternoon at leisure. Optional: arrange a snorkelling trip or Stone Town visit through the resort.",
+        accommodation: "Beach property, north or east coast Zanzibar",
+        meals: "Breakfast, Dinner",
+      },
+      {
+        day: 9,
+        title: "Zanzibar — Stone Town",
+        activities:
+          "Morning on the beach. Afternoon in Stone Town, a 20-minute drive from most north coast properties. Stone Town is a UNESCO World Heritage Site, a compact Arab trading city with carved wooden doors, narrow alleyways, and the spice trade infrastructure that shaped the entire East African coast. Freddie Mercury was born here in 1946. Sunset from the seafront before returning to the resort.",
+        accommodation: "Beach property, north or east coast Zanzibar",
+        meals: "Breakfast, Dinner",
+      },
+      {
+        day: 10,
+        title: "Zanzibar — Last Full Day",
+        activities:
+          "No fixed schedule. Mnemba Atoll snorkelling is the main optional excursion: half-day boat trip, turtles and reef fish guaranteed, dolphins likely. $80-100 per person, bookable through the resort. A spice tour is a three-hour walk through a working plantation ($30 per person). Or the beach. Last evening in Tanzania.",
+        accommodation: "Beach property, north or east coast Zanzibar",
+        meals: "Breakfast, Dinner",
+      },
+      {
+        day: 11,
+        title: "Departure from Zanzibar",
+        activities:
+          "Breakfast, checkout, transfer to Zanzibar International Airport (ZNZ). Most international connections go via Nairobi, Doha, Dubai, or Addis Ababa. Allow at least three hours for a Nairobi connection where the domestic-to-international transfer is slow.",
+        accommodation: "End of trip",
+        meals: "Breakfast",
+      },
+    ],
+    included: [
+      "All Tarangire, Serengeti, and Ngorongoro park and conservation fees",
+      "Ngorongoro crater vehicle descent fee ($295 per vehicle)",
+      "Private 4x4 Toyota Land Cruiser with pop-up roof for the safari leg",
+      "Professional English-speaking guide, Arusha-based",
+      "6 nights safari accommodation (1 Arusha, 1 Tarangire, 2 Serengeti, 1 Ngorongoro) + 4 nights Zanzibar",
+      "Full-board on safari, half-board in Zanzibar (breakfast and dinner)",
+      "Bottled water and soft drinks on game drives",
+      "All road transfers on the safari circuit",
+      "Coastal Aviation flight Arusha to Zanzibar (one-way per person)",
+      "AMREF Flying Doctors emergency evacuation insurance",
+    ],
+    excluded: [
+      "International flights",
+      "Tanzania e-visa ($50 for most nationalities)",
+      "Travel insurance",
+      "Guide gratuity (suggested $25 per day for 5 safari days)",
+      "Lodge staff gratuity (suggested $5-7 per day)",
+      "Hot air balloon safari ($590 per person, optional)",
+      "Zanzibar snorkelling and optional excursions",
+      "Alcoholic beverages",
+      "Personal expenses",
+    ],
+    faqs: [
+      {
+        question: "How does this compare to the honeymoon safari?",
+        answer:
+          "The honeymoon safari has one more safari night (7 versus 6) and includes additional inclusions: champagne on arrival, private sundowners, a crater-floor picnic, and a sunset dhow cruise in Zanzibar. It is positioned for couples celebrating something and priced accordingly (from $5,500 vs from $3,800). The 11-day Tanzania and Zanzibar route is the same core experience without the couples-specific add-ons and at a lower price point. Both routes are entirely private.",
+      },
+      {
+        question: "Which coast of Zanzibar will we stay on?",
+        answer:
+          "We book the right coast based on your travel dates. The north coast (Nungwi, Kendwa) has consistent swimming year-round: deep water off the beach means no tidal flats. The east coast (Paje, Jambiani) is better October through March when the Indian Ocean is calm and snorkelling is clearest. June through October, southeast trade winds turn the east coast into a kitesurf destination. If you are travelling June-October and prefer swimming over kitesurfing, we put you on the north coast.",
+      },
+      {
+        question: "Is the safari leg rushed at 6 nights?",
+        answer:
+          "Compared to the 8-day classic, yes, slightly. Tarangire gets one afternoon drive rather than a full day, and you have two full Serengeti days rather than three. You still see all three parks properly. The 8-day version gives more time in the Serengeti, which is the park that rewards extended stays most. If the beach time matters as much as the safari time, the 11-day route is the right balance. If you want to prioritise the safari, extend to the 8-day classic and add a shorter Zanzibar leg.",
+      },
+      {
+        question: "How do we get from the safari circuit to Zanzibar?",
+        answer:
+          "Coastal Aviation operates a daily flight from Arusha to Zanzibar. Departures run around midday. The flight is approximately one hour and 45 minutes, with no connection through Dar es Salaam. The fare is included in this package. We handle all booking and airport transfers on both ends.",
+      },
+      {
+        question: "Do we need a visa for Zanzibar separately?",
+        answer:
+          "No. Zanzibar is part of Tanzania. Your mainland eVisa covers the island. You fill in a short second immigration form on the domestic flight, about three minutes. Apply for the Tanzania eVisa online at evisa.go.tz before departure. The fee is $50 for most nationalities, $100 for US citizens.",
+      },
+    ],
+  },
+  "family-safari": {
+    slug: "family-safari",
+    title: "Family Safari Tanzania",
+    duration: "8 Days",
+    parks: "Tarangire · Serengeti · Ngorongoro",
+    price: "From $2,800 pp",
+    season: "Year-round",
+    description:
+      "8-day private family safari in Tanzania. Tarangire, Serengeti, and Ngorongoro Crater on the northern circuit, paced for children. Minimum age 5. Private vehicle and guide throughout. From $2,800 per person.",
+    leadParagraph:
+      "The Serengeti is one of the few places where a child looks out the window and the explanation requires no embellishment. The real thing is right there. No zoo framing, no distance. This is the standard 8-day northern circuit, run privately, with the pacing adjusted for children and the guide briefed specifically for mixed-age groups. Same parks, same wildlife. Different approach to what you stop for and how long you stay.",
+    overview:
+      "The northern circuit works well for families because it is entirely vehicle-based. Children stay in the Land Cruiser for game drives. There are no bush walks, no early-morning hikes, and no activities that require a minimum adult fitness level. What changes for a family safari is pace and structure: shorter drives, more stops for snacks and bathroom breaks, guides who explain what they are seeing to younger passengers, and lodge selection that accounts for children's meal times and early bedtimes. The parks themselves (Tarangire for elephants, Serengeti for predators and scale, Ngorongoro Crater for the most concentrated wildlife in Africa) are the same regardless of the group composition. Children respond to the scale of the Serengeti and the density of the crater differently from adults, but usually better.",
+    quickFacts: {
+      duration: "8 Days / 7 Nights",
+      parksVisited: "Tarangire, Serengeti, Ngorongoro",
+      accommodation: "Family-friendly mid-range lodges",
+      groupSize: "Private (your family only)",
+      departsFrom: "Arusha, Tanzania",
+      bestSeason: "Year-round (school holidays: July-August and December-January are popular)",
+    },
+    days: [
+      {
+        day: 1,
+        title: "Arusha to Tarangire",
+        activities:
+          "Pickup from your Arusha hotel at 7:30am. The drive to Tarangire takes about two hours. Watch for the first baobabs as the road enters the park's outer zone. At Tarangire's main gate, enter and head for the river. Elephant concentrations in the dry season are the highest of any park on the northern circuit, with herds of 150 or more common along the Tarangire River. Afternoon game drive before sunset check-in. Most family lodges can arrange dinner at 6:30pm for early bedtimes.",
+        accommodation: "Tarangire Safari Lodge or similar",
+        meals: "Lunch, Dinner",
+      },
+      {
+        day: 2,
+        title: "Full Day Tarangire",
+        activities:
+          "Full day in the park. Morning drive from 6:30am, earlier than the tourist buses. The Silale Swamp in the south draws buffalo, wildebeest, and hippos. Tarangire also has species absent from the other parks on this route: the fringe-eared oryx with long straight horns, the gerenuk that browses standing upright on its hind legs, and tree-climbing pythons coiled in the riverside fig trees. Children notice the pythons before adults do. Picnic lunch in the park.",
+        accommodation: "Tarangire Safari Lodge or similar",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 3,
+        title: "Tarangire to Central Serengeti via Olduvai Gorge",
+        activities:
+          "Early breakfast, then the six-hour drive to the Serengeti. Stop at Olduvai Gorge: this is where Mary Leakey found the skull of a hominid who walked these same plains 1.8 million years ago. The resident guide at the gorge does a 20-minute talk at the excavation site. For older children (8+), this is genuinely interesting, not just parental obligation. Arrive in the Seronera area in late afternoon for a first game drive.",
+        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 4,
+        title: "Full Day Serengeti",
+        activities:
+          "Full day in the Seronera Valley. The valley is the most consistent big-cat zone in the Serengeti year-round. Lions on the kopjes. Leopards in the sausage trees. Cheetahs on the open plains. Your guide briefs you on what to expect before each drive so younger children know what they are looking for. Game viewing is always more engaging with context. Return to the lodge for lunch and a rest before the afternoon drive.",
+        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 5,
+        title: "Full Day Serengeti",
+        activities:
+          "Three nights in the Serengeti is what makes the pace reasonable for families. By Day 5 the children know the vehicle, the routine, and the sounds. Game viewing is calmer and more attentive. Optional: hot air balloon departure at 5:30am. Children must be age 7 or over and the weight minimum applies. $590 per person, booked in advance. Worth it for older children who can manage the early start.",
+        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 6,
+        title: "Serengeti to Ngorongoro Crater Rim",
+        activities:
+          "Final Serengeti morning drive, then depart through Naabi Hill Gate. Three-and-a-half-hour drive to the crater rim through montane forest. Arrive for lunch. Views straight down into the 260-square-kilometre caldera from the rim lodge terrace. On a clear afternoon, you can see animal herds on the crater floor 600 metres below. Early dinner (most children are asleep before 8pm at this point in the trip). The descent begins at 6:00am.",
+        accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 7,
+        title: "Ngorongoro Crater — Full Day on the Floor",
+        activities:
+          "Descent at 6:00am. The Ngorongoro Crater is the single most concentrated wildlife area in Africa. In 260 square kilometres: approximately 120 lions, 25,000 wildebeest, 15,000 zebra, 400 spotted hyenas, and the densest population of black rhino in East Africa. The crater walls keep the animals inside, which is why the densities are this high. Picnic lunch at Ngoitokitok Springs, where hippos in the adjacent pool are close enough to require no binoculars. All vehicles must ascend by 6:00pm.",
+        accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
+        meals: "Breakfast, Lunch, Dinner",
+      },
+      {
+        day: 8,
+        title: "Ngorongoro to Arusha",
+        activities:
+          "Final breakfast on the rim. Three-hour drive back to Arusha via Karatu and Mto wa Mbu. Drop-off at your Arusha hotel or Kilimanjaro International Airport. If your international flight departs the same day, the earliest viable departure is 21:00.",
+        accommodation: "End of safari",
+        meals: "Breakfast",
+      },
+    ],
+    included: [
+      "All park entrance fees and Ngorongoro crater vehicle fee ($295 per vehicle)",
+      "Private 4x4 Toyota Land Cruiser with pop-up roof",
+      "Professional English-speaking guide, experienced with family groups",
+      "7 nights accommodation as specified",
+      "All meals full-board (lunch on Day 1 through breakfast on Day 8)",
+      "Bottled water and soft drinks on game drives",
+      "Airport and hotel transfers in Arusha",
+      "Child booster seat where required (confirm age and weight at booking)",
+      "AMREF Flying Doctors emergency evacuation insurance",
+    ],
+    excluded: [
+      "International flights",
+      "Tanzania e-visa ($50 for most nationalities, children included)",
+      "Travel insurance",
+      "Guide gratuity (suggested $25 per day)",
+      "Lodge staff gratuity (suggested $5-7 per day via lodge tip box)",
+      "Hot air balloon safari ($590 per person, minimum age 7)",
+      "Alcoholic beverages",
+      "Personal expenses and souvenirs",
+    ],
+    faqs: [
+      {
+        question: "What is the minimum age for this safari?",
+        answer:
+          "We set the minimum at 5 years old. Children under 12 need a booster seat in the vehicle (confirm the child's age and weight when booking so we have the right seat). The crater descent is steep but entirely by vehicle. None of the parks on this route require walking. The main practical consideration for very young children (5-6) is the drive lengths. We pace the itinerary with shorter morning and afternoon drives to account for this.",
+      },
+      {
+        question: "Are the lodges suitable for children?",
+        answer:
+          "The lodges on this route are all family-appropriate. Most can arrange early dinner service (6:00-6:30pm) and have rooms that accommodate two adults and one or two children. We specify family rooms or adjoining rooms at booking, not standard doubles. Children's menus are available at all properties. Let us know ages when you book and we will confirm the lodge configuration.",
+      },
+      {
+        question: "How long are the daily game drives?",
+        answer:
+          "For a family safari, we adjust the drive structure. Standard adult safaris run 6:00am to 12:30pm and 3:30pm to 6:30pm. For younger children, we typically run 6:30am to 11:30am and 4:00pm to 6:00pm, with the midday break at the lodge for lunch and rest. On the crater day, the full day is necessary given the six-hour permit, but we pace stops and the picnic accordingly.",
+      },
+      {
+        question: "What will children enjoy most?",
+        answer:
+          "This varies by age, but the consistent answers from families who have done this trip: the sheer scale of the Serengeti (older children are often more moved by the landscape than the animals), the elephant proximity in Tarangire (a herd walking 10 metres from the vehicle is a different experience from a zoo), and the crater, where the density is so high that something is always happening within sight. The Ngorongoro hippos at the picnic stop tend to be popular with all ages.",
+      },
+      {
+        question: "Is Tanzania safe for children?",
+        answer:
+          "Tanzania is one of the safer countries in sub-Saharan Africa for family travel. The northern circuit parks are well-managed, the roads are paved where it matters, and the lodges are experienced with family groups. Malaria prophylaxis is required for all ages (consult a travel medicine doctor before departure). Sunscreen and hats are non-negotiable at altitude and on open game drives. The water at lodges is safe when provided as bottled or filtered.",
+      },
+      {
+        question: "Can we extend with Zanzibar?",
+        answer:
+          "Yes, and it works particularly well for families. The beach transition after safari is a natural wind-down, and Zanzibar has calm, shallow water on the north and east coasts that suits children well. Add 4-5 nights on the island via a Coastal Aviation flight from Arusha. Contact us and we will build the extension into the quote.",
+      },
+    ],
+  },
 }
 
 export function getItinerary(slug: string): Itinerary | undefined {

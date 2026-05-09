@@ -57,6 +57,8 @@ export default async function NationalParkPage({ params }: PageProps) {
     "ngorongoro-crater": { lat: -3.1833, lng: 35.5833 },
     tarangire: { lat: -3.8500, lng: 36.0167 },
     "lake-manyara": { lat: -3.5500, lng: 35.8333 },
+    ndutu: { lat: -3.0000, lng: 34.9333 },
+    ruaha: { lat: -7.6667, lng: 34.9167 },
   }
   const geo = geoCoords[park.slug] ?? { lat: -3.1833, lng: 35.5833 }
 
