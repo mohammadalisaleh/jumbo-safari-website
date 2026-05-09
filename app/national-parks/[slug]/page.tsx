@@ -408,8 +408,20 @@ export default async function NationalParkPage({ params }: PageProps) {
                     key={itinerary!.slug}
                     className="border border-border-soft bg-cream"
                   >
-                    <div className="aspect-[4/3] bg-forest flex items-center justify-center">
-                      <p className="text-cream/50 text-sm">Safari imagery</p>
+                    <div className="aspect-[4/3] bg-forest overflow-hidden">
+                      {itinerary!.heroImage ? (
+                        <Image
+                          src={itinerary!.heroImage.src}
+                          alt={itinerary!.heroImage.alt}
+                          width={600}
+                          height={450}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center">
+                          <p className="text-cream/50 text-sm">Safari imagery</p>
+                        </div>
+                      )}
                     </div>
                     <div className="p-6">
                       <span className="inline-block bg-orange text-cream text-xs font-montserrat font-semibold px-3 py-1 rounded-full mb-3">
