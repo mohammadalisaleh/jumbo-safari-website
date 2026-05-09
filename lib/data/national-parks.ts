@@ -583,107 +583,132 @@ export const nationalParks: Record<string, NationalPark> = {
   ruaha: {
     slug: "ruaha",
     name: "Ruaha National Park",
-    tagline: "Tanzania's largest park. Almost no one goes there.",
+    tagline: "For the safari traveller who has done the migration and now wants the silence.",
     description:
-      "Ruaha is Tanzania's largest national park at 20,226 km², located in the south-central highlands. It holds some of the highest lion and African wild dog densities on the continent, large elephant herds, and receives a fraction of the visitors that the northern circuit parks see.",
+      "Ruaha is Tanzania's largest national park at 20,226 km², home to roughly 10% of Africa's lions, one of only three African landscapes with 500+ wild dogs, and an elephant population recovering toward 15,000. Around 20,000 visitors per year. The Serengeti sees 350,000.",
     quickFacts: {
-      area: "20,226 km² (Tanzania's largest national park)",
+      area: "20,226 km² (Tanzania's largest national park, expanded 2008)",
       unescoStatus: "National Park since 1964",
-      bestTime: "June - October (dry season)",
-      famousFor: "African wild dog, lion, elephant, greater and lesser kudu, sable antelope",
-      nearestAirport: "Msembe Airstrip (in park), Iringa Airport",
+      bestTime: "June - October (dry season) · walking safaris year-round",
+      famousFor: "African wild dog, lion prides up to 25, elephant, greater kudu, sable antelope, endemic Ruaha red-billed hornbill",
+      nearestAirport: "Msembe Airstrip (in-park) · Coastal Aviation and Auric Air from Dar es Salaam and Zanzibar",
     },
     about: [
-      "Ruaha is Tanzania's largest national park and one of the least visited. That combination is unusual and worth understanding. The northern circuit (Serengeti, Ngorongoro, Tarangire, Manyara) draws the overwhelming share of Tanzania's safari visitors because it is accessible by road from Arusha and the infrastructure is well-developed. Ruaha requires a flight. It sits six hours south of Dar es Salaam in the south-central highlands, and the nearest town of any size is Iringa, 112 kilometres from the park boundary. This is not incidental. The distance is the product.",
-      "The Great Ruaha River defines the park's northern boundary and is the ecological spine of the dry-season experience. From June through October, as smaller water sources fail, every animal in the park's 20,226 square kilometres contracts toward the river. Elephant herds of 200 or more are documented here during peak dry season. Buffalo congregate in herds that can exceed 1,000. Lion prides have ranges that cover the full riverine strip, and predator-prey interactions along the bank during the dry season are as concentrated as anything the northern circuit produces.",
-      "Ruaha holds one of Africa's most significant wild dog populations. The African wild dog is the continent's most endangered large predator, with a total population estimated at under 7,000. Ruaha's packs are well-documented and tracked by researchers from the Ruaha Carnivore Project, which has operated in the park since 2009. A wild dog hunt on open ground is among the most efficient predator events in Africa: pack success rates run around 80 percent compared to the lion's 25-30 percent. Sightings at Ruaha are not guaranteed but are significantly more likely here than in any northern circuit park.",
-      "The landscape differs from the north in ways that affect the safari experience. Ruaha sits at 900-1,000 metres elevation in mixed woodland, miombo forest, and open grassland, a very different palette from the Serengeti's short-grass plains. Greater and lesser kudu, sable antelope, and roan antelope appear here in numbers that do not exist in northern Tanzania. The bird list exceeds 570 species. Puku, a medium-sized antelope absent from the north, is found along the river.",
-      "The visitor numbers tell you what to expect. In a park seven times the size of the Serengeti, you will often drive for an hour without seeing another vehicle. There are no hot-air balloons, no rush for position at a river crossing, no convoy of Land Cruisers around a lion kill. If that is what you are looking for, Ruaha delivers it. If you want the drama of the Mara River crossings and the certainty of seeing the Great Migration, the northern circuit is the right choice. Ruaha and the northern circuit are not alternatives; they are different experiences.",
+      "Ruaha sits in the south-central highlands of Tanzania, well off the northern circuit that most visitors follow. Getting here requires a flight. Coastal Aviation's daily Dar es Salaam to Msembe service takes about 2.5 hours; from Arusha it's closer to two hours with a stop. The nearest town is Iringa, 112 kilometres from the park boundary. That distance is not incidental. It is the mechanism by which Ruaha stays empty. Around 20,000 visitors per year in a park 40 percent larger than the Serengeti, which sees 350,000.",
+      "The Great Ruaha River and its sand tributaries (the Mwagusi and Mdonya) are the ecological spine of the park. In the dry season (June through October), as smaller water sources fail across the park's 20,226 square kilometres, every animal contracts toward the river. Elephants dig in the dry sand for subsurface water, a signature Ruaha image that repeat visitors describe more than any other. A legacy of heavy poaching between 2009 and 2014, when the population crashed from around 30,000 to roughly 8,272, means many of the surviving females are tuskless. The Ruaha-Rungwa ecosystem now holds around 15,000 elephants in recovery, according to the Southern Tanzania Elephant Program's 2021 survey. Buffalo herds here exceed 500 regularly. Prides of 15 to 25 lions, among the largest documented in Africa, hold territories along the riverine strip.",
+      "Ruaha is one of three remaining African landscapes with more than 500 adult wild dogs, alongside KAZA (Botswana, Zimbabwe) and the Selous-Niassa corridor to the east. The Ruaha Carnivore Project, founded in 2009 by Dr. Amy Dickman and now operating within Lion Landscapes, tracks 37 documented packs across the broader Ruaha-Rungwa-Katavi landscape. Wild dog sightings are not guaranteed, but the June-July denning season near Mwagusi is the most predictable window. Pack hunt success rates run around 80 percent, compared to the lion's 25-30. Watching a pack hunt on open ground is among the most efficient and fastest predator events in Africa. Most guests who see it rate it above any river crossing they have witnessed.",
+      "The landscape is where Ruaha diverges most sharply from northern Tanzania. The park sits at the convergence of East African and Southern African biomes, which means it holds species that simply do not exist in the Serengeti or Ngorongoro. Greater and lesser kudu appear together. Sable antelope and roan antelope are resident. The Ruaha red-billed hornbill is endemic to this park. The bird list exceeds 570 species, including migrants from Europe and Asia in the green season. Guides here regularly check the scarred hollows of baobab trunks for leopards taking refuge from the afternoon heat, a Ruaha-specific behaviour that would puzzle a guide who has worked only in the north.",
+      "Walking safaris are freely permitted throughout the park. Operators including Jongomero and Kichaka Expeditions run multi-day fly-camping routes into the remote eastern sections where no vehicle tracks exist. This is something the Serengeti cannot offer. In the core areas, the experience is still vehicle-based, but the absence of track restrictions and the low vehicle density means the drive itself feels qualitatively different. You do not queue. You do not share a sighting with eight other Land Cruisers. The animal does not ignore you because it has been desensitised to vehicles. In Ruaha, some animals still react to your presence, which is actually the more honest wildlife encounter.",
     ],
     wildlife: [
       {
         name: "African Wild Dog",
-        description: "One of Africa's highest densities. Packs tracked by the Ruaha Carnivore Project. Hunt success rate around 80%.",
+        description: "One of three African landscapes with 500+ adult wild dogs (WCS Tanzania). 37 packs documented in the Ruaha-Rungwa ecosystem. June-July denning near Mwagusi is the most predictable sighting window. Hunt success around 80%.",
       },
       {
         name: "Lion",
-        description: "Large prides with established territories along the Great Ruaha River. Among the highest lion density in East Africa.",
+        description: "Around 10% of Africa's total lion population. Prides of 15-25 individuals — among the largest documented anywhere. Territories run along the Great Ruaha River and the Mwagusi sand river.",
       },
       {
         name: "Elephant",
-        description: "Herds of 200+ congregate along the river in dry season. Ruaha holds Tanzania's second-largest elephant population after the Selous.",
+        description: "Ruaha-Rungwa ecosystem holds roughly 15,000, recovering from a poaching crash that hit 8,272 in 2014. Many tuskless females as a legacy. Herds of several hundred concentrate on the river in the dry season. Elephants digging for subsurface water in dry sand riverbeds is the signature Ruaha image.",
       },
       {
         name: "Greater Kudu",
-        description: "Absent from northern Tanzania. Male greater kudu have the most impressive horns of any African antelope, spiraling to over a metre in length.",
-      },
-      {
-        name: "Leopard",
-        description: "Good density in the riverine woodland. Ruaha's leopards are less habituated to vehicles than those in the Serengeti, making sightings feel wilder.",
+        description: "Absent from northern Tanzania. Males carry spiralling horns reaching over a metre in length. Present year-round in the mixed woodland and miombo forest zones.",
       },
       {
         name: "Sable Antelope",
-        description: "One of Africa's most striking animals, with curved scimitar horns and jet-black coats on the males. Ruaha is one of the few places in Tanzania where sable are reliably seen.",
+        description: "Scimitar-horned, jet-black males. Absent from the northern circuit. Reliable in the park's open grassland areas during the dry season.",
+      },
+      {
+        name: "Ruaha Red-Billed Hornbill",
+        description: "Endemic to Ruaha National Park — found nowhere else. One of over 570 bird species recorded here, including European and Asian migrants in the green season.",
       },
     ],
     bestTimeToVisit: [
       {
         month: "Jun-Aug",
-        weather: "Dry, warm days, cold nights (can drop to 10°C)",
-        wildlife: "Excellent. Animals concentrated at the river. Wild dog denning season.",
+        weather: "Dry, warm days, cold nights (10°C at times). Single rainy season means drier than northern circuit equivalents.",
+        wildlife: "Excellent. Wildlife concentrating on rivers. Wild dog denning — most predictable sighting window of the year.",
         crowds: "Low",
       },
       {
         month: "Sep-Oct",
-        weather: "Dry, hot (30-35°C midday)",
-        wildlife: "Peak dry-season concentration. Elephant herds largest. Predator activity highest.",
+        weather: "Dry, hot (30-35°C midday). Elephants digging for water in sand riverbeds.",
+        wildlife: "Peak dry-season concentration. Elephant herds at maximum. Buffalo herds 500+. Predator action highest.",
         crowds: "Low-Moderate",
       },
       {
         month: "Nov-Dec",
-        weather: "Short rains, green landscape",
-        wildlife: "Wildlife disperses. Wild dog pups emerging. Bird list peaks.",
+        weather: "Rains begin around mid-December. Lush and green. Birding peaks with European and Asian migrants arriving.",
+        wildlife: "Wildlife disperses as water sources return. Wild dog pups emerging with packs. Photography conditions excellent.",
         crowds: "Very low",
       },
       {
-        month: "Jan-Mar",
-        weather: "Wet season. Some roads impassable.",
-        wildlife: "Difficult game viewing. Green and lush.",
-        crowds: "Very low / some camps closed",
+        month: "Jan-Feb",
+        weather: "Green season. Hot and humid. Rains intensify through February.",
+        wildlife: "Dispersed but present. Breeding season for many species. Exceptional birding.",
+        crowds: "Very low. Discounted rates at most camps.",
       },
       {
-        month: "Apr-May",
-        weather: "Long rains. Many camps close.",
-        wildlife: "Most camps closed. Not recommended.",
-        crowds: "Closed season for most operators",
+        month: "Mar-May",
+        weather: "Ruaha has one long rainy season (unlike the north's two). March-April is the wettest, with ~250mm in April. Coastal Aviation suspends Ruaha flights mid-March to end of May.",
+        wildlife: "Most camps closed. Ruaha River Lodge remains open year-round and offers significant discounts. Expert Africa notes April-May as a sometimes-surprising hidden gem for those who self-drive from Iringa: clear skies after morning rain, lush landscapes, virtually zero other visitors.",
+        crowds: "Closed season for most operators. Ruaha River Lodge open.",
       },
     ],
     relatedItineraries: ["8-day-classic-tanzania-safari"],
+    additionalSections: [
+      {
+        heading: "Walking Safaris",
+        body: "Walking safaris in Ruaha operate under a different set of rules from the northern circuit. The park permits multi-day foot safaris, including remote fly-camping in the eastern sections where no vehicle tracks exist. Operators like Kichaka Expeditions (three tents, specialist guide Andrew 'Moli' Molinaro) and Jongomero have built their reputations specifically on foot-based wildlife encounters.\n\nOn a walking safari, the guides work at a different scale. They read tracks in sand riverbeds, identify kills from vulture behaviour half a kilometre away, and use the wind and terrain to approach animals on foot. The elephant's reaction to a walking party is not the same as its reaction to a Land Cruiser. Some guides argue the walking encounter is the more honest wildlife experience.\n\nWalking safaris are not suitable for families with young children and require reasonable physical fitness. Half-day walks from a vehicle-based camp are available at most properties, including Mwagusi and Jongomero. Full multi-day routes require advance booking and are best discussed directly when planning the trip.",
+      },
+      {
+        heading: "Camps — Current Status",
+        body: "Camp selection in Ruaha matters more than in the northern circuit because the park is vast and properties are far apart. Your camp's location determines which section of the park you access most easily.\n\nJongomero Camp is eight luxury tents in the remote south, on a private concession. Now operated by the LABA Hotel Group after renovation. Rates run around $997 per person per night in 2026/27. Operates June 1 through March 1. The southern position gives access to terrain with a Southern African ecological character: greater kudu, sable, and different predator dynamics from the northern riverine areas.\n\nMwagusi Safari Camp, on the Mwagusi sand river, is the camp safari specialists consistently name first. Owner-run by Chris Fox. The wild dog packs that den near Mwagusi in June-July are the reason. Widely called the best location in the park.\n\nKokoko Camp (Asilia) replaced Kwihala, which has permanently closed. Many pages still list Kwihala — do not be confused. Kokoko occupies a similar position with updated facilities.\n\nJabali Ridge (Asilia) opened in 2017 with eight suites on a kopje, infinity pool, and a spa. Positioned for those who want luxury infrastructure alongside remote wildlife.\n\nRuaha River Lodge (Foxes Safari Camps) is the oldest property in the park and the only one that operates year-round. Stone-and-thatch bandas on the Great Ruaha River. The most economical option, and the only choice if you are travelling in the April-May window.\n\nKigelia Ruaha (Nomad Tanzania), Mdonya Old River Camp, Ikuka Safari Camp, and Kichaka Expeditions complete the serious options.",
+      },
+    ],
     faqs: [
+      {
+        question: "What makes Ruaha National Park unique?",
+        answer:
+          "Three things set Ruaha apart from every other Tanzania park. First, it sits at the convergence of East African and Southern African ecosystems, which means it holds species absent from the northern circuit entirely: greater kudu, lesser kudu, sable antelope, roan antelope, and the endemic Ruaha red-billed hornbill found nowhere else on Earth. Second, it is one of only three African landscapes with more than 500 adult wild dogs (with KAZA and Selous-Niassa), and the packs here are actively tracked. Third, walking safaris are freely permitted, including multi-day routes into remote areas with no vehicle tracks. The Serengeti prohibits walking in the core zone entirely.",
+      },
+      {
+        question: "Is Ruaha worth visiting? How does it compare to the Serengeti?",
+        answer:
+          "They are not comparable in a straightforward way. The Serengeti has the Great Migration, 350,000 annual visitors, extensive infrastructure, and the largest wildlife spectacle in Africa. Ruaha has 20,000 annual visitors, a park 40% larger, no hot-air balloons, and long drives without seeing another vehicle. The wildlife encounters at Ruaha feel different from the northern circuit because the animals are less habituated to vehicles. Many repeat safari visitors say Ruaha is the park that made their previous trips feel crowded. If this is your first Tanzania safari and you want the migration, start with the northern circuit. If you have done the northern circuit and want something else, Ruaha is the right next step.",
+      },
+      {
+        question: "Are there cheetahs in Ruaha?",
+        answer:
+          "Yes, cheetahs are present in Ruaha but sightings are less consistent than in the Serengeti or Ndutu. The open grassland areas offer sprint-hunting conditions, but the mixed woodland that covers much of the park is not ideal cheetah habitat. Sightings are possible, particularly in the open plains near the Mwagusi area, but cheetah is not a reliable Ruaha headline species. Wild dog, lion, and elephant are the reliable targets.",
+      },
       {
         question: "How do you get to Ruaha National Park?",
         answer:
-          "The standard route is a flight from Dar es Salaam or Arusha to Msembe Airstrip inside the park. Coastal Aviation and Safari Air Link both operate scheduled services. Flying time from Dar es Salaam is approximately 1.5 hours; from Arusha, around 2 hours with a stop in Dodoma. Self-drive is possible from Iringa (112 km, about 3 hours on rough roads) but requires a 4WD and is not recommended as a solo route without prior experience of the road conditions.",
+          "The standard route is a flight to Msembe Airstrip inside the park. Coastal Aviation operates a daily service from Dar es Salaam (approximately 2.5 hours, from around $430 one-way). Auric Air flies the Serengeti-Ruaha route three times a week (Monday, Thursday, Saturday), useful for combining northern and southern circuits on one trip. Coastal Aviation suspends Ruaha flights mid-March to end of May due to the long rains. Self-drive from Iringa (112 km, about three hours on rough dirt roads) is possible with a 4WD, and Ruaha River Lodge is the only camp that caters specifically to self-drive guests.",
       },
       {
-        question: "Can you combine Ruaha with the northern circuit?",
+        question: "How many days do I need in Ruaha?",
         answer:
-          "Yes, and it works well for longer trips (12 days or more). The standard combination is Arusha, then northern circuit (Serengeti, Ngorongoro), then a flight south to Ruaha, finishing with a final flight to Dar es Salaam or Zanzibar. A Ruaha and Zanzibar combination is also logical: Zanzibar for 3-4 nights, then a Coastal Aviation flight to Ruaha for 4 nights in the park, then home. Contact us to build the right route for your dates.",
-      },
-      {
-        question: "Is Ruaha good for first-time safari visitors?",
-        answer:
-          "It depends what you want. For first-timers who want guaranteed big numbers and the Great Migration, the northern circuit is the right starting point. Ruaha rewards patience and the willingness to spend more time looking for animals across a larger, less-trafficked landscape. The payoff when you find them (particularly wild dog) is harder to replicate anywhere else. Many repeat safari visitors consider Ruaha the park that made every previous trip feel crowded.",
-      },
-      {
-        question: "What are the best lodges in Ruaha?",
-        answer:
-          "Jongomero Camp is one of the best in Tanzania, full stop. Eight tents, permanent camp, river location, exceptional guiding. Asilia's Kwihala Camp is strong for value and guide quality. Ruaha River Lodge is the oldest property in the park, well-positioned on the Great Ruaha River and a good mid-range option. The camp choice matters here more than in the north because the distances are greater and your guide is the primary factor in what you see.",
+          "Three full days is the minimum for a meaningful visit. Five is better. Ruaha rewards longer stays in fewer camps more than the multi-camp model that suits Luangwa or a quick Serengeti circuit. Wild dog in particular requires time: packs are not visible every day, and a guide working the radio network over multiple days improves your odds significantly. The best Ruaha trips tend to base at one or two camps, explore the same areas repeatedly, and leave knowing specific animals. Three-day visits tend to leave guests wishing they had stayed longer.",
       },
       {
         question: "Are wild dogs guaranteed in Ruaha?",
         answer:
-          "No. Wild dog sightings are never guaranteed. The packs cover large territories and are tracked by researchers who share locations with guides daily during the dry season. June through August is the denning period, when packs are more predictable in their movements. September and October are good for sightings as packs expand their range. Your guide will work the radio network. Multiple-day stays (minimum 3 full days) improve the odds significantly.",
+          "No. Wild dog sightings are never guaranteed anywhere in Africa, and experienced visitors report wildly different outcomes: some see packs on day one, others complete seven-day trips without a sighting. What Ruaha offers is the highest probability in East Africa. The June-July denning season, when packs return daily to a fixed den site, is the most predictable window. Guides track pack locations via the radio network with researchers from the Ruaha Carnivore Project. Minimum three full days strongly improves the odds.",
+      },
+      {
+        question: "Can you combine Ruaha with the northern circuit?",
+        answer:
+          "Yes. Auric Air's three-times-weekly Serengeti to Ruaha flight is the direct connection, making a northern-then-southern circuit possible without routing through Dar es Salaam. Allow at least 12 days total to do both circuits justice. A Ruaha and Zanzibar combination is also popular: fly Dar es Salaam to Ruaha for 4-5 nights, then Ruaha to Zanzibar via Dar or direct with Coastal Aviation. Contact us with your dates and we will build the routing.",
+      },
+      {
+        question: "What is the best lodge in Ruaha?",
+        answer:
+          "Safari specialists consistently name Mwagusi Safari Camp first for overall experience and location. Jongomero is the top luxury option, with eight tents in a private concession in the remote south at around $997 per person per night. Jabali Ridge (Asilia) has the best infrastructure for guests who want hotel-standard amenities in the bush. Ruaha River Lodge (Foxes) is the most economical and the only property open year-round. Kichaka Expeditions is the right choice if walking safaris are the priority. Note: Kwihala Camp has permanently closed and has been replaced by Kokoko Camp (Asilia) — many websites still list Kwihala incorrectly.",
       },
     ],
   },
