@@ -23,6 +23,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/itineraries`, priority: 0.8, changeFrequency: "weekly" as const },
     // Guides
     { url: `${baseUrl}/guides/best-time-to-visit-tanzania`, priority: 0.7, changeFrequency: "monthly" as const },
+    // Monthly safari guides
+    { url: `${baseUrl}/safari-in-july`, priority: 0.8, changeFrequency: "monthly" as const },
   ]
 
   // Add Polish and Czech homepage versions
