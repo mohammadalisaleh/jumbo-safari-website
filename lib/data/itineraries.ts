@@ -685,37 +685,37 @@ export const itineraries: Record<string, Itinerary> = {
     slug: "5-day-northern-circuit",
     title: "5-Day Northern Circuit Safari",
     duration: "5 Days",
-    parks: "Tarangire · Serengeti · Ngorongoro",
+    parks: "Tarangire · Serengeti · Ngorongoro · Lake Manyara",
     price: "From $1,900 pp",
     season: "Year-round",
     description:
-      "5-day private Tanzania safari covering Tarangire, the central Serengeti, and Ngorongoro Crater. Four nights, private 4x4, full-board lodges. The shortest route that covers the core three parks properly. From $1,900 per person.",
+      "5-day private Tanzania safari covering Tarangire, the central Serengeti, Ngorongoro Crater, and Lake Manyara. Four nights, private 4x4, full-board lodges. The shortest route that covers the northern circuit properly. From $1,900 per person.",
     leadParagraph:
-      "Five days is tight for three parks. It works if you accept one thing: you are here to see the parks, not to become familiar with them. Two hours in Tarangire is enough for the baobabs and the elephant herds. Two days in the Serengeti is enough for big cats and the sense of scale. One full day in the crater is exactly right. What you lose is the slow morning, the late afternoon when the light goes orange, the second chance at something you missed. If that is an acceptable trade for your schedule and budget, this is the route.",
+      "Five days is tight for the northern circuit. It works if you accept one thing: you are here to see the parks, not to become familiar with them. One afternoon in Tarangire for the baobabs and the elephants. One full day in the Serengeti for scale and predators. One full day on the Ngorongoro Crater floor because nothing else in Africa replicates what happens inside that caldera. Lake Manyara on the way home, for the Ghost Forest alone. What you lose is the slow morning, the second chance at something you missed, the third Serengeti day when you stop watching the clock entirely. If that tradeoff fits your schedule, this is the route.",
     overview:
-      "The 5-day northern circuit is the shortest version of the classic route that still covers all three core parks: Tarangire, the central Serengeti, and Ngorongoro Crater. The tradeoff is time. Tarangire gets one afternoon game drive rather than a full day. The Serengeti gets two nights with one full day in between. Ngorongoro gets the crater descent and then you are driving back to Arusha. None of these are wasted days. But if you can add even two more nights, the 8-day version is a better trip. The 5-day is for people who have limited time and want the honest version of Tanzania rather than the highlights video.",
+      "The 5-day northern circuit covers four parks in four nights. Tarangire gets one afternoon. The Serengeti gets one full day. Ngorongoro gets a full crater descent. Lake Manyara gets a half-day on the return to Arusha. None of these are wasted. Day 2 is the honest one: the drive from Tarangire to the Serengeti via Olduvai Gorge takes five to seven hours. You arrive in the Seronera area in late afternoon and fit in a short drive before dark. That is how the itinerary works — most of Day 2 is transit. The upside is that every subsequent day is purely game viewing. Seven days is a more satisfying trip. Eight days is the version we recommend. But for people whose schedule is fixed, this route covers the essential Tanzania without shortcuts.",
     quickFacts: {
       duration: "5 Days / 4 Nights",
-      parksVisited: "Tarangire, Serengeti, Ngorongoro",
+      parksVisited: "Tarangire, Serengeti, Ngorongoro, Lake Manyara",
       accommodation: "Mid-range lodges and tented camps",
       groupSize: "Private (2-6 guests)",
       departsFrom: "Arusha, Tanzania",
-      bestSeason: "Year-round (dry season June-October is easiest)",
+      bestSeason: "Year-round (dry season June-October is easiest for spotting)",
     },
     days: [
       {
         day: 1,
         title: "Arusha to Tarangire",
         activities:
-          "Pickup from Arusha at 7:00am. The drive to Tarangire's main gate takes about two hours, heading southeast through Maasai village country before the acacia scrub thickens and the first baobabs appear. Enter through the main gate and go directly to the Tarangire River, where elephant concentrations in the dry season are the highest of any park on the northern circuit. Three hours of game driving before sunset check-in. One afternoon is not enough for Tarangire, but it shows you what is here.",
+          "Pickup from Arusha at 7:00am. The drive to Tarangire's main gate takes about two hours, heading southeast through Maasai village country before the acacia scrub thickens and the first baobabs appear. Some of these trees predate the Roman Empire. Enter through the main gate and head directly for the Tarangire River, where elephant concentrations in the dry season are the highest of any park on the northern circuit — herds of 150 or more are common along the riverbanks. Three hours of game driving before sunset check-in. One afternoon is not enough for Tarangire. It is enough to show you what is here.",
         accommodation: "Tarangire Safari Lodge or similar",
         meals: "Lunch, Dinner",
       },
       {
         day: 2,
-        title: "Tarangire to Central Serengeti via Ngorongoro Highlands",
+        title: "Tarangire to Central Serengeti via Olduvai Gorge",
         activities:
-          "Early breakfast, then depart for the Serengeti. The drive takes about six hours with stops. You climb through the Ngorongoro highlands, pass through the Conservation Area, and stop at Olduvai Gorge before Naabi Hill Gate: Mary Leakey found the skull of Paranthropus boisei here in 1959, a hominid who walked these plains 1.8 million years ago. Arrive in the Seronera area in the late afternoon for a first drive on the plains.",
+          "Early breakfast, then the long drive. Tarangire to the Serengeti via Olduvai Gorge takes five to seven hours depending on stops and road conditions. You climb through the Ngorongoro highlands, pass through the Conservation Area, and stop at Olduvai Gorge before Naabi Hill Gate. In 1959, Mary Leakey found the skull of Paranthropus boisei here, a hominid who walked these plains 1.8 million years ago. The resident guide does a 20-minute talk at the excavation site. Arrive in the Seronera area in late afternoon for a first game drive on the plains. This is primarily a transit day. The driving is the cost of a 5-day itinerary.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -723,7 +723,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 3,
         title: "Full Day Serengeti",
         activities:
-          "Full day in the park. The Seronera Valley runs through the centre of the Serengeti and is the most consistent area for big cats year-round. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops 600 million years old, visible for kilometres across the plains. Cheetahs work the open short-grass south of the valley. Out of everything on this route, this is the day with the most room to breathe. Use it.",
+          "Full day in the park. The Seronera Valley runs through the centre of the Serengeti and is the most consistent area for big cats year-round, regardless of where the migration herds are. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops 600 million years old, visible for kilometres across the open plains. Cheetahs work the short-grass south of the valley where visibility is longest. Out of everything on this route, this is the day with the most room to breathe. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $590 per person, booked in advance. The balloon works on this day — not Day 4, when transit to Ngorongoro makes a 5:30am departure impractical.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -731,21 +731,21 @@ export const itineraries: Record<string, Itinerary> = {
         day: 4,
         title: "Serengeti to Ngorongoro Crater Rim",
         activities:
-          "Morning game drive before departing through Naabi Hill Gate. The drive to the crater rim takes about three and a half hours, climbing the outer caldera slopes through montane forest. Arrive at the rim in time for lunch and check in to a rim lodge. The crater floor is 600 metres below. Early dinner and sleep. The descent starts at 6:00am.",
+          "Short morning game drive before departing through Naabi Hill Gate. The drive to the crater rim takes about three and a half hours, climbing the outer caldera slopes through montane forest thick with olive trees and giant heather. Arrive at the rim in time for lunch. The crater floor is 600 metres below. On a clear afternoon you can see the dark shapes of animal herds from the lodge terrace. Early dinner and sleep. The descent begins at 6:00am.",
         accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 5,
-        title: "Ngorongoro Crater to Arusha",
+        title: "Ngorongoro Crater, then Lake Manyara en route to Arusha",
         activities:
-          "Descent onto the crater floor at 6:00am. Six hours on the floor: approximately 120 lions with established territories, 25,000 animals inside 260 square kilometres, black rhino at Gorigor Swamp if you are early enough. Picnic lunch at Ngoitokitok Springs. Begin ascent mid-afternoon. Drive back to Arusha, arriving early evening. Drop-off at your hotel or Kilimanjaro International Airport.",
+          "Descent onto the crater floor at 6:00am. The Ngorongoro Crater holds approximately 25,000 large mammals inside 260 square kilometres of enclosed caldera that the animals rarely leave: roughly 120 lions, 50 black rhino at Gorigor Swamp, 15,000 wildebeest. Picnic lunch at Ngoitokitok Springs. Begin ascent by 1:00pm to allow time for Lake Manyara. The route back to Arusha passes directly through Mto wa Mbu at the base of the rift valley escarpment, right at Lake Manyara's entrance gate. Stop for two hours in the park. The reason is the Ghost Forest: an acacia woodland permanently flooded since lake levels rose around 2020, skeleton trees standing in alkaline water with fish eagles nesting at eye level and flamingos wading beneath them. Nothing else on this route looks like it. Arrive Arusha early evening.",
         accommodation: "End of safari",
         meals: "Breakfast, Lunch",
       },
     ],
     included: [
-      "All park entrance fees and Ngorongoro crater vehicle fee ($295 per vehicle)",
+      "All park entrance fees (Tarangire, Serengeti, Ngorongoro, Lake Manyara) and Ngorongoro crater vehicle fee ($295 per vehicle)",
       "Private 4x4 Toyota Land Cruiser with pop-up roof",
       "Professional English-speaking guide, Arusha-based",
       "4 nights accommodation as specified",
@@ -760,35 +760,50 @@ export const itineraries: Record<string, Itinerary> = {
       "Travel insurance",
       "Guide gratuity (suggested $25 per day)",
       "Lodge staff gratuity (suggested $5-7 per day via lodge tip box)",
-      "Hot air balloon safari (optional, $590 per person)",
+      "Hot air balloon safari (optional, $590 per person — see Day 3)",
       "Alcoholic beverages",
       "Personal expenses and souvenirs",
     ],
     faqs: [
       {
-        question: "Is 5 days enough for the northern circuit?",
+        question: "Is 5 days enough for a Tanzania safari?",
         answer:
-          "Enough to see all three parks and come away with a real safari experience, yes. Enough to feel unhurried and have time for second chances on missed sightings, no. The 5-day route is honest about that tradeoff. If you can extend to 8 days, the extra three nights (one more in Tarangire, two more in the Serengeti) change the quality of the trip significantly. If 5 days is what your schedule allows, this itinerary covers the essential Tanzania properly.",
+          "Five days is a minimum, not an ideal. You will see all four parks and come away with a genuine safari experience. What you will not have is the unhurried feeling of a longer trip: the third Serengeti morning when you stop counting and start watching, the afternoon in Tarangire with no agenda. Seven to eight days is what most experienced safari travellers consider a satisfying trip. If five days is what your schedule allows, this route covers the northern circuit honestly. It does not pretend otherwise.",
       },
       {
-        question: "Which is better: 5-day or 8-day safari?",
+        question: "Will I see the Big Five on a 5-day safari?",
         answer:
-          "The 8-day is a better trip. Three nights in the Serengeti versus one is the biggest difference. You stop rushing on day three of the Serengeti, and that is when the real watching begins. The 5-day makes sense for people with a genuinely fixed timeline who still want to cover all three core parks. It is not a compromise version. It is a shorter version.",
+          "You have a real chance at four of the five. Lion: very likely in both the Serengeti and Ngorongoro Crater. Elephant: near-certain in Tarangire. Buffalo: common across all three parks. Leopard: possible in the Serengeti, particularly in the Seronera Valley sausage trees, but not guaranteed on a single full day. Rhino: the best chance in East Africa is Ngorongoro Crater, where approximately 50 black rhino live in 260 square kilometres. Your guide will check morning positions. The honest answer is that five days gives you good odds but not certainty on all five. Eight days gives you more attempts.",
       },
       {
-        question: "What part of the Serengeti does this route visit?",
+        question: "What does 5 days miss compared to a longer safari?",
         answer:
-          "The central Serengeti, based in the Seronera area. Seronera is the most consistent zone for resident big cat sightings year-round, regardless of where the migration herds are. With only one full day in the Serengeti, Seronera is the right base. Chasing the migration in the north or west requires more time to justify the positioning.",
+          "Tarangire: the Silale Swamp in the south, which draws hippos, buffalo, and species (gerenuk, fringe-eared oryx) that most visitors to the park never reach. One afternoon is not enough to get there. The Serengeti: the third day, which is when the routine of game viewing settles and you start noticing things you missed. The central and western Serengeti zones beyond Seronera. Lake Manyara: we add a two-hour Ghost Forest stop on Day 5, which is better than nothing. A full Lake Manyara day (tree-climbing lions, alkaline lake, forest edge) is a different experience. If any of these are high priorities, the 8-day itinerary is the right choice.",
+      },
+      {
+        question: "How much does a 5-day Tanzania safari cost?",
+        answer:
+          "The Jumbo Safaris 5-day northern circuit starts from $1,900 per person for two people sharing. The price includes all park fees (including the $295 Ngorongoro crater vehicle descent fee), private 4x4, guide, four nights accommodation, and all meals. It excludes the Tanzania eVisa ($50 for most nationalities), international flights, travel insurance, and guide gratuity (suggested $25 per day). The budget equivalent from shared group operators runs $800-1,200 per person for 5 days but puts you in a shared vehicle with strangers on a fixed departure date.",
+      },
+      {
+        question: "Should I add Zanzibar to a 5-day safari?",
+        answer:
+          "It depends on what you want. The safari-to-beach combination is one of the strongest itineraries Tanzania offers, and Zanzibar adds a genuinely different second act. The logistics work: a Coastal Aviation flight connects Arusha to Zanzibar in about two hours, departing most mornings. Adding four nights on the island turns this into a 9-day trip from $2,800 per person. If your time in Tanzania is already five days total, prioritise the safari. If you have nine or ten days available, the combination is the better choice.",
       },
       {
         question: "What is the Ngorongoro crater vehicle fee?",
         answer:
-          "The crater charges a separate $295 per-vehicle descent fee, on top of the standard NCA conservation fees. This covers one full day on the crater floor. All vehicles must exit by 6:00pm. The fee is included in your Jumbo Safaris package price.",
+          "Ngorongoro charges a separate $295 per-vehicle descent fee, on top of the standard NCA conservation fees per person per day. This covers one full day on the crater floor. All vehicles must exit by 6:00pm. The fee is included in your Jumbo Safaris package price.",
       },
       {
-        question: "Can the 5-day route be extended?",
+        question: "When is the best time to do the 5-day northern circuit?",
         answer:
-          "Yes. The most common extension is adding two nights in the Serengeti, turning this into a 7-day route. A single extra night in Tarangire is also worthwhile if elephants are a priority. Contact us with your dates and we will adjust the route and quote accordingly.",
+          "The route works year-round. June through October (dry season) gives the best conditions for spotting: short grass, animals concentrated around water sources, firm tracks. January and February bring calving season to the southern Serengeti plains, which is the most dramatic predator activity in the ecosystem — but benefiting from that on this route requires positioning in Ndutu rather than the central Serengeti, which means a different itinerary. November and December have the short rains: dramatically green landscapes, very few other tourists, lower lodge rates. April and May are the long rains; some roads become difficult.",
+      },
+      {
+        question: "Can this route be extended?",
+        answer:
+          "Yes. The most straightforward extension adds two nights in the Serengeti, turning this into a 7-day route with three full Serengeti days. A single extra night in Tarangire is worthwhile if elephants are the priority. The 8-day classic adds both. Contact us with your dates and we will adjust and requote.",
       },
     ],
   },
