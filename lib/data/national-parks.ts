@@ -28,6 +28,7 @@ export interface NationalPark {
     wildlife: string
     crowds: string
   }[]
+  heroImage?: { src: string; alt: string }
   relatedItineraries: string[]
   fees?: {
     item: string
@@ -160,6 +161,10 @@ export const nationalParks: Record<string, NationalPark> = {
     tagline: "The world's largest intact volcanic caldera — 25,000 animals, nowhere to go",
     description:
       "The Ngorongoro Crater is a 260 km² enclosed ecosystem inside Tanzania's Ngorongoro Conservation Area, holding 25,000 large mammals year-round including black rhino, lion, elephant, and flamingo. A UNESCO World Heritage Site since 1979.",
+    heroImage: {
+      src: "/ngorongoro-crater-floor-zebra-gazelle-tanzania.jpg",
+      alt: "Zebra and gazelle grazing on the Ngorongoro Crater floor with the green caldera walls rising behind them, Tanzania",
+    },
     quickFacts: {
       area: "260 km² crater floor · 8,292 km² conservation area",
       unescoStatus: "UNESCO World Heritage Site (Natural 1979, Mixed 2010)",

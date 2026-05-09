@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ChevronRight, ArrowRight } from "lucide-react"
@@ -137,8 +138,21 @@ export default async function NationalParkPage({ params }: PageProps) {
                   Plan a Safari Here
                 </Link>
               </div>
-              <div className="aspect-[4/3] bg-forest-dark flex items-center justify-center">
-                <p className="text-cream/50">Park imagery</p>
+              <div className="aspect-[4/3] bg-forest-dark overflow-hidden">
+                {park.heroImage ? (
+                  <Image
+                    src={park.heroImage.src}
+                    alt={park.heroImage.alt}
+                    width={800}
+                    height={600}
+                    className="w-full h-full object-cover"
+                    priority
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <p className="text-cream/50">Park imagery</p>
+                  </div>
+                )}
               </div>
             </div>
           </div>
