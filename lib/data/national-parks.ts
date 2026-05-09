@@ -60,10 +60,10 @@ export const nationalParks: Record<string, NationalPark> = {
       nearestAirport: "Seronera Airstrip (in park), Kilimanjaro International (KIA)",
     },
     about: [
-      "The Serengeti is one of the world's most celebrated wildlife sanctuaries, spanning nearly 15,000 square kilometers of savanna, woodland, and riverine forests in northern Tanzania. Its name comes from the Maasai word 'siringet,' meaning 'endless plains'—an apt description for this vast ecosystem where the horizon stretches unbroken in every direction.",
+      "The Serengeti is one of the world's most celebrated wildlife sanctuaries, spanning nearly 15,000 square kilometers of savanna, woodland, and riverine forests in northern Tanzania. Its name comes from the Maasai word 'siringet,' meaning 'endless plains,' an apt description for a landscape where the horizon stretches unbroken in every direction.",
       "Established as a game reserve in 1921 and upgraded to a national park in 1951, the Serengeti has become synonymous with African safari. The park forms the core of the greater Serengeti ecosystem, which extends into Kenya's Maasai Mara and encompasses a total area of roughly 30,000 square kilometers.",
-      "The Serengeti is perhaps best known for hosting the Great Migration—the annual movement of over 1.5 million wildebeest, 200,000 zebra, and 500,000 gazelle across the plains in search of fresh grass and water. This natural spectacle is often called the greatest wildlife show on Earth.",
-      "Beyond the migration, the Serengeti supports Africa's largest lion population (over 3,000 individuals), along with significant numbers of leopards, cheetahs, elephants, buffalo, and over 500 bird species. The park's diverse habitats—from the short-grass plains of the south to the riverine woodlands of the north—ensure year-round wildlife viewing.",
+      "The Serengeti is perhaps best known for hosting the Great Migration, the annual movement of over 1.5 million wildebeest, 200,000 zebra, and 500,000 gazelle across the plains in search of fresh grass and water. This natural spectacle is often called the greatest wildlife show on Earth.",
+      "Beyond the migration, the Serengeti supports Africa's largest lion population (over 3,000 individuals), along with significant numbers of leopards, cheetahs, elephants, buffalo, and over 500 bird species. The park's diverse habitats (from the short-grass plains of the south to the riverine woodlands of the north) ensure year-round wildlife viewing.",
       "The landscape is punctuated by rocky outcrops called kopjes, which provide shelter and vantage points for predators. These ancient granite formations, some over 500 million years old, are iconic features of the Serengeti scenery and prime spots for leopard and lion sightings.",
     ],
     wildlife: [
@@ -158,7 +158,7 @@ export const nationalParks: Record<string, NationalPark> = {
   "ngorongoro-crater": {
     slug: "ngorongoro-crater",
     name: "Ngorongoro Crater",
-    tagline: "The world's largest intact volcanic caldera — 25,000 animals, nowhere to go",
+    tagline: "The world's largest intact volcanic caldera. 25,000 animals, nowhere to go.",
     description:
       "The Ngorongoro Crater is a 260 km² enclosed ecosystem inside Tanzania's Ngorongoro Conservation Area, holding 25,000 large mammals year-round including black rhino, lion, elephant, and flamingo. A UNESCO World Heritage Site since 1979.",
     heroImage: {
@@ -182,7 +182,7 @@ export const nationalParks: Record<string, NationalPark> = {
     wildlife: [
       {
         name: "Black Rhino",
-        description: "Population recovered from 13 (1993) to ~26-55 today. Best spotted at Gorigor Swamp in the morning. Binoculars essential — sightings are almost always at 300-500m distance.",
+        description: "Population recovered from 13 (1993) to an estimated 26-55 today. Best spotted at Gorigor Swamp in the morning. Binoculars essential: sightings are almost always at 300-500m distance.",
       },
       {
         name: "Lion",
@@ -190,7 +190,7 @@ export const nationalParks: Record<string, NationalPark> = {
       },
       {
         name: "Elephant",
-        description: "Bull elephants only — the crater walls are too steep for family groups with calves. Bulls shelter in the Lerai Forest at midday, moving to open plains in early morning and late afternoon.",
+        description: "Bull elephants only. The crater walls are too steep for family groups with calves. Bulls shelter in the Lerai Forest at midday, moving to open plains in early morning and late afternoon.",
       },
       {
         name: "Flamingo",
@@ -202,13 +202,13 @@ export const nationalParks: Record<string, NationalPark> = {
       },
       {
         name: "Spotted Hyena",
-        description: "One of the crater's most underrated species. Clan sizes here reach 80+ individuals. Active hunters in their own right, not scavengers — responsible for more kills per day than lions on the crater floor.",
+        description: "One of the crater's most underrated species. Clan sizes here reach 80+ individuals. Active hunters in their own right, not scavengers. Responsible for more kills per day than lions on the crater floor.",
       },
     ],
     fees: [
       { item: "Non-resident adult (24-hour permit)", amount: "$70.80", notes: "Per person" },
       { item: "Child age 5-15", amount: "$23.60", notes: "Per person" },
-      { item: "Crater service fee", amount: "$295", notes: "Per vehicle, per descent — paid separately" },
+      { item: "Crater service fee", amount: "$295", notes: "Per vehicle, per descent. Paid separately from entry permits." },
       { item: "Picnic/lunch fee", amount: "$23.60", notes: "Per person, charged if stopping at Ngoitokitok Springs" },
       { item: "Overnight concession (rim lodges)", amount: "$59", notes: "Per person per night" },
       { item: "VAT", amount: "18%", notes: "Applied to all fees" },
@@ -218,31 +218,31 @@ export const nationalParks: Record<string, NationalPark> = {
       {
         month: "Jan-Mar",
         weather: "Warm, occasional rain, mist on rim",
-        wildlife: "Excellent — green floor, fewer vehicles, crater wildlife unchanged year-round",
+        wildlife: "Excellent. Green floor, fewer vehicles, crater wildlife unchanged year-round.",
         crowds: "Moderate",
       },
       {
         month: "Apr-May",
-        weather: "Long rains — descent roads can be muddy",
+        weather: "Long rains. Descent roads can be muddy.",
         wildlife: "Challenging access, some closures",
         crowds: "Low",
       },
       {
         month: "Jun-Oct",
         weather: "Dry, cool mornings (8°C at rim), warm on floor (25°C)",
-        wildlife: "Excellent — short grass, clear sightlines",
+        wildlife: "Excellent. Short grass, clear sightlines.",
         crowds: "High (peak)",
       },
       {
         month: "Nov-Dec",
         weather: "Short rains, dramatic skies",
-        wildlife: "Good — landscape green, crater wildlife reliable",
+        wildlife: "Good. Landscape green, crater wildlife reliable.",
         crowds: "Moderate",
       },
     ],
     additionalSections: [
       {
-        heading: "Habitat by Habitat — What Lives Where",
+        heading: "Habitat by Habitat: What Lives Where",
         body: "The crater floor is not uniform. Six distinct habitats support different species at different times of day, and knowing which area to prioritise changes what you see.\n\nLerai Forest is the southern sector, a dense stand of yellow-fever acacia trees that shelters bull elephants at midday. The shade is the draw. Elephants enter from the crater walls in the morning and retreat here when the floor heats up. Baboons and vervet monkeys are permanent in the canopy. Leopard have been recorded in the forest, though sightings are rare.\n\nGorigor Swamp sits on the western floor and is the single best location for black rhino. Rangers track individual animals here most mornings. The open, flat terrain gives sightlines across 400-500 metres. Binoculars are not optional here.\n\nMandusi Swamp, adjacent to Gorigor, is lion territory. Resident prides hold their core range around the swamp edges, and the first two hours after descent are the highest-probability window for predator activity. This is also where vehicle concentration is highest in peak season.\n\nLake Magadi is the alkaline lake in the western crater, pink with lesser flamingos when water levels are right. In the dry season, water levels drop and the flamingos disperse. January through March is generally the most reliable window for the full pink-lake effect.\n\nNgoitokitok Springs in the southeast is the only place vehicles are permitted to stop and passengers to exit. A permanent hippo pool sits directly adjacent. Spend 20 minutes here, not five.\n\nMunge Stream runs through the northern floor and supports waterbirds year-round: crowned cranes, kori bustards, grey-crowned cranes, and egrets are reliable regardless of season.",
       },
       {
@@ -251,11 +251,11 @@ export const nationalParks: Record<string, NationalPark> = {
       },
       {
         heading: "A Day on the Crater Floor",
-        body: "Every operator page says 'early morning descent.' Here is what that means in practice.\n\n6:00am — Loduare Gate opens. If you are staying on the rim, your guide picks you up before this for the drive to the descent road.\n\n6:30am — Seneto Descent Road opens. The drive down takes 20-30 minutes on a steep, single-track dirt road through montane forest. Morning mist on the crater walls is common in the wet season.\n\n7:00am to 12:00pm — Game drive on the floor. Lions are most active in the first two hours after descent. Predator activity drops significantly after 10am as animals seek shade.\n\n12:30pm — Picnic at Ngoitokitok Springs. This is the only authorised stop. Your guide carries a packed lunch from the rim lodge. The hippos in the adjacent pool are reliable and close, occasionally very close.\n\n1:00pm to 3:30pm — Second drive. Lerai Forest and Lake Magadi are the afternoon priorities. Elephant activity picks up again after 2pm as bulls emerge from the forest shade.\n\n3:30pm — Begin ascent via Lemala Road. The 6-hour floor permit means all vehicles must be ascending by late afternoon. Park gates close at 6:00pm.\n\nPeak-season mornings (July-October) see vehicle concentration near Mandusi Swamp where lion sightings are most predictable. The western floor near Gorigor and the far edges of Lake Magadi see a fraction of the traffic. Your guide will know where to go.",
+        body: "Every operator page says 'early morning descent.' Here is what that means in practice.\n\n6:00am: Loduare Gate opens. If you are staying on the rim, your guide picks you up before this for the drive to the descent road.\n\n6:30am: Seneto Descent Road opens. The drive down takes 20-30 minutes on a steep, single-track dirt road through montane forest. Morning mist on the crater walls is common in the wet season.\n\n7:00am to 12:00pm: Game drive on the floor. Lions are most active in the first two hours after descent. Predator activity drops significantly after 10am as animals seek shade.\n\n12:30pm: Picnic at Ngoitokitok Springs. This is the only authorised stop. Your guide carries a packed lunch from the rim lodge. The hippos in the adjacent pool are reliable and close, occasionally very close.\n\n1:00pm to 3:30pm: Second drive. Lerai Forest and Lake Magadi are the afternoon priorities. Elephant activity picks up again after 2pm as bulls emerge from the forest shade.\n\n3:30pm: Begin ascent via Lemala Road. The 6-hour floor permit means all vehicles must be ascending by late afternoon. Park gates close at 6:00pm.\n\nPeak-season mornings (July-October) see vehicle concentration near Mandusi Swamp where lion sightings are most predictable. The western floor near Gorigor and the far edges of Lake Magadi see a fraction of the traffic. Your guide will know where to go.",
       },
       {
         heading: "The Descent Roads",
-        body: "Two roads go down into the crater, and which one you take changes what you see on arrival.\n\nSeneto Descent Road is on the western crater wall and is the standard morning descent route. It opens at 6:30am. The track passes through Maasai grazing land on the upper rim before entering the cloud forest zone and emerging onto the floor near the open grasslands and Mandusi Swamp — good for immediate lion and wildebeest sightings. Most vehicles use Seneto for the morning descent.\n\nLemala Ascent Road runs up the eastern wall and is the standard exit route. It passes near the Lerai Forest area before climbing to the rim, which means a late-afternoon exit through Lemala can include elephant sightings in the forest before the ascent. Some guides reverse the standard route and descend Lemala, exiting via Seneto — ask what your guide recommends for current wildlife patterns.\n\nA third option, the Lerai Ascent on the southern wall, is used occasionally and offers a different angle on the forest. The two-road system (in via Seneto, out via Lemala) is the default and keeps traffic flowing one-way.",
+        body: "Two roads go down into the crater, and which one you take changes what you see on arrival.\n\nSeneto Descent Road is on the western crater wall and is the standard morning descent route. It opens at 6:30am. The track passes through Maasai grazing land on the upper rim before entering the cloud forest zone and emerging onto the floor near the open grasslands and Mandusi Swamp, good for immediate lion and wildebeest sightings. Most vehicles use Seneto for the morning descent.\n\nLemala Ascent Road runs up the eastern wall and is the standard exit route. It passes near the Lerai Forest area before climbing to the rim, which means a late-afternoon exit through Lemala can include elephant sightings in the forest before the ascent. Some guides reverse the standard route and descend Lemala, exiting via Seneto. Ask what your guide recommends for current wildlife patterns.\n\nA third option, the Lerai Ascent on the southern wall, is used occasionally and offers a different angle on the forest. The two-road system (in via Seneto, out via Lemala) is the default and keeps traffic flowing one-way.",
       },
       {
         heading: "Rim Viewpoints",
@@ -263,19 +263,19 @@ export const nationalParks: Record<string, NationalPark> = {
       },
       {
         heading: "What to Bring",
-        body: "The rim sits at 2,286 metres above sea level, roughly 7,500 feet. Mornings at 6:00am before descent are cold — typically 8°C with wind. A fleece and a windproof outer layer are not optional, even in July. By midday on the crater floor, the temperature rises to 22-28°C. The standard layering system: fleece over a base layer for descent, strip to a T-shirt by 10am on the floor, jacket back on for the ascent in late afternoon.\n\nSunscreen at altitude is more important than most visitors anticipate. UV intensity increases roughly 10% per 1,000 metres of elevation. On the open rim and during game drives with the roof up, SPF 50 minimum.\n\nBinoculars are more useful at Ngorongoro than at any other park on the northern circuit. Black rhino sightings at Gorigor Swamp are almost always at 300-500 metres. 8x42 or 10x42 is the standard guide recommendation. Do not skip them.\n\nThe only place you leave the vehicle on the crater floor is Ngoitokitok Springs. Closed-toe shoes are required for the brief stop. Everything else is viewed from inside the Land Cruiser.",
+        body: "The rim sits at 2,286 metres above sea level, roughly 7,500 feet. Mornings at 6:00am before descent are cold, typically 8°C with wind. A fleece and a windproof outer layer are not optional, even in July. By midday on the crater floor, the temperature rises to 22-28°C. The standard layering system: fleece over a base layer for descent, strip to a T-shirt by 10am on the floor, jacket back on for the ascent in late afternoon.\n\nSunscreen at altitude is more important than most visitors anticipate. UV intensity increases roughly 10% per 1,000 metres of elevation. On the open rim and during game drives with the roof up, SPF 50 minimum.\n\nBinoculars are more useful at Ngorongoro than at any other park on the northern circuit. Black rhino sightings at Gorigor Swamp are almost always at 300-500 metres. 8x42 or 10x42 is the standard guide recommendation. Do not skip them.\n\nThe only place you leave the vehicle on the crater floor is Ngoitokitok Springs. Closed-toe shoes are required for the brief stop. Everything else is viewed from inside the Land Cruiser.",
       },
     ],
     faqs: [
       {
         question: "Is Ngorongoro a national park or conservation area?",
         answer:
-          "It is a Conservation Area, not a National Park. The Ngorongoro Conservation Area (NCA) is governed by the Ngorongoro Conservation Area Authority (NCAA) under different rules from Tanzania's national parks. The key practical difference: roughly 20,000 Maasai pastoralists live and graze livestock within the NCA. National parks have no permanent residents. Many websites call it 'Ngorongoro National Park' — that is incorrect and matters for understanding the rules that apply to visitors.",
+          "It is a Conservation Area, not a National Park. The Ngorongoro Conservation Area (NCA) is governed by the Ngorongoro Conservation Area Authority (NCAA) under different rules from Tanzania's national parks. The key practical difference: roughly 20,000 Maasai pastoralists live and graze livestock within the NCA. National parks have no permanent residents. Many websites call it 'Ngorongoro National Park.' That is incorrect and matters for understanding the rules that apply to visitors.",
       },
       {
         question: "How much does it cost to visit Ngorongoro Crater?",
         answer:
-          "The main fees are: non-resident adult entry at $70.80 per person per 24-hour permit, plus a crater service fee of $295 per vehicle per descent. There is also a picnic fee of $23.60 per person at Ngoitokitok Springs. VAT of 18% is applied to all fees, and payment is by card only — no cash accepted at any NCA gate. For a party of two in one vehicle, the crater-specific fees alone (service fee plus two entry permits) total around $436 before VAT.",
+          "The main fees are: non-resident adult entry at $70.80 per person per 24-hour permit, plus a crater service fee of $295 per vehicle per descent. There is also a picnic fee of $23.60 per person at Ngoitokitok Springs. VAT of 18% is applied to all fees, and payment is by card only. No cash accepted at any NCA gate. For a party of two in one vehicle, the crater-specific fees alone (service fee plus two entry permits) total around $436 before VAT.",
       },
       {
         question: "What time does Ngorongoro Crater open?",
@@ -305,12 +305,12 @@ export const nationalParks: Record<string, NationalPark> = {
       {
         question: "Can you see the Big Five in Ngorongoro Crater?",
         answer:
-          "Yes, all five are present. Lion and elephant are reliable sightings on a full crater day. Buffalo roam the open plains in large herds. Leopard are present but uncommon — usually spotted on the crater walls or in Lerai Forest. Black rhino are present but sightings require binoculars and some luck; Gorigor Swamp is the best location, usually in the morning. Most visitors see four of the five on a full day. The rhino is the variable.",
+          "Yes, all five are present. Lion and elephant are reliable sightings on a full crater day. Buffalo roam the open plains in large herds. Leopard are present but uncommon, usually spotted on the crater walls or in Lerai Forest. Black rhino are present but sightings require binoculars and some luck; Gorigor Swamp is the best location, usually in the morning. Most visitors see four of the five on a full day. The rhino is the variable.",
       },
       {
         question: "Are there black rhinos in Ngorongoro Crater?",
         answer:
-          "Yes. The crater holds one of Africa's most significant black rhino populations, currently estimated at 26-55 individuals. The population collapsed from around 108 in the mid-1960s to 13 by 1993 due to poaching, and has recovered under the Ngorongoro Rhino Protection Programme. Gorigor Swamp on the western floor is the most reliable sighting location, almost always in the morning. Sightings are at distance — binoculars are essential.",
+          "Yes. The crater holds one of Africa's most significant black rhino populations, currently estimated at 26-55 individuals. The population collapsed from around 108 in the mid-1960s to 13 by 1993 due to poaching, and has recovered under the Ngorongoro Rhino Protection Programme. Gorigor Swamp on the western floor is the most reliable sighting location, almost always in the morning. Sightings are at distance. Binoculars are essential.",
       },
       {
         question: "How was the Ngorongoro Crater formed?",
@@ -320,22 +320,22 @@ export const nationalParks: Record<string, NationalPark> = {
       {
         question: "What does 'Ngorongoro' mean?",
         answer:
-          "The name comes from the Maasai word for the sound of their cowbells — 'ngoro-ngoro.' The Maasai have lived around and within the crater landscape for centuries, and the Ngorongoro Conservation Area continues to recognise their presence through pastoral rights within the NCA. The name is pronounced as it appears: Ngoro-Ngoro.",
+          "The name comes from the Maasai word for the sound of their cowbells ('ngoro-ngoro'). The Maasai have lived around and within the crater landscape for centuries, and the Ngorongoro Conservation Area continues to recognise their presence through pastoral rights within the NCA. The name is pronounced as it appears: Ngoro-Ngoro.",
       },
       {
         question: "What is the best time of year to visit Ngorongoro?",
         answer:
-          "The crater is worth visiting year-round — the wildlife does not migrate out. June through October is the dry season: short grass, clear sightlines, and animals concentrated around permanent water. January and February are excellent for the crater itself, with green landscape and fewer vehicles, and they coincide with calving season on the nearby Ndutu plains if you want to combine both. April and May are the only months to genuinely avoid: the long rains can make the Seneto and Lemala roads muddy and occasionally impassable.",
+          "The crater is worth visiting year-round. The wildlife does not migrate out. June through October is the dry season: short grass, clear sightlines, and animals concentrated around permanent water. January and February are excellent for the crater itself, with green landscape and fewer vehicles, and they coincide with calving season on the nearby Ndutu plains if you want to combine both. April and May are the only months to genuinely avoid: the long rains can make the Seneto and Lemala roads muddy and occasionally impassable.",
       },
       {
         question: "How many days do you need at Ngorongoro?",
         answer:
-          "One full day on the crater floor is enough to see the core habitats and wildlife. Two nights on the rim gives you two separate morning descents, which is the right approach if black rhino is a priority — sightings are not guaranteed on any single day. Most northern circuit itineraries allocate one crater day. The 8-day classic Tanzania safari includes a full crater day as its final park before returning to Arusha.",
+          "One full day on the crater floor is enough to see the core habitats and wildlife. Two nights on the rim gives you two separate morning descents, which is the right approach if black rhino is a priority. Sightings are not guaranteed on any single day. Most northern circuit itineraries allocate one crater day. The 8-day classic Tanzania safari includes a full crater day as its final park before returning to Arusha.",
       },
       {
         question: "Is Ngorongoro better than the Serengeti?",
         answer:
-          "They are different experiences. The Serengeti has scale — 14,763 square kilometres, the Great Migration, and the highest predator diversity in Africa. Ngorongoro has concentration — 25,000 animals inside 260 square kilometres, nothing migrating out. The Serengeti is the better park if you can only choose one. If you are doing the northern circuit properly, the crater is not optional. The two work best together, not as alternatives.",
+          "They are different experiences. The Serengeti has scale: 14,763 square kilometres, the Great Migration, and the highest predator diversity in Africa. Ngorongoro has concentration: 25,000 animals inside 260 square kilometres, nothing migrating out. The Serengeti is the better park if you can only choose one. If you are doing the northern circuit properly, the crater is not optional. The two work best together, not as alternatives.",
       },
     ],
     relatedItineraries: [
@@ -360,7 +360,7 @@ export const nationalParks: Record<string, NationalPark> = {
     about: [
       "Tarangire National Park is Tanzania's sixth-largest national park, named after the Tarangire River that flows through it year-round. During the dry season (June-October), this river becomes a lifeline for wildlife, drawing massive concentrations of animals from the surrounding ecosystem.",
       "The park is famous for two things: its elephant population and its landscape-defining baobab trees. Tarangire hosts the largest elephant concentration in Tanzania, with herds of 300 or more commonly seen during the dry months. The ancient baobabs, some over 1,000 years old, create a distinctive and photogenic landscape unlike anywhere else in East Africa.",
-      "Beyond elephants, Tarangire offers excellent lion and leopard sightings, large herds of buffalo, and over 550 bird species—more than almost any other habitat in the world.",
+      "Beyond elephants, Tarangire offers excellent lion and leopard sightings, large herds of buffalo, and over 550 bird species, more than almost any other habitat in the world.",
     ],
     wildlife: [
       {
@@ -425,7 +425,7 @@ export const nationalParks: Record<string, NationalPark> = {
     },
     about: [
       "Lake Manyara National Park may be one of Tanzania's smallest parks, but it packs incredible diversity into its compact size. The park stretches along the base of the dramatic Rift Valley escarpment, encompassing a groundwater forest, acacia woodlands, grasslands, and the alkaline lake itself.",
-      "The park is famous for its tree-climbing lions—a behavioral quirk not seen as commonly elsewhere. Scientists believe the lions climb trees to escape tsetse flies and buffalo, or simply to catch a breeze. Watching a pride of lions draped over the branches of an acacia tree is a signature Lake Manyara experience.",
+      "The park is famous for its tree-climbing lions, a behavioral quirk not seen as commonly elsewhere. Scientists believe the lions climb trees to escape tsetse flies and buffalo, or simply to catch a breeze. Watching a pride of lions draped over the branches of an acacia tree is a signature Lake Manyara experience.",
       "The lake itself attracts massive flocks of flamingos when water levels are right, creating a stunning pink shoreline. Over 400 bird species have been recorded here, making it a birdwatcher's paradise.",
     ],
     wildlife: [
