@@ -216,7 +216,7 @@ export default async function NationalParkPage({ params }: PageProps) {
                         <h3 className="font-montserrat font-semibold text-forest mb-1">
                           {animal.name}
                         </h3>
-                        <p className="text-sm text-muted">{animal.description}</p>
+                        <p className="text-sm text-ink">{animal.description}</p>
                       </div>
                     )
                   })}

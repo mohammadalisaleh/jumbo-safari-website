@@ -278,8 +278,8 @@ export default async function SafariInMonthPage({ params }: PageProps) {
                             {itinerary.price}
                           </span>
                         </div>
-                        <p className="text-sm text-muted mb-1">{itinerary.duration}</p>
-                        <p className="text-sm text-muted mb-3">{itinerary.parks}</p>
+                        <p className="text-sm text-ink mb-1">{itinerary.duration}</p>
+                        <p className="text-sm text-ink mb-3">{itinerary.parks}</p>
                         <p className="text-ink text-body-mobile md:text-body-desktop mb-4">
                           {itinerary.description}
                         </p>
