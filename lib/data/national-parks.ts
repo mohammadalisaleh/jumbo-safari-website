@@ -476,107 +476,136 @@ export const nationalParks: Record<string, NationalPark> = {
   ndutu: {
     slug: "ndutu",
     name: "Ndutu",
-    tagline: "The calving grounds. 500,000 wildebeest calves in six weeks.",
+    tagline: "400,000 wildebeest calves in six weeks. Every predator in the ecosystem watching.",
     description:
-      "Ndutu sits in the southwestern corner of the Ngorongoro Conservation Area, bordering the Serengeti. From January through March, it holds the largest wildebeest calving event on Earth. Off-road driving is permitted here. That is the difference.",
+      "Ndutu sits inside the Ngorongoro Conservation Area on the southern Serengeti border. From January through March it holds the world's largest wildebeest calving event. Off-road driving is legally permitted here and not in Serengeti National Park next door. That single distinction is why wildlife photographers choose Ndutu over the Mara River crossings for predator viewing.",
     quickFacts: {
-      area: "Approx. 400 km² (part of the 8,292 km² Ngorongoro Conservation Area)",
-      unescoStatus: "Part of Ngorongoro Conservation Area — UNESCO World Heritage Site",
-      bestTime: "Mid-January through late February (calving season)",
-      famousFor: "Wildebeest calving season, off-road driving, predator density",
-      nearestAirport: "Ndutu Airstrip (seasonal), Kilimanjaro International (JRO)",
+      area: "Part of the Ngorongoro Conservation Area (NCA) · bordering Serengeti National Park",
+      unescoStatus: "Ngorongoro Conservation Area — UNESCO World Heritage Site",
+      bestTime: "Late January through late February (calving peak) · April-November for resident predators without migration crowds",
+      famousFor: "Wildebeest calving season, off-road driving, cheetah density, Long Gully lions, Lake Masek Pride",
+      nearestAirport: "Ndutu Airstrip · Coastal Aviation, Auric Air, Air Excel from Arusha (approx. $270-440 one-way)",
     },
     about: [
-      "Ndutu is not a national park. It sits inside the Ngorongoro Conservation Area (NCA), in the southwestern corner where the NCA meets Serengeti National Park. Most visitors have never heard of it. The ones who have are usually photographers or wildlife professionals who have been to the Serengeti in August and want to understand why Ndutu in February is considered better.",
-      "The answer is simple: off-road driving. The NCA permits vehicles to leave the track. Serengeti National Park does not. During calving season, when a wildebeest is giving birth 20 metres from the vehicle, or a cheetah is accelerating toward a newborn calf through ankle-height grass, the difference between being on track and being off it is not aesthetic. It determines what you witness.",
-      "The calving is driven by chemistry. The November-December short rains deposit phosphorus and calcium into the volcanic short-grass plains around Lake Ndutu and Lake Masek. These are exactly the nutrients that lactating cows and developing calves require. The herds arrive by late December, births begin by early January, and peak intensity runs through the first two weeks of February. At the absolute peak, around 8,000 calves are born per day across an area you can cover in an hour's drive.",
-      "The predator response to this is total. Every lion pride in the surrounding ecosystem pulls toward the calving grounds. Spotted hyena clans here reach 80-plus members. Cheetahs work the open plains because the ankle-height grass gives them their sprint hunting conditions and a kill success rate that runs roughly 50 percent during calving, compared to 30 percent at other times. Black-backed jackals operate on the calves directly, often a dozen jackals around a single birth. It is not a comfortable spectacle in the way a sunset photograph is comfortable. It is the real mechanism of the ecosystem, running at full speed.",
-      "Outside calving season, Ndutu is quieter. The lodges around Lake Ndutu operate November through March when conditions suit, with most closing from April onward as the long rains arrive and the volcanic black-cotton clay soil becomes difficult. If your dates fall in calving season, this is the best safari location in East Africa for predator viewing. If they don't, the central Serengeti will serve you better.",
+      "Ndutu is not a national park. Geographically it sits at the southern edge of the Serengeti ecosystem; administratively it falls inside the Ngorongoro Conservation Area (NCA), governed by the Ngorongoro Conservation Area Authority. The boundary with Serengeti National Park runs through the broader Ndutu region. It is unfenced. Wildlife crosses freely. The wildebeest do not know which side they are on. Your guide does, because it determines what the vehicle can legally do.",
+      "In Serengeti National Park, off-road driving is forbidden for non-research vehicles. No exceptions. In Ndutu specifically, the NCAA has designated the area as an authorised off-road zone. This is a carve-out, not a general NCA rule: the rest of the conservation area, including the Ngorongoro Crater floor, prohibits off-road driving just as strictly as the national park does. When a cheetah accelerates toward a newborn calf through ankle-height grass at Ndutu, your guide can leave the track, position for the light, and stay with the hunt. Cross the boundary east into Serengeti National Park and the vehicle returns to the road, regardless of what is happening 30 metres away.",
+      "The calving itself is driven by soil chemistry. The November-December short rains deposit phosphorus and calcium into the volcanic short-grass plains around Lake Ndutu and Lake Masek. These are the exact nutrients lactating cows and developing calves need. Herds arrive by late December, first births begin in mid-January, and peak intensity runs through the first two to three weeks of February. The Greater Serengeti Conservation Society puts the total at more than 400,000 calves born in a few weeks, with the daily rate at peak reaching around 8,000 (a conventional figure, widely cited and plausible given the total, though not from a single peer-reviewed source). Calves stand within 3-5 minutes of birth, walk within 15, and run with the herd within hours. Predators do not wait.",
+      "The predator response to calving is the most important fact about Ndutu. Every lion pride in range pulls toward the calving grounds. Spotted hyena clans here reach 80-plus members. Cheetahs work the open short-grass plains where their sprint-hunting success rate runs near 50 percent during calving, compared to around 30 percent at other times. Black-backed jackals work directly on newborns, often a dozen around a single birth. The full cast operates simultaneously and in plain view. Kills happen before breakfast, through the morning, before sundowners. This is not the Mara River, where you wait for one event. At Ndutu in February, the event is continuous.",
+      "There is a second Ndutu that most visitors never see. From April through mid-December, the migration herds have moved north and the mobile camps have packed up. Ndutu Safari Lodge stays open year-round, and what remains is a resident predator community with no migration traffic: named cheetah coalitions with established territories around the Big Marsh and the Causeway, the Masek Pride whose lions climb acacia trees around Lake Masek (a behaviour normally associated with Lake Manyara), the Twin Hill lion pride whose cubs the guides track across seasons. Wildlife photographers who have visited in February come back off-season specifically for this. Fewer vehicles, familiar animals, different quality of encounter.",
     ],
     wildlife: [
       {
         name: "Wildebeest",
-        description: "Over 1.5 million in the Serengeti-Mara ecosystem. 500,000 calves born at Ndutu between January and March.",
+        description: "1.5 million in the Serengeti-Mara ecosystem. More than 400,000 calves born in the Ndutu area over roughly six weeks, January through March.",
       },
       {
         name: "Cheetah",
-        description: "Open short-grass plains are ideal sprint-hunting ground. Kill success runs near 50% during calving season.",
+        description: "Some of Africa's most photographable cheetah hunting on open short-grass plains with off-road vehicle positioning. Named resident coalitions hold territories around the Big Marsh year-round. Hunt success near 50% during calving.",
       },
       {
         name: "Lion",
-        description: "Multiple resident prides pull onto the calving plains during January-March. Pride territories are concentrated around the kopjes and lake edges.",
+        description: "Multiple prides converge on the calving grounds January-March. The Lake Masek Pride is documented tree-climbing in the acacia woodland around Lake Masek. Long Gully is the best location for coalition males at first light.",
       },
       {
         name: "Spotted Hyena",
-        description: "Clan sizes here reach 80+ members. Active hunters, not scavengers. Responsible for a significant share of kills across the calving plains.",
+        description: "Clans of 80+ members. Active hunters, not scavengers. Responsible for a large share of kills on the calving plains alongside the lion prides.",
       },
       {
         name: "Leopard",
-        description: "Acacia woodland fringing Lake Masek is leopard territory. Less visible than in the Serengeti valley, but resident.",
+        description: "Resident in the acacia woodland fringing Lake Masek. Less visible than in the Serengeti valley but present year-round.",
       },
       {
-        name: "Zebra",
-        description: "200,000 zebra migrate alongside the wildebeest, arriving on the Ndutu plains from December. Calves are born slightly earlier than wildebeest.",
+        name: "Bat-Eared Fox",
+        description: "Abundant on the short-grass plains year-round, often overlooked. Resident alongside serval, civet, and caracal — the smaller predator portfolio that photographers return for in the off-season.",
       },
     ],
     bestTimeToVisit: [
       {
-        month: "Nov-Dec",
-        weather: "Short rains, green plains, tracks generally firm",
-        wildlife: "Herds arriving, early births beginning",
+        month: "Dec 1-19",
+        weather: "Short rains ending. Plains greening. Herds arriving.",
+        wildlife: "Early births beginning. Predator density building. Lemala Ndutu rates at $330/night — lowest of the season.",
         crowds: "Low",
       },
       {
-        month: "Jan",
-        weather: "Dry interlude. Warm days, cool mornings",
-        wildlife: "Calving underway, predator density rising fast",
-        crowds: "Moderate",
+        month: "Dec 20 – Jan",
+        weather: "Warm, dry interlude between rains. Ankle-height grass.",
+        wildlife: "Calving underway, predator density rising. First serious action on the plains.",
+        crowds: "Moderate. Late January is the insider's window: near-peak wildlife, fewer vehicles than February.",
       },
       {
         month: "Feb",
-        weather: "Warm and dry. Peak calving conditions",
-        wildlife: "Peak. 8,000 calves per day at maximum. All predators active.",
-        crowds: "High (but far below Serengeti peak-season levels)",
+        weather: "Warm and generally dry. Best short-grass conditions.",
+        wildlife: "Peak calving. Around 8,000 calves born per day at maximum. All major predators active simultaneously. The month most operators recommend.",
+        crowds: "High by Ndutu standards (still far below Mara August). Mid-February is the busiest window. Book 6-9 months out.",
       },
       {
         month: "Mar",
-        weather: "Long rains approaching. Tracks soften late March.",
-        wildlife: "Calving winding down, herds beginning to move northwest",
-        crowds: "Moderate-Low",
+        weather: "Long rains approaching. Tracks soften by late March.",
+        wildlife: "Calving winding down. Herds beginning to move northwest. Early March still good; late March variable.",
+        crowds: "Low-Moderate. Good availability.",
       },
       {
-        month: "Apr-Oct",
-        weather: "Long rains (Apr-May), then dry season",
-        wildlife: "Most camps closed. Serengeti is the right destination.",
-        crowds: "Very low / closed",
+        month: "Apr-Nov",
+        weather: "Long rains (Apr-May) then dry season. Mobile camps gone.",
+        wildlife: "Ndutu Safari Lodge stays open year-round. Resident predators (named cheetah coalitions, Masek Pride, Twin Hill lions) without migration crowds. Off-season photographers rate this period highly.",
+        crowds: "Very low",
       },
     ],
     relatedItineraries: ["calving-season-safari", "8-day-classic-tanzania-safari"],
-    faqs: [
+    additionalSections: [
       {
-        question: "Is Ndutu a national park?",
-        answer:
-          "No. Ndutu is part of the Ngorongoro Conservation Area (NCA), not a national park. The NCA is a different category of protected land. The key practical difference for visitors: off-road driving is permitted in the NCA, including at Ndutu. National parks require vehicles to stay on designated tracks. During calving season, off-road access changes what you can do and where you can position.",
+        heading: "Named Locations Worth Knowing",
+        body: "Ndutu's guides work specific terrain features that repeat visitors and photographers return to deliberately. Knowing these before you arrive changes what you ask for.\n\nLong Gully is a seasonal stream whose water surface produces reflection shots that have appeared in wildlife photography awards. Coalition males are regularly photographed crossing it at first light. The light hits the water before it hits the plain. Wildlife photographers name Long Gully more than any other single Ndutu location.\n\nHidden Valley is a water feature where local guides predict large herds come to drink late-morning. The setup: nervous antelope approaching water while predators are visible nearby. One visiting photographer described it as 'animals writing their own story on a blank page.' Less known than the main plains; less vehicle traffic.\n\nThe Big Marsh and the Causeway hold territories for Ndutu's resident cheetah coalitions year-round, not just during calving season. April through mid-December this is where you find cheetahs when the migration has gone north.\n\nLake Masek acacia woodland is afternoon leopard territory and the home range of the Masek Pride — the lion pride documented climbing trees seasonally, a behaviour associated with Lake Manyara elsewhere. Afternoons at Lake Masek for tree-climbing lions are a real, if underplanned, Ndutu experience.\n\nNdutu Safari Lodge's own grounds are documented wildlife habitat. The lodge has camera-trapped its property for over 25 years. Lions, leopards, and cheetahs walk past the dining room. This is not a selling point embellishment; it is in the lodge's own records.",
       },
       {
-        question: "When exactly is calving season at Ndutu?",
+        heading: "Ndutu vs Mara River Crossings",
+        body: "This is the question most repeat visitors eventually ask, and most operators answer badly: 'both are amazing, go to whichever fits your dates.' That is not useful for someone making a real decision.\n\nThe Mara River crossings (July-October, northern Serengeti and Masai Mara) are the single most dramatic wildlife event in Africa. Wildebeest plunging into crocodile-infested water from steep banks, thousands at a time, under pressure from Nile crocodiles coming from below. Cinematic. Irreplaceable. The 2023 and 2024 peak crossing images that circulated globally all came from the Mara. If the crossing photograph is the goal, nothing at Ndutu competes with it.\n\nFor predator viewing specifically, Ndutu is better. Here is why. The Mara crossing is one event: animals enter the water, crocodiles attack, survivors climb out. Between crossings you wait, sometimes for hours, sometimes for a day with no crossing at all. Predator-prey interaction at the river is intense but short. Between events, the Mara is standard game viewing.\n\nAt Ndutu in February, the predator action is unrelenting across the full game-drive day. Kills before breakfast. Lions mid-morning. Cheetah hunts on open ground in usable light. Hyena clan activity through the afternoon. The herds are not moving; the predators do not need to range far. Add off-road positioning and you have not just more action but better angles, better framing, closer approach.\n\nEvery major wildlife photography operation that works both locations rates Ndutu above the Mara for predator photography. The Mara is better for spectacle. Ndutu is better for the photographs that result from watching a predator work. They are not competing for the same experience.",
+      },
+      {
+        heading: "The Park Fee Calculation — What Operators Don't Tell You",
+        body: "Where your camp sits relative to the NCA-SNP boundary determines your daily park fee bill, and the difference is significant.\n\nNCA conservation fee: USD 71 per person per day. Serengeti National Park entry fee: USD 83 per person per day. If your game drives cross from one jurisdiction into the other (which happens routinely near Ndutu, since the boundary is unfenced and the best calving terrain straddles it), you pay both: USD 154 per person per day.\n\nMost operators absorb or include this in their package pricing without explanation. Some do not. Before booking, ask: which side of the NCA-SNP boundary is the camp on, and are daily game drives likely to cross into the other jurisdiction? If your operator cannot answer this specifically, they have not been to the camp.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Ndutu in the Serengeti?",
         answer:
-          "The meaningful window is mid-January through late February. Peak is the first two weeks of February, when roughly 8,000 calves are born per day across the Ndutu plains. The timing shifts by up to two weeks depending on the previous year's short rains. December is a genuine shoulder option: births have started, camps are quiet, and rates are lower. March sees the calving slow and herds beginning to move northwest toward the Western Corridor.",
+          "Geographically yes, ecologically yes. Administratively, no. Ndutu sits inside the Ngorongoro Conservation Area (NCA), governed by the NCAA, not Tanzania National Parks. It borders Serengeti National Park along an unfenced boundary. The distinction matters for two reasons: fees (NCA charges USD 71/day vs Serengeti's USD 83/day, and you may pay both if game drives cross) and driving rules (Ndutu is a designated off-road zone within the NCA; Serengeti National Park prohibits off-road driving with no exceptions for non-research vehicles).",
+      },
+      {
+        question: "When exactly is calving season and when is peak?",
+        answer:
+          "The meaningful window is late January through late February, with peak calving in the first two to three weeks of February. The Greater Serengeti Conservation Society documents more than 400,000 calves born in roughly six weeks each year, with daily rates at peak around 8,000. The exact start shifts by up to two weeks depending on the previous year's short rains. December is a genuine entry point with lower rates and fewer vehicles; early March is a quieter exit window with the herds still present. Late January is the insider's choice: near-peak wildlife, significantly fewer vehicles than peak February.",
+      },
+      {
+        question: "Is Ndutu better than the Mara River for predator viewing?",
+        answer:
+          "For predator viewing specifically, yes. The Mara River crossings (July-October) are the most dramatic single wildlife event in Africa and produce the defining migration photographs. But predator action at the river is intense and short. Between crossings you wait. At Ndutu in February, the predator activity is continuous through the full game-drive day: kills before breakfast, cheetah hunts on open ground in good light, hyena clan dynamics through the afternoon. Add off-road positioning, which Ndutu permits and the Mara National Reserve largely does not, and you get better angles on every encounter. Wildlife photographers who work both locations consistently rate Ndutu above the Mara for predator photography. They are different chapters of the same migration story.",
+      },
+      {
+        question: "What are the best camps at Ndutu?",
+        answer:
+          "Ndutu Safari Lodge is the original property, open year-round, with 34 stone-and-thatch cottages on Lake Ndutu. The lodge has been the base for professional wildlife photographers and filmmakers for decades. Mid-range pricing. Lemala Ndutu operates December 1 through March 31, nine luxury tents on a permanent marsh, with rates ranging from USD 330 per person per night in early December to USD 1,178 from December 20 through March. Asilia Olakira and Kimondo Migration Camp both operate mobile tented camps at Ndutu December-March, relocating to the northern Serengeti for July-October. February books out 6-9 months in advance at all properties.",
       },
       {
         question: "How do you get to Ndutu?",
         answer:
-          "Two options. By road from Arusha: approximately six to seven hours via Karatu and the Ngorongoro Conservation Area. The route passes through the NCA highlands and descends southwest toward the Ndutu plains. The drive is long but passes good scenery through the Ngorongoro rim. By air: Air Excel operates seasonal flights from Arusha to Ndutu Airstrip during calving season, roughly one hour and five minutes, around $345 one-way. Flying saves half a day each way and is worth it if the budget allows.",
+          "By air from Arusha: Coastal Aviation, Auric Air, and Air Excel all serve Ndutu Airstrip during calving season. Flight time is approximately 1.5 hours (often via one or two intermediate airstrips). Pricing runs roughly USD 270-440 per person one-way depending on carrier. Coastal Aviation is the most frequently used; Auric Air is generally the lowest-priced option. By road from Arusha: approximately six to seven hours via Karatu and the Ngorongoro Conservation Area. Long but the route through the NCA highlands is scenic. Flying saves a full day each way.",
       },
       {
-        question: "What lodges are near Ndutu?",
+        question: "Are there tsetse flies at Ndutu?",
         answer:
-          "Ndutu Safari Lodge is the original property, a permanent tented camp on the shores of Lake Ndutu with a waterhole that attracts animals at night. Lemala Ndutu is a more recently built tented camp with better facilities. Several mobile camps operate during calving season only and provide closer access to the calving grounds. All properties close from April onward when the long rains make the roads impassable.",
+          "Ndutu is comparatively low for tsetse. The short-grass open plains habitat that defines the calving area is not prime tsetse territory (they favour denser bush and woodland). The western Serengeti corridor and parts of Tarangire are more tsetse-affected. Light-coloured clothing and standard insect repellent are adequate precautions at Ndutu. The main health consideration is malaria prophylaxis, which applies throughout Tanzania.",
+      },
+      {
+        question: "Can you visit Ndutu outside calving season?",
+        answer:
+          "Yes, and some photographers prefer it. Ndutu Safari Lodge is open year-round. From April through mid-December, the mobile camps have gone but the resident predators remain: named cheetah coalitions with established territories around the Big Marsh, the Lake Masek Pride (a lion pride known for seasonal tree-climbing), the Twin Hill lion pride. No migration traffic means fewer vehicles at every sighting. The off-season is a different experience from calving season but not a lesser one.",
       },
       {
         question: "Can you combine Ndutu with the Ngorongoro Crater?",
         answer:
-          "Yes, and the combination works well. Ndutu sits inside the NCA, so the crater is about two hours away by road through the conservation area. The standard route on our Calving Season Safari includes two nights at Ndutu, then a half-day crater descent before returning to Arusha. The crater wildlife (25,000 animals, year-round) does not change with calving season, making it a reliable second destination regardless of timing.",
+          "Yes, and it is the most natural combination from a routing perspective. Ndutu sits inside the NCA, roughly two hours by road from the crater rim. Our Calving Season Safari runs several days at Ndutu followed by a half-day crater descent before returning to Arusha. The crater holds its resident wildlife year-round regardless of the migration's position, so the combination works in any calving-season month.",
       },
     ],
   },
