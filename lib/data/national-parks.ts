@@ -452,62 +452,152 @@ export const nationalParks: Record<string, NationalPark> = {
   tarangire: {
     slug: "tarangire",
     name: "Tarangire National Park",
-    tagline: "Ancient baobabs and massive elephant herds",
+    tagline: "In dry season, every animal in 20,000 km² contracts toward one river.",
     description:
-      "Tanzania's elephant capital, known for its ancient baobab trees and exceptional dry season game viewing.",
+      "Tarangire National Park is 2,850 km² of baobab-studded miombo in northern Tanzania. From June through October, the Tarangire River is the only permanent water in the ecosystem, pulling elephant herds, buffalo, and predators from across a 20,000 km² migration circuit into one accessible corridor. The park records 588 bird species (Avibase 2025) and is one of very few places in East Africa where fringe-eared oryx can be reliably seen.",
     quickFacts: {
-      area: "2,850 km²",
+      area: "2,850 km² (park) · ~20,000 km² Tarangire-Manyara ecosystem",
       unescoStatus: "National Park since 1970",
-      bestTime: "June - October (dry season)",
-      famousFor: "Elephants, baobab trees, tree-climbing pythons",
-      nearestAirport: "Kuro Airstrip, Kilimanjaro International",
+      bestTime: "June - October (dry season, peak concentration) · Nov-May for birds and solitude",
+      famousFor: "Dry-season elephant concentration, ancient baobabs, fringe-eared oryx, 588 bird species, rock python",
+      nearestAirport: "Kuro Airstrip (in-park) · Lake Manyara Airstrip · Kilimanjaro International (JRO)",
     },
     about: [
-      "Tarangire National Park is Tanzania's sixth-largest national park, named after the Tarangire River that flows through it year-round. During the dry season (June-October), this river becomes a lifeline for wildlife, drawing massive concentrations of animals from the surrounding ecosystem.",
-      "The park is famous for two things: its elephant population and its landscape-defining baobab trees. Tarangire hosts the largest elephant concentration in Tanzania, with herds of 300 or more commonly seen during the dry months. The ancient baobabs, some over 1,000 years old, create a distinctive and photogenic landscape unlike anywhere else in East Africa.",
-      "Beyond elephants, Tarangire offers excellent lion and leopard sightings, large herds of buffalo, and over 550 bird species, more than almost any other habitat in the world.",
+      "The Tarangire River is the reason this park exists as a wildlife destination. For six months of the year, from roughly November through April, the broader Tarangire-Manyara ecosystem gets rain. Water pools across the Simanjiro Plains to the east and the Maasai steppe to the south. Wildebeest, zebra, eland, and other ungulates spread out across that landscape, following the flush of new grass. The park empties of migrating grazers. Most safari brochures describe this in reverse, implying animals migrate 'into' Tarangire. They do not: during the rains, they migrate out. When the dry season arrives around June and the water on the plains evaporates, the animals have nowhere else to go. The Tarangire River is the last water standing. Everything contracts toward it.",
+      "Elephant herds are the defining image of that dry-season concentration. The Tarangire-Manyara ecosystem holds one of the largest elephant populations in East Africa, and during the dry months, family groups that have ranged hundreds of kilometres return to the river. Multi-generational herds of 50, 100, or more animals congregate along the bank, and the Tarangire Elephant Research Project (TERP), running continuously since 1993, has individually identified and genealogically mapped hundreds of these animals. A specific figure for elephants inside the national park boundary does not exist in current published TAWIRI data; the population is measured at ecosystem level. What is documented and consistent is this: no park on the northern circuit produces the same density of elephant in one viewable area during the dry season.",
+      "The baobabs deserve more precision than they usually get. Tarangire has the highest density of baobab trees in Tanzania, and the landscape they create, enormous silver-grey trunks against red-ochre soil and blue dry-season sky, is genuinely unlike anything else on the northern circuit. The trees are frequently described as '1,000 years old' or '2,000 years old.' These figures are plausible. Baobabs are among the longest-lived trees on Earth, and documented radiocarbon dating of other populations in southern Africa has confirmed individuals at over 1,000 years. However, no published radiocarbon dating exists for any specific Tarangire baobab. The ancient age claim is reasonable; it is not sourced to specific trees in this park.",
+      "Tarangire is where the northern circuit's species list expands. Fringe-eared oryx, a subspecies of the East African oryx distinguished by the tufts of black hair at their ear tips, are present in Tarangire and almost nowhere else on the northern circuit. Greater kudu, with their spectacular spiral horns, appear in the southern Lemiyon woodland area, a section rarely visited on standard itineraries. The rock python is documented climbing baobabs, using the hollow cavities in the trunks as shelter and ambush points; this is not a universal python behaviour and is genuinely associated with Tarangire in the field literature. The bird list stands at 588 species recorded (Avibase 2025), which puts Tarangire among the top parks on the continent by species count, yet birdwatching here is consistently undermarketed.",
     ],
     wildlife: [
       {
         name: "Elephant",
-        description: "Tanzania's largest elephant herds, 300+ individuals",
+        description: "The signature species. Multi-generational herds tracked since 1993 by the Tarangire Elephant Research Project, with hundreds of individuals individually identified. Dry season (June-Oct) concentrations along the Tarangire River are unmatched on the northern circuit. Family groups of 50-100+ animals are routine at peak dry season.",
       },
-      { name: "Lion", description: "Healthy population, often seen hunting buffalo" },
-      { name: "Leopard", description: "Frequently spotted in the woodland areas" },
       {
-        name: "Python",
-        description: "Famous tree-climbing pythons unique to Tarangire",
+        name: "Fringe-Eared Oryx",
+        description: "Distinctive subspecies of East African oryx, named for the black tufts at their ear tips. Present in Tarangire year-round in small groups on the open grasslands; reliable on most dry-season game drives. Almost absent from all other northern circuit parks — one of the few species you can only add to your list here.",
       },
-      { name: "Buffalo", description: "Large herds gather along the river" },
       {
-        name: "Oryx",
-        description: "One of the few parks where fringe-eared oryx can be seen",
+        name: "Rock Python",
+        description: "Documented using hollow baobab trunks as shelter and ambush points. The tree-climbing behaviour associated specifically with Tarangire's baobabs, where pythons coil in cavities or on low branches, is genuinely unusual. Sightings are not routine but not exceptional either, and Tarangire is the park where guides specifically look for them.",
+      },
+      {
+        name: "Lion",
+        description: "Resident prides hold territories along the Tarangire River corridor and around Silale Swamp. The high prey density during dry season produces active, well-fed prides. Not as numerically dense or as well-studied as the Serengeti Lion Project population, but reliable sightings across a dry-season stay.",
+      },
+      {
+        name: "Buffalo",
+        description: "Herds of several hundred gather on the river plains in dry season. The concentration dynamics mirror the elephant pattern: dispersed across the ecosystem in the wet season, pulled to the river when water fails elsewhere.",
+      },
+      {
+        name: "Birds (588 species)",
+        description: "588 species recorded (Avibase 2025), one of the highest counts for any single national park in Africa. Key targets: ashy starling (endemic to north-central Tanzania, reliable in the baobab woodland), yellow-collared lovebird, rufous-tailed weaver, Von der Decken's hornbill, martial eagle. The Silale Swamp area produces the highest waterbird diversity, including open-bill storks, saddle-billed storks, and yellow-billed stork in large numbers.",
       },
     ],
     bestTimeToVisit: [
       {
-        month: "Jan-Mar",
-        weather: "Warm, rains",
-        wildlife: "Dispersed, good birds",
-        crowds: "Low",
+        month: "Jun-Jul",
+        weather: "Dry season onset. Cool mornings (~14°C), warm afternoons (~27°C). River levels dropping.",
+        wildlife: "Excellent and improving. Migrating herds returning from the Simanjiro Plains. Elephant and buffalo concentrating. Lions active.",
+        crowds: "Moderate. Less crowded than the Serengeti in peak season.",
       },
       {
-        month: "Apr-May",
-        weather: "Heavy rains",
-        wildlife: "Difficult access",
-        crowds: "Very low",
-      },
-      {
-        month: "Jun-Oct",
-        weather: "Dry, warm",
-        wildlife: "Exceptional, concentrated",
-        crowds: "Moderate-High",
+        month: "Aug-Oct",
+        weather: "Dry, warm, dusty near the river. No rain. Day temperatures reach 30-32°C by October.",
+        wildlife: "Peak. Maximum elephant and buffalo concentration on the river. Predator activity highest. Fringe-eared oryx reliable on open flats.",
+        crowds: "Moderate-High. Still far lower vehicle density than Serengeti in August.",
       },
       {
         month: "Nov-Dec",
-        weather: "Short rains",
-        wildlife: "Good, landscape green",
-        crowds: "Moderate",
+        weather: "Short rains begin (~mid-November). Landscape greens rapidly.",
+        wildlife: "Wildlife beginning to disperse as water returns across the ecosystem. Migratory birds arriving. Green season photography. Python sightings can increase as vegetation provides cover.",
+        crowds: "Low. Rates drop at most lodges.",
+      },
+      {
+        month: "Jan-May",
+        weather: "Wet season. Long rains (Mar-May) can make some tracks difficult.",
+        wildlife: "Migrating grazers have left the park for the Simanjiro Plains. Resident wildlife (elephant, predators, fringe-eared oryx) stays. Bird diversity peaks with migrants. Empty landscapes and short queues at the gate.",
+        crowds: "Very low. Some camps close in April-May.",
+      },
+    ],
+    fees: [
+      { item: "Non-resident adult entry (peak, 16 May - 14 Mar)", amount: "$82.60 (VAT incl.)", notes: "Base $70 + 18% VAT. TANAPA 2023/24 tariff." },
+      { item: "Non-resident adult entry (low, 15 Mar - 15 May)", amount: "$70.80 (VAT incl.)", notes: "Base $60 + 18% VAT." },
+      { item: "Child age 5-15", amount: "$23.60 (VAT incl.)", notes: "Both seasons." },
+      { item: "Under 5", amount: "Free" },
+      { item: "Vehicle fee (TZ-registered Land Cruiser)", amount: "~TZS 41,300 (~$17-20)", notes: "Paid at gate in Tanzanian shillings." },
+      { item: "VAT", amount: "18%", notes: "Applied to all fees at the GePG payment gateway." },
+      { item: "Payment method", amount: "Card only", notes: "No cash at any TANAPA gate. Re-verify fees after July 1, 2026." },
+    ],
+    additionalSections: [
+      {
+        heading: "The Mini-Migration: What Most Websites Get Backwards",
+        body: "Every brochure description of Tarangire mentions 'the migration.' Almost all of them describe it in reverse.\n\nThe movement pattern works like this. During the wet season, roughly November through April, rain falls across the broader Tarangire-Manyara ecosystem: the Simanjiro Plains to the east, the Maasai steppe to the south, the Manyara Ranch corridor to the north. Grass flushes across this 20,000-square-kilometre landscape. Wildebeest, zebra, and eland leave Tarangire and disperse into that wider area to follow the new growth. The park during this period holds its resident wildlife, including elephants and predators, but not the massed migrating grazers.\n\nWhen the dry season arrives around June, those water sources fail. The animals have a simple choice: go where water is, or die. The Tarangire River, fed by springs in the Ngorongoro highlands, runs through the park year-round. It is frequently the last permanent surface water within reach of a very large area. The wildebeest and zebra return, and as they do, every animal dependent on them follows.\n\nThis is the opposite of 'animals migrating into Tarangire for the rains.' The rains push them out. The dry season pulls them in. Understanding this is the difference between a visitor who books in November expecting a Serengeti-level show and one who arrives in August knowing exactly what they are about to see.",
+      },
+      {
+        heading: "Park Zones: Where to Go and When",
+        body: "Tarangire divides into distinct areas that each reward different objectives.\n\nThe northern zone, from the main Arusha gate down to the Tarangire River bend, is the most visited and the best for dry-season elephant viewing. The river here is wide enough that elephant herds cluster on both banks and wade across. Lions follow the elephant movements and are reliably found on or near the river in this section. This is where most one-day and two-day itineraries stay.\n\nSilale Swamp, in the central park, is the single best birding location in Tarangire. The permanent marsh holds large concentrations of waterbirds year-round: open-billed storks, saddle-billed storks, yellow-billed storks, marabou, spoonbills. In dry season it also concentrates hippo and crocodile, and the surrounding acacia fringe attracts lion, buffalo, and elephant. A morning at Silale Swamp on a dry-season drive consistently produces the highest species count of any single stop.\n\nThe southern Lemiyon area is rarely visited on standard northern circuit itineraries. It requires an extra half-day or an overnight inside the park to reach. What it offers that the north cannot: greater kudu in the mixed miombo woodland, a much lower vehicle count, and landscape that has a different ecological character from the baobab plains. Guides who know Lemiyon consistently rate it for the quality of encounter, not the quantity of animals.\n\nThe eastern boundary of the park connects to a network of wildlife management areas and private concession land. Oliver's Camp (operated by &Beyond) and Sanctuary Swala sit in this eastern concession, outside the national park boundary but inside the broader ecosystem. Guests at these camps benefit from off-road driving and walking safaris, which are not permitted inside the national park proper. The trade-off is that the concession areas, while excellent, do not reliably deliver the same elephant concentrations as the national park riverine zone at peak dry season.",
+      },
+      {
+        heading: "Tsetse Flies: An Honest Assessment",
+        body: "Tarangire has a tsetse fly problem that operators mention infrequently. The flies are present in the dense bush and riverine woodland areas throughout the year and are most active in the early morning and late afternoon, which is exactly when game drives run.\n\nTsetse bites are painful, they draw blood, and they can, in rare cases, transmit sleeping sickness (African trypanosomiasis), though tourist transmission is extremely uncommon. The main practical issue is not health but comfort.\n\nMitigation is simple and effective: avoid dark blue and black clothing, which tsetse are attracted to; wear light-coloured long sleeves on morning drives; apply DEET-based repellent to exposed skin. Guides carry repellent and can advise on vehicle positioning to avoid the worst concentrations. The tsetse issue is real and not one to ignore, but it is not a reason to skip the park.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is Tarangire National Park known for?",
+        answer:
+          "Tarangire is known for three things that set it apart from the rest of the northern circuit. First, the dry-season elephant concentration: from June through October, the Tarangire River is the last permanent water in a 20,000 km² ecosystem, and elephant herds from across that range contract toward it. Second, its ancient baobab landscape: the park has the highest density of baobab trees in Tanzania, with trunks up to 10 metres in diameter and ages that are plausibly over 1,000 years, though no specific tree has been radiocarbon-dated. Third, species you cannot find elsewhere on the northern circuit: fringe-eared oryx, greater kudu in the southern section, and documented rock python in baobab hollows.",
+      },
+      {
+        question: "When is the best time to visit Tarangire?",
+        answer:
+          "June through October for wildlife concentration. August and September are peak: maximum elephant and buffalo density on the river, predators active, fringe-eared oryx reliable on the open flats. June-July is the best balance of wildlife and lower vehicle numbers. November through March is green season, with migratory grazers dispersed across the wider ecosystem and resident wildlife still present. Bird diversity peaks in the wet season with the arrival of European and Asian migrants. Avoid April-May in a vehicle-dependent itinerary: the long rains make some tracks difficult and several camps close.",
+      },
+      {
+        question: "How many elephants are in Tarangire?",
+        answer:
+          "No current published TAWIRI census isolates the elephant population inside the Tarangire National Park boundary specifically. The Tarangire-Manyara ecosystem, which the elephants range across seasonally, holds one of the largest elephant populations in northern Tanzania. What is consistent and documented: dry-season concentrations on the Tarangire River regularly produce sightings of multi-generational herds of 50 to several hundred animals in one area. The Tarangire Elephant Research Project has individually identified and tracked hundreds of specific elephants in the ecosystem since 1993.",
+      },
+      {
+        question: "Are there tree-climbing pythons in Tarangire?",
+        answer:
+          "Yes. Rock pythons using hollow baobab trunks as shelter and ambush sites is documented behaviour associated specifically with Tarangire. The pythons coil inside or on the exterior of baobab cavities; this is not typical python behaviour elsewhere on the northern circuit. Sightings are not guaranteed on any single game drive, but guides look for them deliberately. Kuro Airstrip and the northern river circuit are the most common areas for sightings. This is a genuine field observation, not a tour operator embellishment.",
+      },
+      {
+        question: "How many bird species does Tarangire have?",
+        answer:
+          "588 species are recorded for Tarangire National Park (Avibase 2025). This figure is significantly higher than the 550 commonly cited on most operator websites. Key species include the ashy starling, endemic to north-central Tanzania and reliable in Tarangire's baobab woodland; yellow-collared lovebird; rufous-tailed weaver; Von der Decken's hornbill; martial eagle. Silale Swamp in the central park is the highest-diversity birding spot, producing large concentrations of waterbirds year-round alongside saddle-billed storks, open-billed storks, and spoonbills.",
+      },
+      {
+        question: "Is Tarangire worth visiting or just a day stop?",
+        answer:
+          "Worth a dedicated stay of two to three nights if you are in Tanzania during the dry season (June-October). Tarangire is not a transit stop on the way to the Serengeti. The dry-season elephant concentration is a different wildlife experience from anything the Serengeti delivers: massed family groups on a single river, undiluted by the vast landscape. One day gives you a good game drive. Two nights gives you Silale Swamp, time on the river at different hours, and a realistic chance of finding lion on a kill or python in a baobab. The Lemiyon area in the south requires a third day and is for guests who specifically want greater kudu and a different landscape character.",
+      },
+      {
+        question: "How far is Tarangire from Arusha?",
+        answer:
+          "The main Arusha gate is approximately 118 km from Arusha, about 2 to 2.5 hours by road depending on traffic through Makuyuni. The route is tarmac the entire way. Tarangire is the first park on the standard northern circuit and the closest major park to Arusha by road, which makes it the natural Day 1 destination on most itineraries. The Kuro Airstrip inside the park is served by Coastal Aviation and Auric Air from Arusha (approximately 30-40 minutes flight time).",
+      },
+      {
+        question: "Can you see the Big Five in Tarangire?",
+        answer:
+          "Not reliably. Lion, leopard, elephant, and buffalo are all present and reasonably reliable in the dry season. Rhino are absent from Tarangire; there is no active rhino population here. Tarangire is not a Big Five park in practice, and any operator claiming otherwise is not being honest. What Tarangire offers instead is depth on elephant, a genuinely unusual landscape, and species (fringe-eared oryx, greater kudu, rock python) that add to your Tanzania list without being on any Big Five checklist.",
+      },
+      {
+        question: "Is Tarangire safe from tsetse flies?",
+        answer:
+          "Tsetse flies are present in Tarangire, particularly in the dense riverine bush areas, and they bite. The bites are painful but health risk to tourists is extremely low. The main precaution is simple: avoid dark blue or black clothing, which strongly attracts tsetse; wear light-coloured long sleeves; apply DEET repellent to exposed skin. Health transmission risk from tsetse-borne sleeping sickness in tourist areas of northern Tanzania is rare. The flies do not make Tarangire a park to avoid. They are a minor discomfort that good preparation eliminates.",
+      },
+      {
+        question: "What is the difference between Tarangire and the Serengeti?",
+        answer:
+          "They are different parks serving different objectives. The Serengeti offers the Great Migration, 14,763 km² of varied terrain, and the world's most studied lion population. Tarangire offers a more concentrated dry-season experience on a smaller stage, with significantly lower vehicle density than the Serengeti in peak season. The species that Tarangire adds to a northern circuit itinerary, fringe-eared oryx and greater kudu, are absent from the Serengeti entirely. Most northern circuit itineraries include both. If you are choosing between them on a short trip, the Serengeti takes priority. But the two are not alternatives in the same category.",
+      },
+      {
+        question: "What is the fringe-eared oryx?",
+        answer:
+          "The fringe-eared oryx is a subspecies of the East African oryx, distinguished by distinctive black tufts of hair at the tips of its ears. It is a large, pale-coloured antelope with long straight horns reaching 75-90 cm. Tarangire and the surrounding Tarangire-Manyara ecosystem form one of the most accessible places in the world to see them; they are absent from the Serengeti, Ngorongoro, and Ruaha. Small groups of fringe-eared oryx appear on the open grassland areas of the northern park on most dry-season game drives.",
       },
     ],
     relatedItineraries: [
@@ -518,65 +608,150 @@ export const nationalParks: Record<string, NationalPark> = {
   "lake-manyara": {
     slug: "lake-manyara",
     name: "Lake Manyara National Park",
-    tagline: "Tree-climbing lions and flamingo-lined shores",
+    tagline: "A flooding alkaline lake, 624 bird species, and one of the most misquoted parks in Africa.",
     description:
-      "A compact gem famous for tree-climbing lions, flamingos, and diverse ecosystems along the Great Rift Valley.",
+      "Lake Manyara National Park is 330 km² at the base of the Rift Valley escarpment, of which roughly 70% is the alkaline lake itself. It records 624-626 bird species (Avibase 2025), more than almost any other enclosed park in Africa. The tree-climbing lion behaviour the park is marketed on is real but no longer reliably observed; the visual asset most operators are not telling you about is the Ghost Forest, a stretch of fever tree skeleton woodland standing in the lake's advancing alkaline water since approximately 2020.",
     quickFacts: {
-      area: "330 km² (70% is the lake)",
-      unescoStatus: "National Park since 1960",
-      bestTime: "Year-round, best June - October",
-      famousFor: "Tree-climbing lions, flamingos, groundwater forest",
-      nearestAirport: "Lake Manyara Airstrip, Kilimanjaro International",
+      area: "330 km² total · ~70% alkaline lake · ~100 km² terrestrial",
+      unescoStatus: "National Park since 1960 · UNESCO Biosphere Reserve",
+      bestTime: "Year-round · best June-October for land wildlife · Nov-Mar for birds and flamingos",
+      famousFor: "624 bird species, groundwater forest, Ghost Forest flooded woodland, tree-climbing lion (unreliable), flamingos (variable)",
+      nearestAirport: "Lake Manyara Airstrip (serviced by Coastal Aviation, Auric Air, Air Excel) · Kilimanjaro International (JRO)",
     },
     about: [
-      "Lake Manyara National Park may be one of Tanzania's smallest parks, but it packs incredible diversity into its compact size. The park stretches along the base of the dramatic Rift Valley escarpment, encompassing a groundwater forest, acacia woodlands, grasslands, and the alkaline lake itself.",
-      "The park is famous for its tree-climbing lions, a behavioral quirk not seen as commonly elsewhere. Scientists believe the lions climb trees to escape tsetse flies and buffalo, or simply to catch a breeze. Watching a pride of lions draped over the branches of an acacia tree is a signature Lake Manyara experience.",
-      "The lake itself attracts massive flocks of flamingos when water levels are right, creating a stunning pink shoreline. Over 400 bird species have been recorded here, making it a birdwatcher's paradise.",
+      "Lake Manyara sits at the base of the Rift Valley escarpment, which rises 600 metres above it in a near-vertical wall of forest. That escarpment is not a backdrop. It is the ecological engine of the park. Springs from the highland forest above push groundwater down through the rock and emerge at the base of the cliff as a belt of artesian flow, producing a strip of groundwater forest unlike anything else at this altitude in East Africa. The forest grows without reliable rainfall; it is fed from below. Figs, mahogany, and sausage trees form a canopy over blue monkeys, olive baboon troops numbering in the hundreds, and a lower storey that provides cover for elephant, buffalo, and leopard. The park entrance runs through this forest before the vegetation opens onto the lakeshore grasslands.",
+      "The tree-climbing lion is the park's headline species on every operator page, and it is worth being precise about. The behaviour is real and documented: certain Manyara lion prides do climb trees, resting on branches of fever acacias and sycamore figs, particularly during the heat of the day. The honest position in 2024-2025 is that sightings are not reliable. The behaviour appears to be decreasing in frequency, the specific prides known for it are not always traceable, and it is not unique to Manyara: the Ishasha sector of Queen Elizabeth National Park in Uganda is now arguably more consistently associated with tree-climbing lions than Manyara is. If you come to Lake Manyara specifically for tree-climbing lions and do not see them, you will have been oversold. The park's actual strengths are its birds, its groundwater forest, its hippo pools, and a visual phenomenon almost no operator mentions.",
+      "Since approximately 2020, Lake Manyara's water level has been rising. The cause is a combination of above-average rainfall and the volcanic groundwater system beneath the Rift Valley floor pushing more water into the basin. The advancing lake has flooded the fever tree woodland at the southern end of the terrestrial strip, killing the trees. What remains is a Ghost Forest: white-grey skeleton fever tree trunks standing in shallow alkaline water, their dead canopy open against the sky, with the flamingo-pink lake beyond. This is one of the most photogenic and genuinely unusual landscapes in northern Tanzania, and it is not something that existed before 2020. The operators not mentioning it either do not know about it or are writing from a template last updated years ago.",
+      "Ernest Hemingway visited in 1933 and described Lake Manyara in Green Hills of Africa as 'the loveliest I had seen in Africa.' That is the actual quote. Many safari websites and lodge brochures attribute to him the phrase 'Africa's Eden' — this is a marketing invention with no source in his writing. The distinction matters less than the underlying point: the park's visual character is distinctive enough that a writer not prone to sentimentality about landscapes used it as a benchmark. What Hemingway saw was the escarpment, the forest, the lake, and the flamingos. The Ghost Forest was not there. It is a 2024 landscape that he did not describe.",
     ],
     wildlife: [
       {
-        name: "Tree-climbing Lion",
-        description: "Famous for their unusual tree-climbing behavior",
+        name: "Birds (624 species)",
+        description: "624-626 species recorded (Avibase 2025). The most commonly cited figure of 400+ on competitor sites is significantly low. Key targets: lesser flamingo and greater flamingo on the lake surface; pink-backed pelican in large breeding colonies; African fish eagle; saddle-billed stork; grey crowned crane. The groundwater forest produces a different set: Schalow's turaco, trumpeter hornbill, brown-headed parrot. The Manyara bird list is one of the highest of any sub-2,000 km² park in Africa.",
       },
       {
         name: "Flamingo",
-        description: "Thousands of lesser and greater flamingos when conditions are right",
+        description: "Lesser flamingo is the primary species, with greater flamingo also present. Manyara is an alkaline lake, and flamingo numbers track the cyanobacteria bloom cycle that provides their food — highly variable. Years with optimal water levels and salinity produce tens of thousands of birds along the southern and eastern shoreline. Years without those conditions may produce hundreds or none. The Ghost Forest area on the southern shore is currently one of the most photogenic locations for flamingo photography when birds are present, with skeleton trees framing the pink lake surface.",
+      },
+      {
+        name: "Hippo",
+        description: "Permanent pools in the river outlets and along the lakeshore provide reliable hippo sightings year-round. The Maji Moto Hot Springs area in the south of the park holds a hippo pool alongside geothermal vents that produce warm, sulphurous water. This is a specific, unusual feature that most guides include on a full-day circuit.",
       },
       {
         name: "Elephant",
-        description: "Good populations in the groundwater forest",
+        description: "Resident elephant move between the groundwater forest and the open lakeshore grasslands. Family groups are encountered in the forest section near the park entrance and along the escarpment base. Numbers are lower than Tarangire, but the groundwater forest encounters are visually very different from open-country sightings.",
       },
-      { name: "Hippo", description: "Pools along the lake shore" },
-      { name: "Baboon", description: "Large troops in the forest areas" },
-      { name: "Blue Monkey", description: "Common in the groundwater forest" },
+      {
+        name: "Blue Monkey and Olive Baboon",
+        description: "The groundwater forest is the most reliable location in northern Tanzania to see blue monkeys alongside olive baboons in the same habitat. Baboon troops of 50-100 animals are common near the forest entrance. Blue monkeys move through the upper canopy. Both species are present year-round.",
+      },
+      {
+        name: "Lion (tree-climbing, variable)",
+        description: "Tree-climbing behaviour is documented in certain Manyara prides and is real. As of 2024-2025, sightings are not reliably predictable. The behaviour is linked to specific prides and appears to have declined from the frequency reported in earlier decades. Do not structure a visit around this as the primary objective. If lions are seen in trees, it is a genuine bonus. If not, the park has more than enough other content to justify the day.",
+      },
     ],
     bestTimeToVisit: [
       {
-        month: "Jan-Mar",
-        weather: "Warm, rains",
-        wildlife: "Good, flamingos variable",
-        crowds: "Low",
+        month: "Jun-Oct",
+        weather: "Dry season. Cool, clear days. Escarpment mist common in the morning.",
+        wildlife: "Best for land wildlife: elephant in the forest, hippo, lion, buffalo. Tree-climbing lion sightings most often reported in hot dry-season afternoons. Bird diversity steady year-round.",
+        crowds: "Moderate. Higher than Tarangire, lower than Serengeti.",
+      },
+      {
+        month: "Nov-Mar",
+        weather: "Short rains Nov-Dec, then a drier interlude Jan-Feb, then long rains approach.",
+        wildlife: "Bird diversity peaks with migrants. Flamingo numbers most likely to be high if water and salinity conditions are right. Green season photography. Ghost Forest most dramatic against a stormy sky.",
+        crowds: "Low-Moderate. Good availability.",
       },
       {
         month: "Apr-May",
-        weather: "Heavy rains",
-        wildlife: "Lush, some roads difficult",
-        crowds: "Very low",
-      },
-      {
-        month: "Jun-Oct",
-        weather: "Dry, pleasant",
-        wildlife: "Excellent, tree lions active",
-        crowds: "Moderate",
-      },
-      {
-        month: "Nov-Dec",
-        weather: "Short rains",
-        wildlife: "Good, landscape green",
-        crowds: "Low-Moderate",
+        weather: "Long rains. Some tracks can become muddy and impassable.",
+        wildlife: "Lush landscape, full bird diversity, but reduced access to some areas. Flamingo numbers variable.",
+        crowds: "Very low.",
       },
     ],
-    relatedItineraries: ["8-day-classic-tanzania-safari"],
+    fees: [
+      { item: "Non-resident adult entry (peak, 16 May - 14 Mar)", amount: "$82.60 (VAT incl.)", notes: "Base $70 + 18% VAT. TANAPA 2023/24 tariff." },
+      { item: "Non-resident adult entry (low, 15 Mar - 15 May)", amount: "$70.80 (VAT incl.)", notes: "Base $60 + 18% VAT." },
+      { item: "Child age 5-15", amount: "$23.60 (VAT incl.)", notes: "Both seasons." },
+      { item: "Under 5", amount: "Free" },
+      { item: "Vehicle fee (TZ-registered Land Cruiser)", amount: "~TZS 41,300 (~$17-20)", notes: "Paid at gate in Tanzanian shillings." },
+      { item: "Canopy Walkway", amount: "USD 20 per person", notes: "Operated inside the park. Check current availability — operational status has been intermittent." },
+      { item: "VAT", amount: "18%", notes: "Applied to all fees at the GePG payment gateway." },
+      { item: "Payment method", amount: "Card only", notes: "No cash at any TANAPA gate. Re-verify fees after July 1, 2026." },
+    ],
+    additionalSections: [
+      {
+        heading: "The Ghost Forest",
+        body: "Since approximately 2020, the southern end of Lake Manyara's terrestrial strip has been changing in a way that has not been widely communicated in safari marketing.\n\nThe lake's water level has been rising. The cause is a combination of increased rainfall in the highland catchment area and the volcanic groundwater system beneath the Rift Valley floor pushing more water into the basin than it is losing to evaporation. The advancing alkaline water has flooded what was previously a zone of fever acacia woodland at the lake's edge.\n\nThe fever trees have died. What remains is a Ghost Forest: pale white-grey skeleton trunks, their root systems submerged, standing in shallow alkaline water with the open lake beyond. The dead canopy frames the sky and the flamingo-pink surface of the water. In low morning light, the scene is unlike anything else in northern Tanzania.\n\nThis landscape did not exist before 2020. Operator pages, lodge websites, and booking platforms describe a Lake Manyara that predates it. Guides who visit regularly know about the Ghost Forest. Guests arrive having read descriptions of a park that no longer looks the same as when those descriptions were written.\n\nThe Ghost Forest is not a problem for the park. It is currently one of its most visually striking assets. For photographers, the combination of skeleton trees, alkaline water, and flamingo in the foreground produces images that have no equivalent at any other park on the northern circuit.",
+      },
+      {
+        heading: "Canopy Walkway and Escarpment Viewpoints",
+        body: "Lake Manyara has a canopy walkway inside the groundwater forest. The walkway, suspended in the forest canopy at approximately 3.5 metres above the ground, allows visitors to move through the upper level of the forest at eye level with the birds and primates that work the canopy. Schalow's turaco and blue monkey sightings from the walkway are among the most intimate wildlife encounters available in a park that otherwise requires you to stay in a vehicle.\n\nThe walkway has had intermittent operational status. Before including it in a Manyara day, confirm with the guide that it is currently accessible. When it is operating, a morning on the walkway before the midday ground drive is the recommended sequence: the forest primates are active in the early hours, and the walkway experience is genuinely different from the vehicle-based circuit.\n\nThe top of the Rift Valley escarpment is visible throughout the park. The escarpment itself is not accessible from inside the park, but the town of Mto wa Mbu at the base of the escarpment, just outside the gate, sits at the start of the road that climbs to the rim at Karatu and continues to Ngorongoro. The view of the lake from above, accessible from the escarpment road, is frequently cited by guides as a better overview than anything available from inside the park itself.",
+      },
+      {
+        heading: "The Honest Case For Lake Manyara",
+        body: "Lake Manyara is consistently used as a half-day stop on the drive between Arusha and Ngorongoro. It is often the first park visitors see, used as a warm-up before the main itinerary. This is not wrong, but it undersells the park's strongest assets.\n\nA half-day at Lake Manyara produces a groundwater forest drive, a lakeshore circuit, and reasonable odds of elephant, hippo, flamingo (if conditions are right), and baboon. It does not produce tree-climbing lions reliably, and it does not reach the Ghost Forest or the Maji Moto Hot Springs in the south, both of which require a full-day circuit.\n\nFor a first-time northern circuit traveller, a half-day stop at Manyara as an add-on to a Ngorongoro-Serengeti itinerary is appropriate. The park can be fully appreciated in that window if expectations are set correctly: it is not a big-game park, it is one of Africa's premier birding parks with an unusually varied terrestrial habitat in a compact area. For a bird-focused traveller or a photographer specifically interested in the Ghost Forest, a full day with an overnight at one of the lodges outside the gate in Mto wa Mbu makes sense.\n\nThe repeat visitor criticism is consistent: the park is short. Most guests feel they have seen the main circuit in four to five hours. That is accurate, and it is a structural fact of the park's size. The 100 km² of accessible terrestrial habitat is genuinely compact. The depth is in the details — specific bird species, the forest walk, the southern lake landscapes — not in scale.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is Lake Manyara National Park famous for?",
+        answer:
+          "Historically, tree-climbing lions. In practice, as of 2024-2025, the park's most significant and undermarketed assets are its birds (624-626 species, one of the highest counts of any enclosed park in Africa), its groundwater forest fed by springs from the Rift Valley escarpment, and the Ghost Forest, a stretch of flooded fever tree woodland on the advancing lakeshore created since approximately 2020. The tree-climbing lion behaviour is real but sightings are no longer reliably predictable.",
+      },
+      {
+        question: "Do lions really climb trees in Lake Manyara?",
+        answer:
+          "Yes, but less predictably than marketing suggests. Certain Manyara lion prides do rest in trees, and this is documented behaviour going back decades. As of 2024-2025, sightings are variable and not reliable enough to structure a visit around. The behaviour is also not unique to Manyara: Ishasha in Uganda's Queen Elizabeth National Park is now arguably more consistent for tree-climbing lion sightings. If you see lions in trees at Manyara, it is a genuine experience. If you do not, the park has bird diversity, a groundwater forest, hippos, and the Ghost Forest to justify the day.",
+      },
+      {
+        question: "Did Hemingway really call Lake Manyara 'Africa's Eden'?",
+        answer:
+          "No. This phrase does not appear in Hemingway's writing. The actual quote, from Green Hills of Africa (1935), is that Manyara was 'the loveliest I had seen in Africa.' 'Africa's Eden' is a marketing invention that has circulated across safari operator websites without a primary source. The real quote is a meaningful compliment from a writer not given to easy sentimentality. The invented quote is not, and any operator using it either has not checked or does not care.",
+      },
+      {
+        question: "How many bird species are in Lake Manyara?",
+        answer:
+          "624-626 species are recorded (Avibase 2025). Most operator websites cite '400+', which significantly understates the count. The park's bird diversity comes from the layering of distinct habitats in a small area: groundwater forest, acacia woodland, open lakeshore grassland, alkaline lake, and the escarpment edge. Key species include lesser flamingo, pink-backed pelican, African fish eagle, grey crowned crane, Schalow's turaco, and saddle-billed stork. This is one of the highest bird counts for any enclosed park of this size in Africa.",
+      },
+      {
+        question: "What is the Ghost Forest at Lake Manyara?",
+        answer:
+          "The Ghost Forest is a stretch of fever acacia woodland on the southern lakeshore that has been killed by the advancing water level of Lake Manyara since approximately 2020. The rising alkaline water flooded the root systems of the fever trees, killing them and leaving white-grey skeleton trunks standing in the lake. The result is one of the most visually distinctive landscapes in northern Tanzania: bare tree skeletons in shallow water, with the open lake and often flamingos behind. It is a genuinely unusual photographic subject with no equivalent on the northern circuit.",
+      },
+      {
+        question: "Are flamingos reliable at Lake Manyara?",
+        answer:
+          "No. Flamingo numbers at Manyara are highly variable and track the cyanobacteria bloom in the alkaline lake, which is the birds' primary food source. In years with optimal water level and salinity, tens of thousands of lesser flamingos gather along the southern and eastern shoreline. In years without those conditions, numbers may be in the hundreds or absent. Planning a visit specifically around flamingos at Manyara is not advisable. The Ngorongoro Crater floor's Lake Magadi is a more predictable option, though it is also variable.",
+      },
+      {
+        question: "How far is Lake Manyara from Arusha?",
+        answer:
+          "The park entrance is approximately 125 km from Arusha, about 2 to 2.5 hours by road. The route runs south from Arusha through Makuyuni and then descends the Rift Valley escarpment into Mto wa Mbu, the town immediately adjacent to the park gate. Lake Manyara Airstrip, 1 km from the gate, is served by Coastal Aviation, Auric Air, and Air Excel from Arusha (approximately 20-30 minutes flight time). The airstrip is the standard arrival point for guests continuing to Ngorongoro and the Serengeti by charter flight.",
+      },
+      {
+        question: "Is Lake Manyara worth visiting?",
+        answer:
+          "Yes, on its own terms. Lake Manyara is not a big-game park. It is a compact, habitat-diverse park with one of Africa's highest bird species counts, a groundwater forest unlike anything else on the northern circuit, reliable hippo, elephant, and baboon, and the Ghost Forest, which is a 2024 visual asset no competitor is talking about. A half-day stop as part of a Ngorongoro-Serengeti circuit is appropriate for most first-time travellers. For birders or photographers, a full day is worth it. Do not come expecting reliable tree-climbing lion sightings; expect everything else the park actually delivers.",
+      },
+      {
+        question: "What is the canopy walkway at Lake Manyara?",
+        answer:
+          "A suspended walkway in the groundwater forest at approximately 3.5 metres above ground level, allowing visitors to move through the forest canopy at primate and bird height. Blue monkey and Schalow's turaco sightings from the walkway are more intimate than any vehicle-based encounter in the same habitat. The walkway has had intermittent operational availability. Confirm with your guide before the day that it is currently accessible. When operating, a morning on the walkway before the midday lakeshore circuit is the recommended sequence.",
+      },
+      {
+        question: "How does Lake Manyara compare to Tarangire?",
+        answer:
+          "They are adjacent parks with very different characters. Tarangire is large, dry-season wildlife-dense, and built around its elephant concentration. Lake Manyara is compact, habitat-diverse, and built around birds, forest encounters, and lakeshore scenery. Most northern circuit itineraries include both: Tarangire first (or last) for game viewing, Manyara as a shorter stop on the approach to Ngorongoro. Neither is a substitute for the other. If you must choose one, Tarangire delivers more conventional safari wildlife in the dry season. If birding or forest habitats are the priority, Manyara is the right call.",
+      },
+      {
+        question: "Can you see the Big Five in Lake Manyara?",
+        answer:
+          "No. Buffalo are present in the park but not in reliable large numbers. Lion are present. Leopard are present but rarely seen. Elephant are reliable in the groundwater forest. Rhino are absent. Lake Manyara is not promoted as a Big Five park by honest operators, and any claim to the contrary is misleading. The park's strength is species diversity of a different kind: bird diversity, primate encounters in the forest, and an unusually compact combination of habitats that you cannot find in a single day anywhere else on the northern circuit.",
+      },
+    ],
+    relatedItineraries: ["8-day-classic-tanzania-safari", "honeymoon-tanzania-zanzibar"],
   },
   ndutu: {
     slug: "ndutu",
