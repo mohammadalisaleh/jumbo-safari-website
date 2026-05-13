@@ -49,104 +49,209 @@ export const nationalParks: Record<string, NationalPark> = {
   serengeti: {
     slug: "serengeti",
     name: "Serengeti National Park",
-    tagline: "Home to the Great Migration and endless plains",
+    tagline: "The migration spends nine months here. The rest is just 3,000 lions.",
     description:
-      "Tanzania's most iconic national park, home to the Great Migration and year-round big cat sightings.",
+      "Serengeti National Park: 14,763 km² of Tanzania, home to 1.3 million migrating wildebeest, the world's most studied lion population, and year-round leopard along the Seronera River. Tanzania's most iconic safari destination.",
+    heroImage: {
+      src: "/serengeti-plains-golden-hour-tanzania-safari-hero.jpg",
+      alt: "Golden hour light over the Serengeti plains with acacia trees silhouetted against an orange sky, Tanzania",
+    },
     quickFacts: {
-      area: "14,763 km² (5,700 sq mi)",
+      area: "14,763 km² (Tanzania) · 30,000 km² greater ecosystem",
       unescoStatus: "UNESCO World Heritage Site since 1981",
-      bestTime: "June - October (dry season)",
-      famousFor: "Great Migration, Big cats, Endless plains",
-      nearestAirport: "Seronera Airstrip (in park), Kilimanjaro International (KIA)",
+      bestTime: "Year-round · Feb (calving) · Aug-Sep (Mara crossings)",
+      famousFor: "Great Migration, Serengeti Lion Project, Seronera leopards, calving season",
+      nearestAirport: "Seronera Airstrip (in-park) · Kilimanjaro International (JRO)",
     },
     about: [
-      "The Serengeti is one of the world's most celebrated wildlife sanctuaries, spanning nearly 15,000 square kilometers of savanna, woodland, and riverine forests in northern Tanzania. Its name comes from the Maasai word 'siringet,' meaning 'endless plains,' an apt description for a landscape where the horizon stretches unbroken in every direction.",
-      "Established as a game reserve in 1921 and upgraded to a national park in 1951, the Serengeti has become synonymous with African safari. The park forms the core of the greater Serengeti ecosystem, which extends into Kenya's Maasai Mara and encompasses a total area of roughly 30,000 square kilometers.",
-      "The Serengeti is perhaps best known for hosting the Great Migration, the annual movement of over 1.5 million wildebeest, 200,000 zebra, and 500,000 gazelle across the plains in search of fresh grass and water. This natural spectacle is often called the greatest wildlife show on Earth.",
-      "Beyond the migration, the Serengeti supports Africa's largest lion population (over 3,000 individuals), along with significant numbers of leopards, cheetahs, elephants, buffalo, and over 500 bird species. The park's diverse habitats (from the short-grass plains of the south to the riverine woodlands of the north) ensure year-round wildlife viewing.",
-      "The landscape is punctuated by rocky outcrops called kopjes, which provide shelter and vantage points for predators. These ancient granite formations, some over 500 million years old, are iconic features of the Serengeti scenery and prime spots for leopard and lion sightings.",
+      "The treeless southern plains are not a design accident. Flat and short-grassed, the expanse south of Naabi Hill sits on a calcrete hardpan formed from ash erupted by Ol Doinyo Lengai, Africa's only active carbonatite volcano, and the long-extinct Kerimasi. That hardened ash prevents trees from rooting. It is also loaded with sodium, calcium, and phosphorus. In January and February, when 1.3 million wildebeest cows need those minerals for milk production during calving, the herds gather here. The migration does not simply follow rain. It follows a volcanic chemistry that has not changed in 150,000 years.",
+      "The park covers 14,763 square kilometres and divides into five zones, each with different wildlife patterns and crowd levels. The central Seronera Valley, built around a permanent river and its gallery forest, is the most reliable year-round area. The southern plains (Ndutu) are calving territory in February. The western corridor is June crossing country on the Grumeti River. Northern Serengeti at Kogatende is the August-September Mara River crossing zone. Lobo in the northeast is the least visited and most underrated, with permanent springs, consistent elephant, and the southbound migration passing through in October and November.",
+      "The park holds approximately 3,000 lions across the broader Serengeti-Mara ecosystem. That figure is a model, not a census. The Serengeti Lion Project, running continuously since George Schaller founded it in 1966, directly monitors around 330 lions across 24 prides in the central study area. Craig Packer led the project from 1978 until 2014, when Tanzania banned him for publishing research that exposed corruption in the trophy hunting industry. More than 5,000 individual lions have been named, genealogically mapped, and health-tracked across 12 generations. No other large-mammal population has been studied this closely, for this long.",
+      "Nine of ten safari websites list the Serengeti as Big Five territory without caveats. The caveat matters. Black rhino in the Serengeti numbered around 700 in the early 1970s. Poaching reduced that to three animals by 1993. A 2010 reintroduction at Moru Kopjes and a 2019 translocation of nine more into the adjacent Ikorongo-Grumeti concession have rebuilt the population to roughly 50-70 animals. Seeing one requires a dedicated, ranger-led permit excursion to Moru Kopjes. Not a standard game drive outcome. For reliable rhino, Ngorongoro Crater is the right park.",
+      "The wildebeest count is genuinely contested. The TAWIRI and Frankfurt Zoological Society aerial census puts the migratory herd at approximately 1.3 million wildebeest. A 2025 Oxford University satellite study using AI-assisted imagery returned estimates of 325,000 to 533,000, attributing the gap to methodology differences rather than population collapse. The figure on most operator websites, 1.5 to 2 million, combines wildebeest with zebra and gazelle and presents it as a wildebeest-only number. The honest range is somewhere between 500,000 and 1.5 million. Use 1.3 million as the working figure.",
     ],
     wildlife: [
-      { name: "Lion", description: "Africa's largest lion population with over 3,000 individuals" },
       {
-        name: "Elephant",
-        description: "Large herds especially in the western corridor and northern regions",
+        name: "Lion",
+        description: "~330 directly monitored across 24 prides in the central study area by the Serengeti Lion Project (1966-present). More than 5,000 individuals tracked across 12 generations. Densest populations around Seronera Valley, Simba Kopjes, Maasai Kopjes, and along the Grumeti River.",
       },
       {
         name: "Leopard",
-        description: "Often spotted in the Seronera Valley and around kopjes",
+        description: "The sausage trees (Kigelia africana) along the Seronera River are arguably the best leopard-viewing habitat in Africa. Multiple generations of habituated leopards have been monitored here since the 1960s. Also reliable around Maasai Kopjes and in western corridor riverine woodland.",
       },
       {
         name: "Cheetah",
-        description: "The open plains are ideal for these speed hunters",
+        description: "250-500 in the ecosystem (Serengeti Cheetah Project estimate). Southern plains and Ndutu in wet season are most reliable, when Thomson's gazelle concentrate. The Namiri Plains in the east, reopened after years as a dedicated cheetah research zone, consistently delivers coalition sightings.",
+      },
+      {
+        name: "Elephant",
+        description: "~6,011 on the Tanzania-side ecosystem by 2014 TAWIRI/TANAPA census, up 98% from 2009. Concentrations in northern Serengeti (Lobo) and the western corridor. Unlike Tarangire's massed dry-season herds, Serengeti elephants move in smaller family groups across a much larger landscape.",
       },
       {
         name: "Wildebeest",
-        description: "Over 1.5 million participate in the Great Migration",
+        description: "~1.3 million migratory animals by TAWIRI/FZS aerial census. Calving mid-January to mid-February: up to 8,000 calves per day at peak. Mara River crossings July-October in the northern Serengeti are the most dramatic single wildlife event on the continent.",
       },
       {
-        name: "Zebra",
-        description: "200,000 zebra migrate alongside the wildebeest herds",
+        name: "Buffalo",
+        description: "30,000-40,000 in the park. Aggregations of 500-1,000 animals form in dry season around permanent water, among the largest single-herd gatherings in East Africa. Most reliable around Seronera year-round and in the western corridor from July-August.",
+      },
+      {
+        name: "Specialist Birds",
+        description: "500+ species recorded across the ecosystem. Three range-restricted targets: Grey-crested Helmet-Shrike (endemic to the Serengeti-Mara ecosystem, reliable in Seronera acacia woodland), Fischer's Lovebird (northern Tanzania range, reliable in western corridor), Rufous-tailed Weaver (Tanzania endemic, common around Seronera).",
       },
     ],
     migration: {
       description:
-        "The Great Migration is a continuous, year-round movement of over 1.5 million wildebeest, zebra, and gazelle through the Serengeti-Mara ecosystem. The herds follow the rains in search of fresh grazing, creating one of nature's most spectacular events.",
+        "The Great Migration is approximately 1.3 million wildebeest plus 200,000 zebra and hundreds of thousands of gazelle in a continuous, rainfall-driven circuit between Tanzania and Kenya. The herds spend roughly nine months in Tanzania. The calendar below is a tendency, not a schedule: actual timing floats with the rains.",
       months: [
         {
-          month: "January - March",
-          activity: "Calving season on the southern plains. Over 500,000 calves born.",
-        },
-        {
-          month: "April - May",
-          activity: "Herds begin moving north through the Western Corridor.",
-        },
-        {
-          month: "June - July",
+          month: "Jan-Feb (South, Ndutu area)",
           activity:
-            "The dramatic Grumeti River crossings. Crocodiles await the herds.",
+            "Calving season on the volcanic short-grass plains. Mid-January to mid-February is the peak; February is the safest single booking month. Up to 8,000 calves born per day at peak. Predator activity is intense. Note: Ndutu sits in the Ngorongoro Conservation Area, not Serengeti NP.",
         },
         {
-          month: "August - October",
+          month: "Mar-May (Central to West)",
           activity:
-            "Mara River crossings in the northern Serengeti. Peak action.",
+            "Herds move northwest through central Serengeti following retreating rains. A green, uncrowded landscape. Late April and May bring heavy rain that can make some tracks impassable.",
         },
         {
-          month: "November - December",
-          activity: "Herds return south following the short rains.",
+          month: "Late May-Jul (Western Corridor, Grumeti)",
+          activity:
+            "Grumeti River crossings, the herds' first major water obstacle. June is peak. Fewer vehicles than the Mara: Asilia's field data puts average vehicle count at fewer than 15 per crossing event. Singita Grumeti concession structurally limits visitor density.",
+        },
+        {
+          month: "Aug-Oct (Northern Serengeti, Mara)",
+          activity:
+            "Mara River crossings at Kogatende and the Lamai Wedge. August and early September are peak. Field logs documented active crossings as late as 21 October 2024. Average vehicle count at Kogatende crossings: far fewer than the Kenyan side. First arrivals can begin mid-July in early years.",
+        },
+        {
+          month: "Nov-Dec (South, returning)",
+          activity:
+            "Herds return south through Lobo and central Serengeti following the short rains. Lobo is the smart choice for October-November travelers wanting southbound migration without August crowds.",
         },
       ],
     },
+    fees: [
+      { item: "Non-resident adult entry (peak, 16 May - 14 Mar)", amount: "$82.60 (VAT incl.)", notes: "Base $70 + 18% VAT" },
+      { item: "Non-resident adult entry (low, 15 Mar - 15 May)", amount: "$70.80 (VAT incl.)", notes: "Base $60 + 18% VAT" },
+      { item: "Child age 5-15", amount: "$23.60 (VAT incl.)", notes: "Both seasons, per person" },
+      { item: "Under 5", amount: "Free" },
+      { item: "Concession fee (lodges inside park)", amount: "$70.80 per person/night", notes: "Often bundled into lodge rate" },
+      { item: "Balloon safari (Serengeti Balloon Safaris Ltd)", amount: "$599 per person", notes: "Includes $40 TANAPA permit, ~60-min flight, champagne, bush breakfast. Park entry not included." },
+      { item: "Vehicle fee (TZ-registered Land Cruiser, ~3,000 kg)", amount: "~TZS 41,300 (~$17-20)", notes: "Paid at gate in Tanzanian shillings" },
+      { item: "VAT", amount: "18%", notes: "Applied to all fees at the GePG payment gateway" },
+      { item: "Payment method", amount: "Card only", notes: "No cash at any TANAPA gate. Fees from 2023/24 TANAPA tariff; re-verify after July 1, 2026." },
+    ],
     bestTimeToVisit: [
       {
-        month: "Jan-Mar",
-        weather: "Warm, occasional rain",
-        wildlife: "Calving season, predator action",
-        crowds: "Moderate",
+        month: "Jan-Feb",
+        weather: "Warm, short daily showers on the southern plains",
+        wildlife: "Calving season. 8,000 calves/day at peak. Predator action at maximum.",
+        crowds: "Moderate (underrated window)",
       },
       {
-        month: "Apr-May",
-        weather: "Heavy rains",
-        wildlife: "Lush landscapes, quieter",
+        month: "Mar-May",
+        weather: "Long rains. Tracks in central and west can flood.",
+        wildlife: "Dispersed herds moving northwest. Tall grass reduces visibility.",
         crowds: "Low",
       },
       {
         month: "Jun-Jul",
-        weather: "Dry, mild",
-        wildlife: "Migration in Western Corridor",
+        weather: "Dry, cool mornings (~12°C Seronera), warm afternoons",
+        wildlife: "Grumeti crossings in west (June). Resident game excellent year-round at Seronera.",
         crowds: "High",
       },
       {
         month: "Aug-Oct",
-        weather: "Dry, warm",
-        wildlife: "Mara River crossings",
-        crowds: "Peak",
+        weather: "Dry and warm. Dusty in the north.",
+        wildlife: "Mara River crossings in northern Serengeti. Peak spectacle. Best overall game viewing.",
+        crowds: "Peak (Aug-Sep)",
       },
       {
         month: "Nov-Dec",
-        weather: "Short rains",
-        wildlife: "Migration returns south",
+        weather: "Short rains. Green landscape, dramatic skies.",
+        wildlife: "Herds returning south through Lobo and central Serengeti.",
         crowds: "Moderate",
+      },
+    ],
+    additionalSections: [
+      {
+        heading: "The Five Zones: Where to Go and When",
+        body: "The southern plains (Ndutu area) are calving territory, mid-January to mid-February. The plains sit in the Ngorongoro Conservation Area rather than Serengeti National Park, which matters for the rules: NCAA permits off-road driving in designated zones; Serengeti does not. Ndutu is 100-110 km from Seronera, roughly 2-2.5 hours by road. Permanent camps include Ndutu Safari Lodge and Lake Masek Tented Camp. Mobile camps (Lemala, Asilia Olakira, Nomad, Sanctuary Kusini) operate December through March then relocate north with the herds. Book 6-9 months out for February.\n\nThe Seronera Valley is the year-round backbone. The permanent Seronera River concentrates herbivores, which concentrates predators: lion, leopard, buffalo, and hippo regardless of month. The sausage trees (Kigelia africana) along the gallery forest are the most reliable leopard habitat in Africa. Multiple generations of habituated Seronera leopards have been monitored since the 1960s. The Retima Hippo Pool, at the Seronera-Orangi river confluence 8 km north of Seronera Airstrip, holds around 200 hippos and is one of the few out-of-vehicle viewing points in the park. Moru Kopjes in the southwest, a 30-45-minute drive from Seronera, is the only black rhino area and requires a ranger-led permit excursion. The kopjes also contain Maasai rock art from the 18th-19th century, painted in ochre, charcoal, and white clay, not San or Bushman art as some sources claim.\n\nThe western corridor (Grumeti River) is June crossing territory. The Grumeti is the herds' first serious water obstacle, and the slow deep pools hold very large Nile crocodiles. Fewer vehicles than the Mara: Asilia puts average vehicle count at fewer than 15 per crossing event. Much of the corridor is the Singita Grumeti Reserves, a 350,000-acre private concession where off-road driving and walking safaris are permitted (unlike Serengeti National Park proper). Black-and-white colobus monkeys in the riverine forest are rare elsewhere in the ecosystem.\n\nNorthern Serengeti (Kogatende, Lamai Wedge) is the Mara crossing zone. First significant arrivals from mid-July; peak August and early September; documented crossings as late as 21 October 2024. TANAPA designates numbered crossing points; the most active in recent seasons are Points 0, 1, 4, 7, and 10. The Lamai Wedge, north of the river and accessed via a seasonal bridge, has fewer camps and fewer vehicles than Kogatende. Drive from Seronera: 160 km, 4-5 hours. By charter: 45-50 minutes.\n\nLobo, in the northeast, does not fit the standard itinerary and is better for it. Permanent springs (Gaboti, Bololgeni, Lobo Springs) support resident wildlife year-round, including one of the park's largest lion prides. Elephant density is higher and more consistent than in central Serengeti. The southbound migration passes through October and November. Lobo Wildlife Lodge, built in 1968 into a granite outcrop, is architecturally unusual and operationally dated.",
+      },
+      {
+        heading: "The Migration: What Competitors Get Wrong",
+        body: "Two errors appear on nearly every competitor page about the Great Migration.\n\nThe first is the fixed-calendar error. Most pages present the migration as a schedule: 'June: Grumeti crossings. August: Mara crossings.' The calendar is a tendency, not a schedule. Actual timing floats with rainfall. In 2023, mass Mara arrivals began mid-July on the Kenyan side. The 2024 season produced documented crossings at Mara Point 7 on 21 October. Arriving at a crossing zone and staying 4-5 nights is the structural answer; one night is not enough.\n\nThe second is the single-herd myth: the idea that 'the migration' is a single column of animals you can intercept at one point. At peak dispersal, animals are spread across 30,000+ square kilometres. An active Mara crossing can happen at Kogatende while a separate column is still transiting central Serengeti. Your guide's radio network, built on relationships across the park's guide community, matters more than your camp's proximity to one named crossing point.\n\nAt the river itself, herds routinely build, approach the bank multiple times over hours, and turn back without crossing. Both 'one hour of chaos' and 'four days of waiting' are well-documented outcomes. The crossings are not guaranteed; they are the reason to stay longer.\n\nThe practical fix is multi-zone. Ndutu for calving in February, then a charter flight north to Kogatende for crossings in August-September. Operators including Asilia, Nomad, andBeyond, and Singita build trips around 45-minute charter hops between camp clusters. A single-zone booking produces single-window odds.",
+      },
+      {
+        heading: "The Serengeti Lion Project",
+        body: "The Serengeti Lion Project has run continuously since 1966, which makes it the longest continuously operating large-mammal study anywhere in the world. George Schaller began it. Brian Bertram continued. Craig Packer took over in 1978 and ran it until 2014, when Tanzania banned him from the country for publishing research that exposed corruption in the trophy hunting industry. The project has continued since under Tanzanian and international researchers.\n\nMore than 5,000 individual lions have been named, genealogically mapped, and health-tracked across 12 generations. Every lion in the central study area has a known history: birth date, pride affiliation, injury record, reproductive output. The scientific publications from the project, on coalition formation in male lions, on infanticide as a mating strategy, on the evolutionary basis of the mane, are foundational texts in behavioral ecology.\n\nFor a guest on the ground, this matters in one specific way. Your guide can use the radio network built partly from relationships formed through the Lion Project to locate which prides are active around which kopjes. The science and the game drive are not separate things.",
+      },
+      {
+        heading: "Getting Here and Around",
+        body: "The drive from Arusha to Seronera via Karatu and Naabi Hill Gate is 325-340 km: tarmac to Karatu, graded gravel through the Ngorongoro Conservation Area, unpaved inside the park. Total time 8-9 hours without stops. Most clients fly. A charter from Arusha to Seronera Airstrip takes 1 to 1.5 hours; carriers include Coastal Aviation, Auric Air, Regional Air, Flightlink, and Air Excel. Scheduled bush flights are slower but cheaper.\n\nEight public-use airstrips serve different zones: Seronera (central, 2,280 m runway), Kogatende (northern, Mara crossings), Lamai (far north), Lobo (northeast), Kirawira (western corridor), Kusini (southern circuit), Fort Ikoma (just outside the western boundary), and Ndutu seasonal (December-March, technically in the NCAA). Singita Grumeti has its own jet-capable private strip. Charter hops between zones take 45-50 minutes.\n\nOn the ground: off-road driving is prohibited inside Serengeti National Park. Vehicles must stay on designated tracks. Self-drive is legally permitted but rarely advisable: distances are large, tracks are unmarked, and you cannot access the radio network your guide uses to find lion and cheetah. A private guide is the default for almost every visitor.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the Serengeti famous for?",
+        answer:
+          "The Great Migration and its lion population. The migration is approximately 1.3 million wildebeest in a continuous loop between Tanzania's Serengeti and Kenya's Masai Mara, driven by rainfall and volcanic soil chemistry on the southern plains. The Serengeti also holds one of the highest lion densities on Earth; the Serengeti Lion Project has individually monitored more than 5,000 lions since 1966. Leopard viewing along the Seronera River, in the gallery forest sausage trees, is among the most reliable in Africa.",
+      },
+      {
+        question: "How many days do you need in the Serengeti?",
+        answer:
+          "Minimum 3 full days; 4-5 is better. For Mara River crossings (July-October), book at least 4 nights in the northern Serengeti. For calving (mid-January to mid-February), 3 nights in the Ndutu area is the floor, 4-5 is better. For a full Northern Circuit combining Ngorongoro and Manyara, allow 6-8 days total.",
+      },
+      {
+        question: "What is the best month to visit the Serengeti?",
+        answer:
+          "It depends on the experience. February is the safest single month for calving on the southern plains. August and early September are the peak window for Mara River crossings in the north. June brings Grumeti crossings in the west with far fewer vehicles than the Mara. June through October is dry season generally, with short grass, concentrated wildlife around water, and the lowest malaria risk. Avoid mid-March to mid-May if road conditions and access matter.",
+      },
+      {
+        question: "Is the Serengeti better than the Masai Mara?",
+        answer:
+          "For the migration as a year-round event: yes. The herds spend roughly nine months in Tanzania. For ease of access from Nairobi: the Mara is simpler. For size and habitat variety: the Serengeti is about 10 times larger. For cost: Tanzania's peak entry fee ($82.60/day) is now less than Kenya's Mara peak season fee ($200/day), reversing the old assumption that Kenya is cheaper. Both sides access the same Mara River crossings. Tanzania's Kogatende delivers fewer vehicles per crossing event.",
+      },
+      {
+        question: "How much does a Serengeti safari cost?",
+        answer:
+          "2026 ranges per person all-inclusive: budget group safari $150-300/day; mid-range private safari $350-600/day; luxury mobile camps and lodges $700-2,000+/day. A 5-day mid-range private Serengeti safari typically runs $2,000-3,200 per person total, including park fees, transfers, accommodation, meals, guide, and vehicle. The balloon flight from Serengeti Balloon Safaris Ltd adds $599 per person and is not included in most standard packages.",
+      },
+      {
+        question: "When does the Great Migration happen in the Serengeti?",
+        answer:
+          "The migration is in the Serengeti about nine months of the year. Calving on the southern plains runs mid-January to mid-February. Grumeti River crossings in the western corridor peak in June. Mara River crossings in the northern Serengeti peak August to early September, with activity possible through October. The southbound return through Lobo and central Serengeti runs November through December.",
+      },
+      {
+        question: "What is the cheapest time to visit the Serengeti?",
+        answer:
+          "April through mid-May. TANAPA's low-season entry fee applies ($70.80/day vs $82.60/day peak). Most lodges discount 30-50%. The trade-offs are real: tall grass reduces visibility, some tracks become impassable in heavy rain, and migration herds are dispersed across central Serengeti rather than concentrated at a crossing. For travelers prioritising value over dramatic crossing events, this window is worth serious consideration.",
+      },
+      {
+        question: "Can you self-drive in the Serengeti?",
+        answer:
+          "Legally yes; practically it is rarely advisable. You need a 4x4 with high clearance (rentable from Arusha, $150-250/day), park permits, GPS, and confidence navigating unpaved tracks across large distances. Off-road driving is prohibited; vehicles must stay on designated tracks. The main disadvantage is losing access to the radio network your guide uses to locate lion, leopard, and cheetah. Travelers used to self-drive in Kruger or Etosha consistently underestimate what that radio network costs them in sightings.",
+      },
+      {
+        question: "Is the Serengeti safe?",
+        answer:
+          "Inside the park, yes. Standard wildlife precautions apply: do not leave your vehicle except at authorised stopping points (Retima Hippo Pool, Naabi Hill, Moru Kopjes walking area), keep tent zippers closed, do not approach wildlife on foot. Crime against tourists inside the park is minimal. Outside the park, standard precautions apply in Arusha and transit areas.",
+      },
+      {
+        question: "Is malaria a risk in the Serengeti?",
+        answer:
+          "Yes. Serengeti is a malaria zone. The CDC recommends prophylaxis for all visitors; common options include atovaquone-proguanil (Malarone), doxycycline, and mefloquine. Mosquito activity is lowest in the dry season (June-October). Long sleeves and DEET repellent at dawn and dusk reduce exposure substantially. See a travel medicine clinic 4-6 weeks before departure.",
+      },
+      {
+        question: "What animals will I see in the Serengeti?",
+        answer:
+          "On a 3-day Seronera visit, expect: lion (very high probability), leopard (reasonable, especially in the Seronera River sausage trees), cheetah (good on the southern plains and Namiri area), elephant, buffalo, hippo, giraffe, zebra, wildebeest, Thomson's gazelle, Grant's gazelle, topi, hartebeest, impala, warthog, jackal, and hyena. Black rhino requires a dedicated ranger-led permit excursion to Moru Kopjes and is not a standard game drive outcome. The park supports 500+ bird species.",
+      },
+      {
+        question: "Can you see the Big Five in the Serengeti?",
+        answer:
+          "All five species are present, but the rhino claim needs a caveat. Lion, leopard, elephant, and buffalo are routine sightings across 3-4 days. Black rhino number around 50-70 animals in the Moru Kopjes area and require a dedicated ranger-led permit excursion to see. For reliable Big Five including rhino, combine Serengeti with Ngorongoro Crater. The crater holds 26-55 rhinos in a much smaller, enclosed area where sightings are more accessible.",
       },
     ],
     relatedItineraries: [
