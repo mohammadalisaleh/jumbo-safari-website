@@ -320,77 +320,77 @@ export const itineraries: Record<string, Itinerary> = {
     slug: "great-migration-safari",
     title: "Great Migration Safari — Northern Serengeti",
     duration: "10 Days",
-    parks: "Northern Serengeti · Lake Manyara · Ngorongoro",
+    parks: "Northern Serengeti · Serengeti · Ngorongoro",
     price: "From $4,200 pp",
     season: "June - October",
     description:
-      "10-day Tanzania Great Migration safari. Three nights in the northern Serengeti at Kogatende, positioned for Mara River crossings in August and September. Lake Manyara and Ngorongoro Crater included. Private vehicle and guide throughout. From $4,200 per person.",
+      "10-day Tanzania Great Migration safari. Three nights in the northern Serengeti at Kogatende, positioned for Mara River crossings. Central Serengeti and Ngorongoro Crater included on the return. Private vehicle and guide throughout. From $4,200 per person.",
     leadParagraph:
-      "The Mara River crossing is the thing most people picture when they think of Africa. What the photographs do not convey is the waiting. Herds of hundreds of thousands mass on the south bank, press to the edge, pull back. A single wildebeest commits and the whole thing breaks. The river is 40 metres wide and full of crocodiles. It takes about four minutes. Then silence, and the herd rebuilds on the far side. This 10-day route puts you at Kogatende with three nights at the crossing points. It is the minimum to give yourself meaningful odds. June through October is the season. August and September are the peak.",
+      "The Mara River crossing is the thing most people picture when they think of Africa. What the photographs do not convey is the waiting. Herds of hundreds of thousands mass on the south bank, press to the edge, pull back. A single wildebeest commits and the whole thing breaks. The river is forty metres wide and full of crocodiles. The crossing takes about four minutes. Then silence, and the herd rebuilds on the far bank. This 10-day route puts you at Kogatende with three nights at the crossing points. Three nights is the minimum for meaningful odds. August and September are the peak months. The crossing cannot be promised on any specific day. That is not a qualification. It is what makes it worth coming.",
     overview:
-      "The Great Migration is a year-round circuit, but the Mara River crossings happen only once: roughly late June through early October, as herds push north through the Western Corridor, cross the Mara into the northern Serengeti, and eventually push into Kenya before returning south. The crossings at Kogatende and the Lamai Wedge are the concentrated event.\n\nThe route divides into three segments. Lake Manyara on Day 2 adds the Ghost Forest and the alkaline lake before the Serengeti. One full day in central Serengeti on Day 4 covers the Seronera Valley's resident predators. Then the long drive north on Day 5 to Kogatende, three nights at the Mara, and the drive back south through the length of the Serengeti on Day 7. Ngorongoro Crater on Days 8 and 9 closes the circuit.\n\nThe crossing cannot be promised on any given day. Herds mass on the bank for multiple consecutive days and turn back. What is reliable: in August and September the herd is in the north, the resident game at Kogatende is exceptional year-round, and three nights gives you six morning and afternoon sessions at the crossing points. Most parties see at least one major crossing on a three-night stay. The honest framing: plan for the full wildlife experience. Treat the crossing as the event it is.",
+      "Tanzania's national aerial census in 2023 (TAWIRI, co-conducted with Frankfurt Zoological Society and the University of Glasgow) counted 1,366,109 wildebeest in the Greater Serengeti. A 2025 Oxford satellite study suggested the number may be lower, around 800,000; the gap is unresolved and under active scientific review. The commonly cited figure of 1.5 million conflates wildebeest with zebra and Thomson's gazelle. Two million has no primary source. Whatever the exact count, when the bulk of the herd reaches the northern Serengeti from late July onward, the scale is unlike anything else in Africa.\n\nThe migration runs on rainfall, not calendar. Year-to-year variance in arrival timing can be four to six weeks. In June, herds are in the Western Corridor crossing the Grumeti. The vanguard typically reaches Kogatende from mid-July. August and September are the peak months for Mara crossings. By late October the short rains approach, herds begin moving south, and the window closes. A booking past October 20th carries real risk of missing the crossings entirely.\n\nThe Mara River at Kogatende has ten to twelve TANAPA-designated crossing points. Crossings 4 and 5 are the most dramatic, with steep banks and deep pools. Crossing 2 is the most photogenic. Crossings 9 through 12 have the fewest vehicles. On a three-to-four night August stay, the probability of seeing at least one major crossing is roughly 80 percent. Four to five nights push the odds meaningfully higher. This itinerary gives you three full days at the river, then drives south through the central Serengeti to Ngorongoro Crater on the return.",
     quickFacts: {
       duration: "10 Days / 9 Nights",
-      parksVisited: "Lake Manyara, Central Serengeti, Northern Serengeti (Kogatende/Lamai Wedge), Ngorongoro",
-      accommodation: "Tented camps and mid-range lodges",
+      parksVisited: "Northern Serengeti (Kogatende/Lamai Wedge), Central Serengeti, Ngorongoro",
+      accommodation: "Tented camps (northern Serengeti), mid-range lodge (Seronera), rim lodge (Ngorongoro)",
       groupSize: "Private (2-6 guests)",
       departsFrom: "Arusha, Tanzania",
-      bestSeason: "August–September (peak); June–October (full season)",
+      bestSeason: "August-September (peak); July-October (full season)",
     },
     days: [
       {
         day: 1,
-        title: "Arrival in Arusha",
+        title: "Arrive Arusha",
         activities:
-          "Pickup from Kilimanjaro International Airport or your Arusha hotel. Drive to Arusha town, about 45 minutes on a clear day. Evening briefing on the route, tomorrow's departure time, and what to expect at each park. The first game drive is in the morning.",
+          "Transfer from Kilimanjaro International Airport to your Arusha hotel, about 45 minutes on a clear day. Dinner and a full briefing: crossing point geography, TANAPA rules at the Mara, what to realistically expect. The drive to the Serengeti begins in the morning.",
         accommodation: "Arusha Coffee Lodge or similar",
         meals: "Dinner",
       },
       {
         day: 2,
-        title: "Arusha to Lake Manyara",
+        title: "Arusha to Central Serengeti via Olduvai Gorge",
         activities:
-          "Pickup at 7:00am. The drive to Lake Manyara's main gate takes about two hours, dropping down the Rift Valley escarpment through Mto wa Mbu. Lake Manyara is compact — 330 square kilometres — but it earns its place on this route for one reason: the Ghost Forest. Since around 2020, rising lake levels have permanently flooded the acacia woodland along the shoreline. Skeleton fever trees stand in alkaline water, fish eagles nest at eye level, and flamingos wade beneath them. Nothing else on this circuit looks like it. Afternoon game drive before sunset check-in.",
-        accommodation: "Lake Manyara Serena Lodge or similar",
+          "Pickup at 7:00am. The drive to the Serengeti takes about six hours with stops. You climb through the Ngorongoro highlands, pass through the Conservation Area, and stop at Olduvai Gorge before Naabi Hill Gate. In 1959, Mary Leakey found the skull of Paranthropus boisei here, a hominid who walked these plains 1.8 million years ago. The site guide does a 20-minute talk at the excavation. Worth every minute. Arrive in the Seronera area in late afternoon for a first game drive on the central plains.",
+        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Lunch, Dinner",
       },
       {
         day: 3,
-        title: "Lake Manyara to Central Serengeti via Olduvai Gorge",
+        title: "Full Day Central Serengeti — Seronera Valley",
         activities:
-          "Early breakfast, then depart for the Serengeti. About six hours of driving with stops. You climb into the Ngorongoro highlands, pass through the Conservation Area, and stop at Olduvai Gorge before Naabi Hill Gate: where Mary Leakey found the skull of Paranthropus boisei in 1959, a hominid who walked these plains 1.8 million years ago. The site guide does a 20-minute talk at the excavation. Worth every minute. Arrive in the Seronera area in late afternoon for a first drive on the central plains.",
+          "Full day in the Seronera Valley, the most consistent big-cat zone in the Serengeti year-round. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops 600 million years old. Cheetahs work the short-grass plains to the south. Depending on your travel dates and the current herd position, fringes of the migration may be passing through Seronera en route north. The resident predators are here regardless. Full day in the park, picnic lunch.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 4,
-        title: "Full Day Central Serengeti",
+        title: "Central Serengeti to Northern Serengeti — Kogatende",
         activities:
-          "Full day in the Seronera Valley, the most consistent big-cat zone in the Serengeti year-round. Leopards in the sausage trees above the river. Lions on the kopjes, granite outcrops 600 million years old. Cheetahs on the short-grass plains to the south. Tanzania's most recent national aerial census (TAWIRI, 2023) counted approximately 1.3–1.4 million wildebeest in the Greater Serengeti Ecosystem. Depending on your travel dates, the fringes of the herd may be in transit through Seronera on the way north. The resident predators are here regardless of where the migration is.",
-        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+          "The drive from Seronera to Kogatende is 160 to 170 km on murram and dirt track. Five to six hours in dry conditions. This is not dead time: you are crossing the full length of the Serengeti through Lobo Hills and kopje country, with wildlife throughout. Arrive at your northern camp in the afternoon. First look at the Mara River before dark. Depending on herd position, you may see animals massing on the south bank. First briefing from your guide on which crossing points are showing activity.",
+        accommodation: "Sayari Camp (Asilia Africa) or Lemala Kuria Hills or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 5,
-        title: "Central Serengeti to Northern Serengeti — Kogatende",
+        title: "Northern Serengeti — Mara River Crossings",
         activities:
-          "The drive from Seronera to Kogatende is 160–170 km on murram and dirt track. In dry conditions it takes five to six hours. This is not dead time: you are driving the full length of the Serengeti — Lobo Hills, kopje country, the northern ecosystem opening out — with wildlife throughout the route. Arrive at your northern camp mid-to-late afternoon. First look at the Mara River. Depending on herd position, you may see animals massing on the south bank before the light drops. Afternoon drive along the crossing points.",
-        accommodation: "Sayari Camp (Asilia Africa) or Lemala Kuria Hills or similar northern camp",
+          "Out by 6:00am. Your guide positions the vehicle at the crossing point showing the most activity, based on overnight herd movement and morning field contacts. TANAPA's revised guidelines require vehicles to hold position at designated points, at least 25 metres from the bank, stationary during crossing events. No disembarking. Each numbered crossing point has a designated maximum vehicle count.\n\nHerds mass, press to the water's edge, turn back. There is no lead animal and no predictable trigger. Behavioral research identifies it as a collective decision: a small committed group at the water's edge tips the calculation for the herd behind them, or it does not. A crossing can be over in four minutes. The same point may see a second wave within the hour, or nothing for two days. Between events, the northern Serengeti has strong resident game regardless of migration timing: lion, leopard, cheetah, elephant, buffalo.",
+        accommodation: "Sayari Camp (Asilia Africa) or Lemala Kuria Hills or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 6,
-        title: "Northern Serengeti — Mara River",
+        title: "Northern Serengeti — Second Full Day at the Mara",
         activities:
-          "Departure before 6:00am. Your guide tracks the morning through camp contacts and positions the vehicle at the crossing point with the best current activity. The Mara River at Kogatende has ten to twelve TANAPA-designated crossing points. Crossings 4 and 5 are the most dramatic; Crossing 2 is the most photogenic. TANAPA regulations require vehicles to remain stationary during a crossing event, at least 25 metres from the bank. No disembarking.\n\nHerds mass, press to the water's edge, and may turn back multiple times before one animal commits and the group follows. A single crossing can be over in four minutes. The same point may see a second wave within the hour. Entire days also pass with the herd on the bank and nothing happening. Between events, the northern Serengeti has strong resident game: lion, leopard, cheetah, elephant, buffalo.",
+          "Second full day at the crossing points. Your guide repositions based on overnight herd movement. Crossings 4 and 5 are the most dramatic, with high banks and deep croc pools. Crossing 2 is the most photogenic. Crossings 9 through 12 are the least crowded. Morning light from the Kogatende (south) bank is best before 9:00am, with herds approaching front-lit from the east. Afternoon light favors the Lamai Wedge north of the river, with warm sidelight on animals emerging from the water. Your guide chooses the crossing point based on light and herd position. Picnic lunch at the river.",
         accommodation: "Sayari Camp (Asilia Africa) or Lemala Kuria Hills or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 7,
-        title: "Northern Serengeti — Second Full Day at the Mara",
+        title: "Northern Serengeti — Third Full Day at the Mara",
         activities:
-          "Second full day at the crossing points. Your guide repositions based on overnight herd movement. If the herds crossed during the previous day or night, the focus shifts to where they have congregated on the far bank and whether they will attempt a return crossing. Morning light from the Kogatende side (south bank) is optimal before 9:00am. Afternoon, the Lamai Wedge north of the river picks up warm backlight on animals emerging from the water. Three nights at Kogatende is the minimum for meaningful crossing odds.",
+          "Third full day. Three nights at Kogatende is the minimum for meaningful crossing odds; this is the day the probability calculation is firmly in your favour. By now your guide knows the rhythm: which bank the herd is favouring, which crossing points are showing massing behaviour, where the main croc pods are concentrated. Crocodile density in the Tanzanian Mara stretch is high. No formal site-specific count has been published for the Kogatende reach, but they are visible from the bank at any active crossing point during the season.",
         accommodation: "Sayari Camp (Asilia Africa) or Lemala Kuria Hills or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -398,7 +398,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 8,
         title: "Final Morning at the Mara, then Drive South",
         activities:
-          "Final morning drive at the crossing points before departing after breakfast. The return to Seronera takes five to six hours on the same track through the Serengeti's full length. In dry-season light the drive south through the Lobo Hills and open plains is a game drive throughout. Arrive at your central Serengeti lodge in the late afternoon.",
+          "Final morning at the crossing points from 6:00am. Depart mid-morning and drive south through the park. The route back to Seronera takes five to six hours on the same murram track through the full length of the Serengeti. The Lobo area in the northeast passes through kopje country with consistent lion sightings. Game drives throughout the drive south. Arrive at the central Serengeti lodge late afternoon.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -406,22 +406,22 @@ export const itineraries: Record<string, Itinerary> = {
         day: 9,
         title: "Serengeti to Ngorongoro Crater Rim",
         activities:
-          "Final morning game drive in the Serengeti, then depart through Naabi Hill Gate. The drive to the Ngorongoro rim takes about three and a half hours, climbing through montane forest thick with olive trees and giant heather. Arrive for lunch. The crater floor is 600 metres below. On a clear afternoon, you can see the animal herds from the lodge terrace. The descent begins at 6:00am.",
+          "Morning game drive in the Seronera Valley, then depart through Naabi Hill Gate. The drive to the Ngorongoro rim takes about three and a half hours, climbing through montane forest thick with olive trees and giant heather. Arrive for lunch. The crater floor is 600 metres below. On a clear afternoon you can see the animal herds from the lodge terrace. Early dinner. The descent begins at 6:00am.",
         accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 10,
-        title: "Ngorongoro Crater — Full Day on the Floor, then Depart",
+        title: "Ngorongoro Crater then Depart",
         activities:
-          "Descent at 6:00am before the tourist vehicles arrive. The track drops 600 metres over 30 minutes of switchbacks through cloud forest. On the crater floor: approximately 120 lions, 50 black rhino, 15,000 wildebeest, 400 hyenas, 9,000 zebra — inside 260 square kilometres of enclosed caldera the animals rarely leave. The black rhino density here is the highest in East Africa. Picnic lunch at Ngoitokitok Springs. Ascend mid-afternoon, drive to Arusha (three hours). Drop-off at your hotel or Kilimanjaro International Airport. Earliest viable international departure is 21:00.",
+          "Descent at 6:00am before the tourist vehicles arrive. The track drops 600 metres through cloud forest over 30 minutes of switchbacks. On the crater floor: approximately 120 lions, 50 black rhino at the densest population in East Africa, 15,000 wildebeest, 400 hyenas, 9,000 zebra, all inside 260 square kilometres of enclosed caldera they rarely leave. Picnic lunch at Ngoitokitok Springs. Ascend mid-afternoon, drive to Arusha (three hours). Drop-off at your hotel or Kilimanjaro International Airport. Earliest viable international departure is 21:00.",
         accommodation: "End of safari",
         meals: "Breakfast, Lunch",
       },
     ],
     included: [
-      "All park and conservation area entrance fees (Lake Manyara, Serengeti, Ngorongoro Conservation Area)",
-      "Ngorongoro crater vehicle descent fee ($295 per vehicle)",
+      "All Serengeti National Park conservation fees",
+      "Ngorongoro Conservation Area fees and crater vehicle descent fee ($295 per vehicle)",
       "Private 4x4 Toyota Land Cruiser with pop-up roof",
       "Professional English-speaking guide, Arusha-based",
       "9 nights accommodation as specified",
@@ -436,7 +436,7 @@ export const itineraries: Record<string, Itinerary> = {
       "Travel insurance",
       "Guide gratuity (suggested $25 per day)",
       "Lodge staff gratuity (suggested $5-7 per day via lodge tip box)",
-      "Hot air balloon safari (optional, $590 per person — available central Serengeti on Days 3-4)",
+      "Hot air balloon safari (optional, $590 per person, available in central Serengeti on Day 3)",
       "Alcoholic beverages",
       "Personal expenses",
     ],
@@ -444,46 +444,61 @@ export const itineraries: Record<string, Itinerary> = {
       {
         question: "What is the best time to see the Great Migration in the Serengeti?",
         answer:
-          "The Mara River crossings happen from late June through early October. August and September are the most reliable months: the bulk of the herd is in the northern Serengeti, crossing events are most frequent, and predator concentration is highest. July is variable — the vanguard typically reaches Kogatende from mid-July in a normal year, but timing can shift by four to six weeks depending on rainfall. June targets the Western Corridor and Grumeti River crossings, which are smaller in scale but earlier and far less crowded. Late October carries real risk: viable in the first two weeks, but herds can move south rapidly once the short rains arrive. After the 20th of October, crossing odds drop materially.",
+          "August and September are the peak months for Mara River crossings in the northern Serengeti. The herds are most concentrated at Kogatende, crossing events are most frequent, and predator activity is highest. July is viable but less reliable: the vanguard typically reaches Kogatende from mid-July, but timing shifts by four to six weeks depending on rainfall. First-half July visitors are better positioned starting in the Western Corridor and moving north. October is the tail end. Crossings still occur in early October, but after the 20th the odds drop sharply and short rains can trigger sudden southward movement. June targets the Grumeti River crossings in the Western Corridor, which are smaller in scale but far less crowded.",
       },
       {
         question: "Can you guarantee seeing a river crossing?",
         answer:
-          "No. Nobody can. Herds mass on the Mara bank for multiple consecutive days and turn back without crossing. What does happen on a three-night northern Serengeti stay in August: six game drive sessions at the designated crossing points, with a trip-level probability of seeing at least one major crossing that experienced operators put at roughly 80%. The northern Serengeti also has exceptional resident game — lion, leopard, cheetah, elephant, buffalo — that makes every drive worthwhile regardless of whether a crossing happens that day. Plan for the full wildlife experience. Treat the crossing as the event it is.",
+          "No. Nobody can. Wildebeest mass on the Mara bank for multiple consecutive days and turn back without crossing. On a three-night August stay at Kogatende, experienced operators put the probability of seeing at least one major crossing at roughly 80 percent. Three nights gives you six sessions at the crossing points. Four to five nights push the odds meaningfully higher. The northern Serengeti also has exceptional resident game year-round regardless of crossings: lion, leopard, cheetah, elephant, buffalo. Every drive has a point regardless of what the herd does.",
+      },
+      {
+        question: "Why do wildebeest hesitate before crossing?",
+        answer:
+          "There is no lead animal. Wildebeest have no permanent dominance hierarchy, so the crossing decision is collective. Behavioral research (Torney, Hopcraft et al., 2018) shows that a small committed group at the water's edge has to reach a threshold that tips the calculation for the herd behind them. If that group loses nerve, the herd turns back. A false start. What holds them: crocodiles in the pool below, a strong current, a steep drop into the water. What tips them: a committed initiating group, social pressure from animals behind. Herds have massed on the bank for multiple days before committing. It cannot be predicted to the hour.",
       },
       {
         question: "How many days do I need for a Great Migration safari?",
         answer:
-          "Three nights in the northern Serengeti is the minimum for meaningful crossing odds. Four to five nights materially improves your probability. This 10-day itinerary gives you three nights at Kogatende (six sessions at the crossing points) plus Lake Manyara, central Serengeti, and Ngorongoro. If the crossing is your sole objective, a fly-in itinerary with four or five nights based in the north removes the long overland legs and adds one to two crossing sessions. Contact us and we will build it.",
+          "Three nights in the northern Serengeti is the minimum for meaningful crossing odds. Two nights is not enough. Four or five nights is materially better. This itinerary gives you three full days at the river. If the crossings are the primary objective and you want to maximize odds, we can build a fly-in version with four or five nights based at Kogatende, removing the long overland legs. Contact us and we will adjust.",
       },
       {
-        question: "Is the Tanzania side better than Kenya for the Great Migration?",
+        question: "Is the Great Migration only in Tanzania, or does it happen in Kenya too?",
         answer:
-          "For the crossing experience, Tanzania has practical advantages. TANAPA enforces vehicle limits per crossing point and requires vehicles to stay stationary during events — far fewer vehicles than the Kenyan Masai Mara, which can have 50-plus at a single crossing. The Tanzanian crossings are quieter and less disrupted. The tradeoff: Kenya has more total crossing events per season because herds oscillate across the border. Tanzania gives you a more controlled experience for the same event.",
+          "It is a continuous circuit between Tanzania and Kenya. The wildebeest spend most of the year in Tanzania: calving on the southern Serengeti plains (January to March), moving northwest through the Serengeti (April to June), then massing at the Mara River (July to October). From August into September, a significant portion of the herd crosses into Kenya's Masai Mara and returns. You can see major crossings from both sides. The Tanzania side at Kogatende tends to have fewer vehicles and stricter TANAPA enforcement than the Kenyan side. The Tanzania circuit also pairs the crossings with Ngorongoro Crater, which Kenya cannot match.",
+      },
+      {
+        question: "Is the Tanzania side better than Kenya for the crossing experience?",
+        answer:
+          "Different, with practical advantages on the Tanzania side. TANAPA enforces vehicle caps per crossing point and requires vehicles to hold position and stay 25 metres from the bank. The Masai Mara crossings historically had higher vehicle volumes with less enforcement, though Kenya has improved regulation in recent years. Tanzania gives you a controlled crossing experience. Kenya gives you more total crossing events because the herds oscillate. Many serious wildlife photographers prefer the Tanzania side for the terrain at Crossings 4 and 5 and the discipline at the crossing points.",
       },
       {
         question: "Where should I be based — Kogatende or the Lamai Wedge?",
         answer:
-          "Kogatende (south bank) is the standard base. Sayari Camp (Asilia Africa), Lemala Kuria Hills, and Serengeti Bushtops are all on the Kogatende side. The Lamai Wedge (north of the Mara) is where Lamai Serengeti by Nomad Tanzania and Singita Mara River Tented Camp sit. Photographically, Kogatende has better morning light — animals approaching the bank are front-lit before 9:00am. The Lamai side picks up warm afternoon backlight on animals emerging from the water. Both access the same crossings. We book based on availability for your dates.",
+          "Both access the same crossing points. The difference is bank and light. Kogatende (south bank): Sayari Camp (Asilia Africa), Lemala Kuria Hills, Serengeti Bushtops. Morning light is best from this side, with herds approaching the water front-lit before 9:00am. Lamai Wedge (north bank): Lamai Serengeti (Nomad Tanzania), Singita Mara River Tented Camp. Afternoon light is best from the north, with warm sidelight on animals emerging from the river. We book based on availability and your dates.",
       },
       {
-        question: "Is July or August better for the crossings?",
+        question: "Is August or September better for the migration?",
         answer:
-          "August for frequency and drama. July for intensity and fewer vehicles. In August the full herd is in the north, crossing events are most frequent, and croc activity peaks. Vehicle numbers at the crossing points are also highest. In July the first crossings of the season tend to be the most intense per event — hungry crocodiles, smaller crowds — but timing is uncertain and the first half of July often finds the bulk of the herds still in the Western Corridor. September is what many wildlife photographers consider the strongest overall: comparable to August for crossings, noticeably fewer vehicles, lower sun angle improving photography conditions.",
+          "August for volume. September for the overall experience. In August the full herd is concentrated at Kogatende, crossing events are most frequent, and the drama is at its peak. Vehicle numbers at the famous crossing points are also at their highest. In September the crossing frequency is comparable, vehicles thin noticeably, the sun angle is lower, and conditions for photography are arguably better. Several operators with decades on this route describe September as the strongest month for the experience-to-crowd ratio. Prices are similar or slightly lower than August.",
+      },
+      {
+        question: "How much should I tip?",
+        answer:
+          "The standard in Tanzania is $25 per day for your driver-guide, paid directly on the last day. Lodge staff: $5-7 per night via the envelope at reception. For this 10-day itinerary with one guide and nine nights, the total tipping budget is roughly $225 for the guide and $50-65 for lodge staff. Tips form a genuine part of guide income in Tanzania.",
       },
     ],
     additionalSections: [
       {
-        heading: "How the Migration Actually Moves",
-        body: "The word 'migration' implies one direction. The reality is a year-round loop driven by rainfall and grass quality.\n\nTanzania's most recent national aerial census (TAWIRI, 2023, co-conducted with Frankfurt Zoological Society and the University of Glasgow) counted approximately 1.3–1.4 million wildebeest in the Greater Serengeti Ecosystem. A 2025 satellite study by Oxford's Wildlife Conservation Research Unit suggested the true number may be lower; this is under active scientific review. The commonly cited figure of 1.5 million conflates wildebeest with zebra and Thomson's gazelle. Two million has no primary source.\n\nDecember through March: Calving season on the southern Serengeti plains near Lake Ndutu. Roughly 8,000 calves born per day at peak in February. Every predator in the ecosystem concentrates on one area.\n\nApril through May: Long rains. Herds move northwest through the central Serengeti.\n\nJune through July: Western Corridor and Grumeti River crossings. The Grumeti is narrower than the Mara and crossing events are shorter and smaller in scale, but the crocodile pods here are famously large — surveys have recorded crocodile densities on the Grumeti roughly three times higher than comparable Mara stretches. Some visitors target June specifically for the Grumeti before moving north in July.\n\nAugust through October: Northern Serengeti and Masai Mara. Mara River crossings at Kogatende and the Lamai Wedge. Herds move back and forth across the river — some cross into Kenya, return, cross again. Multiple crossing events at the same point in a single morning are documented. Herds massing for three days without crossing are equally documented.\n\nNovember through December: Short rains trigger southward movement. Herds return to the southern Serengeti for calving.",
+        heading: "Migration Calendar: Month by Month",
+        body: "The migration runs on rainfall, not calendar. Year-to-year variance in arrival timing can be four to six weeks. The 2024 season saw the first Mara crossing on June 29th, unusually early. Treat the windows below as central tendencies.\n\nJune. The bulk of the herd is in the Western Corridor, approaching or crossing the Grumeti River. Grumeti crossings typically run from late May through early July. The Grumeti is narrower than the Mara (10 to 50 metres), crossing groups are smaller, and vehicle counts are much lower. The crocodile pods here are famously large: wildlife surveys from the 1990s recorded roughly three times the crocodile density of comparable Mara stretches. Worth seeing on its own terms, but it is not the Mara.\n\nJuly. Transition. The vanguard reaches Kogatende mid-month in a typical year. Visitors arriving in the first half of July are better positioned starting in the Western Corridor and moving north rather than committing to Kogatende from day one. The first crossings of the season tend to be intense per-event (hungry crocodiles, smaller initial crowds) but timing is uncertain.\n\nAugust. Peak. Herds concentrated in the Kogatende and Lamai Wedge areas. The most active crossing points are 4 and 5 (most dramatic), 2 (most photogenic), 7 and 10 (most consistent). Crossings cluster: multiple events in one morning, then days of massing without a crossing. Vehicle counts at the famous points are at their highest.\n\nSeptember. Comparable to August for crossings, materially fewer vehicles. Herd density at Kogatende slowly declines as a growing fraction has crossed into Kenya or begun the southward turn. Major crossings still occur throughout the month. The best month for the experience-to-crowd ratio. Photography conditions improve: lower sun angle, drier air.\n\nOctober. Tail end with real risk. Crossings still occur in early to mid October. Nomad Tanzania recorded a Mara crossing on October 16th, 2024. After October 20th, the odds drop sharply in a typical year and short rains can trigger sudden southward movement. An October booking past the 20th is a genuine gamble.",
       },
       {
         heading: "What Happens at a Mara River Crossing",
-        body: "Wildebeest have no permanent social hierarchy. Any individual can initiate a crossing. This is why crossings cannot be predicted to the hour.\n\nBehavioral research (Torney, Hopcraft et al., 2018, Philosophical Transactions of the Royal Society B) shows that a small committed minority — sometimes fewer than a dozen animals — can tip the consensus of a herd of thousands. Once one wildebeest enters the water, the surrounding mass follows. The collective decision can flip from hesitation to full commitment in under a minute. Herds have also been documented massing on the bank for multiple days and turning back without any animal committing.\n\nThe Mara River at Kogatende has ten to twelve TANAPA-designated crossing points. Crossings 4 and 5 are the most dramatic; Crossing 2 is the most photogenic. Guides track herd positions through camp contacts each morning.\n\nTANAPA's revised Mara River crossing guidelines (June 2024) require stationary vehicles during crossing events, a minimum 25-metre separation from the bank, no disembarking, and maximum vehicle counts per site. In August 2025, TANAPA issued one-year professional bans to six guides from major operators for allowing guests to disembark at a crossing. The rules are actively enforced. Crocodile density in the Tanzanian Mara stretch is high; no published site-specific count exists for the Kogatende reach, but the animals are present at all times.",
+        body: "Wildebeest have no permanent dominance hierarchy. Any individual can initiate a crossing, which is why crossings cannot be predicted to the hour.\n\nBehavioral research (Torney, Hopcraft et al., 2018, Philosophical Transactions of the Royal Society B) documents the mechanism: a small committed minority at the water's edge, sometimes fewer than a dozen animals, can tip the collective calculation of a herd of thousands. Once one wildebeest enters the water, the surrounding mass follows. The flip from hesitation to full commitment can happen in under a minute. Herds have also been documented massing on the bank for multiple days before turning back. This is a false start, not a malfunction.\n\nThe Mara at Kogatende has ten to twelve designated crossing points. Crossings 4 and 5 are the most dramatic; Crossing 2 is the most photogenic; Crossings 9 through 12 have the fewest vehicles. Guides track herd positions through field contacts each morning.\n\nTANAPA's June 2024 crossing guidelines require vehicles to hold position at designated points, maintain 25 metres from the bank, stay stationary during crossing events, and never allow disembarking. In August 2025, TANAPA issued one-year professional bans to six guides from major operators, including Asilia and Nomad, for allowing guests to leave the vehicle at a crossing. The rules are actively enforced. Foot presence at the bank causes false starts and disrupts the crossing decision. Jumbo Safaris follows the rules. Every drive.",
       },
       {
-        heading: "Getting to the Northern Serengeti",
-        body: "Two options: drive or fly.\n\nDriving: Seronera to Kogatende is 160–170 km on murram and dirt track, five to six hours in dry conditions. Night driving inside the park is not permitted. The route runs through the full length of the Serengeti — Lobo Hills, kopje country, the northern ecosystem opening out — with game the entire way. The drive itself is a safari.\n\nFlying: Coastal Aviation operates scheduled flights from Arusha to Kogatende Airstrip (GTZ). Flight time from Arusha is approximately 1.5 hours, though most routes make intermediate stops. Flying removes the two long overland legs but adds roughly $300–400 per person each way. For a pure migration focus with maximum nights at the Mara, the fly-in itinerary is the cleaner option. Ask about our fly-in northern Serengeti packages.\n\nNorthern camps within 30 minutes of the crossing points: Sayari Camp (Asilia Africa, south bank), Lamai Serengeti (Nomad Tanzania, Lamai Wedge, north of the river), Singita Mara River Tented Camp (Lamai Triangle, directly on the river), Lemala Kuria Hills (Wogakuria Hills, south bank). All are seasonal — typically June through October — and August dates book out months in advance.\n\nPractical note: mornings at Kogatende in July through October are cold. The northern Serengeti sits at 1,100–1,500 metres and dawn temperatures run 8–15°C. Bring a fleece for early departures.",
+        heading: "Northern Serengeti Camps and How to Get There",
+        body: "The camps within 30 minutes of the Mara crossing points divide by bank.\n\nSouth bank (Kogatende side): Sayari Camp (Asilia Africa), Olakira Migration Camp (Asilia Africa, mobile June to October), Serengeti Bushtops, Lemala Kuria Hills. Morning light is best from this side: approaching herds are front-lit before 9:00am.\n\nNorth bank (Lamai Wedge): Lamai Serengeti (Nomad Tanzania), Singita Mara River Tented Camp. Afternoon light is best here, with warm sidelight on animals emerging from the water.\n\nAll of these camps are seasonal, typically June through October, and August dates book out months in advance.\n\nGetting there: two options. Driving from Arusha to the central Serengeti takes six to seven hours on paved road. Then Seronera to Kogatende is another 160 to 170 km on murram and dirt track, five to six hours in dry conditions. Night driving inside the park is not allowed. The drive through the Lobo Hills is a game drive throughout. Flying is the faster option: Coastal Aviation operates scheduled flights from Arusha to Kogatende Airstrip (GTZ), roughly 1.5 hours with intermediate stops. Flying removes two long transit days and adds one to two crossing sessions on a 10-day itinerary. Ask about fly-in pricing when you enquire.\n\nPractical note: dawn at Kogatende in July through October runs 8 to 15 degrees Celsius. Bring a fleece for early departures.",
       },
     ],
   },
