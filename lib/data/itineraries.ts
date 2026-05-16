@@ -870,11 +870,11 @@ export const itineraries: Record<string, Itinerary> = {
     price: "From $3,800 pp",
     season: "Year-round",
     description:
-      "11-day Tanzania safari and Zanzibar beach trip. Six nights on the northern circuit covering Tarangire, Serengeti, and Ngorongoro, then a flight to Zanzibar for four nights on the Indian Ocean coast. From $3,800 per person.",
+      "11-day Tanzania safari and Zanzibar beach trip. Six nights on the northern circuit covering Tarangire, Serengeti, and Ngorongoro, then a Coastal Aviation flight to Zanzibar for four nights on the Indian Ocean coast. From $3,800 per person.",
     leadParagraph:
       "Six nights on safari, four nights at the coast. The northern circuit first, then a flight east to Zanzibar. The combination works because the two halves are genuinely different: bush versus beach, cold mornings and elephant dust versus warm water and coral sand. Most people who do one want the other. This route gives you both without feeling rushed in either.",
     overview:
-      "The route covers Tarangire (one night), the central Serengeti (two nights), and Ngorongoro Crater (one night) before flying from Arusha to Zanzibar on Day 7. Four nights on the island, with the choice of north coast (consistent swimming year-round) or east coast (better October through March). We book the coast that suits your travel dates. The safari leg is tighter than the 8-day classic, but every park is properly included: an afternoon drive in Tarangire for the baobabs and elephants, two full Serengeti days for big cats, a full crater day on the floor. Zanzibar adds Stone Town, the coast, and the transition that most Tanzania trips skip entirely.",
+      "The safari leg covers Tarangire (one night), the central Serengeti (two nights), and two nights at Ngorongoro: one evening on the rim watching the sun set over the caldera, then a full day on the crater floor before driving to Arusha and flying to Zanzibar on Day 8. Four nights on the island, with the coast matched to your travel dates. The safari is tighter than the 8-day classic but every park is properly included: an afternoon in Tarangire for the baobabs and elephants, two Serengeti days for big cats and scale, a full crater day with 120 lions and 50 black rhino on the floor. Zanzibar adds Stone Town, four days at the Indian Ocean, and the transition that most Tanzania trips skip entirely.",
     quickFacts: {
       duration: "11 Days / 10 Nights",
       parksVisited: "Tarangire, Serengeti, Ngorongoro, Zanzibar",
@@ -886,17 +886,17 @@ export const itineraries: Record<string, Itinerary> = {
     days: [
       {
         day: 1,
-        title: "Arrival in Arusha",
+        title: "Arrive Arusha",
         activities:
-          "Transfer from Kilimanjaro International Airport to your Arusha hotel. The drive takes about 45 minutes. Rest, early dinner, briefing on the route for tomorrow. First game drive is in the morning.",
-        accommodation: "Arusha Coffee Lodge or similar",
+          "Transfer from Kilimanjaro International Airport to your Arusha hotel, about 45 minutes on a clear day. Rest, early dinner, briefing on the route. First game drive is in the morning.",
+        accommodation: "Onsea House or similar (Arusha)",
         meals: "Dinner",
       },
       {
         day: 2,
         title: "Arusha to Tarangire",
         activities:
-          "Pickup at 7:00am. Two-hour drive southeast to Tarangire's main gate. The Tarangire River is the dry-season lifeline for every animal in the ecosystem. Enter and head straight for it. Elephant herds of 150 or more are common in the dry months. The ancient baobabs here are a different scale from anything in the Serengeti, some of them over a thousand years old. Afternoon game drive along the river before sunset check-in.",
+          "Pickup at 7:00am. Two-hour drive southeast to Tarangire's main gate. The Tarangire River is the dry-season anchor for wildlife across the region. Enter and head directly for it. Elephant herds of 150 or more are common along the riverbanks in the dry months. The baobabs here are a different scale from anything in the Serengeti, some of them over a thousand years old. Afternoon game drive before sunset check-in.",
         accommodation: "Tarangire Safari Lodge or similar",
         meals: "Lunch, Dinner",
       },
@@ -904,63 +904,63 @@ export const itineraries: Record<string, Itinerary> = {
         day: 3,
         title: "Tarangire to Central Serengeti via Olduvai Gorge",
         activities:
-          "Early breakfast, then depart for the Serengeti. About six hours of driving with stops. You pass through the Ngorongoro highlands, descend into the Conservation Area, and stop at Olduvai Gorge: the excavation site where Mary Leakey found the skull of Paranthropus boisei in 1959. The resident guide does a 20-minute talk at the site. Worth it. Arrive Seronera area late afternoon for a first drive on the plains.",
-        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+          "Early breakfast, then the six-hour drive to the Serengeti. You climb through the Ngorongoro highlands, pass through the Conservation Area, and stop at Olduvai Gorge before Naabi Hill Gate. In 1959, Mary Leakey found the skull of Paranthropus boisei here, a hominid who walked these plains 1.8 million years ago. The resident guide does a 20-minute talk at the excavation site. Arrive in the Seronera area in late afternoon for a first game drive on the central plains.",
+        accommodation: "Kati Kati Tented Camp or similar (Seronera area)",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 4,
         title: "Full Day Serengeti",
         activities:
-          "Full day in the Seronera Valley, the most consistent big-cat zone in the Serengeti year-round. Leopards in the sausage trees above the river. Lions on the kopjes. Cheetahs on the short-grass plains to the south. The valley also holds the highest density of prey species in the central park, which is why predators concentrate here regardless of where the migration herds are.",
-        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+          "Full day in the Seronera Valley, the most consistent big-cat zone in the Serengeti year-round. Leopards in the sausage trees above the river. Lions on the kopjes, granite outcrops 600 million years old. Cheetahs on the short-grass plains to the south. The prey density in the valley is what keeps predators here regardless of where the migration herds are.",
+        accommodation: "Kati Kati Tented Camp or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 5,
         title: "Full Day Serengeti",
         activities:
-          "Second full day. Your guide tracks current sightings from the field network and positions accordingly. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne breakfast on landing. $590 per person, booked in advance. For a second Serengeti day, the afternoon is best spent somewhere different from the morning. Your guide will suggest where based on what is active.",
-        accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
+          "Second full day. Your guide tracks current sightings from the field network and positions accordingly. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $590 per person, booked in advance. The afternoon is best spent in a different area from the morning. Your guide will suggest where based on what is active.",
+        accommodation: "Kati Kati Tented Camp or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 6,
         title: "Serengeti to Ngorongoro Crater Rim",
         activities:
-          "Final morning game drive in the Serengeti, then depart through Naabi Hill Gate. Three-and-a-half-hour drive to the crater rim, climbing through montane forest. Arrive at the rim in time for lunch. Views down into the 260-square-kilometre caldera from the lodge terrace. Early dinner. The descent begins at 6:00am.",
+          "Morning game drive in the Serengeti, then depart through Naabi Hill Gate. Three-and-a-half-hour drive to the crater rim, climbing through montane forest thick with olive trees and giant heather. Arrive in time for lunch. The crater floor is 600 metres below you. On a clear afternoon you can see the animal herds from the lodge terrace. Early dinner. The descent begins at 6:00am.",
         accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
         meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 7,
-        title: "Ngorongoro Crater, then Fly to Zanzibar",
+        title: "Ngorongoro Crater — Full Day on the Floor",
         activities:
-          "Descent at 6:00am. The crater holds approximately 25,000 large mammals year-round, roughly 120 lions, 50 black rhino at last count, 15,000 wildebeest. Picnic lunch at Ngoitokitok Springs. Ascend mid-afternoon, drive to Arusha (three hours). Coastal Aviation flight from Arusha to Zanzibar, departing mid-evening, arriving about 1 hour 45 minutes later. Transfer to your beach property.",
-        accommodation: "Beach property, north or east coast Zanzibar",
-        meals: "Breakfast, Lunch",
+          "Descent at 6:00am before the tourist vehicles arrive. The track drops 600 metres through cloud forest over 30 minutes of switchbacks. On the crater floor: approximately 120 lions, 50 black rhino at the densest population in East Africa, 15,000 wildebeest, 400 spotted hyenas, 9,000 zebra, all inside 260 square kilometres of enclosed caldera the animals rarely leave. Lake Magadi draws flamingos and hippos on the western floor. Picnic lunch at Ngoitokitok Springs, where the hippo pool is close enough to require no binoculars. All vehicles ascend by 6:00pm. Tonight is the last night in Tanzania's bush.",
+        accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
+        meals: "Breakfast, Lunch, Dinner",
       },
       {
         day: 8,
-        title: "Zanzibar — Beach Day",
+        title: "Ngorongoro to Arusha, then Fly to Zanzibar",
         activities:
-          "First full day on the island. The pace change from safari is abrupt and that is the point. The Indian Ocean is warm, the agenda disappears. Morning swim. Afternoon at leisure. Optional: arrange a snorkelling trip or Stone Town visit through the resort.",
+          "Leave the rim by 8:00am. The drive to Arusha takes about three hours, arriving by 11:00am. Coastal Aviation scheduled service from Arusha Airport (ARK) departs at 12:45, arriving Zanzibar at approximately 14:20 (1 hour 35 minutes flight time, with potential intermediate stops at Serengeti or Manyara airstrips). Important: this is not a nonstop flight; Coastal's own schedule notes the aircraft waits for connections. Plan to be at ARK by 11:45am. Transfer to your beach property on arrival. The afternoon is yours.",
         accommodation: "Beach property, north or east coast Zanzibar",
-        meals: "Breakfast, Dinner",
+        meals: "Breakfast",
       },
       {
         day: 9,
         title: "Zanzibar — Stone Town",
         activities:
-          "Morning on the beach. Afternoon in Stone Town, a 20-minute drive from most north coast properties. Stone Town is a UNESCO World Heritage Site, a compact Arab trading city with carved wooden doors, narrow alleyways, and the spice trade infrastructure that shaped the entire East African coast. Freddie Mercury was born here in 1946. Sunset from the seafront before returning to the resort.",
+          "Morning on the beach. Afternoon in Stone Town, a UNESCO World Heritage Site (listed 2000) about 20 minutes from most north coast properties. The old town is a compact Arab trading city: two styles of carved wooden doors (Omani rectangular, Indian round-topped), narrow alleyways, and the history of the East African spice trade. The last open slave market closed here in 1873 under the Frere Treaty. Christ Church Cathedral was built directly on the site, opened on Christmas Day 1879. The East Africa Slave Trade Exhibit and underground slave cells are both accessible on site. The Freddie Mercury family home is on Shangani Road, open daily 10am to 6pm. Mercury (born Farrokh Bulsara on 5 September 1946) grew up in this building. Spice tours depart from Kizimbani village, about 25 minutes from Stone Town, not from the city itself. Forodhani Gardens night market operates daily from about 6pm: Zanzibar pizza, urojo soup, grilled lobster and octopus, sugar cane juice, coconut water. This is dinner.",
         accommodation: "Beach property, north or east coast Zanzibar",
-        meals: "Breakfast, Dinner",
+        meals: "Breakfast",
       },
       {
         day: 10,
-        title: "Zanzibar — Last Full Day",
+        title: "Zanzibar — Reef Snorkelling and Last Full Day",
         activities:
-          "No fixed schedule. Mnemba Atoll snorkelling is the main optional excursion: half-day boat trip, turtles and reef fish guaranteed, dolphins likely. $80-100 per person, bookable through the resort. A spice tour is a three-hour walk through a working plantation ($30 per person). Or the beach. Last evening in Tanzania.",
+          "The main excursion option today is the Mnemba Atoll reef. The atoll is roughly 3 km offshore from the northeast coast (Matemwe), about 10 to 20 minutes by boat. Important distinction: the island itself is private (&Beyond holds the lease) with a 200-metre exclusion zone. Non-guests access the surrounding reef, not the island. The reef holds approximately 600 fish species, green sea turtles (Chelonia mydas, nesting February through September), and spinner and Indo-Pacific bottlenose dolphins typically encountered on the channel crossing. Entry fees apply: $10 adult for general reef access, $25 adult for the inner Marine Special Area (both enforced since 2023-24). Day trip through a local operator typically costs $60 to $85 per person. Best visibility is June through October and December through February. Alternatively: a spice tour at Kizimbani plantation (three hours, approximately $30 per person), or the beach. Last evening in Tanzania.",
         accommodation: "Beach property, north or east coast Zanzibar",
         meals: "Breakfast, Dinner",
       },
@@ -968,7 +968,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 11,
         title: "Departure from Zanzibar",
         activities:
-          "Breakfast, checkout, transfer to Zanzibar International Airport (ZNZ). Most international connections go via Nairobi, Doha, Dubai, or Addis Ababa. Allow at least three hours for a Nairobi connection where the domestic-to-international transfer is slow.",
+          "Breakfast, checkout, transfer to Zanzibar International Airport (ZNZ). Most international connections go via Nairobi, Doha, Dubai, or Addis Ababa. Allow at least three hours for a Nairobi connection; the domestic-to-international transfer is slow. Note: Zanzibar requires a mandatory ZIC insurance payment of $44 on arrival (enforced since October 2024). This is collected at the port or airport and is separate from your Tanzania eVisa.",
         accommodation: "End of trip",
         meals: "Breakfast",
       },
@@ -978,49 +978,80 @@ export const itineraries: Record<string, Itinerary> = {
       "Ngorongoro crater vehicle descent fee ($295 per vehicle)",
       "Private 4x4 Toyota Land Cruiser with pop-up roof for the safari leg",
       "Professional English-speaking guide, Arusha-based",
-      "6 nights safari accommodation (1 Arusha, 1 Tarangire, 2 Serengeti, 1 Ngorongoro) + 4 nights Zanzibar",
-      "Full-board on safari, half-board in Zanzibar (breakfast and dinner)",
+      "7 nights safari accommodation (1 Arusha, 1 Tarangire, 2 Serengeti, 2 Ngorongoro) + 4 nights Zanzibar",
+      "Full-board on safari (Days 1-7), breakfast on Day 8, breakfast and dinner in Zanzibar (Days 9-11)",
       "Bottled water and soft drinks on game drives",
       "All road transfers on the safari circuit",
-      "Coastal Aviation flight Arusha to Zanzibar (one-way per person)",
+      "Coastal Aviation scheduled service Arusha to Zanzibar (one-way per person)",
       "AMREF Flying Doctors emergency evacuation insurance",
     ],
     excluded: [
       "International flights",
-      "Tanzania e-visa ($50 for most nationalities)",
-      "Travel insurance",
-      "Guide gratuity (suggested $25 per day for 5 safari days)",
+      "Tanzania eVisa (US citizens: $100; most other nationalities: $50 — apply at visa.immigration.go.tz)",
+      "Zanzibar mandatory ZIC insurance ($44 per person, collected on arrival)",
+      "Travel insurance (required)",
+      "Guide gratuity (suggested $25 per day for 6 safari days)",
       "Lodge staff gratuity (suggested $5-7 per day)",
-      "Hot air balloon safari ($590 per person, optional)",
-      "Zanzibar snorkelling and optional excursions",
+      "Hot air balloon safari ($590 per person, optional — see Day 5)",
+      "Mnemba reef entry fees ($10-$25 per person)",
+      "Zanzibar snorkelling excursions and optional activities",
       "Alcoholic beverages",
       "Personal expenses",
     ],
     faqs: [
       {
-        question: "How does this compare to the honeymoon safari?",
+        question: "How many days do you need for Tanzania and Zanzibar?",
         answer:
-          "The honeymoon safari has one more safari night (7 versus 6) and includes additional inclusions: champagne on arrival, private sundowners, a crater-floor picnic, and a sunset dhow cruise in Zanzibar. It is positioned for couples celebrating something and priced accordingly (from $5,500 vs from $3,800). The 11-day Tanzania and Zanzibar route is the same core experience without the couples-specific add-ons and at a lower price point. Both routes are entirely private.",
+          "Eleven days covers the combination well: six safari days across three parks plus four nights at the coast. You do not feel rushed in either half. If your priority is the Serengeti specifically, the 8-day classic safari plus a four-night Zanzibar extension gives you more time in the bush. Fourteen days total is the version where nothing feels tight. Anything under nine days means choosing between a proper safari and a proper beach stay.",
       },
       {
         question: "Which coast of Zanzibar will we stay on?",
         answer:
-          "We book the right coast based on your travel dates. The north coast (Nungwi, Kendwa) has consistent swimming year-round: deep water off the beach means no tidal flats. The east coast (Paje, Jambiani) is better October through March when the Indian Ocean is calm and snorkelling is clearest. June through October, southeast trade winds turn the east coast into a kitesurf destination. If you are travelling June-October and prefer swimming over kitesurfing, we put you on the north coast.",
+          "We book the coast that matches your travel dates. The north coast (Nungwi, Kendwa) has no offshore reef barrier, so deep water reaches the beach regardless of tide. Swimming is viable year-round, and the northeast monsoon from November through March does not create rough conditions on this coast. The east coast (Paje, Jambiani) is a different situation. The spring tidal range at Jambiani reaches 4.3 metres, and the sea recedes 200 to 500 metres at low tide for roughly six to eight hours per day. Swimming is viable in about two-hour windows either side of high tide. June through October, southeast trade winds turn the east coast into a world-class kitesurf destination and a poor beach for casual swimming. We put June-to-October travellers on the north coast by default unless kitesurfing is the point.",
       },
       {
-        question: "Is the safari leg rushed at 6 nights?",
+        question: "Is the safari leg rushed at six nights?",
         answer:
-          "Compared to the 8-day classic, yes, slightly. Tarangire gets one afternoon drive rather than a full day, and you have two full Serengeti days rather than three. You still see all three parks properly. The 8-day version gives more time in the Serengeti, which is the park that rewards extended stays most. If the beach time matters as much as the safari time, the 11-day route is the right balance. If you want to prioritise the safari, extend to the 8-day classic and add a shorter Zanzibar leg.",
+          "Compared to the 8-day classic, Tarangire is one afternoon rather than two days, and the Serengeti is two full days rather than three. Every park is covered properly: you see elephants in Tarangire, big cats in the Seronera Valley, and a full crater day at Ngorongoro with 120 lions and 50 black rhino in 260 square kilometres. What you lose is the third Serengeti morning when the routine settles and you stop counting. If the Serengeti is the priority, the 8-day classic is the better route. If the combination of safari and beach matters equally, this itinerary is the right balance.",
       },
       {
-        question: "How do we get from the safari circuit to Zanzibar?",
+        question: "How do we get from the safari to Zanzibar?",
         answer:
-          "Coastal Aviation operates a daily flight from Arusha to Zanzibar. Departures run around midday. The flight is approximately one hour and 45 minutes, with no connection through Dar es Salaam. The fare is included in this package. We handle all booking and airport transfers on both ends.",
+          "Coastal Aviation runs a scheduled service from Arusha Airport (ARK) departing at 12:45 and arriving Zanzibar at approximately 14:20. The flight time is about 1 hour 35 minutes, though the aircraft typically makes intermediate stops at Serengeti or Manyara airstrips on the circuit. This is a scheduled service, not a nonstop flight. On this itinerary, you leave the Ngorongoro rim at 8:00am, arrive in Arusha by 11:00am, and are at the airport well before the 12:45 departure. A second departure at 10:30am operates July through September only.",
       },
       {
-        question: "Do we need a visa for Zanzibar separately?",
+        question: "Do we need a separate visa for Zanzibar?",
         answer:
-          "No. Zanzibar is part of Tanzania. Your mainland eVisa covers the island. You fill in a short second immigration form on the domestic flight, about three minutes. Apply for the Tanzania eVisa online at evisa.go.tz before departure. The fee is $50 for most nationalities, $100 for US citizens.",
+          "No. Zanzibar is part of Tanzania. Your Tanzania eVisa covers the island. Apply at visa.immigration.go.tz before departure (not evisa.go.tz, which is no longer the correct address). Processing is officially 10 working days but in practice ranges from 3 days to 3 weeks. Apply at least two weeks before travel. Visa-on-arrival was suspended on 30 January 2025 — eVisa is now the required method for all nationalities. Fees: $50 for most nationalities (UK, EU, Australia, Canada). US citizens pay $100 for a mandatory Multiple Entry visa. Irish passport holders also pay $100.",
+      },
+      {
+        question: "What is the Zanzibar mandatory insurance?",
+        answer:
+          "Since October 2024, all foreign visitors entering Zanzibar must pay $44 for ZIC (Zanzibar Insurance Certificate) insurance on arrival. It provides 92 days of medical, repatriation, and evacuation coverage. The fee is collected at Zanzibar airport or the ferry terminal and is fully enforced. Most safari operator websites do not mention this. It is not included in our package price.",
+      },
+      {
+        question: "Is Zanzibar worth adding after a Tanzania safari?",
+        answer:
+          "Yes. The contrast is the point. Safari mornings start at 6:00am, cold, in a Land Cruiser. Zanzibar mornings start when you wake up, warm, with the Indian Ocean 30 metres from your room. They are different enough that one genuinely resets you from the other. The flight connection from Arusha is straightforward. One Tanzania eVisa covers both. The coast adds a genuinely different second act to the trip rather than just extending the safari.",
+      },
+      {
+        question: "How does this compare to the honeymoon safari?",
+        answer:
+          "The honeymoon safari has one more safari night (seven versus six) and includes couples-specific additions: champagne on arrival at each lodge, private sundowners, a crater-floor picnic at Ngorongoro, and a sunset dhow cruise in Zanzibar. It is priced from $5,500 per person versus $3,800 for this route. The 11-day Tanzania and Zanzibar itinerary is the same core circuit without the honeymoon-specific setup. Both routes are entirely private.",
+      },
+    ],
+    additionalSections: [
+      {
+        heading: "Zanzibar Coasts: Which One and When",
+        body: "Most itineraries say 'Zanzibar' without explaining that the island's coasts behave differently depending on when you travel.\n\nThe north coast (Nungwi, Kendwa) works year-round. There is no offshore reef to create a tidal flat, so deep water reaches the beach at all tides. The northeast monsoon (Kaskazi, November through March) produces livelier conditions in open water but does not make the north coast rough for swimming. This is the default coast for June through October travel.\n\nThe east coast (Paje, Jambiani, Bwejuu) requires more thought. The tidal range reaches 4.3 metres at Jambiani, and the sea recedes 200 to 500 metres at low tide for six to eight hours per day. Swimming is possible in roughly two-hour windows either side of high tide. Most east coast hotels publish tide charts for this reason. June through October, the southeast trade winds (Kusi) hit the east coast directly and the beach becomes a world-class kitesurf destination. If kitesurfing is not the plan, the east coast in those months is the wrong choice.\n\nBest east coast window: October through March, when the Indian Ocean is calm and snorkelling visibility at Mnemba is clearest. Avoid April (385mm of rain, 18 rain days, about 6 hours of sun per day). December is wetter than most operator websites suggest, around 185mm, but manageable.\n\nWe book the right coast based on your travel dates. We do not default to one location.",
+      },
+      {
+        heading: "Mnemba Atoll: What the Reef Access Actually Means",
+        body: "&Beyond holds the long-term lease on Mnemba Island under the Government of Zanzibar. The island has 12 bandas and a 200-metre marine exclusion zone around the shoreline. Non-guests cannot land on the island or enter that zone.\n\nThe surrounding reef is different. The Mnemba Atoll reef is publicly accessible under the Mnemba Island Marine Conservation Area (MIMCA) designation. A more restricted inner zone (Mnemba Island Marine Special Area, proclaimed December 2023) operates with a maximum of 8 boats per day, no anchoring, and defined access hours.\n\nEntry fees as of mid-2025: $10 adult for general reef access, $25 adult for the inner Marine Special Area. Fees are collected by MIMCA on the water and are often bundled into day-trip pricing.\n\nThe reef holds approximately 600 fish species including Napoleon wrasse, regal angelfish, and blue-spotted rays. Green sea turtles (Chelonia mydas) nest at Mnemba from February through September. Spinner dolphins and Indo-Pacific bottlenose dolphins are regularly encountered on the channel crossing from Matemwe, roughly 3 km and 10 to 20 minutes by boat. Humpback whales pass through July through September. Best visibility is June through October and December through February, up to 20 to 30 metres in optimal conditions.\n\nDay trips from the northeast coast run $60 to $85 per person through local operators. The trip is worth booking through your resort rather than independently to avoid overloaded boats.",
+      },
+      {
+        heading: "Visas and Entry — Updated for 2025",
+        body: "Tanzania eVisa is the required entry method for all nationalities. Visa-on-arrival was suspended on 30 January 2025; multiple foreign ministries (France, Canada, UK) have updated their advisories accordingly. Apply online at visa.immigration.go.tz — not evisa.go.tz, which is no longer the correct address.\n\nFees: most nationalities (UK, EU, Australia, Canada) pay $50 for a single-entry visa valid 90 days. US citizens pay $100 for a mandatory Multiple Entry visa valid 12 months — they cannot choose the $50 single-entry option. Irish passport holders also pay $100. Apply at least two weeks before departure. Official processing time is 10 working days; in practice this ranges from 3 days to 3 weeks.\n\nYour Tanzania eVisa covers both mainland Tanzania and Zanzibar. You fill in a short second immigration form on the Coastal Aviation flight to Zanzibar. It takes about three minutes.\n\nZanzibar mandatory insurance: since October 2024, all foreign visitors arriving in Zanzibar must pay $44 for the ZIC (Zanzibar Insurance Certificate) on arrival. This covers 92 days of medical care, repatriation, and emergency evacuation. It is collected at Zanzibar airport or the ferry terminal and is fully enforced. As of June 2025 over $20 million had been collected. It is not optional and it is not included in your safari package price.\n\nYellow fever vaccination: not required if you are travelling directly from the US, UK, EU, Canada, or Australia. It is required if you have spent 12 or more hours in transit through Nairobi, or if you leave the transit zone at any point during a layover, even briefly. Under 12 hours airside-only at Nairobi: not required. Confirm your specific itinerary with a travel medicine clinic before departure.",
       },
     ],
   },
