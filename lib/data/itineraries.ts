@@ -1063,25 +1063,25 @@ export const itineraries: Record<string, Itinerary> = {
     price: "From $2,800 pp",
     season: "Year-round",
     description:
-      "8-day private family safari in Tanzania. Tarangire, Serengeti, and Ngorongoro Crater on the northern circuit, paced for children. Minimum age 5. Private vehicle and guide throughout. From $2,800 per person.",
+      "8-day private family safari in Tanzania. Tarangire, Serengeti, and Ngorongoro Crater on the northern circuit, paced for children aged 5 and up. Private vehicle, booster seats provided, guide briefed for mixed-age groups. From $2,800 per person.",
     leadParagraph:
       "The Serengeti is one of the few places where a child looks out the window and the explanation requires no embellishment. The real thing is right there. No zoo framing, no distance. This is the standard 8-day northern circuit, run privately, with the pacing adjusted for children and the guide briefed specifically for mixed-age groups. Same parks, same wildlife. Different approach to what you stop for and how long you stay.",
     overview:
-      "The northern circuit works well for families because it is entirely vehicle-based. Children stay in the Land Cruiser for game drives. There are no bush walks, no early-morning hikes, and no activities that require a minimum adult fitness level. What changes for a family safari is pace and structure: shorter drives, more stops for snacks and bathroom breaks, guides who explain what they are seeing to younger passengers, and lodge selection that accounts for children's meal times and early bedtimes. The parks themselves (Tarangire for elephants, Serengeti for predators and scale, Ngorongoro Crater for the most concentrated wildlife in Africa) are the same regardless of the group composition. Children respond to the scale of the Serengeti and the density of the crater differently from adults, but usually better.",
+      "The northern circuit works well for families because it is entirely vehicle-based. Children stay in the Land Cruiser for game drives. There are no bush walks, no early-morning hikes, and no activities that require a minimum adult fitness level. What changes on a family safari is pace and structure: shorter morning drives (6:30am to 11:30am rather than 6:00am to 12:30pm), afternoon pool and rest for younger children, guides who explain what they are seeing in terms children can use, and lodge selection that accounts for meal times and early bedtimes. Family rooms or interconnecting rooms are specified at booking. Early dinner service (6:00-6:30pm) is confirmed in advance at each property.\n\nThe parks are the same regardless of who is travelling. Tarangire for elephants and baobabs. Serengeti for scale, predators, and the kind of open space that children have no reference point for. Ngorongoro Crater for the highest wildlife density in Africa inside a single enclosed area. Children respond to all of this differently from adults, but the consistent report from families who have done this trip is that children are more absorbed, not less.",
     quickFacts: {
       duration: "8 Days / 7 Nights",
       parksVisited: "Tarangire, Serengeti, Ngorongoro",
       accommodation: "Family-friendly mid-range lodges",
       groupSize: "Private (your family only)",
       departsFrom: "Arusha, Tanzania",
-      bestSeason: "Year-round (school holidays: July-August and December-January are popular)",
+      bestSeason: "July-August and December-January (school holidays); year-round otherwise",
     },
     days: [
       {
         day: 1,
         title: "Arusha to Tarangire",
         activities:
-          "Pickup from your Arusha hotel at 7:30am. The drive to Tarangire takes about two hours. Watch for the first baobabs as the road enters the park's outer zone. At Tarangire's main gate, enter and head for the river. Elephant concentrations in the dry season are the highest of any park on the northern circuit, with herds of 150 or more common along the Tarangire River. Afternoon game drive before sunset check-in. Most family lodges can arrange dinner at 6:30pm for early bedtimes.",
+          "Pickup from your Arusha hotel at 7:30am. The drive to Tarangire takes about two hours. Watch for the first baobabs as the road enters the park's outer zone — some of them are over a thousand years old. At Tarangire's main gate, enter and head directly for the river. In the dry season, elephant concentrations here are the highest of any park on the northern circuit, with herds of 150 or more common along the Tarangire River. Three hours of game driving before sunset check-in. Most family lodges can arrange dinner at 6:30pm for early bedtimes.",
         accommodation: "Tarangire Safari Lodge or similar",
         meals: "Lunch, Dinner",
       },
@@ -1089,7 +1089,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 2,
         title: "Full Day Tarangire",
         activities:
-          "Full day in the park. Morning drive from 6:30am, earlier than the tourist buses. The Silale Swamp in the south draws buffalo, wildebeest, and hippos. Tarangire also has species absent from the other parks on this route: the fringe-eared oryx with long straight horns, the gerenuk that browses standing upright on its hind legs, and tree-climbing pythons coiled in the riverside fig trees. Children notice the pythons before adults do. Picnic lunch in the park.",
+          "Full day in the park. Morning drive from 6:30am. The Silale Swamp in the south draws buffalo, wildebeest, and hippos. Tarangire also has species absent from the other parks on this route: the fringe-eared oryx, the gerenuk (a long-necked antelope that browses standing upright on its hind legs), and tree-climbing pythons coiled in the riverside fig trees. Children consistently spot the pythons before adults do. Give each child a pair of binoculars: at this age, a distant smudge becomes a giraffe, which changes the entire game drive. Picnic lunch in the park. Afternoon drive before returning for early dinner.",
         accommodation: "Tarangire Safari Lodge or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -1097,7 +1097,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 3,
         title: "Tarangire to Central Serengeti via Olduvai Gorge",
         activities:
-          "Early breakfast, then the six-hour drive to the Serengeti. Stop at Olduvai Gorge: this is where Mary Leakey found the skull of a hominid who walked these same plains 1.8 million years ago. The resident guide at the gorge does a 20-minute talk at the excavation site. For older children (8+), this is genuinely interesting, not just parental obligation. Arrive in the Seronera area in late afternoon for a first game drive.",
+          "Early breakfast, then the six-hour drive to the Serengeti. Stop at Olduvai Gorge: in 1959, Mary Leakey found the skull of Paranthropus boisei here, a hominid who walked these same plains 1.8 million years ago. The resident site guide does a 20-minute talk at the excavation. For children 8 and up, this is genuinely interesting, not just parental obligation. For younger children, it is a good leg-stretch. Arrive in the Seronera area in late afternoon for a first game drive on the central plains.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -1105,7 +1105,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 4,
         title: "Full Day Serengeti",
         activities:
-          "Full day in the Seronera Valley. The valley is the most consistent big-cat zone in the Serengeti year-round. Lions on the kopjes. Leopards in the sausage trees. Cheetahs on the open plains. Your guide briefs you on what to expect before each drive so younger children know what they are looking for. Game viewing is always more engaging with context. Return to the lodge for lunch and a rest before the afternoon drive.",
+          "Full day in the Seronera Valley, the most consistent big-cat zone in the Serengeti year-round. Lions on the kopjes, granite outcrops 600 million years old. Leopards in the sausage trees above the river. Cheetahs on the short-grass plains. Your guide briefs the whole family before each drive: what to look for, how to identify tracks and behaviour. Game viewing holds children's attention when they have a job to do — looking for the right ear shape, counting cubs, spotting which animal moved first. Return to the lodge for lunch, pool time, and rest before the afternoon drive. Afternoon drives are shortened to 4:00pm-6:00pm for younger children.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -1113,7 +1113,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 5,
         title: "Full Day Serengeti",
         activities:
-          "Three nights in the Serengeti is what makes the pace reasonable for families. By Day 5 the children know the vehicle, the routine, and the sounds. Game viewing is calmer and more attentive. Optional: hot air balloon departure at 5:30am. Children must be age 7 or over and the weight minimum applies. $590 per person, booked in advance. Worth it for older children who can manage the early start.",
+          "Three nights in the Serengeti is what makes the pace work for families. By Day 5 the children know the vehicle, the sounds, and the routine. Game viewing is more attentive and less restless. Optional: hot air balloon departure at 5:30am. Minimum age 7. Maximum weight 120 kg per passenger. $599 per person, booked in advance through Serengeti Balloon Safaris. About one hour over the plains, followed by a champagne bush breakfast on landing. For children old enough to manage the early start, it is the most memorable hour of the trip.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -1121,7 +1121,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 6,
         title: "Serengeti to Ngorongoro Crater Rim",
         activities:
-          "Final Serengeti morning drive, then depart through Naabi Hill Gate. Three-and-a-half-hour drive to the crater rim through montane forest. Arrive for lunch. Views straight down into the 260-square-kilometre caldera from the rim lodge terrace. On a clear afternoon, you can see animal herds on the crater floor 600 metres below. Early dinner (most children are asleep before 8pm at this point in the trip). The descent begins at 6:00am.",
+          "Final Serengeti morning drive, then depart through Naabi Hill Gate. Three-and-a-half-hour drive to the crater rim through montane forest. Arrive for lunch. The crater floor is 600 metres below the rim lodge terrace. On a clear afternoon, you can see the animal herds from the table at lunch. Early dinner (most children at this point in the trip are asleep before 8pm). The crater descent begins at 6:00am.",
         accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -1129,7 +1129,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 7,
         title: "Ngorongoro Crater — Full Day on the Floor",
         activities:
-          "Descent at 6:00am. The Ngorongoro Crater is the single most concentrated wildlife area in Africa. In 260 square kilometres: approximately 120 lions, 25,000 wildebeest, 15,000 zebra, 400 spotted hyenas, and the densest population of black rhino in East Africa. The crater walls keep the animals inside, which is why the densities are this high. Picnic lunch at Ngoitokitok Springs, where hippos in the adjacent pool are close enough to require no binoculars. All vehicles must ascend by 6:00pm.",
+          "Descent at 6:00am before the tourist buses arrive. The track drops 600 metres through cloud forest over 30 minutes of switchbacks. On the crater floor in 260 square kilometres: approximately 120 lions, 50 black rhino at the densest population in East Africa, 15,000 wildebeest, 400 spotted hyenas, 9,000 zebra. The crater walls keep the animals inside. Picnic lunch at Ngoitokitok Springs, where the hippo pool is close enough to require no binoculars and deep enough to fascinate every age. All vehicles must ascend by 6:00pm. The crater is the day on this trip that families almost uniformly describe as the one they were not prepared for.",
         accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -1143,23 +1143,23 @@ export const itineraries: Record<string, Itinerary> = {
       },
     ],
     included: [
-      "All park entrance fees and Ngorongoro crater vehicle fee ($295 per vehicle)",
+      "All park entrance fees (adult and child rates) and Ngorongoro crater vehicle fee ($295 per vehicle)",
       "Private 4x4 Toyota Land Cruiser with pop-up roof",
       "Professional English-speaking guide, experienced with family groups",
-      "7 nights accommodation as specified",
+      "7 nights accommodation in family rooms or interconnecting configuration",
       "All meals full-board (lunch on Day 1 through breakfast on Day 8)",
       "Bottled water and soft drinks on game drives",
       "Airport and hotel transfers in Arusha",
-      "Child booster seat where required (confirm age and weight at booking)",
+      "Booster seats as standard for children under 12 or under 135cm (confirm ages and weights at booking)",
       "AMREF Flying Doctors emergency evacuation insurance",
     ],
     excluded: [
       "International flights",
-      "Tanzania e-visa ($50 for most nationalities, children included)",
-      "Travel insurance",
+      "Tanzania eVisa ($50 per person for most nationalities, required for all ages including children)",
+      "Travel insurance (required for all family members)",
       "Guide gratuity (suggested $25 per day)",
       "Lodge staff gratuity (suggested $5-7 per day via lodge tip box)",
-      "Hot air balloon safari ($590 per person, minimum age 7)",
+      "Hot air balloon safari ($599 per person, minimum age 7, maximum weight 120kg)",
       "Alcoholic beverages",
       "Personal expenses and souvenirs",
     ],
@@ -1167,32 +1167,65 @@ export const itineraries: Record<string, Itinerary> = {
       {
         question: "What is the minimum age for this safari?",
         answer:
-          "We set the minimum at 5 years old. Children under 12 need a booster seat in the vehicle (confirm the child's age and weight when booking so we have the right seat). The crater descent is steep but entirely by vehicle. None of the parks on this route require walking. The main practical consideration for very young children (5-6) is the drive lengths. We pace the itinerary with shorter morning and afternoon drives to account for this.",
+          "We set the minimum at 5 years old. TANAPA (the national parks authority) does not set a statutory minimum age for the parks. Five is the practical floor based on drive lengths and what a child can meaningfully engage with. Children under 5 are free for park entry under the official TANAPA fee structure; ages 5 to 15 pay a reduced child rate. We provide booster seats as standard for children under 12 or under 135cm. Confirm your children's ages and weights at booking so we have the right seats. None of the parks on this route require walking.",
+      },
+      {
+        question: "What is the best age to take children on a Tanzania safari?",
+        answer:
+          "Eight to twelve is consistently described by Tanzania family specialists as the strongest age for the safari experience. Old enough to absorb what they are seeing, young enough to find it completely new. Children in this range engage actively with Big Five spotting, predator-prey behaviour, and the scale of the Serengeti in a way that 5-6 year olds reach toward and teenagers often take for granted. That said, 5-7 year olds who are comfortable in a vehicle and do not mind early starts have good trips here. The adjustments (shorter drives, more lodge time, binoculars for each child) make a real difference at the younger end.",
+      },
+      {
+        question: "Do children need malaria tablets for Tanzania?",
+        answer:
+          "Yes. Malaria is present year-round in all three parks on this route. Consult a travel medicine doctor before departure. The most commonly recommended antimalarial for children aged 5 to 14 is atovaquone-proguanil (Malarone), available in pediatric tablet strength dosed by weight. It has no minimum age, only a minimum weight of 5 kg. Doxycycline is contraindicated for children under 8 due to tooth and bone development concerns. Chloroquine is not appropriate for Tanzania due to confirmed resistance. The Ngorongoro rim sits at approximately 2,300 metres, above the CDC's 1,800-metre threshold where malaria risk drops substantially. The crater floor and all Serengeti and Tarangire areas are standard risk. Zanzibar, if added, carries at least equivalent risk to the mainland. See a travel medicine clinic at least 4 weeks before departure.",
       },
       {
         question: "Are the lodges suitable for children?",
         answer:
-          "The lodges on this route are all family-appropriate. Most can arrange early dinner service (6:00-6:30pm) and have rooms that accommodate two adults and one or two children. We specify family rooms or adjoining rooms at booking, not standard doubles. Children's menus are available at all properties. Let us know ages when you book and we will confirm the lodge configuration.",
+          "The lodges on this route accept children from age 5 with no restrictions. We specify family rooms or interconnecting rooms at booking, not standard doubles. Early dinner service at 6:00-6:30pm is confirmed with each property in advance. Children's menus are available at all properties. Interconnecting rooms and family suites are limited inventory and book out earliest. Send us your children's ages when you enquire and we will confirm the specific configuration before confirming your dates.",
       },
       {
         question: "How long are the daily game drives?",
         answer:
-          "For a family safari, we adjust the drive structure. Standard adult safaris run 6:00am to 12:30pm and 3:30pm to 6:30pm. For younger children, we typically run 6:30am to 11:30am and 4:00pm to 6:00pm, with the midday break at the lodge for lunch and rest. On the crater day, the full day is necessary given the six-hour permit, but we pace stops and the picnic accordingly.",
+          "We adjust the drive structure for families. Standard adult safaris run 6:00am to 12:30pm and 3:30pm to 6:30pm. For younger children, we typically run 6:30am to 11:30am and 4:00pm to 6:00pm, with the midday break at the lodge for lunch, pool time, and rest. Afternoon drives are often shortened or dropped entirely for children under 7 in favour of the lodge pool. On the crater day, the full day on the floor is necessary, but we pace stops and the picnic at Ngoitokitok accordingly.",
       },
       {
         question: "What will children enjoy most?",
         answer:
-          "This varies by age, but the consistent answers from families who have done this trip: the sheer scale of the Serengeti (older children are often more moved by the landscape than the animals), the elephant proximity in Tarangire (a herd walking 10 metres from the vehicle is a different experience from a zoo), and the crater, where the density is so high that something is always happening within sight. The Ngorongoro hippos at the picnic stop tend to be popular with all ages.",
+          "Ages 5-8: elephant proximity in Tarangire (a herd walking 10 metres from the vehicle is a different experience from a zoo), pythons in the fig trees, and the Ngorongoro hippo pool at the picnic stop. Binoculars are the single most important item: children without them see brown smudges; children with them become active spotters who find things before the adults. Ages 9-12: the Ngorongoro Crater as a whole, predator-prey sequences, Big Five checklist completion, and understanding what they are watching. Ages 13 and up: the scale of the Serengeti, predator behaviour, photography as a serious activity, and growing interest in conservation.",
       },
       {
         question: "Is Tanzania safe for children?",
         answer:
-          "Tanzania is one of the safer countries in sub-Saharan Africa for family travel. The northern circuit parks are well-managed, the roads are paved where it matters, and the lodges are experienced with family groups. Malaria prophylaxis is required for all ages (consult a travel medicine doctor before departure). Sunscreen and hats are non-negotiable at altitude and on open game drives. The water at lodges is safe when provided as bottled or filtered.",
+          "Tanzania is one of the more straightforward countries in sub-Saharan Africa for family travel. The northern circuit parks are well-managed with good roads on the main routes. Lodges on this circuit are experienced with family groups. The main health considerations are malaria prophylaxis (required for all ages), sun protection (UV Index 9-11 in the dry season at altitude, reapply SPF 50+ every two hours on open game drives), and ensuring children drink only bottled or lodge-filtered water. Rabies pre-exposure vaccination is worth discussing with your travel medicine doctor for children, who are less likely to report an animal bite or scratch in remote areas where post-exposure treatment is not immediately available.",
+      },
+      {
+        question: "Do children pay full park entrance fees?",
+        answer:
+          "No. The official TANAPA 2023/24 tariff sets a child rate for ages 5 to 15 that is significantly lower than the adult rate. Children under 5 are free. At Tarangire, the child day fee is approximately $15 (versus $50 adult at peak). At the Serengeti, approximately $20 (versus $70 peak). At Ngorongoro, the NCAA child rate is approximately $23.60 (versus $70.80 adult). All TANAPA fees are VAT-exclusive; 18% is added on top. Park fees change; we confirm current rates at the time of booking. The $295 crater vehicle descent fee is charged per vehicle regardless of passenger ages.",
       },
       {
         question: "Can we extend with Zanzibar?",
         answer:
-          "Yes, and it works particularly well for families. The beach transition after safari is a natural wind-down, and Zanzibar has calm, shallow water on the north and east coasts that suits children well. Add 4-5 nights on the island via a Coastal Aviation flight from Arusha. Contact us and we will build the extension into the quote.",
+          "Yes, and it works well for families. The beach transition after safari is a natural wind-down. The north coast of Zanzibar (Nungwi, Kendwa) has deep water directly off the beach, consistent swimming year-round, and no tidal flats. Add four to five nights via a Coastal Aviation scheduled service from Arusha. Contact us and we will build the extension into the quote.",
+      },
+    ],
+    additionalSections: [
+      {
+        heading: "What Changes on a Family Safari",
+        body: "The vehicle, the parks, and the wildlife are identical to any other private safari. What changes is everything around those things.\n\nDrive timing. Family drives start at 6:30am rather than 6:00am, end at 11:30am rather than 12:30pm, and run 4:00pm to 6:00pm in the afternoon rather than 3:30pm to 6:30pm. For children under 7, afternoon drives are often dropped entirely in favour of lodge pool time and rest. This is a deliberate structure, not a compromise. Children who are well-rested and fed see more and remember more.\n\nGuide briefing. We brief the guide on the ages and interests of each child before departure. The guide's job changes from narrating wildlife to giving children a role: counting cubs, watching which direction the herd is moving, calling out what they spot first. Animal-spotting checklists and \"freshest tracks\" competitions make the drive active rather than passive.\n\nBinoculars. The single most consistently cited difference between a successful family safari and an average one. A distant animal through adult eyes is still recognisable. Through 5-year-old eyes without binoculars, it is a brown smudge. Bring a pair for each child (8x25 or 10x25 for small hands) and brief them on how to use them before the first drive.\n\nPop-up roof. Children can and do use the pop-up roof on game drives, with adult supervision. Your guide will ask everyone to sit down during close approaches with lion, elephant, or buffalo. Compliance is immediate. The open-air position at the pop-up is one of the experiences children remember most.",
+      },
+      {
+        heading: "Lodge Age Policies — What to Know Before Booking",
+        body: "Not every camp on the northern circuit accepts young children. Some of the most famous names in Tanzania's safari circuit impose minimum ages of 8, 10, or 12 — often because of unfenced perimeters, adult-focused ambiance, or walking-safari contexts that require a minimum age for safety. This is not arbitrary and it is not usually explained on the booking page.\n\nFor this family itinerary, we select properties that accept children from age 5 with no restrictions and have family rooms or interconnecting configurations: Tarangire Safari Lodge, Serengeti Serena Safari Lodge, and Ngorongoro Serena Safari Lodge are confirmed family-appropriate choices at mid-range pricing. At the step-up end, the Four Seasons Safari Lodge Serengeti accepts children from age 2 and runs the Kijana Klub programme (daily 10am-6pm, ages 2-17, complimentary) with Maasai warrior morning sessions, fire-starting, beadwork, and a Cheetah Watch programme for teenagers involving real camera-trap research.\n\nFamily and interconnecting rooms are limited inventory at every property. They book out before standard rooms. Send us your children's ages when you first enquire — not after you have confirmed dates.",
+      },
+      {
+        heading: "Health, Vaccinations, and Sun",
+        body: "Malaria. Atovaquone-proguanil (Malarone) is the standard first-line antimalarial for children aged 5-14 travelling to Tanzania. It comes in pediatric tablet strength dosed by weight and has no minimum age beyond a 5 kg weight threshold. Doxycycline is contraindicated for children under 8 (tooth and bone development). Chloroquine is not appropriate for Tanzania due to confirmed P. falciparum resistance. See a travel medicine clinic at least four weeks before departure for prescriptions and weight-based dosing.\n\nVaccinations. Confirm the following are current before departure: MMR (measles is active in Tanzania), polio/DTP (Tanzania has enhanced precautions as of April 2025), Hepatitis A, typhoid. Rabies pre-exposure vaccination is strongly recommended for children. In a remote area, a bite or scratch may not be reported by a young child, and post-exposure treatment is not available outside large towns. Pre-exposure simplifies management anywhere on the circuit.\n\nYellow fever is not required for direct travel from the UK, US, EU, or Australia. It is required if you have spent 12 or more hours transiting through Nairobi, or if you left the transit zone at any point.\n\nSun. Northern Tanzania sits at 3 degrees south of the equator. The UV Index in the dry season (June-October) runs 9-11, Very High to Extreme. At Ngorongoro's altitude of 2,300 metres, clear skies amplify intensity further. On open game drives there is no overhead protection. SPF 50+ broad-spectrum sunscreen, reapply every two hours. Wide-brim hats and UV-protective long sleeves are not optional.\n\nWater. Bottled or lodge-filtered water is standard at reputable mid-range northern circuit lodges including for tooth brushing. Confirm with each property at booking.",
+      },
+      {
+        heading: "When to Go as a Family",
+        body: "The northern circuit works year-round, but school holiday alignment matters.\n\nUK families. The UK summer holidays (England state schools: from approximately 21-23 July, return 1 September) align almost perfectly with Tanzania's dry season peak and the northern Serengeti migration window. This is the most booked period. Lead time for good family room inventory in July-August is 9-12 months.\n\nAustralian families. Australian winter school holidays (VIC and QLD: 27 June - 12 July 2026; NSW: 6-17 July 2026) overlap with the start of the northern Serengeti crossing season. VIC and QLD breaks begin a full week before NSW, which matters for camp availability. Australian families who book the first two weeks of July are in the crossing window and benefit from slightly lower vehicle density than August.\n\nUS families. Summer break (ending late May in southern states, mid-June in the northeast, resuming mid-August to early September) provides a long window. The entire June-October dry season is available to US families with school-age children. December-January winter break aligns with green-season pricing and calving season in the southern Serengeti, which is a genuinely strong alternative for families who want predator action without peak-season crowds.\n\nBooking lead time for family configurations: 9-12 months for dry-season dates. Family rooms and interconnecting configurations book out first. Contact us as early as possible for July-August and December-January travel.",
       },
     ],
   },
