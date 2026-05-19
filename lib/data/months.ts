@@ -242,6 +242,191 @@ export const monthPages: Record<string, MonthPage> = {
       "honeymoon-tanzania-zanzibar",
     ],
   },
+  august: {
+    slug: "august",
+    month: "August",
+    title: "Tanzania Safari in August",
+    description:
+      "August is the peak month for the Mara River crossings, the peak month for Tarangire elephant herds, and the most expensive month to safari in Tanzania. Complete guide to August conditions, booking timelines, and what to actually expect on the ground.",
+    heroImage: {
+      src: "/wildebeest-calf-ndutu-calving-season-tanzania.jpg",
+      alt: "Wildebeest crossing the Mara River in the northern Serengeti during the Great Migration, Tanzania",
+    },
+    intro:
+      "August is the best month to safari in Tanzania. That is a position, and I will defend it. The Mara River crossings are at maximum frequency. The Tarangire elephant herds hit their annual peak, 500 to 600 individuals visible from a single hillside. The Serengeti short-grass plains make every predator sighting effortless. Ngorongoro Crater is cold and clear. Everything is working at once. The price for this is the highest lodge rates of the year, the most vehicles at crossing points, and the least forgiving booking window on the continent. If you want August, you plan in October for it.",
+    highlights: [
+      "Mara River crossings at peak frequency — multiple crossings per day at main sites",
+      "Tarangire elephant herds at annual maximum: 500–600+ animals at the river",
+      "Best predator visibility of the year across all northern circuit parks",
+      "Ngorongoro Crater: dry floor, maximum rhino sightings, cold clear mornings",
+      "Longest confirmed dry window: no rain from June through October",
+    ],
+    wildlifeConditions: [
+      {
+        park: "Northern Serengeti (Kogatende/Lamai)",
+        conditions:
+          "Peak of the Great Migration. The Mara River crossing frequency in August exceeds any other month. Herd density on both banks is at its annual maximum. Multiple crossings per day at main sites, with lion, hyena, and crocodile all working the river. Lamai Wedge holds enormous concentrations of wildebeest between crossing attempts. The best single location for wildlife drama anywhere in Africa, in August.",
+        rating: "excellent",
+      },
+      {
+        park: "Tarangire National Park",
+        conditions:
+          "August is Tarangire's peak month. The Tarangire River is the only water in the ecosystem and it draws elephants from 100km away. Herds of 500 to 600 are documented at the river in August and September. Old bulls with tusks measuring 1.5m or more. Calves born in early 2026 old enough to walk confidently but still close to their mothers. The baobab landscape in dry-season gold. No other month compares for elephants.",
+        rating: "excellent",
+      },
+      {
+        park: "Ngorongoro Crater",
+        conditions:
+          "Excellent year-round and particularly strong in August. The crater floor is fully dry, concentrating animals at the Gorigor Swamp and Lerai Forest. Black rhino sightings at Gorigor are most frequent in the July–September window. Lion prides are active and visible on the open floor from early morning. The rim at 2,286m is cold at dawn (4–8°C). Descend wearing a fleece.",
+        rating: "excellent",
+      },
+      {
+        park: "Central Serengeti (Seronera)",
+        conditions:
+          "Resident predators are consistent year-round at Seronera. August is not where the migration is, but the big cats in the kopjes and along the Seronera River are reliable and accessible. Good fall-back if northern Serengeti lodges are full. Far fewer vehicles than the north in August.",
+        rating: "good",
+      },
+      {
+        park: "Ndutu / Southern Serengeti",
+        conditions:
+          "The calving season herds left in March. Resident wildlife remains but this is the quietest zone in August. Not the right choice. Return in January.",
+        rating: "fair",
+      },
+    ],
+    weeklyProgression: [
+      {
+        week: "August 1–7",
+        activity:
+          "Continuation of the July crossing momentum. Herd density at the Mara River banks is at its highest point of the year. Multiple crossing attempts per day at Kogatende main site. Some herds push into Kenya and return, others stay on the Tanzania side before committing. Predator ambush at river banks is constant.",
+        bestLocation: "Northern Serengeti, Kogatende and Sand River crossings",
+      },
+      {
+        week: "August 8–14",
+        activity:
+          "The middle two weeks of August are historically the highest-intensity crossing period. Herd sizes are maximum. Animals are funnelling toward the river from the central Serengeti in waves. The Lamai Wedge holds 50,000+ wildebeest between crossings. Cheetah and leopard sightings peak on the Lamai Wedge where the prey concentration is highest.",
+        bestLocation: "Northern Serengeti (Lamai Wedge and Kogatende)",
+      },
+      {
+        week: "August 15–21",
+        activity:
+          "Crossings continue with sustained intensity. Some herds are now north of the Mara River in Kenya's Masai Mara. They cross back and forth repeatedly. Vehicles at main crossing points are at their highest concentration of the year. Guides who know secondary crossings 3–5km downstream have a significant positioning advantage.",
+        bestLocation: "Northern Serengeti, secondary crossings north of main site",
+      },
+      {
+        week: "August 22–31",
+        activity:
+          "Crossings continue through the end of August. The very end of the month sees some herds beginning a slow drift southward, but August finishes strong. September maintains similar patterns. No hard cutoff in the migration.",
+        bestLocation: "Northern Serengeti (still), Tarangire for elephants in parallel",
+      },
+    ],
+    weather: [
+      {
+        location: "Ngorongoro Crater Rim (2,286m)",
+        tempRange: "4–8°C morning / 19°C midday",
+        rainfall: "~5mm",
+        notes: "Coldest mornings of the year on the rim. Fleece, hat, and windproof layer mandatory before descent.",
+      },
+      {
+        location: "Central Serengeti (Seronera)",
+        tempRange: "12°C morning / 28°C afternoon",
+        rainfall: "~5mm",
+        notes: "Warm afternoons, cold mornings. Virtually no rain.",
+      },
+      {
+        location: "Northern Serengeti (Kogatende)",
+        tempRange: "14°C morning / 31°C afternoon",
+        rainfall: "~5mm",
+        notes: "The warmest zone on the northern circuit. Afternoon wind off the Mara escarpment.",
+      },
+      {
+        location: "Tarangire",
+        tempRange: "13°C morning / 30°C afternoon",
+        rainfall: "~5mm",
+        notes: "Warm and completely dry. Dust on the game drive tracks is significant. Bring a dust bag for camera gear.",
+      },
+      {
+        location: "Arusha",
+        tempRange: "11°C morning / 25°C afternoon",
+        rainfall: "~15mm",
+        notes: "Pleasant highland city climate. Cooler than the parks.",
+      },
+    ],
+    additionalSections: [
+      {
+        heading: "The Mara River in August: Honest Expectations",
+        body: "The Mara River crossings in August are everything the documentaries show, and they come with a context that matters.\n\nThe main crossing point near Kogatende holds 25–40 vehicles during active crossing events in August. That is the peak vehicle concentration of the year. When a herd of 10,000 wildebeest throws itself into the river, the scene in front of you is extraordinary. The scene in your peripheral vision is a line of Land Cruisers.\n\nNone of this is a reason not to go. It is a reason to choose your guide and your camp carefully. A guide who knows the northern Serengeti will track the herd's position from the evening before, identify which bank section the animals are testing, and arrive at a secondary crossing point 3–5km downstream before the main vehicle concentration assembles. The secondary crossings are smaller, which means fewer animals in the river at once, but also 6 vehicles instead of 35.\n\nCamp position matters more in August than in any other month. Lamai camp and the fly-camps on the north bank of the Mara have a structural advantage: they cross the river on footbridges each morning and approach crossing points from the north side, which means fewer vehicles between your camp and the action. South-bank lodges drive an extra 45 minutes and arrive after the north-bank camps.\n\nFor travellers who want August wildlife without the Mara crowds: Tarangire. The elephant herds in August are exceptional by any standard outside the Serengeti migration, vehicle density is a fraction of the north, and the photography conditions (golden dry-season light, baobab backdrop) are genuinely superior for most subjects.",
+      },
+      {
+        heading: "August Booking Reality",
+        body: "August is the hardest month to book in Tanzania. Not difficult, hard.\n\nNorthern Serengeti fly-camps (Asilia Sayari, Nomad Lamai, Olakira Migration Camp, Serengeti Safari Camp, Lemala Kuria Hills): 10–12 months minimum. The best-positioned north-bank camps have 8–12 tents. August allocations fill by September or October the prior year for the top weeks. This is not marketing urgency, it is inventory mathematics.\n\nMid-range northern Serengeti lodges (Serengeti Bushtops, Serengeti Sopa, Serengeti Serena): 7–9 months for August. Larger properties with more rooms, but August occupancy runs 95–100% at all of them.\n\nNgorongoro rim (Ngorongoro Serena, andBeyond Crater Lodge, The Highlands, Rhino Lodge): 6–8 months. Often overlooked by travellers fixated on the migration. August at the crater is outstanding and has better availability than the north.\n\nTarangire (Tarangire Treetops, Swala Camp, Oliver's Camp, Sanctuary Swala): 5–7 months. The best value month in Tanzania for serious wildlife. Availability is more forgiving than the north because fewer travellers prioritise it.\n\nIf you are reading this within 3 months of an August departure, contact us now. We can work with remaining inventory across the northern circuit, but options at this stage require flexibility.",
+      },
+      {
+        heading: "August vs July: Which Is Better",
+        body: "The honest answer is August by a margin for the migration, and equal for everything else.\n\nJuly has the first crossings of the season, which carry a particular energy. The wildebeest are crossing for the first time after months on the southern plains. August has higher crossing frequency because the herds are more established at the river and have memorised the approach routes. More crossings per day in August than July is the consistent pattern.\n\nFor elephants in Tarangire, August is also the stronger month. The herds continue building from their July numbers and peak in late August through September.\n\nFor cost and availability, July is slightly more forgiving than August. A lodge that was full for August peak week may still have one or two nights available in the first week of July.\n\nIf you can only do one month, August. If you can do both, do not.",
+      },
+    ],
+    sampleItineraries: [
+      {
+        title: "8-Day August Migration Safari",
+        duration: "8 Days / 7 Nights",
+        parks: "Tarangire · Central Serengeti · Northern Serengeti · Ngorongoro",
+        price: "From $4,200 pp",
+        description:
+          "Two nights in Tarangire for peak elephant herds. Two nights central Serengeti for predators and positioning. Two nights northern Serengeti at Kogatende for Mara crossings. One night Ngorongoro rim. The full August circuit, in sequence.",
+        slug: "8-day-classic-tanzania-safari",
+      },
+      {
+        title: "5-Day Tarangire & Ngorongoro",
+        duration: "5 Days / 4 Nights",
+        parks: "Tarangire · Ngorongoro Crater",
+        price: "From $2,300 pp",
+        description:
+          "For travellers who cannot get northern Serengeti availability in August, or who want the migration-free version. Tarangire in August is exceptional for elephants. Ngorongoro Crater is exceptional in any month. Both together is a strong alternative circuit.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is August the best month for a Tanzania safari?",
+        answer:
+          "For the Mara River crossings and the Great Migration, yes. August has the highest crossing frequency and herd density of any month at the Mara River. Tarangire elephant herds also peak in August. The tradeoff is the highest lodge rates and least booking availability of the year. If you can plan 10–12 months ahead, August delivers the most consistent high-intensity wildlife viewing of any month on the northern circuit.",
+      },
+      {
+        question: "Where is the wildebeest migration in August?",
+        answer:
+          "In August, the main wildebeest herds are at the Mara River in the northern Serengeti, crossing back and forth between Tanzania and Kenya's Masai Mara. The Kogatende area and Lamai Wedge hold the highest concentrations. The western Serengeti still has some herds. The southern Serengeti and Ndutu are quiet in August. If your goal is the migration, the northern Serengeti is the only option in August.",
+      },
+      {
+        question: "How far in advance should I book an August safari?",
+        answer:
+          "10–12 months for the best northern Serengeti fly-camps. 7–9 months for mid-range northern Serengeti lodges. 5–7 months for Tarangire and Ngorongoro. If you are less than 3 months out from an August departure, contact us immediately. Remaining inventory at this stage is limited and requires flexibility on camp choice.",
+      },
+      {
+        question: "How much does an August safari cost compared to other months?",
+        answer:
+          "August is the most expensive month. Lodge rates are at their annual peak, typically 20–40% above shoulder season (January–March, November–December). A private 8-day mid-range August safari for two people runs $8,400–$12,000 total, compared to $6,400–$9,600 in a shoulder month. The crossing frequency and wildlife conditions justify the premium for most travellers who specifically want the migration.",
+      },
+      {
+        question: "What should I pack for an August Tanzania safari?",
+        answer:
+          "A proper fleece or light down jacket is non-negotiable, especially for Ngorongoro and any early morning drive. The crater rim at 4–8°C before a descent is cold. Neutral colours for game drives: khaki, olive, tan, grey. A windproof layer for open-roof vehicles. Dust bags for camera equipment, August is the dustiest month on the Serengeti tracks. Binoculars 8x42 minimum. Sunscreen SPF 50+ for afternoon drives. Bring more memory cards than you think you need.",
+      },
+      {
+        question: "Is August crowded at the Mara River?",
+        answer:
+          "At the main crossing points, yes. 25–40 vehicles at peak events. This is the reality of August at the Mara River. The mitigation is guide quality and camp position: a guide who positions at secondary crossings downstream and a camp on the north bank of the Mara arrive before the vehicle concentration assembles. Tarangire in August has outstanding elephant herds and a fraction of the vehicles.",
+      },
+      {
+        question: "Which parks are best for a Tanzania safari in August?",
+        answer:
+          "Northern Serengeti for the Mara River crossings. Tarangire for elephant herds at annual peak. Ngorongoro Crater for Big Five concentration and black rhino. Central Serengeti for resident predators if northern availability is gone. The southern Serengeti and Ndutu are not the right choice in August.",
+      },
+    ],
+    relatedItineraries: [
+      "8-day-classic-tanzania-safari",
+      "great-migration-safari",
+      "calving-season-safari",
+    ],
+  },
 }
 
 export function getMonthPage(slug: string): MonthPage | undefined {
