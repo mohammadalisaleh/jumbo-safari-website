@@ -57,6 +57,22 @@ const navItems = [
     ],
   },
   {
+    label: "Halal Safaris",
+    href: "/halal-safari-tanzania",
+    featured: {
+      title: "Tanzania's Halal Safari Specialists",
+      description: "Certified halal food, prayer logistics, alcohol-free rooms, and private vehicles. No compromises.",
+      href: "/halal-safari-tanzania",
+    },
+    links: [
+      { label: "Halal Honeymoon Safari", href: "/halal-safari-tanzania/honeymoon" },
+      { label: "Ramadan Safari", href: "/halal-safari-tanzania/ramadan" },
+      { label: "Women's Safari (Muslimah)", href: "/halal-safari-tanzania/womens-safari" },
+      { label: "Family Halal Safari", href: "/halal-safari-tanzania/family" },
+      { label: "Our Halal Standards", href: "/halal-safari-tanzania/our-standards" },
+    ],
+  },
+  {
     label: "About",
     href: "/about",
     featured: {
