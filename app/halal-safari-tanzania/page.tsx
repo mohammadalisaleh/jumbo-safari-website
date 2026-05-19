@@ -148,12 +148,87 @@ const jsonLd = {
   },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I get halal food on a Tanzania safari?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Halal meals are arranged in writing with every lodge and tented camp before your trip. Most established Tanzania safari lodges have catered to Muslim guests for years and source halal-certified meat from Arusha or Dar es Salaam suppliers. Mobile camps in the Serengeti and Ngorongoro bring frozen halal meat from approved butchers. There is no surcharge. We confirm halal arrangements with each property in writing and re-confirm 48 hours before arrival, so you receive consistent halal catering at every meal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Tanzania a Muslim-friendly travel destination?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Approximately 35 percent of Tanzania's population is Muslim, rising to about 95 percent in Zanzibar. Mosques are present in every major town including Arusha, Moshi, Karatu and Dar es Salaam, and the call to prayer is part of daily life. Halal food is widely available, Islamic dress is respected, and Tanzanian culture is famously welcoming to Muslim visitors. The Tanzania Tourist Board's Muslim Tourism Development Plan 2023 to 2027 formalised this with dedicated halal infrastructure investment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I pray during game drives in Tanzania?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our guides build prayer breaks into the game drive schedule and carry a prayer mat, compass and water for wudu in every safari vehicle. For Dhuhr and Asr we stop at safe locations away from wildlife, typically near picnic sites or ranger stations. Fajr is performed at camp before the morning drive, and Maghrib and Isha back at the lodge. Several Serengeti and Ngorongoro lodges have set aside a dedicated quiet room for prayer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there mosques near Tanzania's national parks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Arusha has more than 30 mosques and is the starting point for most northern circuit safaris. Karatu, the gateway to Ngorongoro, has 4 active mosques including Karatu Jamia Mosque. Mto wa Mbu near Lake Manyara has several. Moshi at the base of Kilimanjaro has Moshi Jamia and around 20 others. Zanzibar Stone Town has the historic Malindi Mosque and dozens more. Inside the parks themselves there are no mosques, but lodges provide private prayer space."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is alcohol served at Tanzania safari lodges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most mainstream safari lodges serve alcohol at their main bar and restaurant. For Muslim guests we book lodges that offer separate dining arrangements, alcohol-free zones, or in-room dining so you are not seated alongside drinking guests. A growing number of Tanzania camps including several in the Serengeti now operate dedicated alcohol-free wings or fully dry properties. In Zanzibar, properties such as Baraza Resort and several Stone Town boutique hotels are fully alcohol-free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a halal safari in Tanzania cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Halal arrangements add no surcharge to the standard safari cost. A 6 to 8-day private halal safari covering Tarangire, Ngorongoro and Serengeti typically ranges from 3,200 to 4,800 US dollars per person sharing on mid-range lodges, and 5,200 to 7,500 dollars on luxury lodges. Add 1,200 to 2,800 dollars per person for a 4-night Zanzibar extension at a halal-friendly resort. Prices include park fees, halal-confirmed full board, guide and vehicle, and prayer-time accommodation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best time of year for a halal safari in Tanzania?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "June to October is the peak dry season with the best wildlife viewing and the Mara River crossings of the Great Migration. January and February cover the calving season in southern Serengeti and are also when Ramadan currently falls. November and March have light short rains with fewer crowds and lower prices. May has heavier long rains and many camps close. For Muslim families avoiding school terms, the August to early September window is ideal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Tanzania safari guides accommodate Islamic customs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our guides are briefed on prayer timing, halal meal protocol, modesty preferences and Ramadan adjustments before every Muslim-guest itinerary. Many of our guides are themselves Muslim, particularly those based in Arusha and Zanzibar, and can lead congregational prayer if requested. Female travellers can request a female assistant guide. Guides also know which lodges have prayer rooms, halal kitchens and modest-dress staff, and route the trip accordingly."
+      }
+    }
+  ]
+}
+
 export default function HalalSafariTanzania() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Hero */}

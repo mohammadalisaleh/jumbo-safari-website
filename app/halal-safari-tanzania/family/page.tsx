@@ -119,9 +119,76 @@ const faqs = [
   },
 ]
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is a Tanzania safari suitable for Muslim families with children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tanzania is one of the most family-friendly safari destinations in Africa, and Muslim families benefit from the country's halal infrastructure throughout the journey. Family-friendly itineraries use lodges with interconnecting family rooms, child-friendly menus with halal protein, gentler game drives that include short walking activities, and shorter daily distances. Children over 6 manage the standard northern circuit comfortably. For families with younger children we recommend Tarangire and Lake Manyara plus Zanzibar rather than the longer Serengeti routing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can lodges provide halal meals for children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every lodge provides a halal children's menu with options like grilled chicken, beef koftas, pasta with halal mince, pilau rice, samosas, fresh fruit and yoghurt. Special dietary needs including nut allergies, gluten sensitivity, picky eaters and infant formula or weaning food are accommodated when notified in advance. Mobile camps carry a dedicated children's kitchen kit. Bottled water and pasteurised juice are stocked. Parents can also request packed halal picnic boxes for long game drive days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the minimum age for a Tanzania safari?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most safari lodges accept children from 6 years old in private game drive vehicles, and a number accept younger children from 4 with a private vehicle and guide booked. The Ngorongoro Crater has its own minimum age of 6 for descent. Walking safaris and night drives typically require children to be 12 or older. For families travelling with infants and toddlers we recommend a Zanzibar-led itinerary with a short Tarangire day-trip rather than the full Serengeti circuit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are family rooms available at halal-friendly safari lodges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Most safari lodges and tented camps offer family suites that sleep 2 adults and 2 children in interconnected tents or 1 bedroom with a separate children's loft. A growing number of Serengeti and Ngorongoro camps offer dedicated family tents with 2 bedrooms, a shared bathroom and a private veranda. In Zanzibar, family villas with 2 to 4 bedrooms and a private pool are widely available. We confirm family room configuration in writing at booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Zanzibar good for Muslim family beach holidays?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Zanzibar is one of the strongest Muslim family beach destinations in the world. The island is approximately 95 percent Muslim, halal food is the default, alcohol-free resorts and private family villas are widely available, and the beaches in the northeast and east are shallow and child-safe at low tide. Family activities include the Jozani Forest red colobus monkey walk, a half-day spice farm tour, dhow sailing, Stone Town's old fort and a snorkelling trip to Mnemba Atoll."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What safari activities are suitable for Muslim children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Morning and short afternoon game drives, a visit to a Maasai or Hadzabe village with cultural translator, supervised camp walks with a junior ranger programme that several lodges run, a stop at the Cultural Heritage Centre in Arusha, lunch picnics in safe enclosed picnic sites, optional night drives for children 12 and over in private concessions, and Zanzibar boat trips. We avoid long single-day road transfers and instead use the daily light aircraft hop where possible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What vaccinations do children need for a Tanzania safari?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yellow fever vaccination is required for entry if arriving from a country with yellow fever risk, including transit through certain hubs. Routine childhood vaccinations plus typhoid, hepatitis A and tetanus boosters are typically recommended. Malaria prophylaxis is advised for both safari areas and Zanzibar; paediatric dosing is straightforward and your GP or travel clinic will advise based on the child's weight. Always confirm current requirements with the NHS Fit for Travel or CDC websites before departure."
+      }
+    }
+  ]
+}
+
 export default function FamilyHalalSafari() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section className="bg-forest text-cream py-20 px-6">
         <div className="max-w-content mx-auto">

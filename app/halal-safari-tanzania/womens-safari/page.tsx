@@ -106,9 +106,76 @@ const faqs = [
   },
 ]
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are there women-only halal safaris in Tanzania?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We operate scheduled women-only halal departures and bespoke private women-only itineraries throughout the year. A women-only safari uses a female lead guide and female support staff, books accommodation with female housekeeping and dining service, and selects camps with screened or private pool access. Group sizes are kept small, typically 4 to 8 women. Itineraries cover the northern circuit and Zanzibar with optional add-ons for Pemba and a Stone Town women's heritage walk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Tanzania safe for solo Muslim women travellers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tanzania consistently ranks among the safer African destinations for solo female travellers, and Muslim women in particular benefit from Tanzania's deeply Islamic cultural fabric, especially in Zanzibar. Solo Muslim women report feeling more comfortable in modest dress than in most Western destinations. On safari you are with your guide and driver throughout. We arrange airport meet-and-greet, female-only accommodation, female safari staff on request, and a 24-hour WhatsApp contact line for the duration of your trip."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I request a female safari guide in Tanzania?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We maintain a dedicated roster of professionally licensed female safari guides across the northern circuit and Zanzibar. Tanzania has invested heavily in training women into the safari guiding profession through the Tanzania Women Guides Programme, and female guides now lead trips in Serengeti, Ngorongoro, Tarangire and Lake Manyara. Request a female guide at booking and we confirm the assignment in writing. For mixed-gender group departures a female assistant guide is included alongside the lead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Muslim women swim privately on a Tanzania women-only safari?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We select lodges and Zanzibar resorts with women-only swimming hours, screened pool areas or private villa pools so swimming is comfortable. Several Serengeti lodges have private plunge pools attached to each tent or suite, removing the issue entirely. In Zanzibar, private pool villas are the standard recommendation for women-only groups, and we can arrange a curtained beach cabana with female lifeguards present so ocean swimming is also private."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a women-only Muslim safari typically include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Female lead guide and female assistant, female-only safari vehicle, accommodation with female housekeeping and dining service, halal catering at every meal, private prayer space in each lodge, female spa therapists and stylists, private swimming arrangements, modest dress code respected at all properties, and women-only excursion partners for boat trips and cultural visits. A typical 7-night itinerary covers Tarangire, Ngorongoro and central Serengeti followed by Stone Town and a beach segment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are women-only safari camps available in Tanzania?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are no permanent women-only safari camps in Tanzania, but several mobile camp operators run women-only departures where the whole camp, including staff, is female for the duration of your stay. For private groups of 6 or more we can arrange a full women-only camp setup in Serengeti or Tarangire with female chef, female camp manager and female game scouts. For smaller groups we use mixed-staff camps but request female-only service teams for your tent and dining."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should Muslim women pack for a Tanzania safari?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lightweight breathable hijabs in neutral safari colours, loose long-sleeved tops and full-length trousers or skirts in earth tones, a wide-brimmed sun hat, closed walking shoes, a warm fleece for early morning drives, modest swimwear or a burkini if planning to swim, a small travel prayer mat and compass, and modest evening wear for dinner at lodges. Avoid bright white, black and blue clothing on safari as they attract tsetse flies in the bush."
+      }
+    }
+  ]
+}
+
 export default function WomensSafari() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section className="bg-forest text-cream py-20 px-6">
         <div className="max-w-content mx-auto">

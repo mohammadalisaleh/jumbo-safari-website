@@ -92,9 +92,68 @@ const certification = [
   },
 ]
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is halal food sourced and verified on your safaris?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every lodge and camp on our halal itineraries confirms in writing that all meat served to your party is halal-certified, sourced from approved suppliers in Arusha, Dar es Salaam or Zanzibar. Beef and goat come predominantly from National Halal Suppliers Tanzania and from Zanzibar's Mwanakwerekwe halal abattoir. Poultry is sourced from certified halal poultry farms. We receive a written halal commitment from each property at booking and re-confirm by phone 48 hours before your arrival at the property."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are your lodges halal-certified?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tanzania does not yet operate a national halal-certification scheme for lodges. Instead, we audit each lodge against our own 11-point halal standard covering meat sourcing, separate utensils, kitchen practice, alcohol service, prayer facilities, and staff training. Lodges that pass our audit are added to our halal-confirmed roster. We re-audit each property every 12 months and publish the audit date on the lodge profile. We are applying for CrescentRating accreditation, the global standard for halal travel operators."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you accommodate prayer times during game drives?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every safari vehicle on a halal itinerary carries a prayer mat, qibla compass and clean water for wudu. Game drive schedules are built around the day's prayer times so you can stop at Dhuhr and Asr at safe locations away from wildlife, typically picnic sites or ranger stations. Fajr is performed at camp before the morning drive and Maghrib and Isha back at the lodge. Guides print the prayer timetable for each lodge location and confirm it daily."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you have a written halal commitment with each lodge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Before any property is added to our halal roster, the general manager signs a written halal undertaking covering meat sourcing, kitchen separation, utensil dedication for halal preparation, alcohol-handling protocols, staff training requirements and prayer facility provision. The undertaking is renewed annually. A redacted copy can be shared with guests on request. Any deviation from this undertaking is treated as a contract breach and triggers our guest refund guarantee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is your refund guarantee if halal standards are not met?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If any of our written halal standards are not delivered during your trip, we refund the proportional cost of that failure. This is a written contractual clause in every booking confirmation, not an informal promise. It covers food, prayer logistics, alcohol handling, accommodation privacy and female guide provision where booked. We are not aware of any other Tanzania safari operator offering this guarantee in writing before payment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Jumbo Safaris CrescentRating accredited?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We are currently applying for CrescentRating accreditation, the global halal travel standard used by Muslim travel agents worldwide to evaluate operators. No Tanzania safari operator currently holds CrescentRating accreditation. We will update this page the moment our accreditation status changes and display the certification number prominently. Until then, we operate to the full CrescentRating standard and commit every element of that standard in writing before you pay a deposit."
+      }
+    }
+  ]
+}
+
 export default function OurHalalStandards() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section className="bg-forest text-cream py-20 px-6">
         <div className="max-w-content mx-auto">

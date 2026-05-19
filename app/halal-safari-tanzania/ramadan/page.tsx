@@ -107,9 +107,84 @@ const faqs = [
   },
 ]
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you go on safari in Tanzania during Ramadan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and Ramadan is actually one of the best times of year for a Tanzania safari. Between 2026 and 2029 Ramadan falls in January and February, which is the calving season in the southern Serengeti when hundreds of thousands of wildebeest give birth and predator activity peaks. Game drive schedules are rebuilt around Suhoor, Iftar and prayer times, lodges prepare special pre-dawn and post-sunset meals, and the safari itself fits naturally into the rhythm of the fasting day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Tanzania safari lodges serve Iftar and Suhoor during Ramadan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every lodge and tented camp we work with prepares Suhoor before Fajr and a full Iftar at Maghrib during Ramadan. Suhoor is typically delivered to your room or tent in a heated container so you can eat in private. Iftar starts with dates and water at the precise local Maghrib time, followed by a full hot meal. Mobile camps in the Serengeti adjust their kitchen rota for the month, and chefs are briefed on Ramadan menu preferences before arrival."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do game drive schedules change during Ramadan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We rebuild the day around the fasting clock. Morning drives leave just after Fajr at around 6.30am rather than the standard 6.00am sunrise start, so you can pray and eat Suhoor properly first. The drive runs until late morning to capture peak wildlife activity, then you return to camp to rest through the hottest hours. An afternoon drive starts at around 4.30pm and times the return to camp for Maghrib, so Iftar is on the table the moment you arrive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it practical to fast on a Tanzania safari?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and most guests find it easier than fasting at home. The Tanzanian Ramadan day in January and February is shorter than the European or North American equivalent, typically around 12 to 13 hours from Fajr to Maghrib. Game drive vehicles are open-sided so you stay cool, and the slower mid-day rest period fits the fasting rhythm. Islamic rulings on travel exemptions still apply, so guests who choose not to fast are accommodated discreetly without comment from staff."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Zanzibar like during Ramadan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zanzibar during Ramadan is one of the most atmospheric Muslim travel experiences in East Africa. Stone Town's Forodhani Gardens night market transforms into a nightly Iftar gathering with grilled seafood, mishkaki, Zanzibar pizza and fresh juices. Taraweeh prayers at the historic Malindi and Aga Khan mosques are open to visitors. Most restaurants close during daylight hours, so we recommend booking a resort with in-house Suhoor and Iftar service. The atmosphere is calmer and the beaches are noticeably less busy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is Ramadan in Tanzania over the next few years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ramadan 2026 ran from approximately 17 February to 18 March. Ramadan 2027 runs from approximately 7 February to 8 March. Ramadan 2028 runs from approximately 27 January to 25 February. Ramadan 2029 runs from approximately 16 January to 14 February. All four windows fall during Tanzania's calving season in southern Serengeti and the early dry months, so safari conditions are excellent. Exact dates depend on the moon sighting and are confirmed by the Tanzania Mufti's office a few days before."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is travel during Ramadan permissible if you cannot fast?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Islamic jurisprudence allows fasting to be deferred when travelling on a journey that meets the recognised distance and hardship thresholds, with missed days made up after Ramadan. Many guests choose to continue fasting because the cooler safari morning and shorter East African day make it manageable. Others use the travel exemption and resume fasting at home. Our staff do not comment either way and provide meals, water and prayer support consistent with whichever decision you make."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there extra costs for Ramadan safari arrangements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Suhoor delivery, adjusted game drive timings, Iftar setup and prayer accommodation are all included at standard rates. January and February also fall outside Tanzania's peak August to October pricing band, so a Ramadan safari typically lands in the mid-season tariff. Park fees and Zanzibar resort rates are unchanged. The only Ramadan-specific cost some guests opt into is a private Iftar setup on a sandbank or in the bush, which is bookable as an extra and quoted on request."
+      }
+    }
+  ]
+}
+
 export default function RamadanSafari() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section className="bg-forest text-cream py-20 px-6">
         <div className="max-w-content mx-auto">

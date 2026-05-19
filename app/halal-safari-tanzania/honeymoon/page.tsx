@@ -118,9 +118,76 @@ const faqs = [
   },
 ]
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Zanzibar halal-friendly for Muslim honeymooners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Zanzibar is approximately 95 percent Muslim, so the island operates around Islamic norms by default. Mosques are everywhere, the call to prayer punctuates the day, halal food is the standard not the exception, and most local restaurants are alcohol-free. For honeymooners specifically, several resorts including Baraza Resort and Spa, The Residence Zanzibar villas and Zuri Zanzibar offer private pool villas, female-only spa treatments and alcohol-free bookings so couples can enjoy privacy in line with Islamic preferences."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a halal honeymoon in Tanzania include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A typical halal Tanzania honeymoon pairs 4 to 5 days of private safari in the northern circuit with 4 to 6 nights in Zanzibar. On safari you stay at lodges with confirmed halal catering, private prayer space and discreet alcohol-free dining. In Zanzibar you book a private pool villa or alcohol-free resort so swimming and meals stay private. Romantic touches include a private dhow sunset cruise, a beach dinner setup, a Stone Town heritage tour and a couples spa treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there alcohol-free resorts in Zanzibar for Muslim couples?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A growing list of Zanzibar resorts cater specifically to Muslim couples with fully alcohol-free operations. Baraza Resort and Spa on the east coast offers all-inclusive halal dining and segregated swimming areas on request. Manda Bay, Mnarani Beach Cottages and several Stone Town boutique hotels operate as dry properties. Private villa rentals through Halal Booking offer complete privacy, private pools and in-villa halal chefs. We confirm alcohol-free status in writing with each property before booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Muslim couples swim privately on a Zanzibar honeymoon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Privacy is the easiest part of a Zanzibar halal honeymoon to arrange. We book private pool villas where the wife can swim unobserved, or resorts with women-only swimming hours and screened pool decks. Many beach properties also offer a private beach cabana setup with curtained sides for couples. For complete privacy, full-villa rentals on the east and northeast coasts give you a private stretch of beach, a private pool and an in-villa chef cooking halal meals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What romantic halal activities can couples do in Zanzibar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Private sunset dhow cruises with a halal dinner on board, Stone Town walking tours covering the historic mosques and the spice market, snorkelling at Mnemba Atoll from a private boat, a beach picnic on a sandbank with a halal chef, couples spa treatments with female therapists, a Jozani Forest red colobus monkey walk, and a private boat trip to Prison Island. All of these can be arranged alcohol-free, with halal catering, and with separate male and female service staff if preferred."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should a halal Tanzania honeymoon be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ten to twelve nights is the sweet spot. Four to five nights on safari gives you Tarangire, Ngorongoro and at least 2 nights in central Serengeti, which is the wildlife density you flew for. Five to seven nights in Zanzibar lets you unwind after the early game drives, spend time at the beach and explore Stone Town. Shorter than 8 nights feels rushed across the safari and beach combination. Longer than 14 nights is appropriate for couples adding Pemba or Saadani."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can we combine a safari with a Zanzibar beach honeymoon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The safari to beach combination is the standard Tanzania honeymoon structure. A short scheduled flight from the Serengeti airstrip lands directly in Zanzibar in around 90 minutes, so you go from final game drive to your beach villa in the same day. We sequence safari first, beach second, so you finish on the slower beach pace. The same operator handles every transfer, so halal catering, alcohol-free arrangements and prayer schedules stay consistent across both legs."
+      }
+    }
+  ]
+}
+
 export default function HalalHoneymoon() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section className="bg-forest text-cream py-20 px-6">
         <div className="max-w-content mx-auto">
