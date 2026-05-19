@@ -34,6 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides/best-time-to-visit-tanzania`, priority: 0.7, changeFrequency: "monthly" as const },
     // Monthly safari guides
     { url: `${baseUrl}/safari-in-july`, priority: 0.8, changeFrequency: "monthly" as const },
+    // Citation-bait / GEO pages
+    { url: `${baseUrl}/tanzania-safari-cost-2026`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/7-day-tanzania-safari-itinerary`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/tanzania-safari-for-americans`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/about/trust`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/serengeti-vs-ngorongoro-vs-tarangire`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/ndutu-calving-season`, priority: 0.9, changeFrequency: "yearly" as const },
   ]
 
   // Add Polish and Czech homepage versions
