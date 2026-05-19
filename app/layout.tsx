@@ -30,7 +30,8 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/logo-roundel.png",
+    icon: "/icon.png",
+    apple: "/logo-roundel.png",
   },
 }
 
