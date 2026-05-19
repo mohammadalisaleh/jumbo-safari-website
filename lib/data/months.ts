@@ -253,7 +253,7 @@ export const monthPages: Record<string, MonthPage> = {
       alt: "Wildebeest crossing the Mara River in the northern Serengeti during the Great Migration, Tanzania",
     },
     intro:
-      "August is the best month to safari in Tanzania. That is a position, and I will defend it. The Mara River crossings are at maximum frequency. The Tarangire elephant herds hit their annual peak, 500 to 600 individuals visible from a single hillside. The Serengeti short-grass plains make every predator sighting effortless. Ngorongoro Crater is cold and clear. Everything is working at once. The price for this is the highest lodge rates of the year, the most vehicles at crossing points, and the least forgiving booking window on the continent. If you want August, you plan in October for it.",
+      "August is the best month to safari in Tanzania. That is a position, and I will defend it. The Mara River crossings are at maximum frequency. The Tarangire elephant herds hit their annual peak, up to 500 individuals concentrated at the river. The Serengeti short-grass plains make every predator sighting effortless. Ngorongoro Crater is cold and clear. Everything is working at once. The price for this is the highest lodge rates of the year, the most vehicles at crossing points, and the least forgiving booking window on the continent. If you want August, you plan in October for it.",
     highlights: [
       "Mara River crossings at peak frequency — multiple crossings per day at main sites",
       "Tarangire elephant herds at annual maximum: 500–600+ animals at the river",
@@ -271,7 +271,7 @@ export const monthPages: Record<string, MonthPage> = {
       {
         park: "Tarangire National Park",
         conditions:
-          "August is Tarangire's peak month. The Tarangire River is the only water in the ecosystem and it draws elephants from 100km away. Herds of 500 to 600 are documented at the river in August and September. Old bulls with tusks measuring 1.5m or more. Calves born in early 2026 old enough to walk confidently but still close to their mothers. The baobab landscape in dry-season gold. No other month compares for elephants.",
+          "August is Tarangire's peak month. The Tarangire River is the only water in the ecosystem and draws elephants from across the region. Concentrations of up to 500 individuals at the river are documented in August and September. Old bulls with tusks measuring over a metre. The park holds more than 3,000 elephants total; in August they come to the river in groups that exceed any other time of year. The baobab landscape in dry-season gold. No other month compares for elephants.",
         rating: "excellent",
       },
       {
@@ -322,27 +322,27 @@ export const monthPages: Record<string, MonthPage> = {
     weather: [
       {
         location: "Ngorongoro Crater Rim (2,286m)",
-        tempRange: "4–8°C morning / 19°C midday",
+        tempRange: "Near-freezing to 2°C morning / 18°C midday",
         rainfall: "~5mm",
-        notes: "Coldest mornings of the year on the rim. Fleece, hat, and windproof layer mandatory before descent.",
+        notes: "August is the coldest month on the rim. Frost is common at dawn. Snow has been recorded. A proper down or fleece jacket, hat, and windproof layer are not optional.",
       },
       {
         location: "Central Serengeti (Seronera)",
-        tempRange: "12°C morning / 28°C afternoon",
+        tempRange: "14°C morning / 25°C afternoon",
         rainfall: "~5mm",
-        notes: "Warm afternoons, cold mornings. Virtually no rain.",
+        notes: "Warm afternoons, cold mornings. Virtually no rain. Dust increases as the dry season extends.",
       },
       {
         location: "Northern Serengeti (Kogatende)",
-        tempRange: "14°C morning / 31°C afternoon",
+        tempRange: "14°C morning / 26°C afternoon",
         rainfall: "~5mm",
-        notes: "The warmest zone on the northern circuit. Afternoon wind off the Mara escarpment.",
+        notes: "Slightly warmer than central Serengeti. Afternoon wind off the Mara escarpment makes open-roof driving cold in the early hours.",
       },
       {
         location: "Tarangire",
-        tempRange: "13°C morning / 30°C afternoon",
+        tempRange: "14°C morning / 24°C afternoon",
         rainfall: "~5mm",
-        notes: "Warm and completely dry. Dust on the game drive tracks is significant. Bring a dust bag for camera gear.",
+        notes: "Warm and completely dry. Dust on game drive tracks is significant in August. Bring a dust bag for camera gear.",
       },
       {
         location: "Arusha",
@@ -354,7 +354,7 @@ export const monthPages: Record<string, MonthPage> = {
     additionalSections: [
       {
         heading: "The Mara River in August: Honest Expectations",
-        body: "The Mara River crossings in August are everything the documentaries show, and they come with a context that matters.\n\nThe main crossing point near Kogatende holds 25–40 vehicles during active crossing events in August. That is the peak vehicle concentration of the year. When a herd of 10,000 wildebeest throws itself into the river, the scene in front of you is extraordinary. The scene in your peripheral vision is a line of Land Cruisers.\n\nNone of this is a reason not to go. It is a reason to choose your guide and your camp carefully. A guide who knows the northern Serengeti will track the herd's position from the evening before, identify which bank section the animals are testing, and arrive at a secondary crossing point 3–5km downstream before the main vehicle concentration assembles. The secondary crossings are smaller, which means fewer animals in the river at once, but also 6 vehicles instead of 35.\n\nCamp position matters more in August than in any other month. Lamai camp and the fly-camps on the north bank of the Mara have a structural advantage: they cross the river on footbridges each morning and approach crossing points from the north side, which means fewer vehicles between your camp and the action. South-bank lodges drive an extra 45 minutes and arrive after the north-bank camps.\n\nFor travellers who want August wildlife without the Mara crowds: Tarangire. The elephant herds in August are exceptional by any standard outside the Serengeti migration, vehicle density is a fraction of the north, and the photography conditions (golden dry-season light, baobab backdrop) are genuinely superior for most subjects.",
+        body: "The Mara River crossings in August are everything the documentaries show, and they come with a context that matters.\n\nThe northern Serengeti sees up to 600 vehicles per day across its 4,000 square kilometres during August peak. At the active crossing points, congestion is severe enough that TANAPA deployed dedicated patrol vehicles in 2024 specifically to manage Kogatende. The crossing points are numbered 1 to 10. Numbers 4, 7, and 10 are the most visited. When a herd commits to the river, every guide within radio range drives to the nearest numbered site.\n\nNone of this is a reason not to go. It is a reason to choose your guide and your camp carefully. A guide who knows the northern Serengeti tracks the herd's position from the evening before, identifies which bank section the animals are testing, and arrives at one of the lesser-visited crossing points before the vehicle concentration assembles. Less volume in the river, fewer vehicles in frame.\n\nCamp position matters more in August than in any other month. Lamai and the north-bank fly-camps have a structural advantage: they approach crossing points from the north side, which means fewer vehicles between camp and the action, and shorter drive times. South-bank lodges drive an extra 30–45 minutes and typically arrive after the north-bank camps.\n\nFor travellers who want August wildlife without the Mara crowds: Tarangire. The elephant herds peak in August, vehicle density is a fraction of the north, and the photography conditions (dry-season gold light, baobab backdrop) are superior for most subjects.",
       },
       {
         heading: "August Booking Reality",
@@ -412,8 +412,8 @@ export const monthPages: Record<string, MonthPage> = {
       },
       {
         question: "Is August crowded at the Mara River?",
-        answer:
-          "At the main crossing points, yes. 25–40 vehicles at peak events. This is the reality of August at the Mara River. The mitigation is guide quality and camp position: a guide who positions at secondary crossings downstream and a camp on the north bank of the Mara arrive before the vehicle concentration assembles. Tarangire in August has outstanding elephant herds and a fraction of the vehicles.",
+          answer:
+          "Yes, significantly. The northern Serengeti sees up to 600 vehicles per day in August across its 4,000 km². At active crossing points the congestion is severe enough that TANAPA deployed dedicated patrol vehicles to manage it in 2024. The mitigation is guide quality and camp position: a guide who knows lesser-visited crossing points and a camp on the north bank of the Mara arrive before the main vehicle concentration assembles. Tarangire in August has outstanding elephant herds and a fraction of the vehicle numbers.",
       },
       {
         question: "Which parks are best for a Tanzania safari in August?",
