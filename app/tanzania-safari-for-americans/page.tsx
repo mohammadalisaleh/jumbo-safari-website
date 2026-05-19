@@ -114,7 +114,7 @@ export default function TanzaniaSafariForAmericansPage() {
               Tanzania Safari for Americans
             </h1>
             <p className="text-lead-mobile md:text-lead-desktop text-cream/90 max-w-2xl">
-              75,000 Americans visited Tanzania in 2024. That is below 2019 levels, which means competition for the best lodges and guides is lower than it has been in years. Here is what you need to know to book one.
+              Tanzania hit a record 2.66 million international arrivals in 2024. The US is consistently one of the top non-African source markets. Here is what American travelers need to know before booking.
             </p>
           </div>
         </section>

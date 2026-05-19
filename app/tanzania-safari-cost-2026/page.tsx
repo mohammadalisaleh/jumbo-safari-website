@@ -54,7 +54,7 @@ const faqs = [
   {
     question: "What is the 2026 change to Tanzania park fee payments?",
     answer:
-      "Tanzania's national park authority (TANAPA) completed a shift to electronic payments at most major gates in late 2024 and 2025. Card and mobile money (M-Pesa) are now accepted at Serengeti, Tarangire, and Ngorongoro gates. USD cash is still accepted but no longer the only option. Your guide handles all fee payments at the gate.",
+      "Cash is no longer accepted at any Tanzania national park gate. TANAPA completed a move to electronic-only payments, with Visa and Mastercard accepted at main entry points. Connectivity at remote gates can be unreliable, which is why your guide handles all payments in advance or through the operator's account. If you are self-driving, this is worth knowing: do not arrive at a gate with only cash.",
   },
 ]
 
@@ -231,44 +231,44 @@ export default function TanzaniaSafariCostPage() {
                     <th className="text-left py-3 pr-6 font-montserrat font-semibold">Park</th>
                     <th className="text-left py-3 pr-6 font-montserrat font-semibold">Adult/day</th>
                     <th className="text-left py-3 pr-6 font-montserrat font-semibold">Child (5–15)/day</th>
-                    <th className="text-left py-3 font-montserrat font-semibold">Vehicle fee/day</th>
+                    <th className="text-left py-3 font-montserrat font-semibold">Notes</th>
                   </tr>
                 </thead>
                 <tbody className="text-cream/80">
                   <tr className="border-b border-cream/10">
                     <td className="py-3 pr-6 font-medium text-cream">Serengeti</td>
-                    <td className="py-3 pr-6">$80</td>
-                    <td className="py-3 pr-6">$40</td>
-                    <td className="py-3">$40</td>
+                    <td className="py-3 pr-6">$71–$83</td>
+                    <td className="py-3 pr-6">$24</td>
+                    <td className="py-3 text-sm">Low/peak season rate</td>
                   </tr>
                   <tr className="border-b border-cream/10">
                     <td className="py-3 pr-6 font-medium text-cream">Ngorongoro Crater</td>
-                    <td className="py-3 pr-6">$80</td>
-                    <td className="py-3 pr-6">$40</td>
-                    <td className="py-3">$295 crater fee</td>
+                    <td className="py-3 pr-6">$70.80</td>
+                    <td className="py-3 pr-6">$23.60</td>
+                    <td className="py-3 text-sm">+ $295/vehicle to descend crater</td>
                   </tr>
                   <tr className="border-b border-cream/10">
                     <td className="py-3 pr-6 font-medium text-cream">Tarangire</td>
-                    <td className="py-3 pr-6">$65</td>
-                    <td className="py-3 pr-6">$30</td>
-                    <td className="py-3">$40</td>
+                    <td className="py-3 pr-6">$59</td>
+                    <td className="py-3 pr-6">$23.60</td>
+                    <td className="py-3 text-sm">Select park rate</td>
                   </tr>
                   <tr className="border-b border-cream/10">
                     <td className="py-3 pr-6 font-medium text-cream">Lake Manyara</td>
-                    <td className="py-3 pr-6">$65</td>
-                    <td className="py-3 pr-6">$30</td>
-                    <td className="py-3">$40</td>
+                    <td className="py-3 pr-6">$59</td>
+                    <td className="py-3 pr-6">$23.60</td>
+                    <td className="py-3 text-sm">Select park rate</td>
                   </tr>
                   <tr>
                     <td className="py-3 pr-6 font-medium text-cream">Ndutu (NCAA)</td>
-                    <td className="py-3 pr-6">$60</td>
-                    <td className="py-3 pr-6">$30</td>
-                    <td className="py-3">$40</td>
+                    <td className="py-3 pr-6">$70.80</td>
+                    <td className="py-3 pr-6">$23.60</td>
+                    <td className="py-3 text-sm">NCAA conservation fee</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-cream/50 mt-4">Fees are in USD. Park fees change periodically. Confirm current rates with your operator at booking.</p>
+            <p className="text-xs text-cream/50 mt-4">All fees include 18% VAT. Cash is not accepted at any park gate — card (Visa/Mastercard) only. Your guide handles all payments. Rates subject to change; verify with your operator at booking.</p>
           </div>
         </section>
 
