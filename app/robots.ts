@@ -31,6 +31,18 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "Claude-SearchBot",
         allow: "/",
       },
+      {
+        userAgent: "Google-Extended",
+        allow: "/",
+      },
+      {
+        userAgent: "Bingbot",
+        allow: "/",
+      },
+      {
+        userAgent: "Applebot",
+        allow: "/",
+      },
     ],
     sitemap: "https://www.jumbosafaris.com/sitemap.xml",
   }

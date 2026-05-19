@@ -93,6 +93,16 @@ export default async function NationalParkPage({ params }: PageProps) {
       }
     : null
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jumbosafaris.com" },
+      { "@type": "ListItem", position: 2, name: "National Parks", item: "https://www.jumbosafaris.com/national-parks" },
+      { "@type": "ListItem", position: 3, name: park.name, item: `https://www.jumbosafaris.com/national-parks/${slug}` },
+    ],
+  }
+
   return (
     <>
       <script
@@ -105,6 +115,10 @@ export default async function NationalParkPage({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       <article className="bg-cream">
         {/* Breadcrumb */}

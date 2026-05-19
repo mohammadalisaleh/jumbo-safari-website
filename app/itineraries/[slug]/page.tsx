@@ -97,6 +97,16 @@ export default async function ItineraryPage({ params }: PageProps) {
     })),
   }
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jumbosafaris.com" },
+      { "@type": "ListItem", position: 2, name: "Itineraries", item: "https://www.jumbosafaris.com/itineraries" },
+      { "@type": "ListItem", position: 3, name: itinerary.title, item: `https://www.jumbosafaris.com/itineraries/${slug}` },
+    ],
+  }
+
   return (
     <>
       <script
@@ -106,6 +116,10 @@ export default async function ItineraryPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <article className="bg-cream">
