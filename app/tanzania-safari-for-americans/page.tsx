@@ -135,7 +135,7 @@ export default function TanzaniaSafariForAmericansPage() {
                 { label: "Kilimanjaro Airport (JRO)", value: "17–20 hrs", detail: "From US East Coast, one connection" },
               ].map((item) => (
                 <div key={item.label} className="bg-forest/5 p-6">
-                  <div className="text-eyebrow uppercase text-muted mb-2">{item.label}</div>
+                  <div className="text-eyebrow uppercase text-forest/60 font-semibold mb-2">{item.label}</div>
                   <div className="font-montserrat font-bold text-2xl text-forest mb-2">{item.value}</div>
                   <div className="text-sm text-ink/70">{item.detail}</div>
                 </div>

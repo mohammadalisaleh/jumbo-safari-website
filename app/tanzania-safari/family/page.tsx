@@ -60,23 +60,23 @@ export default function FamilySafariPage() {
               <h3 className="font-montserrat font-bold text-lg text-forest mb-4">Family Safari Facts</h3>
               <dl className="space-y-3 text-sm">
                 <div>
-                  <dt className="text-muted uppercase tracking-wide text-xs">Minimum age</dt>
+                  <dt className="text-forest/60 font-semibold uppercase tracking-widest text-xs">Minimum age</dt>
                   <dd className="font-semibold text-forest">5 years old</dd>
                 </div>
                 <div>
-                  <dt className="text-muted uppercase tracking-wide text-xs">Vehicle</dt>
+                  <dt className="text-forest/60 font-semibold uppercase tracking-widest text-xs">Vehicle</dt>
                   <dd className="font-semibold text-forest">Private 4x4 Land Cruiser (your family only)</dd>
                 </div>
                 <div>
-                  <dt className="text-muted uppercase tracking-wide text-xs">Duration</dt>
+                  <dt className="text-forest/60 font-semibold uppercase tracking-widest text-xs">Duration</dt>
                   <dd className="font-semibold text-forest">8 days recommended (5-day also available)</dd>
                 </div>
                 <div>
-                  <dt className="text-muted uppercase tracking-wide text-xs">Best season</dt>
+                  <dt className="text-forest/60 font-semibold uppercase tracking-widest text-xs">Best season</dt>
                   <dd className="font-semibold text-forest">July-August, December-January (school holidays)</dd>
                 </div>
                 <div>
-                  <dt className="text-muted uppercase tracking-wide text-xs">Starting price</dt>
+                  <dt className="text-forest/60 font-semibold uppercase tracking-widest text-xs">Starting price</dt>
                   <dd className="font-semibold text-forest">From $2,800 per person</dd>
                 </div>
               </dl>

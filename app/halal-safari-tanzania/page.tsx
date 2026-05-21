@@ -110,7 +110,7 @@ const faqs = [
   {
     question: "Does Jumbo Safaris have halal certification?",
     answer:
-      "We are in the process of applying for CrescentRating accreditation, the global standard for halal travel services. No Tanzania safari operator currently holds this certification, which is why we are pursuing it. In the meantime, we operate to the same standard: BAKWATA-certified food suppliers, written prayer logistics, written alcohol policy, and a refund guarantee clause in every contract. We will not claim certification we do not hold. We will tell you exactly what we do and put it in writing.",
+      "No third-party certification currently covers Tanzania safari operators for halal compliance as a whole operation. Our food suppliers hold BAKWATA certification, issued by the national Muslim council in Tanzania. For everything else, we operate to a written standard: BAKWATA-certified food, prayer logistics built into every itinerary, written alcohol policy, and a refund guarantee clause in every contract. We will not claim certification we do not hold. We will tell you exactly what we do and put it in writing.",
   },
   {
     question: "What languages can you operate in?",
@@ -264,7 +264,7 @@ export default function HalalSafariTanzania() {
 
       {/* Trust bar */}
       <section className="border-b border-border-soft bg-cream py-5 px-6">
-        <div className="max-w-content mx-auto flex flex-wrap gap-6 text-caption text-muted uppercase tracking-wider">
+        <div className="max-w-content mx-auto flex flex-wrap gap-6 text-caption text-forest/60 font-semibold uppercase tracking-wider">
           <span>BAKWATA-certified halal food suppliers</span>
           <span className="text-border-soft">|</span>
           <span>Prayer logistics written into every itinerary</span>
@@ -272,8 +272,6 @@ export default function HalalSafariTanzania() {
           <span>Alcohol removed from your room</span>
           <span className="text-border-soft">|</span>
           <span>Refund guarantee in every contract</span>
-          <span className="text-border-soft">|</span>
-          <span>CrescentRating accreditation in progress</span>
         </div>
       </section>
 
@@ -300,7 +298,7 @@ export default function HalalSafariTanzania() {
                     <div className="flex items-center gap-3 mb-3">
                       <span className="text-eyebrow uppercase text-orange tracking-wider">{tour.duration}</span>
                       <span className="text-border-soft">|</span>
-                      <span className="text-eyebrow uppercase text-muted tracking-wider">{tour.price}</span>
+                      <span className="text-eyebrow uppercase text-forest/60 font-semibold tracking-wider">{tour.price}</span>
                     </div>
                     <h3 className="font-montserrat text-h3-mobile lg:text-h3-desktop font-semibold text-ink mb-3 group-hover:text-forest transition-colors">
                       {tour.title}
@@ -383,7 +381,7 @@ export default function HalalSafariTanzania() {
               { stat: "35–40%", label: "of mainland Tanzania's population is Muslim" },
               { stat: "95%", label: "of Zanzibar's population is Muslim" },
               { stat: "1,000+", label: "years of Omani-Swahili Islamic heritage on the coast" },
-              { stat: "$0", label: "other Tanzania safari operators with CrescentRating accreditation" },
+              { stat: "Written", label: "halal guarantee in every contract before you pay a deposit" },
             ].map((item) => (
               <div key={item.stat} className="border border-border-soft p-6 flex items-start gap-6">
                 <span className="font-montserrat font-bold text-h2-mobile text-forest flex-shrink-0">{item.stat}</span>

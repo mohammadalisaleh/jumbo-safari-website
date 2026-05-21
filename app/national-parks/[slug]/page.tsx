@@ -383,7 +383,7 @@ export default async function NationalParkPage({ params }: PageProps) {
                 <dl className="space-y-3">
                   {Object.entries(park.quickFacts).map(([key, value]) => (
                     <div key={key}>
-                      <dt className="text-sm text-muted uppercase tracking-wide">
+                      <dt className="text-xs font-semibold text-forest/60 uppercase tracking-widest">
                         {key.replace(/([A-Z])/g, " $1").trim()}
                       </dt>
                       <dd className="font-semibold text-forest">{value}</dd>

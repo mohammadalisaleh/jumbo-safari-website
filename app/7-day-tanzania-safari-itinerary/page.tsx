@@ -278,7 +278,7 @@ export default function SevenDayItineraryPage() {
               </div>
 
               <div>
-                <p className="text-eyebrow uppercase text-muted mb-3">Not Included</p>
+                <p className="text-eyebrow uppercase text-forest/60 font-semibold mb-3">Not Included</p>
                 <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-6">
                   What you pay separately
                 </h2>

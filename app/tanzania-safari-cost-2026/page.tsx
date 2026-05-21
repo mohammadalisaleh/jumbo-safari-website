@@ -123,7 +123,7 @@ export default function TanzaniaSafariCostPage() {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               {/* Budget */}
               <div className="border border-forest/20 p-6">
-                <div className="text-eyebrow uppercase text-muted mb-2">Budget</div>
+                <div className="text-eyebrow uppercase text-forest/60 font-semibold mb-2">Budget</div>
                 <div className="font-montserrat font-bold text-3xl text-forest mb-1">$250–$400</div>
                 <div className="text-sm text-muted mb-4">per person / per day</div>
                 <ul className="text-sm text-ink/80 space-y-2">
@@ -140,7 +140,7 @@ export default function TanzaniaSafariCostPage() {
                 <div className="absolute -top-3 left-6 bg-orange text-cream text-xs font-montserrat font-bold px-3 py-1">
                   MOST POPULAR
                 </div>
-                <div className="text-eyebrow uppercase text-muted mb-2">Mid-Range</div>
+                <div className="text-eyebrow uppercase text-forest/60 font-semibold mb-2">Mid-Range</div>
                 <div className="font-montserrat font-bold text-3xl text-forest mb-1">$400–$700</div>
                 <div className="text-sm text-muted mb-4">per person / per day</div>
                 <ul className="text-sm text-ink/80 space-y-2">
@@ -154,7 +154,7 @@ export default function TanzaniaSafariCostPage() {
 
               {/* Luxury */}
               <div className="border border-forest/20 p-6">
-                <div className="text-eyebrow uppercase text-muted mb-2">Luxury</div>
+                <div className="text-eyebrow uppercase text-forest/60 font-semibold mb-2">Luxury</div>
                 <div className="font-montserrat font-bold text-3xl text-forest mb-1">$700–$1,500+</div>
                 <div className="text-sm text-muted mb-4">per person / per day</div>
                 <ul className="text-sm text-ink/80 space-y-2">
@@ -301,7 +301,7 @@ export default function TanzaniaSafariCostPage() {
               </div>
 
               <div>
-                <p className="text-eyebrow uppercase text-muted mb-3">Not Included</p>
+                <p className="text-eyebrow uppercase text-forest/60 font-semibold mb-3">Not Included</p>
                 <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-6">
                   What you pay separately
                 </h2>

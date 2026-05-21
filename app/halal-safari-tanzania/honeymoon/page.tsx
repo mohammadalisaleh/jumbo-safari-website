@@ -301,7 +301,7 @@ export default function HalalHoneymoon() {
                   <span className="text-eyebrow uppercase text-orange tracking-wider mb-2 block">Our Recommendation</span>
                 )}
                 <h3 className="font-montserrat font-semibold text-h3-mobile text-ink mb-1">{hotel.name}</h3>
-                <p className="text-caption text-muted uppercase tracking-wider mb-3">{hotel.location} — {hotel.tier}</p>
+                <p className="text-caption text-forest/60 font-semibold uppercase tracking-wider mb-3">{hotel.location} — {hotel.tier}</p>
                 <p className="text-body-mobile text-muted leading-relaxed">{hotel.notes}</p>
               </div>
             ))}

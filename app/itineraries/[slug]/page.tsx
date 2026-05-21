@@ -202,7 +202,7 @@ export default async function ItineraryPage({ params }: PageProps) {
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 bg-white border border-border-soft p-6">
                   {Object.entries(itinerary.quickFacts).map(([key, value]) => (
                     <div key={key}>
-                      <dt className="text-sm text-muted uppercase tracking-wide mb-1">
+                      <dt className="text-xs font-semibold text-forest/60 uppercase tracking-widest mb-1">
                         {key.replace(/([A-Z])/g, " $1").trim()}
                       </dt>
                       <dd className="font-semibold text-forest">{value}</dd>

@@ -223,7 +223,7 @@ export default function TanzaniaSafariPage() {
                     { label: "Time Zone", value: "EAT (UTC+3), no DST" },
                   ].map(({ label, value }) => (
                     <div key={label} className="border-b border-border-soft pb-4 last:border-0 last:pb-0">
-                      <dt className="text-sm text-muted uppercase tracking-wide mb-1">{label}</dt>
+                      <dt className="text-xs font-semibold text-forest/60 uppercase tracking-widest mb-1">{label}</dt>
                       <dd className="font-semibold text-forest">{value}</dd>
                     </div>
                   ))}

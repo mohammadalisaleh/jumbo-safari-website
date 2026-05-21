@@ -276,7 +276,7 @@ export default function WomensSafari() {
               <div key={dep.month} className="border border-border-soft p-6">
                 <span className="text-eyebrow uppercase text-orange tracking-wider mb-2 block">{dep.type}</span>
                 <h3 className="font-montserrat font-bold text-h3-mobile text-ink mb-1">{dep.month}</h3>
-                <p className="text-caption text-muted uppercase tracking-wider mb-3">{dep.spots}</p>
+                <p className="text-caption text-forest/60 font-semibold uppercase tracking-wider mb-3">{dep.spots}</p>
                 <p className="text-body-mobile text-muted">{dep.note}</p>
               </div>
             ))}

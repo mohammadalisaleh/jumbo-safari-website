@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Our Halal Safari Standards | Jumbo Safaris",
     description:
-      "BAKWATA-certified food, prayer logistics, honest alcohol policy, CrescentRating application status, and a written refund guarantee. Everything specific.",
+      "BAKWATA-certified food, prayer logistics, honest alcohol policy, certification status, and a written refund guarantee. Everything specific.",
     url: "https://www.jumbosafaris.com/halal-safari-tanzania/our-standards",
   },
 }
@@ -57,7 +57,7 @@ const cannotGuarantee = [
   {
     title: "\"100% halal-certified\" as a property claim",
     detail:
-      "We do not claim halal certification for properties or the overall safari operation that we do not hold. Our food suppliers hold BAKWATA certification. We are in the process of applying for CrescentRating accreditation for the operation itself. Until that accreditation is granted, we will not use the phrase halal-certified to describe our business.",
+      "We do not claim halal certification for properties or the overall safari operation that we do not hold. Our food suppliers hold BAKWATA certification. For the operation itself, no recognised certification body currently audits Tanzania safari operators for halal compliance. We will not use the phrase halal-certified to describe our business until that changes.",
   },
   {
     title: "\"Sharia-compliant\" as an overall description",
@@ -72,12 +72,6 @@ const cannotGuarantee = [
 ]
 
 const certification = [
-  {
-    org: "CrescentRating",
-    status: "Application in progress",
-    detail:
-      "CrescentRating is the global standard for halal travel accreditation, used by Muslim travel agents worldwide to evaluate operators. No Tanzania safari operator currently holds CrescentRating accreditation. We are in the process of applying. Once granted, we will state it explicitly on this page with the certification number.",
-  },
   {
     org: "BAKWATA",
     status: "Active — food suppliers certified",
@@ -109,7 +103,7 @@ const faqSchema = {
       "name": "Are your lodges halal-certified?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tanzania does not yet operate a national halal-certification scheme for lodges. Instead, we audit each lodge against our own 11-point halal standard covering meat sourcing, separate utensils, kitchen practice, alcohol service, prayer facilities, and staff training. Lodges that pass our audit are added to our halal-confirmed roster. We re-audit each property every 12 months and publish the audit date on the lodge profile. We are applying for CrescentRating accreditation, the global standard for halal travel operators."
+        "text": "Tanzania does not yet operate a national halal-certification scheme for lodges. Instead, we audit each lodge against our own 11-point halal standard covering meat sourcing, separate utensils, kitchen practice, alcohol service, prayer facilities, and staff training. Lodges that pass our audit are added to our halal-confirmed roster. We re-audit each property every 12 months and publish the audit date on the lodge profile."
       }
     },
     {
@@ -138,10 +132,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Is Jumbo Safaris CrescentRating accredited?",
+      "name": "What halal certifications does Jumbo Safaris hold?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We are currently applying for CrescentRating accreditation, the global halal travel standard used by Muslim travel agents worldwide to evaluate operators. No Tanzania safari operator currently holds CrescentRating accreditation. We will update this page the moment our accreditation status changes and display the certification number prominently. Until then, we operate to the full CrescentRating standard and commit every element of that standard in writing before you pay a deposit."
+        "text": "Our food suppliers hold BAKWATA certification, issued by the national Muslim council in Tanzania. This covers meat sourcing specifically. No recognised certification body currently audits Tanzania safari operators for halal compliance as a whole operation. We do not claim a certification we do not hold. Instead, every element of our halal standard is committed to in writing in your contract before you pay a deposit, and backed by a refund guarantee if any standard is not met during your trip."
       }
     }
   ]
@@ -233,10 +227,10 @@ export default function OurHalalStandards() {
         <div className="max-w-content mx-auto">
           <p className="text-eyebrow uppercase text-orange tracking-widest mb-3">Certification Status</p>
           <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-4">
-            What We Hold and What Is Pending
+            What We Hold
           </h2>
           <p className="text-body-mobile lg:text-body-desktop text-muted max-w-2xl mb-12">
-            We will update this page the moment any certification status changes. No Tanzania safari operator currently holds CrescentRating accreditation. We intend to be the first.
+            We publish the current status of every certification we hold or are working toward. We update this page when status changes.
           </p>
           <div className="space-y-4">
             {certification.map((cert) => (
