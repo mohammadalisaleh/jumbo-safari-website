@@ -87,6 +87,7 @@ const nationalParks = [
     descriptionEn: "Home to the Great Migration and endless plains",
     descriptionPl: "Dom Wielkiej Migracji i bezkresnych równin",
     descriptionCs: "Domov Velké Migrace a nekonečných plání",
+    image: { src: "/serengeti-plains-golden-hour-tanzania-safari-hero.jpg", alt: "Serengeti plains at golden hour, Tanzania" },
   },
   {
     nameKey: "ngorongoro",
@@ -94,6 +95,7 @@ const nationalParks = [
     descriptionEn: "The world's largest intact volcanic caldera",
     descriptionPl: "Największa nienaruszona kaldera wulkaniczna na świecie",
     descriptionCs: "Největší neporušená sopečná kaldera na světě",
+    image: { src: "/ngorongoro-crater-floor-zebra-gazelle-tanzania.jpg", alt: "Zebra and gazelle on the floor of Ngorongoro Crater, Tanzania" },
   },
   {
     nameKey: "tarangire",
@@ -101,6 +103,7 @@ const nationalParks = [
     descriptionEn: "Ancient baobabs and massive elephant herds",
     descriptionPl: "Pradawne baobaby i ogromne stada słoni",
     descriptionCs: "Prastaré baobaby a obrovská stáda slonů",
+    image: { src: "/tarangire-elephants-baobab-tanzania-safari.jpg", alt: "Elephant herd passing a giant baobab tree in Tarangire National Park, Tanzania" },
   },
   {
     nameKey: "lakeManyara",
@@ -108,6 +111,7 @@ const nationalParks = [
     descriptionEn: "Tree-climbing lions and flamingo-lined shores",
     descriptionPl: "Lwy wspinające się na drzewa i brzegi pełne flamingów",
     descriptionCs: "Lvi lezoucí po stromech a břehy lemované plameňáky",
+    image: { src: "/lion-pride-serengeti-tanzania-july-safari.jpg", alt: "Lion pride resting in Tanzania, Lake Manyara region" },
   },
 ]
 
@@ -394,8 +398,14 @@ export default async function HomePage({ params }: PageProps) {
                 href={localePath(`national-parks/${park.slug}`)}
                 className="group block"
               >
-                <div className="aspect-[4/3] bg-forest-dark mb-4 flex items-center justify-center">
-                  <p className="text-cream/30 text-xs">Park imagery</p>
+                <div className="relative aspect-[4/3] mb-4 overflow-hidden">
+                  <Image
+                    src={park.image.src}
+                    alt={park.image.alt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
                 </div>
                 <h3 className="font-montserrat font-bold text-h3-mobile md:text-h3-desktop text-cream mb-1 group-hover:text-orange transition-colors">
                   {tNav(park.nameKey)}
