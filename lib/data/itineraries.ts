@@ -320,6 +320,10 @@ export const itineraries: Record<string, Itinerary> = {
     slug: "great-migration-safari",
     title: "Great Migration Safari — Northern Serengeti",
     duration: "10 Days",
+    heroImage: {
+      src: "/great-migration-wildebeest-river-crossing-tanzania.jpg",
+      alt: "Wildebeest crossing the Mara River during the Great Migration in northern Serengeti, Tanzania",
+    },
     parks: "Northern Serengeti · Serengeti · Ngorongoro",
     price: "From $4,200 pp",
     season: "June - October",
