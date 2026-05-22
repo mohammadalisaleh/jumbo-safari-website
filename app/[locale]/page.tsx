@@ -111,7 +111,7 @@ const nationalParks = [
     descriptionEn: "Tree-climbing lions and flamingo-lined shores",
     descriptionPl: "Lwy wspinające się na drzewa i brzegi pełne flamingów",
     descriptionCs: "Lvi lezoucí po stromech a břehy lemované plameňáky",
-    image: { src: "/lion-pride-serengeti-tanzania-july-safari.jpg", alt: "Lion pride resting in Tanzania, Lake Manyara region" },
+    image: { src: "/lake-manyara-tree-climbing-lion-tanzania.jpg", alt: "Tree-climbing lioness standing in a fig tree at Lake Manyara National Park, Tanzania" },
   },
 ]
 
