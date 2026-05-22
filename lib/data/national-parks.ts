@@ -453,6 +453,10 @@ export const nationalParks: Record<string, NationalPark> = {
     slug: "tarangire",
     name: "Tarangire National Park",
     tagline: "In dry season, every animal in 20,000 km² contracts toward one river.",
+    heroImage: {
+      src: "/tarangire-elephants-baobab-tanzania-safari.jpg",
+      alt: "Elephant herd passing a giant baobab tree in Tarangire National Park, Tanzania",
+    },
     description:
       "Tarangire National Park is 2,850 km² of baobab-studded miombo in northern Tanzania. From June through October, the Tarangire River is the only permanent water across a 20,000 km² territory, pulling elephant herds, buffalo, and predators from across that entire range into one accessible corridor. The park records 588 bird species (Avibase 2025) and is one of very few places in East Africa where fringe-eared oryx can be reliably seen.",
     quickFacts: {
@@ -609,6 +613,10 @@ export const nationalParks: Record<string, NationalPark> = {
     slug: "lake-manyara",
     name: "Lake Manyara National Park",
     tagline: "A flooding alkaline lake, 624 bird species, and one of the most misquoted parks in Africa.",
+    heroImage: {
+      src: "/lake-manyara-tree-climbing-lion-tanzania.jpg",
+      alt: "Tree-climbing lioness standing in a fig tree at Lake Manyara National Park, Tanzania",
+    },
     description:
       "Lake Manyara National Park is 330 km² at the base of the Rift Valley escarpment, of which roughly 70% is the alkaline lake itself. It records 624-626 bird species (Avibase 2025), more than almost any other enclosed park in Africa. The tree-climbing lion behaviour the park is marketed on is real but no longer reliably observed; the visual asset most operators are not telling you about is the Ghost Forest, a stretch of fever tree skeleton woodland standing in the lake's advancing alkaline water since approximately 2020.",
     quickFacts: {
