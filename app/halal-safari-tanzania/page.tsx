@@ -282,7 +282,7 @@ export default function HalalSafariTanzania() {
           <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-4">
             Five Products. Each Built for a Different Need.
           </h2>
-          <p className="text-body-mobile lg:text-body-desktop text-muted max-w-2xl mb-12">
+          <p className="text-body-mobile lg:text-body-desktop text-ink max-w-2xl mb-12">
             Not every Muslim traveler wants the same thing. A honeymooning couple from Dubai has different priorities than a family of eight from Kuala Lumpur. We built separate products rather than one generic "halal option."
           </p>
 
@@ -303,7 +303,7 @@ export default function HalalSafariTanzania() {
                     <h3 className="font-montserrat text-h3-mobile lg:text-h3-desktop font-semibold text-ink mb-3 group-hover:text-forest transition-colors">
                       {tour.title}
                     </h3>
-                    <p className="text-body-mobile lg:text-body-desktop text-muted leading-relaxed">
+                    <p className="text-body-mobile lg:text-body-desktop text-ink leading-relaxed">
                       {tour.description}
                     </p>
                   </div>
@@ -364,7 +364,7 @@ export default function HalalSafariTanzania() {
             <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-6">
               35% Muslim Country. Halal is the Cultural Default.
             </h2>
-            <div className="space-y-4 text-body-mobile lg:text-body-desktop text-muted leading-relaxed">
+            <div className="space-y-4 text-body-mobile lg:text-body-desktop text-ink leading-relaxed">
               <p>
                 Mainland Tanzania is 35 to 40 percent Muslim. In most markets, roadside restaurants, and family homes, halal food is not a special accommodation. It is the default. This matters because it means your guide, your cook, and most local suppliers understand halal without needing a briefing.
               </p>
@@ -385,7 +385,7 @@ export default function HalalSafariTanzania() {
             ].map((item) => (
               <div key={item.stat} className="border border-border-soft p-6 flex items-start gap-6">
                 <span className="font-montserrat font-bold text-h2-mobile text-forest flex-shrink-0">{item.stat}</span>
-                <span className="text-body-mobile lg:text-body-desktop text-muted leading-snug self-center">{item.label}</span>
+                <span className="text-body-mobile lg:text-body-desktop text-ink leading-snug self-center">{item.label}</span>
               </div>
             ))}
           </div>
@@ -403,7 +403,7 @@ export default function HalalSafariTanzania() {
             {faqs.map((faq) => (
               <div key={faq.question} className="border-t border-border-soft pt-6">
                 <h3 className="font-montserrat font-semibold text-h3-mobile text-ink mb-3">{faq.question}</h3>
-                <p className="text-body-mobile lg:text-body-desktop text-muted leading-relaxed">{faq.answer}</p>
+                <p className="text-body-mobile lg:text-body-desktop text-ink leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>

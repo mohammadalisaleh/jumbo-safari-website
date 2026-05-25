@@ -177,7 +177,7 @@ export default function OurHalalStandards() {
           <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-4">
             In Your Contract. Before You Pay.
           </h2>
-          <p className="text-body-mobile lg:text-body-desktop text-muted max-w-2xl mb-12">
+          <p className="text-body-mobile lg:text-body-desktop text-ink max-w-2xl mb-12">
             These are contractual commitments, not aspirational statements. If any of these are not met during your trip, the refund guarantee clause applies.
           </p>
           <div className="space-y-6">
@@ -229,7 +229,7 @@ export default function OurHalalStandards() {
           <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-4">
             What We Hold
           </h2>
-          <p className="text-body-mobile lg:text-body-desktop text-muted max-w-2xl mb-12">
+          <p className="text-body-mobile lg:text-body-desktop text-ink max-w-2xl mb-12">
             We publish the current status of every certification we hold or are working toward. We update this page when status changes.
           </p>
           <div className="space-y-4">
@@ -262,10 +262,10 @@ export default function OurHalalStandards() {
             <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-6">
               If Our Halal Standard Is Not Met, We Refund That Portion. In Writing.
             </h2>
-            <p className="text-body-mobile lg:text-body-desktop text-muted leading-relaxed mb-6">
+            <p className="text-body-mobile lg:text-body-desktop text-ink leading-relaxed mb-6">
               This clause is in every halal safari contract we issue, before you pay a deposit. Specifically: if any of the six guaranteed standards above are not delivered on your trip, we refund the proportional cost of that failure. Not a credit, not a voucher. A refund.
             </p>
-            <p className="text-body-mobile text-muted leading-relaxed">
+            <p className="text-body-mobile text-ink leading-relaxed">
               We do not know of any other Tanzania safari operator offering this in writing. If you find one, tell us and we will find a way to do better.
             </p>
           </div>

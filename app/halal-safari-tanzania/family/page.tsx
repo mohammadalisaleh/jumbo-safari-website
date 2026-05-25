@@ -240,7 +240,7 @@ export default function FamilyHalalSafari() {
                   <CheckCircle className="w-5 h-5 text-forest flex-shrink-0 mt-0.5" />
                   <h3 className="font-montserrat font-semibold text-h3-mobile text-ink">{item.title}</h3>
                 </div>
-                <p className="text-body-mobile text-muted leading-relaxed">{item.body}</p>
+                <p className="text-body-mobile text-ink leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>
@@ -281,7 +281,7 @@ export default function FamilyHalalSafari() {
             {markets.map((market) => (
               <div key={market.country} className="border border-border-soft p-6">
                 <h3 className="font-montserrat font-semibold text-h3-mobile text-ink mb-3">{market.country}</h3>
-                <p className="text-body-mobile text-muted leading-relaxed">{market.detail}</p>
+                <p className="text-body-mobile text-ink leading-relaxed">{market.detail}</p>
               </div>
             ))}
           </div>
@@ -299,7 +299,7 @@ export default function FamilyHalalSafari() {
             {faqs.map((faq) => (
               <div key={faq.question} className="border-t border-border-soft pt-6">
                 <h3 className="font-montserrat font-semibold text-h3-mobile text-ink mb-3">{faq.question}</h3>
-                <p className="text-body-mobile lg:text-body-desktop text-muted leading-relaxed">{faq.answer}</p>
+                <p className="text-body-mobile lg:text-body-desktop text-ink leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>

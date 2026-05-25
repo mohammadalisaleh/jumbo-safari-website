@@ -232,7 +232,7 @@ export default function RamadanSafari() {
           <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-4">
             The Schedule is the Product
           </h2>
-          <p className="text-body-mobile lg:text-body-desktop text-muted max-w-2xl mb-12">
+          <p className="text-body-mobile lg:text-body-desktop text-ink max-w-2xl mb-12">
             The Ramadan timetable and the ideal safari timetable are almost identical. This is not a compromise. It is an advantage.
           </p>
           <div className="space-y-0">
@@ -277,7 +277,7 @@ export default function RamadanSafari() {
             <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-6">
               February 17 – March 18, 2026
             </h2>
-            <div className="space-y-4 text-body-mobile lg:text-body-desktop text-muted leading-relaxed">
+            <div className="space-y-4 text-body-mobile lg:text-body-desktop text-ink leading-relaxed">
               <p>
                 Ramadan 2026 is projected to begin around February 17 and end around March 18, subject to moon sighting. These dates overlap with the end of calving season and the transition before peak season.
               </p>
@@ -302,7 +302,7 @@ export default function RamadanSafari() {
               ].map((item) => (
                 <div key={item.park} className="border border-border-soft p-5">
                   <h3 className="font-montserrat font-semibold text-ink mb-1">{item.park}</h3>
-                  <p className="text-body-mobile text-muted">{item.reason}</p>
+                  <p className="text-body-mobile text-ink">{item.reason}</p>
                 </div>
               ))}
             </div>
@@ -321,7 +321,7 @@ export default function RamadanSafari() {
             {faqs.map((faq) => (
               <div key={faq.question} className="border-t border-border-soft pt-6">
                 <h3 className="font-montserrat font-semibold text-h3-mobile text-ink mb-3">{faq.question}</h3>
-                <p className="text-body-mobile lg:text-body-desktop text-muted leading-relaxed">{faq.answer}</p>
+                <p className="text-body-mobile lg:text-body-desktop text-ink leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>

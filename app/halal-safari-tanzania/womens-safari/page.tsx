@@ -227,7 +227,7 @@ export default function WomensSafari() {
                   <CheckCircle className="w-5 h-5 text-forest flex-shrink-0 mt-0.5" />
                   <h3 className="font-montserrat font-semibold text-h3-mobile text-ink">{s.title}</h3>
                 </div>
-                <p className="text-body-mobile text-muted leading-relaxed">{s.body}</p>
+                <p className="text-body-mobile text-ink leading-relaxed">{s.body}</p>
               </div>
             ))}
           </div>
@@ -264,7 +264,7 @@ export default function WomensSafari() {
           <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-6">
             Scheduled Women-Only Departures
           </h2>
-          <p className="text-body-mobile lg:text-body-desktop text-muted max-w-2xl mb-10">
+          <p className="text-body-mobile lg:text-body-desktop text-ink max-w-2xl mb-10">
             Group departures run in the best wildlife windows. Private custom departures are available year-round for groups of 2 or more.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
@@ -277,7 +277,7 @@ export default function WomensSafari() {
                 <span className="text-eyebrow uppercase text-orange tracking-wider mb-2 block">{dep.type}</span>
                 <h3 className="font-montserrat font-bold text-h3-mobile text-ink mb-1">{dep.month}</h3>
                 <p className="text-caption text-forest/60 font-semibold uppercase tracking-wider mb-3">{dep.spots}</p>
-                <p className="text-body-mobile text-muted">{dep.note}</p>
+                <p className="text-body-mobile text-ink">{dep.note}</p>
               </div>
             ))}
           </div>
@@ -295,7 +295,7 @@ export default function WomensSafari() {
             {faqs.map((faq) => (
               <div key={faq.question} className="border-t border-border-soft pt-6">
                 <h3 className="font-montserrat font-semibold text-h3-mobile text-ink mb-3">{faq.question}</h3>
-                <p className="text-body-mobile lg:text-body-desktop text-muted leading-relaxed">{faq.answer}</p>
+                <p className="text-body-mobile lg:text-body-desktop text-ink leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>

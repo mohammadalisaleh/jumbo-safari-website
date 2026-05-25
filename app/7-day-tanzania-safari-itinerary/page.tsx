@@ -228,7 +228,7 @@ export default function SevenDayItineraryPage() {
                   <div className="border-b border-forest/10 pb-12">
                     <div className="text-sm text-orange font-montserrat font-semibold mb-1">{day.time}</div>
                     <h3 className="font-montserrat font-bold text-xl text-forest mb-2">{day.title}</h3>
-                    <div className="text-sm text-muted mb-4">Highlights: {day.highlights}</div>
+                    <div className="text-sm text-ink mb-4">Highlights: {day.highlights}</div>
                     {day.body.split("\n\n").map((para, i) => (
                       <p key={i} className="text-body text-ink/80 mb-4">{para}</p>
                     ))}

@@ -288,7 +288,7 @@ export default function HalalHoneymoon() {
           <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-4">
             Halal-Verified Hotels. We've Done the Vetting.
           </h2>
-          <p className="text-body-mobile lg:text-body-desktop text-muted max-w-2xl mb-12">
+          <p className="text-body-mobile lg:text-body-desktop text-ink max-w-2xl mb-12">
             Not every hotel that calls itself halal-friendly has removed alcohol from the property. We only list hotels where we have verified the policy in detail.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
@@ -302,7 +302,7 @@ export default function HalalHoneymoon() {
                 )}
                 <h3 className="font-montserrat font-semibold text-h3-mobile text-ink mb-1">{hotel.name}</h3>
                 <p className="text-caption text-forest/60 font-semibold uppercase tracking-wider mb-3">{hotel.location} — {hotel.tier}</p>
-                <p className="text-body-mobile text-muted leading-relaxed">{hotel.notes}</p>
+                <p className="text-body-mobile text-ink leading-relaxed">{hotel.notes}</p>
               </div>
             ))}
           </div>
@@ -320,7 +320,7 @@ export default function HalalHoneymoon() {
             {faqs.map((faq) => (
               <div key={faq.question} className="border-t border-border-soft pt-6">
                 <h3 className="font-montserrat font-semibold text-h3-mobile text-ink mb-3">{faq.question}</h3>
-                <p className="text-body-mobile lg:text-body-desktop text-muted leading-relaxed">{faq.answer}</p>
+                <p className="text-body-mobile lg:text-body-desktop text-ink leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>

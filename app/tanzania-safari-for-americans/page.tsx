@@ -181,7 +181,7 @@ export default function TanzaniaSafariForAmericansPage() {
                   ].map((item) => (
                     <div key={item.airline}>
                       <div className="font-montserrat font-semibold text-forest">{item.airline}</div>
-                      <div className="text-muted">{item.route}</div>
+                      <div className="text-ink/70">{item.route}</div>
                     </div>
                   ))}
                 </div>
