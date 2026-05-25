@@ -62,6 +62,7 @@ export default function RootLayout({
       "https://www.linkedin.com/company/jumbo-safaris",
       "https://www.crunchbase.com/organization/jumbo-safaris",
       "https://www.tripadvisor.com/Attraction_Review-g297913-d34370758-Reviews-Jumbo_Safaris-Arusha_Arusha_Region.html",
+      "https://www.trustpilot.com/review/jumbosafaris.com",
     ],
   }
 
