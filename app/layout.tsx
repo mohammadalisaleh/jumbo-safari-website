@@ -59,6 +59,7 @@ export default function RootLayout({
       "https://www.instagram.com/jumbosafaris",
       "https://www.youtube.com/@jumbosafaris",
       "https://www.wikidata.org/wiki/Q139917541",
+      "https://www.linkedin.com/company/jumbo-safaris",
     ],
   }
 
