@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Halal Safari Tanzania 2025/2026 | Muslim-Friendly Safaris | Jumbo Safaris",
+  title: "Halal Safari Tanzania 2025/2026 | Muslim-Friendly Safaris",
   description:
     "Halal safari Tanzania: certified halal food, prayer stop logistics, alcohol-free rooms, and private vehicles. No guesswork, no compromises. Based in Arusha.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania" },

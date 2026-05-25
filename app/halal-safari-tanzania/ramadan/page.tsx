@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowRight, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Ramadan Safari Tanzania | Bush Iftar & Suhoor Game Drives | Jumbo Safaris",
+  title: "Ramadan Safari Tanzania | Bush Iftar & Suhoor Game Drives",
   description:
     "Ramadan safari Tanzania: Suhoor at 5am, then wildlife drives at first light. Iftar in the Serengeti as the sun sets. The only Tanzania operator running a Ramadan-specific safari. From $3,200pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/ramadan" },
@@ -242,7 +242,7 @@ export default function RamadanSafari() {
                   <span className="font-montserrat font-bold text-sm text-orange">{item.time}</span>
                   <span className="font-montserrat font-semibold text-sm mt-1">{item.label}</span>
                 </div>
-                <div className="col-span-3 lg:col-span-5 p-5 text-body-mobile text-muted leading-relaxed self-center">
+                <div className="col-span-3 lg:col-span-5 p-5 text-body-mobile text-ink leading-relaxed self-center">
                   {item.detail}
                 </div>
               </div>

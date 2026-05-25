@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowRight, CheckCircle, AlertCircle, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Our Halal Safari Standards | What We Do and Don't Guarantee | Jumbo Safaris",
+  title: "Our Halal Safari Standards | What We Do and Don't Guarantee",
   description:
     "Exactly what halal means on a Jumbo Safaris trip. Food suppliers, prayer logistics, alcohol policy, certification status, and the refund guarantee. No marketing language. Specific and honest.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/our-standards" },
@@ -187,7 +187,7 @@ export default function OurHalalStandards() {
                   <CheckCircle className="w-5 h-5 text-forest flex-shrink-0 mt-0.5" />
                   <h3 className="font-montserrat font-semibold text-h3-mobile text-forest">{item.title}</h3>
                 </div>
-                <div className="lg:col-span-3 text-body-mobile lg:text-body-desktop text-muted leading-relaxed">
+                <div className="lg:col-span-3 text-body-mobile lg:text-body-desktop text-ink leading-relaxed">
                   {item.detail}
                 </div>
               </div>
@@ -245,7 +245,7 @@ export default function OurHalalStandards() {
                     {cert.status}
                   </span>
                 </div>
-                <div className="lg:col-span-3 text-body-mobile text-muted leading-relaxed">
+                <div className="lg:col-span-3 text-body-mobile text-ink leading-relaxed">
                   {cert.detail}
                 </div>
               </div>

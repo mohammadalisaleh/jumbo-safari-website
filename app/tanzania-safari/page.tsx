@@ -4,7 +4,7 @@ import Link from "next/link"
 import { ArrowRight, MessageCircle, Users, Calendar, MapPin, UserCheck } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Tanzania Safari 2025/2026 | Cost, Best Time & Private Tours | Jumbo Safaris",
+  title: "Tanzania Safari 2025/2026 | Cost, Best Time & Private Tours",
   description:
     "Everything you need to plan a Tanzania safari: real costs ($250–$1,500/day), month-by-month timing, park-by-park breakdowns, and private tours from a local Arusha operator.",
   alternates: { canonical: "https://www.jumbosafaris.com/tanzania-safari" },

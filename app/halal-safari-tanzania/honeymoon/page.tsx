@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Halal Honeymoon Safari Tanzania & Zanzibar | Jumbo Safaris",
+  title: "Halal Honeymoon Safari Tanzania & Zanzibar",
   description:
     "Halal honeymoon safari Tanzania: private Northern Circuit safari followed by a stay at Tasneem Islamic Luxury Suites, Zanzibar's only fully alcohol-free luxury resort. From $5,400pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/honeymoon" },
@@ -239,7 +239,7 @@ export default function HalalHoneymoon() {
                   <span className="text-eyebrow uppercase text-orange tracking-wider mb-1">{day.days}</span>
                   <span className="font-montserrat font-semibold text-lg">{day.location}</span>
                 </div>
-                <div className="lg:col-span-3 p-6 text-body-mobile lg:text-body-desktop text-muted leading-relaxed">
+                <div className="lg:col-span-3 p-6 text-body-mobile lg:text-body-desktop text-ink leading-relaxed">
                   {day.detail}
                 </div>
               </div>

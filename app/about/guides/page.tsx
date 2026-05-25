@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Tanzania Safari Guides | Jumbo Safaris",
+  title: "Tanzania Safari Guides",
   description:
     "The guides at Jumbo Safaris are Arusha-based professionals with years of experience in the northern circuit parks. English-speaking, licensed by the Tanzania Tourist Board.",
   alternates: { canonical: "https://www.jumbosafaris.com/about/guides" },

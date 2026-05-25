@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Reviews & Testimonials | Jumbo Safaris",
+  title: "Reviews & Testimonials",
   description:
     "Jumbo Safaris launched in 2023. We are building our review base. Read what early clients say and understand our approach to accountability.",
   alternates: { canonical: "https://www.jumbosafaris.com/about/reviews" },

@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Private Tanzania Safari Tours | Jumbo Safaris",
+  title: "Private Tanzania Safari Tours",
   description:
     "Private guided Tanzania safari tours departing from Arusha. One vehicle, one guide, your group only. Northern circuit covering Serengeti, Ngorongoro, Tarangire, and Lake Manyara.",
   alternates: { canonical: "https://www.jumbosafaris.com/tanzania-safari/private-tours" },
