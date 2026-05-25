@@ -60,6 +60,7 @@ export default function RootLayout({
       "https://www.youtube.com/@jumbosafaris",
       "https://www.wikidata.org/wiki/Q139917541",
       "https://www.linkedin.com/company/jumbo-safaris",
+      "https://www.crunchbase.com/organization/jumbo-safaris",
     ],
   }
 
