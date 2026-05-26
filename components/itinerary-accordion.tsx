@@ -41,7 +41,7 @@ export function ItineraryAccordion({ days }: ItineraryAccordionProps) {
             <div className="px-4 pb-4 bg-white">
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-sm text-muted uppercase tracking-wide mb-1">
+                  <h4 className="font-semibold text-sm text-ink uppercase tracking-wide mb-1">
                     Activities
                   </h4>
                   <p className="text-ink">{day.activities}</p>
@@ -49,13 +49,13 @@ export function ItineraryAccordion({ days }: ItineraryAccordionProps) {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <h4 className="font-semibold text-sm text-muted uppercase tracking-wide mb-1">
+                    <h4 className="font-semibold text-sm text-ink uppercase tracking-wide mb-1">
                       Accommodation
                     </h4>
                     <p className="text-ink text-sm">{day.accommodation}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm text-muted uppercase tracking-wide mb-1">
+                    <h4 className="font-semibold text-sm text-ink uppercase tracking-wide mb-1">
                       Meals
                     </h4>
                     <p className="text-ink text-sm">{day.meals}</p>

@@ -226,7 +226,7 @@ export default function SafariInJulyPage() {
                           <td className="px-4 py-3 font-semibold text-forest">{row.location}</td>
                           <td className="px-4 py-3 text-ink">{row.tempRange}</td>
                           <td className="px-4 py-3 text-ink">{row.rainfall}</td>
-                          <td className="px-4 py-3 text-sm text-muted">{row.notes}</td>
+                          <td className="px-4 py-3 text-sm text-ink/70">{row.notes}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -359,7 +359,7 @@ export default function SafariInJulyPage() {
                         <p className="font-montserrat font-semibold text-forest text-sm mb-1">
                           {itinerary!.title}
                         </p>
-                        <p className="text-xs text-muted mb-2">{itinerary!.duration} · {itinerary!.price}</p>
+                        <p className="text-xs text-ink/70 mb-2">{itinerary!.duration} · {itinerary!.price}</p>
                         <Link
                           href={`/itineraries/${itinerary!.slug}`}
                           className="inline-flex items-center text-sm text-forest font-semibold hover:text-orange transition-colors group"

@@ -278,7 +278,7 @@ export default function TanzaniaSafariPage() {
               <div key={tier} className="border border-border-soft bg-cream p-6">
                 <p className="text-eyebrow uppercase text-orange mb-2">{tier}</p>
                 <p className="font-montserrat font-bold text-3xl text-forest mb-1">{range}</p>
-                <p className="text-sm text-muted mb-4">{unit}</p>
+                <p className="text-sm text-ink/70 mb-4">{unit}</p>
                 <p className="text-ink text-sm mb-5">{description}</p>
                 <ul className="space-y-2">
                   {includes.map((item, i) => (
@@ -521,7 +521,7 @@ export default function TanzaniaSafariPage() {
                     {itinerary.title}
                   </h3>
                   <p className="text-body-mobile text-ink mb-4">{itinerary.description}</p>
-                  <p className="text-caption text-muted mb-4">{itinerary.price}</p>
+                  <p className="text-caption text-ink/70 mb-4">{itinerary.price}</p>
                   <Link
                     href={`/itineraries/${itinerary.slug}`}
                     className="inline-flex items-center text-forest font-semibold hover:text-orange transition-colors group"

@@ -367,7 +367,7 @@ export default async function HomePage({ params }: PageProps) {
                   <p className="text-body-mobile text-ink mb-4 line-clamp-2">
                     {getDescription(itinerary)}
                   </p>
-                  <p className="text-caption text-muted mb-4">From {itinerary.price} pp</p>
+                  <p className="text-caption text-ink/70 mb-4">From {itinerary.price} pp</p>
                   <Link
                     href={localePath(`itineraries/${itinerary.slug}`)}
                     className="inline-flex items-center text-forest font-semibold hover:text-orange transition-colors group"

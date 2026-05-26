@@ -146,7 +146,7 @@ export default function TrustPage() {
                     />
                   </div>
                   <div className="font-montserrat font-bold text-forest">Mohammadali Saleh</div>
-                  <div className="text-sm text-muted">Founder, Jumbo Safaris</div>
+                  <div className="text-sm text-ink/70">Founder, Jumbo Safaris</div>
                 </div>
 
                 <div className="space-y-4 text-sm">
@@ -174,7 +174,7 @@ export default function TrustPage() {
                 </div>
 
                 <div className="mt-6 pt-6 border-t border-forest/10">
-                  <div className="text-sm text-muted mb-2">Respond time</div>
+                  <div className="text-sm text-ink mb-2">Respond time</div>
                   <div className="text-sm text-ink/80">WhatsApp: typically same day (EAT, UTC+3). Email: within 24 hours.</div>
                 </div>
               </div>

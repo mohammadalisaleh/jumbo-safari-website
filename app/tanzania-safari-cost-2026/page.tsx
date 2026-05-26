@@ -125,7 +125,7 @@ export default function TanzaniaSafariCostPage() {
               <div className="border border-forest/20 p-6">
                 <div className="text-eyebrow uppercase text-forest/60 font-semibold mb-2">Budget</div>
                 <div className="font-montserrat font-bold text-3xl text-forest mb-1">$250–$400</div>
-                <div className="text-sm text-muted mb-4">per person / per day</div>
+                <div className="text-sm text-ink/70 mb-4">per person / per day</div>
                 <ul className="text-sm text-ink/80 space-y-2">
                   <li>Basic tented camps, shared facilities</li>
                   <li>Older 4WD vehicles (usually Landcruiser)</li>
@@ -142,7 +142,7 @@ export default function TanzaniaSafariCostPage() {
                 </div>
                 <div className="text-eyebrow uppercase text-forest/60 font-semibold mb-2">Mid-Range</div>
                 <div className="font-montserrat font-bold text-3xl text-forest mb-1">$400–$700</div>
-                <div className="text-sm text-muted mb-4">per person / per day</div>
+                <div className="text-sm text-ink/70 mb-4">per person / per day</div>
                 <ul className="text-sm text-ink/80 space-y-2">
                   <li>Permanent lodges with en-suite tents</li>
                   <li>Private vehicle for your group only</li>
@@ -156,7 +156,7 @@ export default function TanzaniaSafariCostPage() {
               <div className="border border-forest/20 p-6">
                 <div className="text-eyebrow uppercase text-forest/60 font-semibold mb-2">Luxury</div>
                 <div className="font-montserrat font-bold text-3xl text-forest mb-1">$700–$1,500+</div>
-                <div className="text-sm text-muted mb-4">per person / per day</div>
+                <div className="text-sm text-ink/70 mb-4">per person / per day</div>
                 <ul className="text-sm text-ink/80 space-y-2">
                   <li>Private conservancy access</li>
                   <li>Exclusive camps (under 20 guests total)</li>

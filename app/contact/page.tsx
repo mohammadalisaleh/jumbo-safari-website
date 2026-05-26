@@ -47,7 +47,7 @@ export default function ContactPage() {
 
               {/* WhatsApp */}
               <div className="mb-6">
-                <div className="flex items-center gap-2 text-muted text-sm mb-2">
+                <div className="flex items-center gap-2 text-ink text-sm mb-2">
                   <MessageCircle className="w-4 h-4" />
                   <span>WhatsApp</span>
                 </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
 
               {/* Email */}
               <div className="mb-6 pb-6 border-b border-border-soft">
-                <div className="flex items-center gap-2 text-muted text-sm mb-2">
+                <div className="flex items-center gap-2 text-ink text-sm mb-2">
                   <Mail className="w-4 h-4" />
                   <span>Email</span>
                 </div>
@@ -76,17 +76,17 @@ export default function ContactPage() {
 
               {/* Location */}
               <div className="mb-6 pb-6 border-b border-border-soft">
-                <div className="flex items-center gap-2 text-muted text-sm mb-2">
+                <div className="flex items-center gap-2 text-ink text-sm mb-2">
                   <MapPin className="w-4 h-4" />
                   <span>Location</span>
                 </div>
                 <p className="font-semibold text-forest">Arusha, Tanzania</p>
-                <p className="text-sm text-muted">Gateway to the Northern Circuit</p>
+                <p className="text-sm text-ink/60">Gateway to the Northern Circuit</p>
               </div>
 
               {/* Response Time */}
               <div>
-                <div className="flex items-center gap-2 text-muted text-sm mb-2">
+                <div className="flex items-center gap-2 text-ink text-sm mb-2">
                   <Clock className="w-4 h-4" />
                   <span>Response Time</span>
                 </div>

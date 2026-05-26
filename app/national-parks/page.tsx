@@ -174,7 +174,7 @@ export default function NationalParksPage() {
                     {h && (
                       <>
                         <p className="text-xs font-semibold text-orange uppercase tracking-wide mb-1">{h.best}</p>
-                        <p className="text-sm text-muted mb-3">{h.when}</p>
+                        <p className="text-sm text-ink/70 mb-3">{h.when}</p>
                         <p className="text-body-mobile text-ink mb-5">{h.blurb}</p>
                       </>
                     )}
@@ -233,7 +233,7 @@ export default function NationalParksPage() {
                     {h && (
                       <>
                         <p className="text-xs font-semibold text-orange uppercase tracking-wide mb-1">{h.best}</p>
-                        <p className="text-sm text-muted mb-3">{h.when}</p>
+                        <p className="text-sm text-ink/70 mb-3">{h.when}</p>
                         <p className="text-body-mobile text-ink mb-5">{h.blurb}</p>
                       </>
                     )}

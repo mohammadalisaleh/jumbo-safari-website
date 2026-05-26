@@ -302,13 +302,13 @@ export default async function NationalParkPage({ params }: PageProps) {
                           <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-cream"}>
                             <td className="px-4 py-3 text-ink font-medium">{fee.item}</td>
                             <td className="px-4 py-3 font-semibold text-forest">{fee.amount}</td>
-                            <td className="px-4 py-3 text-muted text-sm">{fee.notes}</td>
+                            <td className="px-4 py-3 text-ink/70 text-sm">{fee.notes}</td>
                           </tr>
                         ))}
                       </tbody>
                     </table>
                   </div>
-                  <p className="text-sm text-muted mt-3">Verify current rates at ncaa.go.tz before travel. All fees are included in Jumbo Safaris package prices.</p>
+                  <p className="text-sm text-ink/70 mt-3">Verify current rates at ncaa.go.tz before travel. All fees are included in Jumbo Safaris package prices.</p>
                 </section>
               )}
 
@@ -446,7 +446,7 @@ export default async function NationalParkPage({ params }: PageProps) {
                       <h3 className="font-montserrat font-bold text-[22px] text-forest mb-2">
                         {itinerary!.title}
                       </h3>
-                      <p className="text-caption text-muted mb-4">{itinerary!.price}</p>
+                      <p className="text-caption text-ink/70 mb-4">{itinerary!.price}</p>
                       <Link
                         href={`/itineraries/${itinerary!.slug}`}
                         className="inline-flex items-center text-forest font-semibold hover:text-orange transition-colors group"

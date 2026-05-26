@@ -180,7 +180,7 @@ export default function PrivateToursPage() {
                     <h3 className="font-montserrat font-bold text-forest text-lg">{route.title}</h3>
                     <span className="text-sm font-semibold text-orange">{route.price}</span>
                   </div>
-                  <p className="text-sm text-muted mb-2">{route.parks}</p>
+                  <p className="text-sm text-ink/70 mb-2">{route.parks}</p>
                   <p className="text-body-mobile text-ink">{route.description}</p>
                 </div>
                 <Link

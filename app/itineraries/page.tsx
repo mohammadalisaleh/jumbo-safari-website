@@ -98,7 +98,7 @@ export default function ItinerariesPage() {
                   <h2 className="font-montserrat font-bold text-[22px] text-forest mb-1">
                     {itinerary.title}
                   </h2>
-                  <p className="text-sm text-muted mb-3">
+                  <p className="text-sm text-ink/70 mb-3">
                     {itinerary.parks} · {itinerary.price}
                   </p>
                   <p className="text-body-mobile text-ink mb-5 line-clamp-3">

@@ -321,7 +321,7 @@ export default async function ItineraryPage({ params }: PageProps) {
                     <h3 className="font-montserrat font-bold text-[22px] text-forest mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-caption text-muted mb-4">{item.price}</p>
+                    <p className="text-caption text-ink/70 mb-4">{item.price}</p>
                     <Link
                       href={`/itineraries/${item.slug}`}
                       className="inline-flex items-center text-forest font-semibold hover:text-orange transition-colors group"
