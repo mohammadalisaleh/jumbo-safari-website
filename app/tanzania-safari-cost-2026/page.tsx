@@ -89,7 +89,7 @@ export default function TanzaniaSafariCostPage() {
       <article className="bg-cream">
         {/* Breadcrumb */}
         <div className="max-w-content mx-auto px-6 py-4">
-          <nav className="flex items-center gap-2 text-sm text-muted">
+          <nav className="flex items-center gap-2 text-sm text-ink/70">
             <Link href="/" className="hover:text-forest transition-colors">Home</Link>
             <span>/</span>
             <span className="text-forest">Tanzania Safari Cost 2026</span>
@@ -208,7 +208,7 @@ export default function TanzaniaSafariCostPage() {
                   </tbody>
                 </table>
               </div>
-              <p className="text-xs text-muted mt-4">All figures USD. Excludes international flights, tips, travel insurance, and personal spending.</p>
+              <p className="text-xs text-ink/70 mt-4">All figures USD. Excludes international flights, tips, travel insurance, and personal spending.</p>
             </div>
           </div>
         </section>

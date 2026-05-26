@@ -55,7 +55,7 @@ export function ContactForm() {
           We&apos;ve received your safari enquiry and will respond within 24 hours with
           a personalized itinerary recommendation.
         </p>
-        <p className="text-muted text-sm">
+        <p className="text-ink/70 text-sm">
           Can&apos;t wait? WhatsApp us directly at{" "}
           <a href="https://wa.me/255742789292" className="text-orange hover:underline">
             +255 742 789 292

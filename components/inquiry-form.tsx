@@ -163,7 +163,7 @@ export function InquiryForm({ itineraryTitle }: InquiryFormProps) {
       <div className="mt-4 text-center">
         <a
           href="https://wa.me/255742789292"
-          className="inline-flex items-center gap-2 text-sm text-muted hover:text-orange transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-ink/70 hover:text-orange transition-colors"
         >
           <MessageCircle className="w-4 h-4" />
           <span>Or WhatsApp us: +255 742 789 292</span>

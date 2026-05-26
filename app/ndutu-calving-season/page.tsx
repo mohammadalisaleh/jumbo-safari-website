@@ -112,7 +112,7 @@ export default function NdutuCalvingSeasonPage() {
       <article className="bg-cream">
         {/* Breadcrumb */}
         <div className="max-w-content mx-auto px-6 py-4">
-          <nav className="flex items-center gap-2 text-sm text-muted">
+          <nav className="flex items-center gap-2 text-sm text-ink/70">
             <Link href="/" className="hover:text-forest transition-colors">Home</Link>
             <span>/</span>
             <Link href="/national-parks/ndutu" className="hover:text-forest transition-colors">Ndutu</Link>
@@ -179,7 +179,7 @@ export default function NdutuCalvingSeasonPage() {
                     <div className="text-sm">March, moving north and east toward Serengeti</div>
                   </div>
                 </div>
-                <p className="text-xs text-muted mt-6">Book 6 months in advance for the 2027 peak window. Lodges fill.</p>
+                <p className="text-xs text-ink/70 mt-6">Book 6 months in advance for the 2027 peak window. Lodges fill.</p>
               </div>
             </div>
 

@@ -177,7 +177,7 @@ export default function SevenDayItineraryPage() {
       <article className="bg-cream">
         {/* Breadcrumb */}
         <div className="max-w-content mx-auto px-6 py-4">
-          <nav className="flex items-center gap-2 text-sm text-muted">
+          <nav className="flex items-center gap-2 text-sm text-ink/70">
             <Link href="/" className="hover:text-forest transition-colors">Home</Link>
             <span>/</span>
             <Link href="/itineraries" className="hover:text-forest transition-colors">Itineraries</Link>

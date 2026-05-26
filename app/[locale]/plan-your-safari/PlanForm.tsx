@@ -229,7 +229,7 @@ export default function PlanForm({ initialAdults, initialChildren, initialDate }
                 min={new Date().toISOString().split("T")[0]}
                 className={inputClass}
               />
-              <p className="text-xs text-muted mt-1">You can always change this later.</p>
+              <p className="text-xs text-ink/70 mt-1">You can always change this later.</p>
             </div>
 
             {/* Budget */}
@@ -258,7 +258,7 @@ export default function PlanForm({ initialAdults, initialChildren, initialDate }
             <h2 className="font-montserrat font-bold text-xl text-forest mb-6">
               2. Travellers
             </h2>
-            <p className="text-sm text-muted mb-6">
+            <p className="text-sm text-ink/70 mb-6">
               Travelling solo? Costs are higher as you carry the vehicle and room alone — we&apos;ll be transparent about this in the proposal.
             </p>
 
@@ -397,7 +397,7 @@ export default function PlanForm({ initialAdults, initialChildren, initialDate }
               {!submitting && <ArrowRight className="w-5 h-5" />}
             </button>
 
-            <p className="text-xs text-muted mt-4 text-center">
+            <p className="text-xs text-ink/70 mt-4 text-center">
               By submitting, you agree we may contact you about your safari enquiry. No spam, ever.
             </p>
           </div>
@@ -458,7 +458,7 @@ export default function PlanForm({ initialAdults, initialChildren, initialDate }
                 <p className="font-montserrat font-semibold text-sm text-forest group-hover:text-orange transition-colors">
                   Prefer to chat?
                 </p>
-                <p className="text-xs text-muted">WhatsApp us directly</p>
+                <p className="text-xs text-ink/70">WhatsApp us directly</p>
               </div>
             </a>
           </div>
