@@ -113,6 +113,86 @@ export default function ContactPage() {
           </aside>
         </div>
       </div>
+
+      {/* How it works */}
+      <div className="border-t border-border-soft">
+        <div className="max-w-content mx-auto px-6 py-16">
+          <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-4">
+            How the Planning Process Works
+          </h2>
+          <p className="text-ink mb-12 max-w-2xl">
+            Planning a Tanzania safari involves a lot of moving parts. We keep it straightforward.
+          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <div className="font-montserrat font-bold text-4xl text-orange mb-4">01</div>
+              <h3 className="font-montserrat font-bold text-xl text-forest mb-3">Tell us what you have in mind</h3>
+              <p className="text-ink">
+                Share your dates, group size, interests, and budget range. No fixed budget yet? That is fine.
+                We will show you what different price points actually look like on the ground.
+              </p>
+            </div>
+            <div>
+              <div className="font-montserrat font-bold text-4xl text-orange mb-4">02</div>
+              <h3 className="font-montserrat font-bold text-xl text-forest mb-3">Receive a custom itinerary within 24 hours</h3>
+              <p className="text-ink">
+                A day-by-day plan with accommodation options, park sequence, driving times, and a transparent cost
+                breakdown. No package tours. No shared groups. Everything built around your dates.
+              </p>
+            </div>
+            <div>
+              <div className="font-montserrat font-bold text-4xl text-orange mb-4">03</div>
+              <h3 className="font-montserrat font-bold text-xl text-forest mb-3">Refine until it is right</h3>
+              <p className="text-ink">
+                Swap lodges, add a night in Tarangire, drop the Ngorongoro crater descent. We adjust until
+                the itinerary fits exactly. No commitment until you are ready.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ */}
+      <div className="bg-white border-t border-border-soft">
+        <div className="max-w-content mx-auto px-6 py-16">
+          <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-10">
+            Common Questions
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
+            <div>
+              <h3 className="font-montserrat font-semibold text-forest mb-2">How far in advance should I book?</h3>
+              <p className="text-ink">
+                For peak season (June to October and January to February), three to six months ahead is ideal.
+                For the shoulder months, six to eight weeks usually works. Last-minute enquiries are welcome
+                but camp availability can be limited.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-montserrat font-semibold text-forest mb-2">What is included in a typical safari?</h3>
+              <p className="text-ink">
+                All game drives, accommodation, park fees, a private guide, and a 4x4 vehicle. Flights,
+                travel insurance, and personal spending are excluded. We itemise everything so you know
+                exactly what you are paying for.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-montserrat font-semibold text-forest mb-2">Can you add Zanzibar to the safari?</h3>
+              <p className="text-ink">
+                Yes. A beach extension to Zanzibar is easy to arrange after the mainland safari. We handle
+                transfers, flights, and accommodation on the island as part of the same itinerary.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-montserrat font-semibold text-forest mb-2">Are your safaris suitable for children?</h3>
+              <p className="text-ink">
+                Private safaris work well for families. You set the pace, the guide adjusts the day to
+                your children's energy levels, and there is no pressure to follow a group schedule.
+                Most parks allow children of all ages on game drives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
