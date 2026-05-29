@@ -42,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/about/trust`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/serengeti-vs-ngorongoro-vs-tarangire`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/ndutu-calving-season`, priority: 0.9, changeFrequency: "yearly" as const },
+    { url: `${baseUrl}/tanzania-park-fees`, priority: 0.9, changeFrequency: "monthly" as const },
   ]
 
   // Add Polish and Czech homepage versions

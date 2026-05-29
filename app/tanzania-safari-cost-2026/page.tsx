@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "What are Tanzania national park fees in 2026?",
     answer:
-      "Park fees for non-resident adults as of 2026: Serengeti $80/person/day, Ngorongoro Crater $80/person/day plus a $295 vehicle fee per crater descent, Tarangire $65/person/day, Lake Manyara $65/person/day. Children ages 5–15 pay roughly half. Fees are paid in USD or by card at the gate. Tanzania introduced mobile payment (M-Pesa) at some gates in 2025.",
+      "Ngorongoro Conservation Area charges two separate fees: entry ($71/adult/day) and concession ($59/adult/day), totalling $130/adult/day. Tarangire is $59 entry plus $59 concession per adult per day. The Ngorongoro Crater descent costs $295 per vehicle per descent, not per day. No VAT applies to park fees. Cash is not accepted at any gate — card only. Your guide handles all payments.",
   },
   {
     question: "What is not included in a Tanzania safari quote?",
@@ -242,33 +242,44 @@ export default function TanzaniaSafariCostPage() {
                     <td className="py-3 text-sm">Low/peak season rate</td>
                   </tr>
                   <tr className="border-b border-cream/10">
-                    <td className="py-3 pr-6 font-medium text-cream">Ngorongoro Crater</td>
-                    <td className="py-3 pr-6">$70.80</td>
+                    <td className="py-3 pr-6 font-medium text-cream">NCA Entry Fee</td>
+                    <td className="py-3 pr-6">$71.00</td>
                     <td className="py-3 pr-6">$23.60</td>
-                    <td className="py-3 text-sm">+ $295/vehicle to descend crater</td>
+                    <td className="py-3 text-sm">Per person, per calendar day in NCA</td>
                   </tr>
                   <tr className="border-b border-cream/10">
-                    <td className="py-3 pr-6 font-medium text-cream">Tarangire</td>
-                    <td className="py-3 pr-6">$59</td>
-                    <td className="py-3 pr-6">$23.60</td>
-                    <td className="py-3 text-sm">Select park rate</td>
+                    <td className="py-3 pr-6 font-medium text-cream">NCA Concession Fee</td>
+                    <td className="py-3 pr-6">$59.00</td>
+                    <td className="py-3 pr-6">$11.80</td>
+                    <td className="py-3 text-sm">Per person, per calendar day in NCA (separate fee)</td>
                   </tr>
                   <tr className="border-b border-cream/10">
-                    <td className="py-3 pr-6 font-medium text-cream">Lake Manyara</td>
-                    <td className="py-3 pr-6">$59</td>
-                    <td className="py-3 pr-6">$23.60</td>
-                    <td className="py-3 text-sm">Select park rate</td>
+                    <td className="py-3 pr-6 font-medium text-cream">Crater Service Fee</td>
+                    <td className="py-3 pr-6 text-cream" colSpan={2}>$295/vehicle</td>
+                    <td className="py-3 text-sm">Per descent into crater, not per day</td>
+                  </tr>
+                  <tr className="border-b border-cream/10">
+                    <td className="py-3 pr-6 font-medium text-cream">Tarangire Entry</td>
+                    <td className="py-3 pr-6">$59.00</td>
+                    <td className="py-3 pr-6">$18.00</td>
+                    <td className="py-3 text-sm">Per person, per calendar day</td>
+                  </tr>
+                  <tr className="border-b border-cream/10">
+                    <td className="py-3 pr-6 font-medium text-cream">Tarangire Concession</td>
+                    <td className="py-3 pr-6">$59.00</td>
+                    <td className="py-3 pr-6">$11.80</td>
+                    <td className="py-3 text-sm">Per person, per calendar day (separate fee)</td>
                   </tr>
                   <tr>
-                    <td className="py-3 pr-6 font-medium text-cream">Ndutu (NCAA)</td>
-                    <td className="py-3 pr-6">$70.80</td>
+                    <td className="py-3 pr-6 font-medium text-cream">Lake Manyara</td>
+                    <td className="py-3 pr-6">$59.00</td>
                     <td className="py-3 pr-6">$23.60</td>
-                    <td className="py-3 text-sm">NCAA conservation fee</td>
+                    <td className="py-3 text-sm">Entry only</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-cream/50 mt-4">All fees include 18% VAT. Cash is not accepted at any park gate — card (Visa/Mastercard) only. Your guide handles all payments. Rates subject to change; verify with your operator at booking.</p>
+            <p className="text-xs text-cream/50 mt-4">No VAT applies to government park fees. Cash is not accepted at any park gate — card (Visa/Mastercard) only. Your guide handles all payments. Rates verified August 2026 via Highway Tours; subject to annual revision.</p>
           </div>
         </section>
 
