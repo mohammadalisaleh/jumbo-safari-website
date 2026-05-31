@@ -24,7 +24,7 @@ export default function ContactPage() {
   return (
     <div className="bg-cream">
       <div className="max-w-content mx-auto px-6 py-16 md:py-24">
-        <div className="grid lg:grid-cols-[1fr_400px] gap-12">
+        <div className="grid lg:grid-cols-[1fr_400px] gap-12 [&>*]:min-w-0">
           {/* Left Column - Form */}
           <div>
             <h1 className="font-montserrat font-bold text-h1-mobile md:text-h1-desktop text-forest mb-4">

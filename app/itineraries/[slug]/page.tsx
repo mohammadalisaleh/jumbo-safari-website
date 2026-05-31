@@ -140,7 +140,7 @@ export default async function ItineraryPage({ params }: PageProps) {
 
         {/* Main Content */}
         <div className="max-w-content mx-auto px-6 pb-16 md:pb-24">
-          <div className="grid lg:grid-cols-[1fr_380px] gap-12">
+          <div className="grid lg:grid-cols-[1fr_380px] gap-12 [&>*]:min-w-0">
             {/* Left Column - Main Content */}
             <div>
               {/* Header */}

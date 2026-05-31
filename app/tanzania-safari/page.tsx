@@ -181,7 +181,7 @@ export default function TanzaniaSafariPage() {
       {/* Introduction */}
       <section className="bg-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6">
-          <div className="grid lg:grid-cols-[1fr_340px] gap-16">
+          <div className="grid lg:grid-cols-[1fr_340px] gap-16 [&>*]:min-w-0">
             <div>
               <p className="text-eyebrow uppercase text-orange mb-3">THE DESTINATION</p>
               <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-8">

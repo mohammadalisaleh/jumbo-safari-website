@@ -279,7 +279,7 @@ export default async function HomePage({ params }: PageProps) {
                 Private Guided Safaris · Arusha, Tanzania
               </p>
 
-              <h1 className="font-montserrat font-extrabold text-[clamp(2.8rem,5.5vw,4.5rem)] leading-[1.05] text-balance mb-5">
+              <h1 className="font-montserrat font-extrabold text-[clamp(2rem,6vw,4.5rem)] leading-[1.05] text-balance mb-5">
                 {tHero("headline")}
               </h1>
 
@@ -507,7 +507,7 @@ export default async function HomePage({ params }: PageProps) {
               href="https://wa.me/255742789292"
               className="inline-flex items-center gap-2 text-cream/80 hover:text-orange transition-colors"
             >
-              <MessageCircle className="w-5 h-5" />
+              <MessageCircle className="w-4 h-4 shrink-0" />
               <span>{tCta("whatsappUs")}</span>
             </a>
           </div>

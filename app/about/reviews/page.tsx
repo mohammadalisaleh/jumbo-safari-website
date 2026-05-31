@@ -31,7 +31,7 @@ export default function ReviewsPage() {
 
       {/* Honest position */}
       <section className="max-w-content mx-auto px-6 py-16 md:py-24">
-        <div className="grid md:grid-cols-[1fr_340px] gap-12">
+        <div className="grid md:grid-cols-[1fr_340px] gap-12 [&>*]:min-w-0">
           <div>
             <div className="max-w-prose space-y-5 text-body-mobile md:text-body-desktop text-ink">
               <p>

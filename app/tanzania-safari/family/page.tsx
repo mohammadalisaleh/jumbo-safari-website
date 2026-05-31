@@ -32,7 +32,7 @@ export default function FamilySafariPage() {
 
       {/* Why it works for families */}
       <section className="max-w-content mx-auto px-6 py-16 md:py-24">
-        <div className="grid md:grid-cols-[1fr_340px] gap-12">
+        <div className="grid md:grid-cols-[1fr_340px] gap-12 [&>*]:min-w-0">
           <div>
             <p className="text-eyebrow uppercase text-orange mb-3">WHY TANZANIA WORKS FOR FAMILIES</p>
             <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-8">

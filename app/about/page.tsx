@@ -34,7 +34,7 @@ export default function AboutPage() {
       {/* Founder Story */}
       <section className="bg-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6">
-          <div className="grid md:grid-cols-[1fr_400px] gap-12 items-start">
+          <div className="grid md:grid-cols-[1fr_400px] gap-12 items-start [&>*]:min-w-0">
             <div>
               <p className="text-eyebrow uppercase text-orange mb-3">THE FOUNDER</p>
               <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-8">

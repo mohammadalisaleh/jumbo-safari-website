@@ -176,7 +176,7 @@ export default async function NationalParkPage({ params }: PageProps) {
 
         {/* Main Content */}
         <div className="max-w-content mx-auto px-6 py-16 md:py-24">
-          <div className="grid lg:grid-cols-[1fr_340px] gap-12">
+          <div className="grid lg:grid-cols-[1fr_340px] gap-12 [&>*]:min-w-0">
             {/* Left Column - Main Content */}
             <div>
               {/* About Section */}
