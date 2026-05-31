@@ -57,7 +57,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-cream/70 text-sm leading-relaxed">
-              Private guided Tanzania safaris from Arusha. Experience. Reimagined.
+              Private guided Tanzania safaris, run from Arusha by the guide who plans them.
             </p>
           </div>
 
@@ -165,7 +165,7 @@ export function Footer() {
               <Facebook className="w-5 h-5" />
             </a>
             <a
-              href="https://instagram.com/jumbosafaris"
+              href="https://www.instagram.com/jumbo.safaris"
               target="_blank"
               rel="noopener noreferrer"
               className="text-orange hover:text-orange/80 transition-colors"
@@ -183,7 +183,7 @@ export function Footer() {
               <Youtube className="w-5 h-5" />
             </a>
           </div>
-          <p className="font-montserrat font-semibold text-lg">Experience. Reimagined.</p>
+          <p className="font-montserrat font-semibold text-lg">Guided from Arusha.</p>
         </div>
 
         {/* Bottom Line */}
@@ -195,6 +195,15 @@ export function Footer() {
               className="hover:text-orange transition-colors"
             >
               hello@jumbosafaris.com
+            </a>{" "}
+            |{" "}
+            <a
+              href="https://wa.me/15197213872"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-orange transition-colors"
+            >
+              WhatsApp +1 519 721 3872
             </a>
           </p>
         </div>

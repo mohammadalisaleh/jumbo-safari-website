@@ -313,12 +313,12 @@ export default function TanzaniaSafariForAmericansPage() {
                 Start Planning <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="https://wa.me/255742789292"
+                href="https://wa.me/15197213872"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-cream text-cream px-8 py-4 font-montserrat font-bold hover:bg-cream/10 transition-colors"
               >
-                WhatsApp from the US
+                WhatsApp from the US: +1 519 721 3872
               </a>
             </div>
           </div>

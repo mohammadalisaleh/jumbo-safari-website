@@ -47,17 +47,26 @@ export default function ContactPage() {
 
               {/* WhatsApp */}
               <div className="mb-6">
-                <div className="flex items-center gap-2 text-ink text-sm mb-2">
+                <div className="flex items-center gap-2 text-ink text-sm mb-3">
                   <MessageCircle className="w-4 h-4" />
                   <span>WhatsApp</span>
                 </div>
-                <p className="font-semibold text-forest mb-3">+255 742 789 292</p>
-                <a
-                  href="https://wa.me/255742789292"
-                  className="inline-block w-full bg-forest text-cream font-montserrat font-semibold px-6 py-3 text-center hover:bg-forest-dark transition-colors"
-                >
-                  Chat on WhatsApp
-                </a>
+                <div className="space-y-2">
+                  <a
+                    href="https://wa.me/15197213872"
+                    className="flex items-center justify-between gap-2 w-full bg-forest text-cream font-montserrat font-semibold px-5 py-3 hover:bg-forest-dark transition-colors"
+                  >
+                    <span>+1 519 721 3872</span>
+                    <span className="text-cream/70 text-xs font-normal">International</span>
+                  </a>
+                  <a
+                    href="https://wa.me/255742789292"
+                    className="flex items-center justify-between gap-2 w-full border border-forest text-forest font-montserrat font-semibold px-5 py-3 hover:bg-forest/5 transition-colors"
+                  >
+                    <span>+255 742 789 292</span>
+                    <span className="text-ink/50 text-xs font-normal">Tanzania</span>
+                  </a>
+                </div>
               </div>
 
               {/* Email */}

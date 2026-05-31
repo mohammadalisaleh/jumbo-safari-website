@@ -38,7 +38,7 @@ export default function TrustPage() {
     },
     sameAs: [
       "https://www.facebook.com/jumbosafaris",
-      "https://www.instagram.com/jumbosafaris",
+      "https://www.instagram.com/jumbo.safaris",
       "https://www.youtube.com/@jumbosafaris",
     ],
   }

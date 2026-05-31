@@ -49,6 +49,22 @@ export default function RootLayout({
     logo: "https://www.jumbosafaris.com/logo-horizontal.png",
     telephone: "+255742789292",
     email: "hello@jumbosafaris.com",
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "+15197213872",
+        contactType: "customer service",
+        areaServed: ["US", "CA", "GB", "AU"],
+        availableLanguage: ["English"],
+      },
+      {
+        "@type": "ContactPoint",
+        telephone: "+255742789292",
+        contactType: "customer service",
+        areaServed: "TZ",
+        availableLanguage: ["English", "Swahili"],
+      },
+    ],
     address: {
       "@type": "PostalAddress",
       addressLocality: "Arusha",
@@ -57,7 +73,7 @@ export default function RootLayout({
     priceRange: "$$$",
     sameAs: [
       "https://www.facebook.com/jumbosafaris",
-      "https://www.instagram.com/jumbosafaris",
+      "https://www.instagram.com/jumbo.safaris",
       "https://www.youtube.com/@jumbosafaris",
       "https://www.wikidata.org/wiki/Q139917541",
       "https://www.linkedin.com/company/jumbo-safaris",
