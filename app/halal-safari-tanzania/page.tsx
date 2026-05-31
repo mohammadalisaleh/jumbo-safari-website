@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -232,32 +233,44 @@ export default function HalalSafariTanzania() {
       />
 
       {/* Hero */}
-      <section className="bg-forest text-cream py-20 px-6">
-        <div className="max-w-content mx-auto">
-          <p className="text-eyebrow uppercase text-orange tracking-widest mb-4">Halal Safari Tanzania</p>
-          <h1 className="font-montserrat text-h1-mobile lg:text-h1-desktop font-bold mb-6 max-w-3xl">
-            Tanzania Safari Built for Muslim Travelers
-          </h1>
-          <p className="text-lead-mobile lg:text-lead-desktop text-cream/85 max-w-2xl mb-10">
-            Certified halal food, prayer logistics built into your day, alcohol removed from your room, and a private vehicle your family never shares. No guesswork. Everything in writing before you pay a deposit.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-orange text-cream font-montserrat font-semibold px-8 py-4 hover:bg-orange/90 transition-colors"
-            >
-              Plan Your Halal Safari
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-            <a
-              href="https://wa.me/255742789292"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-cream/40 text-cream font-montserrat font-semibold px-8 py-4 hover:border-cream transition-colors"
-            >
-              <MessageCircle className="w-4 h-4" />
-              WhatsApp Us
-            </a>
+      <section className="bg-forest text-cream py-16 md:py-20 px-6">
+        <div className="max-w-content mx-auto grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+          <div>
+            <p className="text-eyebrow uppercase text-orange tracking-widest mb-4">Halal Safari Tanzania</p>
+            <h1 className="font-montserrat text-h1-mobile lg:text-h1-desktop font-bold mb-6">
+              Tanzania Safari Built for Muslim Travelers
+            </h1>
+            <p className="text-lead-mobile lg:text-lead-desktop text-cream/85 mb-10">
+              Certified halal food, prayer logistics built into your day, alcohol removed from your room, and a private vehicle your family never shares. No guesswork. Everything in writing before you pay a deposit.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-orange text-cream font-montserrat font-semibold px-8 py-4 hover:bg-orange/90 transition-colors"
+              >
+                Plan Your Halal Safari
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+              <a
+                href="https://wa.me/255742789292"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-cream/40 text-cream font-montserrat font-semibold px-8 py-4 hover:border-cream transition-colors"
+              >
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+          <div className="relative aspect-[3/4] w-full max-w-sm mx-auto lg:ml-auto lg:mr-0">
+            <Image
+              src="/halal-safari-prayer-mat-serengeti-tanzania.jpg"
+              alt="Green prayer mat laid out on the Serengeti grassland at golden hour, Tanzania halal safari"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              priority
+            />
           </div>
         </div>
       </section>

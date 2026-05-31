@@ -33,8 +33,8 @@
     "greatMigration": "Great Migration Safari"
   },
   "hero": {
-    "headline": "Tanzania Safari, Reimagined.",
-    "subheadline": "Private guided safaris built around you — not a tour group. Designed in Arusha. Delivered in the wild.",
+    "headline": "Private Tanzania Safaris, Guided From Arusha",
+    "subheadline": "One vehicle, one guide, only your group. I build the route around what you came to see, then guide you through it myself. No fixed departures, no strangers in the back.",
     "viewItineraries": "View Itineraries",
     "planYourSafari": "Plan Your Safari"
   },
@@ -51,7 +51,7 @@
     "explore": "EXPLORE",
     "greatestParks": "Tanzania's Greatest National Parks",
     "whyTravelWithUs": "WHY TRAVEL WITH US",
-    "jumboDifference": "The Jumbo Difference",
+    "jumboDifference": "Why People Book With Me",
     "planYourTrip": "PLAN YOUR TRIP",
     "bestTime": "Best Time for a Tanzania Safari"
   },
@@ -66,20 +66,20 @@
   "whyJumbo": {
     "privateGuides": {
       "title": "Private Guides Only",
-      "description": "No group tours, no crowded vehicles. Your dedicated guide knows every trail, every waterhole, every secret spot in the bush."
+      "description": "No group departures and no shared trucks. You get one guide for the whole trip, someone who knows where the cats lie up at midday and which gate clears fastest in August."
     },
     "tailorMade": {
       "title": "Tailor-Made Itineraries",
-      "description": "Cookie-cutter safaris are not for everyone. We design each trip around your interests, pace, and dreams."
+      "description": "I plan every trip from scratch. Give me your dates, your budget, and what you actually want to see, and the route gets built around that."
     },
     "bornInArusha": {
       "title": "Born in Arusha",
-      "description": "We live where your safari begins. Local knowledge, local connections, local expertise you simply cannot replicate."
+      "description": "The whole thing runs from Arusha, where your safari starts. Local guides, direct lodge relationships, and answers from someone who was in the park last week, not a call centre overseas."
     }
   },
   "cta": {
     "readyToplan": "Ready to Plan Your Tanzania Safari?",
-    "tellUsAbout": "Tell us your dates, budget, and dream experience. We'll build your itinerary within 24 hours.",
+    "tellUsAbout": "Send me your dates, your rough budget, and what you want out of the trip. I'll have a first itinerary back to you inside 24 hours.",
     "whatsappUs": "Or WhatsApp us directly: +255 742 789 292"
   },
   "contact": {
@@ -115,7 +115,7 @@
     }
   },
   "footer": {
-    "tagline": "Private guided Tanzania safaris from Arusha. Experience. Reimagined.",
+    "tagline": "Private guided Tanzania safaris, run from Arusha by the guide who plans them.",
     "company": "Company",
     "safaris": "Safaris",
     "parks": "Parks",

@@ -749,10 +749,14 @@ export const itineraries: Record<string, Itinerary> = {
     season: "Year-round",
     description:
       "5-day private Tanzania safari covering Tarangire, the central Serengeti, Ngorongoro Crater, and Lake Manyara. Four nights, private 4x4, full-board lodges. The shortest route that covers the northern circuit properly. From $1,900 per person.",
+    heroImage: {
+      src: "/serengeti-plains-golden-hour-tanzania-safari-hero.jpg",
+      alt: "Serengeti plains at golden hour on a private Tanzania northern circuit safari",
+    },
     leadParagraph:
       "Five days is tight for the northern circuit. It works if you accept one thing: you are here to see the parks, not to become familiar with them. One afternoon in Tarangire for the baobabs and the elephants. One full day in the Serengeti for scale and predators. One full day on the Ngorongoro Crater floor because nothing else in Africa replicates what happens inside that caldera. Lake Manyara on the way home, for the Ghost Forest alone. What you lose is the slow morning, the second chance at something you missed, the third Serengeti day when you stop watching the clock entirely. If that tradeoff fits your schedule, this is the route.",
     overview:
-      "The 5-day northern circuit covers four parks in four nights. Tarangire gets one afternoon. The Serengeti gets one full day. Ngorongoro gets a full crater descent. Lake Manyara gets a half-day on the return to Arusha. None of these are wasted. Day 2 is the honest one: the drive from Tarangire to the Serengeti via Olduvai Gorge takes five to seven hours. You arrive in the Seronera area in late afternoon and fit in a short drive before dark. That is how the itinerary works — most of Day 2 is transit. The upside is that every subsequent day is purely game viewing. Seven days is a more satisfying trip. Eight days is the version we recommend. But for people whose schedule is fixed, this route covers the essential Tanzania without shortcuts.",
+      "The 5-day northern circuit covers four parks in four nights. Tarangire gets one afternoon. The Serengeti gets one full day. Ngorongoro gets a full crater descent. Lake Manyara gets a half-day on the return to Arusha. None of these are wasted. Day 2 is the honest one: the drive from Tarangire to the Serengeti via Olduvai Gorge takes five to seven hours. You arrive in the Seronera area in late afternoon and fit in a short drive before dark. That is how the itinerary works. Most of Day 2 is transit. The upside is that every subsequent day is purely game viewing. Seven days is a more satisfying trip. Eight days is the version we recommend. But for people whose schedule is fixed, this route covers the essential Tanzania without shortcuts.",
     quickFacts: {
       duration: "5 Days / 4 Nights",
       parksVisited: "Tarangire, Serengeti, Ngorongoro, Lake Manyara",
@@ -875,6 +879,10 @@ export const itineraries: Record<string, Itinerary> = {
     season: "Year-round",
     description:
       "11-day Tanzania safari and Zanzibar beach trip. Six nights on the northern circuit covering Tarangire, Serengeti, and Ngorongoro, then a Coastal Aviation flight to Zanzibar for four nights on the Indian Ocean coast. From $3,800 per person.",
+    heroImage: {
+      src: "/zanzibar-beach-resort-honeymoon-tanzania.jpg",
+      alt: "Thatched beach bungalows on white coral sand with turquoise Indian Ocean water in Zanzibar, Tanzania",
+    },
     leadParagraph:
       "Six nights on safari, four nights at the coast. The northern circuit first, then a flight east to Zanzibar. The combination works because the two halves are genuinely different: bush versus beach, cold mornings and elephant dust versus warm water and coral sand. Most people who do one want the other. This route gives you both without feeling rushed in either.",
     overview:
@@ -1068,6 +1076,10 @@ export const itineraries: Record<string, Itinerary> = {
     season: "Year-round",
     description:
       "8-day private family safari in Tanzania. Tarangire, Serengeti, and Ngorongoro Crater on the northern circuit, paced for children aged 5 and up. Private vehicle, booster seats provided, guide briefed for mixed-age groups. From $2,800 per person.",
+    heroImage: {
+      src: "/tarangire-elephants-baobab-tanzania-safari.jpg",
+      alt: "Elephant herd with calves passing a giant baobab tree in Tarangire National Park, Tanzania",
+    },
     leadParagraph:
       "The Serengeti is one of the few places where a child looks out the window and the explanation requires no embellishment. The real thing is right there. No zoo framing, no distance. This is the standard 8-day northern circuit, run privately, with the pacing adjusted for children and the guide briefed specifically for mixed-age groups. Same parks, same wildlife. Different approach to what you stop for and how long you stay.",
     overview:

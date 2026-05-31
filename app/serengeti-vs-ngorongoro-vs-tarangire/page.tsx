@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -98,6 +99,46 @@ export default function ParkComparisonPage() {
             <p className="text-lead-mobile md:text-lead-desktop text-cream/90 max-w-2xl">
               Three very different parks. The question of which to visit is really a question of what you want to see and how long you have.
             </p>
+          </div>
+        </section>
+
+        {/* Three-park image strip */}
+        <section className="bg-cream py-10 md:py-12">
+          <div className="max-w-content mx-auto px-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {[
+                {
+                  name: "Serengeti",
+                  src: "/serengeti-plains-golden-hour-tanzania-safari-hero.jpg",
+                  alt: "Open Serengeti plains at golden hour, Tanzania",
+                },
+                {
+                  name: "Ngorongoro Crater",
+                  src: "/ngorongoro-crater-floor-zebra-gazelle-tanzania.jpg",
+                  alt: "Zebra and gazelle on the floor of Ngorongoro Crater, Tanzania",
+                },
+                {
+                  name: "Tarangire",
+                  src: "/tarangire-elephants-baobab-tanzania-safari.jpg",
+                  alt: "Elephant herd passing a giant baobab tree in Tarangire National Park, Tanzania",
+                },
+              ].map((park) => (
+                <figure key={park.name}>
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src={park.src}
+                      alt={park.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, 33vw"
+                    />
+                  </div>
+                  <figcaption className="font-montserrat font-semibold text-forest mt-3">
+                    {park.name}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
         </section>
 

@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -133,6 +134,18 @@ export default function NdutuCalvingSeasonPage() {
             </p>
           </div>
         </section>
+
+        {/* Hero image */}
+        <div className="relative w-full h-[42vh] md:h-[60vh]">
+          <Image
+            src="/wildebeest-calf-ndutu-calving-season-tanzania.jpg"
+            alt="Newborn wildebeest calf running alongside its mother on the Ndutu plains during calving season, Tanzania"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+        </div>
 
         {/* Dates */}
         <section className="py-16 md:py-20">

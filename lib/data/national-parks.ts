@@ -767,6 +767,10 @@ export const nationalParks: Record<string, NationalPark> = {
     tagline: "400,000 wildebeest calves in six weeks. Every predator in the ecosystem watching.",
     description:
       "Ndutu sits inside the Ngorongoro Conservation Area on the southern Serengeti border. From January through March it holds the world's largest wildebeest calving event. Off-road driving is legally permitted here and not in Serengeti National Park next door. That single distinction is why wildlife photographers choose Ndutu over the Mara River crossings for predator viewing.",
+    heroImage: {
+      src: "/wildebeest-calf-ndutu-calving-season-tanzania.jpg",
+      alt: "Newborn wildebeest calf running alongside its mother at Ndutu during calving season, Tanzania",
+    },
     quickFacts: {
       area: "Part of the Ngorongoro Conservation Area (NCA) · bordering Serengeti National Park",
       unescoStatus: "Ngorongoro Conservation Area — UNESCO World Heritage Site",

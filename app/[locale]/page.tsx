@@ -14,6 +14,7 @@ import {
   MessageCircle,
   Phone,
   Mail,
+  Check,
 } from "lucide-react"
 import HeroForm from "@/components/HeroForm"
 import StickyWhatsApp from "@/components/StickyWhatsApp"
@@ -288,11 +289,11 @@ export default async function HomePage({ params }: PageProps) {
 
               <ul className="space-y-2 mb-0">
                 {[
-                  "One vehicle. One guide. Just your group.",
-                  "Free custom itinerary — reply within 24 hours.",
+                  "One vehicle, one guide, only your group.",
+                  "Free custom itinerary, usually back to you inside 24 hours.",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-2.5 text-cream/80 text-[15px] font-inter">
-                    <span className="text-orange font-bold mt-0.5 shrink-0">✓</span>
+                    <Check className="w-4 h-4 text-orange mt-0.5 shrink-0" />
                     {point}
                   </li>
                 ))}
