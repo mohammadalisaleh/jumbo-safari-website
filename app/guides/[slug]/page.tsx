@@ -188,7 +188,7 @@ export default async function GuidePage({ params }: PageProps) {
                 <ul className="space-y-3">
                   <li>
                     <Link
-                      href="/guides/tanzania-safari-cost"
+                      href="/tanzania-safari-cost-2026"
                       className="text-forest hover:text-orange transition-colors"
                     >
                       Tanzania Safari Cost Guide

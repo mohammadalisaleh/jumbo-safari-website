@@ -183,8 +183,11 @@ export default async function HomePage({ params }: PageProps) {
     return month.noteEn
   }
 
-  const localePath = (path: string) =>
-    locale === "en" ? `/${path}` : `/${locale}/${path}`
+  // Only the homepage is localised. Every sub-page (parks, itineraries, guides,
+  // plan-your-safari) exists as a flat English route only, so all internal links
+  // point there. This stops the /pl and /cs homepages linking to localised
+  // sub-pages that were never built (they returned 404).
+  const localePath = (path: string) => `/${path}`
 
   return (
     <>

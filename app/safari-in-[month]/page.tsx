@@ -109,7 +109,7 @@ export default async function SafariInMonthPage({ params }: PageProps) {
               Home
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <Link href="/best-time-to-visit-tanzania" className="hover:text-forest transition-colors">
+            <Link href="/guides/best-time-to-visit-tanzania" className="hover:text-forest transition-colors">
               Best Time to Visit
             </Link>
             <ChevronRight className="w-4 h-4" />
