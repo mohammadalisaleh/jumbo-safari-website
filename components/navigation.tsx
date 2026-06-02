@@ -82,7 +82,6 @@ const navItems = [
     },
     links: [
       { label: "Our Story", href: "/about" },
-      { label: "Reviews & Testimonials", href: "/about/reviews" },
       { label: "Contact Us", href: "/contact" },
     ],
   },

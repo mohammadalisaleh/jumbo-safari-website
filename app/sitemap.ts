@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/tanzania-safari/family`, priority: 0.7, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/about`, priority: 0.7, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/about/guides`, priority: 0.6, changeFrequency: "monthly" as const },
-    { url: `${baseUrl}/about/reviews`, priority: 0.6, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/contact`, priority: 0.6, changeFrequency: "monthly" as const },
     // National Parks index + individual parks
     { url: `${baseUrl}/national-parks`, priority: 0.8, changeFrequency: "weekly" as const },
