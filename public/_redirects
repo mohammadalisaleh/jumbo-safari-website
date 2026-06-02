@@ -1,0 +1,2 @@
+# Permanent redirects (301) handled at the Cloudflare edge
+/about/reviews  /about  301
