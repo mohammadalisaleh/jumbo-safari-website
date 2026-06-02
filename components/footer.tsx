@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Facebook, Instagram, Youtube } from "lucide-react"
+import { Facebook, Instagram, Linkedin } from "lucide-react"
 
 const footerLinks = {
   destinations: [
@@ -19,7 +19,7 @@ const footerLinks = {
   ],
   planYourTrip: [
     { label: "Best Time to Visit", href: "/guides/best-time-to-visit-tanzania" },
-    { label: "Safari Cost Guide", href: "/guides/tanzania-safari-cost" },
+    { label: "Safari Cost Guide", href: "/tanzania-safari-cost-2026" },
     { label: "What to Pack", href: "/guides/what-to-pack-safari" },
     { label: "Visa Requirements", href: "/guides/tanzania-visa-requirements" },
     { label: "Contact Us", href: "/contact" },
@@ -174,13 +174,13 @@ export function Footer() {
               <Instagram className="w-5 h-5" />
             </a>
             <a
-              href="https://youtube.com/@jumbosafaris"
+              href="https://www.linkedin.com/company/jumbosafaris"
               target="_blank"
               rel="noopener noreferrer"
               className="text-orange hover:text-orange/80 transition-colors"
-              aria-label="YouTube"
+              aria-label="LinkedIn"
             >
-              <Youtube className="w-5 h-5" />
+              <Linkedin className="w-5 h-5" />
             </a>
           </div>
           <p className="font-montserrat font-semibold text-lg">Guided from Arusha.</p>
