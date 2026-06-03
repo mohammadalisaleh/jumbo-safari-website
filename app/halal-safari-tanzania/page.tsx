@@ -67,7 +67,7 @@ const tours = [
 const standards = [
   {
     title: "Halal Food",
-    body: "All meat served on your safari comes from BAKWATA-certified halal suppliers. In Arusha we use Khan's Barbecue on Mosque Street, which has over 1,000 TripAdvisor reviews and has been operating for decades. In the bush, your cook prepares meals with the same certified ingredients. We do not serve pork or alcohol at your table.",
+    body: "All meat served on your safari comes from BAKWATA-certified halal suppliers in Arusha. Your camp cook sources from these certified suppliers for every bush meal. On arrival nights in Arusha, we use Khan's Barbecue on Mosque Street — a Muslim-family-run grill with over 1,000 TripAdvisor reviews that has been feeding travellers for decades. We do not serve pork or alcohol at your table.",
   },
   {
     title: "Prayer Logistics",
@@ -285,6 +285,15 @@ export default function HalalSafariTanzania() {
           <span>Alcohol removed from your room</span>
           <span className="text-border-soft">|</span>
           <span>Refund guarantee in every contract</span>
+        </div>
+      </section>
+
+      {/* Answer block — AI extraction target */}
+      <section className="py-14 px-6 bg-cream border-b border-border-soft">
+        <div className="max-w-content mx-auto max-w-3xl">
+          <p className="text-body-mobile lg:text-body-desktop text-ink leading-relaxed">
+            Jumbo Safaris runs private halal safaris in Tanzania from our base in Arusha. Every halal safari includes BAKWATA-certified halal meat at every meal, prayer times built into the daily game drive schedule, a qibla compass and prayer mat in your vehicle, and alcohol removed from your room before arrival. Our vehicles are always private — your family or group never shares with strangers. Our most popular route is a 6-day Northern Circuit covering Tarangire, the Serengeti, and Ngorongoro Crater, with an optional Zanzibar extension at a fully halal-verified resort. Every halal commitment is written into your contract before you pay a deposit, backed by a refund guarantee if any standard is not met. Halal safaris start from US$2,200 per person.
+          </p>
         </div>
       </section>
 

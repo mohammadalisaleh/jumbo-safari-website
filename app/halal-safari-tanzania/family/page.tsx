@@ -22,7 +22,7 @@ const whyUs = [
   },
   {
     title: "Halal food at every stop",
-    body: "BAKWATA-certified halal suppliers for all meat. Your camp cook prepares meals your family can eat without asking questions. Familiar spices, rice-based meals where requested, no pork, no alcohol at your table. In Arusha, we use Khan's Barbecue, over 1,000 TripAdvisor reviews, run by the same Muslim family for decades.",
+    body: "BAKWATA-certified halal suppliers for all meat — your camp cook sources from these for every bush meal. Familiar spices, rice-based meals where requested, no pork, no alcohol at your table. On arrival nights in Arusha, we use Khan's Barbecue on Mosque Street: over 1,000 TripAdvisor reviews, run by the same Muslim family for decades.",
   },
   {
     title: "Pace set by your family",

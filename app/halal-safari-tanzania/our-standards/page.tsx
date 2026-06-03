@@ -19,7 +19,7 @@ const canGuarantee = [
   {
     title: "Halal-certified meat at every meal",
     detail:
-      "All meat on your safari comes from suppliers certified by BAKWATA (Baraza Kuu la Waislamu wa Tanzania), the national Muslim council and halal certification authority in Tanzania. In Arusha, we use Khan's Barbecue on Mosque Street as our primary halal restaurant, over 1,000 TripAdvisor reviews, operating for decades under the same Muslim family. Your camp cook uses the same certified suppliers on all bush meals.",
+      "All meat on your safari comes from BAKWATA-certified halal suppliers based in Arusha. BAKWATA (Baraza Kuu la Waislamu wa Tanzania) is the national Muslim council and the primary halal certification body in Tanzania. Your camp cook sources from these certified suppliers for every bush meal — not from general market suppliers. On arrival nights in Arusha, we use Khan's Barbecue on Mosque Street: a Muslim-family-run grill operating for decades with over 1,000 TripAdvisor reviews.",
   },
   {
     title: "No pork, no alcohol at your table or in your room",
@@ -76,7 +76,7 @@ const certification = [
     org: "BAKWATA",
     status: "Active — food suppliers certified",
     detail:
-      "BAKWATA (Baraza Kuu la Waislamu wa Tanzania) is the national Muslim council and halal food certification authority in Tanzania. Our primary halal food suppliers in Arusha and the Northern Circuit hold BAKWATA certification. This applies to meat supply specifically.",
+      "BAKWATA (Baraza Kuu la Waislamu wa Tanzania) is Tanzania's primary Muslim council and a recognised halal food certification body. Our Arusha meat suppliers hold BAKWATA certification, which applies to meat supply specifically. Note: a December 2025 High Court ruling clarified that BAKWATA is not the sole authority for all Tanzanian Muslims — it remains a credible and widely-used certifier, but we describe it accurately rather than as a universal guarantee.",
   },
   {
     org: "HalalBooking.com",
@@ -251,6 +251,61 @@ export default function OurHalalStandards() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Halal-verified lodge list */}
+      <section className="py-20 px-6 bg-cream border-t border-border-soft">
+        <div className="max-w-content mx-auto">
+          <p className="text-eyebrow uppercase text-orange tracking-widest mb-3">Halal-Verified Properties</p>
+          <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-4">
+            Properties We Have Verified in Writing
+          </h2>
+          <p className="text-body-mobile lg:text-body-desktop text-ink max-w-2xl mb-4">
+            No other Tanzania safari operator publishes a property-level halal audit. We are building this list by contacting each lodge directly and obtaining written confirmation of their halal food sourcing, alcohol policy, and prayer provision. Properties are added only after written confirmation is received.
+          </p>
+          <p className="text-body-mobile text-ink/60 max-w-2xl mb-12 italic">
+            This list is being populated as written confirmations are returned. Check back or contact us to ask about a specific property.
+          </p>
+
+          <p className="text-eyebrow uppercase text-orange tracking-widest mb-4">Zanzibar — Confirmed</p>
+          <div className="space-y-4 mb-12">
+            {[
+              {
+                name: "Tasneem Islamic Luxury Suites — Jambiani",
+                status: "Fully alcohol-free",
+                detail: "Muslim-managed. All food halal. Women-only pool hours. Prayer facility on site. The most rigorous halal property we know of in East Africa.",
+              },
+              {
+                name: "Dhow Palace Hotel — Stone Town",
+                status: "Fully alcohol-free",
+                detail: "No alcohol served or permitted anywhere on the property. All food halal. Historic Stone Town location.",
+              },
+              {
+                name: "Mizingani Seafront Hotel — Stone Town",
+                status: "Fully alcohol-free",
+                detail: "No alcohol on premises. All food halal. Seafront location. Direct reservations: reservations@mizinganiseafront.com.",
+              },
+              {
+                name: "Hotel Verde Zanzibar / Azam Luxury Resort — Stone Town area",
+                status: "Fully alcohol-free, halal-certified",
+                detail: "Operated by the Azam Group, a Tanzanian Muslim-owned conglomerate. Dry property with halal-certified food throughout.",
+              },
+            ].map((prop) => (
+              <div key={prop.name} className="border border-border-soft p-6 grid lg:grid-cols-4 gap-4">
+                <div className="flex flex-col gap-1">
+                  <h3 className="font-montserrat font-semibold text-ink text-sm">{prop.name}</h3>
+                  <span className="text-eyebrow uppercase text-forest text-xs tracking-wider">{prop.status}</span>
+                </div>
+                <div className="lg:col-span-3 text-body-mobile text-ink leading-relaxed">{prop.detail}</div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-eyebrow uppercase text-orange tracking-widest mb-4">Northern Circuit — Confirmations Pending</p>
+          <p className="text-body-mobile text-ink/70 max-w-2xl">
+            We have identified documented halal signals at Neptune Ngorongoro Luxury Lodge, Elewana Collection properties, Serena Hotels (AKDN), and Melia Serengeti Lodge, and are awaiting written confirmation from each. This section will be updated as responses are received.
+          </p>
         </div>
       </section>
 

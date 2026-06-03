@@ -81,6 +81,14 @@ const zanzibarOptions = [
     recommended: false,
   },
   {
+    name: "Hotel Verde Zanzibar / Azam Luxury Resort",
+    location: "Stone Town area",
+    tier: "Fully alcohol-free, halal-certified",
+    notes:
+      "Operated by the Azam Group, a Tanzanian Muslim-owned conglomerate. Fully dry property with halal-certified food throughout. A newer option with strong halal credentials for couples who want a larger resort feel near Stone Town.",
+    recommended: false,
+  },
+  {
     name: "Baraza Resort & Spa",
     location: "Bwejuu (south-east coast)",
     tier: "Halal food on request, private pool villa",
