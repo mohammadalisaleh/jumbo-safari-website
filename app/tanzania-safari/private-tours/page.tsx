@@ -87,7 +87,52 @@ const routes = [
 ]
 
 export default function PrivateToursPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What does a private Tanzania safari mean?",
+        acceptedAnswer: { "@type": "Answer", text: "A private safari means your group is the only one in the vehicle for the entire trip. You have one guide assigned from departure to return, you set your own schedule within park hours, and you book directly with the operator who built your itinerary. Jumbo Safaris runs no group departures." },
+      },
+      {
+        "@type": "Question",
+        name: "How much does a private Tanzania safari cost?",
+        acceptedAnswer: { "@type": "Answer", text: "Private Tanzania safaris start from $1,900 per person for a 5-day northern circuit, based on two adults sharing. An 8-day classic safari starts from $3,200 per person. Prices are based on mid-range lodges in shoulder season. Park fees are included in all prices. Solo travellers pay a single supplement of approximately 30 to 40 percent on top of the per-person rate." },
+      },
+      {
+        "@type": "Question",
+        name: "What vehicle is used on a private Tanzania safari?",
+        acceptedAnswer: { "@type": "Answer", text: "All Jumbo Safaris private tours use a 4x4 Toyota Land Cruiser with a pop-up roof, individual seating, and charging points for cameras and phones. The vehicle holds a maximum of six passengers. Park fees, water, and packed lunches for full-day drives are included." },
+      },
+      {
+        "@type": "Question",
+        name: "Are park fees included in private safari packages?",
+        acceptedAnswer: { "@type": "Answer", text: "Yes. All Jumbo Safaris package prices include Tanzania national park entry fees, the Ngorongoro Conservation Area fees, and the Ngorongoro Crater vehicle descent fee. These are quoted upfront with no hidden additions." },
+      },
+      {
+        "@type": "Question",
+        name: "Which parks does a private Tanzania northern circuit safari cover?",
+        acceptedAnswer: { "@type": "Answer", text: "The standard northern circuit covers Tarangire National Park, the Serengeti National Park, and the Ngorongoro Conservation Area including the crater floor. Lake Manyara is added on longer itineraries. All departures are from Arusha." },
+      },
+    ],
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jumbosafaris.com" },
+      { "@type": "ListItem", position: 2, name: "Tanzania Safari", item: "https://www.jumbosafaris.com/tanzania-safari" },
+      { "@type": "ListItem", position: 3, name: "Private Tours", item: "https://www.jumbosafaris.com/tanzania-safari/private-tours" },
+    ],
+  }
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <div className="bg-cream">
       {/* Hero */}
       <section className="bg-forest text-cream py-16 md:py-24">
@@ -214,5 +259,6 @@ export default function PrivateToursPage() {
         </div>
       </section>
     </div>
+    </>
   )
 }

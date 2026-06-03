@@ -17,8 +17,30 @@ export const metadata: Metadata = {
 }
 
 export default function AboutPage() {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Mohammadali Saleh",
+    jobTitle: "Founder and Lead Guide",
+    worksFor: { "@type": "TravelAgency", name: "Jumbo Safaris", url: "https://www.jumbosafaris.com" },
+    address: { "@type": "PostalAddress", addressLocality: "Arusha", addressCountry: "TZ" },
+    url: "https://www.jumbosafaris.com/about",
+    sameAs: ["https://www.linkedin.com/company/jumbo-safaris", "https://www.instagram.com/jumbo.safaris"],
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jumbosafaris.com" },
+      { "@type": "ListItem", position: 2, name: "About", item: "https://www.jumbosafaris.com/about" },
+    ],
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section className="bg-forest text-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6">

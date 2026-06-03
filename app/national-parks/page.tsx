@@ -108,7 +108,18 @@ export default function NationalParksPage() {
   )
   const southernCircuit = parks.filter((p) => ["ruaha"].includes(p.slug))
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jumbosafaris.com" },
+      { "@type": "ListItem", position: 2, name: "Tanzania National Parks", item: "https://www.jumbosafaris.com/national-parks" },
+    ],
+  }
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <div className="bg-cream">
       {/* Hero */}
       <section className="bg-forest text-cream py-16 md:py-24">
@@ -356,5 +367,6 @@ export default function NationalParksPage() {
         </div>
       </section>
     </div>
+    </>
   )
 }

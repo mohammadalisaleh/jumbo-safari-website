@@ -16,7 +16,52 @@ export const metadata: Metadata = {
 }
 
 export default function FamilySafariPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the minimum age for a Tanzania family safari?",
+        acceptedAnswer: { "@type": "Answer", text: "The minimum age for a Jumbo Safaris family safari is 5 years old. Children under 12 are required to use a booster seat in the vehicle, which we supply. Contact us before booking if you are travelling with an infant or toddler under 5 to discuss what is practical." },
+      },
+      {
+        "@type": "Question",
+        name: "What is the best time of year for a family safari in Tanzania?",
+        acceptedAnswer: { "@type": "Answer", text: "July and August align with the northern hemisphere summer school holidays and the dry season, making them the most popular months for family safaris. December and January also work well for wildlife and fall within school holiday windows. The calving season at Ndutu (January to March) is spectacular but better suited to children over 8 due to longer days and more remote lodges." },
+      },
+      {
+        "@type": "Question",
+        name: "What vehicle is used for family safaris in Tanzania?",
+        acceptedAnswer: { "@type": "Answer", text: "All family safaris use a private 4x4 Toyota Land Cruiser with a pop-up roof. Your family is the only group in the vehicle. The Land Cruiser carries a maximum of six passengers, with most family trips running two to four. Children sit in individual seats and stand through the pop-up roof at sightings." },
+      },
+      {
+        "@type": "Question",
+        name: "How much does a family safari in Tanzania cost?",
+        acceptedAnswer: { "@type": "Answer", text: "Family safaris start from $2,800 per person based on two adults sharing, with children priced separately. The recommended 8-day northern circuit covers Tarangire, Serengeti, and Ngorongoro Crater. An accurate quote depends on group size, ages, travel dates, and preferred lodge tier." },
+      },
+      {
+        "@type": "Question",
+        name: "Is Tanzania safe for children on safari?",
+        acceptedAnswer: { "@type": "Answer", text: "Tanzania's northern circuit is well-suited to families. All game drives are done by vehicle with no bush walks or fitness requirements. The main precautions are malaria prophylaxis (required for all ages, consult a travel medicine doctor), sun protection, and hydration on long drive days. Altitude on the northern circuit ranges from 1,500 to 2,300 metres, which children tolerate well." },
+      },
+    ],
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jumbosafaris.com" },
+      { "@type": "ListItem", position: 2, name: "Tanzania Safari", item: "https://www.jumbosafaris.com/tanzania-safari" },
+      { "@type": "ListItem", position: 3, name: "Family Safari", item: "https://www.jumbosafaris.com/tanzania-safari/family" },
+    ],
+  }
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <div className="bg-cream">
       {/* Hero */}
       <section className="bg-forest text-cream py-16 md:py-24">
@@ -194,5 +239,6 @@ export default function FamilySafariPage() {
         </div>
       </section>
     </div>
+    </>
   )
 }

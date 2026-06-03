@@ -30,7 +30,18 @@ const itineraryCategories: Record<string, string> = {
 export default function ItinerariesPage() {
   const itineraries = getAllItineraries()
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jumbosafaris.com" },
+      { "@type": "ListItem", position: 2, name: "Itineraries", item: "https://www.jumbosafaris.com/itineraries" },
+    ],
+  }
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <div className="bg-cream">
       {/* Hero */}
       <section className="bg-forest text-cream py-16 md:py-24">
@@ -157,5 +168,6 @@ export default function ItinerariesPage() {
         </div>
       </section>
     </div>
+    </>
   )
 }
