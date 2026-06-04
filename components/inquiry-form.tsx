@@ -18,16 +18,45 @@ export function InquiryForm({ itineraryTitle }: InquiryFormProps) {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    
-    setIsSubmitting(false)
-    setSubmitted(true)
+    setError(false)
+
+    try {
+      const res = await fetch("/api/plan", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: formData.name,
+          lastName: "",
+          email: formData.email,
+          whatsapp: formData.whatsapp,
+          date: formData.travelDates || "Not specified",
+          budget: formData.budget || "Not specified",
+          adults: formData.guests || "Not specified",
+          children: "0",
+          travelWith: "Not specified",
+          notes: itineraryTitle
+            ? `Enquiry from itinerary page: ${itineraryTitle}`
+            : "Enquiry from itinerary page",
+        }),
+      })
+
+      const result = await res.json()
+
+      if (res.ok && result.success) {
+        setSubmitted(true)
+      } else {
+        setError(true)
+      }
+    } catch {
+      setError(true)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (submitted) {
@@ -150,6 +179,13 @@ export function InquiryForm({ itineraryTitle }: InquiryFormProps) {
             <option value="8000+">$8,000+ per person</option>
           </select>
         </div>
+
+        {error && (
+          <p className="text-sm text-orange">
+            Something went wrong sending your enquiry. Please WhatsApp us below or
+            email hello@jumbosafaris.com and we&apos;ll respond right away.
+          </p>
+        )}
 
         <button
           type="submit"
