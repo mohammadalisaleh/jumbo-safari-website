@@ -24,6 +24,7 @@ export function ContactForm() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState(false)
 
   const handleParkChange = (park: string) => {
     setFormData((prev) => ({
@@ -37,12 +38,41 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError(false)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    try {
+      const res = await fetch("/api/plan", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: formData.name,
+          lastName: "",
+          email: formData.email,
+          whatsapp: formData.whatsapp,
+          date: formData.travelDates || "Not specified",
+          budget: formData.budget || "Not specified",
+          adults: formData.guests || "Not specified",
+          children: "0",
+          travelWith: "Not specified",
+          tripTypes: formData.parks.length
+            ? formData.parks.join(", ")
+            : "Not specified",
+          notes: formData.message || "None",
+        }),
+      })
 
-    setIsSubmitting(false)
-    setSubmitted(true)
+      const result = await res.json()
+
+      if (res.ok && result.success) {
+        setSubmitted(true)
+      } else {
+        setError(true)
+      }
+    } catch {
+      setError(true)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (submitted) {
@@ -200,6 +230,16 @@ export function ContactForm() {
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
         />
       </div>
+
+      {error && (
+        <p className="text-sm text-orange">
+          Something went wrong sending your enquiry. Please WhatsApp us at{" "}
+          <a href="https://wa.me/255742789292" className="underline">
+            +255 742 789 292
+          </a>{" "}
+          or email hello@jumbosafaris.com and we&apos;ll respond right away.
+        </p>
+      )}
 
       <button
         type="submit"
