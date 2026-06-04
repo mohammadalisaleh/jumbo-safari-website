@@ -10,8 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/tanzania-safari/private-tours`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/tanzania-safari/family`, priority: 0.7, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/about`, priority: 0.7, changeFrequency: "monthly" as const },
-    { url: `${baseUrl}/about/guides`, priority: 0.6, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/contact`, priority: 0.6, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/plan-your-safari`, priority: 0.6, changeFrequency: "monthly" as const },
     // National Parks index + individual parks
     { url: `${baseUrl}/national-parks`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/national-parks/serengeti`, priority: 0.8, changeFrequency: "weekly" as const },
@@ -30,7 +30,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/itineraries/11-day-tanzania-zanzibar`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/itineraries/family-safari`, priority: 0.8, changeFrequency: "weekly" as const },
     // Guides
+    { url: `${baseUrl}/guides`, priority: 0.7, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/guides/best-time-to-visit-tanzania`, priority: 0.7, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/guides/tanzania-visa-requirements`, priority: 0.6, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/guides/what-to-pack-safari`, priority: 0.6, changeFrequency: "monthly" as const },
     // Monthly safari guides
     { url: `${baseUrl}/safari-in-july`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/safari-in-august`, priority: 0.8, changeFrequency: "monthly" as const },

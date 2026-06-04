@@ -75,6 +75,21 @@ export default function ItinerariesPage() {
 
       {/* Itinerary Grid */}
       <section className="max-w-content mx-auto px-6 py-16 md:py-24">
+        {/* 7-day featured callout */}
+        <div className="mb-10 bg-forest/5 border border-forest/20 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between">
+          <div>
+            <p className="text-eyebrow uppercase text-orange font-montserrat font-semibold text-xs mb-1">Most searched itinerary</p>
+            <h2 className="font-montserrat font-bold text-xl text-forest">7-Day Tanzania Safari — Tarangire, Serengeti, Ngorongoro</h2>
+            <p className="text-sm text-ink/70 mt-1">The standard Northern Circuit. Day-by-day schedule with exact drive times, park fees, and what you see each day.</p>
+          </div>
+          <Link
+            href="/7-day-tanzania-safari-itinerary"
+            className="flex-shrink-0 inline-flex items-center gap-2 bg-forest text-cream font-montserrat font-semibold px-6 py-3 hover:bg-forest/90 transition-colors"
+          >
+            View itinerary <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {itineraries.map((itinerary) => {
             const category = itineraryCategories[itinerary.slug]

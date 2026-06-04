@@ -3,13 +3,13 @@ import { MessageCircle, Mail, MapPin, Clock, Shield, Users, Star } from "lucide-
 import { ContactForm } from "@/components/contact-form"
 
 export const metadata: Metadata = {
-  title: "Plan Your Tanzania Safari",
+  title: "Contact Us",
   description:
     "Contact Jumbo Safaris to plan your Tanzania safari. WhatsApp, email, or fill in our enquiry form. Based in Arusha, Tanzania.",
   alternates: { canonical: "https://www.jumbosafaris.com/contact" },
   openGraph: {
-    title: "Plan Your Tanzania Safari | Jumbo Safaris",
-    description: "Contact Jumbo Safaris to plan your Tanzania safari.",
+    title: "Contact Jumbo Safaris | Talk to an Arusha-Based Safari Specialist",
+    description: "WhatsApp, email, or fill in our enquiry form. Based in Arusha, direct line to the guide who plans your safari.",
     url: "https://www.jumbosafaris.com/contact",
   },
 }

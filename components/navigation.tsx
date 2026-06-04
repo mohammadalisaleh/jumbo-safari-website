@@ -19,6 +19,8 @@ const navItems = [
       { label: "Safari with Kids", href: "/tanzania-safari/family" },
       { label: "National Parks Overview", href: "/national-parks" },
       { label: "Best Time to Visit", href: "/guides/best-time-to-visit-tanzania" },
+      { label: "Tanzania Park Fees 2026", href: "/tanzania-park-fees" },
+      { label: "Serengeti vs Ngorongoro vs Tarangire", href: "/serengeti-vs-ngorongoro-vs-tarangire" },
     ],
   },
   {
@@ -48,6 +50,7 @@ const navItems = [
     },
     links: [
       { label: "5-Day Northern Circuit", href: "/itineraries/5-day-northern-circuit" },
+      { label: "7-Day Tanzania Safari", href: "/7-day-tanzania-safari-itinerary" },
       { label: "8-Day Classic", href: "/itineraries/8-day-classic-tanzania-safari" },
       { label: "11-Day Tanzania & Zanzibar", href: "/itineraries/11-day-tanzania-zanzibar" },
       { label: "Honeymoon Safari", href: "/itineraries/honeymoon-tanzania-zanzibar" },
