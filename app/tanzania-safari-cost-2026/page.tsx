@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "What is not included in a Tanzania safari quote?",
     answer:
-      "Most quotes exclude tips, international flights, travel insurance, Zanzibar accommodation, personal spending, and add-ons like balloon rides ($590/person in Serengeti). Tipping is expected and not optional: budget $25 per day for your guide and $5–$7 per day per person for lodge staff. On an 8-day safari that is $200+ per person that never appears in any quote.",
+      "Most quotes exclude tips, international flights, travel insurance, Zanzibar accommodation, personal spending, and add-ons like balloon rides ($599/person in Serengeti). Tipping is expected and not optional: budget $25 per day for your guide and $5–$7 per day per person for lodge staff. On an 8-day safari that is $200+ per person that never appears in any quote.",
   },
   {
     question: "Why do Tanzania safari prices vary so much for the same dates?",
@@ -322,7 +322,7 @@ export default function TanzaniaSafariCostPage() {
                     "Travel insurance (required)",
                     "Guide tip: $20–$25/day (standard)",
                     "Lodge staff tip: $5–$7/person/day",
-                    "Hot air balloon (Serengeti): $590/person",
+                    "Hot air balloon (Serengeti): $599/person",
                     "Personal drinks and laundry",
                     "Arusha accommodation (before/after safari)",
                     "Tanzania visa: $50 for most nationalities",

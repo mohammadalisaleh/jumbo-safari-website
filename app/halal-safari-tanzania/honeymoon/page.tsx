@@ -283,7 +283,7 @@ export default function HalalHoneymoon() {
               <p>Travel insurance. We strongly recommend coverage that includes emergency evacuation.</p>
               <p>Visa on arrival: $50 USD per person, paid at Kilimanjaro Airport. Bring cash.</p>
               <p>Tips for your guide ($25/day recommended) and lodge staff ($5–7/day).</p>
-              <p>Any optional activities not listed: hot air balloon over the Serengeti ($590pp), snorkelling excursions in Zanzibar.</p>
+              <p>Any optional activities not listed: hot air balloon over the Serengeti ($599pp), snorkelling excursions in Zanzibar.</p>
             </div>
           </div>
         </div>
