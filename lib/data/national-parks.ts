@@ -281,8 +281,8 @@ export const nationalParks: Record<string, NationalPark> = {
       "Most search results call it Ngorongoro National Park. That is wrong, and the distinction matters. The Ngorongoro Crater sits inside the Ngorongoro Conservation Area (NCA), a different category of protected land governed by the Ngorongoro Conservation Area Authority. National parks in Tanzania are sealed: no human settlement, no livestock. The NCA operates differently. Roughly 20,000 Maasai pastoralists live and graze cattle within its boundaries, a coexistence that has shaped this landscape for centuries. The rules are also different for visitors: vehicles descend into the crater on a timed permit rather than being confined to fixed tracks, and off-road positioning is permitted in parts of the NCA outside the crater.",
       "The crater formed between two and three million years ago when a large volcano, estimated to have stood as tall as Kilimanjaro, erupted and collapsed inward. What remains is a caldera: 610 metres deep, 19 kilometres across at the rim, with a floor covering 260 square kilometres. The rim sits at 2,286 metres above sea level. The floor is at roughly 1,800 metres. At 6:00am on the rim before descent, the temperature is typically 8°C with wind. By midday on the floor, it reaches 22-28°C. The layering works. Most visitors forget the fleece.",
       "The crater floor supports approximately 25,000 large mammals year-round, without seasonal migration. The caldera walls are steep enough that most animals do not leave, and the ecosystem provides what they need: fresh water from Munge Stream and Ngoitokitok Springs, open short-grass plains, swampland at Mandusi and Gorigor, and acacia forest in the southern Lerai sector. The lion density here is among the highest in Africa. The black rhino population, which collapsed from 108 individuals in the mid-1960s to 13 by 1993 under sustained poaching pressure, has recovered to an estimated 26-55 animals under the Ngorongoro Rhino Protection Programme. Two species are conspicuously absent: giraffe and impala. The crater walls are impassable for giraffe, and the floor lacks the open woodland and specific tree species both require.",
-      "UNESCO inscribed the NCA as a Natural World Heritage Site in 1979. Mixed status, recognising both natural and cultural significance, was added in 2010. The cultural designation reflects what surrounds the crater as much as the crater itself. Laetoli, 45 kilometres south, holds 3.6 million-year-old hominid footprints preserved in volcanic ash, the oldest confirmed evidence of bipedal locomotion. Olduvai Gorge, 20 kilometres northwest, is where Mary Leakey found the skull of Paranthropus boisei in 1959. The NCA is not only a wildlife reserve. It is one of the most significant archaeological landscapes on the planet, and the crater sits at its centre.",
-      "A day on the crater floor is structured differently from a Serengeti drive. You descend by permit on one of two named roads, Seneto on the west side or Lemala on the east, and the permit runs for six hours on the floor. The only place you can leave the vehicle is Ngoitokitok Springs, the designated picnic area, where a hippo pool sits directly adjacent. A 50-vehicle daily cap limits the floor population, but peak-season mornings still cluster near Mandusi Swamp where lion sightings concentrate. The far western floor near Gorigor Swamp, the best location for rhino, sees a fraction of the vehicle traffic.",
+      "UNESCO inscribed the NCA as a Natural World Heritage Site in 1979. Mixed status, recognising both natural and cultural significance, was added in 2010. The cultural designation reflects what surrounds the crater as much as the crater itself. Laetoli, approximately 45 km southwest, holds 3.6 million-year-old hominid footprints preserved in volcanic ash, the oldest confirmed footprint evidence of bipedal locomotion. Olduvai Gorge, roughly 45 km northwest by road, is where Mary Leakey found the skull of Paranthropus boisei in 1959. The NCA is not only a wildlife reserve. It is one of the most significant archaeological landscapes on the planet, and the crater sits at its centre.",
+      "A day on the crater floor is structured differently from a Serengeti drive. You descend by permit on one of two named roads, Seneto on the west side or Lemala on the east, and the permit runs for six hours on the floor. The only place you can leave the vehicle is Ngoitokitok Springs, the designated picnic area, where a hippo pool sits directly adjacent. Peak-season mornings cluster near Mandusi Swamp where lion sightings concentrate. The far western floor near Gorigor Swamp, the best location for rhino, sees a fraction of the vehicle traffic.",
     ],
     wildlife: [
       {
@@ -307,7 +307,7 @@ export const nationalParks: Record<string, NationalPark> = {
       },
       {
         name: "Spotted Hyena",
-        description: "One of the crater's most underrated species. Clan sizes here reach 80+ individuals. Active hunters in their own right, not scavengers. Responsible for more kills per day than lions on the crater floor.",
+        description: "One of the crater's most underrated species. Clan sizes range 33-72 members. Active hunters in their own right, not scavengers. Responsible for more kills per day than lions on the crater floor.",
       },
     ],
     fees: [
@@ -316,7 +316,6 @@ export const nationalParks: Record<string, NationalPark> = {
       { item: "Crater service fee", amount: "$295", notes: "Per vehicle, per descent. Paid separately from entry permits." },
       { item: "Picnic/lunch fee", amount: "$23.60", notes: "Per person, charged if stopping at Ngoitokitok Springs" },
       { item: "Overnight concession (rim lodges)", amount: "$59", notes: "Per person per night" },
-      { item: "VAT", amount: "18%", notes: "Applied to all fees" },
       { item: "Payment method", amount: "Card only", notes: "No cash accepted at any NCA gate" },
     ],
     bestTimeToVisit: [
@@ -380,7 +379,7 @@ export const nationalParks: Record<string, NationalPark> = {
       {
         question: "How much does it cost to visit Ngorongoro Crater?",
         answer:
-          "The main fees are: non-resident adult entry at $70.80 per person per 24-hour permit, plus a crater service fee of $295 per vehicle per descent. There is also a picnic fee of $23.60 per person at Ngoitokitok Springs. VAT of 18% is applied to all fees, and payment is by card only. No cash accepted at any NCA gate. For a party of two in one vehicle, the crater-specific fees alone (service fee plus two entry permits) total around $436 before VAT.",
+          "The main fees are: non-resident adult entry at $70.80 per person per 24-hour permit, plus a crater service fee of $295 per vehicle per descent. There is also a picnic fee of $23.60 per person at Ngoitokitok Springs. No VAT applies to government NCAA fees. Payment is by card only. No cash accepted at any NCA gate. For a party of two in one vehicle, the crater-specific fees alone (service fee plus two entry permits) total around $436.",
       },
       {
         question: "What time does Ngorongoro Crater open?",
@@ -390,7 +389,7 @@ export const nationalParks: Record<string, NationalPark> = {
       {
         question: "How long can you stay in Ngorongoro Crater?",
         answer:
-          "The crater floor permit is valid for 6 hours from the time of descent. All vehicles must exit before the 6:00pm gate closure. Most full-day crater visits run from a 6:30am descent to a 3:30-4:00pm ascent start, with a picnic lunch at Ngoitokitok Springs midday. The 50-vehicle daily cap on the floor means peak-season permits sometimes need to be booked in advance.",
+          "The crater floor permit is valid for 6 hours from the time of descent. All vehicles must exit before the 6:00pm gate closure. Most full-day crater visits run from a 6:30am descent to a 3:30-4:00pm ascent start, with a picnic lunch at Ngoitokitok Springs midday. Peak-season permits should be booked in advance.",
       },
       {
         question: "Do you need a 4WD for Ngorongoro?",
@@ -618,9 +617,9 @@ export const nationalParks: Record<string, NationalPark> = {
       alt: "Tree-climbing lioness standing in a fig tree at Lake Manyara National Park, Tanzania",
     },
     description:
-      "Lake Manyara National Park is 330 km² at the base of the Rift Valley escarpment, of which roughly 70% is the alkaline lake itself. It records 624-626 bird species (Avibase 2025), more than almost any other enclosed park in Africa. The tree-climbing lion behaviour the park is marketed on is real but no longer reliably observed; the visual asset most operators are not telling you about is the Ghost Forest, a stretch of fever tree skeleton woodland standing in the lake's advancing alkaline water since approximately 2020.",
+      "Lake Manyara National Park is 648 km² at the base of the Rift Valley escarpment (expanded in 2009), of which a large portion is the alkaline lake itself. It records 624-626 bird species (Avibase 2025), more than almost any other enclosed park in Africa. The tree-climbing lion behaviour the park is marketed on is real but no longer reliably observed; the visual asset most operators are not telling you about is the Ghost Forest, a stretch of fever tree skeleton woodland standing in the lake's advancing alkaline water since approximately 2020.",
     quickFacts: {
-      area: "330 km² total · ~70% alkaline lake · ~100 km² terrestrial",
+      area: "648 km² total (expanded 2009) · includes alkaline lake and terrestrial strip",
       unescoStatus: "National Park since 1960 · UNESCO Biosphere Reserve",
       bestTime: "Year-round · best June-October for land wildlife · Nov-Mar for birds and flamingos",
       famousFor: "624 bird species, groundwater forest, Ghost Forest flooded woodland, tree-climbing lion (unreliable), flamingos (variable)",
@@ -781,8 +780,8 @@ export const nationalParks: Record<string, NationalPark> = {
     about: [
       "Ndutu is not a national park. Geographically it sits at the southern edge of the Serengeti ecosystem; administratively it falls inside the Ngorongoro Conservation Area (NCA), governed by the Ngorongoro Conservation Area Authority. The boundary with Serengeti National Park runs through the broader Ndutu region. It is unfenced. Wildlife crosses freely. The wildebeest do not know which side they are on. Your guide does, because it determines what the vehicle can legally do.",
       "In Serengeti National Park, off-road driving is forbidden for non-research vehicles. No exceptions. In Ndutu specifically, the NCAA has designated the area as an authorised off-road zone. This is a carve-out, not a general NCA rule: the rest of the conservation area, including the Ngorongoro Crater floor, prohibits off-road driving just as strictly as the national park does. When a cheetah accelerates toward a newborn calf through ankle-height grass at Ndutu, your guide can leave the track, position for the light, and stay with the hunt. Cross the boundary east into Serengeti National Park and the vehicle returns to the road, regardless of what is happening 30 metres away.",
-      "The calving itself is driven by soil chemistry. The November-December short rains deposit phosphorus and calcium into the volcanic short-grass plains around Lake Ndutu and Lake Masek. These are the exact nutrients lactating cows and developing calves need. Herds arrive by late December, first births begin in mid-January, and peak intensity runs through the first two to three weeks of February. The Greater Serengeti Conservation Society puts the total at more than 400,000 calves born in a few weeks, with the daily rate at peak reaching around 8,000 (a conventional figure, widely cited and plausible given the total, though not from a single peer-reviewed source). Calves stand within 3-5 minutes of birth, walk within 15, and run with the herd within hours. Predators do not wait.",
-      "The predator response to calving is the most important fact about Ndutu. Every lion pride in range pulls toward the calving grounds. Spotted hyena clans here reach 80-plus members. Cheetahs work the open short-grass plains where their sprint-hunting success rate runs near 50 percent during calving, compared to around 30 percent at other times. Black-backed jackals work directly on newborns, often a dozen around a single birth. The full cast operates simultaneously and in plain view. Kills happen before breakfast, through the morning, before sundowners. This is not the Mara River, where you wait for one event. At Ndutu in February, the event is continuous.",
+      "The calving itself is driven by soil chemistry. The October-December short rains deposit phosphorus and calcium into the volcanic short-grass plains around Lake Ndutu and Lake Masek. These are the exact nutrients lactating cows and developing calves need. Herds arrive by late December, first births begin in mid-January, and peak intensity runs through the first two to three weeks of February. The Greater Serengeti Conservation Society puts the total at more than 400,000 calves born in a few weeks, with the daily rate at peak reaching around 8,000 (a conventional figure, widely cited and plausible given the total, though not from a single peer-reviewed source). Calves stand within 3-5 minutes of birth, walk within 15, and run with the herd within hours. Predators do not wait.",
+      "The predator response to calving is the most important fact about Ndutu. Every lion pride in range pulls toward the calving grounds. Spotted hyena clans range 33-72 members. Cheetahs work the open short-grass plains where their sprint-hunting success rate runs near 50 percent during calving, compared to around 30 percent at other times. Black-backed jackals work directly on newborns, often a dozen around a single birth. The full cast operates simultaneously and in plain view. Kills happen before breakfast, through the morning, before sundowners. This is not the Mara River, where you wait for one event. At Ndutu in February, the event is continuous.",
       "There is a second Ndutu that most visitors never see. From April through mid-December, the migration herds have moved north and the mobile camps have packed up. Ndutu Safari Lodge stays open year-round, and what remains is a resident predator community with no migration traffic: named cheetah coalitions with established territories around the Big Marsh and the Causeway, the Masek Pride whose lions climb acacia trees around Lake Masek (a behaviour normally associated with Lake Manyara), the Twin Hill lion pride whose cubs the guides track across seasons. Wildlife photographers who have visited in February come back off-season specifically for this. Fewer vehicles, familiar animals, different quality of encounter.",
     ],
     wildlife: [
@@ -800,7 +799,7 @@ export const nationalParks: Record<string, NationalPark> = {
       },
       {
         name: "Spotted Hyena",
-        description: "Clans of 80+ members. Active hunters, not scavengers. Responsible for a large share of kills on the calving plains alongside the lion prides.",
+        description: "Clan sizes of 33-72 members. Active hunters, not scavengers. Responsible for a large share of kills on the calving plains alongside the lion prides.",
       },
       {
         name: "Leopard",
@@ -906,9 +905,9 @@ export const nationalParks: Record<string, NationalPark> = {
     name: "Ruaha National Park",
     tagline: "For the safari traveller who has done the migration and now wants the silence.",
     description:
-      "Ruaha is Tanzania's largest national park at 20,226 km², home to roughly 10% of Africa's lions, one of only three African landscapes with 500+ wild dogs, and an elephant population recovering toward 15,000. Around 20,000 visitors per year. The Serengeti sees 350,000.",
+      "Ruaha is Tanzania's second-largest national park at 20,226 km², home to roughly 10% of Africa's lions, one of only three African landscapes with 500+ wild dogs, and an elephant population recovering toward 15,000. Around 20,000 visitors per year. The Serengeti sees 350,000.",
     quickFacts: {
-      area: "20,226 km² (Tanzania's largest national park, expanded 2008)",
+      area: "20,226 km² (Tanzania's second-largest national park, expanded 2008)",
       unescoStatus: "National Park since 1964",
       bestTime: "June - October (dry season) · walking safaris year-round",
       famousFor: "African wild dog, lion prides up to 25, elephant, greater kudu, sable antelope, endemic Ruaha red-billed hornbill",

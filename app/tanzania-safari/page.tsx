@@ -61,7 +61,7 @@ const faqs = [
   {
     question: "What hidden costs do people miss when budgeting for Tanzania?",
     answer:
-      "Three that catch people: the Ngorongoro Crater vehicle fee ($295 per vehicle, paid on the day), the Serengeti hot air balloon ($590 per person if you add it), and tipping. Tipping is not included in any quoted price. Budget $25 per day for your guide and $5–$7 per day for lodge staff. On an 8-day safari that is $200+ per person that never appears in an itinerary quote. International booking agents also add 30–300% on top of the operator's base price. Book direct with an Arusha-based operator and that markup disappears.",
+      "Three that catch people: the Ngorongoro Crater vehicle fee ($295 per vehicle, paid on the day), the Serengeti hot air balloon ($599 per person if you add it), and tipping. Tipping is not included in any quoted price. Budget $25 per day for your guide and $10–$15 per day for lodge staff (to the communal tip box). On an 8-day safari that is $280+ per person that never appears in an itinerary quote. International booking agents also add 30–300% on top of the operator's base price. Book direct with an Arusha-based operator and that markup disappears.",
   },
   {
     question: "What is the best time of year for a Tanzania safari?",
@@ -81,7 +81,7 @@ const faqs = [
   {
     question: "What is the difference between the Serengeti and Ngorongoro Crater?",
     answer:
-      "The Serengeti is 14,763 square kilometres of open plain and acacia woodland, and it is where the Great Migration happens. The wildebeest move in a rough clockwise loop all year, and positioning your visit correctly means seeing them wherever they are. Ngorongoro Crater is a collapsed volcanic caldera 260 square kilometres on the crater floor. It has its own permanently resident population: roughly 120 lions, 50 black rhino, 15,000 wildebeest, and 9,000 zebra that never leave. No giraffe in the crater though. The walls are too steep for them to descend. Most 7–8 day itineraries include both.",
+      "The Serengeti is 14,763 square kilometres of open plain and acacia woodland, and it is where the Great Migration happens. The wildebeest move in a rough clockwise loop all year, and positioning your visit correctly means seeing them wherever they are. Ngorongoro Crater is a collapsed volcanic caldera 260 square kilometres on the crater floor. It has its own permanently resident population: approximately 60 lions, 26-55 black rhino, and around 25,000 large animals in total that never leave. No giraffe in the crater though. The walls are too steep for them to descend. Most 7–8 day itineraries include both.",
   },
   {
     question: "Private safari or group tour: which is worth it?",
@@ -101,7 +101,7 @@ const faqs = [
   {
     question: "Can I combine Tanzania safari with Zanzibar?",
     answer:
-      "Yes, and it works well. The standard combination is 5–7 days on safari in the Northern Circuit followed by 4–7 nights on Zanzibar. Flights from the Serengeti to Zanzibar run via Dar es Salaam or Kilimanjaro and take 1.5–2.5 hours depending on routing. Zanzibar's Stone Town is a UNESCO World Heritage Site; the northern and eastern coasts have the best beaches. Most people do safari first, beach second. The reverse is also possible but logistically messier.",
+      "Yes, and it works well. The standard combination is 5–7 days on safari in the Northern Circuit followed by 4–7 nights on Zanzibar. Flights from Kilimanjaro to Zanzibar are around 1 hour direct; from Serengeti airstrips, plan for up to 3–4 hours with stops. Zanzibar's Stone Town is a UNESCO World Heritage Site; the northern and eastern coasts have the best beaches. Most people do safari first, beach second. The reverse is also possible but logistically messier.",
   },
 ]
 
@@ -302,12 +302,12 @@ export default function TanzaniaSafariPage() {
                 <p>Charged per vehicle, per descent, on the day. Not included in most quoted prices. On an 8-day itinerary with two people, this is $147.50 per person that never appears on the original quote.</p>
               </div>
               <div>
-                <p className="font-semibold text-cream mb-2">Hot air balloon: $590 per person</p>
+                <p className="font-semibold text-cream mb-2">Hot air balloon: $599 per person</p>
                 <p>The Serengeti sunrise balloon is genuinely spectacular and worth the price if it fits your budget. Optional add-on, always quoted separately.</p>
               </div>
               <div>
-                <p className="font-semibold text-cream mb-2">Tipping: $25/day guide, $5–7/day lodge staff</p>
-                <p>Tipping is not included in any price. Budget $200–$250 per person for a typical 8-day safari. Your guide works hard for it.</p>
+                <p className="font-semibold text-cream mb-2">Tipping: $25/day guide, $10–15/day lodge staff</p>
+                <p>Tipping is not included in any price. Budget $280–$320 per person for a typical 8-day safari. Your guide works hard for it.</p>
               </div>
               <div>
                 <p className="font-semibold text-cream mb-2">Agent markup: 30–300% above operator rate</p>

@@ -52,17 +52,17 @@ const parkHighlights: Record<string, { best: string; when: string; blurb: string
     best: "Best for: African wild dog, solitude, big game without crowds",
     when: "June–October",
     blurb:
-      "Tanzania's largest national park at 20,226 km² — about 1.4 times the size of the Serengeti. Getting here requires a flight from Arusha or Dar es Salaam. In return you get one of Africa's strongest wild dog populations, large elephant herds, and game drives where you rarely see another vehicle.",
+      "Tanzania's second-largest national park at 20,226 km² — about 1.4 times the size of the Serengeti. Getting here requires a flight from Arusha or Dar es Salaam. In return you get one of Africa's strongest wild dog populations, large elephant herds, and game drives where you rarely see another vehicle.",
   },
 }
 
 const fees = [
-  { park: "Serengeti", authority: "TANAPA", fee: "$70 peak / $60 low", vat: "+18% VAT", note: "Peak: 16 May–14 Mar" },
-  { park: "Tarangire", authority: "TANAPA", fee: "$50 peak / $45 low", vat: "+18% VAT", note: "Same peak/low calendar" },
-  { park: "Lake Manyara", authority: "TANAPA", fee: "$50 peak / $45 low", vat: "+18% VAT", note: "Same peak/low calendar" },
-  { park: "Ruaha", authority: "TANAPA", fee: "$30 year-round", vat: "+18% VAT", note: "No seasonal split" },
-  { park: "Ngorongoro (NCA)", authority: "NCAA", fee: "$70.80", vat: "+18% VAT", note: "Plus $295/vehicle crater descent fee" },
-  { park: "Ndutu (NCA)", authority: "NCAA", fee: "NCA rate applies", vat: "+18% VAT", note: "Sub-region of NCA" },
+  { park: "Serengeti", authority: "TANAPA", fee: "$70 peak / $60 low", note: "Peak: 16 May–14 Mar" },
+  { park: "Tarangire", authority: "TANAPA", fee: "$50 peak / $45 low", note: "Same peak/low calendar" },
+  { park: "Lake Manyara", authority: "TANAPA", fee: "$50 peak / $45 low", note: "Same peak/low calendar" },
+  { park: "Ruaha", authority: "TANAPA", fee: "$30 year-round", note: "No seasonal split" },
+  { park: "Ngorongoro (NCA)", authority: "NCAA", fee: "$70.80", note: "Plus $295/vehicle crater descent fee" },
+  { park: "Ndutu (NCA)", authority: "NCAA", fee: "NCA rate applies", note: "Sub-region of NCA" },
 ]
 
 const faqs = [
@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     q: "What are the Big Five in Tanzania?",
-    a: "Lion, leopard, elephant, Cape buffalo, and black rhino. Tanzania has all five. Black rhino is the hardest — the best place to find them is Ngorongoro Crater, which holds around 26 individuals. Serengeti has rhino at Moru Kopjes but sightings require a special permit and ranger escort.",
+    a: "Lion, leopard, elephant, Cape buffalo, and black rhino. Tanzania has all five. Black rhino is the hardest — the best place to find them is Ngorongoro Crater, which holds an estimated 26-55 individuals. Serengeti has rhino at Moru Kopjes but sightings require a special permit and ranger escort.",
   },
   {
     q: "What is the best month to do a safari in Tanzania?",
@@ -140,7 +140,7 @@ export default function NationalParksPage() {
             Most Tanzania safaris run the northern circuit: Tarangire, Serengeti, and Ngorongoro, three parks within a day&apos;s drive of Arusha. For most visitors, this is the right choice. The infrastructure is solid, the wildlife is exceptional, and the full circuit fits into five to ten days. Ndutu sits at the circuit&apos;s western edge inside the Ngorongoro Conservation Area (administered separately from TANAPA) and becomes the most important calving ground in East Africa for roughly six weeks each January and February.
           </p>
           <p className="text-body-mobile md:text-body-desktop text-ink mb-6">
-            The southern circuit, anchored by Ruaha, requires a flight from Arusha or Dar es Salaam. Ruaha is Tanzania&apos;s largest national park at 20,226 km² — about 1.4 times the size of the Serengeti. The tradeoff for the flight is a park with one of Africa&apos;s strongest African wild dog populations and game drives where you&apos;ll rarely see another vehicle.
+            The southern circuit, anchored by Ruaha, requires a flight from Arusha or Dar es Salaam. Ruaha is Tanzania&apos;s second-largest national park at 20,226 km² — about 1.4 times the size of the Serengeti. The tradeoff for the flight is a park with one of Africa&apos;s strongest African wild dog populations and game drives where you&apos;ll rarely see another vehicle.
           </p>
           <p className="text-body-mobile md:text-body-desktop text-ink">
             Each park below has its own page with entry fees, seasonal breakdown, and what you actually see on a game drive. The cards are the starting point. Use the comparison table and FAQ below to narrow down what suits your itinerary.
@@ -270,7 +270,7 @@ export default function NationalParksPage() {
             Park Comparison
           </h2>
           <p className="text-body-mobile text-ink mb-8 max-w-prose">
-            All fees are non-resident adult, per day, excluding 18% VAT. A $70 Serengeti entry is $82.60 at the gate. Source: TANAPA 2023/24 tariff; NCAA tariff page.
+            All fees are non-resident adult, per day. No VAT applies to government park fees. Source: TANAPA/NCAA tariff. See <Link href="/tanzania-park-fees" className="underline hover:text-forest">full park fee breakdown</Link> for current verified rates.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full bg-white border border-border-soft text-sm">
@@ -279,7 +279,7 @@ export default function NationalParksPage() {
                   <th className="px-4 py-3 text-left font-montserrat font-semibold">Park</th>
                   <th className="px-4 py-3 text-left font-montserrat font-semibold">Area</th>
                   <th className="px-4 py-3 text-left font-montserrat font-semibold">Best Time</th>
-                  <th className="px-4 py-3 text-left font-montserrat font-semibold">Entry Fee (ex-VAT)</th>
+                  <th className="px-4 py-3 text-left font-montserrat font-semibold">Entry Fee</th>
                   <th className="px-4 py-3 text-left font-montserrat font-semibold">Access</th>
                 </tr>
               </thead>

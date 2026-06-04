@@ -75,8 +75,8 @@ const days = [
     day: 6,
     title: "Serengeti to Ngorongoro Crater",
     time: "Depart 07:00, crater floor by 10:00",
-    highlights: "Full day in the crater, Big Five, 50 black rhino, 120 lions",
-    body: "Drive east through the Serengeti, exiting at Naabi Hill and climbing back into the Ngorongoro Conservation Area. Reach the crater rim by mid-morning and descend into the caldera.\n\nThe Ngorongoro Crater is 260 square kilometres on the floor, enclosed by walls that drop 600 metres. Animals that live here rarely leave. The density is extraordinary: roughly 120 lions, 50 black rhino, 15,000 wildebeest, 9,000 zebra. Your guide pays the $295 vehicle fee at the descent gate and you spend the full day on the crater floor.\n\nThere are no giraffe in the crater. The walls are too steep. Everything else that lives in east Africa is here in numbers that seem improbable until you see it yourself.\n\nAscend at closing time and overnight at a lodge on the crater rim.",
+    highlights: "Full day in the crater, Big Five, 26-55 black rhino, ~60 lions",
+    body: "Drive east through the Serengeti, exiting at Naabi Hill and climbing back into the Ngorongoro Conservation Area. Reach the crater rim by mid-morning and descend into the caldera.\n\nThe Ngorongoro Crater is 260 square kilometres on the floor, enclosed by walls that drop 610 metres. Animals that live here rarely leave. The density is extraordinary: approximately 60 lions, 26-55 black rhino, and around 25,000 large animals in total. Your guide pays the $295 vehicle fee at the descent gate and you spend the full day on the crater floor.\n\nThere are no giraffe in the crater. The walls are too steep. Everything else that lives in east Africa is here in numbers that seem improbable until you see it yourself.\n\nAscend at closing time and overnight at a lodge on the crater rim.",
     accommodation: "Ngorongoro Crater Lodge or similar (rim)",
     meals: "Breakfast, Lunch, Dinner",
     parkSlug: "ngorongoro-crater",
@@ -441,7 +441,7 @@ export default function SevenDayItineraryPage() {
                     "Guide tips: $20–$25/day (standard)",
                     "Lodge staff tips: $5–$7/person/day",
                     "Personal drinks, laundry, souvenirs",
-                    "Hot air balloon ride: $590/person (optional add-on)",
+                    "Hot air balloon ride: $599/person (optional add-on)",
                     "Arusha accommodation before/after safari",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">

@@ -38,7 +38,7 @@ export const guides: Record<string, Guide> = {
         id: "green-season",
         title: "Green Season: November to May",
         content: [
-          "The green season, split between short rains (November-December) and long rains (March-May), transforms Tanzania into a lush paradise. While many travelers avoid this period, it offers significant advantages for those willing to embrace the occasional afternoon shower.",
+          "The green season, split between short rains (October-December) and long rains (March-May), transforms Tanzania into a lush paradise. While many travelers avoid this period, it offers significant advantages for those willing to embrace the occasional afternoon shower.",
           "Lower prices are the green season's biggest draw, with discounts of 30-50% on lodges and reduced park fees. Crowds thin dramatically, and you may have entire game drives to yourself. The landscape is stunning, with emerald grasses, dramatic storm clouds, and excellent lighting for photography.",
           "Wildlife viewing remains good, though animals are more dispersed across the landscape. Migratory birds arrive from Europe and North Africa, making this the best time for birdwatching. Baby animals born during this period provide adorable photographic subjects.",
         ],
@@ -67,7 +67,7 @@ export const guides: Record<string, Guide> = {
         id: "weather-overview",
         title: "Tanzania Weather by Region",
         content: [
-          "The Northern Circuit (Serengeti, Ngorongoro, Tarangire, Lake Manyara) experiences two rainy seasons: short rains in November-December and long rains in March-May. Temperatures remain relatively consistent year-round, with highs around 25-30°C (77-86°F) and cooler conditions at higher elevations like Ngorongoro.",
+          "The Northern Circuit (Serengeti, Ngorongoro, Tarangire, Lake Manyara) experiences two rainy seasons: short rains in October-December and long rains in March-May. Temperatures remain relatively consistent year-round, with highs around 25-30°C (77-86°F) and cooler conditions at higher elevations like Ngorongoro.",
           "The Southern Circuit (Ruaha, Selous/Nyerere) has a more pronounced dry season running from June through November. These parks see fewer visitors but offer exceptional game viewing, particularly in Ruaha where large predator densities rival the Serengeti.",
           "Zanzibar and the coast follow a similar pattern to the mainland, with the driest months being June through October. Beach conditions are best during these months, making them ideal for combining safari with beach time.",
         ],
