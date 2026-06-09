@@ -157,10 +157,10 @@ export default function AboutPage() {
                 Jumbo Safaris is built around a single principle. The founder who grew up in Arusha is the same person who designs your itinerary, answers your questions, and coordinates every detail on the ground. There is no call centre between you and your safari.
               </p>
               <p>
-                Our guides have years of experience across the Northern Circuit parks, and because we run private trips only, your days are shaped around you rather than a fixed group schedule. When conditions change, the migration shifts, weather closes a road, we adapt in real time.
+                Our guides have years behind the wheel in the Northern Circuit parks, and we run private trips only, so the day belongs to you. Linger at a river crossing, or skip the crowded midday tracks. The schedule bends to your group.
               </p>
               <p>
-                That direct line is something larger operators cannot offer, and it is the whole reason this company exists. You get a safari built by someone with a genuine reason to get every detail right, and the access to reach that person whenever you need to.
+                That direct line is something larger operators cannot offer, and it is the whole reason this company exists. You get a safari built by someone with a real reason to get every detail right, and you can reach that person whenever you need to.
               </p>
             </div>
           </div>
