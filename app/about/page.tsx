@@ -144,23 +144,23 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Honest section — what we are building */}
+      {/* The difference — direct founder-run model */}
       <section className="bg-forest text-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6">
           <div className="max-w-prose mx-auto">
-            <p className="text-eyebrow uppercase text-orange mb-3">WHERE THINGS STAND</p>
+            <p className="text-eyebrow uppercase text-orange mb-3">THE DIFFERENCE</p>
             <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop mb-8">
-              A new company. A serious one.
+              The person you talk to is the person who runs your trip.
             </h2>
             <div className="space-y-6 text-body-mobile md:text-body-desktop text-cream/90">
               <p>
-                Jumbo Safaris launched in 2023. We do not have hundreds of reviews yet. We are not going to pretend otherwise.
+                Jumbo Safaris is built around a single principle. The founder who grew up in Arusha is the same person who designs your itinerary, answers your questions, and coordinates every detail on the ground. There is no call centre between you and your safari.
               </p>
               <p>
-                What we do have: a founder who grew up here, guides with years of experience in the Northern Circuit parks, and a direct line of communication that larger operators cannot offer. When you contact Jumbo Safaris, you are talking to the person who will build your itinerary and coordinate every detail of your trip.
+                Our guides have years of experience across the Northern Circuit parks, and because we run private trips only, your days are shaped around you rather than a fixed group schedule. When conditions change, the migration shifts, weather closes a road, we adapt in real time.
               </p>
               <p>
-                If you want the security of a company with 10,000 reviews, there are plenty of options. If you want a safari designed by someone who answers your questions personally and has a genuine reason to get it right, we are the better choice.
+                That direct line is something larger operators cannot offer, and it is the whole reason this company exists. You get a safari built by someone with a genuine reason to get every detail right, and the access to reach that person whenever you need to.
               </p>
             </div>
           </div>
