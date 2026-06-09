@@ -259,18 +259,18 @@ export default function TrustPage() {
         {/* A note on reviews */}
         <section className="bg-forest/5 py-16 md:py-20">
           <div className="max-w-content mx-auto px-6 max-w-3xl">
-            <p className="text-eyebrow uppercase text-orange mb-3">Honest Disclosure</p>
+            <p className="text-eyebrow uppercase text-orange mb-3">The Model</p>
             <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-6">
-              We are new. That is worth saying clearly.
+              You deal with the operator, not a middleman.
             </h2>
             <p className="text-body text-ink/80 mb-4">
-              Jumbo Safaris launched in 2024. We do not have 3,000 TripAdvisor reviews. We are not on SafariBookings. Every established operator you compare us to had the same situation at the start.
+              Jumbo Safaris is run from Arusha by the person who plans your trip. Your questions reach me directly before you travel. When something shifts on the ground, the migration moves, a road washes out, a lodge changes, I am the one who adjusts it, in real time, in northern Tanzania.
             </p>
             <p className="text-body text-ink/80 mb-4">
-              What we have: a founder based in Arusha, an itemised pricing policy, a WhatsApp number that answers, and itineraries built on real knowledge of the northern circuit. Not a head office in London managing a database of local suppliers.
+              That is the entire point of how this is built. Many of the operators you will compare us to are booking platforms or overseas agencies routing your safari through local suppliers they have never personally worked alongside. We are the local operator. No markup chain, no head office abroad, no pooled database of subcontractors running your days in the park.
             </p>
             <p className="text-body text-ink/80">
-              If the absence of reviews is a dealbreaker for you, that is a reasonable position and we will tell you so directly. Some travelers are more comfortable with an operator that has 500 reviews. What we offer instead is direct access to the person running your trip.
+              And everything here is verifiable. Use the questions above on us. Ask for the registration number, the named guide, the itemised quote. We would always rather you check than take our word for it.
             </p>
           </div>
         </section>
