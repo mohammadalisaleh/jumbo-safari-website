@@ -7,7 +7,7 @@ import { getAllItineraries } from "@/lib/data/itineraries"
 export const metadata: Metadata = {
   title: "Tanzania Safari Itineraries | Private Tours",
   description:
-    "Private Tanzania safari itineraries from 5 to 11 days. Northern circuit, calving season, honeymoon, family, and Great Migration routes. All private, all from Arusha.",
+    "Private Tanzania safari itineraries from 5 to 11 days: northern circuit, calving season, honeymoon, family, and Great Migration. All from Arusha.",
   alternates: { canonical: "https://www.jumbosafaris.com/itineraries" },
   openGraph: {
     title: "Tanzania Safari Itineraries | Jumbo Safaris",

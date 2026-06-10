@@ -6,7 +6,7 @@ import { ItineraryDetail } from "@/components/itinerary-detail"
 export const metadata: Metadata = {
   title: "7-Day Tanzania Safari Itinerary | Day-by-Day from Arusha",
   description:
-    "A complete 7-day Tanzania safari itinerary: Tarangire, Serengeti, and Ngorongoro Crater. Day-by-day schedule with departure times, drive distances, park fees, and tiered prices from $2,195 per person.",
+    "7-day Tanzania safari itinerary: Tarangire, Serengeti, Ngorongoro Crater. Day-by-day schedule, drive times, park fees, and tiered prices from $2,195 pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/7-day-tanzania-safari-itinerary" },
   openGraph: {
     title: "7-Day Tanzania Safari Itinerary | Day-by-Day Guide 2026",

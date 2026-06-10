@@ -3,7 +3,7 @@ import PlanForm from "../[locale]/plan-your-safari/PlanForm"
 
 export const metadata: Metadata = {
   title: "Plan Your Tanzania Safari",
-  description: "Tell us your dates, budget, and dream experience. Our Arusha-based team will send a personalised Tanzania safari proposal within 24 hours. No cost, no commitment.",
+  description: "Tell us your dates, budget, and dream trip. Arusha-based, we send a personalised Tanzania safari proposal within 24 hours. No cost, no commitment.",
   alternates: { canonical: "https://www.jumbosafaris.com/plan-your-safari" },
 }
 

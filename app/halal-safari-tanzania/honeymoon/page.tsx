@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react"
 export const metadata: Metadata = {
   title: "Halal Honeymoon Safari Tanzania & Zanzibar",
   description:
-    "Halal honeymoon safari Tanzania: private Northern Circuit safari followed by a stay at Tasneem Islamic Luxury Suites, Zanzibar's only fully alcohol-free luxury resort. From $5,400pp.",
+    "Halal honeymoon safari Tanzania: private Northern Circuit, then Tasneem Islamic Luxury Suites, Zanzibar's fully alcohol-free resort. From $5,400pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/honeymoon" },
   openGraph: {
     title: "Halal Honeymoon Safari Tanzania & Zanzibar | Jumbo Safaris",

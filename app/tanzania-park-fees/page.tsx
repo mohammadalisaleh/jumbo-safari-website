@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Tanzania National Park Fees 2026: What Operators Frequently Get Wrong",
   description:
-    "Verified 2026 Tanzania park fees: NCA entry, Ngorongoro concession, Tarangire, crater descent fee. The four calculation rules most operators miss, with a worked example.",
+    "Verified 2026 Tanzania park fees: NCA entry, Ngorongoro concession, Tarangire, crater descent. The calculation rules most operators miss.",
   alternates: { canonical: "https://www.jumbosafaris.com/tanzania-park-fees" },
   openGraph: {
     title: "Tanzania National Park Fees 2026: What Operators Frequently Get Wrong",

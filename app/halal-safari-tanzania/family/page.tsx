@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react"
 export const metadata: Metadata = {
   title: "Family Halal Safari Tanzania | UAE, Saudi, Malaysia Families",
   description:
-    "Family halal safari Tanzania for multi-generational Muslim families. Private vehicle, halal food verified at every meal, flexible pace. From $2,200pp. Ideal for families from UAE, Saudi Arabia, and Malaysia.",
+    "Family halal safari in Tanzania for multi-generational Muslim families. Private vehicle, halal food at every meal, flexible pace. From $2,200pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/family" },
   openGraph: {
     title: "Family Halal Safari Tanzania | Jumbo Safaris",

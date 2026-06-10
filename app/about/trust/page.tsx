@@ -6,7 +6,7 @@ import { ArrowRight, MapPin, Phone, Mail } from "lucide-react"
 export const metadata: Metadata = {
   title: "Why Trust Jumbo Safaris | Transparency, Verification & Founder Story",
   description:
-    "How to verify Jumbo Safaris before you book: founder background, contact details, what questions to ask any Tanzania safari operator, and our price transparency policy.",
+    "How to verify Jumbo Safaris before you book: founder background, contact details, questions to ask any Tanzania operator, and our price transparency.",
   alternates: { canonical: "https://www.jumbosafaris.com/about/trust" },
   openGraph: {
     title: "Why Trust Jumbo Safaris | Verification & Transparency",

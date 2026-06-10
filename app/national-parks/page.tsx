@@ -7,7 +7,7 @@ import { getAllNationalParks } from "@/lib/data/national-parks"
 export const metadata: Metadata = {
   title: "Tanzania National Parks | Safari Park Guide & Comparison",
   description:
-    "Tanzania has 21 TANAPA national parks plus the Ngorongoro Conservation Area. This guide covers the six parks worth building a trip around: what each one offers, when to go, entry fees, and which park suits your priorities.",
+    "Tanzania's six safari parks worth building a trip around: what each offers, when to go, 2026 entry fees, and which park suits your priorities.",
   alternates: { canonical: "https://www.jumbosafaris.com/national-parks" },
   openGraph: {
     title: "Tanzania National Parks | Jumbo Safaris",

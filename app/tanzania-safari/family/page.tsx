@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Family Safari Tanzania | Safari with Kids",
   description:
-    "Private family safaris in Tanzania from Arusha. Tarangire, Serengeti, and Ngorongoro Crater on the northern circuit, paced and structured for children. Minimum age 5.",
+    "Private family safaris in Tanzania from Arusha. Tarangire, Serengeti, and Ngorongoro, paced and structured for children. Minimum age 5.",
   alternates: { canonical: "https://www.jumbosafaris.com/tanzania-safari/family" },
   openGraph: {
     title: "Family Safari Tanzania | Jumbo Safaris",

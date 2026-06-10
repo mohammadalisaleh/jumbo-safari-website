@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react"
 export const metadata: Metadata = {
   title: "Women's Halal Safari Tanzania | Muslimah Safari",
   description:
-    "Women-only halal safari Tanzania. Private vehicle, female guide arrangement, vetted accommodation with private outdoor space. No shared pools. No mixed common areas. From $3,800pp.",
+    "Women-only halal safari Tanzania. Private vehicle, female guide arrangement, vetted rooms with private outdoor space, no mixed pools. From $3,800pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/womens-safari" },
   openGraph: {
     title: "Women's Halal Safari Tanzania | Muslimah Safari | Jumbo Safaris",

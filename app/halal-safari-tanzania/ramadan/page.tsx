@@ -5,7 +5,7 @@ import { ArrowRight, MessageCircle } from "lucide-react"
 export const metadata: Metadata = {
   title: "Ramadan Safari Tanzania | Bush Iftar & Suhoor Game Drives",
   description:
-    "Ramadan safari Tanzania: Suhoor at 5am, then wildlife drives at first light. Iftar in the Serengeti as the sun sets. The only Tanzania operator running a Ramadan-specific safari. From $3,200pp.",
+    "Ramadan safari Tanzania: Suhoor at 5am, dawn game drives, Iftar in the Serengeti at sunset. The only Ramadan-specific Tanzania safari. From $3,200pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/ramadan" },
   openGraph: {
     title: "Ramadan Safari Tanzania | Jumbo Safaris",

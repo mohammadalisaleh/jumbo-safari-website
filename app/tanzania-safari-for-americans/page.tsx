@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Tanzania Safari for Americans | Visa, Flights, Costs & What to Know",
   description:
-    "Everything US travelers need for a Tanzania safari: eVisa ($100), best flight routes, yellow fever rules, tipping, packing, and why Americans are still under-represented here.",
+    "Tanzania safari for US travelers: eVisa ($100), best flight routes, yellow fever rules, tipping, and packing. From a local Arusha operator.",
   alternates: { canonical: "https://www.jumbosafaris.com/tanzania-safari-for-americans" },
   openGraph: {
     title: "Tanzania Safari for Americans 2026 | Complete Planning Guide",

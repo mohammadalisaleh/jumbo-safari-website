@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle, AlertCircle, MessageCircle } from "lucide-reac
 export const metadata: Metadata = {
   title: "Our Halal Safari Standards | What We Do and Don't Guarantee",
   description:
-    "Exactly what halal means on a Jumbo Safaris trip. Food suppliers, prayer logistics, alcohol policy, certification status, and the refund guarantee. No marketing language. Specific and honest.",
+    "Exactly what halal means on a Jumbo Safaris trip: food suppliers, prayer logistics, alcohol policy, certification status, and the refund guarantee.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/our-standards" },
   openGraph: {
     title: "Our Halal Safari Standards | Jumbo Safaris",
