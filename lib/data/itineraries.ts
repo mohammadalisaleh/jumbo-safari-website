@@ -642,8 +642,8 @@ export const itineraries: Record<string, Itinerary> = {
     description:
       "11-day Tanzania honeymoon safari combining private game drives in Tarangire, Serengeti, and Ngorongoro with 4 nights on Zanzibar's Indian Ocean coast. From $4,195 per person.",
     heroImage: {
-      src: "/zanzibar-beach-resort-honeymoon-tanzania.jpg",
-      alt: "Thatched beach bungalows on white coral sand with turquoise Indian Ocean water in Zanzibar, Tanzania",
+      src: "/zanzibar-honeymoon-sunset-couple-nungwi.jpg",
+      alt: "Couple watching the sunset over the Indian Ocean from a private villa balcony at Nungwi, Zanzibar",
     },
     leadParagraph:
       "Seven days in the bush, four days at the coast. No two environments could be more different, and that contrast is exactly the point. You get Tanzania's full range: elephants in the Tarangire dust, lions on Serengeti kopjes, black rhino on the Ngorongoro crater floor, then white coral sand and an Indian Ocean the colour of a swimming pool. Private vehicle, private guide, just the two of you. From $5,245 per person for two travelling together, across the full eleven days.",
