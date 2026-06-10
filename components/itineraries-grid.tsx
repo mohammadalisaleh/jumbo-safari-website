@@ -1,9 +1,9 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ChevronRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { Itinerary } from "@/lib/data/itineraries"
 
 export interface GridItem {
@@ -29,6 +29,25 @@ const FILTERS = [
 
 export function ItinerariesGrid({ items }: Props) {
   const [activeFilter, setActiveFilter] = useState("all")
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const [thumbStyle, setThumbStyle] = useState({ left: "0%", width: "100%" })
+
+  useEffect(() => {
+    const el = scrollRef.current
+    if (!el) return
+    const update = () => {
+      const ratio = el.clientWidth / el.scrollWidth
+      const left = el.scrollLeft / el.scrollWidth
+      setThumbStyle({ left: `${left * 100}%`, width: `${ratio * 100}%` })
+    }
+    update()
+    el.addEventListener("scroll", update)
+    window.addEventListener("resize", update)
+    return () => {
+      el.removeEventListener("scroll", update)
+      window.removeEventListener("resize", update)
+    }
+  }, [])
 
   const filtered =
     activeFilter === "all" ? items : items.filter((item) => item.tags.includes(activeFilter))
@@ -36,8 +55,8 @@ export function ItinerariesGrid({ items }: Props) {
   return (
     <>
       {/* Filter bar */}
-      <div className="relative mb-10 -mx-1">
-        <div className="flex gap-2 overflow-x-auto pb-1 px-1 scrollbar-hide">
+      <div className="mb-10 -mx-1">
+        <div ref={scrollRef} className="flex gap-2 overflow-x-auto pb-1 px-1 scrollbar-hide">
           {FILTERS.map((filter) => (
             <button
               key={filter.key}
@@ -52,9 +71,12 @@ export function ItinerariesGrid({ items }: Props) {
             </button>
           ))}
         </div>
-        {/* Scroll hint — fade + arrow on mobile */}
-        <div className="absolute right-0 top-0 bottom-1 w-14 bg-gradient-to-l from-cream via-cream/80 to-transparent pointer-events-none lg:hidden flex items-center justify-end pr-1">
-          <ChevronRight className="w-5 h-5 text-forest" />
+        {/* Custom scroll track — always visible on mobile */}
+        <div className="relative h-1 bg-border-soft mt-2 mx-1 lg:hidden">
+          <div
+            className="absolute top-0 h-1 bg-forest transition-all duration-100"
+            style={thumbStyle}
+          />
         </div>
       </div>
 
