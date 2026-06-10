@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "What are Tanzania national park fees in 2026?",
     answer:
-      "Ngorongoro Conservation Area charges two separate fees: entry ($71/adult/day) and concession ($59/adult/day), totalling $130/adult/day. Tarangire is $59 entry plus $59 concession per adult per day. The Ngorongoro Crater descent costs $295 per vehicle per descent, not per day. No VAT applies to park fees. Cash is not accepted at any gate — card only. Your guide handles all payments.",
+      "Ngorongoro Conservation Area charges two separate fees: entry ($71/adult/day) and concession ($59/adult/day), totalling $130/adult/day. Tarangire is $59 entry plus $59 concession per adult per day. The Ngorongoro Crater descent costs $295 per vehicle per descent, not per day. No VAT applies to park fees. Cash is not accepted at any gate; card only. Your guide handles all payments.",
   },
   {
     question: "What is not included in a Tanzania safari quote?",
@@ -279,7 +279,7 @@ export default function TanzaniaSafariCostPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-cream/50 mt-4">No VAT applies to government park fees. Cash is not accepted at any park gate — card (Visa/Mastercard) only. Your guide handles all payments. Rates verified August 2026 via Highway Tours; subject to annual revision.</p>
+            <p className="text-xs text-cream/50 mt-4">No VAT applies to government park fees. Cash is not accepted at any park gate; card (Visa/Mastercard) only. Your guide handles all payments. Rates verified August 2026 via Highway Tours; subject to annual revision.</p>
           </div>
         </section>
 

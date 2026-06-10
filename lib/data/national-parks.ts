@@ -772,7 +772,7 @@ export const nationalParks: Record<string, NationalPark> = {
     },
     quickFacts: {
       area: "Part of the Ngorongoro Conservation Area (NCA) · bordering Serengeti National Park",
-      unescoStatus: "Ngorongoro Conservation Area — UNESCO World Heritage Site",
+      unescoStatus: "Ngorongoro Conservation Area, UNESCO World Heritage Site",
       bestTime: "Late January through late February (calving peak) · April-November for resident predators without migration crowds",
       famousFor: "Wildebeest calving season, off-road driving, cheetah density, Long Gully lions, Lake Masek Pride",
       nearestAirport: "Ndutu Airstrip · Coastal Aviation, Auric Air, Air Excel from Arusha (approx. $270-440 one-way)",
@@ -807,14 +807,14 @@ export const nationalParks: Record<string, NationalPark> = {
       },
       {
         name: "Bat-Eared Fox",
-        description: "Abundant on the short-grass plains year-round, often overlooked. Resident alongside serval, civet, and caracal — the smaller predator portfolio that photographers return for in the off-season.",
+        description: "Abundant on the short-grass plains year-round, often overlooked. Resident alongside serval, civet, and caracal, the smaller predator portfolio that photographers return for in the off-season.",
       },
     ],
     bestTimeToVisit: [
       {
         month: "Dec 1-19",
         weather: "Short rains ending. Plains greening. Herds arriving.",
-        wildlife: "Early births beginning. Predator density building. Lemala Ndutu rates at $330/night — lowest of the season.",
+        wildlife: "Early births beginning. Predator density building. Lemala Ndutu rates at $330/night, the lowest of the season.",
         crowds: "Low",
       },
       {
@@ -846,14 +846,14 @@ export const nationalParks: Record<string, NationalPark> = {
     additionalSections: [
       {
         heading: "Named Locations Worth Knowing",
-        body: "Ndutu's guides work specific terrain features that repeat visitors and photographers return to deliberately. Knowing these before you arrive changes what you ask for.\n\nLong Gully is a seasonal stream whose water surface produces reflection shots that have appeared in wildlife photography awards. Coalition males are regularly photographed crossing it at first light. The light hits the water before it hits the plain. Wildlife photographers name Long Gully more than any other single Ndutu location.\n\nHidden Valley is a water feature where local guides predict large herds come to drink late-morning. The setup: nervous antelope approaching water while predators are visible nearby. One visiting photographer described it as 'animals writing their own story on a blank page.' Less known than the main plains; less vehicle traffic.\n\nThe Big Marsh and the Causeway hold territories for Ndutu's resident cheetah coalitions year-round, not just during calving season. April through mid-December this is where you find cheetahs when the migration has gone north.\n\nLake Masek acacia woodland is afternoon leopard territory and the home range of the Masek Pride — the lion pride documented climbing trees seasonally, a behaviour associated with Lake Manyara elsewhere. Afternoons at Lake Masek for tree-climbing lions are a real, if underplanned, Ndutu experience.\n\nNdutu Safari Lodge's own grounds are documented wildlife habitat. The lodge has camera-trapped its property for over 25 years. Lions, leopards, and cheetahs walk past the dining room. This is not a selling point embellishment; it is in the lodge's own records.",
+        body: "Ndutu's guides work specific terrain features that repeat visitors and photographers return to deliberately. Knowing these before you arrive changes what you ask for.\n\nLong Gully is a seasonal stream whose water surface produces reflection shots that have appeared in wildlife photography awards. Coalition males are regularly photographed crossing it at first light. The light hits the water before it hits the plain. Wildlife photographers name Long Gully more than any other single Ndutu location.\n\nHidden Valley is a water feature where local guides predict large herds come to drink late-morning. The setup: nervous antelope approaching water while predators are visible nearby. One visiting photographer described it as 'animals writing their own story on a blank page.' Less known than the main plains; less vehicle traffic.\n\nThe Big Marsh and the Causeway hold territories for Ndutu's resident cheetah coalitions year-round, not just during calving season. April through mid-December this is where you find cheetahs when the migration has gone north.\n\nLake Masek acacia woodland is afternoon leopard territory and the home range of the Masek Pride, the lion pride documented climbing trees seasonally, a behaviour associated with Lake Manyara elsewhere. Afternoons at Lake Masek for tree-climbing lions are a real, if underplanned, Ndutu experience.\n\nNdutu Safari Lodge's own grounds are documented wildlife habitat. The lodge has camera-trapped its property for over 25 years. Lions, leopards, and cheetahs walk past the dining room. This is not a selling point embellishment; it is in the lodge's own records.",
       },
       {
         heading: "Ndutu vs Mara River Crossings",
-        body: "This is the question most repeat visitors eventually ask, and most operators answer badly: 'both are amazing, go to whichever fits your dates.' That is not useful for someone making a real decision.\n\nThe Mara River crossings (July-October, northern Serengeti and Masai Mara) are the single most dramatic wildlife event in Africa. Wildebeest plunging into crocodile-infested water from steep banks, thousands at a time, under pressure from Nile crocodiles coming from below. Cinematic. Irreplaceable. The 2023 and 2024 peak crossing images that circulated globally all came from the Mara. If the crossing photograph is the goal, nothing at Ndutu competes with it.\n\nFor predator viewing specifically, Ndutu is better. Here is why. The Mara crossing is one event: animals enter the water, crocodiles attack, survivors climb out. Between crossings you wait, sometimes for hours, sometimes for a day with no crossing at all. Predator-prey interaction at the river is intense but short. Between events, the Mara is standard game viewing.\n\nAt Ndutu in February, the predator action is unrelenting across the full game-drive day. Kills before breakfast. Lions mid-morning. Cheetah hunts on open ground in usable light. Hyena clan activity through the afternoon. The herds are not moving; the predators do not need to range far. Add off-road positioning and you have not just more action but better angles, better framing, closer approach.\n\nEvery major wildlife photography operation that works both locations rates Ndutu above the Mara for predator photography. The Mara is better for spectacle. Ndutu is better for the photographs that result from watching a predator work. They are not competing for the same experience.",
+        body: "This is the question most repeat visitors eventually ask, and most operators answer badly: 'both are amazing, go to whichever fits your dates.' That is not useful for someone making a real decision.\n\nThe Mara River crossings (July-October, northern Serengeti and Masai Mara) are the single most dramatic wildlife event in Africa. Wildebeest plunging into crocodile-infested water from steep banks, thousands at a time, under pressure from Nile crocodiles coming from below. Cinematic. Irreplaceable. The 2023 and 2024 peak crossing images that circulated globally all came from the Mara. If the crossing photograph is the goal, nothing at Ndutu competes with it.\n\nFor predator viewing specifically, Ndutu is better. Here is why. The Mara crossing is one event: animals enter the water, crocodiles attack, survivors climb out. Between crossings you wait, sometimes for hours, sometimes for a day with no crossing at all. Predator-prey interaction at the river is intense but short. Between events, the Mara is standard game viewing.\n\nAt Ndutu in February, the predator action is unrelenting across the full game-drive day. Kills before breakfast. Lions mid-morning. Cheetah hunts on open ground in usable light. Hyena clan activity through the afternoon. The herds are not moving; the predators do not need to range far. Add off-road positioning and you get more action, better angles, better framing, and a closer approach.\n\nEvery major wildlife photography operation that works both locations rates Ndutu above the Mara for predator photography. The Mara is better for spectacle. Ndutu is better for the photographs that result from watching a predator work. They are not competing for the same experience.",
       },
       {
-        heading: "The Park Fee Calculation — What Operators Don't Tell You",
+        heading: "The Park Fee Calculation: What Operators Don't Tell You",
         body: "Where your camp sits relative to the NCA-SNP boundary determines your daily park fee bill, and the difference is significant.\n\nNCA conservation fee: USD 71 per person per day. Serengeti National Park entry fee: USD 83 per person per day. If your game drives cross from one jurisdiction into the other (which happens routinely near Ndutu, since the boundary is unfenced and the best calving terrain straddles it), you pay both: USD 154 per person per day.\n\nMost operators absorb or include this in their package pricing without explanation. Some do not. Before booking, ask: which side of the NCA-SNP boundary is the camp on, and are daily game drives likely to cross into the other jurisdiction? If your operator cannot answer this specifically, they have not been to the camp.",
       },
     ],
@@ -927,7 +927,7 @@ export const nationalParks: Record<string, NationalPark> = {
       },
       {
         name: "Lion",
-        description: "Around 10% of Africa's total lion population. Prides of 15-25 individuals — among the largest documented anywhere. Territories run along the Great Ruaha River and the Mwagusi sand river.",
+        description: "Around 10% of Africa's total lion population. Prides of 15-25 individuals, among the largest documented anywhere. Territories run along the Great Ruaha River and the Mwagusi sand river.",
       },
       {
         name: "Elephant",
@@ -943,14 +943,14 @@ export const nationalParks: Record<string, NationalPark> = {
       },
       {
         name: "Ruaha Red-Billed Hornbill",
-        description: "Endemic to Ruaha National Park — found nowhere else. One of over 570 bird species recorded here, including European and Asian migrants in the green season.",
+        description: "Endemic to Ruaha National Park, found nowhere else. One of over 570 bird species recorded here, including European and Asian migrants in the green season.",
       },
     ],
     bestTimeToVisit: [
       {
         month: "Jun-Aug",
         weather: "Dry, warm days, cold nights (10°C at times). Single rainy season means drier than northern circuit equivalents.",
-        wildlife: "Excellent. Wildlife concentrating on rivers. Wild dog denning — most predictable sighting window of the year.",
+        wildlife: "Excellent. Wildlife concentrating on rivers. Wild dog denning: the most predictable sighting window of the year.",
         crowds: "Low",
       },
       {
@@ -974,7 +974,7 @@ export const nationalParks: Record<string, NationalPark> = {
       {
         month: "Mar-May",
         weather: "Ruaha has one long rainy season (unlike the north's two). March-April is the wettest, with ~250mm in April. Coastal Aviation suspends Ruaha flights mid-March to end of May.",
-        wildlife: "Most camps closed. Ruaha River Lodge remains open year-round and offers significant discounts. Expert Africa notes April-May as a sometimes-surprising hidden gem for those who self-drive from Iringa: clear skies after morning rain, lush landscapes, virtually zero other visitors.",
+        wildlife: "Most camps closed. Ruaha River Lodge remains open year-round and offers significant discounts. Expert Africa notes April-May as a quietly excellent window for those who self-drive from Iringa: clear skies after morning rain, lush landscapes, virtually zero other visitors.",
         crowds: "Closed season for most operators. Ruaha River Lodge open.",
       },
     ],
@@ -985,8 +985,8 @@ export const nationalParks: Record<string, NationalPark> = {
         body: "Walking safaris in Ruaha operate under a different set of rules from the northern circuit. The park permits multi-day foot safaris, including remote fly-camping in the eastern sections where no vehicle tracks exist. Operators like Kichaka Expeditions (three tents, specialist guide Andrew 'Moli' Molinaro) and Jongomero have built their reputations specifically on foot-based wildlife encounters.\n\nOn a walking safari, the guides work at a different scale. They read tracks in sand riverbeds, identify kills from vulture behaviour half a kilometre away, and use the wind and terrain to approach animals on foot. The elephant's reaction to a walking party is not the same as its reaction to a Land Cruiser. Some guides argue the walking encounter is the more honest wildlife experience.\n\nWalking safaris are not suitable for families with young children and require reasonable physical fitness. Half-day walks from a vehicle-based camp are available at most properties, including Mwagusi and Jongomero. Full multi-day routes require advance booking and are best discussed directly when planning the trip.",
       },
       {
-        heading: "Camps — Current Status",
-        body: "Camp selection in Ruaha matters more than in the northern circuit because the park is vast and properties are far apart. Your camp's location determines which section of the park you access most easily.\n\nJongomero Camp is eight luxury tents in the remote south, on a private concession. Now operated by the LABA Hotel Group after renovation. Rates run around $997 per person per night in 2026/27. Operates June 1 through March 1. The southern position gives access to terrain with a Southern African ecological character: greater kudu, sable, and different predator dynamics from the northern riverine areas.\n\nMwagusi Safari Camp, on the Mwagusi sand river, is the camp safari specialists consistently name first. Owner-run by Chris Fox. The wild dog packs that den near Mwagusi in June-July are the reason. Widely called the best location in the park.\n\nKokoko Camp (Asilia) replaced Kwihala, which has permanently closed. Many pages still list Kwihala — do not be confused. Kokoko occupies a similar position with updated facilities.\n\nJabali Ridge (Asilia) opened in 2017 with eight suites on a kopje, infinity pool, and a spa. Positioned for those who want luxury infrastructure alongside remote wildlife.\n\nRuaha River Lodge (Foxes Safari Camps) is the oldest property in the park and the only one that operates year-round. Stone-and-thatch bandas on the Great Ruaha River. The most economical option, and the only choice if you are travelling in the April-May window.\n\nKigelia Ruaha (Nomad Tanzania), Mdonya Old River Camp, Ikuka Safari Camp, and Kichaka Expeditions complete the serious options.",
+        heading: "Camps: Current Status",
+        body: "Camp selection in Ruaha matters more than in the northern circuit because the park is vast and properties are far apart. Your camp's location determines which section of the park you access most easily.\n\nJongomero Camp is eight luxury tents in the remote south, on a private concession. Now operated by the LABA Hotel Group after renovation. Rates run around $997 per person per night in 2026/27. Operates June 1 through March 1. The southern position gives access to terrain with a Southern African ecological character: greater kudu, sable, and different predator dynamics from the northern riverine areas.\n\nMwagusi Safari Camp, on the Mwagusi sand river, is the camp safari specialists consistently name first. Owner-run by Chris Fox. The wild dog packs that den near Mwagusi in June-July are the reason. Widely called the best location in the park.\n\nKokoko Camp (Asilia) replaced Kwihala, which has permanently closed. Many pages still list Kwihala. Do not be confused. Kokoko occupies a similar position with updated facilities.\n\nJabali Ridge (Asilia) opened in 2017 with eight suites on a kopje, infinity pool, and a spa. Positioned for those who want luxury infrastructure alongside remote wildlife.\n\nRuaha River Lodge (Foxes Safari Camps) is the oldest property in the park and the only one that operates year-round. Stone-and-thatch bandas on the Great Ruaha River. The most economical option, and the only choice if you are travelling in the April-May window.\n\nKigelia Ruaha (Nomad Tanzania), Mdonya Old River Camp, Ikuka Safari Camp, and Kichaka Expeditions complete the serious options.",
       },
     ],
     faqs: [
@@ -1028,7 +1028,7 @@ export const nationalParks: Record<string, NationalPark> = {
       {
         question: "What is the best lodge in Ruaha?",
         answer:
-          "Safari specialists consistently name Mwagusi Safari Camp first for overall experience and location. Jongomero is the top luxury option, with eight tents in a private concession in the remote south at around $997 per person per night. Jabali Ridge (Asilia) has the best infrastructure for guests who want hotel-standard amenities in the bush. Ruaha River Lodge (Foxes) is the most economical and the only property open year-round. Kichaka Expeditions is the right choice if walking safaris are the priority. Note: Kwihala Camp has permanently closed and has been replaced by Kokoko Camp (Asilia) — many websites still list Kwihala incorrectly.",
+          "Safari specialists consistently name Mwagusi Safari Camp first for overall experience and location. Jongomero is the top luxury option, with eight tents in a private concession in the remote south at around $997 per person per night. Jabali Ridge (Asilia) has the best infrastructure for guests who want hotel-standard amenities in the bush. Ruaha River Lodge (Foxes) is the most economical and the only property open year-round. Kichaka Expeditions is the right choice if walking safaris are the priority. Note: Kwihala Camp has permanently closed and has been replaced by Kokoko Camp (Asilia). Many websites still list Kwihala incorrectly.",
       },
     ],
   },

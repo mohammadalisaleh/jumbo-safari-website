@@ -23,7 +23,7 @@ const featuredItineraries = [
     duration: "8 Days",
     description:
       "Tarangire, central Serengeti, and a full day in Ngorongoro Crater. Month-by-month positioning in the Serengeti means you see the migration wherever it actually is.",
-    price: "From $3,200 per person",
+    price: "From $1,945 per person",
     heroImage: {
       src: "/tarangire-elephants-baobab-tanzania-safari.jpg",
       alt: "Elephant herd passing a giant baobab tree in Tarangire National Park, Tanzania",
@@ -35,7 +35,7 @@ const featuredItineraries = [
     duration: "7 Days",
     description:
       "January and February at Ndutu, where 500,000 calves are born in six weeks. Off-road driving permitted here because Ndutu sits in the Ngorongoro Conservation Area, not the Serengeti.",
-    price: "From $2,800 per person",
+    price: "From $2,595 per person",
     heroImage: {
       src: "/wildebeest-calf-ndutu-calving-season-tanzania.jpg",
       alt: "Newborn wildebeest calf standing on the Ndutu plains during calving season, Tanzania",
@@ -47,7 +47,7 @@ const featuredItineraries = [
     duration: "11 Days",
     description:
       "Four nights on safari in the Northern Circuit, then a week on the Zanzibar coast. Private vehicle throughout, lodge upgrades where they matter.",
-    price: "From $5,500 per person",
+    price: "From $4,070 per person",
     heroImage: null,
   },
 ]

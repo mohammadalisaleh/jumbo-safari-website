@@ -143,7 +143,7 @@ export default function PlanForm({ initialAdults, initialChildren, initialDate }
   return (
     <div className="max-w-content mx-auto px-6 py-16 md:py-24">
       <div className="grid lg:grid-cols-3 gap-12">
-        {/* Form — 2/3 width */}
+        {/* Form: 2/3 width */}
         <div className="lg:col-span-2">
           <p className="text-eyebrow uppercase text-orange mb-3 tracking-widest text-xs font-montserrat font-semibold">
             No cost · No commitment
@@ -259,7 +259,7 @@ export default function PlanForm({ initialAdults, initialChildren, initialDate }
               2. Travellers
             </h2>
             <p className="text-sm text-ink/70 mb-6">
-              Travelling solo? Costs are higher as you carry the vehicle and room alone — we&apos;ll be transparent about this in the proposal.
+              Travelling solo? Costs are higher as you carry the vehicle and room alone. We&apos;ll be transparent about this in the proposal.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -403,7 +403,7 @@ export default function PlanForm({ initialAdults, initialChildren, initialDate }
           </div>
         </div>
 
-        {/* Sidebar — 1/3 width */}
+        {/* Sidebar: 1/3 width */}
         <aside className="lg:col-span-1">
           <div className="sticky top-24 space-y-8">
             {/* What happens next */}
@@ -411,7 +411,7 @@ export default function PlanForm({ initialAdults, initialChildren, initialDate }
               <h3 className="font-montserrat font-bold text-base mb-4">What happens next?</h3>
               <ol className="space-y-4">
                 {[
-                  "You submit this form — takes 2 minutes.",
+                  "You submit this form. Takes 2 minutes.",
                   "Our Arusha team reviews your request within 24 hours.",
                   "We send a personalised itinerary and quote.",
                   "We refine it together until it&apos;s exactly right.",
@@ -435,7 +435,7 @@ export default function PlanForm({ initialAdults, initialChildren, initialDate }
               <ul className="space-y-3">
                 {[
                   "100% private, tailor-made safaris",
-                  "Arusha-based team — we know Tanzania",
+                  "Arusha-based team that knows Tanzania",
                   "Private guides, private vehicles only",
                   "Response within 24 hours",
                   "No booking fees, ever",

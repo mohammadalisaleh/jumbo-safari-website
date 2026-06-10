@@ -36,7 +36,7 @@ const itinerary = [
   },
   {
     days: "Days 7–11",
-    location: "Zanzibar — Tasneem Islamic Luxury Suites",
+    location: "Zanzibar: Tasneem Islamic Luxury Suites",
     detail:
       "Five nights at Tasneem in Jambiani on Zanzibar's south-east coast. Fully alcohol-free. Women-only pool hours. Halal meals as standard, not on request. Private beach access, dhow sunset cruises, Stone Town day trip. The only fully alcohol-free luxury resort in East Africa.",
   },
@@ -309,7 +309,7 @@ export default function HalalHoneymoon() {
                   <span className="text-eyebrow uppercase text-orange tracking-wider mb-2 block">Our Recommendation</span>
                 )}
                 <h3 className="font-montserrat font-semibold text-h3-mobile text-ink mb-1">{hotel.name}</h3>
-                <p className="text-caption text-forest/60 font-semibold uppercase tracking-wider mb-3">{hotel.location} — {hotel.tier}</p>
+                <p className="text-caption text-forest/60 font-semibold uppercase tracking-wider mb-3">{hotel.location} · {hotel.tier}</p>
                 <p className="text-body-mobile text-ink leading-relaxed">{hotel.notes}</p>
               </div>
             ))}

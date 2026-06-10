@@ -7,7 +7,7 @@ import { getAllNationalParks } from "@/lib/data/national-parks"
 export const metadata: Metadata = {
   title: "Tanzania National Parks | Safari Park Guide & Comparison",
   description:
-    "Tanzania has 21 TANAPA national parks plus the Ngorongoro Conservation Area. This guide covers the six parks worth building a trip around — what each one offers, when to go, entry fees, and which park suits your priorities.",
+    "Tanzania has 21 TANAPA national parks plus the Ngorongoro Conservation Area. This guide covers the six parks worth building a trip around: what each one offers, when to go, entry fees, and which park suits your priorities.",
   alternates: { canonical: "https://www.jumbosafaris.com/national-parks" },
   openGraph: {
     title: "Tanzania National Parks | Jumbo Safaris",
@@ -40,7 +40,7 @@ const parkHighlights: Record<string, { best: string; when: string; blurb: string
     best: "Best for: Short itineraries, bird variety, ghost forest",
     when: "June–March · Year-round possible",
     blurb:
-      "A compact park that earns a half day or full day on most northern circuit routes. The alkaline lake draws flamingo in variable numbers. Since around 2020 the fever tree woodlands have flooded, creating a ghost forest of white skeletal trees — genuinely unlike anything else on the circuit.",
+      "A compact park that earns a half day or full day on most northern circuit routes. The alkaline lake draws flamingo in variable numbers. Since around 2020 the fever tree woodlands have flooded, creating a ghost forest of white skeletal trees, genuinely unlike anything else on the circuit.",
   },
   ndutu: {
     best: "Best for: Calving season, predator action, off-road driving",
@@ -52,7 +52,7 @@ const parkHighlights: Record<string, { best: string; when: string; blurb: string
     best: "Best for: African wild dog, solitude, big game without crowds",
     when: "June–October",
     blurb:
-      "Tanzania's second-largest national park at 20,226 km² — about 1.4 times the size of the Serengeti. Getting here requires a flight from Arusha or Dar es Salaam. In return you get one of Africa's strongest wild dog populations, large elephant herds, and game drives where you rarely see another vehicle.",
+      "Tanzania's second-largest national park at 20,226 km², about 1.4 times the size of the Serengeti. Getting here requires a flight from Arusha or Dar es Salaam. In return you get one of Africa's strongest wild dog populations, large elephant herds, and game drives where you rarely see another vehicle.",
   },
 }
 
@@ -68,27 +68,27 @@ const fees = [
 const faqs = [
   {
     q: "How many national parks does Tanzania have?",
-    a: "Tanzania has 21 national parks administered by TANAPA (Tanzania National Parks Authority). The Ngorongoro Conservation Area is separate — it is administered by the NCAA (Ngorongoro Conservation Area Authority) and is not classified as a national park. Ndutu is a sub-region within the NCA, not a distinct park. Most travel sites say 22 by bundling NCA in, but the correct TANAPA count is 21.",
+    a: "Tanzania has 21 national parks administered by TANAPA (Tanzania National Parks Authority). The Ngorongoro Conservation Area is separate. It is administered by the NCAA (Ngorongoro Conservation Area Authority) and is not classified as a national park. Ndutu is a sub-region within the NCA, not a distinct park. Most travel sites say 22 by bundling NCA in, but the correct TANAPA count is 21.",
   },
   {
     q: "What is the best national park in Tanzania?",
-    a: "The Serengeti is the most iconic and the most versatile — it delivers year-round and covers more wildlife spectacle than any other single park. But 'best' depends on your priorities. If you want Big Five in a single day, Ngorongoro Crater is more reliable. If you want elephants and dry-season density, Tarangire is hard to beat. If you want no other vehicles, Ruaha.",
+    a: "The Serengeti is the most iconic and the most versatile. It delivers year-round and covers more wildlife spectacle than any other single park. But 'best' depends on your priorities. If you want Big Five in a single day, Ngorongoro Crater is more reliable. If you want elephants and dry-season density, Tarangire is hard to beat. If you want no other vehicles, Ruaha.",
   },
   {
     q: "What is the most visited national park in Tanzania?",
     a: "The Serengeti. It sits at the centre of every standard northern circuit and is the anchor park for the Great Migration, which draws the highest visitor numbers of any Tanzania wildlife event.",
   },
   {
-    q: "Which is better — Tarangire or Ngorongoro?",
-    a: "They serve different purposes. Tarangire is a full park experience — you drive, you track, you look for animals across open land. Ngorongoro Crater is compact and dense — 25,000 animals on a caldera floor, reliably visible without much searching. Most itineraries include both. If you must pick one: Tarangire for immersion, Ngorongoro for first-time guests who want guaranteed sightings.",
+    q: "Which is better, Tarangire or Ngorongoro?",
+    a: "They serve different purposes. Tarangire is a full park experience: you drive, you track, you look for animals across open land. Ngorongoro Crater is compact and dense: 25,000 animals on a caldera floor, reliably visible without much searching. Most itineraries include both. If you must pick one: Tarangire for immersion, Ngorongoro for first-time guests who want guaranteed sightings.",
   },
   {
     q: "What are the Big Five in Tanzania?",
-    a: "Lion, leopard, elephant, Cape buffalo, and black rhino. Tanzania has all five. Black rhino is the hardest — the best place to find them is Ngorongoro Crater, which holds an estimated 26-55 individuals. Serengeti has rhino at Moru Kopjes but sightings require a special permit and ranger escort.",
+    a: "Lion, leopard, elephant, Cape buffalo, and black rhino. Tanzania has all five. Black rhino is the hardest. The best place to find them is Ngorongoro Crater, which holds an estimated 26-55 individuals. Serengeti has rhino at Moru Kopjes but sightings require a special permit and ranger escort.",
   },
   {
     q: "What is the best month to do a safari in Tanzania?",
-    a: "June to October covers the dry season across the northern circuit. Wildlife concentrates around water, vegetation thins, and game drives are consistently productive. July to October is also when the Great Migration is in the Serengeti's north. January to March is calving season at Ndutu — the best time for predator action. April and May are the long rains — roads can be difficult but prices drop significantly.",
+    a: "June to October covers the dry season across the northern circuit. Wildlife concentrates around water, vegetation thins, and game drives are consistently productive. July to October is also when the Great Migration is in the Serengeti's north. January to March is calving season at Ndutu, the best time for predator action. April and May are the long rains. Roads can be difficult but prices drop significantly.",
   },
   {
     q: "How many days is enough for a Tanzania safari?",
@@ -96,7 +96,7 @@ const faqs = [
   },
   {
     q: "Is Kenya or Tanzania better for safari?",
-    a: "Tanzania has more land in the Serengeti ecosystem than Kenya has in Masai Mara — roughly 14,763 km² versus 1,510 km². Vehicle density in the Mara during peak season is significantly higher. Tanzania also has Tarangire, Ngorongoro, Ruaha, and Ndutu, which Kenya has no equivalent for. Kenya's advantage is infrastructure and flight connections. For the wildlife, Tanzania wins.",
+    a: "Tanzania has more land in the Serengeti ecosystem than Kenya has in Masai Mara, roughly 14,763 km² versus 1,510 km². Vehicle density in the Mara during peak season is significantly higher. Tanzania also has Tarangire, Ngorongoro, Ruaha, and Ndutu, which Kenya has no equivalent for. Kenya's advantage is infrastructure and flight connections. For the wildlife, Tanzania wins.",
   },
 ]
 
@@ -140,7 +140,7 @@ export default function NationalParksPage() {
             Most Tanzania safaris run the northern circuit: Tarangire, Serengeti, and Ngorongoro, three parks within a day&apos;s drive of Arusha. For most visitors, this is the right choice. The infrastructure is solid, the wildlife is exceptional, and the full circuit fits into five to ten days. Ndutu sits at the circuit&apos;s western edge inside the Ngorongoro Conservation Area (administered separately from TANAPA) and becomes the most important calving ground in East Africa for roughly six weeks each January and February.
           </p>
           <p className="text-body-mobile md:text-body-desktop text-ink mb-6">
-            The southern circuit, anchored by Ruaha, requires a flight from Arusha or Dar es Salaam. Ruaha is Tanzania&apos;s second-largest national park at 20,226 km² — about 1.4 times the size of the Serengeti. The tradeoff for the flight is a park with one of Africa&apos;s strongest African wild dog populations and game drives where you&apos;ll rarely see another vehicle.
+            The southern circuit, anchored by Ruaha, requires a flight from Arusha or Dar es Salaam. Ruaha is Tanzania&apos;s second-largest national park at 20,226 km², about 1.4 times the size of the Serengeti. The tradeoff for the flight is a park with one of Africa&apos;s strongest African wild dog populations and game drives where you&apos;ll rarely see another vehicle.
           </p>
           <p className="text-body-mobile md:text-body-desktop text-ink">
             Each park below has its own page with entry fees, seasonal breakdown, and what you actually see on a game drive. The cards are the starting point. Use the comparison table and FAQ below to narrow down what suits your itinerary.

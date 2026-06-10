@@ -38,8 +38,8 @@ export const guides: Record<string, Guide> = {
         id: "green-season",
         title: "Green Season: November to May",
         content: [
-          "The green season, split between short rains (October-December) and long rains (March-May), transforms Tanzania into a lush paradise. While many travelers avoid this period, it offers significant advantages for those willing to embrace the occasional afternoon shower.",
-          "Lower prices are the green season's biggest draw, with discounts of 30-50% on lodges and reduced park fees. Crowds thin dramatically, and you may have entire game drives to yourself. The landscape is stunning, with emerald grasses, dramatic storm clouds, and excellent lighting for photography.",
+          "The green season splits between short rains (October-December) and long rains (March-May). The plains turn green, the skies go dramatic, and most travellers stay away. That is exactly why these months work: lower prices, empty parks, and an afternoon shower or two as the trade-off.",
+          "Lower prices are the green season's biggest draw, with discounts of 30-50% on lodges and reduced park fees. Crowds thin dramatically, and you may have entire game drives to yourself. The plains turn emerald, storm clouds build through the afternoons, and the light is the best of the year for photography.",
           "Wildlife viewing remains good, though animals are more dispersed across the landscape. Migratory birds arrive from Europe and North Africa, making this the best time for birdwatching. Baby animals born during this period provide adorable photographic subjects.",
         ],
       },
@@ -48,7 +48,7 @@ export const guides: Record<string, Guide> = {
         title: "Calving Season: January to March",
         content: [
           "The calving season is one of Tanzania's best-kept secrets. Between late January and March, over 500,000 wildebeest calves are born on the short-grass plains of Ndutu and the southern Serengeti. This happens during the short dry spell between the rains, creating ideal conditions for newborns.",
-          "Watching thousands of calves take their first steps—many within minutes of birth—is an unforgettable experience. The high concentration of vulnerable young attracts predators, making this one of the best times to witness lions, cheetahs, and hyenas in action.",
+          "Thousands of calves take their first steps within minutes of birth. The concentration of vulnerable young pulls in every predator on the plain, which makes this the best few weeks of the year to watch lions, cheetahs, and hyenas hunt.",
           "The southern Serengeti and Ndutu area, straddling the boundary between Serengeti National Park and the Ngorongoro Conservation Area, is the epicenter of calving activity. Specialized camps in this region offer front-row seats to nature's greatest nursery.",
         ],
       },
@@ -59,7 +59,7 @@ export const guides: Record<string, Guide> = {
           "December-March: The herds graze the southern Serengeti plains. Calving peaks in February. This is an excellent time to witness predator-prey interactions.",
           "April-May: As the long rains begin, the herds start their journey northward through the Serengeti's Western Corridor. River crossings at the Grumeti begin.",
           "June-July: The migration reaches the Western Corridor and Grumeti area. Crocodile-filled river crossings provide dramatic action.",
-          "August-October: The peak of migration drama occurs at the Mara River in the northern Serengeti. This is the most famous—and most photographed—part of the migration.",
+          "August-October: The peak of migration drama occurs at the Mara River in the northern Serengeti. This is the most famous and most photographed part of the migration.",
           "November: Following the short rains, the herds begin their return journey southward, completing the eternal cycle.",
         ],
       },
@@ -78,7 +78,7 @@ export const guides: Record<string, Guide> = {
         content: [
           "Book early for peak season (July-October). The best lodges and camps fill up 6-12 months in advance, especially for the Mara River crossing period in August-September.",
           "Consider the shoulder months (June and November) for a balance of good wildlife viewing, pleasant weather, and lower prices than peak season.",
-          "Don't dismiss the green season entirely. With proper expectations and a good guide, safaris between November and May can be exceptional—and significantly more affordable.",
+          "Don't dismiss the green season entirely. With proper expectations and a good guide, safaris between November and May can be exceptional, and significantly more affordable.",
           "Layer your clothing regardless of season. Mornings can be surprisingly cold, especially in open-top safari vehicles, while midday gets warm.",
           "If your heart is set on witnessing river crossings, August and September offer the highest probability, but timing is never guaranteed in nature.",
         ],
@@ -194,9 +194,9 @@ export const guides: Record<string, Guide> = {
     sections: [
       {
         id: "colours",
-        title: "Colours: it is not just style",
+        title: "What colours to wear, and why",
         content: [
-          "Stick to neutral, muted tones: khaki, olive, brown, tan, soft green. There are real reasons behind this, not just convention. Bright white shows every speck of dust within an hour of the first game drive. Dark blue and black attract tsetse flies, which are drawn to those colours and bite hard, so leave them at home for daytime drives.",
+          "Stick to neutral, muted tones: khaki, olive, brown, tan, soft green. The reasons are practical, not aesthetic. Bright white shows every speck of dust within an hour of the first game drive. Dark blue and black attract tsetse flies, which are drawn to those colours and bite hard, so leave them at home for daytime drives.",
           "One colour to avoid entirely: camouflage. Wearing military-pattern clothing is illegal for civilians in Tanzania, and it is reserved for the armed forces. Tourists do get stopped over it. Leave anything camo out of the bag completely.",
         ],
       },

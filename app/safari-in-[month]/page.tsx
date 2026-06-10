@@ -189,7 +189,7 @@ export default async function SafariInMonthPage({ params }: PageProps) {
               {/* Week-by-Week Progression */}
               <section className="mb-12">
                 <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-6">
-                  Week-by-Week — {page.month} in the Field
+                  Week-by-Week: {page.month} in the Field
                 </h2>
                 <div className="overflow-x-auto">
                   <table className="w-full bg-white border border-border-soft">
@@ -309,7 +309,7 @@ export default async function SafariInMonthPage({ params }: PageProps) {
               {/* FAQ */}
               <section>
                 <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-6">
-                  Common Questions — Tanzania Safari in {page.month}
+                  Common Questions: Tanzania Safari in {page.month}
                 </h2>
                 <div className="space-y-6">
                   {page.faqs.map((faq, index) => (

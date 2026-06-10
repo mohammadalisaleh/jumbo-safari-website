@@ -144,7 +144,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The difference — direct founder-run model */}
+      {/* The difference: direct founder-run model */}
       <section className="bg-forest text-cream py-16 md:py-24">
         <div className="max-w-content mx-auto px-6">
           <div className="max-w-prose mx-auto">

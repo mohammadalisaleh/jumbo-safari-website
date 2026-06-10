@@ -6,6 +6,7 @@ import { Check, X, ArrowRight, ChevronRight } from "lucide-react"
 import { getItinerary, getAllItineraries } from "@/lib/data/itineraries"
 import { InquiryForm } from "@/components/inquiry-form"
 import { ItineraryAccordion } from "@/components/itinerary-accordion"
+import { PricingMatrix } from "@/components/pricing-matrix"
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -61,7 +62,7 @@ export default async function ItineraryPage({ params }: PageProps) {
       itemListElement: itinerary.days.map((day, index) => ({
         "@type": "ListItem",
         position: index + 1,
-        name: `Day ${day.day} — ${day.title}`,
+        name: `Day ${day.day}: ${day.title}`,
       })),
     },
     offers: {
@@ -218,6 +219,16 @@ export default async function ItineraryPage({ params }: PageProps) {
                 </h2>
                 <ItineraryAccordion days={itinerary.days} />
               </section>
+
+              {/* Pricing */}
+              {itinerary.pricing && (
+                <section className="mb-12">
+                  <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-4">
+                    Prices
+                  </h2>
+                  <PricingMatrix pricing={itinerary.pricing} />
+                </section>
+              )}
 
               {/* Additional Sections */}
               {itinerary.additionalSections && itinerary.additionalSections.map((section, index) => (

@@ -46,7 +46,7 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: accessKey,
-          subject: `Safari Enquiry — ${name} | ${adults} adult${adults !== 1 ? "s" : ""}${children > 0 ? ` + ${children} child${children !== 1 ? "ren" : ""}` : ""} | ${dateText}`,
+          subject: `Safari Enquiry: ${name} | ${adults} adult${adults !== 1 ? "s" : ""}${children > 0 ? ` + ${children} child${children !== 1 ? "ren" : ""}` : ""} | ${dateText}`,
           from_name: "Jumbo Safaris Website",
           email: email || "hello@jumbosafaris.com",
           replyto: email || undefined,
@@ -108,12 +108,12 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
         {/* 
           Upload your headshot to the GitHub repo at:
           public/guide-photo.jpg
-          Any decent portrait works — square crop recommended.
+          Any decent portrait works, square crop recommended.
         */}
         <div className="relative w-12 h-12 flex-shrink-0 rounded-full overflow-hidden ring-2 ring-orange/60">
           <Image
             src="/guide-photo.jpg"
-            alt="Mohammadali — Your Safari Expert at Jumbo Safaris"
+            alt="Mohammadali, your safari expert at Jumbo Safaris"
             fill
             className="object-cover object-top"
           />
@@ -203,7 +203,7 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
         <label className={lbl}>
           WhatsApp
           <span className="ml-1 normal-case tracking-normal font-inter font-normal text-cream/40 text-[10px]">
-            — or use email above
+            or use email above
           </span>
         </label>
         <input

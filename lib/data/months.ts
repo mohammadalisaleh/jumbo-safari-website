@@ -167,21 +167,22 @@ export const monthPages: Record<string, MonthPage> = {
     ],
     sampleItineraries: [
       {
-        title: "8-Day Northern Circuit: July Migration Focus",
-        duration: "8 Days / 7 Nights",
-        parks: "Tarangire · Central Serengeti · Northern Serengeti · Ngorongoro",
-        price: "From $3,800 pp",
+        title: "Great Migration Safari",
+        duration: "10 Days / 9 Nights",
+        parks: "Northern Serengeti · Serengeti · Ngorongoro",
+        price: "From $4,150 pp",
         description:
-          "Two nights Tarangire for elephants, two nights central Serengeti for resident predators, two nights northern Serengeti at Kogatende for Mara River crossings, one night Ngorongoro rim. The full July northern circuit, in the right order.",
-        slug: "8-day-classic-tanzania-safari",
+          "Three nights at Kogatende in the northern Serengeti, positioned for the Mara River crossings that start in July, then central Serengeti and a full day on the Ngorongoro crater floor on the return. The trip built around the migration.",
+        slug: "great-migration-safari",
       },
       {
-        title: "5-Day Ngorongoro & Tarangire",
-        duration: "5 Days / 4 Nights",
-        parks: "Tarangire · Ngorongoro Crater",
-        price: "From $2,100 pp",
+        title: "8-Day Classic Tanzania Safari",
+        duration: "8 Days / 7 Nights",
+        parks: "Tarangire · Serengeti · Ngorongoro",
+        price: "From $1,945 pp",
         description:
-          "Two nights Tarangire, two nights Ngorongoro rim. For travellers booking late or on a tighter timeline. Both parks are exceptional in July and have better availability than the northern Serengeti fly-camps. No migration crossings, but elephant herds and crater wildlife more than compensate.",
+          "For travellers booking late or on a tighter timeline. Two nights Tarangire, three nights central Serengeti, two nights Ngorongoro. July is peak dry season, so resident game is concentrated and easy to find even without chasing the crossings.",
+        slug: "8-day-classic-tanzania-safari",
       },
     ],
     faqs: [
@@ -255,7 +256,7 @@ export const monthPages: Record<string, MonthPage> = {
     intro:
       "August is the best month to safari in Tanzania. That is a position, and I will defend it. The Mara River crossings are at maximum frequency. The Tarangire elephant herds hit their annual peak, up to 500 individuals concentrated at the river. The Serengeti short-grass plains make every predator sighting effortless. Ngorongoro Crater is cold and clear. Everything is working at once. The price for this is the highest lodge rates of the year, the most vehicles at crossing points, and the least forgiving booking window on the continent. If you want August, you plan in October for it.",
     highlights: [
-      "Mara River crossings at peak frequency — multiple crossings per day at main sites",
+      "Mara River crossings at peak frequency, multiple crossings per day at main sites",
       "Tarangire elephant herds at annual maximum: 500–600+ animals at the river",
       "Best predator visibility of the year across all northern circuit parks",
       "Ngorongoro Crater: dry floor, maximum rhino sightings, cold clear mornings",
@@ -367,21 +368,22 @@ export const monthPages: Record<string, MonthPage> = {
     ],
     sampleItineraries: [
       {
-        title: "8-Day August Migration Safari",
-        duration: "8 Days / 7 Nights",
-        parks: "Tarangire · Central Serengeti · Northern Serengeti · Ngorongoro",
-        price: "From $4,200 pp",
+        title: "Great Migration Safari",
+        duration: "10 Days / 9 Nights",
+        parks: "Northern Serengeti · Serengeti · Ngorongoro",
+        price: "From $4,150 pp",
         description:
-          "Two nights in Tarangire for peak elephant herds. Two nights central Serengeti for predators and positioning. Two nights northern Serengeti at Kogatende for Mara crossings. One night Ngorongoro rim. The full August circuit, in sequence.",
-        slug: "8-day-classic-tanzania-safari",
+          "August is peak Mara crossing season. Three nights at Kogatende in the northern Serengeti positioned for the river crossings, then central Serengeti and a full day on the Ngorongoro crater floor on the return.",
+        slug: "great-migration-safari",
       },
       {
-        title: "5-Day Tarangire & Ngorongoro",
-        duration: "5 Days / 4 Nights",
-        parks: "Tarangire · Ngorongoro Crater",
-        price: "From $2,300 pp",
+        title: "8-Day Classic Tanzania Safari",
+        duration: "8 Days / 7 Nights",
+        parks: "Tarangire · Serengeti · Ngorongoro",
+        price: "From $1,945 pp",
         description:
-          "For travellers who cannot get northern Serengeti availability in August, or who want the migration-free version. Tarangire in August is exceptional for elephants. Ngorongoro Crater is exceptional in any month. Both together is a strong alternative circuit.",
+          "For travellers who cannot get northern Serengeti availability in August, or who want the migration-free version. Two nights Tarangire for peak elephant herds, three nights central Serengeti, two nights Ngorongoro. Exceptional dry-season game without chasing the crossings.",
+        slug: "8-day-classic-tanzania-safari",
       },
     ],
     faqs: [

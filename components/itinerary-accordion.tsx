@@ -28,7 +28,7 @@ export function ItineraryAccordion({ days }: ItineraryAccordionProps) {
             aria-expanded={openDay === day.day}
           >
             <span className="font-montserrat font-semibold text-forest">
-              Day {day.day} — {day.title}
+              Day {day.day}: {day.title}
             </span>
             <ChevronDown
               className={`w-5 h-5 text-forest transition-transform ${
@@ -47,7 +47,7 @@ export function ItineraryAccordion({ days }: ItineraryAccordionProps) {
                   <p className="text-ink">{day.activities}</p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <h4 className="font-semibold text-sm text-ink uppercase tracking-wide mb-1">
                       Accommodation

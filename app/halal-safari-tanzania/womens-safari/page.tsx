@@ -45,7 +45,7 @@ const standards = [
 const itinerary = [
   {
     days: "Day 1",
-    location: "Arrival — Arusha",
+    location: "Arrival: Arusha",
     detail: "Kilimanjaro Airport pickup. Transfer to Arusha guesthouse. Halal dinner, orientation meeting with your guide.",
   },
   {

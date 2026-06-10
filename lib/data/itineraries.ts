@@ -1,9 +1,38 @@
+export interface SeasonPrices {
+  p2: number
+  p4: number
+  p6: number
+}
+
+export interface TierPrice {
+  tier: "Comfort" | "Premium" | "Luxury"
+  summary: string
+  lodges: string
+  /** Peak-season price per person. Always present. */
+  peak: SeasonPrices
+  /** Green-season price per person. Omitted when the tier's camps close in green season (Apr–May). */
+  green?: SeasonPrices
+}
+
+export interface Pricing {
+  /** Headline "from" figure shown in badges and cards. By policy = the lowest price we offer: cheapest tier, 6 guests sharing, green season where available. */
+  fromPrice: number
+  /** Label for the green-season block, e.g. "Green season (April–May)". Omitted for single-season products. */
+  greenLabel?: string
+  /** Label for the main season block, e.g. "Peak season (June–October)" or "Calving season (January–February)". */
+  peakLabel: string
+  /** Plain-language basis line shown under the matrix. */
+  basis: string
+  tiers: TierPrice[]
+}
+
 export interface Itinerary {
   slug: string
   title: string
   duration: string
   parks: string
   price: string
+  pricing?: Pricing
   season: string
   description: string
   heroImage?: { src: string; alt: string }
@@ -42,10 +71,39 @@ export const itineraries: Record<string, Itinerary> = {
     title: "8-Day Classic Tanzania Safari",
     duration: "8 Days",
     parks: "Tarangire · Serengeti · Ngorongoro",
-    price: "From $3,200 pp",
+    price: "From $1,945 pp",
+    pricing: {
+      fromPrice: 1945,
+      greenLabel: "Green season (April–May)",
+      peakLabel: "Peak season (June–October)",
+      basis:
+        "Per person sharing, US dollars. The 'from' price is the Comfort tier with six guests sharing in green season. Price drops as your group grows because the private vehicle and guide are shared across more people. Luxury camps close in April–May, so green season shows Comfort and Premium only. Every figure is built from real lodge rates, our own vehicle, and current park fees, not marked-up reseller prices.",
+      tiers: [
+        {
+          tier: "Comfort",
+          summary: "Comfortable tented camps and lodges, full board. Our best value, and still fully private.",
+          lodges: "Tortilis mobile camps, Mawe Karatu",
+          peak: { p2: 3580, p4: 2830, p6: 2580 },
+          green: { p2: 2940, p4: 2195, p6: 1945 },
+        },
+        {
+          tier: "Premium",
+          summary: "Built halal-friendly lodges and upgraded camps in prime locations near the gates.",
+          lodges: "Ang'ata Camps, Turaco Ngorongoro Valley (built lodge)",
+          peak: { p2: 4720, p4: 3970, p6: 3725 },
+          green: { p2: 4235, p4: 3490, p6: 3240 },
+        },
+        {
+          tier: "Luxury",
+          summary: "Premium tented camps and a crater-rim lodge, the top of our range.",
+          lodges: "Lemala Camps, Ngorongoro rim lodge",
+          peak: { p2: 5925, p4: 5175, p6: 4925 },
+        },
+      ],
+    },
     season: "Year-round",
     description:
-      "8-day private Tanzania safari covering Tarangire, the Serengeti, and Ngorongoro Crater. Three nights in the Serengeti, private 4x4, full-board lodges. From $3,200 per person.",
+      "8-day private Tanzania safari covering Tarangire, the Serengeti, and Ngorongoro Crater. Three nights in the Serengeti, private 4x4, full-board lodges. From $1,945 per person.",
     heroImage: {
       src: "/tarangire-elephants-baobab-tanzania-safari.jpg",
       alt: "Elephant herd passing a giant baobab tree in Tarangire National Park, Tanzania",
@@ -113,7 +171,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 7,
-        title: "Ngorongoro Crater — Full Day on the Floor",
+        title: "Ngorongoro Crater: Full Day on the Floor",
         activities:
           "The descent starts at 6:00am before the tourist buses arrive. The track drops 600 metres over about 30 minutes of steep switchbacks through forest. On the crater floor: approximately 120 lions with well-defined territories, 15,000 wildebeest, 9,000 zebra, 400 hyenas, and around 50 black rhino, the densest population in Africa. Lake Magadi on the western floor draws flamingos and hippos. The Lerai Forest in the south is where elephants shelter at midday. One thing the crater does not have: giraffes. Their legs and necks make the steep walls impossible to navigate, so none have entered and the population inside is completely isolated. All vehicles must ascend by 6:00pm. You have the full day.",
         accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
@@ -183,13 +241,33 @@ export const itineraries: Record<string, Itinerary> = {
   },
   "calving-season-safari": {
     slug: "calving-season-safari",
-    title: "Calving Season Safari — Ndutu & Ngorongoro",
+    title: "Calving Season Safari: Ndutu & Ngorongoro",
     duration: "7 Days",
     parks: "Ndutu · Ngorongoro · Southern Serengeti",
-    price: "From $2,800 pp",
+    price: "From $2,595 pp",
+    pricing: {
+      fromPrice: 2595,
+      peakLabel: "Calving season (January–February)",
+      basis:
+        "Per person sharing, US dollars. Calving happens in January and February, so there is no green-season rate for this trip. The 'from' price is the Comfort tier with six guests sharing the vehicle. Price drops as your group grows because the private vehicle and guide are shared across more people. Built from real lodge rates, our own vehicle, and current Ngorongoro Conservation Area fees. The four nights at Ndutu carry NCA entry and concession fees every day, which is why this trip costs more per day than the parks-edge circuits.",
+      tiers: [
+        {
+          tier: "Comfort",
+          summary: "Comfortable tented camps at Ndutu and a base near the crater, full board, fully private.",
+          lodges: "Mawe Gnu Migration Camp (Ndutu), Mawe Karatu",
+          peak: { p2: 3485, p4: 2820, p6: 2595 },
+        },
+        {
+          tier: "Premium",
+          summary: "Upgraded halal-friendly tented camps in the heart of the calving grounds.",
+          lodges: "Ang'ata Migration Camp (Ndutu), Ang'ata Ngorongoro",
+          peak: { p2: 4245, p4: 3575, p6: 3350 },
+        },
+      ],
+    },
     season: "January - March",
     description:
-      "7-day Tanzania calving season safari based at Ndutu. Roughly 8,000 wildebeest calves born per day at peak, off-road driving permitted, every predator in the ecosystem converging on one area. January through March.",
+      "7-day Tanzania calving season safari based at Ndutu. Roughly 8,000 wildebeest calves born per day at peak, off-road driving permitted, every predator in the ecosystem converging on one area. January through March. From $2,595 per person.",
     heroImage: {
       src: "/wildebeest-calf-ndutu-calving-season-tanzania.jpg",
       alt: "Newborn wildebeest calf running alongside its mother through Lake Ndutu during calving season, Tanzania",
@@ -225,7 +303,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 3,
-        title: "Full Day Ndutu — Lake Ndutu Plains",
+        title: "Full Day Ndutu: Lake Ndutu Plains",
         activities:
           "Depart at first light, around 6:00am. The short-grass plains around Lake Ndutu are ankle-height in January and February, which means unobstructed sightlines across flat terrain to the horizon. The herds are dense and moving slowly. Calves are born continuously through the morning. A newborn wildebeest stands within 3-5 minutes of birth, walks within 15, and runs with the herd within hours. What follows each birth is immediate: lions move in from the kopjes, spotted hyenas trail the herd edges, black-backed jackals work the newborns directly. Cheetahs are especially active here during calving because open short grass suits their sprint hunting. Kill success for cheetahs runs about 50% during calving, compared to 30% at other times. Full day in the field, picnic lunch in the vehicle.",
         accommodation: "Ndutu Safari Lodge or similar",
@@ -233,7 +311,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 4,
-        title: "Full Day Ndutu — Lake Masek and the Kopjes",
+        title: "Full Day Ndutu: Lake Masek and the Kopjes",
         activities:
           "Lake Masek sits about 6 km from Lake Ndutu and is a separate zone most operators ignore. The acacia woodland fringing its eastern shore is leopard territory. The open plains between the two lakes are where the herds spread at maximum density during peak calving. Twin Kopjes and Gol Kopjes are granite outcrops rising from the plains, big-cat strongholds where lions den and cubs are often visible. Big Marsh, a permanent shallow reed marsh, draws buffalo and hippo regardless of season. The off-road rule applies across all of this. Your guide can position the vehicle wherever the action is. Full day in the field.",
         accommodation: "Ndutu Safari Lodge or similar",
@@ -241,7 +319,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 5,
-        title: "Full Day Ndutu — Southern Plains",
+        title: "Full Day Ndutu: Southern Plains",
         activities:
           "Third full day. By this point you understand the terrain and the rhythm. Morning drives from 6:00am target lions returning from night hunts. The predator hierarchy plays out continuously: lions displace hyenas, hyenas challenge lions in large clans, cheetahs eat fast before being displaced. A Ndutu hyena clan has been documented at over 80 members. The southern NCA plains connect seamlessly with the Serengeti NP boundary to the east. If conditions warrant, your guide can drive to Naabi Hill Gate and spend part of the day on the Serengeti side, returning to Ndutu for the night.",
         accommodation: "Ndutu Safari Lodge or similar",
@@ -318,17 +396,43 @@ export const itineraries: Record<string, Itinerary> = {
   },
   "great-migration-safari": {
     slug: "great-migration-safari",
-    title: "Great Migration Safari — Northern Serengeti",
+    title: "Great Migration Safari: Northern Serengeti",
     duration: "10 Days",
     heroImage: {
       src: "/great-migration-wildebeest-river-crossing-tanzania.jpg",
       alt: "Wildebeest crossing the Mara River during the Great Migration in northern Serengeti, Tanzania",
     },
     parks: "Northern Serengeti · Serengeti · Ngorongoro",
-    price: "From $4,200 pp",
+    price: "From $4,150 pp",
+    pricing: {
+      fromPrice: 4150,
+      peakLabel: "Migration season (July–October)",
+      basis:
+        "Per person sharing, US dollars. The Mara River crossings run July to October, so there is no green-season rate for this trip. The 'from' price is the Comfort tier with six guests sharing the vehicle. Price drops as your group grows because the private vehicle and guide are shared across more people. Built from real lodge rates, our own vehicle, and current park fees. Three nights at Kogatende in the far north carry a remote-vehicle surcharge and northern-Serengeti concession fees, which is why a migration safari costs more than the standard circuit.",
+      tiers: [
+        {
+          tier: "Comfort",
+          summary: "Comfortable tented camps including a mobile camp at the Mara River, full board, fully private.",
+          lodges: "Mawe Gnu Migration Camp (Kogatende), Tortilis Serengeti",
+          peak: { p2: 5850, p4: 4575, p6: 4150 },
+        },
+        {
+          tier: "Premium",
+          summary: "Upgraded halal-friendly camps positioned for the river crossings.",
+          lodges: "Ang'ata Migration Camp (Kogatende), Gran Meliá Arusha",
+          peak: { p2: 6735, p4: 5460, p6: 5035 },
+        },
+        {
+          tier: "Luxury",
+          summary: "Premium migration camps minutes from the crossing points, the top of our range.",
+          lodges: "Lemala / Elewana migration camps, Arusha Coffee Lodge",
+          peak: { p2: 9865, p4: 8590, p6: 8165 },
+        },
+      ],
+    },
     season: "June - October",
     description:
-      "10-day Tanzania Great Migration safari. Three nights in the northern Serengeti at Kogatende, positioned for Mara River crossings. Central Serengeti and Ngorongoro Crater included on the return. Private vehicle and guide throughout. From $4,200 per person.",
+      "10-day Tanzania Great Migration safari. Three nights in the northern Serengeti at Kogatende, positioned for Mara River crossings. Central Serengeti and Ngorongoro Crater included on the return. Private vehicle and guide throughout. From $4,150 per person.",
     leadParagraph:
       "The Mara River crossing is the thing most people picture when they think of Africa. What the photographs do not convey is the waiting. Herds of hundreds of thousands mass on the south bank, press to the edge, pull back. A single wildebeest commits and the whole thing breaks. The river is forty metres wide and full of crocodiles. The crossing takes about four minutes. Then silence, and the herd rebuilds on the far bank. This 10-day route puts you at Kogatende with three nights at the crossing points. Three nights is the minimum for meaningful odds. August and September are the peak months. The crossing cannot be promised on any specific day. That is not a qualification. It is what makes it worth coming.",
     overview:
@@ -360,7 +464,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 3,
-        title: "Full Day Central Serengeti — Seronera Valley",
+        title: "Full Day Central Serengeti: Seronera Valley",
         activities:
           "Full day in the Seronera Valley, the most consistent big-cat zone in the Serengeti year-round. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops 600 million years old. Cheetahs work the short-grass plains to the south. Depending on your travel dates and the current herd position, fringes of the migration may be passing through Seronera en route north. The resident predators are here regardless. Full day in the park, picnic lunch.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
@@ -368,7 +472,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 4,
-        title: "Central Serengeti to Northern Serengeti — Kogatende",
+        title: "Central Serengeti to Northern Serengeti: Kogatende",
         activities:
           "The drive from Seronera to Kogatende is 160 to 170 km on murram and dirt track. Five to six hours in dry conditions. This is not dead time: you are crossing the full length of the Serengeti through Lobo Hills and kopje country, with wildlife throughout. Arrive at your northern camp in the afternoon. First look at the Mara River before dark. Depending on herd position, you may see animals massing on the south bank. First briefing from your guide on which crossing points are showing activity.",
         accommodation: "Sayari Camp (Asilia Africa) or Lemala Kuria Hills or similar",
@@ -376,7 +480,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 5,
-        title: "Northern Serengeti — Mara River Crossings",
+        title: "Northern Serengeti: Mara River Crossings",
         activities:
           "Out by 6:00am. Your guide positions the vehicle at the crossing point showing the most activity, based on overnight herd movement and morning field contacts. TANAPA's revised guidelines require vehicles to hold position at designated points, at least 25 metres from the bank, stationary during crossing events. No disembarking. Each numbered crossing point has a designated maximum vehicle count.\n\nHerds mass, press to the water's edge, turn back. There is no lead animal and no predictable trigger. Behavioral research identifies it as a collective decision: a small committed group at the water's edge tips the calculation for the herd behind them, or it does not. A crossing can be over in four minutes. The same point may see a second wave within the hour, or nothing for two days. Between events, the northern Serengeti has strong resident game regardless of migration timing: lion, leopard, cheetah, elephant, buffalo.",
         accommodation: "Sayari Camp (Asilia Africa) or Lemala Kuria Hills or similar",
@@ -384,7 +488,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 6,
-        title: "Northern Serengeti — Second Full Day at the Mara",
+        title: "Northern Serengeti: Second Full Day at the Mara",
         activities:
           "Second full day at the crossing points. Your guide repositions based on overnight herd movement. Crossings 4 and 5 are the most dramatic, with high banks and deep croc pools. Crossing 2 is the most photogenic. Crossings 9 through 12 are the least crowded. Morning light from the Kogatende (south) bank is best before 9:00am, with herds approaching front-lit from the east. Afternoon light favors the Lamai Wedge north of the river, with warm sidelight on animals emerging from the water. Your guide chooses the crossing point based on light and herd position. Picnic lunch at the river.",
         accommodation: "Sayari Camp (Asilia Africa) or Lemala Kuria Hills or similar",
@@ -392,7 +496,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 7,
-        title: "Northern Serengeti — Third Full Day at the Mara",
+        title: "Northern Serengeti: Third Full Day at the Mara",
         activities:
           "Third full day. Three nights at Kogatende is the minimum for meaningful crossing odds; this is the day the probability calculation is firmly in your favour. By now your guide knows the rhythm: which bank the herd is favouring, which crossing points are showing massing behaviour, where the main croc pods are concentrated. Crocodile density in the Tanzanian Mara stretch is high. No formal site-specific count has been published for the Kogatende reach, but they are visible from the bank at any active crossing point during the season.",
         accommodation: "Sayari Camp (Asilia Africa) or Lemala Kuria Hills or similar",
@@ -476,7 +580,7 @@ export const itineraries: Record<string, Itinerary> = {
           "Different, with practical advantages on the Tanzania side. TANAPA enforces vehicle caps per crossing point and requires vehicles to hold position and stay 25 metres from the bank. The Masai Mara crossings historically had higher vehicle volumes with less enforcement, though Kenya has improved regulation in recent years. Tanzania gives you a controlled crossing experience. Kenya gives you more total crossing events because the herds oscillate. Many serious wildlife photographers prefer the Tanzania side for the terrain at Crossings 4 and 5 and the discipline at the crossing points.",
       },
       {
-        question: "Where should I be based — Kogatende or the Lamai Wedge?",
+        question: "Where should I be based: Kogatende or the Lamai Wedge?",
         answer:
           "Both access the same crossing points. The difference is bank and light. Kogatende (south bank): Sayari Camp (Asilia Africa), Lemala Kuria Hills, Serengeti Bushtops. Morning light is best from this side, with herds approaching the water front-lit before 9:00am. Lamai Wedge (north bank): Lamai Serengeti (Nomad Tanzania), Singita Mara River Tented Camp. Afternoon light is best from the north, with warm sidelight on animals emerging from the river. We book based on availability and your dates.",
       },
@@ -511,16 +615,38 @@ export const itineraries: Record<string, Itinerary> = {
     title: "Honeymoon Tanzania & Zanzibar",
     duration: "11 Days",
     parks: "Tarangire · Serengeti · Ngorongoro · Zanzibar",
-    price: "From $5,500 pp",
+    price: "From $4,070 pp",
+    pricing: {
+      fromPrice: 4070,
+      greenLabel: "Green season (April–May)",
+      peakLabel: "Peak season (June–October)",
+      basis:
+        "Per person sharing, US dollars. This trip is designed for two, so most couples book the 2-guest column; the 4 and 6-guest prices are for travelling with family or friends. The 'from' price is the Premium tier with six guests sharing in green season. The Luxury beach villas and camps close in April–May, so green season shows Premium only. Includes the Coastal Aviation flight to Zanzibar. Built from real lodge rates, our own vehicle, and current park fees, not marked-up reseller prices.",
+      tiers: [
+        {
+          tier: "Premium",
+          summary: "Built halal-friendly safari lodges and a beachfront resort on Zanzibar.",
+          lodges: "Ang'ata Camps, Turaco Ngorongoro, Meliá Zanzibar",
+          peak: { p2: 5610, p4: 4865, p6: 4615 },
+          green: { p2: 5070, p4: 4320, p6: 4070 },
+        },
+        {
+          tier: "Luxury",
+          summary: "Premium safari camps with honeymoon touches and a private-pool beach villa.",
+          lodges: "Lemala Camps, Safira Blu villas (Nungwi)",
+          peak: { p2: 8060, p4: 7315, p6: 7065 },
+        },
+      ],
+    },
     season: "Year-round",
     description:
-      "11-day Tanzania honeymoon safari combining private game drives in Tarangire, Serengeti, and Ngorongoro with 4 nights on Zanzibar's Indian Ocean coast. From $5,500 per person.",
+      "11-day Tanzania honeymoon safari combining private game drives in Tarangire, Serengeti, and Ngorongoro with 4 nights on Zanzibar's Indian Ocean coast. From $4,070 per person.",
     heroImage: {
       src: "/zanzibar-beach-resort-honeymoon-tanzania.jpg",
       alt: "Thatched beach bungalows on white coral sand with turquoise Indian Ocean water in Zanzibar, Tanzania",
     },
     leadParagraph:
-      "Seven days in the bush, four days at the coast. No two environments could be more different, and that contrast is exactly the point. You get Tanzania's full range: elephants in the Tarangire dust, lions on Serengeti kopjes, black rhino on the Ngorongoro crater floor, then white coral sand and an Indian Ocean the colour of a swimming pool. Private vehicle, private guide, just the two of you. From $5,500 per person for the full eleven days.",
+      "Seven days in the bush, four days at the coast. No two environments could be more different, and that contrast is exactly the point. You get Tanzania's full range: elephants in the Tarangire dust, lions on Serengeti kopjes, black rhino on the Ngorongoro crater floor, then white coral sand and an Indian Ocean the colour of a swimming pool. Private vehicle, private guide, just the two of you. From $5,610 per person for two travelling together, across the full eleven days.",
     overview:
       "The route runs north to south through Tanzania's northern circuit before turning east to the coast. Arusha is your starting point. Day two takes you into Tarangire, where elephant density during the dry season is the highest of any park on the northern circuit, and the baobab trees are old enough that some predate the Roman Empire. Two nights there, then the six-hour drive west to the Serengeti through the Ngorongoro highlands, stopping at Olduvai Gorge on the way. Two nights in central Serengeti, tracking big cats across the Seronera Valley. Then east to the Ngorongoro Crater rim for two nights, with a full day on the crater floor: roughly 120 lions, 50 black rhino, and 15,000 wildebeest inside a 260-square-kilometre caldera they rarely leave. Day eight: drive to Arusha, then a Coastal Aviation flight to Zanzibar (about one hour forty-five minutes, included). Three nights at a beach property. The north coast has consistent swimming conditions year-round. The east coast (Paje, Bwejuu) is better for October through March when the Indian Ocean lies flat and snorkeling is clearest. We book whichever suits your travel dates.\n\nAt each safari property, we arrange a honeymoon setup: champagne on arrival, private sundowner location, rose petals at turndown. At Ngorongoro, a private picnic lunch on the crater floor. On Zanzibar, a sunset dhow cruise from Stone Town harbour. None of this costs extra. What does: the hot air balloon over the Serengeti ($590 per person) and spa treatments in Zanzibar. The balloon, in particular, is worth it.",
     quickFacts: {
@@ -582,7 +708,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 7,
-        title: "Ngorongoro Crater — Full Day on the Floor",
+        title: "Ngorongoro Crater: Full Day on the Floor",
         activities:
           "The descent begins at 6:00am before the tourist vehicles. The track drops 600 metres over 30 minutes of steep switchbacks through cloud forest. On the crater floor: approximately 120 lions, 50 black rhino, 15,000 wildebeest, 9,000 zebra, 400 hyenas. The black rhino population here is the densest in Africa. Lake Magadi on the western floor draws flamingos and hippos. Private picnic lunch arranged on the crater floor today. All vehicles must ascend by 6:00pm. You have the full day.",
         accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
@@ -598,7 +724,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 9,
-        title: "Zanzibar — Stone Town and Sunset Dhow",
+        title: "Zanzibar: Stone Town and Sunset Dhow",
         activities:
           "Morning on the beach. Optional Stone Town in the afternoon, a 20-minute drive from most properties. Stone Town is a UNESCO World Heritage site, a compact Arab trading city with carved wooden doors, winding alleyways, and a spice market that has been operating for 200 years. Freddie Mercury was born here in 1946. Sunset dhow cruise from the harbour: 90 minutes on the water, local food and drinks included. This is the honeymoon dinner.",
         accommodation: "Beach resort, north or east coast Zanzibar",
@@ -606,7 +732,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 10,
-        title: "Zanzibar — Last Full Day",
+        title: "Zanzibar: Last Full Day",
         activities:
           "No fixed agenda. Snorkeling at Mnemba Atoll is a half-day boat trip: turtles, reef fish, and dolphins if the timing is right ($80-100 per person). A spice tour is a three-hour walk through a working plantation ($30 per person, bookable through the resort). Spa treatments can be arranged at your property. Or just the beach. Last evening in Tanzania.",
         accommodation: "Beach resort, north or east coast Zanzibar",
@@ -680,32 +806,32 @@ export const itineraries: Record<string, Itinerary> = {
       {
         question: "Are international flights included?",
         answer:
-          "No. International flights are excluded from the package price. The $5,500 per person starting price covers everything from your arrival at Kilimanjaro International Airport (JRO) through to your departure from Zanzibar (ZNZ), including the domestic Coastal Aviation flight between the two. The most common international connections are via Doha (Qatar Airways), Amsterdam (KLM), Dubai (Emirates), or Istanbul (Turkish Airlines). Most nationalities also need a Tanzania eVisa before arrival, currently $50 per person ($100 for US citizens).",
+          "No. International flights are excluded from the package price. The starting price (from $5,610 per person for two sharing, Premium tier) covers everything from your arrival at Kilimanjaro International Airport (JRO) through to your departure from Zanzibar (ZNZ), including the domestic Coastal Aviation flight between the two. The most common international connections are via Doha (Qatar Airways), Amsterdam (KLM), Dubai (Emirates), or Istanbul (Turkish Airlines). Most nationalities also need a Tanzania eVisa before arrival, currently $50 per person ($100 for US citizens).",
       },
       {
         question: "Do we need a visa for Tanzania and Zanzibar?",
         answer:
-          "Tanzania requires an eVisa for most nationalities, applied online at evisa.go.tz. The fee is $50 for most passports; US citizens pay $100. Apply at least two weeks before departure and print the approval. Zanzibar is part of Tanzania — your mainland visa covers the island, though you fill in a short second immigration form on the domestic flight. Yellow fever vaccination is required if you are arriving from a country on Tanzania's risk list. If you have recently changed your surname after getting married, book all flights in the passport-name version to avoid mismatched document problems at check-in.",
+          "Tanzania requires an eVisa for most nationalities, applied online at evisa.go.tz. The fee is $50 for most passports; US citizens pay $100. Apply at least two weeks before departure and print the approval. Zanzibar is part of Tanzania. Your mainland visa covers the island, though you fill in a short second immigration form on the domestic flight. Yellow fever vaccination is required if you are arriving from a country on Tanzania's risk list. If you have recently changed your surname after getting married, book all flights in the passport-name version to avoid mismatched document problems at check-in.",
       },
       {
         question: "What are the best honeymoon lodges for each park?",
         answer:
-          "In Tarangire, Tarangire Treetops puts your room inside a 1,000-year-old baobab with a private plunge pool. In the Serengeti, the Four Seasons Safari Lodge has the most consistent infrastructure for couples (pool overlooking a waterhole, room-service game drives). For a tented camp experience, Asilia's Olakira or Nomad's Lamai Serengeti are better positioned for big cat sightings. At Ngorongoro, &Beyond Crater Lodge is the most iconic — butler service, 600m above the floor. In Zanzibar, Baraza Resort on the south coast and Kilindi on the northwest are the strongest at the top end. We build the right lodge combination for your budget.",
+          "In Tarangire, Tarangire Treetops puts your room inside a 1,000-year-old baobab with a private plunge pool. In the Serengeti, the Four Seasons Safari Lodge has the most consistent infrastructure for couples (pool overlooking a waterhole, room-service game drives). For a tented camp experience, Asilia's Olakira or Nomad's Lamai Serengeti are better positioned for big cat sightings. At Ngorongoro, &Beyond Crater Lodge is the most iconic: butler service, 600m above the floor. In Zanzibar, Baraza Resort on the south coast and Kilindi on the northwest are the strongest at the top end. We build the right lodge combination for your budget.",
       },
       {
         question: "Do we need malaria medication?",
         answer:
-          "Yes. Zanzibar is a malaria zone, as are all of Tanzania's national parks. Consult a travel medicine doctor before you leave home. Antimalarial prophylaxis is standard advice for this trip regardless of nationality. The risk varies by season and location — lower in dry months, higher near the coast. Start your medication before you arrive in Tanzania. This applies to both legs of the trip.",
+          "Yes. Zanzibar is a malaria zone, as are all of Tanzania's national parks. Consult a travel medicine doctor before you leave home. Antimalarial prophylaxis is standard advice for this trip regardless of nationality. The risk varies by season and location: lower in dry months, higher near the coast. Start your medication before you arrive in Tanzania. This applies to both legs of the trip.",
       },
       {
         question: "Are tips included or extra?",
         answer:
-          "Tips are excluded and handled separately. The standard in Tanzania is $20-25 per day for your driver-guide, paid directly on the last day of safari, and $5-7 per night for lodge staff via the envelope at reception. For this itinerary with one guide and seven safari nights, the total tipping budget is typically $150-175 for the guide and $35-50 for lodge staff — roughly $200-250 for a couple across the full safari leg. On Zanzibar, tipping is less formalised but the same courtesy applies.",
+          "Tips are excluded and handled separately. The standard in Tanzania is $20-25 per day for your driver-guide, paid directly on the last day of safari, and $5-7 per night for lodge staff via the envelope at reception. For this itinerary with one guide and seven safari nights, the total tipping budget is typically $150-175 for the guide and $35-50 for lodge staff, roughly $200-250 for a couple across the full safari leg. On Zanzibar, tipping is less formalised but the same courtesy applies.",
       },
       {
         question: "What should we pack?",
         answer:
-          "For the safari: neutral colours — khaki, olive, tan, grey. Bright colours disturb animals and attract insects. Mornings on the Serengeti are cold at 6:00am (bring a fleece); afternoons reach 28-32°C. A wide-brim hat, polarised sunglasses, SPF 50 sunscreen, and binoculars (8x42 or 10x42 recommended). For Zanzibar: light summer clothes. In Stone Town, covered shoulders and knees are respectful away from the beach. Reef-safe sunscreen for snorkelling at Mnemba Atoll. Tanzania uses Type G plugs (UK standard) — bring a universal adapter. Take antimalarial medication as prescribed. Smart-casual evening wear for lodge dinners; no need for formal clothes.",
+          "For the safari: neutral colours: khaki, olive, tan, grey. Bright colours disturb animals and attract insects. Mornings on the Serengeti are cold at 6:00am (bring a fleece); afternoons reach 28-32°C. A wide-brim hat, polarised sunglasses, SPF 50 sunscreen, and binoculars (8x42 or 10x42 recommended). For Zanzibar: light summer clothes. In Stone Town, covered shoulders and knees are respectful away from the beach. Reef-safe sunscreen for snorkelling at Mnemba Atoll. Tanzania uses Type G plugs (UK standard). Bring a universal adapter. Take antimalarial medication as prescribed. Smart-casual evening wear for lodge dinners; no need for formal clothes.",
       },
       {
         question: "Can we extend the beach stay or adjust the itinerary?",
@@ -727,16 +853,16 @@ export const itineraries: Record<string, Itinerary> = {
         body: "Tanzania requires an eVisa for most nationalities, applied online at evisa.go.tz before departure. The fee is $50 for most passports; US citizens pay $100. Apply at least two weeks before you travel and print the approval letter to carry alongside your passport.\n\nYellow fever vaccination is required if you are arriving from a country on Tanzania's risk list, which includes most of sub-Saharan Africa and parts of South America. If you are transiting through Nairobi or Addis Ababa, confirm whether your specific layover duration triggers the requirement.\n\nZanzibar is part of Tanzania, so your mainland visa covers the island. You will fill in a short second immigration form on the Coastal Aviation flight. It takes about three minutes.\n\nOne practical note for newlyweds: if you have recently changed your surname and your passport still shows your maiden name, book all flights and accommodation in the maiden-name version. Mismatched passport and ticket names cause problems at check-in. If your passport is already in your married name, make sure your flight tickets match it exactly before you travel.",
       },
       {
-        heading: "Getting Here — Flight Routing",
-        body: "There is no direct flight to Tanzania from North America, the UK, or most of Europe. Every routing involves one connection.\n\nFrom the US East Coast: Qatar Airways (JFK or IAD via Doha) and KLM (JFK via Amsterdam) both serve Kilimanjaro International Airport with one stop. Turkish Airlines via Istanbul is frequently the cheapest option but adds flying time. Total travel time from New York is typically 18-22 hours.\n\nFrom the UK: KLM via Amsterdam and Qatar via Doha are the most reliable. Emirates via Dubai is a popular premium option. British Airways connects via Nairobi with a domestic leg to Kilimanjaro.\n\nFrom Australia: Singapore Airlines via Singapore and Emirates via Dubai both work. Expect 20-24 hours total.\n\nKilimanjaro International Airport (JRO) is the correct arrival airport for this itinerary. Do not fly into Dar es Salaam (DAR) — it adds a full day of domestic travel to reach Arusha.\n\nFor the return, you depart from Zanzibar International (ZNZ). Most international connections route through Nairobi (NBO), Doha (DOH), or Dubai (DXB). Allow at least three hours for a connection in Nairobi, where the domestic-to-international transfer can be slow.",
+        heading: "Getting Here: Flight Routing",
+        body: "There is no direct flight to Tanzania from North America, the UK, or most of Europe. Every routing involves one connection.\n\nFrom the US East Coast: Qatar Airways (JFK or IAD via Doha) and KLM (JFK via Amsterdam) both serve Kilimanjaro International Airport with one stop. Turkish Airlines via Istanbul is frequently the cheapest option but adds flying time. Total travel time from New York is typically 18-22 hours.\n\nFrom the UK: KLM via Amsterdam and Qatar via Doha are the most reliable. Emirates via Dubai is a popular premium option. British Airways connects via Nairobi with a domestic leg to Kilimanjaro.\n\nFrom Australia: Singapore Airlines via Singapore and Emirates via Dubai both work. Expect 20-24 hours total.\n\nKilimanjaro International Airport (JRO) is the correct arrival airport for this itinerary. Do not fly into Dar es Salaam (DAR). It adds a full day of domestic travel to reach Arusha.\n\nFor the return, you depart from Zanzibar International (ZNZ). Most international connections route through Nairobi (NBO), Doha (DOH), or Dubai (DXB). Allow at least three hours for a connection in Nairobi, where the domestic-to-international transfer can be slow.",
       },
       {
-        heading: "Wildlife by Month — When to Travel",
+        heading: "Wildlife by Month: When to Travel",
         body: "January and February: Calving season. The wildebeest herds are on the short-grass plains south of the Serengeti near Lake Ndutu, where roughly 8,000 calves are born per day at peak in early February. Every predator in the ecosystem converges on one area. Some wildlife photographers consider February Ndutu better for predator viewing than August Mara.\n\nMarch: Calving winds down, herds begin moving northwest. Long rains approaching. A genuine shoulder option if you travel before mid-March.\n\nApril and May: Long rains. Lush landscapes, very few tourists, lower rates. Some roads become difficult and several Ndutu camps close. Not recommended.\n\nJune and July: Dry season begins. Animals concentrate around shrinking water sources. Western Corridor Serengeti, Grumeti River crossings from late June. Short grass, easy spotting.\n\nAugust through October: Peak season. Northern Serengeti, Mara River crossings at Kogatende. Highest prices and most dramatic crossings if you position correctly. Ngorongoro Crater is excellent year-round regardless of season.\n\nNovember and December: Short rains, typically four to six weeks. Parks turn dramatically green, crowds thin, and rates drop. A genuine undervalued window that most operators overlook.",
       },
       {
         heading: "What to Pack",
-        body: "For the safari leg: neutral-coloured clothing in khaki, olive, tan, or grey. Bright colours disturb animals and attract insects. Mornings on the Serengeti are cold at 6:00am — bring a fleece or light jacket. Afternoons reach 28-32°C. A wide-brim hat, polarised sunglasses, and SPF 50 sunscreen for open game drives. Binoculars make a real difference; 8x42 or 10x42 is the standard guide recommendation.\n\nFor Zanzibar: lightweight summer clothes. In Stone Town, modest dress is respectful away from the beach — covered shoulders and knees when walking through the market or along the seafront. Reef-safe sunscreen if you plan to snorkel at Mnemba Atoll, which has a coral protection policy. A waterproof bag for boat excursions.\n\nPractical items: Tanzania uses Type G plugs (same as the UK). Bring a universal adapter if you are from North America, Europe, or Australia. A portable power bank is useful on long game-drive days. Take your antimalarial medication as prescribed and carry a small first-aid kit with antihistamine and rehydration sachets. Smart-casual evening wear for lodge dinners — no formal clothes required.",
+        body: "For the safari leg: neutral-coloured clothing in khaki, olive, tan, or grey. Bright colours disturb animals and attract insects. Mornings on the Serengeti are cold at 6:00am, so bring a fleece or light jacket. Afternoons reach 28-32°C. A wide-brim hat, polarised sunglasses, and SPF 50 sunscreen for open game drives. Binoculars make a real difference; 8x42 or 10x42 is the standard guide recommendation.\n\nFor Zanzibar: lightweight summer clothes. In Stone Town, modest dress is respectful away from the beach: covered shoulders and knees when walking through the market or along the seafront. Reef-safe sunscreen if you plan to snorkel at Mnemba Atoll, which has a coral protection policy. A waterproof bag for boat excursions.\n\nPractical items: Tanzania uses Type G plugs (same as the UK). Bring a universal adapter if you are from North America, Europe, or Australia. A portable power bank is useful on long game-drive days. Take your antimalarial medication as prescribed and carry a small first-aid kit with antihistamine and rehydration sachets. Smart-casual evening wear for lodge dinners; no formal clothes required.",
       },
     ],
   },
@@ -745,10 +871,39 @@ export const itineraries: Record<string, Itinerary> = {
     title: "5-Day Northern Circuit Safari",
     duration: "5 Days",
     parks: "Tarangire · Serengeti · Ngorongoro · Lake Manyara",
-    price: "From $1,900 pp",
+    price: "From $1,345 pp",
+    pricing: {
+      fromPrice: 1345,
+      greenLabel: "Green season (April–May)",
+      peakLabel: "Peak season (June–October)",
+      basis:
+        "Per person sharing, US dollars. The 'from' price is the Comfort tier with six guests sharing in green season. Price drops as your group grows because the private vehicle and guide are shared across more people. Luxury camps close in April–May, so green season shows Comfort and Premium only. Every figure is built from real lodge rates, our own vehicle, and current park fees, not marked-up reseller prices.",
+      tiers: [
+        {
+          tier: "Comfort",
+          summary: "Comfortable tented camps and lodges, full board. Our best value, and still fully private.",
+          lodges: "Tortilis mobile camps, Mawe Karatu",
+          peak: { p2: 2445, p4: 1935, p6: 1765 },
+          green: { p2: 2025, p4: 1515, p6: 1345 },
+        },
+        {
+          tier: "Premium",
+          summary: "Built halal-friendly lodges and upgraded camps near the park gates.",
+          lodges: "Ang'ata Camps, Turaco Ngorongoro Valley (built lodge)",
+          peak: { p2: 3045, p4: 2535, p6: 2365 },
+          green: { p2: 2755, p4: 2245, p6: 2075 },
+        },
+        {
+          tier: "Luxury",
+          summary: "Premium tented camps and a crater-rim lodge, the top of our range.",
+          lodges: "Lemala Camps, Ngorongoro rim lodge",
+          peak: { p2: 3755, p4: 3245, p6: 3075 },
+        },
+      ],
+    },
     season: "Year-round",
     description:
-      "5-day private Tanzania safari covering Tarangire, the central Serengeti, Ngorongoro Crater, and Lake Manyara. Four nights, private 4x4, full-board lodges. The shortest route that covers the northern circuit properly. From $1,900 per person.",
+      "5-day private Tanzania safari covering Tarangire, the central Serengeti, Ngorongoro Crater, and Lake Manyara. Four nights, private 4x4, full-board lodges. The shortest route that covers the northern circuit properly. From $1,345 per person.",
     heroImage: {
       src: "/serengeti-plains-golden-hour-tanzania-safari-hero.jpg",
       alt: "Serengeti plains at golden hour on a private Tanzania northern circuit safari",
@@ -770,7 +925,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 1,
         title: "Arusha to Tarangire",
         activities:
-          "Pickup from Arusha at 7:00am. The drive to Tarangire's main gate takes about two hours, heading southeast through Maasai village country before the acacia scrub thickens and the first baobabs appear. Some of these trees predate the Roman Empire. Enter through the main gate and head directly for the Tarangire River, where elephant concentrations in the dry season are the highest of any park on the northern circuit — herds of 150 or more are common along the riverbanks. Three hours of game driving before sunset check-in. One afternoon is not enough for Tarangire. It is enough to show you what is here.",
+          "Pickup from Arusha at 7:00am. The drive to Tarangire's main gate takes about two hours, heading southeast through Maasai village country before the acacia scrub thickens and the first baobabs appear. Some of these trees predate the Roman Empire. Enter through the main gate and head directly for the Tarangire River, where elephant concentrations in the dry season are the highest of any park on the northern circuit. Herds of 150 or more are common along the riverbanks. Three hours of game driving before sunset check-in. One afternoon is not enough for Tarangire. It is enough to show you what is here.",
         accommodation: "Tarangire Safari Lodge or similar",
         meals: "Lunch, Dinner",
       },
@@ -786,7 +941,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 3,
         title: "Full Day Serengeti",
         activities:
-          "Full day in the park. The Seronera Valley runs through the centre of the Serengeti and is the most consistent area for big cats year-round, regardless of where the migration herds are. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops 600 million years old, visible for kilometres across the open plains. Cheetahs work the short-grass south of the valley where visibility is longest. Out of everything on this route, this is the day with the most room to breathe. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $590 per person, booked in advance. The balloon works on this day — not Day 4, when transit to Ngorongoro makes a 5:30am departure impractical.",
+          "Full day in the park. The Seronera Valley runs through the centre of the Serengeti and is the most consistent area for big cats year-round, regardless of where the migration herds are. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops 600 million years old, visible for kilometres across the open plains. Cheetahs work the short-grass south of the valley where visibility is longest. Out of everything on this route, this is the day with the most room to breathe. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $590 per person, booked in advance. The balloon works on this day, not Day 4, when transit to Ngorongoro makes a 5:30am departure impractical.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -823,7 +978,7 @@ export const itineraries: Record<string, Itinerary> = {
       "Travel insurance",
       "Guide gratuity (suggested $25 per day)",
       "Lodge staff gratuity (suggested $5-7 per day via lodge tip box)",
-      "Hot air balloon safari (optional, $590 per person — see Day 3)",
+      "Hot air balloon safari (optional, $590 per person, see Day 3)",
       "Alcoholic beverages",
       "Personal expenses and souvenirs",
     ],
@@ -846,7 +1001,7 @@ export const itineraries: Record<string, Itinerary> = {
       {
         question: "How much does a 5-day Tanzania safari cost?",
         answer:
-          "The Jumbo Safaris 5-day northern circuit starts from $1,900 per person for two people sharing. The price includes all park fees (including the $295 Ngorongoro crater vehicle descent fee), private 4x4, guide, four nights accommodation, and all meals. It excludes the Tanzania eVisa ($50 for most nationalities), international flights, travel insurance, and guide gratuity (suggested $25 per day). The budget equivalent from shared group operators runs $800-1,200 per person for 5 days but puts you in a shared vehicle with strangers on a fixed departure date.",
+          "The Jumbo Safaris 5-day northern circuit is from $2,445 per person for two people sharing in the Comfort tier, dropping to around $1,345 per person for a group of six in green season. The price includes all park fees (including the $295 Ngorongoro crater vehicle descent fee), private 4x4, guide, four nights accommodation, and all meals. It excludes the Tanzania eVisa ($50 for most nationalities), international flights, travel insurance, and guide gratuity (suggested $25 per day). The budget equivalent from shared group operators runs $800-1,200 per person for 5 days but puts you in a shared vehicle with strangers on a fixed departure date.",
       },
       {
         question: "Should I add Zanzibar to a 5-day safari?",
@@ -861,7 +1016,7 @@ export const itineraries: Record<string, Itinerary> = {
       {
         question: "When is the best time to do the 5-day northern circuit?",
         answer:
-          "The route works year-round. June through October (dry season) gives the best conditions for spotting: short grass, animals concentrated around water sources, firm tracks. January and February bring calving season to the southern Serengeti plains, which is the most dramatic predator activity in the ecosystem — but benefiting from that on this route requires positioning in Ndutu rather than the central Serengeti, which means a different itinerary. November and December have the short rains: dramatically green landscapes, very few other tourists, lower lodge rates. April and May are the long rains; some roads become difficult.",
+          "The route works year-round. June through October (dry season) gives the best conditions for spotting: short grass, animals concentrated around water sources, firm tracks. January and February bring calving season to the southern Serengeti plains, which is the most dramatic predator activity in the ecosystem, but benefiting from that on this route requires positioning in Ndutu rather than the central Serengeti, which means a different itinerary. November and December have the short rains: dramatically green landscapes, very few other tourists, lower lodge rates. April and May are the long rains; some roads become difficult.",
       },
       {
         question: "Can this route be extended?",
@@ -875,10 +1030,33 @@ export const itineraries: Record<string, Itinerary> = {
     title: "11-Day Tanzania & Zanzibar",
     duration: "11 Days",
     parks: "Tarangire · Serengeti · Ngorongoro · Zanzibar",
-    price: "From $3,800 pp",
+    price: "From $2,515 pp",
+    pricing: {
+      fromPrice: 2515,
+      greenLabel: "Green season (April–May)",
+      peakLabel: "Peak season (June–October)",
+      basis:
+        "Per person sharing, US dollars. The 'from' price is the Comfort tier with six guests sharing in green season. Includes the Coastal Aviation flight to Zanzibar. Price drops as your group grows because the private vehicle and guide are shared. Built from real lodge rates, our own vehicle, and current park fees, not marked-up reseller prices.",
+      tiers: [
+        {
+          tier: "Comfort",
+          summary: "Comfortable tented camps on safari and a beach hotel on Zanzibar, fully private.",
+          lodges: "Tortilis camps, Mawe Karatu, Tembo Kiwengwa (Zanzibar)",
+          peak: { p2: 4090, p4: 3345, p6: 3095 },
+          green: { p2: 3510, p4: 2765, p6: 2515 },
+        },
+        {
+          tier: "Premium",
+          summary: "Built halal-friendly safari lodges and an all-inclusive Zanzibar resort.",
+          lodges: "Ang'ata Camps, Turaco Ngorongoro, Meliá Zanzibar",
+          peak: { p2: 5760, p4: 5010, p6: 4765 },
+          green: { p2: 5155, p4: 4405, p6: 4155 },
+        },
+      ],
+    },
     season: "Year-round",
     description:
-      "11-day Tanzania safari and Zanzibar beach trip. Six nights on the northern circuit covering Tarangire, Serengeti, and Ngorongoro, then a Coastal Aviation flight to Zanzibar for four nights on the Indian Ocean coast. From $3,800 per person.",
+      "11-day Tanzania safari and Zanzibar beach trip. Six nights on the northern circuit covering Tarangire, Serengeti, and Ngorongoro, then a Coastal Aviation flight to Zanzibar for four nights on the Indian Ocean coast. From $2,515 per person.",
     heroImage: {
       src: "/zanzibar-beach-resort-honeymoon-tanzania.jpg",
       alt: "Thatched beach bungalows on white coral sand with turquoise Indian Ocean water in Zanzibar, Tanzania",
@@ -946,7 +1124,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 7,
-        title: "Ngorongoro Crater — Full Day on the Floor",
+        title: "Ngorongoro Crater: Full Day on the Floor",
         activities:
           "Descent at 6:00am before the tourist vehicles arrive. The track drops 600 metres through cloud forest over 30 minutes of switchbacks. On the crater floor: approximately 120 lions, 50 black rhino at the densest population in East Africa, 15,000 wildebeest, 400 spotted hyenas, 9,000 zebra, all inside 260 square kilometres of enclosed caldera the animals rarely leave. Lake Magadi draws flamingos and hippos on the western floor. Picnic lunch at Ngoitokitok Springs, where the hippo pool is close enough to require no binoculars. All vehicles ascend by 6:00pm. Tonight is the last night in Tanzania's bush.",
         accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
@@ -962,7 +1140,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 9,
-        title: "Zanzibar — Stone Town",
+        title: "Zanzibar: Stone Town",
         activities:
           "Morning on the beach. Afternoon in Stone Town, a UNESCO World Heritage Site (listed 2000) about 20 minutes from most north coast properties. The old town is a compact Arab trading city: two styles of carved wooden doors (Omani rectangular, Indian round-topped), narrow alleyways, and the history of the East African spice trade. The last open slave market closed here in 1873 under the Frere Treaty. Christ Church Cathedral was built directly on the site, opened on Christmas Day 1879. The East Africa Slave Trade Exhibit and underground slave cells are both accessible on site. The Freddie Mercury family home is on Shangani Road, open daily 10am to 6pm. Mercury (born Farrokh Bulsara on 5 September 1946) grew up in this building. Spice tours depart from Kizimbani village, about 25 minutes from Stone Town, not from the city itself. Forodhani Gardens night market operates daily from about 6pm: Zanzibar pizza, urojo soup, grilled lobster and octopus, sugar cane juice, coconut water. This is dinner.",
         accommodation: "Beach property, north or east coast Zanzibar",
@@ -970,7 +1148,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 10,
-        title: "Zanzibar — Reef Snorkelling and Last Full Day",
+        title: "Zanzibar: Reef Snorkelling and Last Full Day",
         activities:
           "The main excursion option today is the Mnemba Atoll reef. The atoll is roughly 3 km offshore from the northeast coast (Matemwe), about 10 to 20 minutes by boat. Important distinction: the island itself is private (&Beyond holds the lease) with a 200-metre exclusion zone. Non-guests access the surrounding reef, not the island. The reef holds approximately 600 fish species, green sea turtles (Chelonia mydas, nesting February through September), and spinner and Indo-Pacific bottlenose dolphins typically encountered on the channel crossing. Entry fees apply: $10 adult for general reef access, $25 adult for the inner Marine Special Area (both enforced since 2023-24). Day trip through a local operator typically costs $60 to $85 per person. Best visibility is June through October and December through February. Alternatively: a spice tour at Kizimbani plantation (three hours, approximately $30 per person), or the beach. Last evening in Tanzania.",
         accommodation: "Beach property, north or east coast Zanzibar",
@@ -999,12 +1177,12 @@ export const itineraries: Record<string, Itinerary> = {
     ],
     excluded: [
       "International flights",
-      "Tanzania eVisa (US citizens: $100; most other nationalities: $50 — apply at visa.immigration.go.tz)",
+      "Tanzania eVisa (US citizens: $100; most other nationalities: $50; apply at visa.immigration.go.tz)",
       "Zanzibar mandatory ZIC insurance ($44 per person, collected on arrival)",
       "Travel insurance (required)",
       "Guide gratuity (suggested $25 per day for 6 safari days)",
       "Lodge staff gratuity (suggested $5-7 per day)",
-      "Hot air balloon safari ($590 per person, optional — see Day 5)",
+      "Hot air balloon safari ($590 per person, optional, see Day 5)",
       "Mnemba reef entry fees ($10-$25 per person)",
       "Zanzibar snorkelling excursions and optional activities",
       "Alcoholic beverages",
@@ -1034,7 +1212,7 @@ export const itineraries: Record<string, Itinerary> = {
       {
         question: "Do we need a separate visa for Zanzibar?",
         answer:
-          "No. Zanzibar is part of Tanzania. Your Tanzania eVisa covers the island. Apply at visa.immigration.go.tz before departure (not evisa.go.tz, which is no longer the correct address). Processing is officially 10 working days but in practice ranges from 3 days to 3 weeks. Apply at least two weeks before travel. Visa-on-arrival was suspended on 30 January 2025 — eVisa is now the required method for all nationalities. Fees: $50 for most nationalities (UK, EU, Australia, Canada). US citizens pay $100 for a mandatory Multiple Entry visa. Irish passport holders also pay $100.",
+          "No. Zanzibar is part of Tanzania. Your Tanzania eVisa covers the island. Apply at visa.immigration.go.tz before departure (not evisa.go.tz, which is no longer the correct address). Processing is officially 10 working days but in practice ranges from 3 days to 3 weeks. Apply at least two weeks before travel. Visa-on-arrival was suspended on 30 January 2025. The eVisa is now the required method for all nationalities. Fees: $50 for most nationalities (UK, EU, Australia, Canada). US citizens pay $100 for a mandatory Multiple Entry visa. Irish passport holders also pay $100.",
       },
       {
         question: "What is the Zanzibar mandatory insurance?",
@@ -1049,7 +1227,7 @@ export const itineraries: Record<string, Itinerary> = {
       {
         question: "How does this compare to the honeymoon safari?",
         answer:
-          "The honeymoon safari has one more safari night (seven versus six) and includes couples-specific additions: champagne on arrival at each lodge, private sundowners, a crater-floor picnic at Ngorongoro, and a sunset dhow cruise in Zanzibar. It is priced from $5,500 per person versus $3,800 for this route. The 11-day Tanzania and Zanzibar itinerary is the same core circuit without the honeymoon-specific setup. Both routes are entirely private.",
+          "The honeymoon safari has one more safari night (seven versus six) and includes couples-specific additions: champagne on arrival at each lodge, private sundowners, a crater-floor picnic at Ngorongoro, and a sunset dhow cruise in Zanzibar. It is priced from $4,070 per person versus $2,515 for this route. The 11-day Tanzania and Zanzibar itinerary is the same core circuit without the honeymoon-specific setup. Both routes are entirely private.",
       },
     ],
     additionalSections: [
@@ -1062,8 +1240,8 @@ export const itineraries: Record<string, Itinerary> = {
         body: "&Beyond holds the long-term lease on Mnemba Island under the Government of Zanzibar. The island has 12 bandas and a 200-metre marine exclusion zone around the shoreline. Non-guests cannot land on the island or enter that zone.\n\nThe surrounding reef is different. The Mnemba Atoll reef is publicly accessible under the Mnemba Island Marine Conservation Area (MIMCA) designation. A more restricted inner zone (Mnemba Island Marine Special Area, proclaimed December 2023) operates with a maximum of 8 boats per day, no anchoring, and defined access hours.\n\nEntry fees as of mid-2025: $10 adult for general reef access, $25 adult for the inner Marine Special Area. Fees are collected by MIMCA on the water and are often bundled into day-trip pricing.\n\nThe reef holds approximately 600 fish species including Napoleon wrasse, regal angelfish, and blue-spotted rays. Green sea turtles (Chelonia mydas) nest at Mnemba from February through September. Spinner dolphins and Indo-Pacific bottlenose dolphins are regularly encountered on the channel crossing from Matemwe, roughly 3 km and 10 to 20 minutes by boat. Humpback whales pass through July through September. Best visibility is June through October and December through February, up to 20 to 30 metres in optimal conditions.\n\nDay trips from the northeast coast run $60 to $85 per person through local operators. The trip is worth booking through your resort rather than independently to avoid overloaded boats.",
       },
       {
-        heading: "Visas and Entry — Updated for 2025",
-        body: "Tanzania eVisa is the required entry method for all nationalities. Visa-on-arrival was suspended on 30 January 2025; multiple foreign ministries (France, Canada, UK) have updated their advisories accordingly. Apply online at visa.immigration.go.tz — not evisa.go.tz, which is no longer the correct address.\n\nFees: most nationalities (UK, EU, Australia, Canada) pay $50 for a single-entry visa valid 90 days. US citizens pay $100 for a mandatory Multiple Entry visa valid 12 months — they cannot choose the $50 single-entry option. Irish passport holders also pay $100. Apply at least two weeks before departure. Official processing time is 10 working days; in practice this ranges from 3 days to 3 weeks.\n\nYour Tanzania eVisa covers both mainland Tanzania and Zanzibar. You fill in a short second immigration form on the Coastal Aviation flight to Zanzibar. It takes about three minutes.\n\nZanzibar mandatory insurance: since October 2024, all foreign visitors arriving in Zanzibar must pay $44 for the ZIC (Zanzibar Insurance Certificate) on arrival. This covers 92 days of medical care, repatriation, and emergency evacuation. It is collected at Zanzibar airport or the ferry terminal and is fully enforced. As of June 2025 over $20 million had been collected. It is not optional and it is not included in your safari package price.\n\nYellow fever vaccination: not required if you are travelling directly from the US, UK, EU, Canada, or Australia. It is required if you have spent 12 or more hours in transit through Nairobi, or if you leave the transit zone at any point during a layover, even briefly. Under 12 hours airside-only at Nairobi: not required. Confirm your specific itinerary with a travel medicine clinic before departure.",
+        heading: "Visas and Entry: Updated for 2025",
+        body: "Tanzania eVisa is the required entry method for all nationalities. Visa-on-arrival was suspended on 30 January 2025; multiple foreign ministries (France, Canada, UK) have updated their advisories accordingly. Apply online at visa.immigration.go.tz (not evisa.go.tz, which is no longer the correct address).\n\nFees: most nationalities (UK, EU, Australia, Canada) pay $50 for a single-entry visa valid 90 days. US citizens pay $100 for a mandatory Multiple Entry visa valid 12 months. They cannot choose the $50 single-entry option. Irish passport holders also pay $100. Apply at least two weeks before departure. Official processing time is 10 working days; in practice this ranges from 3 days to 3 weeks.\n\nYour Tanzania eVisa covers both mainland Tanzania and Zanzibar. You fill in a short second immigration form on the Coastal Aviation flight to Zanzibar. It takes about three minutes.\n\nZanzibar mandatory insurance: since October 2024, all foreign visitors arriving in Zanzibar must pay $44 for the ZIC (Zanzibar Insurance Certificate) on arrival. This covers 92 days of medical care, repatriation, and emergency evacuation. It is collected at Zanzibar airport or the ferry terminal and is fully enforced. As of June 2025 over $20 million had been collected. It is not optional and it is not included in your safari package price.\n\nYellow fever vaccination: not required if you are travelling directly from the US, UK, EU, Canada, or Australia. It is required if you have spent 12 or more hours in transit through Nairobi, or if you leave the transit zone at any point during a layover, even briefly. Under 12 hours airside-only at Nairobi: not required. Confirm your specific itinerary with a travel medicine clinic before departure.",
       },
     ],
   },
@@ -1072,10 +1250,39 @@ export const itineraries: Record<string, Itinerary> = {
     title: "Family Safari Tanzania",
     duration: "8 Days",
     parks: "Tarangire · Serengeti · Ngorongoro",
-    price: "From $2,800 pp",
+    price: "From $1,945 pp",
+    pricing: {
+      fromPrice: 1945,
+      greenLabel: "Green season (April–May)",
+      peakLabel: "Peak season (June–October)",
+      basis:
+        "Per person sharing, US dollars. The 'from' price is the Comfort tier with six guests sharing in green season. Children 5–15 sharing with parents are charged roughly half the adult rate, and many lodges put under-5s free, so a real family of four costs less per head than the adult prices shown. Luxury camps close in April–May, so green season shows Comfort and Premium only. Built from real lodge rates, our own vehicle, and current park fees, not marked-up reseller prices.",
+      tiers: [
+        {
+          tier: "Comfort",
+          summary: "Family-friendly tented camps and lodges with room for children, full board, fully private.",
+          lodges: "Tortilis camps, Mawe Karatu",
+          peak: { p2: 3580, p4: 2830, p6: 2580 },
+          green: { p2: 2940, p4: 2195, p6: 1945 },
+        },
+        {
+          tier: "Premium",
+          summary: "Built halal-friendly lodges with family rooms near the park gates.",
+          lodges: "Ang'ata Camps, Turaco Ngorongoro Valley (built lodge)",
+          peak: { p2: 4720, p4: 3970, p6: 3725 },
+          green: { p2: 4235, p4: 3490, p6: 3240 },
+        },
+        {
+          tier: "Luxury",
+          summary: "Premium camps and a crater-rim lodge with family suites, the top of our range.",
+          lodges: "Lemala Camps, Ngorongoro rim lodge",
+          peak: { p2: 5925, p4: 5175, p6: 4925 },
+        },
+      ],
+    },
     season: "Year-round",
     description:
-      "8-day private family safari in Tanzania. Tarangire, Serengeti, and Ngorongoro Crater on the northern circuit, paced for children aged 5 and up. Private vehicle, booster seats provided, guide briefed for mixed-age groups. From $2,800 per person.",
+      "8-day private family safari in Tanzania. Tarangire, Serengeti, and Ngorongoro Crater on the northern circuit, paced for children aged 5 and up. Private vehicle, booster seats provided, guide briefed for mixed-age groups. From $1,945 per person.",
     heroImage: {
       src: "/tarangire-elephants-baobab-tanzania-safari.jpg",
       alt: "Elephant herd with calves passing a giant baobab tree in Tarangire National Park, Tanzania",
@@ -1097,7 +1304,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 1,
         title: "Arusha to Tarangire",
         activities:
-          "Pickup from your Arusha hotel at 7:30am. The drive to Tarangire takes about two hours. Watch for the first baobabs as the road enters the park's outer zone — some of them are over a thousand years old. At Tarangire's main gate, enter and head directly for the river. In the dry season, elephant concentrations here are the highest of any park on the northern circuit, with herds of 150 or more common along the Tarangire River. Three hours of game driving before sunset check-in. Most family lodges can arrange dinner at 6:30pm for early bedtimes.",
+          "Pickup from your Arusha hotel at 7:30am. The drive to Tarangire takes about two hours. Watch for the first baobabs as the road enters the park's outer zone. Some of them are over a thousand years old. At Tarangire's main gate, enter and head directly for the river. In the dry season, elephant concentrations here are the highest of any park on the northern circuit, with herds of 150 or more common along the Tarangire River. Three hours of game driving before sunset check-in. Most family lodges can arrange dinner at 6:30pm for early bedtimes.",
         accommodation: "Tarangire Safari Lodge or similar",
         meals: "Lunch, Dinner",
       },
@@ -1121,7 +1328,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 4,
         title: "Full Day Serengeti",
         activities:
-          "Full day in the Seronera Valley, the most consistent big-cat zone in the Serengeti year-round. Lions on the kopjes, granite outcrops 600 million years old. Leopards in the sausage trees above the river. Cheetahs on the short-grass plains. Your guide briefs the whole family before each drive: what to look for, how to identify tracks and behaviour. Game viewing holds children's attention when they have a job to do — looking for the right ear shape, counting cubs, spotting which animal moved first. Return to the lodge for lunch, pool time, and rest before the afternoon drive. Afternoon drives are shortened to 4:00pm-6:00pm for younger children.",
+          "Full day in the Seronera Valley, the most consistent big-cat zone in the Serengeti year-round. Lions on the kopjes, granite outcrops 600 million years old. Leopards in the sausage trees above the river. Cheetahs on the short-grass plains. Your guide briefs the whole family before each drive: what to look for, how to identify tracks and behaviour. Game viewing holds children's attention when they have a job to do: looking for the right ear shape, counting cubs, spotting which animal moved first. Return to the lodge for lunch, pool time, and rest before the afternoon drive. Afternoon drives are shortened to 4:00pm-6:00pm for younger children.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -1143,7 +1350,7 @@ export const itineraries: Record<string, Itinerary> = {
       },
       {
         day: 7,
-        title: "Ngorongoro Crater — Full Day on the Floor",
+        title: "Ngorongoro Crater: Full Day on the Floor",
         activities:
           "Descent at 6:00am before the tourist buses arrive. The track drops 600 metres through cloud forest over 30 minutes of switchbacks. On the crater floor in 260 square kilometres: approximately 120 lions, 50 black rhino at the densest population in East Africa, 15,000 wildebeest, 400 spotted hyenas, 9,000 zebra. The crater walls keep the animals inside. Picnic lunch at Ngoitokitok Springs, where the hippo pool is close enough to require no binoculars and deep enough to fascinate every age. All vehicles must ascend by 6:00pm. The crater is the day on this trip that families almost uniformly describe as the one they were not prepared for.",
         accommodation: "Ngorongoro Serena Safari Lodge or similar rim lodge",
@@ -1232,8 +1439,8 @@ export const itineraries: Record<string, Itinerary> = {
         body: "The vehicle, the parks, and the wildlife are identical to any other private safari. What changes is everything around those things.\n\nDrive timing. Family drives start at 6:30am rather than 6:00am, end at 11:30am rather than 12:30pm, and run 4:00pm to 6:00pm in the afternoon rather than 3:30pm to 6:30pm. For children under 7, afternoon drives are often dropped entirely in favour of lodge pool time and rest. This is a deliberate structure, not a compromise. Children who are well-rested and fed see more and remember more.\n\nGuide briefing. We brief the guide on the ages and interests of each child before departure. The guide's job changes from narrating wildlife to giving children a role: counting cubs, watching which direction the herd is moving, calling out what they spot first. Animal-spotting checklists and \"freshest tracks\" competitions make the drive active rather than passive.\n\nBinoculars. The single most consistently cited difference between a successful family safari and an average one. A distant animal through adult eyes is still recognisable. Through 5-year-old eyes without binoculars, it is a brown smudge. Bring a pair for each child (8x25 or 10x25 for small hands) and brief them on how to use them before the first drive.\n\nPop-up roof. Children can and do use the pop-up roof on game drives, with adult supervision. Your guide will ask everyone to sit down during close approaches with lion, elephant, or buffalo. Compliance is immediate. The open-air position at the pop-up is one of the experiences children remember most.",
       },
       {
-        heading: "Lodge Age Policies — What to Know Before Booking",
-        body: "Not every camp on the northern circuit accepts young children. Some of the most famous names in Tanzania's safari circuit impose minimum ages of 8, 10, or 12 — often because of unfenced perimeters, adult-focused ambiance, or walking-safari contexts that require a minimum age for safety. This is not arbitrary and it is not usually explained on the booking page.\n\nFor this family itinerary, we select properties that accept children from age 5 with no restrictions and have family rooms or interconnecting configurations: Tarangire Safari Lodge, Serengeti Serena Safari Lodge, and Ngorongoro Serena Safari Lodge are confirmed family-appropriate choices at mid-range pricing. At the step-up end, the Four Seasons Safari Lodge Serengeti accepts children from age 2 and runs the Kijana Klub programme (daily 10am-6pm, ages 2-17, complimentary) with Maasai warrior morning sessions, fire-starting, beadwork, and a Cheetah Watch programme for teenagers involving real camera-trap research.\n\nFamily and interconnecting rooms are limited inventory at every property. They book out before standard rooms. Send us your children's ages when you first enquire — not after you have confirmed dates.",
+        heading: "Lodge Age Policies: What to Know Before Booking",
+        body: "Not every camp on the northern circuit accepts young children. Some of the most famous names in Tanzania's safari circuit impose minimum ages of 8, 10, or 12, often because of unfenced perimeters, adult-focused ambiance, or walking-safari contexts that require a minimum age for safety. This is not arbitrary and it is not usually explained on the booking page.\n\nFor this family itinerary, we select properties that accept children from age 5 with no restrictions and have family rooms or interconnecting configurations: Tarangire Safari Lodge, Serengeti Serena Safari Lodge, and Ngorongoro Serena Safari Lodge are confirmed family-appropriate choices at mid-range pricing. At the step-up end, the Four Seasons Safari Lodge Serengeti accepts children from age 2 and runs the Kijana Klub programme (daily 10am-6pm, ages 2-17, complimentary) with Maasai warrior morning sessions, fire-starting, beadwork, and a Cheetah Watch programme for teenagers involving real camera-trap research.\n\nFamily and interconnecting rooms are limited inventory at every property. They book out before standard rooms. Send us your children's ages when you first enquire, not after you have confirmed dates.",
       },
       {
         heading: "Health, Vaccinations, and Sun",

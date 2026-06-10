@@ -38,7 +38,7 @@ export default function FamilySafariPage() {
       {
         "@type": "Question",
         name: "How much does a family safari in Tanzania cost?",
-        acceptedAnswer: { "@type": "Answer", text: "Family safaris start from $2,800 per person based on two adults sharing, with children priced separately. The recommended 8-day northern circuit covers Tarangire, Serengeti, and Ngorongoro Crater. An accurate quote depends on group size, ages, travel dates, and preferred lodge tier." },
+        acceptedAnswer: { "@type": "Answer", text: "Family safaris start from $3,580 per person based on two adults sharing in the Comfort tier, dropping to around $1,945 per person for a group of six in green season. Children aged 5 to 15 sharing with parents are charged roughly half the adult rate, and many lodges put under-5s free, so a real family of four costs less per head than the adult rate. The recommended 8-day northern circuit covers Tarangire, Serengeti, and Ngorongoro Crater. An accurate quote depends on group size, ages, travel dates, and preferred lodge tier." },
       },
       {
         "@type": "Question",
@@ -122,7 +122,7 @@ export default function FamilySafariPage() {
                 </div>
                 <div>
                   <dt className="text-forest/60 font-semibold uppercase tracking-widest text-xs">Starting price</dt>
-                  <dd className="font-semibold text-forest">From $2,800 per person</dd>
+                  <dd className="font-semibold text-forest">From $1,945 per person</dd>
                 </div>
               </dl>
             </div>

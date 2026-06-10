@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     } = data
 
     const message = `
-NEW SAFARI ENQUIRY — Jumbo Safaris Website
+NEW SAFARI ENQUIRY: Jumbo Safaris Website
 ==========================================
 
 CONTACT DETAILS
@@ -56,7 +56,7 @@ ${notes || "None"}
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         access_key: process.env.WEB3FORMS_ACCESS_KEY,
-        subject: `Safari Enquiry — ${firstName} ${lastName} | ${adults} adults | ${date}`,
+        subject: `Safari Enquiry: ${firstName} ${lastName} | ${adults} adults | ${date}`,
         from_name: "Jumbo Safaris Website",
         email: "hello@jumbosafaris.com",
         message,

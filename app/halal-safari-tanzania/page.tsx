@@ -67,7 +67,7 @@ const tours = [
 const standards = [
   {
     title: "Halal Food",
-    body: "All meat served on your safari comes from BAKWATA-certified halal suppliers in Arusha. Your camp cook sources from these certified suppliers for every bush meal. On arrival nights in Arusha, we use Khan's Barbecue on Mosque Street — a Muslim-family-run grill with over 1,000 TripAdvisor reviews that has been feeding travellers for decades. We do not serve pork or alcohol at your table.",
+    body: "All meat served on your safari comes from BAKWATA-certified halal suppliers in Arusha. Your camp cook sources from these certified suppliers for every bush meal. On arrival nights in Arusha, we use Khan's Barbecue on Mosque Street, a Muslim-family-run grill with over 1,000 TripAdvisor reviews that has been feeding travellers for decades. We do not serve pork or alcohol at your table.",
   },
   {
     title: "Prayer Logistics",
@@ -288,7 +288,7 @@ export default function HalalSafariTanzania() {
         </div>
       </section>
 
-      {/* Answer block — AI extraction target */}
+      {/* Answer block: AI extraction target */}
       <section className="py-14 px-6 bg-cream border-b border-border-soft">
         <div className="max-w-content mx-auto max-w-3xl">
           <p className="text-body-mobile lg:text-body-desktop text-ink leading-relaxed">

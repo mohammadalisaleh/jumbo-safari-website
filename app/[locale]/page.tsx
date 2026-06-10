@@ -56,7 +56,7 @@ const featuredItineraries = [
     descriptionEn: "Experience the best of the Northern Circuit with game drives in Tarangire, Serengeti, and Ngorongoro Crater.",
     descriptionPl: "Poznaj najlepsze miejsca Północnego Szlaku z safari w Tarangire, Serengeti i Kraterze Ngorongoro.",
     descriptionCs: "Zažijte to nejlepší ze Severního okruhu s game drive v Tarangire, Serengeti a Ngorongorovém kráteru.",
-    price: "$3,200",
+    price: "$1,945",
     image: { src: "/tarangire-elephants-baobab-tanzania-safari.jpg", alt: "Elephant herd passing a giant baobab tree in Tarangire National Park, Tanzania" },
   },
   {
@@ -66,7 +66,7 @@ const featuredItineraries = [
     descriptionEn: "Witness the miracle of birth on the Serengeti plains during the annual wildebeest calving season.",
     descriptionPl: "Bądź świadkiem cudu narodzin na równinach Serengeti podczas corocznego sezonu cielenia się gnu.",
     descriptionCs: "Buďte svědkem zázraku narození na pláních Serengeti během každoročního období telení pakoňů.",
-    price: "$2,800",
+    price: "$2,595",
     image: { src: "/wildebeest-calf-ndutu-calving-season-tanzania.jpg", alt: "Newborn wildebeest calf running alongside its mother through Lake Ndutu during calving season, Tanzania" },
   },
   {
@@ -74,9 +74,9 @@ const featuredItineraries = [
     slug: "honeymoon-tanzania-zanzibar",
     duration: "11 Days",
     descriptionEn: "Romance meets adventure with safari game drives followed by pristine beaches in Zanzibar.",
-    descriptionPl: "Romans spotyka się z przygodą — safari, a potem dziewicze plaże Zanzibaru.",
-    descriptionCs: "Romantika se setkává s dobrodružstvím — safari a poté nedotčené pláže Zanzibaru.",
-    price: "$5,500",
+    descriptionPl: "Romans spotyka się z przygodą: safari, a potem dziewicze plaże Zanzibaru.",
+    descriptionCs: "Romantika se setkává s dobrodružstvím: safari a poté nedotčené pláže Zanzibaru.",
+    price: "$4,070",
     image: { src: "/zanzibar-beach-resort-honeymoon-tanzania.jpg", alt: "Thatched beach bungalows on white coral sand with turquoise Indian Ocean water in Zanzibar, Tanzania" },
   },
 ]
@@ -196,7 +196,7 @@ export default async function HomePage({ params }: PageProps) {
         <div className="max-w-content mx-auto px-6 py-2">
           <div className="flex items-center justify-center sm:justify-between gap-8 sm:gap-2">
 
-            {/* Left — WhatsApp */}
+            {/* Left: WhatsApp */}
             <a
               href="https://wa.me/255742789292"
               className="flex items-center gap-1.5 hover:text-orange transition-colors group flex-shrink-0"
@@ -207,7 +207,7 @@ export default async function HomePage({ params }: PageProps) {
               </span>
             </a>
 
-            {/* Centre — Rating badges — hidden on mobile, shown sm and up */}
+            {/* Centre: rating badges, hidden on mobile, shown sm and up */}
             <div className="hidden sm:flex items-center gap-5">
               {/* Google badge */}
               <div className="flex items-center gap-1.5">
@@ -242,7 +242,7 @@ export default async function HomePage({ params }: PageProps) {
               </div>
             </div>
 
-            {/* Right — Email */}
+            {/* Right: Email */}
             <a
               href="mailto:hello@jumbosafaris.com"
               className="flex items-center gap-1.5 hover:text-orange transition-colors group flex-shrink-0"
@@ -265,12 +265,12 @@ export default async function HomePage({ params }: PageProps) {
         {/* Background image */}
         <Image
           src="/serengeti-plains-golden-hour-tanzania-safari-hero.jpg"
-          alt="Serengeti plains at golden hour, Tanzania — private guided safari with Jumbo Safaris"
+          alt="Serengeti plains at golden hour, Tanzania, private guided safari with Jumbo Safaris"
           fill
           className="object-cover object-center"
           priority
         />
-        {/* Light overlay — lets the Serengeti photo breathe, darker on left for text legibility */}
+        {/* Light overlay: lets the Serengeti photo breathe, darker on left for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/38 to-black/15" />
 
         <div className="relative z-10 w-full max-w-content mx-auto px-6 py-10 md:py-16">
@@ -303,7 +303,7 @@ export default async function HomePage({ params }: PageProps) {
               </ul>
             </div>
 
-            {/* ── RIGHT: Form card — desktop only inside hero ── */}
+            {/* ── RIGHT: Form card, desktop only inside hero ── */}
             <div className="hidden lg:flex lg:justify-end">
               <HeroForm locale={locale} accessKey={accessKey} />
             </div>
@@ -311,7 +311,7 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* ── MOBILE FORM — shown below hero on mobile only ── */}
+      {/* ── MOBILE FORM, shown below hero on mobile only ── */}
       <div className="lg:hidden bg-forest">
         <div className="max-w-content mx-auto px-4 py-6">
           <HeroForm locale={locale} accessKey={accessKey} />
