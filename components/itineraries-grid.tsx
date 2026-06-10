@@ -36,20 +36,24 @@ export function ItinerariesGrid({ items }: Props) {
   return (
     <>
       {/* Filter bar */}
-      <div className="flex gap-2 overflow-x-auto pb-1 mb-10 -mx-1 px-1">
-        {FILTERS.map((filter) => (
-          <button
-            key={filter.key}
-            onClick={() => setActiveFilter(filter.key)}
-            className={`flex-shrink-0 px-4 py-2 font-montserrat font-semibold text-sm transition-colors ${
-              activeFilter === filter.key
-                ? "bg-forest text-cream"
-                : "bg-white border border-border-soft text-forest hover:bg-forest/5"
-            }`}
-          >
-            {filter.label}
-          </button>
-        ))}
+      <div className="relative mb-10 -mx-1">
+        <div className="flex gap-2 overflow-x-auto pb-1 px-1 scrollbar-hide">
+          {FILTERS.map((filter) => (
+            <button
+              key={filter.key}
+              onClick={() => setActiveFilter(filter.key)}
+              className={`flex-shrink-0 px-4 py-2 font-montserrat font-semibold text-sm transition-colors ${
+                activeFilter === filter.key
+                  ? "bg-forest text-cream"
+                  : "bg-white border border-border-soft text-forest hover:bg-forest/5"
+              }`}
+            >
+              {filter.label}
+            </button>
+          ))}
+        </div>
+        {/* Right fade — signals horizontal scroll on mobile */}
+        <div className="absolute right-0 top-0 bottom-1 w-12 bg-gradient-to-l from-cream to-transparent pointer-events-none lg:hidden" />
       </div>
 
       {/* Grid */}
