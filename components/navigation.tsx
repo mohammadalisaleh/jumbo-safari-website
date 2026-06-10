@@ -144,10 +144,13 @@ export function Navigation() {
                 onMouseEnter={() => setOpenDropdown(item.label)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                <button className="flex items-center gap-1 font-montserrat font-semibold text-forest hover:text-orange transition-colors py-2">
+                <Link
+                  href={item.href}
+                  className="flex items-center gap-1 font-montserrat font-semibold text-forest hover:text-orange transition-colors py-2"
+                >
                   {item.label}
                   <ChevronDown className="w-4 h-4" />
-                </button>
+                </Link>
 
                 {/* Mega Menu Dropdown */}
                 {openDropdown === item.label && (
