@@ -1,0 +1,126 @@
+"use client"
+
+import { useState } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
+import { Itinerary } from "@/lib/data/itineraries"
+
+export interface GridItem {
+  itinerary: Itinerary
+  href: string
+  tags: string[]
+  badge: string
+}
+
+interface Props {
+  items: GridItem[]
+}
+
+const FILTERS = [
+  { key: "all", label: "All Itineraries" },
+  { key: "short", label: "5–7 Days" },
+  { key: "classic", label: "8 Days" },
+  { key: "extended", label: "10–11 Days" },
+  { key: "seasonal", label: "Seasonal" },
+  { key: "honeymoon", label: "Honeymoon" },
+  { key: "family", label: "Family" },
+]
+
+export function ItinerariesGrid({ items }: Props) {
+  const [activeFilter, setActiveFilter] = useState("all")
+
+  const filtered =
+    activeFilter === "all" ? items : items.filter((item) => item.tags.includes(activeFilter))
+
+  return (
+    <>
+      {/* Filter bar */}
+      <div className="flex gap-2 overflow-x-auto pb-1 mb-10 -mx-1 px-1">
+        {FILTERS.map((filter) => (
+          <button
+            key={filter.key}
+            onClick={() => setActiveFilter(filter.key)}
+            className={`flex-shrink-0 px-4 py-2 font-montserrat font-semibold text-sm transition-colors ${
+              activeFilter === filter.key
+                ? "bg-forest text-cream"
+                : "bg-white border border-border-soft text-forest hover:bg-forest/5"
+            }`}
+          >
+            {filter.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Grid */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {filtered.map(({ itinerary, href, badge }) => {
+          const fromPrice = itinerary.pricing?.fromPrice
+          const hasGreenSeason = !!itinerary.pricing?.greenLabel
+
+          return (
+            <article
+              key={itinerary.slug}
+              className="border border-border-soft bg-white flex flex-col"
+            >
+              <div className="aspect-[4/3] bg-forest overflow-hidden">
+                {itinerary.heroImage ? (
+                  <Image
+                    src={itinerary.heroImage.src}
+                    alt={itinerary.heroImage.alt}
+                    width={600}
+                    height={450}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-forest">
+                    <span className="text-cream/40 text-sm font-inter">{itinerary.title}</span>
+                  </div>
+                )}
+              </div>
+              <div className="p-6 flex flex-col flex-1">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-block bg-orange text-cream text-xs font-montserrat font-semibold px-3 py-1">
+                    {itinerary.duration}
+                  </span>
+                  <span className="inline-block border border-forest text-forest text-xs font-montserrat font-semibold px-3 py-1">
+                    {badge}
+                  </span>
+                </div>
+                <h2 className="font-montserrat font-bold text-[22px] text-forest mb-2 leading-snug">
+                  {itinerary.title}
+                </h2>
+                {fromPrice ? (
+                  <div className="mb-3 flex items-baseline gap-1">
+                    <span className="font-montserrat font-bold text-xl text-orange">
+                      From ${fromPrice.toLocaleString()}
+                    </span>
+                    <span className="text-xs text-ink/60">pp</span>
+                    {hasGreenSeason && (
+                      <span className="text-xs text-ink/40 ml-1">green season</span>
+                    )}
+                  </div>
+                ) : (
+                  <p className="text-sm text-ink/70 mb-3">{itinerary.price}</p>
+                )}
+                <p className="text-sm text-ink/60 mb-4">{itinerary.parks}</p>
+                <p className="text-sm text-ink mb-5 line-clamp-3 flex-1">{itinerary.description}</p>
+                <Link
+                  href={href}
+                  className="inline-flex items-center text-forest font-semibold hover:text-orange transition-colors group"
+                >
+                  View Itinerary
+                  <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </article>
+          )
+        })}
+      </div>
+
+      {filtered.length === 0 && (
+        <p className="text-center text-ink/60 py-16">No itineraries match this filter.</p>
+      )}
+    </>
+  )
+}
