@@ -88,7 +88,7 @@ export const itineraries: Record<string, Itinerary> = {
         },
         {
           tier: "Premium",
-          summary: "Built halal-friendly lodges and upgraded camps in prime locations near the gates.",
+          summary: "Built lodges and upgraded camps in prime locations near the park gates.",
           lodges: "Ang'ata Camps, Turaco Ngorongoro Valley (built lodge)",
           peak: { p2: 5530, p4: 4735, p6: 4465 },
           green: { p2: 4430, p4: 3630, p6: 3365 },
@@ -259,7 +259,7 @@ export const itineraries: Record<string, Itinerary> = {
         },
         {
           tier: "Premium",
-          summary: "Upgraded halal-friendly tented camps in the heart of the calving grounds.",
+          summary: "Upgraded tented camps in the heart of the calving grounds.",
           lodges: "Ang'ata Migration Camp (Ndutu), Ang'ata Ngorongoro",
           peak: { p2: 4310, p4: 3600, p6: 3365 },
         },
@@ -418,7 +418,7 @@ export const itineraries: Record<string, Itinerary> = {
         },
         {
           tier: "Premium",
-          summary: "Upgraded halal-friendly camps positioned for the river crossings.",
+          summary: "Upgraded tented camp at Kogatende, positioned for the river crossings.",
           lodges: "Ang'ata Migration Camp (Kogatende), Gran Meliá Arusha",
           peak: { p2: 6900, p4: 5570, p6: 5125 },
         },
@@ -625,7 +625,7 @@ export const itineraries: Record<string, Itinerary> = {
       tiers: [
         {
           tier: "Premium",
-          summary: "Built halal-friendly safari lodges and a beachfront resort on Zanzibar.",
+          summary: "Private safari camps with honeymoon touches and a beachfront resort on Zanzibar.",
           lodges: "Ang'ata Camps, Turaco Ngorongoro, Meliá Zanzibar",
           peak: { p2: 6610, p4: 5820, p6: 5555 },
           green: { p2: 5245, p4: 4455, p6: 4195 },
@@ -888,7 +888,7 @@ export const itineraries: Record<string, Itinerary> = {
         },
         {
           tier: "Premium",
-          summary: "Built halal-friendly lodges and upgraded camps near the park gates.",
+          summary: "Built lodges and upgraded camps near the park gates.",
           lodges: "Ang'ata Camps, Turaco Ngorongoro Valley (built lodge)",
           peak: { p2: 3465, p4: 2925, p6: 2745 },
           green: { p2: 2860, p4: 2320, p6: 2140 },
@@ -1047,7 +1047,7 @@ export const itineraries: Record<string, Itinerary> = {
         },
         {
           tier: "Premium",
-          summary: "Built halal-friendly safari lodges and an all-inclusive Zanzibar resort.",
+          summary: "Built safari lodges and an all-inclusive beachfront resort on Zanzibar.",
           lodges: "Ang'ata Camps, Turaco Ngorongoro, Meliá Zanzibar",
           peak: { p2: 6700, p4: 5910, p6: 5645 },
           green: { p2: 5285, p4: 4495, p6: 4230 },
@@ -1267,7 +1267,7 @@ export const itineraries: Record<string, Itinerary> = {
         },
         {
           tier: "Premium",
-          summary: "Built halal-friendly lodges with family rooms near the park gates.",
+          summary: "Built lodges with family rooms near the park gates.",
           lodges: "Ang'ata Camps, Turaco Ngorongoro Valley (built lodge)",
           peak: { p2: 5530, p4: 4735, p6: 4465 },
           green: { p2: 4430, p4: 3630, p6: 3365 },
@@ -1486,7 +1486,7 @@ export const sevenDayItinerary: Itinerary = {
       },
       {
         tier: "Premium",
-        summary: "Built halal-friendly lodges and upgraded camps in prime locations near the gates.",
+        summary: "Built lodges and upgraded camps in prime locations near the park gates.",
         lodges: "Ang'ata Camps, Turaco Ngorongoro Valley (built lodge)",
         peak: { p2: 4670, p4: 3960, p6: 3720 },
         green: { p2: 3945, p4: 3230, p6: 2995 },
