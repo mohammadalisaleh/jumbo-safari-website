@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, ChevronRight } from "lucide-react"
 import { Itinerary } from "@/lib/data/itineraries"
 
 export interface GridItem {
@@ -52,8 +52,10 @@ export function ItinerariesGrid({ items }: Props) {
             </button>
           ))}
         </div>
-        {/* Right fade — signals horizontal scroll on mobile */}
-        <div className="absolute right-0 top-0 bottom-1 w-12 bg-gradient-to-l from-cream to-transparent pointer-events-none lg:hidden" />
+        {/* Scroll hint — fade + arrow on mobile */}
+        <div className="absolute right-0 top-0 bottom-1 w-14 bg-gradient-to-l from-cream via-cream/80 to-transparent pointer-events-none lg:hidden flex items-center justify-end pr-1">
+          <ChevronRight className="w-5 h-5 text-forest" />
+        </div>
       </div>
 
       {/* Grid */}
