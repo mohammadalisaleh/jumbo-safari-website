@@ -234,19 +234,28 @@ export function Navigation() {
             <div className="space-y-2">
               {navItems.map((item) => (
                 <div key={item.label} className="border-b border-cream/20">
-                  <button
-                    className="w-full flex items-center justify-between py-4 text-cream font-montserrat font-semibold text-lg"
-                    onClick={() =>
-                      setOpenMobileSection(openMobileSection === item.label ? null : item.label)
-                    }
-                  >
-                    {item.label}
-                    <ChevronDown
-                      className={`w-5 h-5 transition-transform ${
-                        openMobileSection === item.label ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
+                  <div className="flex items-center justify-between">
+                    <Link
+                      href={item.href}
+                      className="flex-1 py-4 text-cream font-montserrat font-semibold text-lg hover:text-orange transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                    <button
+                      className="p-4 text-cream"
+                      onClick={() =>
+                        setOpenMobileSection(openMobileSection === item.label ? null : item.label)
+                      }
+                      aria-label={`Expand ${item.label}`}
+                    >
+                      <ChevronDown
+                        className={`w-5 h-5 transition-transform ${
+                          openMobileSection === item.label ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                  </div>
 
                   {openMobileSection === item.label && (
                     <div className="pb-4 space-y-2">

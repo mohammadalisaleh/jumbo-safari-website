@@ -59,9 +59,10 @@ export function ItinerariesGrid({ items }: Props) {
           const hasGreenSeason = !!itinerary.pricing?.greenLabel
 
           return (
-            <article
+            <Link
               key={itinerary.slug}
-              className="border border-border-soft bg-white flex flex-col"
+              href={href}
+              className="group border border-border-soft bg-white flex flex-col hover:border-forest transition-colors"
             >
               <div className="aspect-[4/3] bg-forest overflow-hidden">
                 {itinerary.heroImage ? (
@@ -70,7 +71,7 @@ export function ItinerariesGrid({ items }: Props) {
                     alt={itinerary.heroImage.alt}
                     width={600}
                     height={450}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-forest">
@@ -87,7 +88,7 @@ export function ItinerariesGrid({ items }: Props) {
                     {badge}
                   </span>
                 </div>
-                <h2 className="font-montserrat font-bold text-[22px] text-forest mb-2 leading-snug">
+                <h2 className="font-montserrat font-bold text-[22px] text-forest mb-2 leading-snug group-hover:text-orange transition-colors">
                   {itinerary.title}
                 </h2>
                 {fromPrice ? (
@@ -105,15 +106,12 @@ export function ItinerariesGrid({ items }: Props) {
                 )}
                 <p className="text-sm text-ink/60 mb-4">{itinerary.parks}</p>
                 <p className="text-sm text-ink mb-5 line-clamp-3 flex-1">{itinerary.description}</p>
-                <Link
-                  href={href}
-                  className="inline-flex items-center text-forest font-semibold hover:text-orange transition-colors group"
-                >
+                <span className="inline-flex items-center text-forest font-semibold group-hover:text-orange transition-colors">
                   View Itinerary
                   <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                </span>
               </div>
-            </article>
+            </Link>
           )
         })}
       </div>

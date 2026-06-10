@@ -31,14 +31,21 @@ export default function ItinerariesPage() {
   const regularItineraries = getAllItineraries()
 
   // Build ordered list: 8-day first, then 7-day, then remaining sorted by fromPrice ascending
+  const sevenDayItem: GridItem = {
+    itinerary: sevenDayItinerary,
+    href: "/7-day-tanzania-safari-itinerary",
+    badge: "Most Searched",
+    tags: ["short", "classic"],
+  }
+
   const ordered = [
-    "8-day-classic-tanzania-safari",
     "5-day-northern-circuit",
+    "8-day-classic-tanzania-safari",
     "calving-season-safari",
     "great-migration-safari",
     "family-safari",
-    "honeymoon-tanzania-zanzibar",
     "11-day-tanzania-zanzibar",
+    "honeymoon-tanzania-zanzibar",
   ]
 
   const regularItems: GridItem[] = ordered
@@ -50,18 +57,12 @@ export default function ItinerariesPage() {
     })
     .filter((x): x is GridItem => x !== null)
 
-  // Insert 7-day after the 8-day (index 1)
-  const sevenDayItem: GridItem = {
-    itinerary: sevenDayItinerary,
-    href: "/7-day-tanzania-safari-itinerary",
-    badge: "Most Searched",
-    tags: ["short", "classic"],
-  }
-
+  // Order: 5-day, 7-day, 8-day, then the rest
   const items: GridItem[] = [
-    regularItems[0], // 8-day
+    regularItems[0], // 5-day
     sevenDayItem,    // 7-day
-    ...regularItems.slice(1), // rest
+    regularItems[1], // 8-day
+    ...regularItems.slice(2),
   ]
 
   const breadcrumbSchema = {
