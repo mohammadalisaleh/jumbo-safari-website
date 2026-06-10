@@ -77,7 +77,7 @@ const featuredItineraries = [
     descriptionPl: "Romans spotyka się z przygodą: safari, a potem dziewicze plaże Zanzibaru.",
     descriptionCs: "Romantika se setkává s dobrodružstvím: safari a poté nedotčené pláže Zanzibaru.",
     price: "$4,195",
-    image: { src: "/zanzibar-beach-resort-honeymoon-tanzania.jpg", alt: "Thatched beach bungalows on white coral sand with turquoise Indian Ocean water in Zanzibar, Tanzania" },
+    image: { src: "/zanzibar-honeymoon-sunset-couple-nungwi.jpg", alt: "Couple watching the sunset over the Indian Ocean from a private villa balcony at Nungwi, Zanzibar" },
   },
 ]
 
