@@ -117,7 +117,7 @@ const faqs = [
   {
     question: "What is the price and what does it cover?",
     answer:
-      "From $5,400 per person based on two people sharing. This includes all accommodation, all halal meals during the safari, park fees, guide and vehicle, the Arusha-Zanzibar internal flight, and five nights at Tasneem. International flights from your home country are not included. We provide a full itemised quote before any payment.",
+      "We provide a full itemised quote for each couple based on your travel dates and tier preference. The quote covers all accommodation, halal meals throughout the safari, park fees, guide and vehicle, the Arusha-Zanzibar internal flight, and five nights at Tasneem. International flights from your home country are not included. Contact us to receive a quote within 48 hours.",
   },
   {
     question: "How do we book?",
@@ -210,7 +210,7 @@ export default function HalalHoneymoon() {
             Halal Honeymoon Safari Tanzania & Zanzibar
           </h1>
           <p className="text-lead-mobile lg:text-lead-desktop text-cream/85 max-w-2xl mb-10">
-            11 days. Private safari through the Northern Circuit. Five nights at Tasneem Islamic Luxury Suites in Zanzibar, the only fully alcohol-free luxury resort in East Africa. From $5,400 per person.
+            11 days. Private safari through the Northern Circuit. Five nights at Tasneem Islamic Luxury Suites in Zanzibar, the only fully alcohol-free luxury resort in East Africa. Contact us for a custom quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link

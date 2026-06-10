@@ -1,18 +1,41 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, MessageCircle } from "lucide-react"
+import { PricingMatrix } from "@/components/pricing-matrix"
+import type { Pricing } from "@/lib/data/itineraries"
 
 export const metadata: Metadata = {
   title: "Ramadan Safari Tanzania | Bush Iftar & Suhoor Game Drives",
   description:
-    "Ramadan safari Tanzania: Suhoor at 5am, dawn game drives, Iftar in the Serengeti at sunset. The only Ramadan-specific Tanzania safari. From $3,200pp.",
+    "Ramadan safari Tanzania: Suhoor at 5am, dawn game drives, Iftar in the Serengeti at sunset. The only Ramadan-specific Tanzania safari. From $2,600pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/ramadan" },
   openGraph: {
     title: "Ramadan Safari Tanzania | Jumbo Safaris",
     description:
-      "Suhoor before dawn drives. Iftar in the Serengeti. The only Ramadan-specific safari in Tanzania. From $3,200pp.",
+      "Suhoor before dawn drives. Iftar in the Serengeti. The only Ramadan-specific safari in Tanzania. From $2,600pp.",
     url: "https://www.jumbosafaris.com/halal-safari-tanzania/ramadan",
   },
+}
+
+const ramadanPricing: Pricing = {
+  fromPrice: 2600,
+  peakLabel: "Calving season (January-February)",
+  basis:
+    "Per person sharing, US dollars. The 'from' price is the Comfort tier with six guests sharing. Ramadan falls in January and February through 2029, which is calving season — there is no separate green-season rate. Built from real lodge rates at Ndutu and Karatu, our own vehicle, and current NCA conservation fees. Halal arrangements add no surcharge.",
+  tiers: [
+    {
+      tier: "Comfort",
+      summary: "Mobile tented camps at Ndutu and a lodge near the crater, full board, fully private.",
+      lodges: "Mawe Gnu Migration Camp (Ndutu), Mawe Karatu",
+      peak: { p2: 3535, p4: 2835, p6: 2600 },
+    },
+    {
+      tier: "Premium",
+      summary: "Upgraded camps in the heart of the calving grounds, closer to wildlife.",
+      lodges: "Ang'ata Migration Camp (Ndutu), Ang'ata Ngorongoro",
+      peak: { p2: 4310, p4: 3600, p6: 3365 },
+    },
+  ],
 }
 
 const schedule = [
@@ -199,7 +222,7 @@ export default function RamadanSafari() {
             Ramadan Safari Tanzania
           </h1>
           <p className="text-lead-mobile lg:text-lead-desktop text-cream/85 max-w-2xl mb-8">
-            Suhoor at 5am. Dawn drives at first light, when the big cats are still moving. Iftar in the Serengeti as the sun drops below the horizon. The only Tanzania operator running a safari built around Ramadan timing. From $3,200 per person.
+            Suhoor at 5am. Dawn drives at first light, when the big cats are still moving. Iftar in the Serengeti as the sun drops below the horizon. The only Tanzania operator running a safari built around Ramadan timing. From $2,600 per person.
           </p>
           <p className="text-body-mobile text-orange font-montserrat font-semibold mb-8">
             No other Tanzania safari company offers this. Zero.
@@ -307,6 +330,20 @@ export default function RamadanSafari() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section className="py-20 px-6 bg-cream border-t border-border-soft">
+        <div className="max-w-content mx-auto">
+          <p className="text-eyebrow uppercase text-orange tracking-widest mb-3">Pricing</p>
+          <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-4">
+            What It Costs
+          </h2>
+          <p className="text-body-mobile lg:text-body-desktop text-ink max-w-2xl mb-10">
+            Ramadan arrangements add no surcharge to standard safari pricing. January and February fall in calving season, which is outside peak rates. Luxury tier is not shown here as Lemala Ndutu rates are pending — contact us if Luxury is your preference.
+          </p>
+          <PricingMatrix pricing={ramadanPricing} />
         </div>
       </section>
 

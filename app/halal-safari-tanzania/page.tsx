@@ -38,7 +38,7 @@ const tours = [
   {
     title: "Ramadan Bush Safari",
     duration: "7 Days",
-    price: "From $3,200 per person",
+    price: "From $2,600 per person",
     description:
       "Suhoor at 5am, then game drives at first light when big cats are most active. Iftar in the bush as the sun drops behind the Serengeti. No other Tanzania operator runs this. Zero competition, and the timing is genuinely better for wildlife.",
     href: "/halal-safari-tanzania/ramadan",
@@ -47,7 +47,7 @@ const tours = [
   {
     title: "Women's Safari (Muslimah)",
     duration: "8 Days",
-    price: "From $3,800 per person",
+    price: "From $2,355 per person",
     description:
       "Women-only groups, private vehicle, female guide arrangement, and accommodation vetted for privacy. No shared pools, no mixed common areas where comfort becomes a calculation. Departures run seasonally.",
     href: "/halal-safari-tanzania/womens-safari",
@@ -56,7 +56,7 @@ const tours = [
   {
     title: "Family Halal Safari",
     duration: "7–10 Days",
-    price: "From $2,200 per person",
+    price: "From $2,195 per person",
     description:
       "Built for multi-generational families traveling from the UAE, Saudi Arabia, and Malaysia. Halal food verified at every meal, private vehicle for your family only, and a pace that works for grandparents and children alike.",
     href: "/halal-safari-tanzania/family",
@@ -198,7 +198,7 @@ const faqSchema = {
       "name": "How much does a halal safari in Tanzania cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Halal arrangements add no surcharge to the standard safari cost. A 6 to 8-day private halal safari covering Tarangire, Ngorongoro and Serengeti typically ranges from 3,200 to 4,800 US dollars per person sharing on mid-range lodges, and 5,200 to 7,500 dollars on luxury lodges. Add 1,200 to 2,800 dollars per person for a 4-night Zanzibar extension at a halal-friendly resort. Prices include park fees, halal-confirmed full board, guide and vehicle, and prayer-time accommodation."
+        "text": "Halal arrangements add no surcharge to the standard safari cost. A 7 to 8-day private halal safari covering Tarangire, Serengeti, and Ngorongoro Crater starts from $2,195 per person at Comfort tier for a six-person group, to $4,115 for a couple at Comfort, $5,530 at Premium, and $6,020 at Luxury. Add $1,200 to $2,800 per person for a Zanzibar extension at a halal-friendly resort. Prices include park fees, halal-confirmed full board, guide and vehicle."
       }
     },
     {

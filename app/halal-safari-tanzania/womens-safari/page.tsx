@@ -1,18 +1,50 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react"
+import { PricingMatrix } from "@/components/pricing-matrix"
+import type { Pricing } from "@/lib/data/itineraries"
 
 export const metadata: Metadata = {
   title: "Women's Halal Safari Tanzania | Muslimah Safari",
   description:
-    "Women-only halal safari Tanzania. Private vehicle, female guide arrangement, vetted rooms with private outdoor space, no mixed pools. From $3,800pp.",
+    "Women-only halal safari Tanzania. Private vehicle, female guide arrangement, vetted rooms with private outdoor space, no mixed pools. From $2,355pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/womens-safari" },
   openGraph: {
     title: "Women's Halal Safari Tanzania | Muslimah Safari | Jumbo Safaris",
     description:
-      "Women-only groups. Female guide arranged. Private, vetted accommodation. Halal food throughout. From $3,800pp.",
+      "Women-only groups. Female guide arranged. Private, vetted accommodation. Halal food throughout. From $2,355pp.",
     url: "https://www.jumbosafaris.com/halal-safari-tanzania/womens-safari",
   },
+}
+
+const womensPricing: Pricing = {
+  fromPrice: 2355,
+  greenLabel: "Green season (April-May)",
+  peakLabel: "Peak season (June-October)",
+  basis:
+    "Per person sharing, US dollars. The 'from' price is the Comfort tier with six guests sharing in green season. Price drops as your group grows because the private vehicle and guide are shared across more people. Luxury camps close in April-May, so green season shows Comfort and Premium only. Built from real lodge rates, our own vehicle, and current park fees.",
+  tiers: [
+    {
+      tier: "Comfort",
+      summary: "Tented camps and a crater-adjacent lodge, full board. Our best value, fully private.",
+      lodges: "Tortilis mobile camps, Mawe Karatu",
+      peak: { p2: 4115, p4: 3320, p6: 3055 },
+      green: { p2: 3415, p4: 2620, p6: 2355 },
+    },
+    {
+      tier: "Premium",
+      summary: "Built lodges in prime locations, upgraded camps near the park gates.",
+      lodges: "Ang'ata Camps, Turaco Ngorongoro Valley",
+      peak: { p2: 5530, p4: 4735, p6: 4465 },
+      green: { p2: 4430, p4: 3630, p6: 3365 },
+    },
+    {
+      tier: "Luxury",
+      summary: "Premium tented camps and a crater-rim lodge, top of our range.",
+      lodges: "Lemala Camps, Lemala Ngorongoro",
+      peak: { p2: 6020, p4: 5225, p6: 4960 },
+    },
+  ],
 }
 
 const standards = [
@@ -190,7 +222,7 @@ export default function WomensSafari() {
             Women's Halal Safari Tanzania
           </h1>
           <p className="text-lead-mobile lg:text-lead-desktop text-cream/85 max-w-2xl mb-10">
-            Women-only groups. Female guide arrangement. Private vehicle. Accommodation vetted for privacy. No shared pools or mixed common areas where comfort becomes a constant calculation. From $3,800 per person.
+            Women-only groups. Female guide arrangement. Private vehicle. Accommodation vetted for privacy. No shared pools or mixed common areas where comfort becomes a constant calculation. From $2,355 per person.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -254,6 +286,20 @@ export default function WomensSafari() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section className="py-20 px-6 bg-cream border-t border-border-soft">
+        <div className="max-w-content mx-auto">
+          <p className="text-eyebrow uppercase text-orange tracking-widest mb-3">Pricing</p>
+          <h2 className="font-montserrat text-h2-mobile lg:text-h2-desktop font-bold text-ink mb-4">
+            What It Costs
+          </h2>
+          <p className="text-body-mobile lg:text-body-desktop text-ink max-w-2xl mb-10">
+            Halal arrangements add no surcharge. Prices are identical to our standard 8-day Northern Circuit: the same vehicle, same parks, same lodges — with halal food confirmed in writing at every property and alcohol removed from your room before arrival.
+          </p>
+          <PricingMatrix pricing={womensPricing} />
         </div>
       </section>
 
