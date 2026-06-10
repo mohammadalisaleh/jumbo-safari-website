@@ -30,18 +30,20 @@ const FILTERS = [
 export function ItinerariesGrid({ items }: Props) {
   const [activeFilter, setActiveFilter] = useState("all")
   const scrollRef = useRef<HTMLDivElement>(null)
-  const [thumbStyle, setThumbStyle] = useState({ left: "0%", width: "100%" })
+  const thumbRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const el = scrollRef.current
-    if (!el) return
+    const thumb = thumbRef.current
+    if (!el || !thumb) return
     const update = () => {
       const ratio = el.clientWidth / el.scrollWidth
       const left = el.scrollLeft / el.scrollWidth
-      setThumbStyle({ left: `${left * 100}%`, width: `${ratio * 100}%` })
+      thumb.style.left = `${left * 100}%`
+      thumb.style.width = `${ratio * 100}%`
     }
     update()
-    el.addEventListener("scroll", update)
+    el.addEventListener("scroll", update, { passive: true })
     window.addEventListener("resize", update)
     return () => {
       el.removeEventListener("scroll", update)
@@ -74,8 +76,9 @@ export function ItinerariesGrid({ items }: Props) {
         {/* Custom scroll track — always visible on mobile */}
         <div className="relative h-1 bg-border-soft mt-2 mx-1 lg:hidden">
           <div
-            className="absolute top-0 h-1 bg-forest transition-all duration-100"
-            style={thumbStyle}
+            ref={thumbRef}
+            className="absolute top-0 h-1 bg-forest"
+            style={{ left: "0%", width: "100%" }}
           />
         </div>
       </div>
