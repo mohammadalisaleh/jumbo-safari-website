@@ -170,7 +170,7 @@ export const monthPages: Record<string, MonthPage> = {
         title: "Great Migration Safari",
         duration: "10 Days / 9 Nights",
         parks: "Northern Serengeti · Serengeti · Ngorongoro",
-        price: "From $4,150 pp",
+        price: "From $4,445 pp",
         description:
           "Three nights at Kogatende in the northern Serengeti, positioned for the Mara River crossings that start in July, then central Serengeti and a full day on the Ngorongoro crater floor on the return. The trip built around the migration.",
         slug: "great-migration-safari",
@@ -179,7 +179,7 @@ export const monthPages: Record<string, MonthPage> = {
         title: "8-Day Classic Tanzania Safari",
         duration: "8 Days / 7 Nights",
         parks: "Tarangire · Serengeti · Ngorongoro",
-        price: "From $1,945 pp",
+        price: "From $2,355 pp",
         description:
           "For travellers booking late or on a tighter timeline. Two nights Tarangire, three nights central Serengeti, two nights Ngorongoro. July is peak dry season, so resident game is concentrated and easy to find even without chasing the crossings.",
         slug: "8-day-classic-tanzania-safari",
@@ -371,7 +371,7 @@ export const monthPages: Record<string, MonthPage> = {
         title: "Great Migration Safari",
         duration: "10 Days / 9 Nights",
         parks: "Northern Serengeti · Serengeti · Ngorongoro",
-        price: "From $4,150 pp",
+        price: "From $4,445 pp",
         description:
           "August is peak Mara crossing season. Three nights at Kogatende in the northern Serengeti positioned for the river crossings, then central Serengeti and a full day on the Ngorongoro crater floor on the return.",
         slug: "great-migration-safari",
@@ -380,7 +380,7 @@ export const monthPages: Record<string, MonthPage> = {
         title: "8-Day Classic Tanzania Safari",
         duration: "8 Days / 7 Nights",
         parks: "Tarangire · Serengeti · Ngorongoro",
-        price: "From $1,945 pp",
+        price: "From $2,355 pp",
         description:
           "For travellers who cannot get northern Serengeti availability in August, or who want the migration-free version. Two nights Tarangire for peak elephant herds, three nights central Serengeti, two nights Ngorongoro. Exceptional dry-season game without chasing the crossings.",
         slug: "8-day-classic-tanzania-safari",

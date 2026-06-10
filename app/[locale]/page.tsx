@@ -56,7 +56,7 @@ const featuredItineraries = [
     descriptionEn: "Experience the best of the Northern Circuit with game drives in Tarangire, Serengeti, and Ngorongoro Crater.",
     descriptionPl: "Poznaj najlepsze miejsca Północnego Szlaku z safari w Tarangire, Serengeti i Kraterze Ngorongoro.",
     descriptionCs: "Zažijte to nejlepší ze Severního okruhu s game drive v Tarangire, Serengeti a Ngorongorovém kráteru.",
-    price: "$1,945",
+    price: "$2,355",
     image: { src: "/tarangire-elephants-baobab-tanzania-safari.jpg", alt: "Elephant herd passing a giant baobab tree in Tarangire National Park, Tanzania" },
   },
   {
@@ -66,7 +66,7 @@ const featuredItineraries = [
     descriptionEn: "Witness the miracle of birth on the Serengeti plains during the annual wildebeest calving season.",
     descriptionPl: "Bądź świadkiem cudu narodzin na równinach Serengeti podczas corocznego sezonu cielenia się gnu.",
     descriptionCs: "Buďte svědkem zázraku narození na pláních Serengeti během každoročního období telení pakoňů.",
-    price: "$2,595",
+    price: "$2,600",
     image: { src: "/wildebeest-calf-ndutu-calving-season-tanzania.jpg", alt: "Newborn wildebeest calf running alongside its mother through Lake Ndutu during calving season, Tanzania" },
   },
   {
@@ -76,7 +76,7 @@ const featuredItineraries = [
     descriptionEn: "Romance meets adventure with safari game drives followed by pristine beaches in Zanzibar.",
     descriptionPl: "Romans spotyka się z przygodą: safari, a potem dziewicze plaże Zanzibaru.",
     descriptionCs: "Romantika se setkává s dobrodružstvím: safari a poté nedotčené pláže Zanzibaru.",
-    price: "$4,070",
+    price: "$4,195",
     image: { src: "/zanzibar-beach-resort-honeymoon-tanzania.jpg", alt: "Thatched beach bungalows on white coral sand with turquoise Indian Ocean water in Zanzibar, Tanzania" },
   },
 ]
