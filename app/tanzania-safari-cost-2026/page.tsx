@@ -56,6 +56,26 @@ const faqs = [
     answer:
       "Cash is no longer accepted at any Tanzania national park gate. TANAPA completed a move to electronic-only payments, with Visa and Mastercard accepted at main entry points. Connectivity at remote gates can be unreliable, which is why your guide handles all payments in advance or through the operator's account. If you are self-driving, this is worth knowing: do not arrive at a gate with only cash.",
   },
+  {
+    question: "How much does a 7-day Tanzania safari cost per day?",
+    answer:
+      "For a couple on a private mid-range safari, plan on $500–$600 per person per day all-in. That daily figure breaks down roughly as: $130–$190 in park and concession fees, $100–$175 for the lodge with all meals, $125–$150 as your share of the vehicle, guide, and fuel, and the remainder in operator overhead and margin. Days inside the Ngorongoro Conservation Area cost the most because of the dual fee plus the $295 crater vehicle fee.",
+  },
+  {
+    question: "Does a bigger group make a Tanzania safari cheaper per person?",
+    answer:
+      "Significantly. The vehicle, guide, and fuel cost the same whether two people or six are sitting in the Landcruiser, so that block divides across the group. Our own published rates show it: a 7–8 day private safari at Comfort tier is $4,115 per person for a couple, and $2,195 per person for a group of six. Same parks, same lodges, same guide. The per-person saving from filling the vehicle is larger than the saving from dropping a full accommodation tier.",
+  },
+  {
+    question: "What is the cheapest time of year for a Tanzania safari?",
+    answer:
+      "April and May, during the long rains. Lodge rates drop 20–40% below peak, and some properties drop further: rates we hold show green-season pricing at roughly half of peak at some Serengeti camps. The trade-off is afternoon rain, longer grass, and some camps closing entirely for the season. November and early December (short rains) are the value sweet spot: shoulder rates, full lodge availability, and far fewer vehicles at every sighting. Park fees stay the same all year, so the savings come entirely from accommodation.",
+  },
+  {
+    question: "Why does the same Tanzania itinerary cost $4,000 from one company and $9,000 from another?",
+    answer:
+      "Usually you are looking at the same lodges and the same parks sold through different layers. A local operator builds the trip at contract lodge rates. An overseas agency buys that trip from a local operator and resells it with their own margin on top, commonly 30% and sometimes far more. We hold the lodge contracts ourselves, and across our rate sheets the gap between contract rates and public rack rates runs from about 13% at budget properties to as much as 90% at luxury tented camps. Every reseller in the chain is pricing off that headroom. Booking with the operator who actually holds the contracts removes the layer entirely.",
+  },
 ]
 
 export default function TanzaniaSafariCostPage() {
@@ -213,6 +233,95 @@ export default function TanzaniaSafariCostPage() {
           </div>
         </section>
 
+        {/* Where the money goes */}
+        <section className="bg-forest/5 py-16 md:py-20">
+          <div className="max-w-content mx-auto px-6">
+            <p className="text-eyebrow uppercase text-orange mb-3">The Daily Breakdown</p>
+            <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-6">
+              Where each dollar goes on a $550 day
+            </h2>
+            <div className="max-w-3xl space-y-4 text-body text-ink/80 mb-10">
+              <p>
+                Take a couple on a private mid-range safari paying around $550 per person per day. Most of that money is spoken for before anyone makes a profit.
+              </p>
+              <p>
+                Park fees come first. A day inside the Ngorongoro Conservation Area costs $130 per adult in entry and concession fees alone, before the $295 crater vehicle fee is split between you. A Serengeti day runs $71 to $83 in entry fees, plus a nightly concession fee if you sleep inside the park. Fees are government-set, identical for every operator, and non-negotiable. Nobody gets a discount on these. Anyone quoting suspiciously low is cutting something else.
+              </p>
+              <p>
+                The lodge takes the next slice. At contract rates, a mid-tier property with all meals costs $100 to $175 per person per night for a couple sharing. Then the vehicle: a safari-built Landcruiser with a guide and fuel costs $250 to $300 a day to run, which is $125 to $150 each for two people. What remains after fees, lodge, and vehicle covers operations and margin. On a fair quote, that last slice is 10 to 15 percent.
+              </p>
+            </div>
+
+            <div className="overflow-x-auto mb-12">
+              <table className="w-full text-sm max-w-3xl">
+                <thead>
+                  <tr className="border-b border-forest/20">
+                    <th className="text-left py-3 pr-6 font-montserrat font-semibold text-forest">Cost block</th>
+                    <th className="text-left py-3 pr-6 font-montserrat font-semibold text-forest">Per person / day (couple)</th>
+                    <th className="text-left py-3 font-montserrat font-semibold text-forest">Who sets the price</th>
+                  </tr>
+                </thead>
+                <tbody className="text-ink/80">
+                  <tr className="border-b border-forest/10">
+                    <td className="py-3 pr-6">Park &amp; concession fees</td>
+                    <td className="py-3 pr-6">$130–$190</td>
+                    <td className="py-3">Government (fixed)</td>
+                  </tr>
+                  <tr className="border-b border-forest/10">
+                    <td className="py-3 pr-6">Lodge, full board</td>
+                    <td className="py-3 pr-6">$100–$175</td>
+                    <td className="py-3">Lodge contract rate</td>
+                  </tr>
+                  <tr className="border-b border-forest/10">
+                    <td className="py-3 pr-6">Vehicle, guide, fuel</td>
+                    <td className="py-3 pr-6">$125–$150</td>
+                    <td className="py-3">Operator</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-6">Operations &amp; margin</td>
+                    <td className="py-3 pr-6">$55–$85</td>
+                    <td className="py-3">Operator</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 className="font-montserrat font-bold text-xl text-forest mb-4">Group size changes the math more than tier does</h3>
+            <div className="max-w-3xl space-y-4 text-body text-ink/80 mb-8">
+              <p>
+                The vehicle block is fixed. Six people pay the same $250 to $300 a day for the Landcruiser that two people pay, so the per-person share drops from $150 to roughly $50. Our own rate card shows what that does to a full trip: the same 7 to 8 day Comfort-tier private safari is $4,115 per person as a couple and $2,195 per person as a group of six. Same lodges. Same parks. Same guide.
+              </p>
+              <p>
+                If you can travel as four or six, do it. Filling the vehicle saves more per person than dropping from mid-range lodges to budget camps, and you give up nothing.
+              </p>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm max-w-2xl">
+                <thead>
+                  <tr className="border-b border-forest/20">
+                    <th className="text-left py-3 pr-6 font-montserrat font-semibold text-forest">Group size</th>
+                    <th className="text-left py-3 pr-6 font-montserrat font-semibold text-forest">7–8 day Comfort tier, per person</th>
+                  </tr>
+                </thead>
+                <tbody className="text-ink/80">
+                  <tr className="border-b border-forest/10">
+                    <td className="py-3 pr-6">2 people</td>
+                    <td className="py-3 pr-6">$4,115</td>
+                  </tr>
+                  <tr className="border-b border-forest/10">
+                    <td className="py-3 pr-6">4 people</td>
+                    <td className="py-3 pr-6">$2,800–$3,100</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-6">6 people</td>
+                    <td className="py-3 pr-6">$2,195</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
         {/* Park Fees */}
         <section className="bg-forest text-cream py-16 md:py-20">
           <div className="max-w-content mx-auto px-6">
@@ -334,6 +443,108 @@ export default function TanzaniaSafariCostPage() {
                   ))}
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Park-by-park daily cost */}
+        <section className="border-t border-forest/10 py-16 md:py-20">
+          <div className="max-w-content mx-auto px-6">
+            <p className="text-eyebrow uppercase text-orange mb-3">Park by Park</p>
+            <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-6">
+              What a day actually costs in each park
+            </h2>
+            <div className="max-w-3xl space-y-4 text-body text-ink/80 mb-10">
+              <p>
+                Itineraries are not priced per park, but parks are not equally expensive, and knowing which days carry the cost explains a lot about how quotes are built.
+              </p>
+              <p>
+                Ngorongoro is the expensive one. The conservation area charges entry and concession separately ($130 per adult per calendar day combined), and the crater descent adds $295 per vehicle. For a couple, a crater day costs around $408 in fees before a single night's accommodation. It is worth it. The crater is the densest big-game viewing in Africa and the only place in Tanzania where seeing the Big Five in one morning is a realistic outcome. But it is why operators structure routes to enter the NCA in the afternoon and descend the next morning: done carelessly, the calendar-day fee rule bills you twice.
+              </p>
+              <p>
+                Serengeti days cost $71 to $83 per adult in entry fees plus a nightly concession fee when you sleep inside, and the park's size adds an indirect cost: getting there. By road it is around five hours from Arusha beyond Ngorongoro; flying in saves a day but costs $200 to $400 per person each way. Tarangire and Lake Manyara are the affordable days. Both sit about two hours from Arusha, charge $59 entry, and Tarangire in dry season (June to October) delivers elephant viewing that matches anything in the Serengeti.
+              </p>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm max-w-3xl">
+                <thead>
+                  <tr className="border-b border-forest/20">
+                    <th className="text-left py-3 pr-6 font-montserrat font-semibold text-forest">Park</th>
+                    <th className="text-left py-3 pr-6 font-montserrat font-semibold text-forest">Fees, couple/day</th>
+                    <th className="text-left py-3 font-montserrat font-semibold text-forest">Cost character</th>
+                  </tr>
+                </thead>
+                <tbody className="text-ink/80">
+                  <tr className="border-b border-forest/10">
+                    <td className="py-3 pr-6 font-medium">Ngorongoro (with descent)</td>
+                    <td className="py-3 pr-6">~$408 + lodge</td>
+                    <td className="py-3">Most expensive day; highest density viewing</td>
+                  </tr>
+                  <tr className="border-b border-forest/10">
+                    <td className="py-3 pr-6 font-medium">Serengeti (staying inside)</td>
+                    <td className="py-3 pr-6">~$260–$300 + lodge</td>
+                    <td className="py-3">Fees plus concession; add transit time or flight</td>
+                  </tr>
+                  <tr className="border-b border-forest/10">
+                    <td className="py-3 pr-6 font-medium">Tarangire (staying inside)</td>
+                    <td className="py-3 pr-6">~$236 + lodge</td>
+                    <td className="py-3">Underrated value June–October</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-6 font-medium">Lake Manyara (day trip)</td>
+                    <td className="py-3 pr-6">~$118</td>
+                    <td className="py-3">Cheapest park day on the circuit</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="max-w-3xl mt-10 space-y-4 text-body text-ink/80">
+              <h3 className="font-montserrat font-bold text-xl text-forest">Adding Zanzibar</h3>
+              <p>
+                The beach extension is priced separately from the safari and varies more than any safari line item. Budget $1,200 to $2,800 per person for 4 to 5 nights depending on the property: a Stone Town boutique hotel with breakfast sits near the bottom of that range, a beachfront half-board resort in Kiwengwa or Nungwi in the middle, and all-inclusive five-star properties at the top. The flight from Arusha to Zanzibar adds about $80 to $120 per person. If the beach matters to you, put the savings from a shoulder-season safari into the Zanzibar property. You will feel the upgrade more at the beach than in the bush.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Season timing */}
+        <section className="bg-forest/5 py-16 md:py-20">
+          <div className="max-w-content mx-auto px-6">
+            <p className="text-eyebrow uppercase text-orange mb-3">When You Travel</p>
+            <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-6">
+              The calendar moves the price. Park fees do not.
+            </h2>
+            <div className="max-w-3xl space-y-4 text-body text-ink/80 mb-10">
+              <p>
+                Park fees are flat all year. Every dollar of seasonal saving comes from the lodges, and lodges switch their rates on specific dates, not vague seasons. The pattern across the rate contracts we hold: peak pricing runs June through October and again from roughly December 19 to January 4. Shoulder rates start in November. The long rains, April and May, are the genuine low season.
+              </p>
+              <p>
+                How big is the swing? Peak to green season is commonly a 20 to 40 percent drop on the lodge line, and at some luxury tented camps the gap is wider. One Serengeti camp we contract drops from $415 per person to $270 between high and low season. A more typical mid-range example: $350 a night in high season, $312 from November 1. Lodge by lodge, the dates and the discounts differ, which is why two quotes for "November" can disagree. One operator priced week one, the other priced week four.
+              </p>
+              <p>
+                The value pick is November to early December. Shoulder rates, everything open, short afternoon rains that rarely cost you game-drive time, and a fraction of the July vehicle traffic. April is the deepest discount but some camps close entirely. If your dates can move even two weeks around a rate-switch date (November 1, December 19, June 1), tell your operator. It can be worth several hundred dollars.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* The agency layer */}
+        <section className="py-16 md:py-20">
+          <div className="max-w-content mx-auto px-6 max-w-3xl">
+            <p className="text-eyebrow uppercase text-orange mb-3">The Same Trip, Three Prices</p>
+            <h2 className="font-montserrat font-bold text-h2-mobile md:text-h2-desktop text-forest mb-6">
+              Why identical itineraries vary by thousands
+            </h2>
+            <div className="space-y-4 text-body text-ink/80">
+              <p>
+                Safari pricing has layers, and most travellers only ever see the top one. At the bottom is the contract rate: the price a licensed local operator actually pays a lodge. Above that sits the rack rate, the lodge's public price. Across our own rate sheets the gap between those two runs from about 13 percent at budget properties to 90 percent at luxury tented camps. That headroom is the safari industry's margin pool, and everyone in the chain prices off it.
+              </p>
+              <p>
+                A local operator quotes you from the contract rate up. An overseas agency buys the same trip from a local operator (sometimes from us) and adds their margin on top of ours. By the time a trip has passed through a foreign agency, a "luxury travel designer," or a comparison platform taking commission, the identical itinerary with the identical lodges can cost $2,000 to $5,000 more per booking. None of that extra money buys a better vehicle, a better guide, or a better room.
+              </p>
+              <p>
+                The check takes thirty seconds: ask where the company is registered and who employs the guide who will actually drive you. If the answer is an office in London or Denver, there is a local operator underneath them doing the work. You can book that operator directly.
+              </p>
             </div>
           </div>
         </section>
