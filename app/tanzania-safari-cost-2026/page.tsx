@@ -292,7 +292,8 @@ export default function TanzaniaSafariCostPage() {
                 The vehicle block is fixed. Six people pay the same $250 to $300 a day for the Landcruiser that two people pay, so the per-person share drops from $150 to roughly $50. Our own rate card shows what that does to a full trip: the same 7 to 8 day Comfort-tier private safari is $4,115 per person as a couple and $2,195 per person as a group of six. Same lodges. Same parks. Same guide.
               </p>
               <p>
-                If you can travel as four or six, do it. Filling the vehicle saves more per person than dropping from mid-range lodges to budget camps, and you give up nothing.
+                If you can travel as four or six, do it. Filling the vehicle saves more per person than dropping from mid-range lodges to budget camps, and you give up nothing. The full private-versus-group comparison, including where private becomes cheaper than a group seat, is on the{" "}
+                <Link href="/tanzania-safari/private-tours" className="text-forest underline hover:text-orange">private safari tours page</Link>.
               </p>
             </div>
             <div className="overflow-x-auto">
