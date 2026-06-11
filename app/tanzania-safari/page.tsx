@@ -48,7 +48,10 @@ const featuredItineraries = [
     description:
       "Four nights on safari in the Northern Circuit, then a week on the Zanzibar coast. Private vehicle throughout, lodge upgrades where they matter.",
     price: "From $4,195 per person",
-    heroImage: null,
+    heroImage: {
+      src: "/zanzibar-honeymoon-sunset-couple-nungwi.jpg",
+      alt: "Couple watching the sunset on Nungwi beach, Zanzibar, on a honeymoon safari extension",
+    },
   },
 ]
 
