@@ -2,6 +2,7 @@ export interface NationalPark {
   slug: string
   name: string
   tagline: string
+  metaDescription?: string
   description: string
   quickFacts: {
     area: string
@@ -50,6 +51,8 @@ export const nationalParks: Record<string, NationalPark> = {
     slug: "serengeti",
     name: "Serengeti National Park",
     tagline: "The migration spends nine months here. The rest is just 3,000 lions.",
+    metaDescription:
+      "Serengeti safari guide: 1.3 million wildebeest, year-round big cats, best months, park fees, and where to stay. By a private Arusha-based guide.",
     description:
       "Serengeti National Park: 14,763 km² of Tanzania, home to 1.3 million migrating wildebeest, the world's most studied lion population, and year-round leopard along the Seronera River. Tanzania's most iconic safari destination.",
     heroImage: {
@@ -264,6 +267,8 @@ export const nationalParks: Record<string, NationalPark> = {
     slug: "ngorongoro-crater",
     name: "Ngorongoro Crater",
     tagline: "The world's largest intact volcanic caldera. 25,000 animals, nowhere to go.",
+    metaDescription:
+      "Ngorongoro Crater safari guide: 25,000 large mammals, black rhino, crater descent fees, and the best months to visit. By a local private guide.",
     description:
       "The Ngorongoro Crater is a 260 km² enclosed ecosystem inside Tanzania's Ngorongoro Conservation Area, holding 25,000 large mammals year-round including black rhino, lion, elephant, and flamingo. A UNESCO World Heritage Site since 1979.",
     heroImage: {
@@ -456,6 +461,8 @@ export const nationalParks: Record<string, NationalPark> = {
       src: "/tarangire-elephants-baobab-tanzania-safari.jpg",
       alt: "Elephant herd passing a giant baobab tree in Tarangire National Park, Tanzania",
     },
+    metaDescription:
+      "Tarangire safari guide: dry-season elephant herds, baobab country, 588 bird species, best months, and park fees explained by a local guide.",
     description:
       "Tarangire National Park is 2,850 km² of baobab-studded miombo in northern Tanzania. From June through October, the Tarangire River is the only permanent water across a 20,000 km² territory, pulling elephant herds, buffalo, and predators from across that entire range into one accessible corridor. The park records 588 bird species (Avibase 2025) and is one of very few places in East Africa where fringe-eared oryx can be reliably seen.",
     quickFacts: {
@@ -616,6 +623,8 @@ export const nationalParks: Record<string, NationalPark> = {
       src: "/lake-manyara-tree-climbing-lion-tanzania.jpg",
       alt: "Tree-climbing lioness standing in a fig tree at Lake Manyara National Park, Tanzania",
     },
+    metaDescription:
+      "Lake Manyara safari guide: 600+ bird species, tree-climbing lions, the Ghost Forest, and whether the park deserves a day on your route.",
     description:
       "Lake Manyara National Park is 648 km² at the base of the Rift Valley escarpment (expanded in 2009), of which a large portion is the alkaline lake itself. It records 624-626 bird species (Avibase 2025), more than almost any other enclosed park in Africa. The tree-climbing lion behaviour the park is marketed on is real but no longer reliably observed; the visual asset most operators are not telling you about is the Ghost Forest, a stretch of fever tree skeleton woodland standing in the lake's advancing alkaline water since approximately 2020.",
     quickFacts: {
@@ -764,6 +773,8 @@ export const nationalParks: Record<string, NationalPark> = {
     slug: "ndutu",
     name: "Ndutu",
     tagline: "400,000 wildebeest calves in six weeks. Every predator in the ecosystem watching.",
+    metaDescription:
+      "Ndutu safari guide: the world's largest wildebeest calving event (January to March), legal off-road driving, and where to stay. Real pricing.",
     description:
       "Ndutu sits inside the Ngorongoro Conservation Area on the southern Serengeti border. From January through March it holds the world's largest wildebeest calving event. Off-road driving is legally permitted here and not in Serengeti National Park next door. That single distinction is why wildlife photographers choose Ndutu over the Mara River crossings for predator viewing.",
     heroImage: {
@@ -904,6 +915,8 @@ export const nationalParks: Record<string, NationalPark> = {
     slug: "ruaha",
     name: "Ruaha National Park",
     tagline: "For the safari traveller who has done the migration and now wants the silence.",
+    metaDescription:
+      "Ruaha safari guide: 10% of Africa's lions, 500+ wild dogs, and 20,000 visitors a year. Tanzania's wildest big park, explained by a local guide.",
     description:
       "Ruaha is Tanzania's second-largest national park at 20,226 km², home to roughly 10% of Africa's lions, one of only three African landscapes with 500+ wild dogs, and an elephant population recovering toward 15,000. Around 20,000 visitors per year. The Serengeti sees 350,000.",
     quickFacts: {

@@ -2,6 +2,7 @@ export interface MonthPage {
   slug: string
   month: string
   title: string
+  metaDescription?: string
   description: string
   heroImage?: { src: string; alt: string }
   intro: string
@@ -46,6 +47,8 @@ export const monthPages: Record<string, MonthPage> = {
     slug: "july",
     month: "July",
     title: "Tanzania Safari in July",
+    metaDescription:
+      "Tanzania safari in July: peak dry season, Serengeti river crossings begin, weather, crowds, and real pricing from a private Arusha guide.",
     description:
       "July is Tanzania's peak safari month: dry season, short grass, high wildlife density, and the Mara River crossings underway in the northern Serengeti. Complete guide to July conditions by park, booking lead times, and prices from an Arusha-based operator.",
     heroImage: {
@@ -247,6 +250,8 @@ export const monthPages: Record<string, MonthPage> = {
     slug: "august",
     month: "August",
     title: "Tanzania Safari in August",
+    metaDescription:
+      "Tanzania safari in August: Mara River crossings, dry-season game viewing, weather, crowds, and real pricing from a private Arusha guide.",
     description:
       "August is the peak month for the Mara River crossings, the peak month for Tarangire elephant herds, and the most expensive month to safari in Tanzania. Complete guide to August conditions, booking timelines, and what to actually expect on the ground.",
     heroImage: {

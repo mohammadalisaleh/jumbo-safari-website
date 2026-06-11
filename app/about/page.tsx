@@ -25,7 +25,7 @@ export default function AboutPage() {
     worksFor: { "@type": "TravelAgency", name: "Jumbo Safaris", url: "https://www.jumbosafaris.com" },
     address: { "@type": "PostalAddress", addressLocality: "Arusha", addressCountry: "TZ" },
     url: "https://www.jumbosafaris.com/about",
-    sameAs: ["https://www.linkedin.com/company/jumbo-safaris", "https://www.instagram.com/jumbo.safaris"],
+    sameAs: ["https://www.linkedin.com/company/jumbosafaris", "https://www.instagram.com/jumbo.safaris"],
   }
 
   const breadcrumbSchema = {

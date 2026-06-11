@@ -45,6 +45,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/serengeti-vs-ngorongoro-vs-tarangire`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/ndutu-calving-season`, priority: 0.9, changeFrequency: "yearly" as const },
     { url: `${baseUrl}/tanzania-park-fees`, priority: 0.9, changeFrequency: "monthly" as const },
+    // Halal safari cluster
+    { url: `${baseUrl}/halal-safari-tanzania`, priority: 0.9, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/halal-safari-tanzania/our-standards`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/halal-safari-tanzania/honeymoon`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/halal-safari-tanzania/family`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/halal-safari-tanzania/womens-safari`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/halal-safari-tanzania/ramadan`, priority: 0.8, changeFrequency: "monthly" as const },
   ]
 
   // Add Polish and Czech homepage versions

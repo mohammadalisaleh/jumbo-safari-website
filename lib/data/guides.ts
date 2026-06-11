@@ -7,6 +7,7 @@ export interface GuideSection {
 export interface Guide {
   slug: string
   title: string
+  metaDescription?: string
   description: string
   leadParagraph: string
   sections: GuideSection[]
@@ -116,6 +117,8 @@ export const guides: Record<string, Guide> = {
   "tanzania-visa-requirements": {
     slug: "tanzania-visa-requirements",
     title: "Tanzania Visa Requirements for Safari Travellers",
+    metaDescription:
+      "Tanzania visa requirements 2026: visa on arrival, eVisa, costs, and the rule that catches US passport holders. Updated by a local operator.",
     description:
       "What you actually need to enter Tanzania for a safari: the e-visa, the rule that catches US passport holders, yellow fever, passport validity, and the Zanzibar insurance most people miss.",
     leadParagraph:
@@ -187,6 +190,8 @@ export const guides: Record<string, Guide> = {
   "what-to-pack-safari": {
     slug: "what-to-pack-safari",
     title: "What to Pack for a Tanzania Safari",
+    metaDescription:
+      "What to pack for a Tanzania safari: clothing colours that matter, gear worth bringing, and what to leave at home. From a working guide.",
     description:
       "A practical packing guide for a Tanzania safari from a guide who runs them: the colours that matter, why layers are not optional, the bag bush flights demand, and the one item that is actually illegal.",
     leadParagraph:

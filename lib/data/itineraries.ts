@@ -34,6 +34,7 @@ export interface Itinerary {
   price: string
   pricing?: Pricing
   season: string
+  metaDescription?: string
   description: string
   heroImage?: { src: string; alt: string }
   leadParagraph: string
@@ -102,6 +103,8 @@ export const itineraries: Record<string, Itinerary> = {
       ],
     },
     season: "Year-round",
+    metaDescription:
+      "8-day private Tanzania safari: Tarangire, Serengeti, and Ngorongoro Crater with transparent pricing, real lodge names, and a private 4x4.",
     description:
       "8-day private Tanzania safari covering Tarangire, the Serengeti, and Ngorongoro Crater. Three nights in the Serengeti, private 4x4, full-board lodges. From $2,355 per person.",
     heroImage: {
@@ -266,6 +269,8 @@ export const itineraries: Record<string, Itinerary> = {
       ],
     },
     season: "January - March",
+    metaDescription:
+      "Ndutu calving season safari: up to 8,000 wildebeest births a day, private 4x4, off-road permitted. January to March itinerary with real pricing.",
     description:
       "7-day Tanzania calving season safari based at Ndutu. Roughly 8,000 wildebeest calves born per day at peak, off-road driving permitted, every predator in the ecosystem converging on one area. January through March. From $2,600 per person.",
     heroImage: {
@@ -431,6 +436,8 @@ export const itineraries: Record<string, Itinerary> = {
       ],
     },
     season: "June - October",
+    metaDescription:
+      "Great Migration safari itinerary: river crossings, timing by month, transparent pricing, and a private guide. July to October departures.",
     description:
       "10-day Tanzania Great Migration safari. Three nights in the northern Serengeti at Kogatende, positioned for Mara River crossings. Central Serengeti and Ngorongoro Crater included on the return. Private vehicle and guide throughout. From $4,445 per person.",
     leadParagraph:
@@ -639,6 +646,8 @@ export const itineraries: Record<string, Itinerary> = {
       ],
     },
     season: "Year-round",
+    metaDescription:
+      "Honeymoon safari and Zanzibar itinerary: private game drives, then barefoot beach. Transparent pricing and halal options available.",
     description:
       "11-day Tanzania honeymoon safari combining private game drives in Tarangire, Serengeti, and Ngorongoro with 4 nights on Zanzibar's Indian Ocean coast. From $4,195 per person.",
     heroImage: {
@@ -902,6 +911,8 @@ export const itineraries: Record<string, Itinerary> = {
       ],
     },
     season: "Year-round",
+    metaDescription:
+      "5-day northern circuit safari: Tarangire, Ngorongoro, and Serengeti at the best cost per day. Private vehicle, transparent pricing.",
     description:
       "5-day private Tanzania safari covering Tarangire, the central Serengeti, Ngorongoro Crater, and Lake Manyara. Four nights, private 4x4, full-board lodges. The shortest route that covers the northern circuit properly. From $1,605 per person.",
     heroImage: {
@@ -1055,6 +1066,8 @@ export const itineraries: Record<string, Itinerary> = {
       ],
     },
     season: "Year-round",
+    metaDescription:
+      "11-day Tanzania safari and Zanzibar itinerary: full northern circuit plus beach. Day-by-day plan with real lodges and transparent pricing.",
     description:
       "11-day Tanzania safari and Zanzibar beach trip. Six nights on the northern circuit covering Tarangire, Serengeti, and Ngorongoro, then a Coastal Aviation flight to Zanzibar for four nights on the Indian Ocean coast. From $2,990 per person.",
     heroImage: {
@@ -1281,6 +1294,8 @@ export const itineraries: Record<string, Itinerary> = {
       ],
     },
     season: "Year-round",
+    metaDescription:
+      "Family safari in Tanzania: child-friendly pacing, private 4x4, lodges that work with kids, and honest pricing for the whole family.",
     description:
       "8-day private family safari in Tanzania. Tarangire, Serengeti, and Ngorongoro Crater on the northern circuit, paced for children aged 5 and up. Private vehicle, booster seats provided, guide briefed for mixed-age groups. From $2,355 per person.",
     heroImage: {
@@ -1500,6 +1515,8 @@ export const sevenDayItinerary: Itinerary = {
     ],
   },
   season: "Year-round",
+  metaDescription:
+    "7-day Tanzania safari itinerary with a timed day-by-day schedule, real distances, lodge names, and transparent private-safari pricing.",
   description:
     "A complete 7-day Tanzania safari itinerary: Tarangire, Serengeti, and Ngorongoro Crater. Day-by-day schedule with departure times, drive distances, park fees, and tiered prices. From $2,195 per person.",
   heroImage: {

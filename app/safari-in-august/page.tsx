@@ -9,11 +9,11 @@ const page = getMonthPage("august")!
 
 export const metadata: Metadata = {
   title: page.title,
-  description: page.description,
+  description: page.metaDescription ?? page.description,
   alternates: { canonical: "https://www.jumbosafaris.com/safari-in-august" },
   openGraph: {
     title: `${page.title} | Jumbo Safaris`,
-    description: page.description,
+    description: page.metaDescription ?? page.description,
     url: "https://www.jumbosafaris.com/safari-in-august",
   },
 }
