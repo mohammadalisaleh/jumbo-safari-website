@@ -429,7 +429,7 @@ export default function TanzaniaSafariCostPage() {
                   {[
                     "International flights to Kilimanjaro or Dar es Salaam",
                     "Travel insurance (required)",
-                    "Guide tip: $20–$25/day (standard)",
+                    "Guide tip: $25/day (standard)",
                     "Lodge staff tip: $5–$7/person/day",
                     "Hot air balloon (Serengeti): $599/person",
                     "Personal drinks and laundry",

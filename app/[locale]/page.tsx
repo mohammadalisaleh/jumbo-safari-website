@@ -77,7 +77,7 @@ const featuredItineraries = [
     descriptionEn: "Romance meets adventure with safari game drives followed by pristine beaches in Zanzibar.",
     descriptionPl: "Romans spotyka się z przygodą: safari, a potem dziewicze plaże Zanzibaru.",
     descriptionCs: "Romantika se setkává s dobrodružstvím: safari a poté nedotčené pláže Zanzibaru.",
-    price: "$4,195",
+    price: "$5,245",
     image: { src: "/zanzibar-honeymoon-sunset-couple-nungwi.jpg", alt: "Couple watching the sunset over the Indian Ocean from a private villa balcony at Nungwi, Zanzibar" },
   },
 ]

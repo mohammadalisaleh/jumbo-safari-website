@@ -70,3 +70,4 @@ Max 1,500 tokens. No tool call history. Specific and factual.
 - Push toward shipping, not perfecting
 - Never show bash output — report results only
 - Write every decision to disk immediately
+- Prices and figures must be identical everywhere they appear on the site. One itinerary = one price. Prices live in lib/data/itineraries.ts and get imported; never hardcode a price in a page file. Before shipping any page mentioning a price, grep for other mentions and reconcile.

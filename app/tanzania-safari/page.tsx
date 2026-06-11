@@ -47,7 +47,7 @@ const featuredItineraries = [
     duration: "11 Days",
     description:
       "Four nights on safari in the Northern Circuit, then a week on the Zanzibar coast. Private vehicle throughout, lodge upgrades where they matter.",
-    price: "From $4,195 per person",
+    price: "From $5,245 per person",
     heroImage: {
       src: "/zanzibar-honeymoon-sunset-couple-nungwi.jpg",
       alt: "Couple watching the sunset on Nungwi beach, Zanzibar, on a honeymoon safari extension",
@@ -64,7 +64,7 @@ const faqs = [
   {
     question: "What hidden costs do people miss when budgeting for Tanzania?",
     answer:
-      "Three that catch people: the Ngorongoro Crater vehicle fee ($295 per vehicle, paid on the day), the Serengeti hot air balloon ($599 per person if you add it), and tipping. Tipping is not included in any quoted price. Budget $25 per day for your guide and $10–$15 per day for lodge staff (to the communal tip box). On an 8-day safari that is $280+ per person that never appears in an itinerary quote. International booking agents also add 30–300% on top of the operator's base price. Book direct with an Arusha-based operator and that markup disappears.",
+      "Three that catch people: the Ngorongoro Crater vehicle fee ($295 per vehicle, paid on the day), the Serengeti hot air balloon ($599 per person if you add it), and tipping. Tipping is not included in any quoted price. Budget $25 per day for your guide and $5–$7 per day per person for lodge staff (to the communal tip box). On an 8-day safari that is $200+ per person that never appears in an itinerary quote. International booking agents also add 30–300% on top of the operator's base price. Book direct with an Arusha-based operator and that markup disappears.",
   },
   {
     question: "What is the best time of year for a Tanzania safari?",

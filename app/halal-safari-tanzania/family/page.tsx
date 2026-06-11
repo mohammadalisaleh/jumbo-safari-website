@@ -5,12 +5,12 @@ import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react"
 export const metadata: Metadata = {
   title: "Halal Family Safari Tanzania | Kids Welcome",
   description:
-    "Family halal safari in Tanzania for multi-generational Muslim families. Private vehicle, halal food at every meal, flexible pace. From $2,200pp.",
+    "Family halal safari in Tanzania for multi-generational Muslim families. Private vehicle, halal food at every meal, flexible pace. From $2,195pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/family" },
   openGraph: {
     title: "Family Halal Safari Tanzania | Jumbo Safaris",
     description:
-      "Private vehicle for your family only. Halal food at every stop. Flexible pace for grandparents and children. From $2,200pp.",
+      "Private vehicle for your family only. Halal food at every stop. Flexible pace for grandparents and children. From $2,195pp.",
     url: "https://www.jumbosafaris.com/halal-safari-tanzania/family",
   },
 }
@@ -115,7 +115,7 @@ const faqs = [
   {
     question: "What is the cost per person for a family of 6?",
     answer:
-      "A 7-day family halal safari for 6 people in one private vehicle typically costs $2,200–$2,800 per person at mid-range camps, or $3,500–$4,500pp at upper-range lodges. The vehicle cost is fixed regardless of how many people fill it, so larger families pay less per person than couples or solo travelers. We send a full itemised quote within 48 hours.",
+      "A 7-day family halal safari for 6 people in one private vehicle typically costs $2,195–$2,800 per person at mid-range camps, or $3,500–$4,500pp at upper-range lodges. The vehicle cost is fixed regardless of how many people fill it, so larger families pay less per person than couples or solo travelers. We send a full itemised quote within 48 hours.",
   },
 ]
 
@@ -232,7 +232,7 @@ export default function FamilyHalalSafari() {
             Family Halal Safari Tanzania
           </h1>
           <p className="text-lead-mobile lg:text-lead-desktop text-cream/85 max-w-2xl mb-10">
-            Private vehicle for your family only. Halal food verified at every meal. A pace that works for grandparents and children alike. Built for multi-generational Muslim families from the UAE, Saudi Arabia, and Malaysia. From $2,200 per person.
+            Private vehicle for your family only. Halal food verified at every meal. A pace that works for grandparents and children alike. Built for multi-generational Muslim families from the UAE, Saudi Arabia, and Malaysia. From $2,195 per person.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link

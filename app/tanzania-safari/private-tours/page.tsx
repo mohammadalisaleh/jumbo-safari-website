@@ -74,7 +74,7 @@ const routes = [
     title: "Honeymoon Tanzania & Zanzibar",
     slug: "honeymoon-tanzania-zanzibar",
     parks: "Tarangire · Serengeti · Ngorongoro · Zanzibar",
-    price: "From $4,195 pp",
+    price: "From $5,245 pp",
     description: "Eleven days, private throughout. Safari with couples-specific lodge setups, private crater picnic, sunset dhow on Zanzibar.",
   },
   {

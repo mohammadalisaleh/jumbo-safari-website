@@ -161,7 +161,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 5,
         title: "Full Day Serengeti",
         activities:
-          "Three nights in the Serengeti is what makes this itinerary work. One day is an introduction. Two days gets you familiar. On the third you stop watching the clock and start watching properly. Your guide picks areas based on reports from other guides in the field. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $590 per person, booked in advance.",
+          "Three nights in the Serengeti is what makes this itinerary work. One day is an introduction. Two days gets you familiar. On the third you stop watching the clock and start watching properly. Your guide picks areas based on reports from other guides in the field. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $599 per person, booked in advance.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -206,7 +206,7 @@ export const itineraries: Record<string, Itinerary> = {
       "Travel insurance",
       "Guide gratuity (suggested $25 per day)",
       "Lodge staff gratuity (suggested $5-7 per day via lodge tip box)",
-      "Hot air balloon safari ($590 per person, booked in advance)",
+      "Hot air balloon safari ($599 per person, booked in advance)",
       "Alcoholic beverages",
       "Personal expenses and souvenirs",
     ],
@@ -552,7 +552,7 @@ export const itineraries: Record<string, Itinerary> = {
       "Travel insurance",
       "Guide gratuity (suggested $25 per day)",
       "Lodge staff gratuity (suggested $5-7 per day via lodge tip box)",
-      "Hot air balloon safari (optional, $590 per person, available in central Serengeti on Day 3)",
+      "Hot air balloon safari (optional, $599 per person, available in central Serengeti on Day 3)",
       "Alcoholic beverages",
       "Personal expenses",
     ],
@@ -623,13 +623,13 @@ export const itineraries: Record<string, Itinerary> = {
     title: "Honeymoon Tanzania & Zanzibar",
     duration: "11 Days",
     parks: "Tarangire · Serengeti · Ngorongoro · Zanzibar",
-    price: "From $4,195 pp",
+    price: "From $5,245 pp",
     pricing: {
-      fromPrice: 4195,
+      fromPrice: 5245,
       greenLabel: "Green season (April–May)",
       peakLabel: "Peak season (June–October)",
       basis:
-        "Per person sharing, US dollars. This trip is designed for two, so most couples book the 2-guest column; the 4 and 6-guest prices are for travelling with family or friends. The 'from' price is the Premium tier with six guests sharing in green season. The Luxury beach villas and camps close in April–May, so green season shows Premium only. Includes the Coastal Aviation flight to Zanzibar. Built from real lodge rates, our own vehicle, and current park fees, not marked-up reseller prices.",
+        "Per person sharing, US dollars. This trip is designed for two, so most couples book the 2-guest column; the 4 and 6-guest prices are for travelling with family or friends. The 'from' price is the Premium tier for two sharing in green season. The Luxury beach villas and camps close in April–May, so green season shows Premium only. Includes the Coastal Aviation flight to Zanzibar. Built from real lodge rates, our own vehicle, and current park fees, not marked-up reseller prices.",
       tiers: [
         {
           tier: "Premium",
@@ -650,7 +650,7 @@ export const itineraries: Record<string, Itinerary> = {
     metaDescription:
       "Honeymoon safari and Zanzibar itinerary: private game drives, then barefoot beach. Transparent pricing and halal options available.",
     description:
-      "11-day Tanzania honeymoon safari combining private game drives in Tarangire, Serengeti, and Ngorongoro with 4 nights on Zanzibar's Indian Ocean coast. From $4,195 per person.",
+      "11-day Tanzania honeymoon safari combining private game drives in Tarangire, Serengeti, and Ngorongoro with 4 nights on Zanzibar's Indian Ocean coast. From $5,245 per person.",
     heroImage: {
       src: "/zanzibar-honeymoon-sunset-couple-nungwi.jpg",
       alt: "Couple watching the sunset over the Indian Ocean from a private villa balcony at Nungwi, Zanzibar",
@@ -658,7 +658,7 @@ export const itineraries: Record<string, Itinerary> = {
     leadParagraph:
       "Seven days in the bush, four days at the coast. No two environments could be more different, and that contrast is exactly the point. You get Tanzania's full range: elephants in the Tarangire dust, lions on Serengeti kopjes, black rhino on the Ngorongoro crater floor, then white coral sand and an Indian Ocean the colour of a swimming pool. Private vehicle, private guide, just the two of you. From $5,245 per person for two travelling together, across the full eleven days.",
     overview:
-      "The route runs north to south through Tanzania's northern circuit before turning east to the coast. Arusha is your starting point. Day two takes you into Tarangire, where elephant density during the dry season is the highest of any park on the northern circuit, and the baobab trees are old enough that some predate the Roman Empire. Two nights there, then the six-hour drive west to the Serengeti through the Ngorongoro highlands, stopping at Olduvai Gorge on the way. Two nights in central Serengeti, tracking big cats across the Seronera Valley. Then east to the Ngorongoro Crater rim for two nights, with a full day on the crater floor: roughly 120 lions, 50 black rhino, and 15,000 wildebeest inside a 260-square-kilometre caldera they rarely leave. Day eight: drive to Arusha, then a Coastal Aviation flight to Zanzibar (about one hour forty-five minutes, included). Three nights at a beach property. The north coast has consistent swimming conditions year-round. The east coast (Paje, Bwejuu) is better for October through March when the Indian Ocean lies flat and snorkeling is clearest. We book whichever suits your travel dates.\n\nAt each safari property, we arrange a honeymoon setup: champagne on arrival, private sundowner location, rose petals at turndown. At Ngorongoro, a private picnic lunch on the crater floor. On Zanzibar, a sunset dhow cruise from Stone Town harbour. None of this costs extra. What does: the hot air balloon over the Serengeti ($590 per person) and spa treatments in Zanzibar. The balloon, in particular, is worth it.",
+      "The route runs north to south through Tanzania's northern circuit before turning east to the coast. Arusha is your starting point. Day two takes you into Tarangire, where elephant density during the dry season is the highest of any park on the northern circuit, and the baobab trees are old enough that some predate the Roman Empire. Two nights there, then the six-hour drive west to the Serengeti through the Ngorongoro highlands, stopping at Olduvai Gorge on the way. Two nights in central Serengeti, tracking big cats across the Seronera Valley. Then east to the Ngorongoro Crater rim for two nights, with a full day on the crater floor: roughly 120 lions, 50 black rhino, and 15,000 wildebeest inside a 260-square-kilometre caldera they rarely leave. Day eight: drive to Arusha, then a Coastal Aviation flight to Zanzibar (about one hour forty-five minutes, included). Three nights at a beach property. The north coast has consistent swimming conditions year-round. The east coast (Paje, Bwejuu) is better for October through March when the Indian Ocean lies flat and snorkeling is clearest. We book whichever suits your travel dates.\n\nAt each safari property, we arrange a honeymoon setup: champagne on arrival, private sundowner location, rose petals at turndown. At Ngorongoro, a private picnic lunch on the crater floor. On Zanzibar, a sunset dhow cruise from Stone Town harbour. None of this costs extra. What does: the hot air balloon over the Serengeti ($599 per person) and spa treatments in Zanzibar. The balloon, in particular, is worth it.",
     quickFacts: {
       duration: "11 Days / 10 Nights",
       parksVisited: "Tarangire, Serengeti, Ngorongoro, Zanzibar",
@@ -704,7 +704,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 5,
         title: "Full Day Serengeti",
         activities:
-          "The Seronera Valley is the most consistent area for big cats year-round. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops roughly 600 million years old, visible for kilometres across the plains. Cheetahs work the open short-grass south of the valley. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $590 per person, booked in advance. For honeymoon couples, it is the single best add-on on this route. Nothing else comes close.",
+          "The Seronera Valley is the most consistent area for big cats year-round. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops roughly 600 million years old, visible for kilometres across the plains. Cheetahs work the open short-grass south of the valley. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $599 per person, booked in advance. For honeymoon couples, it is the single best add-on on this route. Nothing else comes close.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -777,7 +777,7 @@ export const itineraries: Record<string, Itinerary> = {
       "Travel insurance (required)",
       "Guide gratuity (suggested $25 per day for 7 safari days)",
       "Lodge staff gratuity (suggested $5-7 per day via tip box)",
-      "Hot air balloon safari ($590 per person, optional, booked in advance)",
+      "Hot air balloon safari ($599 per person, optional, booked in advance)",
       "Spa treatments in Zanzibar",
       "Snorkeling excursions and optional activities in Zanzibar",
       "Alcoholic beverages beyond welcome champagne",
@@ -801,7 +801,7 @@ export const itineraries: Record<string, Itinerary> = {
       {
         question: "Is the hot air balloon worth adding?",
         answer:
-          "For a honeymoon, yes. The balloon operates out of the central Serengeti on Day 5. Departure is at 5:30am, the flight is about one hour over the plains, followed by a champagne bush breakfast on landing. Cost is $590 per person, paid directly to the balloon operator, booked in advance. It is the one add-on that genuinely changes what you see and how you remember the trip. I recommend it to every couple on this route.",
+          "For a honeymoon, yes. The balloon operates out of the central Serengeti on Day 5. Departure is at 5:30am, the flight is about one hour over the plains, followed by a champagne bush breakfast on landing. Cost is $599 per person, paid directly to the balloon operator, booked in advance. It is the one add-on that genuinely changes what you see and how you remember the trip. I recommend it to every couple on this route.",
       },
       {
         question: "How do we get from the safari circuit to Zanzibar?",
@@ -953,7 +953,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 3,
         title: "Full Day Serengeti",
         activities:
-          "Full day in the park. The Seronera Valley runs through the centre of the Serengeti and is the most consistent area for big cats year-round, regardless of where the migration herds are. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops 600 million years old, visible for kilometres across the open plains. Cheetahs work the short-grass south of the valley where visibility is longest. Out of everything on this route, this is the day with the most room to breathe. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $590 per person, booked in advance. The balloon works on this day, not Day 4, when transit to Ngorongoro makes a 5:30am departure impractical.",
+          "Full day in the park. The Seronera Valley runs through the centre of the Serengeti and is the most consistent area for big cats year-round, regardless of where the migration herds are. Leopards rest in the sausage trees above the river. Lions claim the kopjes, granite outcrops 600 million years old, visible for kilometres across the open plains. Cheetahs work the short-grass south of the valley where visibility is longest. Out of everything on this route, this is the day with the most room to breathe. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $599 per person, booked in advance. The balloon works on this day, not Day 4, when transit to Ngorongoro makes a 5:30am departure impractical.",
         accommodation: "Serengeti Serena Safari Lodge or similar tented camp",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -990,7 +990,7 @@ export const itineraries: Record<string, Itinerary> = {
       "Travel insurance",
       "Guide gratuity (suggested $25 per day)",
       "Lodge staff gratuity (suggested $5-7 per day via lodge tip box)",
-      "Hot air balloon safari (optional, $590 per person, see Day 3)",
+      "Hot air balloon safari (optional, $599 per person, see Day 3)",
       "Alcoholic beverages",
       "Personal expenses and souvenirs",
     ],
@@ -1124,7 +1124,7 @@ export const itineraries: Record<string, Itinerary> = {
         day: 5,
         title: "Full Day Serengeti",
         activities:
-          "Second full day. Your guide tracks current sightings from the field network and positions accordingly. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $590 per person, booked in advance. The afternoon is best spent in a different area from the morning. Your guide will suggest where based on what is active.",
+          "Second full day. Your guide tracks current sightings from the field network and positions accordingly. Optional: hot air balloon departure at 5:30am, one hour over the plains, champagne bush breakfast on landing. $599 per person, booked in advance. The afternoon is best spent in a different area from the morning. Your guide will suggest where based on what is active.",
         accommodation: "Kati Kati Tented Camp or similar",
         meals: "Breakfast, Lunch, Dinner",
       },
@@ -1196,7 +1196,7 @@ export const itineraries: Record<string, Itinerary> = {
       "Travel insurance (required)",
       "Guide gratuity (suggested $25 per day for 6 safari days)",
       "Lodge staff gratuity (suggested $5-7 per day)",
-      "Hot air balloon safari ($590 per person, optional, see Day 5)",
+      "Hot air balloon safari ($599 per person, optional, see Day 5)",
       "Mnemba reef entry fees ($10-$25 per person)",
       "Zanzibar snorkelling excursions and optional activities",
       "Alcoholic beverages",
@@ -1241,7 +1241,7 @@ export const itineraries: Record<string, Itinerary> = {
       {
         question: "How does this compare to the honeymoon safari?",
         answer:
-          "The honeymoon safari has one more safari night (seven versus six) and includes couples-specific additions: champagne on arrival at each lodge, private sundowners, a crater-floor picnic at Ngorongoro, and a sunset dhow cruise in Zanzibar. It is priced from $4,195 per person versus $2,990 for this route. The 11-day Tanzania and Zanzibar itinerary is the same core circuit without the honeymoon-specific setup. Both routes are entirely private.",
+          "The honeymoon safari has one more safari night (seven versus six) and includes couples-specific additions: champagne on arrival at each lodge, private sundowners, a crater-floor picnic at Ngorongoro, and a sunset dhow cruise in Zanzibar. It is priced from $5,245 per person for a couple versus $4,040 per person for this route. The 11-day Tanzania and Zanzibar itinerary is the same core circuit without the honeymoon-specific setup. Both routes are entirely private.",
       },
     ],
     additionalSections: [
@@ -1611,7 +1611,7 @@ export const sevenDayItinerary: Itinerary = {
     "Travel insurance",
     "Guide gratuity (suggested $25 per day)",
     "Lodge staff gratuity (suggested $5-7 per day via lodge tip box)",
-    "Hot air balloon safari ($590 per person, booked in advance)",
+    "Hot air balloon safari ($599 per person, booked in advance)",
     "Alcoholic beverages",
     "Arusha accommodation before/after the safari",
   ],

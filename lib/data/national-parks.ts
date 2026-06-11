@@ -220,7 +220,7 @@ export const nationalParks: Record<string, NationalPark> = {
       {
         question: "How much does a Serengeti safari cost?",
         answer:
-          "2026 ranges per person all-inclusive: budget group safari $150-300/day; mid-range private safari $350-600/day; luxury mobile camps and lodges $700-2,000+/day. A 5-day mid-range private Serengeti safari typically runs $2,000-3,200 per person total, including park fees, transfers, accommodation, meals, guide, and vehicle. The balloon flight from Serengeti Balloon Safaris Ltd adds $599 per person and is not included in most standard packages.",
+          "2026 ranges per person all-inclusive: budget safari $250-400/day; mid-range private safari $400-700/day; luxury camps and lodges $700-1,500+/day. A 5-day mid-range private Serengeti safari typically runs $2,200-3,000 per person total, including park fees, transfers, accommodation, meals, guide, and vehicle. The balloon flight from Serengeti Balloon Safaris Ltd adds $599 per person and is not included in most standard packages.",
       },
       {
         question: "When does the Great Migration happen in the Serengeti?",
