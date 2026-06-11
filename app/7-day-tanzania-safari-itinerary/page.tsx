@@ -4,7 +4,7 @@ import { sevenDayItinerary, getAllItineraries } from "@/lib/data/itineraries"
 import { ItineraryDetail } from "@/components/itinerary-detail"
 
 export const metadata: Metadata = {
-  title: "7-Day Tanzania Safari Itinerary | Day-by-Day from Arusha",
+  title: "7-Day Tanzania Safari Itinerary, Day by Day",
   description:
     "7-day Tanzania safari itinerary: Tarangire, Serengeti, Ngorongoro Crater. Day-by-day schedule, drive times, park fees, and tiered prices from $2,195 pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/7-day-tanzania-safari-itinerary" },

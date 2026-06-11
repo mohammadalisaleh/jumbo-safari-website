@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: page.title,
+    title: page.metaTitle ?? page.title,
     description: page.metaDescription ?? page.description,
     alternates: { canonical: `https://www.jumbosafaris.com/safari-in-${month}` },
     openGraph: {

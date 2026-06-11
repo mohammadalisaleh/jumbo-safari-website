@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: itinerary.title,
+    title: itinerary.metaTitle ?? itinerary.title,
     description: itinerary.metaDescription ?? itinerary.description,
     alternates: { canonical: `https://www.jumbosafaris.com/itineraries/${slug}` },
     openGraph: {

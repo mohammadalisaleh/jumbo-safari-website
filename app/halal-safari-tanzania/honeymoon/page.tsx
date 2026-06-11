@@ -189,12 +189,41 @@ const faqSchema = {
   ]
 }
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jumbosafaris.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Halal Safari Tanzania",
+      "item": "https://www.jumbosafaris.com/halal-safari-tanzania"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Halal Honeymoon",
+      "item": "https://www.jumbosafaris.com/halal-safari-tanzania/honeymoon"
+    }
+  ]
+}
+
 export default function HalalHoneymoon() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {/* Hero */}
       <section className="bg-forest text-cream py-20 px-6">

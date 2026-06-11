@@ -4,7 +4,7 @@ import Image from "next/image"
 import { ArrowRight, MapPin, Phone, Mail } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Why Trust Jumbo Safaris | Transparency, Verification & Founder Story",
+  title: "Why Trust Us: Verification & Transparency",
   description:
     "How to verify Jumbo Safaris before you book: founder background, contact details, questions to ask any Tanzania operator, and our price transparency.",
   alternates: { canonical: "https://www.jumbosafaris.com/about/trust" },

@@ -4,12 +4,12 @@ import Link from "next/link"
 import { ArrowRight, MessageCircle, Users, Calendar, MapPin, UserCheck } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Tanzania Safari 2025/2026 | Cost, Best Time & Private Tours",
+  title: "Tanzania Safari: Cost, Best Time & Tours",
   description:
     "Plan a Tanzania safari: real costs ($250-$1,500/day), month-by-month timing, park breakdowns, and private tours from a local Arusha operator.",
   alternates: { canonical: "https://www.jumbosafaris.com/tanzania-safari" },
   openGraph: {
-    title: "Tanzania Safari 2025/2026 | Cost, Best Time & Private Tours | Jumbo Safaris",
+    title: "Tanzania Safari: Cost, Best Time & Tours | Jumbo Safaris",
     description:
       "Real costs, seasonal timing, park breakdowns, and private tours from Arusha. No group vans, no commission agents.",
     url: "https://www.jumbosafaris.com/tanzania-safari",
@@ -112,6 +112,25 @@ const trustSignals = [
   { icon: MapPin, text: "Based in Arusha, not overseas" },
 ]
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jumbosafaris.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tanzania Safari",
+      "item": "https://www.jumbosafaris.com/tanzania-safari"
+    }
+  ]
+}
+
 export default function TanzaniaSafariPage() {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -131,6 +150,10 @@ export default function TanzaniaSafariPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Hero Section */}

@@ -3,7 +3,7 @@ import { MessageCircle, Mail, MapPin, Clock, Shield, Users, Star } from "lucide-
 import { ContactForm } from "@/components/contact-form"
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact a Tanzania Safari Expert in Arusha",
   description:
     "Contact Jumbo Safaris to plan your Tanzania safari. WhatsApp, email, or fill in our enquiry form. Based in Arusha, Tanzania.",
   alternates: { canonical: "https://www.jumbosafaris.com/contact" },

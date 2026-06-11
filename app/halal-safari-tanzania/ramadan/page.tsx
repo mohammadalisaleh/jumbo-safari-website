@@ -5,7 +5,7 @@ import { PricingMatrix } from "@/components/pricing-matrix"
 import type { Pricing } from "@/lib/data/itineraries"
 
 export const metadata: Metadata = {
-  title: "Ramadan Safari Tanzania | Bush Iftar & Suhoor Game Drives",
+  title: "Ramadan Safari Tanzania: Iftar in the Bush",
   description:
     "Ramadan safari Tanzania: Suhoor at 5am, dawn game drives, Iftar in the Serengeti at sunset. The only Ramadan-specific Tanzania safari. From $2,600pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/ramadan" },
@@ -201,12 +201,41 @@ const faqSchema = {
   ]
 }
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jumbosafaris.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Halal Safari Tanzania",
+      "item": "https://www.jumbosafaris.com/halal-safari-tanzania"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ramadan Safari",
+      "item": "https://www.jumbosafaris.com/halal-safari-tanzania/ramadan"
+    }
+  ]
+}
+
 export default function RamadanSafari() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {/* Hero */}
       <section className="bg-forest text-cream py-20 px-6">

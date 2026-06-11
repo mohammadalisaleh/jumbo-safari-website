@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Family Halal Safari Tanzania | UAE, Saudi, Malaysia Families",
+  title: "Halal Family Safari Tanzania | Kids Welcome",
   description:
     "Family halal safari in Tanzania for multi-generational Muslim families. Private vehicle, halal food at every meal, flexible pace. From $2,200pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/family" },
@@ -182,12 +182,41 @@ const faqSchema = {
   ]
 }
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jumbosafaris.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Halal Safari Tanzania",
+      "item": "https://www.jumbosafaris.com/halal-safari-tanzania"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Family Safari",
+      "item": "https://www.jumbosafaris.com/halal-safari-tanzania/family"
+    }
+  ]
+}
+
 export default function FamilyHalalSafari() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {/* Hero */}
       <section className="bg-forest text-cream py-20 px-6">

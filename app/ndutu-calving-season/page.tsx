@@ -4,7 +4,7 @@ import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Ndutu Calving Season 2026/2027 | Dates, What to See & How to Plan",
+  title: "Ndutu Calving Season: Dates & How to Plan",
   description:
     "Ndutu calving season runs January through mid-March. Exact 2026 and 2027 dates, what happens on the plains, and how to plan a calving season safari from Arusha.",
   alternates: { canonical: "https://www.jumbosafaris.com/ndutu-calving-season" },

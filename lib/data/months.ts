@@ -2,6 +2,7 @@ export interface MonthPage {
   slug: string
   month: string
   title: string
+  metaTitle?: string
   metaDescription?: string
   description: string
   heroImage?: { src: string; alt: string }
@@ -47,6 +48,7 @@ export const monthPages: Record<string, MonthPage> = {
     slug: "july",
     month: "July",
     title: "Tanzania Safari in July",
+    metaTitle: "Tanzania Safari in July: Weather & Wildlife",
     metaDescription:
       "Tanzania safari in July: peak dry season, Serengeti river crossings begin, weather, crowds, and real pricing from a private Arusha guide.",
     description:
@@ -250,6 +252,7 @@ export const monthPages: Record<string, MonthPage> = {
     slug: "august",
     month: "August",
     title: "Tanzania Safari in August",
+    metaTitle: "Tanzania Safari in August: River Crossings",
     metaDescription:
       "Tanzania safari in August: Mara River crossings, dry-season game viewing, weather, crowds, and real pricing from a private Arusha guide.",
     description:

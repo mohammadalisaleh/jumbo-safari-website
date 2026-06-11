@@ -5,12 +5,12 @@ import { PricingMatrix } from "@/components/pricing-matrix"
 import type { Pricing } from "@/lib/data/itineraries"
 
 export const metadata: Metadata = {
-  title: "Women's Halal Safari Tanzania | Muslimah Safari",
+  title: "Women's Halal Safari Tanzania",
   description:
     "Women-only halal safari Tanzania. Private vehicle, female guide arrangement, vetted rooms with private outdoor space, no mixed pools. From $2,355pp.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/womens-safari" },
   openGraph: {
-    title: "Women's Halal Safari Tanzania | Muslimah Safari | Jumbo Safaris",
+    title: "Women's Halal Safari Tanzania | Jumbo Safaris",
     description:
       "Women-only groups. Female guide arranged. Private, vetted accommodation. Halal food throughout. From $2,355pp.",
     url: "https://www.jumbosafaris.com/halal-safari-tanzania/womens-safari",
@@ -201,12 +201,41 @@ const faqSchema = {
   ]
 }
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jumbosafaris.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Halal Safari Tanzania",
+      "item": "https://www.jumbosafaris.com/halal-safari-tanzania"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Women's Safari",
+      "item": "https://www.jumbosafaris.com/halal-safari-tanzania/womens-safari"
+    }
+  ]
+}
+
 export default function WomensSafari() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {/* Hero */}
       <section className="bg-forest text-cream py-20 px-6">

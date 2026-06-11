@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowRight, CheckCircle, AlertCircle, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Our Halal Safari Standards | What We Do and Don't Guarantee",
+  title: "Our Halal Safari Standards",
   description:
     "Exactly what halal means on a Jumbo Safaris trip: food suppliers, prayer logistics, alcohol policy, certification status, and the refund guarantee.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania/our-standards" },
@@ -141,12 +141,41 @@ const faqSchema = {
   ]
 }
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jumbosafaris.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Halal Safari Tanzania",
+      "item": "https://www.jumbosafaris.com/halal-safari-tanzania"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Our Standards",
+      "item": "https://www.jumbosafaris.com/halal-safari-tanzania/our-standards"
+    }
+  ]
+}
+
 export default function OurHalalStandards() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {/* Hero */}
       <section className="bg-forest text-cream py-20 px-6">

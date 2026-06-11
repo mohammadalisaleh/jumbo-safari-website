@@ -4,7 +4,7 @@ import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Serengeti vs Ngorongoro vs Tarangire | Which Park Is Right for You?",
+  title: "Serengeti vs Ngorongoro vs Tarangire",
   description:
     "Honest comparison of Tanzania's three main safari parks. Size, wildlife, cost, best months, and who each park suits best. From a guide based in Arusha.",
   alternates: { canonical: "https://www.jumbosafaris.com/serengeti-vs-ngorongoro-vs-tarangire" },

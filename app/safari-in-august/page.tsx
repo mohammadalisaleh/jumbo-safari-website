@@ -8,7 +8,7 @@ import { getItinerary } from "@/lib/data/itineraries"
 const page = getMonthPage("august")!
 
 export const metadata: Metadata = {
-  title: page.title,
+  title: page.metaTitle ?? page.title,
   description: page.metaDescription ?? page.description,
   alternates: { canonical: "https://www.jumbosafaris.com/safari-in-august" },
   openGraph: {

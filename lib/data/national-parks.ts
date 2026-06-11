@@ -2,6 +2,7 @@ export interface NationalPark {
   slug: string
   name: string
   tagline: string
+  metaTitle?: string
   metaDescription?: string
   description: string
   quickFacts: {
@@ -773,6 +774,7 @@ export const nationalParks: Record<string, NationalPark> = {
     slug: "ndutu",
     name: "Ndutu",
     tagline: "400,000 wildebeest calves in six weeks. Every predator in the ecosystem watching.",
+    metaTitle: "Ndutu Safari: Calving Season Game Drives",
     metaDescription:
       "Ndutu safari guide: the world's largest wildebeest calving event (January to March), legal off-road driving, and where to stay. Real pricing.",
     description:

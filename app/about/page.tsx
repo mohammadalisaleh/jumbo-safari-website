@@ -4,12 +4,12 @@ import Link from "next/link"
 import { MapPin, Users, UserCheck } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Jumbo Safaris | Arusha-Based Tanzania Safari Operator",
+  title: "About Us: An Arusha-Based Safari Operator",
   description:
     "Jumbo Safaris is run by Mohammadali Saleh, born and raised in Arusha. Private guided Tanzania safaris built on local knowledge, not a brochure.",
   alternates: { canonical: "https://www.jumbosafaris.com/about" },
   openGraph: {
-    title: "About Jumbo Safaris | Arusha-Based Tanzania Safari Operator",
+    title: "About Us: An Arusha-Based Safari Operator",
     description:
       "Jumbo Safaris is run by Mohammadali Saleh, born and raised in Arusha. Private guided Tanzania safaris built on local knowledge, not a brochure.",
     url: "https://www.jumbosafaris.com/about",

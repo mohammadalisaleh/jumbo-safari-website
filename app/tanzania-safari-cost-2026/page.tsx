@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Tanzania Safari Cost 2026 | Real Prices, Park Fees & What's Included",
+  title: "Tanzania Safari Cost 2026: Real Prices",
   description:
     "2026 Tanzania safari costs: $250-$1,500/person/day by tier. Park fees, lodge costs, tipping, and what drives the price up or down.",
   alternates: { canonical: "https://www.jumbosafaris.com/tanzania-safari-cost-2026" },

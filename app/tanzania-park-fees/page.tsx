@@ -3,12 +3,12 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Tanzania National Park Fees 2026: What Operators Frequently Get Wrong",
+  title: "Tanzania Park Fees 2026: The Real Numbers",
   description:
     "Verified 2026 Tanzania park fees: NCA entry, Ngorongoro concession, Tarangire, crater descent. The calculation rules most operators miss.",
   alternates: { canonical: "https://www.jumbosafaris.com/tanzania-park-fees" },
   openGraph: {
-    title: "Tanzania National Park Fees 2026: What Operators Frequently Get Wrong",
+    title: "Tanzania Park Fees 2026: The Real Numbers",
     description:
       "NCA charges two separate fees. Crater costs per descent, not per day. No VAT applies. Here is the correct method, verified by a Highway Tours ground operator.",
     url: "https://www.jumbosafaris.com/tanzania-park-fees",

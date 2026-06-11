@@ -4,12 +4,12 @@ import Image from "next/image"
 import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Halal Safari Tanzania 2025/2026 | Muslim-Friendly Safaris",
+  title: "Halal Safari Tanzania: Muslim-Friendly Tours",
   description:
     "Halal safari Tanzania: certified halal food, prayer stop logistics, alcohol-free rooms, and private vehicles. No guesswork, no compromises. Based in Arusha.",
   alternates: { canonical: "https://www.jumbosafaris.com/halal-safari-tanzania" },
   openGraph: {
-    title: "Halal Safari Tanzania 2025/2026 | Muslim-Friendly Safaris | Jumbo Safaris",
+    title: "Halal Safari Tanzania: Muslim-Friendly Tours | Jumbo Safaris",
     description:
       "Certified halal food, prayer logistics, alcohol removed from your room. Tanzania safari built for Muslim travelers, run by a local Arusha operator.",
     url: "https://www.jumbosafaris.com/halal-safari-tanzania",
@@ -220,12 +220,35 @@ const faqSchema = {
   ]
 }
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jumbosafaris.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Halal Safari Tanzania",
+      "item": "https://www.jumbosafaris.com/halal-safari-tanzania"
+    }
+  ]
+}
+
 export default function HalalSafariTanzania() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <script
         type="application/ld+json"

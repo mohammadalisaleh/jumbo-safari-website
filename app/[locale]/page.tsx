@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         en: "https://www.jumbosafaris.com",
         pl: "https://www.jumbosafaris.com/pl",
         cs: "https://www.jumbosafaris.com/cs",
+        "x-default": "https://www.jumbosafaris.com",
       },
     },
     openGraph: {
@@ -421,6 +422,22 @@ export default async function HomePage({ params }: PageProps) {
                 </span>
               </Link>
             ))}
+          </div>
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-center">
+            <Link
+              href={localePath("serengeti-vs-ngorongoro-vs-tarangire")}
+              className="inline-flex items-center text-orange font-semibold text-sm hover:underline"
+            >
+              Serengeti vs Ngorongoro vs Tarangire: which park?
+              <ArrowRight className="w-4 h-4 ml-1" />
+            </Link>
+            <Link
+              href={localePath("national-parks/ndutu")}
+              className="inline-flex items-center text-orange font-semibold text-sm hover:underline"
+            >
+              Ndutu and the calving season
+              <ArrowRight className="w-4 h-4 ml-1" />
+            </Link>
           </div>
         </div>
       </section>

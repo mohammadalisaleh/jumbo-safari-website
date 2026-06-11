@@ -34,6 +34,7 @@ export interface Itinerary {
   price: string
   pricing?: Pricing
   season: string
+  metaTitle?: string
   metaDescription?: string
   description: string
   heroImage?: { src: string; alt: string }
@@ -1294,6 +1295,7 @@ export const itineraries: Record<string, Itinerary> = {
       ],
     },
     season: "Year-round",
+    metaTitle: "Family Safari Tanzania | Kid-Friendly Tours",
     metaDescription:
       "Family safari in Tanzania: child-friendly pacing, private 4x4, lodges that work with kids, and honest pricing for the whole family.",
     description:

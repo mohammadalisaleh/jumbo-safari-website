@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 import { getAllNationalParks } from "@/lib/data/national-parks"
 
 export const metadata: Metadata = {
-  title: "Tanzania National Parks | Safari Park Guide & Comparison",
+  title: "Tanzania National Parks: Safari Guide",
   description:
     "Tanzania's six safari parks worth building a trip around: what each offers, when to go, 2026 entry fees, and which park suits your priorities.",
   alternates: { canonical: "https://www.jumbosafaris.com/national-parks" },

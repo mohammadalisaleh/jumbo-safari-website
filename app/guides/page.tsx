@@ -4,9 +4,28 @@ import { ArrowRight } from "lucide-react"
 import { getAllGuides } from "@/lib/data/guides"
 
 export const metadata: Metadata = {
-  title: "Tanzania Safari Guides",
+  title: "Tanzania Safari Planning Guides & Tips",
   description: "Practical Tanzania safari guides from an Arusha-based operator: when to go, what to pack, and the visa rules that catch travellers out.",
   alternates: { canonical: "https://www.jumbosafaris.com/guides" },
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jumbosafaris.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://www.jumbosafaris.com/guides"
+    }
+  ]
 }
 
 export default function GuidesIndexPage() {
@@ -14,6 +33,10 @@ export default function GuidesIndexPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="bg-forest text-cream pt-24 pb-16 md:pt-32 md:pb-20">
         <div className="max-w-content mx-auto px-6">
           <p className="text-eyebrow uppercase text-orange mb-4 tracking-widest text-sm font-semibold">Guides</p>

@@ -4,7 +4,7 @@ import { getAllItineraries, sevenDayItinerary } from "@/lib/data/itineraries"
 import { ItinerariesGrid, GridItem } from "@/components/itineraries-grid"
 
 export const metadata: Metadata = {
-  title: "Tanzania Safari Itineraries | Private Tours from Arusha",
+  title: "Tanzania Safari Itineraries & Prices",
   description:
     "Private Tanzania safari itineraries from 5 to 11 days. Northern circuit, calving season, honeymoon, family, and Great Migration. All private, from Arusha.",
   alternates: { canonical: "https://www.jumbosafaris.com/itineraries" },
