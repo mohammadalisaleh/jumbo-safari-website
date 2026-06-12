@@ -405,6 +405,35 @@ export default function TanzaniaSafariPage() {
               </div>
             ))}
           </div>
+
+          <div className="mt-12">
+            <p className="font-montserrat font-semibold text-forest mb-5">Detailed month-by-month guides</p>
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
+              {[
+                { month: "January", slug: "safari-in-january", note: "Calving season" },
+                { month: "February", slug: "safari-in-february", note: "Calving peak" },
+                { month: "March", slug: "safari-in-march", note: "Green season" },
+                { month: "April", slug: "safari-in-april", note: "Long rains" },
+                { month: "May", slug: "safari-in-may", note: "Value month" },
+                { month: "June", slug: "safari-in-june", note: "Dry season starts" },
+                { month: "July", slug: "safari-in-july", note: "Peak season" },
+                { month: "August", slug: "safari-in-august", note: "Mara crossings" },
+                { month: "September", slug: "safari-in-september", note: "Peak season" },
+                { month: "October", slug: "safari-in-october", note: "Late dry season" },
+                { month: "November", slug: "safari-in-november", note: "Short rains" },
+                { month: "December", slug: "safari-in-december", note: "Green season" },
+              ].map(({ month, slug, note }) => (
+                <Link
+                  key={slug}
+                  href={`/${slug}`}
+                  className="border border-border-soft bg-white p-3 hover:border-orange hover:bg-cream transition-colors group"
+                >
+                  <p className="font-montserrat font-semibold text-sm text-forest group-hover:text-orange transition-colors">{month}</p>
+                  <p className="text-xs text-ink/60 mt-0.5">{note}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
