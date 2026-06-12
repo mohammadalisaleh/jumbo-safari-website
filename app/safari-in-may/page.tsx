@@ -1,38 +1,21 @@
 import { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { notFound } from "next/navigation"
 import { ChevronRight, ArrowRight } from "lucide-react"
-import { getMonthPage, getAllMonthPages } from "@/lib/data/months"
+import { getMonthPage } from "@/lib/data/months"
 import { getItinerary } from "@/lib/data/itineraries"
 
-interface PageProps {
-  params: Promise<{ month: string }>
-}
+const page = getMonthPage("may")!
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { month } = await params
-  const page = getMonthPage(month)
-
-  if (!page) {
-    return { title: "Not Found" }
-  }
-
-  return {
-    title: page.metaTitle ?? page.title,
+export const metadata: Metadata = {
+  title: page.metaTitle ?? page.title,
+  description: page.metaDescription ?? page.description,
+  alternates: { canonical: "https://www.jumbosafaris.com/safari-in-may" },
+  openGraph: {
+    title: `${page.title} | Jumbo Safaris`,
     description: page.metaDescription ?? page.description,
-    alternates: { canonical: `https://www.jumbosafaris.com/safari-in-${month}` },
-    openGraph: {
-      title: `${page.title} | Jumbo Safaris`,
-      description: page.metaDescription ?? page.description,
-      url: `https://www.jumbosafaris.com/safari-in-${month}`,
-    },
-  }
-}
-
-export async function generateStaticParams() {
-  const pages = getAllMonthPages()
-  return pages.map((page) => ({ month: page.slug }))
+    url: "https://www.jumbosafaris.com/safari-in-may",
+  },
 }
 
 const ratingColors: Record<string, string> = {
@@ -47,14 +30,7 @@ const ratingLabels: Record<string, string> = {
   fair: "Fair",
 }
 
-export default async function SafariInMonthPage({ params }: PageProps) {
-  const { month } = await params
-  const page = getMonthPage(month)
-
-  if (!page) {
-    notFound()
-  }
-
+export default function SafariInJulyPage() {
   const relatedItineraries = page.relatedItineraries
     .map((slug) => getItinerary(slug))
     .filter(Boolean)
@@ -90,6 +66,16 @@ export default async function SafariInMonthPage({ params }: PageProps) {
     },
   }
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.jumbosafaris.com" },
+      { "@type": "ListItem", position: 2, name: "Best Time to Visit", item: "https://www.jumbosafaris.com/guides/best-time-to-visit-tanzania" },
+      { "@type": "ListItem", position: 3, name: page.title, item: "https://www.jumbosafaris.com/safari-in-may" },
+    ],
+  }
+
   return (
     <>
       <script
@@ -99,6 +85,10 @@ export default async function SafariInMonthPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <article className="bg-cream">
@@ -196,7 +186,7 @@ export default async function SafariInMonthPage({ params }: PageProps) {
                     <thead>
                       <tr className="bg-forest text-cream">
                         <th className="px-4 py-3 text-left font-montserrat font-semibold">Week</th>
-                        <th className="px-4 py-3 text-left font-montserrat font-semibold">What's Happening</th>
+                        <th className="px-4 py-3 text-left font-montserrat font-semibold">What&apos;s Happening</th>
                         <th className="px-4 py-3 text-left font-montserrat font-semibold">Best Location</th>
                       </tr>
                     </thead>
@@ -357,7 +347,7 @@ export default async function SafariInMonthPage({ params }: PageProps) {
                 </Link>
               </div>
 
-              {/* Related Itineraries in sidebar if relatedItineraries available */}
+              {/* Related Itineraries */}
               {relatedItineraries.length > 0 && (
                 <div className="bg-white border border-border-soft p-6">
                   <h3 className="font-montserrat font-bold text-lg text-forest mb-4">

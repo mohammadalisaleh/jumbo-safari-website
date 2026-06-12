@@ -35,8 +35,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides/tanzania-visa-requirements`, priority: 0.6, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/guides/what-to-pack-safari`, priority: 0.6, changeFrequency: "monthly" as const },
     // Monthly safari guides
+    { url: `${baseUrl}/safari-in-january`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/safari-in-february`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/safari-in-march`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/safari-in-april`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/safari-in-may`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/safari-in-june`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/safari-in-july`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/safari-in-august`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/safari-in-september`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/safari-in-october`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/safari-in-november`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/safari-in-december`, priority: 0.8, changeFrequency: "monthly" as const },
     // Citation-bait / GEO pages
     { url: `${baseUrl}/tanzania-safari-cost-2026`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/7-day-tanzania-safari-itinerary`, priority: 0.9, changeFrequency: "monthly" as const },
