@@ -190,7 +190,7 @@ export function Navigation() {
 
             {/* CTA Button */}
             <Link
-              href="/contact"
+              href="/plan-your-safari"
               className="bg-forest text-cream font-montserrat font-semibold px-7 py-4 hover:bg-forest-dark transition-colors"
             >
               Plan Your Trip
@@ -278,7 +278,7 @@ export function Navigation() {
             {/* Mobile CTA */}
             <div className="mt-8">
               <Link
-                href="/contact"
+                href="/plan-your-safari"
                 className="block w-full bg-cream text-forest font-montserrat font-semibold px-7 py-4 text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

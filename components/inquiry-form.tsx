@@ -39,9 +39,9 @@ export function InquiryForm({ itineraryTitle }: InquiryFormProps) {
           adults: formData.guests || "Not specified",
           children: "0",
           travelWith: "Not specified",
-          notes: itineraryTitle
-            ? `Enquiry from itinerary page: ${itineraryTitle}`
-            : "Enquiry from itinerary page",
+          source: itineraryTitle
+            ? `Itinerary page: ${itineraryTitle}`
+            : "Itinerary page",
         }),
       })
 
@@ -192,8 +192,12 @@ export function InquiryForm({ itineraryTitle }: InquiryFormProps) {
           disabled={isSubmitting}
           className="w-full bg-forest text-cream font-montserrat font-semibold px-7 py-4 hover:bg-forest-dark transition-colors disabled:opacity-50"
         >
-          {isSubmitting ? "Sending..." : "Send Enquiry"}
+          {isSubmitting ? "Sending..." : "Get My Free Itinerary"}
         </button>
+
+        <p className="text-center text-ink/50 text-xs">
+          Free quote · No commitment · Reply within 24h
+        </p>
       </form>
 
       <div className="mt-4 text-center">

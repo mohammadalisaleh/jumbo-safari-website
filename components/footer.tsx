@@ -20,6 +20,7 @@ const footerLinks = {
     { label: "Family Safari", href: "/itineraries/family-safari" },
   ],
   planYourTrip: [
+    { label: "Plan Your Safari", href: "/plan-your-safari" },
     { label: "Best Time to Visit", href: "/guides/best-time-to-visit-tanzania" },
     { label: "Safari in July", href: "/safari-in-july" },
     { label: "Safari in August", href: "/safari-in-august" },
@@ -35,6 +36,8 @@ const footerLinks = {
     { label: "Trust & Credentials", href: "/about/trust" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },
+    { label: "Safari Kosten (Nederlands)", href: "/tanzania-safari-kosten" },
+    { label: "Privé Safari (Nederlands)", href: "/prive-safari-tanzania" },
   ],
 }
 

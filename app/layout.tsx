@@ -3,6 +3,7 @@ import { Montserrat, Inter } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import Script from "next/script"
 import { GoogleAnalytics } from "@next/third-parties/google"
 
 const montserrat = Montserrat({
@@ -94,14 +95,11 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Script id="ms-clarity" strategy="afterInteractive">
+          {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","x16656cw13");`}
+        </Script>
       </body>
       <GoogleAnalytics gaId="G-4ENLJWVP0M" />
-      <script
-        type="text/javascript"
-        dangerouslySetInnerHTML={{
-          __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","x16656cw13");`,
-        }}
-      />
     </html>
   )
 }

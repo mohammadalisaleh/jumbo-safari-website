@@ -9,6 +9,6 @@ export const config = {
   // like /national-parks/*, /itineraries/*, /about, /contact, etc.
   matcher: [
     "/",
-    "/(en|pl|cs)/:path*",
+    "/(en)/:path*",
   ],
 }

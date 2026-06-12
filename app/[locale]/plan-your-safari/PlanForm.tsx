@@ -92,6 +92,7 @@ export default function PlanForm({ initialAdults, initialChildren, initialDate }
           adults,
           children,
           notes,
+          source: "Plan Your Safari page",
         }),
       })
 
@@ -393,12 +394,12 @@ export default function PlanForm({ initialAdults, initialChildren, initialDate }
               disabled={submitting}
               className="w-full bg-forest text-cream font-montserrat font-semibold py-4 hover:bg-forest/90 transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
             >
-              {submitting ? "Sending..." : "Send My Safari Request"}
+              {submitting ? "Sending..." : "Get My Free Itinerary"}
               {!submitting && <ArrowRight className="w-5 h-5" />}
             </button>
 
             <p className="text-xs text-ink/70 mt-4 text-center">
-              By submitting, you agree we may contact you about your safari enquiry. No spam, ever.
+              Free quote · No commitment · Reply within 24h
             </p>
           </div>
         </div>

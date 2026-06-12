@@ -6,10 +6,9 @@ import Image from "next/image"
 
 interface HeroFormProps {
   locale: string
-  accessKey: string
 }
 
-export default function HeroForm({ locale, accessKey }: HeroFormProps) {
+export default function HeroForm({ locale }: HeroFormProps) {
   const [adults, setAdults]     = useState(2)
   const [children, setChildren] = useState(0)
   const [name, setName]         = useState("")
@@ -41,28 +40,22 @@ export default function HeroForm({ locale, accessKey }: HeroFormProps) {
       : "Flexible / not yet decided"
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("/api/plan", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: accessKey,
-          subject: `Safari Enquiry: ${name} | ${adults} adult${adults !== 1 ? "s" : ""}${children > 0 ? ` + ${children} child${children !== 1 ? "ren" : ""}` : ""} | ${dateText}`,
-          from_name: "Jumbo Safaris Website",
-          email: email || "hello@jumbosafaris.com",
-          replyto: email || undefined,
-          message: [
-            `Name:      ${name}`,
-            `Email:     ${email || "Not provided"}`,
-            `WhatsApp:  ${whatsapp || "Not provided"}`,
-            `Arrival:   ${dateText}`,
-            `Adults:    ${adults}`,
-            `Children:  ${children}`,
-          ].join("\n"),
+          firstName: name,
+          email,
+          whatsapp,
+          date: dateText,
+          adults,
+          children,
+          source: "Homepage hero form",
         }),
       })
 
       const data = await res.json()
-      if (data.success) {
+      if (res.ok && data.success) {
         setSubmitted(true)
       } else {
         setError("Something went wrong. Please WhatsApp us directly.")

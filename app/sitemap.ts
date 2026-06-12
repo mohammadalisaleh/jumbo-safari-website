@@ -2,7 +2,6 @@ import { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.jumbosafaris.com"
-  const locales = ["pl", "cs"]
 
   const englishPages = [
     { url: `${baseUrl}`, priority: 1.0, changeFrequency: "weekly" as const },
@@ -67,16 +66,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/halal-safari-tanzania/ramadan`, priority: 0.8, changeFrequency: "monthly" as const },
   ]
 
-  // Add Polish and Czech homepage versions
-  const localeHomepages = locales.map((locale) => ({
-    url: `${baseUrl}/${locale}`,
-    priority: 0.9,
-    changeFrequency: "weekly" as const,
-    lastModified: new Date(),
-  }))
-
-  return [
-    ...englishPages.map((page) => ({ ...page, lastModified: new Date() })),
-    ...localeHomepages,
-  ]
+  return englishPages.map((page) => ({ ...page, lastModified: new Date() }))
 }

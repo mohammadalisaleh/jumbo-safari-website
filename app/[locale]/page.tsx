@@ -30,13 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: t("title"),
     description: t("description"),
     alternates: {
-      canonical: locale === "en" ? "https://www.jumbosafaris.com" : `https://www.jumbosafaris.com/${locale}`,
-      languages: {
-        en: "https://www.jumbosafaris.com",
-        pl: "https://www.jumbosafaris.com/pl",
-        cs: "https://www.jumbosafaris.com/cs",
-        "x-default": "https://www.jumbosafaris.com",
-      },
+      canonical: "https://www.jumbosafaris.com",
     },
     openGraph: {
       title: t("title"),
@@ -117,25 +111,30 @@ const nationalParks = [
 ]
 
 const months = [
-  { name: "Jan", noteEn: "Dry, Great Migration in south", notePl: "Sucho, Wielka Migracja na południu", noteCs: "Sucho, Velká Migrace na jihu", type: "shoulder" },
-  { name: "Feb", noteEn: "Calving season peaks", notePl: "Szczyt sezonu cielenia", noteCs: "Vrchol období telení", type: "shoulder" },
-  { name: "Mar", noteEn: "Long rains begin", notePl: "Początek długich deszczów", noteCs: "Začátek dlouhých dešťů", type: "green" },
-  { name: "Apr", noteEn: "Green season, lower rates", notePl: "Zielony sezon, niższe ceny", noteCs: "Zelená sezóna, nižší ceny", type: "green" },
-  { name: "May", noteEn: "Green season, lower rates", notePl: "Zielony sezon, niższe ceny", noteCs: "Zelená sezóna, nižší ceny", type: "green" },
-  { name: "Jun", noteEn: "Dry season starts", notePl: "Początek suchego sezonu", noteCs: "Začátek suché sezóny", type: "peak" },
-  { name: "Jul", noteEn: "Peak wildlife viewing", notePl: "Szczyt obserwacji dzikiej przyrody", noteCs: "Vrchol pozorování divoké přírody", type: "peak" },
-  { name: "Aug", noteEn: "Migration river crossings", notePl: "Przeprawy rzeczne migracji", noteCs: "Přechody řek během migrace", type: "peak" },
-  { name: "Sep", noteEn: "Excellent game viewing", notePl: "Doskonałe obserwacje zwierząt", noteCs: "Vynikající pozorování zvěře", type: "peak" },
-  { name: "Oct", noteEn: "Migration moves south", notePl: "Migracja kieruje się na południe", noteCs: "Migrace směřuje na jih", type: "peak" },
-  { name: "Nov", noteEn: "Short rains, quieter", notePl: "Krótkie deszcze, spokojniej", noteCs: "Krátké deště, klidněji", type: "shoulder" },
-  { name: "Dec", noteEn: "Migration returns south", notePl: "Migracja wraca na południe", noteCs: "Migrace se vrací na jih", type: "shoulder" },
+  { name: "Jan", slug: "safari-in-january", noteEn: "Dry, Great Migration in south", notePl: "Sucho, Wielka Migracja na południu", noteCs: "Sucho, Velká Migrace na jihu", type: "shoulder" },
+  { name: "Feb", slug: "safari-in-february", noteEn: "Calving season peaks", notePl: "Szczyt sezonu cielenia", noteCs: "Vrchol období telení", type: "shoulder" },
+  { name: "Mar", slug: "safari-in-march", noteEn: "Long rains begin", notePl: "Początek długich deszczów", noteCs: "Začátek dlouhých dešťů", type: "green" },
+  { name: "Apr", slug: "safari-in-april", noteEn: "Green season, lower rates", notePl: "Zielony sezon, niższe ceny", noteCs: "Zelená sezóna, nižší ceny", type: "green" },
+  { name: "May", slug: "safari-in-may", noteEn: "Green season, lower rates", notePl: "Zielony sezon, niższe ceny", noteCs: "Zelená sezóna, nižší ceny", type: "green" },
+  { name: "Jun", slug: "safari-in-june", noteEn: "Dry season starts", notePl: "Początek suchego sezonu", noteCs: "Začátek suché sezóny", type: "peak" },
+  { name: "Jul", slug: "safari-in-july", noteEn: "Peak wildlife viewing", notePl: "Szczyt obserwacji dzikiej przyrody", noteCs: "Vrchol pozorování divoké přírody", type: "peak" },
+  { name: "Aug", slug: "safari-in-august", noteEn: "Migration river crossings", notePl: "Przeprawy rzeczne migracji", noteCs: "Přechody řek během migrace", type: "peak" },
+  { name: "Sep", slug: "safari-in-september", noteEn: "Excellent game viewing", notePl: "Doskonałe obserwacje zwierząt", noteCs: "Vynikající pozorování zvěře", type: "peak" },
+  { name: "Oct", slug: "safari-in-october", noteEn: "Migration moves south", notePl: "Migracja kieruje się na południe", noteCs: "Migrace směřuje na jih", type: "peak" },
+  { name: "Nov", slug: "safari-in-november", noteEn: "Short rains, quieter", notePl: "Krótkie deszcze, spokojniej", noteCs: "Krátké deště, klidněji", type: "shoulder" },
+  { name: "Dec", slug: "safari-in-december", noteEn: "Migration returns south", notePl: "Migracja wraca na południe", noteCs: "Migrace se vrací na jih", type: "shoulder" },
+]
+
+const seasonLegend = [
+  { type: "peak", label: "Peak season", swatch: "bg-orange" },
+  { type: "green", label: "Green season, lower rates", swatch: "bg-forest" },
+  { type: "shoulder", label: "Shoulder season", swatch: "bg-border-soft" },
 ]
 
 export default async function HomePage({ params }: PageProps) {
   const { locale } = await params
   setRequestLocale(locale)
 
-  const accessKey = process.env.WEB3FORMS_ACCESS_KEY ?? ""
 
   const tNav = await getTranslations("nav")
   const tHero = await getTranslations("hero")
@@ -277,7 +276,7 @@ export default async function HomePage({ params }: PageProps) {
 
             {/* ── RIGHT: Form card, desktop only inside hero ── */}
             <div className="hidden lg:flex lg:justify-end">
-              <HeroForm locale={locale} accessKey={accessKey} />
+              <HeroForm locale={locale} />
             </div>
           </div>
         </div>
@@ -286,7 +285,7 @@ export default async function HomePage({ params }: PageProps) {
       {/* ── MOBILE FORM, shown below hero on mobile only ── */}
       <div className="lg:hidden bg-forest">
         <div className="max-w-content mx-auto px-4 py-6">
-          <HeroForm locale={locale} accessKey={accessKey} />
+          <HeroForm locale={locale} />
         </div>
       </div>
 
@@ -449,11 +448,21 @@ export default async function HomePage({ params }: PageProps) {
               {tSections("bestTime")}
             </h2>
           </div>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8">
+            {seasonLegend.map((season) => (
+              <div key={season.type} className="flex items-center gap-2">
+                <span className={`w-3 h-3 ${season.swatch} inline-block`} aria-hidden="true" />
+                <span className="text-sm text-ink">{season.label}</span>
+              </div>
+            ))}
+          </div>
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {months.map((month) => (
-              <div
+              <Link
+                href={`/${month.slug}`}
                 key={month.name}
-                className={`px-4 py-3 text-center ${
+                aria-label={`Tanzania safari in ${month.name}: full month guide`}
+                className={`px-4 py-3 text-center transition-opacity hover:opacity-80 ${
                   month.type === "peak"
                     ? "bg-orange text-cream"
                     : month.type === "green"
@@ -463,7 +472,7 @@ export default async function HomePage({ params }: PageProps) {
               >
                 <p className="font-montserrat font-semibold text-sm">{month.name}</p>
                 <p className="text-xs mt-1 opacity-80 whitespace-nowrap">{getMonthNote(month)}</p>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="text-center">

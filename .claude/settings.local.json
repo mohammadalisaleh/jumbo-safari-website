@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls ~/jumbo-brain/ 2>/dev/null && cat ~/jumbo-brain/brain/MEMORY.md 2>/dev/null || echo \"Directory does not exist yet\")",
+      "Read(//Users/mohammadalisaleh/jumbo-brain/**)",
+      "Bash(cd /tmp && npm install adm-zip 2>/dev/null && node -e \" *)",
+      "Read(//private/tmp/**)"
+    ]
+  }
+}

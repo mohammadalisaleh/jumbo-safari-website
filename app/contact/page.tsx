@@ -1,15 +1,15 @@
 import { Metadata } from "next"
-import { MessageCircle, Mail, MapPin, Clock, Shield, Users } from "lucide-react"
-import { ContactForm } from "@/components/contact-form"
+import Link from "next/link"
+import { MessageCircle, Mail, MapPin, Clock, Shield, Users, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Contact a Tanzania Safari Expert in Arusha",
   description:
-    "Contact Jumbo Safaris to plan your Tanzania safari. WhatsApp, email, or fill in our enquiry form. Based in Arusha, Tanzania.",
+    "Contact Jumbo Safaris by WhatsApp or email, or request a free custom itinerary. Based in Arusha, Tanzania. We reply within 24 hours.",
   alternates: { canonical: "https://www.jumbosafaris.com/contact" },
   openGraph: {
     title: "Contact Jumbo Safaris | Talk to an Arusha-Based Safari Specialist",
-    description: "WhatsApp, email, or fill in our enquiry form. Based in Arusha, direct line to the guide who plans your safari.",
+    description: "WhatsApp, email, or request a free custom itinerary. Based in Arusha, direct line to the guide who plans your safari.",
     url: "https://www.jumbosafaris.com/contact",
   },
 }
@@ -25,17 +25,43 @@ export default function ContactPage() {
     <div className="bg-cream">
       <div className="max-w-content mx-auto px-6 py-16 md:py-24">
         <div className="grid lg:grid-cols-[1fr_400px] gap-12 [&>*]:min-w-0">
-          {/* Left Column - Form */}
+          {/* Left Column - How to reach us */}
           <div>
             <h1 className="font-montserrat font-bold text-h1-mobile md:text-h1-desktop text-forest mb-4">
-              Plan Your Tanzania Safari
+              Contact Jumbo Safaris
             </h1>
             <p className="text-lead-mobile md:text-lead-desktop text-ink mb-8">
-              Tell us about your dream safari. We respond within 24 hours with a personalized
-              itinerary recommendation.
+              WhatsApp and email come straight to the guide who plans your safari. Every message
+              gets a reply within 24 hours.
             </p>
 
-            <ContactForm />
+            {/* Planning a safari? One canonical path. */}
+            <div className="bg-forest text-cream p-8 mb-8">
+              <h2 className="font-montserrat font-bold text-xl mb-3">
+                Planning a safari?
+              </h2>
+              <p className="text-cream/80 mb-6 leading-relaxed">
+                The fastest way to get started is the trip planner. Tell us your dates, group,
+                and budget, and you get a day-by-day itinerary with a transparent price inside
+                24 hours.
+              </p>
+              <Link
+                href="/plan-your-safari"
+                className="inline-flex items-center gap-2 bg-orange text-cream font-montserrat font-bold uppercase tracking-[0.08em] text-sm px-7 py-4 hover:bg-orange/90 transition-colors"
+              >
+                Get My Free Itinerary
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+              <p className="text-cream/50 text-xs mt-4">
+                Free quote · No commitment · Reply within 24h
+              </p>
+            </div>
+
+            <p className="text-ink leading-relaxed">
+              Not planning a trip yet? Questions about parks, seasons, prices, or anything else
+              Tanzania: WhatsApp or email us directly using the details on this page. Lodge and
+              supplier partnership enquiries are welcome at the same address.
+            </p>
           </div>
 
           {/* Right Column - Contact Info */}
