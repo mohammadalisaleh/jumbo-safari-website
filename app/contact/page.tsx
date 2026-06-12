@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { MessageCircle, Mail, MapPin, Clock, Shield, Users, Star } from "lucide-react"
+import { MessageCircle, Mail, MapPin, Clock, Shield, Users } from "lucide-react"
 import { ContactForm } from "@/components/contact-form"
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const trustSignals = [
   { icon: Shield, text: "TATO Licensed" },
   { icon: Users, text: "Private Guides" },
-  { icon: Star, text: "5-Star Rated" },
+  { icon: MapPin, text: "Arusha-Based Team" },
 ]
 
 export default function ContactPage() {

@@ -5,7 +5,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import {
   Shield,
   Users,
-  Star,
   Calendar,
   MapPin,
   ArrowRight,
@@ -149,7 +148,7 @@ export default async function HomePage({ params }: PageProps) {
   const trustSignals = [
     { icon: Shield, text: tTrust("tatoLicensed") },
     { icon: Users, text: tTrust("privateGuides") },
-    { icon: Star, text: tTrust("fiveStarRated") },
+    { icon: Check, text: tTrust("transparentPricing") },
     { icon: Calendar, text: tTrust("tailorMade") },
     { icon: MapPin, text: tTrust("arushaBased") },
   ]
@@ -208,39 +207,11 @@ export default async function HomePage({ params }: PageProps) {
               </span>
             </a>
 
-            {/* Centre: rating badges, hidden on mobile, shown sm and up */}
-            <div className="hidden sm:flex items-center gap-5">
-              {/* Google badge */}
-              <div className="flex items-center gap-1.5">
-                <div
-                  className="w-5 h-5 rounded-full bg-white flex-shrink-0 flex items-center justify-center font-bold text-[11px]"
-                  style={{ color: "#4285F4" }}
-                >
-                  G
-                </div>
-                <div className="flex text-[11px] text-yellow-400 leading-none">★★★★★</div>
-                <span className="font-montserrat font-semibold text-[11px] text-cream">4.9</span>
-                <span className="text-cream/35 text-[10px]">Google</span>
-              </div>
-
-              <span className="text-cream/20 text-xs">|</span>
-
-              {/* TripAdvisor badge */}
-              <div className="flex items-center gap-1.5">
-                <div
-                  className="w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center"
-                  style={{ backgroundColor: "#34E0A1" }}
-                >
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="white" aria-label="TripAdvisor">
-                    <circle cx="6.5" cy="13" r="4" />
-                    <circle cx="17.5" cy="13" r="4" />
-                    <path d="M3 9h4.5M16.5 9H21M12 5v3" stroke="white" strokeWidth="2" strokeLinecap="round" fill="none"/>
-                  </svg>
-                </div>
-                <div className="flex text-[11px] text-yellow-400 leading-none">★★★★★</div>
-                <span className="font-montserrat font-semibold text-[11px] text-cream">4.9</span>
-                <span className="text-cream/35 text-[10px]">TripAdvisor</span>
-              </div>
+            {/* Centre: response promise, hidden on mobile, shown sm and up */}
+            <div className="hidden sm:flex items-center gap-1.5">
+              <span className="font-montserrat font-semibold text-[11px] uppercase tracking-[0.08em] text-cream">
+                Free itinerary within 24 hours
+              </span>
             </div>
 
             {/* Right: Email */}
